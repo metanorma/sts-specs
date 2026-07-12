@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Fira_Mono/FiraMono-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Fira_Mono/FiraMono-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(PT_Sans_Narrow/PTSansNarrow-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(PT_Sans_Narrow/PTSansNarrow-Bold.ttf) format('truetype');  
+}
