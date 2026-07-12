@@ -1,0 +1,39 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/prefix.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-prefix]
+=== `<prefix>` Prefix (in a name)
+
+Honorifics or other qualifiers that usually precede a person’s name (for example, Professor, Rev., President, Senator, Dr., Sir, The Honorable).
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-name,`<name>`>>, <<element-speaker,`<speaker>`>>, <<element-string-name,`<string-name>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  prefix       (#PCDATA %prefix-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

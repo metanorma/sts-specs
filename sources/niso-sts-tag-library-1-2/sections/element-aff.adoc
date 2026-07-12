@@ -1,0 +1,45 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/aff.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-aff]
+=== `<aff>` Affiliation
+
+Name of an institution or organization (for example, university, corporation) with which a contributor is affiliated.
+
+#### Related Elements
+
+Within an affiliation element (<<element-aff,`<aff>`>>), the name of an institution may just be given as text, or the institution may be tagged explicitly (as an <<element-institution,`<institution>`>>) and an institutional identifier recorded (<<element-institution-id,`<institution-id>`>>). The element <<element-institution-wrap,`<institution-wrap>`>> collects together both the name of the institution and its identifier.
+A single institution may have multiple identifiers, either because different assigning agencies have defined an identifier or because the entity belongs to more than one larger organizational unit, for example, a laboratory may be part of multiple institutions.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-rid,`@rid`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-aff-alternatives,`<aff-alternatives>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-contrib-group,`<contrib-group>`>>, <<element-person-group,`<person-group>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Address Elements <<element-addr-line,`<addr-line>`>> <<element-addr-line,Address Line>> <<element-city,`<city>`>> <<element-city,City (in an address)>> <<element-country,`<country>`>> <<element-country,Country (in an address)>> <<element-fax,`<fax>`>> <<element-fax,Fax Number (in address)>> <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>> <<element-phone,`<phone>`>> <<element-phone,Phone Number: in an Address>> <<element-postal-code,`<postal-code>`>> <<element-postal-code,Postal Code: in an Address>> <<element-state,`<state>`>> <<element-state,State or Province (in an address)>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-break,`<break>`>> <<element-break,Line Break>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  aff          (#PCDATA %aff-elements;)*                    >
+....
+#### Expanded Content Model
+
+(#PCDATA | addr-line | city | country | fax | institution | institution-wrap | phone | postal-code | state | email | ext-link | uri | inline-supplementary-material | related-article | related-object | break | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | label | inline-graphic | private-char | inline-code | inline-media | fn | target | tbx:entailedTerm | xref | sub | sup)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,22 @@
+== Elements added
+
+* Defined the current <<element-code,`<code>`>> element as a block structure
+  and added the <<element-inline-code,`<inline-code>`>> element.
+
+* Added the <<element-inline-media,`<inline-media>`>> element.
+
+* Added the <<element-legend,`<legend>`>> element to hold legends (also known
+  as keys, where-lists, variable-lists, symbol-lists, etc.) for:
+  <<element-boxed-text,`<boxed-text>`>>,
+  <<element-chem-struct-wrap,`<chem-struct-wrap>`>>,
+  <<element-disp-formula,`<disp-formula>`>>,
+  <<element-disp-formula-group,`<disp-formula-group>`>>,
+  <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>,
+  <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>,
+  <<element-supplementary-material,`<supplementary-material>`>>,
+  <<element-table-wrap,`<table-wrap>`>>, and
+  <<element-table-wrap-group,`<table-wrap-group>`>>.
+
+* Added the <<element-sub-part-number,`<sub-part-number>`>> element (optional,
+  repeatable) to <<element-std-ident,`<std-ident>`>> to hold section or other
+  sub-part numbers.

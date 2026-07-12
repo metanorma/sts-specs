@@ -1,0 +1,56 @@
+name: generate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  packages: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: metanorma/metanorma:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Metanorma
+        uses: actions-mn/setup@v3
+        with:
+          installation-method: gem
+          github-packages-token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
+
+      - name: Metanorma generate site
+        uses: actions-mn/build-and-publish@v2
+        with:
+          agree-to-terms: true
+          destination: artifact
+          artifact-name: mn
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+
+      - name: Run rspec
+        run: bundle exec rspec

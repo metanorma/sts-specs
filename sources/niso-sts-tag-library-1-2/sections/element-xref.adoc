@@ -1,0 +1,280 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/xref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-xref]
+=== `<xref>` X(cross) Reference
+
+Reference to an object within the standards document (for example, a table, a bibliographic citation, a figure).
+
+#### Usage/Remarks
+This element may be used to reference anything that has an attribute of type <<attribute-id,`@id`>>.
+##### Best Practice
+
+The <<attribute-ref-type,`@ref-type`>> attribute (of the <<element-xref,`<xref>`>> element) can be used to preserve information concerning what type of element is being pointed to by the cross-reference.
+#### Accessibility
+
+Sometimes a `<xref>` needs to be pronounced in a way that is not reflected in its content or its tagging. The <<attribute-alt,`@alt`>> attribute can be used to record the pronunciation for screen readers and other accessibility devices. For example, a cross-reference to a figure might be pronounced as “Figure 4”.
+##### Custom Type of Reference (<<attribute-ref-type,`@ref-type`>>)
+
+The <<attribute-ref-type,`@ref-type`>> attribute can be used to preserve information concerning the type of element that is the target of the cross-reference (for example, a figure (“`fig`”), a table (“`table`”), or a footnote (“`fn`”)). <<attribute-ref-type,`@ref-type`>> has as its values a fixed list of types. If your object is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the actual type. Set the value of <<attribute-ref-type,`@ref-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any object type you require. For example:
+[source,xml]
+....
+<xref ref-type="custom" custom-type="glossary".../>
+... <xref ref-type="custom" custom-type="term".../>
+....
+
+#### Attributes
+
+* <<attribute-alt,`@alt`>>
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-ref-type,`@ref-type`>>
+* <<attribute-rid,`@rid`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-aff,`<aff>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-contrib,`<contrib>`>>, <<element-contrib-group,`<contrib-group>`>>, <<element-def-head,`<def-head>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-inline-code,`<inline-code>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-speaker,`<speaker>`>>, <<element-std,`<std>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  xref         (#PCDATA %xref-elements;)*                   >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | named-content | styled-content | sub | sup)*
+
+#### Tagged Samples
+
+#### For footnote
+
+[source,xml]
+....
+...
+<p>A standard shall indicate ... the document is not measurement 
+ sensitive by placing one of the designations below in a rectangular 
+ box above the standard identifier.<xref ref-type="fn"><sup>1</sup></xref>
+ <fn>
+  <label><sup>1</sup></label>
+  <p>At one time, the letters &ldquo;DOD&rdquo; were used in the 
+   document identifier to designate standards that could be used 
+   in metric design; for example, DOD-STD-12345. ...</p>
+ </fn>
+</p>
+...
+....
+[source,xml]
+....
+...
+<p>... Stakeholders should include older persons and 
+ persons with disabilities from organizations representing 
+ these populations and those persons with a knowledge of 
+ the accessibility needs of children and gender-related 
+ groups<sup><xref ref-type="fn" rid="fn1">1</xref>)</sup>.
+ <fn id="fn1">
+  <p>Further information relating to the involvement of users and 
+   potential users can be found in ...</p>
+ </fn>
+</p>
+...
+....
+#### For figure
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### For bibliographic reference
+
+[source,xml]
+....
+...
+<back>
+ <app-group>
+  <app content-type="inform-annex" id="annA">
+   <label>Annex A</label>
+   <annex-type>(informative)</annex-type>
+   <title>Global trends supporting accessibility</title>
+   ...
+   <sec id="A1">
+    <label>A.1</label>
+    <title>Trends in global demographics and market diversity</title>
+    <p>According to the <italic>World Report on Disability</italic> 
+     (published by the World Health Organization and the World Bank 
+     in June 2011,<sup><xref ref-type="bibr" rid="bibr40">[40]</xref></sup> 
+     approximately 15 % of the world population (over one billion 
+     people) has ...</p>
+   </sec>
+   ...
+  </app>
+ </app-group>
+ <ref-list>
+  <title>Bibliography</title>
+  ...
+  <ref id="bibr40">
+   <label>[40]</label>
+   <mixed-citation
+    ><person-group><collab>World Health Organization</collab>, 
+     <collab>World Bank</collab></person-group>. 
+    <year iso-8601-date="2011">2011</year>), 
+    <source>World Report on Disability</source>, 
+    <publisher-loc>Geneva</publisher-loc>, available at: 
+    <ext-link 
+      xlink:href="http://www.who.int/disabilities/world_report/2011/en/index.html"
+     >http://www.who.int/disabilities/world_report/2011/en/index.html</ext-link
+   ></mixed-citation>
+  </ref>
+ </ref-list>
+</back>
+...
+....
+#### For section
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <sec id="s4">
+  <label>4</label>
+  <title>Accessibility in the standards development 
+   process</title>
+  <sec id="s4_1">
+   <label>4.1</label>
+   <title>General</title>
+   <p>This clause outlines how accessibility can be 
+    addressed in the standards development process:
+    <list list-type="bullet">
+     <list-item><p><xref ref-type="sec" rid="s4_2">4.2</xref> 
+      contains general considerations for standards bodies 
+      related to ...</p></list-item>
+     <list-item><p><xref ref-type="sec" rid="s4_3">4.3</xref> 
+      provides guidance for each of the respective stages of 
+      the standards development process to ensure ...</p></list-item>
+    </list>
+   </p>
+  </sec>
+  <sec id="s4_2">
+   <label>4.2</label>
+   <title>Considerations by standards bodies</title>
+   <p>Standards bodies should develop a process for ...</p>
+  </sec>
+  ...
+ </sec>
+ ...
+</body>
+...
+....
+#### For table
+
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+#### For equation
+
+[source,xml]
+....
+...
+<p>In the case of dollies of diameter 20 mm, the 
+ breaking strength, in megapascals, is given by
+ <xref ref-type="disp-formula" rid="formula_2">Formula
+ (2)</xref>
+ <disp-formula id="formula_2"
+  ><mml:math display="block" 
+     id="mml_m2"
+     xmlns:mml="http://www.w3.org/1998/Math/MathML" >
+   <mml:mrow>
+    <mml:mi>s</mml:mi><mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mrow>
+      <mml:mn>4</mml:mn><mml:mi>F</mml:mi></mml:mrow>
+     <mml:mrow>
+      <mml:mn>400</mml:mn><mml:mi>p</mml:mi></mml:mrow>
+    </mml:mfrac>
+    <mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mi>F</mml:mi>
+     <mml:mrow>
+      <mml:mn>314</mml:mn></mml:mrow>
+    </mml:mfrac>
+   </mml:mrow>
+  </mml:math>
+  <label>(2)</label>
+ </disp-formula>
+</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,39 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/speaker.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-speaker]
+=== `<speaker>` Speaker
+
+One who utters a speech as part of a speech, for example, the computer “`HAL`” in the exchange “HAL: ‘Hi Dave’”.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-speech,`<speech>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-degrees,`<degrees>`>> <<element-degrees,Degree(s)>> <<element-given-names,`<given-names>`>> <<element-given-names,Given (First) Names>> <<element-prefix,`<prefix>`>> <<element-prefix,Prefix (in a name)>> <<element-surname,`<surname>`>> <<element-surname,Surname>> <<element-suffix,`<suffix>`>> <<element-suffix,Suffix (in a name)>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  speaker      (#PCDATA %speaker-elements;)*                >
+....
+#### Expanded Content Model
+
+(#PCDATA | degrees | given-names | prefix | surname | suffix | fn | target | tbx:entailedTerm | xref)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

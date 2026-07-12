@@ -1,0 +1,42 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/dsep.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-dsep]
+=== `@dsep` Decimal Separator
+
+In a number, the symbol (typically either “`.`” or “`,`”) that marks the boundary between the integral and fractional parts of a decimal number. For example, in “`2,543.24`”, the “`.`” is the decimal separator.
+
+#### OPTIONAL on element:  <<element-num,`<num>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The delimiter character that marks the boundary between the integral and fractional
+                        parts of a decimal number, typically either “`.`” or “`,`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Showing comma as separator
+
+[source,xml]
+....
+...
+<p>The method of measurement is the same as that described 
+in <xref ref-type="sec" rid="sec_5.2.3.1">5.2.3.1</xref>, 
+except that the range of indentation is from 0 mm to 
+<num dsep=",">1,8</num> mm.</p>
+...
+....
+#### Showing period as separator
+
+[source,xml]
+....
+... <num dsep=".">1.3</num> mg/mL of amoxicillin and 
+<num dsep=".">62.5</num> µL of clavulanic ...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,38 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/vocab-term.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-vocab-term]
+=== `@vocab-term` Vocabulary/Taxonomy Term
+
+The canonical form of the term. (Note: The content of the element to which this attribute is attached is the free prose version of the vocabulary or taxonomic term. The `@vocab-term` attribute holds a canonical version of the same term, as it appears in the vocabulary. For example, if the attribute value was “`digitized-vor`”, the element might contain the display text “Digitized Version of Record”.)
+
+#### Usage/Remarks
+Four attributes are used in this Tag Set to identify a term from a controlled or an uncontrolled vocabulary: vocab Name of the controlled or uncontrolled vocabulary, taxonomy, ontology, index, database, or similar that is the source of the term. For example, for a subject term, a value might be IPC Code (“`ipc`”) or UNS Code (“`uns`”). For an uncontrolled term, the value might be an area of study such as “`structural engineering`” or merely the word “`uncontrolled`”. vocab-identifier Unique identifier of the vocabulary, such as (but not limited to) a URI or DOI. For example, for Dublin Core (DCC), the identifier might be “`http://dublincore.org/documents/2012/06/14/dces/`”. vocab-term The content of the element is the free prose version of the vocabulary or taxonomic term. The <<attribute-vocab-term,`@vocab-term`>> attribute holds the canonical version of the same term, as it appears in the vocabulary. For example, if the attribute value was “`digitized-vor`”, the element might contain the display text “Digitized Version of Record”. vocab-term-identifier Unique identifier of the term within a specific vocabulary, such as (but not limited to) an item number, a URI, DOI, etc.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-compound-kwd,`<compound-kwd>`>>, <<element-compound-subject,`<compound-subject>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-extended-by,`<extended-by>`>>, <<element-ics,`<ics>`>>, <<element-ics-desc,`<ics-desc>`>>, <<element-index-term,`<index-term>`>>, <<element-inline-media,`<inline-media>`>>, <<element-kwd,`<kwd>`>>, <<element-named-content,`<named-content>`>>, <<element-nested-kwd,`<nested-kwd>`>>, <<element-release-version,`<release-version>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-role,`<role>`>>, <<element-see-also,`<see-also>`>>, <<element-subject,`<subject>`>>, <<element-term,`<term>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The canonical form of the term  as it exists in the named vocabulary.
+| Restriction| This attribute may be specified if the element is used.
+|===
+
+#### Tagged Sample
+
+##### Subjects with vocabulary and vocabulary-term identifiers
+[source,xml]
+....
+...
+<subj-group id="DDC-ex1" vocab="DDC" vocab-identifier="DDC23" xml:lang="en">
+ <subject id="DCC-625" vocab-term="Engineering of railroads, roads"
+   vocab-term-identifier="http://www.oclc.org/en/dewey/features/summaries.html#thou">
+  Ingénierie des chemins de fer, routes</subject>  
+</subj-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

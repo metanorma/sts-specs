@@ -1,0 +1,151 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/list.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-list]
+=== `<list>` List
+
+Sequence of two or more items, which may or may not be ordered.
+
+#### Usage/Remarks
+The <<attribute-list-type,`@list-type`>> attribute specifies whether there should be a prefix preceding each item and determines the prefix type (such as bullet or number). A simple list takes no prefix character. The <<attribute-prefix-word,`@prefix-word`>> attribute can be used to prepend a word such as “Step”, “Method”, or “Procedure” to a list item, in addition to, typically, a number (thus “Step 1.”). If the <<attribute-list-type,Type of List>> names a bulleted style (“`@list-type="bullet"`”), the <<attribute-style-detail,Styling Detail>> attribute _may_ be used to name the preferred prefix character, for example, a “`dash`”, “`hollow-bullet`”, or “`square`”. If no <<attribute-style-detail,Styling Detail>> is given, the processing system will choose the bullet character.
+
+#### Attributes
+
+* <<attribute-continued-from,`@continued-from`>>
+* <<attribute-list-content,`@list-content`>>
+* <<attribute-list-type,`@list-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-prefix-word,`@prefix-word`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-style-detail,`@style-detail`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-legend,`<legend>`>>, <<element-license-p,`<license-p>`>>, <<element-list-item,`<list-item>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-list-item,`<list-item>`>> <<element-list-item,List Item>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  list         %list-model;                                 >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, (list-item)+)
+
+#### Tagged Samples
+
+#### Numerical list
+
+[source,xml]
+....
+...
+<p>Each of the 11 goals is introduced by its name and 
+ presented in the same structure:
+ <list list-type="order">
+  <list-item>
+   <p><bold>The goal:</bold> The basic goal statement.</p></list-item>
+  <list-item>
+   <p><bold>Discussion:</bold> An elaboration on the basic goal 
+    statement.</p></list-item>
+  <list-item>
+   <p><bold>Background:</bold> Sources from which the goal is 
+    derived.</p></list-item>
+  <list-item>
+   <p><bold>Common user accessibility needs:</bold> User accessibility 
+    needs related to the goal.</p></list-item>
+  <list-item>
+   <p><bold>Questions to consider:</bold> Questions for applying 
+    the goal.</p></list-item>
+ </list>
+</p>
+...
+....
+#### Ordered list using lowercase alphabetical prefix characters
+
+[source,xml]
+....
+...
+<sec id="s6_2_1_5">
+ <label>6.2.1.5</label>
+ <title>Questions to consider</title>
+ <list list-type="alpha-lower">
+  <list-item><p>Who are the potential users of systems 
+   that will be addressed by or who will relate to this 
+   deliverable?</p></list-item>
+  <list-item><p>Which potential users, if any, might be 
+   excluded by the requirements and recommendations in
+   this deliverable?</p></list-item>
+  <list-item><p>What are all the contexts of use in which 
+   systems that relate to this deliverable could be 
+   used?</p></list-item>
+  <list-item><p>Which contexts of use might be excluded 
+   by the requirements and recommendations in this 
+   deliverable?</p></list-item>
+ </list>
+</sec>
+...
+....
+#### Provide bullet-style for a bulleted list
+
+image::images/list-dash-iso_iec-guide-71_2014.png[list-dash-iso_iec-guide-71_2014.png]
+[source,xml]
+....
+...
+<p>... To assist standards developers to define accessibility 
+requirements and recommendations, the Guide presents:
+ <list list-type="bullet" style-detail="dash">
+  <list-item>
+   <p>a summary of current terminology relating to accessibility;</p></list-item>
+  <list-item>
+   <p>issues to consider in support of accessibility in the standards 
+    development process;</p></list-item>
+  <list-item>
+   <p>a set of accessibility goals (used to identify user accessibility 
+    needs);</p></list-item>
+  <list-item>
+   <p>descriptions of (and design considerations for) human abilities 
+    and characteristics;</p></list-item>
+  <list-item>
+   <p>strategies for addressing user accessibility needs and design 
+    considerations in standards.</p></list-item>
+ </list>
+</p>
+...
+....
+#### A non-standard bullet character
+
+[source,xml]
+....
+...
+<p>The Tag Suite is the complete set of elements and attributes 
+described in the standard. Along with these descriptions, the 
+standard includes two discrete standards models or Tag Sets:
+ <list list-type="bullet" style-detail="symbol">
+  <list-item>
+   <p>The Interchange Tag Set (in MathML 2.0 and MathML 3.0 
+    variants)</p></list-item>
+  <list-item>
+   <p>The Extended Tag Set (in MathML 2.0 and MathML 3.0 
+    variants)</p></list-item>
+ </list>
+</p>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - List
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

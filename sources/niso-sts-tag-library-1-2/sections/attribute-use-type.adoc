@@ -1,0 +1,29 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/use-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-use-type]
+=== `@use-type` Type of Use
+
+If there is a specific use-case for this citation, this attribute describes it, for example, if this is a data citation, it may state that the data was “`analyzed-data`” for this standard, rather than generated.
+
+#### OPTIONAL on elements:  <<element-element-citation,`<element-citation>`>>, 
+                  <<element-mixed-citation,`<mixed-citation>`>>, 
+                  <<element-std,`<std>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| There are no set values for this attribute, but the current use-case is for data citations,
+                        to express the difference between generated, analyzed, or referenced   data.
+| Restriction| `@use-type` is an optional attribute; there is no default.
+|===
+###### Suggested usage
+For use in citing data (“`publication-type="data"`”), there are three potential values: `generated-data` Included or referenced external data that was generated in the course of producing the standard. `analyzed-data` Referenced data that was analyzed in the course of producing the standard, but that was not generated expressly for the standard. This may include publicly available datasets. `non-analyzed-data` Referenced data that was neither generated nor analyzed during production of the standard.
+
+#### Related Resources
+
+* See _Describing how the Data Files were Used_ in Citing Data
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

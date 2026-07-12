@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/nav-pointer-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-nav-pointer-type]
+=== `@nav-pointer-type` Type of Navigation Pointer
+
+Indicates the kind of navigation pointer (<<element-nav-pointer,`<nav-pointer>`>>) being used in a structural index entry, i.e., the pointer could identify a single page (value “`point`”) in the narrative text, or the beginning and end of a page range (values “`start-of-range`” and “`end-of-range`” respectively).
+
+#### OPTIONAL on element:  <<element-nav-pointer,`<nav-pointer>`>>
+
+|===
+| Value| Meaning
+
+| end-of-range| The end of a page range.
+| point| A single page.
+| start-of-range| The start of a page range.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

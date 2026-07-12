@@ -1,0 +1,71 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/addr-line.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-addr-line]
+=== `<addr-line>` Address Line
+
+One physical or logical line of an address.
+
+#### Related Elements
+
+An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as a company or organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-aff,`<aff>`>>, <<element-collab,`<collab>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-std-org-loc,`<std-org-loc>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> <<element-city,`<city>`>> <<element-city,City (in an address)>> <<element-country,`<country>`>> <<element-country,Country (in an address)>> <<element-fax,`<fax>`>> <<element-fax,Fax Number (in address)>> <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>> <<element-phone,`<phone>`>> <<element-phone,Phone Number: in an Address>> <<element-postal-code,`<postal-code>`>> <<element-postal-code,Postal Code: in an Address>> <<element-state,`<state>`>> <<element-state,State or Province (in an address)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  addr-line    (#PCDATA %addr-line-elements;)*              >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | sub | sup | city | country | fax | institution | institution-wrap | phone | postal-code | state)*
+
+#### Tagged Sample
+
+##### In `<std-org-loc>`
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>...</title-wrap>
+ <std-ident>...</std-ident>
+ <std-org-group>
+  ...
+  <std-org std-org-type="sdo" std-org-role="lead">
+   <std-org-name>American Petroleum Institute</std-org-name>
+   <std-org-abbrev>API</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>1220 L Street, N.W.</addr-line>
+    <city>Washington</city>
+    <state>D.C.</state>
+    <postal-code>20005</postal-code>
+    <uri>http://www.api.org/</uri></std-org-loc>
+  </std-org>
+ </std-org-group>
+ ...
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

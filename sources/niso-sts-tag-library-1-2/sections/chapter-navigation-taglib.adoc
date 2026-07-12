@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/navigation-taglib.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-navigation-taglib]
+=== Navigation
+
+A Tag Library provides HTML documentation for this Tag Set. You can click on links to travel from one topic to another and use your browser’s “Back” button to backtrack through previously-visited pages. In addition, there are two navigation aids on every page: To the left is a colored vertical Navigation Bar (Navbar) with links to all parts of the Tag Library. At the very bottom of each page, in the far right corner is a “Back to Top” link.
+#### Navigation Bar (Navbar)
+
+image::images/sts-side-nav-bar.png[sts-side-nav-bar.png]
+*Moving around:* The Navbar is used to move within sections and between sections. If a section has subsections, an arrow pointing right () appears next to the section’s title. Clicking on either the arrow or the heading beside it changes the arrow to an arrow pointing down () and opens a list of sub-topics within that section. Clicking on a sub-topic goes directly to the corresponding discussion.
+*Navbar Example: Elements* Clicking on the word “Elements”, or on the arrow beside the word, will display an alphabetical list of the XML elements defined in this Tag Set. *For Each Element:* Hovering over the element name will reveal its more English-like, descriptive equivalent, for example, hovering over the “`<p>`” will display “`Paragraph`”. Scroll the list to find a particular element. Use the scroll-bar _immediately to the right of the Navbar_. Clicking on the element name will take you to the page for that element.
+#### One-button Collapsing/Expanding
+
+*Hiding the Navbar:* To stop displaying the Navbar, click the left-pointing arrow at the top right of the Navbar. () To restore the Navbar, click the right-pointing arrow at the top left of the Navbar. ()
+*Close Sections in Navbar:* To collapse all sections displayed in the Navbar back to the top-level hierarchy, click the “squiggly arrow” at the top right of the Navbar. ()
+*Expanding/Collapsing Pages:* Tag Library pages with content that can collapse and expand will include two diamonds near the top right of the page. These diamonds permit a user to expand or collapse the entire page rather than expanding/collapsing individual sections. To expand all closed sections, click the hollow diamond (). To collapse sections back to the starting configuration, click the solid diamond ().
+*Printing the Pages:* Note that if the page is printed, only the content that is currently visible (expanded sections) will be printed. The content of collapsed sections does not appear when the page is printed.
+#### Search Bar
+
+If your system supports it, a small search bar will appear at the top left of the tag library display. (Click the “`?`” for hints on using the search bar.)
+Enter a word or phrase to search for it in the Tag Library headings. Use `<tag-name>` to search for elements and `@attribute-name` to search for attributes.

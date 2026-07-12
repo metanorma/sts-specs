@@ -1,0 +1,39 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/publication-format.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-publication-format]
+=== `@publication-format` Format of Publication
+
+Format or medium of the document (for example, “`print`”). This element has several uses: to describe the format/medium of a standards document for a publication date or other lifecycle date (<<element-release-date,`<release-date>`>>) or for an organization-specific lifecycle date (<<element-meta-date,`<meta-date>`>>); to name the format/medium of a document being cited as part of a bibliographic reference; or to name the format/medium for an ISBN or similar identifier.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-date,`<date>`>>, <<element-element-citation,`<element-citation>`>>, <<element-isbn,`<isbn>`>>, <<element-issn,`<issn>`>>, <<element-meta-date,`<meta-date>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pub-date,`<pub-date>`>>, <<element-release-date,`<release-date>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The format for the publication of this standards document, for example, “`print`”, “`online`”, “`epub`”. This value is not constrained, so any standards organization is free to use the
+                        values it needs for processing.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Used in citation
+[source,xml]
+....
+...
+<mixed-citation publication-format="print" publication-type="report"
+ ><collab>FCC</collab> <gov>Bulletin No. 65</gov> 
+ (<month>August</month> <year>1997</year>), 
+ <source>Evaluating Compliance with FCC Guidelines for 
+  Human Exposure to Radiofrequency Electromagnetic 
+  Fields</source>. Available at 
+ <uri>http://www.fcc.gov/Bureaus/Engineering_Technology/Documents/bulletins/oet65/oet65.pdf</uri>. 
+ [Rule 420Q NOTE]</mixed-citation>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

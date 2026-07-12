@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/corresp.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-corresp]
+=== `@corresp` Corresponding Author Flag
+
+Indicates whether or not the contributor is the corresponding contributor for the content.
+
+#### Usage/Remarks
+This attribute was inherited from JATS and may be uncommon in standards documents.
+
+#### OPTIONAL on element:  <<element-contrib,`<contrib>`>>
+
+|===
+| Value| Meaning
+
+| no| This author (or other contributor) is not a corresponding author.
+| yes| This author (or other contributor) is a corresponding author.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

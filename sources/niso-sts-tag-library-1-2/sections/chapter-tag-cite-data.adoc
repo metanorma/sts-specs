@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tag-cite-data.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tag-cite-data]
+=== Citing Data
+
+Current publishing practice is to cite data sources in much the same manner that articles and books are cited, as part of a regular Bibliography or listed separately in their own list.
+#### Principles of Data Citation
+
+The Force11 link:https://force11.org/group/joint-declaration-of-data-citation-principles-final/[ _Joint Declaration of Data Citation Principles_ ] states (among other principles) that: Data should be considered legitimate, citable products of research. Data citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications. In scholarly literature, whenever and wherever a claim relies upon data, the corresponding data should be cited. A data citation should include a persistent method for identification that is machine actionable, globally unique, and widely used by a community. Data citations should facilitate identification of, access to, and verification of the specific data that support a claim. Citations or citation metadata should include information about provenance and fixity sufficient to facilitate verifying that the specific timeslice, version, and/or granular portion of data retrieved subsequently is the same as was originally cited.
+#### Data Citations in NISO STS
+
+The STS citation models are adequate to record most current practice in citing data even though data sets, protein sequences, and spreadsheets (to name a few data examples) are not tagged as uniformly by the industry as are cited journals and books.
+Specific STS structures that can assist in preserving data source information in a citation include: <<element-data-title,`<data-title>`>> — The formal title or name of a cited data source (or a component of a cited data source) such as a dataset or protein structure. Since datasets can contain very complex relationships for citing data, both the <<element-source,`<source>`>> element and the <<element-data-title,`<data-title>`>> element may be needed within a single citation to describe different levels of the data source. The <<element-data-title,`<data-title>`>> is typically used as an equivalent of an article title (<<element-article-title,`<article-title>`>>). <<element-version,`<version>`>> — A full version statement, which may be only a number, for data or software that is cited or described. The content of this element may be a simple version number (such as “`<version>16</version>`” or “`<version>XII</version>`”). More complex version statements may contain a textual statement including dates that the dataset covers. Whether or not the content is more than a simple number, the <<attribute-designator,`@designator`>> attribute of this element can be used to hold the simple numerical or alphabetic version number, if there is such a number: `<version designator="16.2">16th version, second release</version>`.
+#### Describing how the Data Files were Used
+
+For the purposes of citing data sources, three different uses of the data associated with a standards document can be recognized:
+* *Generated Data:* Included or referenced external data generated 
+                     in the course of the study on which the standard or part of the standard is based.
+* *Analyzed Data:* Referenced data  analyzed in the course of the study for the standard, but not generated
+                     for the study. 
+                     This may include publicly available datasets.
+* *Non-analyzed Data:* Referenced data neither generated nor 
+                     analyzed during the study.
+The <<attribute-use-type,`@use-type`>> attribute (again on either <<element-mixed-citation,`<mixed-citation>`>> or <<element-element-citation,`<element-citation>`>>) may be set to explain _how_ the data has been used in the research that led to the article, for example, for distinguishing between: “`generated-data`”, “`analyzed-data`”, and “`non-analyzed-data`” (referenced data).

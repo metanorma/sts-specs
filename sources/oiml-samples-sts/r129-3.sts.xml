@@ -1,0 +1,6999 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 129-3</doc-identifier>
+      <std-title-group>
+        <title>Multi-dimensional measuring instruments&#x2009;&#x2014;&#x2009;Test report format</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2020-01-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2020 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <p>International Recommendations (OIML R), which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</p>
+      <p>International Documents (OIML D), which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</p>
+      <p>International Guides (OIML G), which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</p>
+      <p>International Basic Publications (OIML B), which define the operating rules of the various OIML structures and systems.</p>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from OIML Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of Vocabularies (OIML V) and periodically commissions legal metrology experts to write Expert Reports (OIML E). Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 129-3, Edition 2020 (E)&#x2009;&#x2014;&#x2009;was developed by Project Group 1 in Technical Subcommittee TC 7/SC 5 Dimensional Measuring Instruments. It was approved for final publication by the International Committee of Legal Metrology in 2020. It supersedes the previous edition dated 2000.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <list list-type="bullet" id="_1cabd05d-8c3a-ed0a-03c5-a4009d129e45">
+        <list-item>&#x2014;Bureau International de M&#xE9;trologie L&#xE9;gale</list-item>
+        <list-item>&#x2014;11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France</list-item>
+        <list-item>&#x2014;Telephone: 33 (0)1 48 78 12 82</list-item>
+        <list-item>&#x2014;Fax: 33 (0)1 42 82 17 27</list-item>
+        <list-item>&#x2014;E-mail: <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/></list-item>
+        <list-item>&#x2014;Internet: www.oiml.org</list-item>
+      </list>
+    </foreword>
+    <introduction>
+      <p>The &#x201C;Test report format&#x201D;, the subject of OIML R 129-3, aims at presenting, in a standardised format, the results of the various tests and examinations to which a type of a multi-dimensional measuring instrument (MDMI) shall be submitted with a view to its approval.</p>
+      <p>The &#x201C;Test report format&#x201D; is a record of the results of the tests carried out on the instrument. The forms have been produced based on the tests detailed in the performance test procedures (OIML R 129-2).</p>
+      <p>The &#x201C;Information concerning the test equipment used for type evaluation&#x201D; shall cover all test equipment which has been used in determining the test results given in a report. The information may be a short list containing essential data (name, type, reference number for purpose of traceability). For example:</p>
+      <list list-type="bullet" id="_2ed9c541-a586-2fd8-7300-90dfa2a9dae4">
+        <list-item>&#x2014;Verification standards (accuracy or accuracy class, and no.);</list-item>
+        <list-item>&#x2014;Simulator for testing of modules (name, type, traceability and no.);</list-item>
+        <list-item>&#x2014;Climatic test and static temperature chamber (name, type and no.);</list-item>
+        <list-item>&#x2014;Electrical tests, bursts (name of the instrument, type and no.);</list-item>
+        <list-item>&#x2014;Description of the procedure of field calibration for the electromagnetic susceptibility test.</list-item>
+      </list>
+      <p>All metrology services or laboratories evaluating types of multi-dimensional measuring instrument according to OIML R 129-1 and -2, or to national or regional regulations based on OIML R 129-1 and -2, are strongly advised to use this &#x201C;Test report format&#x201D;, directly or after translation into a language other than English or French. Its direct use in English or in French, or in both languages, is even more strongly recommended whenever test results may be transmitted by the country performing these tests to the approving authorities of another country, under bi- or multi-lateral cooperation agreements. In the framework of the OIML Certification System (OIML-CS), use of the &#x201C;Test report format&#x201D; is mandatory.</p>
+      <sec>
+        <title>Explanatory notes to the test report</title>
+        <p>Meaning of symbols used in this report:</p>
+        <p>The name(s) or symbol(s) of the unit(s) used to express test results shall be specified on each form.</p>
+        <p>The boxes under the headings of the report should always be filled in according to the following example:</p>
+        <table-wrap id="tab_1">
+          <caption>Table1</caption>
+          <table>
+            <tr>
+              <td>Temp.:</td>
+              <td>20.5</td>
+              <td>21.1</td>
+              <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            </tr>
+            <tr>
+              <td>Rel. h.:</td>
+              <td/>
+              <td/>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Date:</td>
+              <td>2014-10-15</td>
+              <td>2014-10-15</td>
+              <td>yyyy-mm-dd</td>
+            </tr>
+            <tr>
+              <td>Time:</td>
+              <td>16:00:05</td>
+              <td>16:30:05</td>
+              <td>hh:mm:ss</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>where Temp. = temperature</p>
+        <p>Rel. h. = relative humidity</p>
+        <p>&#x201C;Date&#x201D; in the test report refers to the date on which the test was performed.</p>
+      </sec>
+      <sec>
+        <title>Identification of the instrument</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Identification no.: <italic>_</italic></p>
+        <p>Software version: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Documentation from the manufacturer:</p>
+        <p>(Record as necessary to identify the equipment under test)</p>
+        <table-wrap id="tab_2">
+          <caption>Table2</caption>
+          <table>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>General information concerning the type</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Applicant: <italic>_</italic></p>
+        <p>Instrument category: <italic>_</italic></p>
+        <table-wrap id="tab_3">
+          <caption>Parameter limits</caption>
+          <table>
+            <tr>
+              <td>Temperature limits (&#xB0;C&#xB0;C&#xB0;C&#xB0;C)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Speed limitations (m/s)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Voltage (V)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Minimum spacing</td>
+              <td/>
+              <td>/</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_4">
+          <caption>Limitation</caption>
+          <table>
+            <tr>
+              <td>Object</td>
+              <td>Cuboidal</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Irregular</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Singulated</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Non-singulated, non-touching</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Touching</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Measurement dynamics</td>
+            </tr>
+            <tr>
+              <td>Static measurement only</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Fixed speed</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Variable speed</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Unidirectional</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Bidirectional</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Installation</td>
+              <td>Permanent</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Mobile</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Power supply</td>
+            </tr>
+            <tr>
+              <td>AC</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>AC-DC converter</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>DC</td>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Evaluation period: <italic>_</italic></p>
+        <p>Date of report: <italic>_</italic></p>
+        <p>Observer: <italic>_</italic></p>
+      </sec>
+      <sec>
+        <title>Information concerning the test equipment used for type evaluation</title>
+        <p>(Record as necessary to identify the test equipment)</p>
+      </sec>
+      <sec>
+        <title>Configuration for test</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>(Describe the configuration used for testing)</p>
+      </sec>
+      <sec>
+        <title>Adjustments or modifications</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>(Record any adjustments or modifications made during testing)</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <sec>
+      <title>Type evaluation tests</title>
+      <sec>
+        <title>Summary of type evaluation (A.1.1&#x2013;A.4.2)</title>
+        <p>Report no.: <italic>_</italic></p>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Make and model: <italic>_</italic></p>
+        <table-wrap id="tab_5">
+          <caption>Summary of type evaluation</caption>
+          <table>
+            <tr>
+              <td>2.2</td>
+              <td>Instrument warm-up time (A.1.1)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.3</td>
+              <td>Repeatability (A.1.2)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.4</td>
+              <td>Static temperatures (A.2.1)</td>
+            </tr>
+            <tr>
+              <td>2.4.1</td>
+              <td>Initial reference temperature = <italic>_</italic> &#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.4.2</td>
+              <td>High temperature = <italic>_</italic> &#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.4.3</td>
+              <td>Low temperature = <italic>_</italic> &#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.5</td>
+              <td>Damp heat</td>
+            </tr>
+            <tr>
+              <td>2.5.1</td>
+              <td>Steady state (non-condensing) (A.2.2)</td>
+            </tr>
+            <tr>
+              <td>2.5.1.1</td>
+              <td>Initial reference temperature and 50 % relative humidity</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.5.1.2</td>
+              <td>High temperature and 85 % relative humidity</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.5.1.3</td>
+              <td>End reference temperature and 50 % relative humidity</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.5.2</td>
+              <td>Cyclic (condensing) (A.3.6)</td>
+            </tr>
+            <tr>
+              <td>2.5.2.1</td>
+              <td>DH cyclic</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.6</td>
+              <td>AC mains voltage variation (A.2.3)</td>
+            </tr>
+            <tr>
+              <td>2.6.1</td>
+              <td>Nominal voltage</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.6.2</td>
+              <td>Nominal voltage +10 %</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.6.3</td>
+              <td>Nominal voltage &#x2212;15 %</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.7</td>
+              <td>Low voltage of internal battery (A.2.4)</td>
+            </tr>
+            <tr>
+              <td>2.7.1</td>
+              <td>Nominal voltage</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.7.2</td>
+              <td>Low voltage</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.7.3</td>
+              <td>90 % of minimum voltage</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.8</td>
+              <td>AC mains voltage dips, short interruptions and reductions (A.3.1)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.9</td>
+              <td>Electrical bursts test (A.3.2)</td>
+            </tr>
+            <tr>
+              <td>2.9.1</td>
+              <td>Power supply lines</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.9.2</td>
+              <td>Input/output control circuits and communication lines</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.10</td>
+              <td>Electrostatic discharge (A.3.3)</td>
+            </tr>
+            <tr>
+              <td>2.10.1</td>
+              <td>Direct application</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.10.2</td>
+              <td>Indirect application</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.11</td>
+              <td>Electrical surges (A.3.4)</td>
+            </tr>
+            <tr>
+              <td>2.11.1</td>
+              <td>Surges on AC mains power lines (A.3.4.1)</td>
+            </tr>
+            <tr>
+              <td>2.11.1.1</td>
+              <td>AC surge voltage at 0&#xB0;0&#xB0;0&#xB0;0&#xB0;</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.11.1.2</td>
+              <td>AC surge voltage at 90&#xB0;90&#xB0;90&#xB0;90&#xB0;</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.11.1.3</td>
+              <td>AC surge voltage at 180&#xB0;180&#xB0;180&#xB0;180&#xB0;</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.11.1.4</td>
+              <td>AC surge voltage at 270&#xB0;270&#xB0;270&#xB0;270&#xB0;</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.11.2</td>
+              <td>Surges on signal, data and control lines (A.3.4.2)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.12</td>
+              <td>Immunity to RF electromagnetic fields (A.3.5)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.12.1</td>
+              <td>Radiated RF electromagnetic fields (A.3.5.1)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.12.2</td>
+              <td>Conducted RF electromagnetic fields (A.3.5.2)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_6">
+          <caption>Summary of type evaluation (continued)</caption>
+          <table>
+            <tr>
+              <td>2.13</td>
+              <td>Ambient light (A.4.1)</td>
+            </tr>
+            <tr>
+              <td>2.13.1</td>
+              <td>200 lx to 500 lx (reference)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.13.2</td>
+              <td>100 lx</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.13.3</td>
+              <td>1000 lx to 1500 lx</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.13.4</td>
+              <td>Other intensity <italic>_</italic> lx</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.14</td>
+              <td>Acoustics (A.4.2)</td>
+            </tr>
+            <tr>
+              <td>2.14.1</td>
+              <td>Reference sound level (<italic>_</italic> dB)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.14.2</td>
+              <td>Sound level 100 dB</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.15</td>
+              <td>Shape of the object (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.16</td>
+              <td>Uniform surface colour test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.17</td>
+              <td>Non uniform surface colour test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.18</td>
+              <td>Contrast of colour with background colour test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.19</td>
+              <td>Surface reflectivity and absorption of sound test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.20</td>
+              <td>Surface reflectivity and absorption of colour test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.21</td>
+              <td>Uniformity of density test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.22</td>
+              <td>Transparency test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.23</td>
+              <td>Surface roughness test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.24</td>
+              <td>Protrusions on the surface test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.25</td>
+              <td>Orientation and position test (A.1.6)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.26</td>
+              <td>Speed of relative movement test (A.1.6)</td>
+            </tr>
+            <tr>
+              <td>2.26.1</td>
+              <td>Minimum speed</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.26.2</td>
+              <td>Maximum speed</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2.27</td>
+              <td>Examination of the construction of the instrument (R 129-1, 5.1.2)</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Instrument warm-up time (A.1.1)</title>
+        <p>Observer: <italic>_</italic></p>
+        <p>Type/application no.: <italic>_</italic></p>
+        <p>Instrument ID: <italic>_</italic></p>
+        <p>Scale interval (d): <italic>_</italic></p>
+        <p>Conversion factor (F): <italic>_</italic></p>
+        <table-wrap id="tab_7">
+          <caption>Table7</caption>
+          <table>
+            <tr>
+              <td>Temp.:</td>
+              <td/>
+              <td/>
+              <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            </tr>
+            <tr>
+              <td>Rel. h.:</td>
+              <td/>
+              <td/>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Date:</td>
+              <td/>
+              <td/>
+              <td>yyyy-mm-dd</td>
+            </tr>
+            <tr>
+              <td>Time:</td>
+              <td/>
+              <td/>
+              <td>hh:mm:ss</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_8">
+          <caption>Test object, close to minimum dimensions &#x2014; Test object ID: _</caption>
+          <table>
+            <tr>
+              <td>0 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>15 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>30 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_9">
+          <caption>Test object, close to maximum dimensions &#x2014; Test object ID: _</caption>
+          <table>
+            <tr>
+              <td>0 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>15 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>30 minutes</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Repeatability (A.1.2)</title>
+        <p>Observer: <italic>_</italic></p>
+        <p>Type/application no.: <italic>_</italic></p>
+        <p>Instrument ID: <italic>_</italic></p>
+        <p>Scale interval (d): <italic>_</italic></p>
+        <p>Conversion factor (F): <italic>_</italic></p>
+        <table-wrap id="tab_10">
+          <caption>Table10</caption>
+          <table>
+            <tr>
+              <td>Temp.:</td>
+              <td/>
+              <td/>
+              <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            </tr>
+            <tr>
+              <td>Rel. h.:</td>
+              <td/>
+              <td/>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Date:</td>
+              <td/>
+              <td/>
+              <td>yyyy-mm-dd</td>
+            </tr>
+            <tr>
+              <td>Time:</td>
+              <td/>
+              <td/>
+              <td>hh:mm:ss</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+        <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+        <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+        <table-wrap id="tab_11">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_12">
+          <caption>Table12</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_13">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+              <td>Initial zeroing (Ready condition)</td>
+              <td/>
+              <td>yes/no</td>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_14">
+          <caption>Table14</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_15">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_16">
+          <caption>Table16</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_17">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_18">
+          <caption>Table18</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_19">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_20">
+          <caption>Table20</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_21">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_22">
+          <caption>Table22</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Static temperatures (A.2.1)</title>
+        <sec>
+          <title>Initial reference temperature (A.2.1)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_23">
+            <caption>Table23</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_24">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_25">
+            <caption>Table25</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>High and low temperatures (A.2.1)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_26">
+            <caption>Table26</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_27">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_28">
+            <caption>High temperature</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_29">
+            <caption>Low temperature</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Reference temperature (A.2.1)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_30">
+            <caption>Table30</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_31">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_32">
+            <caption>Table32</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Damp heat</title>
+        <sec>
+          <title>Steady state (non-condensing) (A.2.2)</title>
+          <sec>
+            <title>Initial reference temperature and 50 % relative humidity</title>
+            <p>Observer: <italic>_</italic></p>
+            <p>Type/application no.: <italic>_</italic></p>
+            <p>Instrument ID: <italic>_</italic></p>
+            <p>Scale interval (d): <italic>_</italic></p>
+            <p>Conversion factor (F): <italic>_</italic></p>
+            <table-wrap id="tab_33">
+              <caption>Table33</caption>
+              <table>
+                <tr>
+                  <td>Temp.:</td>
+                  <td/>
+                  <td/>
+                  <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+                </tr>
+                <tr>
+                  <td>Rel. h.:</td>
+                  <td/>
+                  <td/>
+                  <td>%</td>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td/>
+                  <td/>
+                  <td>yyyy-mm-dd</td>
+                </tr>
+                <tr>
+                  <td>Time:</td>
+                  <td/>
+                  <td/>
+                  <td>hh:mm:ss</td>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+            <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+            <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+            <table-wrap id="tab_34">
+              <caption>Test object dimensions</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <table-wrap id="tab_35">
+              <caption>Table35</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Remarks: <italic>_</italic></p>
+            <p>RESULT: [ ] PASS [ ] FAIL</p>
+          </sec>
+          <sec>
+            <title>High temperature and 85 % relative humidity</title>
+            <p>Observer: <italic>_</italic></p>
+            <p>Type/application no.: <italic>_</italic></p>
+            <p>Instrument ID: <italic>_</italic></p>
+            <p>Scale interval (d): <italic>_</italic></p>
+            <p>Conversion factor (F): <italic>_</italic></p>
+            <table-wrap id="tab_36">
+              <caption>Table36</caption>
+              <table>
+                <tr>
+                  <td>Temp.:</td>
+                  <td/>
+                  <td/>
+                  <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+                </tr>
+                <tr>
+                  <td>Rel. h.:</td>
+                  <td/>
+                  <td/>
+                  <td>%</td>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td/>
+                  <td/>
+                  <td>yyyy-mm-dd</td>
+                </tr>
+                <tr>
+                  <td>Time:</td>
+                  <td/>
+                  <td/>
+                  <td>hh:mm:ss</td>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+            <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+            <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+            <table-wrap id="tab_37">
+              <caption>Test object dimensions</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <table-wrap id="tab_38">
+              <caption>Table38</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Remarks: <italic>_</italic></p>
+            <p>RESULT: [ ] PASS [ ] FAIL</p>
+          </sec>
+          <sec>
+            <title>End reference temperature and 50 % relative humidity</title>
+            <p>Observer: <italic>_</italic></p>
+            <p>Type/application no.: <italic>_</italic></p>
+            <p>Instrument ID: <italic>_</italic></p>
+            <p>Scale interval (d): <italic>_</italic></p>
+            <p>Conversion factor (F): <italic>_</italic></p>
+            <table-wrap id="tab_39">
+              <caption>Table39</caption>
+              <table>
+                <tr>
+                  <td>Temp.:</td>
+                  <td/>
+                  <td/>
+                  <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+                </tr>
+                <tr>
+                  <td>Rel. h.:</td>
+                  <td/>
+                  <td/>
+                  <td>%</td>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td/>
+                  <td/>
+                  <td>yyyy-mm-dd</td>
+                </tr>
+                <tr>
+                  <td>Time:</td>
+                  <td/>
+                  <td/>
+                  <td>hh:mm:ss</td>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+            <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+            <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+            <table-wrap id="tab_40">
+              <caption>Test object dimensions</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <table-wrap id="tab_41">
+              <caption>Table41</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Remarks: <italic>_</italic></p>
+            <p>RESULT: [ ] PASS [ ] FAIL</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Cyclic (condensing) (A.3.6)</title>
+          <sec>
+            <title>Damp heat cyclic</title>
+            <p>Observer: <italic>_</italic></p>
+            <p>Type/application no.: <italic>_</italic></p>
+            <p>Instrument ID: <italic>_</italic></p>
+            <p>Scale interval (d): <italic>_</italic></p>
+            <p>Conversion factor (F): <italic>_</italic></p>
+            <table-wrap id="tab_42">
+              <caption>Table42</caption>
+              <table>
+                <tr>
+                  <td>Temp.:</td>
+                  <td/>
+                  <td/>
+                  <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+                </tr>
+                <tr>
+                  <td>Rel. h.:</td>
+                  <td/>
+                  <td/>
+                  <td>%</td>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td/>
+                  <td/>
+                  <td>yyyy-mm-dd</td>
+                </tr>
+                <tr>
+                  <td>Time:</td>
+                  <td/>
+                  <td/>
+                  <td>hh:mm:ss</td>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+            <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+            <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+            <table-wrap id="tab_43">
+              <caption>Test object dimensions</caption>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <table-wrap id="tab_44">
+              <caption>Damp heat, cyclic (24 h &#xD7; 2 cycles)</caption>
+              <table>
+                <tr>
+                  <td>Test object ID</td>
+                  <td>Initial zeroing (yes/no)</td>
+                  <td>Indication</td>
+                  <td>SF*</td>
+                  <td>SF*</td>
+                  <td>Result</td>
+                  <td>Comment</td>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td>L</td>
+                  <td>W</td>
+                  <td>H</td>
+                  <td>Y/N</td>
+                  <td>Y/N</td>
+                  <td>Pass/Fail</td>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <table-wrap id="tab_45">
+              <caption>After exposure &#x2014; Reference temperature _ &#xB0;C&#xB0;C</caption>
+              <table>
+                <tr>
+                  <td>Test object ID</td>
+                  <td>Initial zeroing (yes/no)</td>
+                  <td>Indication</td>
+                  <td>SF*</td>
+                  <td>SF*</td>
+                  <td>Result</td>
+                  <td>Comment</td>
+                </tr>
+                <tr>
+                  <td/>
+                  <td/>
+                  <td>L</td>
+                  <td>W</td>
+                  <td>H</td>
+                  <td>Y/N</td>
+                  <td>Y/N</td>
+                  <td>Pass/Fail</td>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+            <p>Remarks: <italic>_</italic></p>
+            <p>RESULT: [ ] PASS [ ] FAIL</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>AC mains voltage variation (A.2.3)</title>
+        <sec>
+          <title>Nominal voltage (A.2.3)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_46">
+            <caption>Table46</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_47">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_48">
+            <caption>Table48</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Nominal voltage &#x2212;15 % (A.2.3)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Nominal voltage +10 % (A.2.3)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Low voltage of internal battery (A.2.4)</title>
+        <sec>
+          <title>Nominal voltage (A.2.4)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_49">
+            <caption>Table49</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_50">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_51">
+            <caption>Table51</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Low voltage (A.2.4)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>90 % of minimum voltage (A.2.4)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>AC mains voltage dips, short interruptions and reductions (A.3.1)</title>
+        <p>Observer: <italic>_</italic></p>
+        <p>Type/application no.: <italic>_</italic></p>
+        <p>Instrument ID: <italic>_</italic></p>
+        <p>Scale interval (d): <italic>_</italic></p>
+        <p>Conversion factor (F): <italic>_</italic></p>
+        <table-wrap id="tab_52">
+          <caption>Table52</caption>
+          <table>
+            <tr>
+              <td>Temp.:</td>
+              <td/>
+              <td/>
+              <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            </tr>
+            <tr>
+              <td>Rel. h.:</td>
+              <td/>
+              <td/>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Date:</td>
+              <td/>
+              <td/>
+              <td>yyyy-mm-dd</td>
+            </tr>
+            <tr>
+              <td>Time:</td>
+              <td/>
+              <td/>
+              <td>hh:mm:ss</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+        <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+        <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+        <table-wrap id="tab_53">
+          <caption>Test object dimensions</caption>
+          <table>
+            <tr>
+              <td/>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Test object ID</td>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_54">
+          <caption>Instrument</caption>
+          <table>
+            <tr>
+              <td>Reduction in amplitude to (as % marked nom voltage)</td>
+              <td>Duration* (in cycles)</td>
+              <td>Number of disturbances &#x2265; 10</td>
+              <td>Time between disturbances &#x2265; 10 s</td>
+              <td>Indication</td>
+              <td>SF*</td>
+              <td>SF*</td>
+              <td>Result</td>
+              <td>Comment</td>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td>L</td>
+              <td>W</td>
+              <td>H</td>
+              <td>Y/N</td>
+              <td>Y/N</td>
+              <td>Pass/Fail</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>units</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&#x2212;</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0.5</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>10/12</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>70</td>
+              <td>25/30</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>80</td>
+              <td>250/300</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>250/300</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_55">
+          <caption>Ancillary device</caption>
+          <table>
+            <tr>
+              <td>Reduction in amplitude to (as % marked nom voltage)</td>
+              <td>Duration* (in cycles)</td>
+              <td>Number of disturbances &#x2265; 10</td>
+              <td>Time between disturbances &#x2265; 10 s</td>
+              <td>Indication</td>
+              <td>SF*</td>
+              <td>SF*</td>
+              <td>Result</td>
+              <td>Comment</td>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td>L</td>
+              <td>W</td>
+              <td>H</td>
+              <td>Y/N</td>
+              <td>Y/N</td>
+              <td>Pass/Fail</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>units</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>&#x2212;</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>0.5</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>10/12</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>70</td>
+              <td>25/30</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>80</td>
+              <td>250/300</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>250/300</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Electrical bursts (A.3.2)</title>
+        <sec>
+          <title>Power supply lines (A.3.2)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_56">
+            <caption>Table56</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_57">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>Test object ID</td>
+                <td/>
+                <td>Length = <italic>_ unit = </italic>_</td>
+                <td/>
+                <td>Width = <italic>_ unit = </italic>_</td>
+                <td/>
+                <td>Height = <italic>_ unit = </italic>_</td>
+                <td/>
+                <td>Initial zeroing (Ready condition)</td>
+                <td/>
+                <td>yes/no</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_58">
+            <caption>Instrument</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Polarity</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>L&#x2013;ground</td>
+                <td>N&#x2013;ground</td>
+                <td>PE&#x2013;ground</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>X</td>
+                <td>pos/neg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>X</td>
+                <td>pos/neg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>X</td>
+                <td>pos/neg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_59">
+            <caption>Ancillary device</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Polarity</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>L&#x2013;ground</td>
+                <td>N&#x2013;ground</td>
+                <td>PE&#x2013;ground</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>X</td>
+                <td>pos/neg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>X</td>
+                <td>pos/neg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>X</td>
+                <td>pos/neg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Input/Output circuits and communication lines (A.3.2)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_60">
+            <caption>Table60</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_61">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>Test object ID</td>
+                <td/>
+                <td>Length = <italic>_ unit = </italic>_</td>
+                <td/>
+                <td>Width = <italic>_ unit = </italic>_</td>
+                <td/>
+                <td>Height = <italic>_ unit = </italic>_</td>
+                <td/>
+                <td>Initial zeroing (Ready condition)</td>
+                <td/>
+                <td>yes/no</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_62">
+            <caption>Instrument</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Polarity</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Cable/Interface</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>pos/neg</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>pos/neg</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>pos/neg</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_63">
+            <caption>Ancillary device</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Polarity</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Cable/Interface</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>pos/neg</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>pos/neg</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td>pos/neg</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks (explain or make a sketch indicating the location of clamp on the cable): <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Electrostatic discharge (A.3.3)</title>
+        <sec>
+          <title>Direct application (A.3.3)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_64">
+            <caption>Table64</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <p>Contact discharges: <italic>_</italic></p>
+          <p>Air discharges: <italic>_</italic></p>
+          <p>Paint penetration: <italic>_</italic></p>
+          <p>Polarity**: <italic>_</italic></p>
+          <table-wrap id="tab_65">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td/>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>Test object ID</td>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_66">
+            <caption>Instrument</caption>
+            <table>
+              <tr>
+                <td>Disturbance</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test voltage (kV)</td>
+                <td>No. of discharges</td>
+                <td>Rep. interval (s)</td>
+                <td>Indication</td>
+                <td>SF*</td>
+                <td>SF*</td>
+                <td>Result</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td>Y/N</td>
+                <td>Y/N</td>
+                <td>Pass/Fail</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>units</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>8*</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_67">
+            <caption>Ancillary device</caption>
+            <table>
+              <tr>
+                <td>Disturbance</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test voltage (kV)</td>
+                <td>No. of discharges</td>
+                <td>Rep. interval (s)</td>
+                <td>Indication</td>
+                <td>SF*</td>
+                <td>SF*</td>
+                <td>Result</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td>Y/N</td>
+                <td>Y/N</td>
+                <td>Pass/Fail</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>units</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>8*</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Indirect application (A.3.3)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_68">
+            <caption>Table68</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <p>Contact discharges: <italic>_</italic></p>
+          <p>Air discharges: <italic>_</italic></p>
+          <p>Paint penetration: <italic>_</italic></p>
+          <p>Polarity**: <italic>_</italic></p>
+          <table-wrap id="tab_69">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>Test object ID</td>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+                <td>Initial zeroing (Ready condition)</td>
+                <td/>
+                <td>yes/no</td>
+              </tr>
+              <tr>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_70">
+            <caption>Horizontal coupling plane</caption>
+            <table>
+              <tr>
+                <td>Disturbance</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test voltage (kV)</td>
+                <td>No. of discharges</td>
+                <td>Rep. interval (s)</td>
+                <td>Indication</td>
+                <td>SF*</td>
+                <td>SF*</td>
+                <td>Result</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td>Y/N</td>
+                <td>Y/N</td>
+                <td>Pass/Fail</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>units</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>8*</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_71">
+            <caption>Vertical coupling plane</caption>
+            <table>
+              <tr>
+                <td>Disturbance</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test voltage (kV)</td>
+                <td>No. of discharges</td>
+                <td>Rep. interval (s)</td>
+                <td>Indication</td>
+                <td>SF*</td>
+                <td>SF*</td>
+                <td>Result</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td>Y/N</td>
+                <td>Y/N</td>
+                <td>Pass/Fail</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>units</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Without disturbance</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>8*</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Electrostatic discharge additional sheet (A.3.3)</title>
+          <p>Specifications of test points of EUT, e.g. photos or sketches:</p>
+          <p>a) Direct application</p>
+          <p>Contact discharges: <italic>_</italic></p>
+          <p>Air discharges: <italic>_</italic></p>
+          <p>b) Indirect application</p>
+          <p>Contact discharges: <italic>_</italic></p>
+          <p>Air discharges: <italic>_</italic></p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Electrical surges (A.3.4)</title>
+        <sec>
+          <title>Surges on AC mains &#x2014; AC surge voltage at 0&#xB0;0&#xB0; (A.3.4.1)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_72">
+            <caption>Table72</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_73">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>Test object ID</td>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+                <td>Initial zeroing (Ready condition)</td>
+                <td/>
+                <td>yes/no</td>
+              </tr>
+              <tr>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_74">
+            <caption>Instrument</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Mode</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test conditions</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>No surge (reference condition)</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>L&#x2013;L</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L&#x2013;L</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>N&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>N&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>L&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L2&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_75">
+            <caption>Ancillary devices</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Mode</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test conditions</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>No surge (reference condition)</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>L&#x2013;L</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L&#x2013;L</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>N&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>N&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>L&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L2&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+        </sec>
+        <sec>
+          <title>AC surge voltage at 90&#xB0;90&#xB0; (A.3.4.1)</title>
+          <p>Remarks: <italic>_</italic></p>
+        </sec>
+        <sec>
+          <title>AC surge voltage at 180&#xB0;180&#xB0; (A.3.4.1)</title>
+          <p>Remarks: <italic>_</italic></p>
+        </sec>
+        <sec>
+          <title>AC surge voltage at 270&#xB0;270&#xB0; (A.3.4.1)</title>
+          <p>Remarks: <italic>_</italic></p>
+        </sec>
+        <sec>
+          <title>Surges on signal, data and control lines (A.3.4.2)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_76">
+            <caption>Table76</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_77">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>Test object ID</td>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+                <td>Initial zeroing (Ready condition)</td>
+                <td/>
+                <td>yes/no</td>
+              </tr>
+              <tr>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_78">
+            <caption>Instrument</caption>
+            <table>
+              <tr>
+                <td>Connection</td>
+                <td>Mode</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Test conditions</td>
+                <td/>
+                <td>Indication</td>
+                <td>SF* Y/N</td>
+                <td>SF* Y/N</td>
+                <td>Result Pass/Fail</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>No surge (reference condition)</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>L&#x2013;L</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>L&#x2013;L</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Positive</td>
+                <td/>
+                <td>N&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Negative</td>
+                <td/>
+                <td>N&#x2013;PE</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Immunity to RF electromagnetic fields (A.3.5)</title>
+        <sec>
+          <title>Radiated RF electromagnetic fields (A.3.5.1)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_79">
+            <caption>Table79</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <p>Rate of sweep: <italic>_</italic></p>
+          <table-wrap id="tab_80">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td/>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>Test object ID</td>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_81">
+            <caption>Table81</caption>
+            <table>
+              <tr>
+                <td>Disturbance</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Antenna</td>
+                <td>Frequency range</td>
+                <td>Antenna polarisation</td>
+                <td>Facing EUT</td>
+                <td>Indication</td>
+                <td>SF*</td>
+                <td>SF*</td>
+                <td>Result</td>
+                <td>Comment</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td>Y/N</td>
+                <td>Y/N</td>
+                <td>Pass/Fail</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Y/N</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>Without disturbance</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>Vertical</td>
+                <td>Front</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Right</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Left</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Rear</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>Without disturbance</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>Horizontal</td>
+                <td>Front</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Right</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Left</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>Rear</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Frequency range: 26 MHz to 2000 MHz</p>
+          <p>Field strength: 10 V/m</p>
+          <p>Modulation: 80 % AM, 1 kHz sine wave</p>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Conducted RF electromagnetic fields (A.3.5.2)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_82">
+            <caption>Table82</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <p>Rate of sweep: <italic>_</italic></p>
+          <table-wrap id="tab_83">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td/>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>Test object ID</td>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_84">
+            <caption>Table84</caption>
+            <table>
+              <tr>
+                <td>Disturbance</td>
+                <td>Results</td>
+              </tr>
+              <tr>
+                <td>Frequency MHz</td>
+                <td>Observed fault during exposure</td>
+                <td>Indication</td>
+                <td>SF*</td>
+                <td>SF*</td>
+                <td>Result</td>
+                <td>Comment</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td>L</td>
+                <td>W</td>
+                <td>H</td>
+                <td>Y/N</td>
+                <td>Y/N</td>
+                <td>Pass/Fail</td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td>Without disturbance</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Frequency range: 0.15 MHz to 80 MHz</p>
+          <p>Field strength: 10 V/m</p>
+          <p>Modulation: 80 % AM, 1 kHz sine wave</p>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Ambient light (A.4.1)</title>
+        <sec>
+          <title>Reference conditions 200 lx to 500 lx (A.4.1)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_85">
+            <caption>Table85</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_86">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_87">
+            <caption>Table87</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Ambient light 100 lx (A.4.1)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Ambient light 1000 lx to 1500 lx (A.4.1)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Ambient light, other lx (A.4.1)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Additional sheet (A.4.1)</title>
+        </sec>
+      </sec>
+      <sec>
+        <title>Acoustics (A.4.2)</title>
+        <sec>
+          <title>Reference sound level (dB) (A.4.2)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_88">
+            <caption>Table88</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_89">
+            <caption>Test object dimensions</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_90">
+            <caption>Table90</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>100 dB sound level (dB) (A.4.2)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Acoustic test additional sheet (A.4.2)</title>
+        </sec>
+      </sec>
+      <sec>
+        <title>Shape of the object (A.1.6)</title>
+        <p>Observer: <italic>_</italic></p>
+        <p>Type/application no.: <italic>_</italic></p>
+        <p>Instrument ID: <italic>_</italic></p>
+        <p>Scale interval (d): <italic>_</italic></p>
+        <p>Conversion factor (F): <italic>_</italic></p>
+        <table-wrap id="tab_91">
+          <caption>Table91</caption>
+          <table>
+            <tr>
+              <td>Temp.:</td>
+              <td/>
+              <td/>
+              <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            </tr>
+            <tr>
+              <td>Rel. h.:</td>
+              <td/>
+              <td/>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Date:</td>
+              <td/>
+              <td/>
+              <td>yyyy-mm-dd</td>
+            </tr>
+            <tr>
+              <td>Time:</td>
+              <td/>
+              <td/>
+              <td>hh:mm:ss</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+        <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+        <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_92">
+          <caption>Table92</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_93">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_94">
+          <caption>Table94</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_95">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_96">
+          <caption>Table96</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_97">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_98">
+          <caption>Table98</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_99">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_100">
+          <caption>Table100</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_101">
+          <caption>Test object ID: _</caption>
+          <table>
+            <tr>
+              <td/>
+              <td>Length = <italic>_</italic></td>
+              <td/>
+              <td>Width = <italic>_</italic></td>
+              <td/>
+              <td>Height = <italic>_</italic></td>
+              <td/>
+            </tr>
+            <tr>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td>unit =</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+        <table-wrap id="tab_102">
+          <caption>Table102</caption>
+          <table>
+            <tr>
+              <td>1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Uniform surface colour (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Non uniform surface colour (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Contrast of colour with background colour (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Surface reflectivity and absorption of sound (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Surface reflectivity and absorption of light (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Uniformity of density (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Transparency (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Surface roughness (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Protrusions on surface (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Orientation and position (A.1.6)</title>
+        <p>Remarks: <italic>_</italic></p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+      <sec>
+        <title>Speed of relative movement (A.1.6)</title>
+        <sec>
+          <title>Minimum speed (A.1.6)</title>
+          <p>Observer: <italic>_</italic></p>
+          <p>Type/application no.: <italic>_</italic></p>
+          <p>Instrument ID: <italic>_</italic></p>
+          <p>Scale interval (d): <italic>_</italic></p>
+          <p>Conversion factor (F): <italic>_</italic></p>
+          <table-wrap id="tab_103">
+            <caption>Table103</caption>
+            <table>
+              <tr>
+                <td>Temp.:</td>
+                <td/>
+                <td/>
+                <td>&#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+              </tr>
+              <tr>
+                <td>Rel. h.:</td>
+                <td/>
+                <td/>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td/>
+                <td/>
+                <td>yyyy-mm-dd</td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td/>
+                <td/>
+                <td>hh:mm:ss</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Ancillary device: [ ] Connected [ ] Not connected but connectable [ ] Not connected</p>
+          <p>Correct indication of ancillary device (yes/no): <italic>_</italic></p>
+          <p>Conveyor speed (m/min): [ ] Minimum [ ] Maximum [ ] Other <italic>_</italic></p>
+          <table-wrap id="tab_104">
+            <caption>Test object ID: _</caption>
+            <table>
+              <tr>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_105">
+            <caption>Table105</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_106">
+            <caption>Test object ID: _</caption>
+            <table>
+              <tr>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_107">
+            <caption>Table107</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_108">
+            <caption>Test object ID: _</caption>
+            <table>
+              <tr>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_109">
+            <caption>Table109</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_110">
+            <caption>Test object ID: _</caption>
+            <table>
+              <tr>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_111">
+            <caption>Table111</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_112">
+            <caption>Test object ID: _</caption>
+            <table>
+              <tr>
+                <td/>
+                <td>Length = <italic>_</italic></td>
+                <td/>
+                <td>Width = <italic>_</italic></td>
+                <td/>
+                <td>Height = <italic>_</italic></td>
+                <td/>
+              </tr>
+              <tr>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td>unit =</td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Initial zeroing (Ready condition): [ ] yes [ ] no</p>
+          <table-wrap id="tab_113">
+            <caption>Table113</caption>
+            <table>
+              <tr>
+                <td>1</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+        <sec>
+          <title>Maximum speed (A.1.6)</title>
+          <p>Remarks: <italic>_</italic></p>
+          <p>RESULT: [ ] PASS [ ] FAIL</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Examination of the construction of the instrument (R 129-1, 5.1.2)</title>
+        <p>Use this page to indicate any description or information pertaining to the instrument, additional to that already contained in this report and in the accompanying certificate of approval or OIML certificate.</p>
+        <p>This may include pictures of the complete instrument, a description of its main components and any remark which could be useful for initial or subsequent verifications of individual instruments built according to the pattern. It may also include references to the manufacturer&#x2019;s description.</p>
+        <p>RESULT: [ ] PASS [ ] FAIL</p>
+      </sec>
+    </sec>
+    <p>Multi-dimensional measuring instruments &#x2014; Part&#xA0;3:Test report format</p>
+  </body>
+</standard>

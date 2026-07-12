@@ -1,0 +1,65 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/object-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-object-id]
+=== `<object-id>` Object Identifier
+
+Unique identifier (such as a DOI or URI) for a component _within_ a document such as a standard or a journal article (for example, for a figure, table, or text box within a standard).
+
+#### Usage/Remarks
+These identifiers may be created by a standards organization, publisher, or archive, and there is no requirement that identifiers be unique.
+#### Design Note
+
+Particularly in citations, an <<element-object-id,`<object-id>`>> is used to identify parts of a document, for example, a particular section, a figure, a table, or even a specific citation (as an entity) in the document’s reference list. The <<element-pub-id,`<pub-id>`>> element may be used inside a citation to identify a cited publication.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-pub-id-type,`@pub-id-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-alternatives,`<alternatives>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-citation-alternatives,`<citation-alternatives>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-speech,`<speech>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  object-id    (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### Identifier for a graphic
+[source,xml]
+....
+...
+<fig id="F1">
+ <caption>
+  <title>Deaths among patients receiving day hospital care or 
+   alternative services.</title>
+  <p>Odds ratios of death by end of follow up were calculated by 
+   fixed effects model. Heterogeneity between trials is presented 
+   as &#x03C7;<sup>2</sup></p>
+ </caption>
+ <alt-text>Deaths in hospitals or with alternative services</alt-text>
+ <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fors2662.f1">
+  <object-id pub-id-type="pii">456472</object-id>
+ </graphic>
+</fig>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

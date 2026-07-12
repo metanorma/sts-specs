@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/language.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-language]
+=== `@language` Code Language
+
+Programming language in which this code is written, for example: “`javascript`”, for code written in “Javascript 3.0” (Note: The “3.0” can be recorded in the <<attribute-language-version,`@language-version`>> attribute.); or “`dtd`” for an XML DTD fragment.
+
+#### Usage/Remarks
+This attribute _does not_ record the name of a natural language, such as French. The attribute <<attribute-xml-lang,`@xml:lang`>> records natural languages.
+
+#### OPTIONAL on elements:  <<element-code,`<code>`>>, 
+                  <<element-inline-code,`<inline-code>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The lower case name of the programming or scripting language.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

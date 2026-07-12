@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML D 30:2020</doc-identifier>
+      <std-title-group>
+        <title>Guide for the application of ISO/IEC 17025 to the assessment of Testing Laboratories involved in legal metrology</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2020-01-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2020 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>D</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organisation whose primary aim is to harmonise the regulations and metrological controls applied by the national metrological services, or related organisations, of its Member States.</p>
+      <p>The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_4f820a64-f515-3c5e-cf17-f88f7689f579">
+        <list-item>&#x2014;<bold>International Recommendations (OIML R)</bold>, which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;<bold>International Documents (OIML D)</bold>, which are informative in nature and which are intended to harmonise and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;<bold>International Guides (OIML G)</bold>, which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</list-item>
+        <list-item>&#x2014;<bold>International Basic Publications (OIML B)</bold>, which define the operating rules of the various OIML structures and systems.</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Technical Committees or Subcommittees which comprise representatives from the Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of Vocabularies (OIML V) and periodically commissions legal metrology experts to write Expert Reports (OIML E). Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML D 30, Edition 2020 (E)&#x2009;&#x2014;&#x2009;was developed by Project Group 1 in the OIML Certification System (OIML-CS) Management Committee (OIML-CS/SC 7). It was approved for final publication by the International Committee of Legal Metrology (CIML) by direct CIML online approval in June 2020. It replaces the previous edition dated 2008.</p>
+      <p>OIML publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML publications may be obtained from the Organisation&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <label>2</label>
+      <title>Preamble</title>
+      <p>ISO/IEC 17025:2017 is an International Standard which sets out criteria for the competence of testing and calibration laboratories. The edition of ISO/IEC 17025 referred to in this Document is 2017.</p>
+      <p>This Document gives guidance and interpretations relating to the application of ISO/IEC 17025 to the assessment of any testing laboratories involved in legal metrology testing. These testing laboratories may be</p>
+      <list list-type="bullet" id="_7307e91d-cf89-6c60-a088-396609f65201">
+        <list-item>&#x2014;internal or third-party testing laboratories of a national issuing authority,</list-item>
+        <list-item>&#x2014;internal or third-party testing laboratories of an inspection body, for instance those responsible for initial verification, or</list-item>
+        <list-item>&#x2014;internal, third-party or Manufacturer Test Laboratories (MTLs) of an OIML Issuing Authority when implementing the OIML Certification System (OIML-CS).</list-item>
+      </list>
+      <p>It may be used in particular</p>
+      <list list-type="bullet" id="_6092ce1f-e879-fe6d-3425-aeb656043c61">
+        <list-item>&#x2014;by peer assessment or accreditation assessors when interpreting ISO/IEC 17025 for legal metrology applications in connection with the OIML-CS,</list-item>
+        <list-item>&#x2014;for the assessment of testing laboratories conducted by an accreditation body in the field of legal metrology (e.g. an ILAC full Member, signatory of the ILAC MRA), and</list-item>
+        <list-item>&#x2014;on a voluntary basis for the implementation of ISO/IEC 17025 by national issuing authorities or by OIML Issuing Authorities for assessing their third-party or manufacturer testing laboratories.</list-item>
+      </list>
+      <p>This Document has been developed in cooperation with the International Laboratory Accreditation Cooperation (ILAC), which is an Organisation in Liaison with the OIML. Consequently, this Document should be used for accreditation assessments and any appropriate evaluation of testing laboratories on the basis of the Memorandum of Understanding signed between ILAC, the IAF and the OIML in October 2018.</p>
+      <p>This Document does not include the text of ISO/IEC 17025. Numbers and titles of ISO/IEC 17025 clauses and subclauses are associated with the relevant OIML Guidance which is identified with the letter &#x201C;G&#x201D; (for Guidance) followed by the relevant subclause number of ISO/IEC 17025. A chronological number is also given (e.g. G.1.1-1) which signifies &#x201C;OIML Guidance number 1 to section 1.1 of ISO/IEC 17025&#x201D;. OIML Guidance to the introduction of ISO/IEC 17025 is identified by G.0-x.</p>
+    </sec>
+    <sec>
+      <label>3</label>
+      <title>Explanatory notes</title>
+      <sec>
+        <label>3</label>
+        <title>Note 1 (Designation and approval of Test Laboratories)</title>
+        <p>Under the OIML-CS, the relevant Test Laboratories are those that have been designated by an OIML Issuing Authority and approved by the OIML-CS Management Committee.</p>
+      </sec>
+      <sec>
+        <label>3</label>
+        <title>Note 2 (Applicability)</title>
+        <p>When used in connection with the OIML-CS, the guidance in this Document is applicable to any testing laboratory that has been approved to perform testing and examinations, including internal Test Laboratories of the OIML Issuing Authority, third-party Test Laboratories and Manufacturer Test Laboratories (MTLs).</p>
+        <p>In addition, the guidance in this Document is applicable to any testing laboratory that may wish to apply to be approved under the OIML-CS.</p>
+      </sec>
+      <sec>
+        <label>3</label>
+        <title>Note 3 (Issuing a partial test report)</title>
+        <p>Test reports may be partial test reports when several testing laboratories perform tests and examinations. In such a case, each testing laboratory issues a partial test report, which includes the results of the tests and examinations that it performs.</p>
+        <p>When tests and examinations are performed on the basis of an OIML Recommendation within the OIML-CS, the test report is drawn up according to the format specified in the relevant OIML Recommendation for the applicable tests and examinations that the Test Laboratory performs.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>4</label>
+      <title>Interpretation of Sections of ISO/IEC 17025:2017</title>
+      <p>
+        <bold>General requirements for the competence of testing and calibration laboratories</bold>
+      </p>
+      <sec>
+        <label>4</label>
+        <title>Introduction</title>
+        <non-normative-note>Note1 Note14.1,Note1<bold>G.0-1</bold> For the purpose of this Document, the relevant terms and definitions given in chapter 3 apply.</non-normative-note>
+        <non-normative-note>Note2 Note24.1,Note2<bold>G.0-2</bold> When used in connection with the OIML-CS, the tests and examinations to be considered are those required by the relevant OIML Recommendation. The acceptance of test results between countries is formalised through the Declarations signed by the OIML Issuing Authorities, Utilizers and Associates.</non-normative-note>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 1 Scope</title>
+        <non-normative-note>Note Note4.2,Note<bold>G.1-1</bold> This Document is applicable to all testing laboratories involved in legal metrology and in particular to those involved in type evaluation tests and examinations.</non-normative-note>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 2 Normative references</title>
+        <non-normative-note>Note Note4.3,Note<bold>G.2-1</bold> In addition:&#x2014;OIML&#xA0;V&#xA0;1, International vocabulary of terms in legal metrology (VIML) (bilingual French-English), 2013&#x2014;OIML&#xA0;V&#xA0;2-200, International Vocabulary of Metrology&#x2009;&#x2014;&#x2009;Basic and General Concepts and Associated Terms (VIM), 3rd Edition (Bilingual English/French), 2012&#x2014;OIML&#xA0;G&#xA0;1-100, Evaluation of measurement data&#x2009;&#x2014;&#x2009;Guide to the expression of uncertainty in measurement, 2008&#x2014;OIML&#xA0;G&#xA0;1-101, Evaluation of measurement data&#x2009;&#x2014;&#x2009;Supplement 1 to the &#x201C;Guide to the expression of uncertainty in measurement&#x201D; Propagation of distributions using a Monte Carlo method, 2008&#x2014;OIML&#xA0;G&#xA0;1-102, Evaluation of measurement data&#x2009;&#x2014;&#x2009;Supplement 2 to the &#x201C;Guide to the expression of uncertainty in measurement&#x201D; Extension to any number of output quantities, 2011&#x2014;OIML&#xA0;G&#xA0;1-104, Evaluation of measurement data&#x2009;&#x2014;&#x2009;An introduction to the &#x201C;Guide to the expression of uncertainty in measurement&#x201D; and related documents, 2009&#x2014;OIML&#xA0;G&#xA0;1-106, Evaluation of measurement data&#x2009;&#x2014;&#x2009;The role of measurement uncertainty in conformity assessment, 2012&#x2014;OIML&#xA0;B&#xA0;18, Framework for the OIML Certification System (OIML-CS), 2018&#x2014;OIML&#xA0;D&#xA0;14, Training and qualification of legal metrology personnel, 2004&#x2014;OIML&#xA0;D&#xA0;19, Pattern evaluation and pattern approval, 1988</non-normative-note>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 3 Terms and definitions</title>
+        <non-normative-note>Note1 Note14.4,Note1<bold>G.3-1</bold> For the purpose of this Document, the relevant definitions given in ISO/IEC 17000:2004, in the VIM, and in the VIML apply. General definitions related to quality are given in ISO 9000:2015. Where different definitions are given in ISO 9000:2015, the definitions in ISO/IEC 17000:2004, in the VIM, and in the VIML are preferred.</non-normative-note>
+        <non-normative-note>Note2 Note24.4,Note2<bold>G.3-2</bold> In addition:</non-normative-note>
+        <list list-type="order" id="_26835aef-e030-3f62-214d-d92c8375f73e">
+          <list-item>a)<bold>additional test report</bold>::report issued by a testing laboratory that includes the results of additional tests and examinations, additional to those in the OIML Recommendation, accepted in the scope of a DeclarationNote3 Note34.4,Note3Additional test reports are issued under the OIML-CS for the results of tests and examinations of additional national requirements.Note4 Note44.4,Note4In the event that several testing laboratories are involved in the additional tests and examinations, each testing laboratory issues an additional test report corresponding to the tests and examinations it performs.</list-item>
+          <list-item>b)<bold>Declaration (OIML B 18, 3.10)</bold>::Document that is signed by OIML Issuing Authorities, Utilizers and Associates accepting to abide by the rules of the OIML-CS. The scope of certification and/or acceptance of OIML type evaluation reports issued with an OIML Certificate under Scheme A or B are detailed in separate annexes which form part of the Declaration.</list-item>
+          <list-item>c)<bold>OIML Certificate (OIML B 18, 3.25)</bold>::Type Examination certificate, issued by an OIML Issuing Authority, attesting the conformity of a type of a measuring instrument or module with the relevant requirements of an OIML Recommendation at the time of testing and evaluation.</list-item>
+          <list-item>d)<bold>OIML Certification System (OIML-CS) (OIML B 18, 3.26)</bold>::system for issuing, registering and using OIML Certificates and associated OIML type evaluation reports for types of measuring instruments (including families of measuring instruments, modules or families of modules), based on the requirements in the relevant OIML Recommendation(s).</list-item>
+          <list-item>e)<bold>OIML Issuing Authority (OIML B 18, 3.27)</bold>::certification body from an OIML Member State issuing OIML Certificates and associated OIML type evaluation reports in accordance with Scheme A or Scheme B.</list-item>
+          <list-item>f)<bold>OIML test report (OIML B 18, 3.29)</bold>::report issued by a test laboratory that includes the results of the tests and examinations it carried out on the basis of the relevant OIML Recommendation during OIML type evaluation on identified sample(s) of a given type of measuring instrument or module.Note5 Note54.4,Note5Unless the OIML Recommendation states otherwise, several test reports may be issued if several test laboratories are involved in covering all of the tests and examinations specified in the relevant OIML Recommendation.</list-item>
+          <list-item>g)<bold>OIML type evaluation (OIML B 18, 3.30)</bold>::type evaluation conducted on the basis of the relevant OIML Recommendation(s).</list-item>
+          <list-item>h)<bold>OIML type evaluation report (OIML B 18, 3.31)</bold>::report issued by an OIML Issuing Authority participating in the OIML-CS that assesses the conformity of the type of a measuring instrument or module to the requirements in the relevant OIML Recommendation and, if applicable, to the additional national requirements specified in the Declaration.</list-item>
+          <list-item>i)<bold>Test Laboratory (OIML B 18, 3.38)</bold>::laboratory performing certain or all tests on a type of measuring instrument. A Test Laboratory is designated by an OIML Issuing Authority and accepted by the OIML-CS Management Committee.Note6 Note64.4,Note6A Test Laboratory may be an internal Test Laboratory of an OIML Issuing Authority, a third-party Test Laboratory or a Manufacturer&#x2019;s Test Laboratory (MTL).Note7 Note74.4,Note7The OIML Issuing Authority, and not the Test Laboratory, is responsible for issuing the OIML type evaluation report.Note8 Note84.4,Note8In the OIML-CS the term &#x201C;Test Laboratory&#x201D; is used instead of the term &#x201C;Testing Laboratory&#x201D;.</list-item>
+          <list-item>j)<bold>type (pattern) evaluation (VIML, 2.04)</bold>::conformity assessment procedure on one or more specimens of an identified type (pattern) of measuring instruments which results in an evaluation report and / or an evaluation certificate.Note9 Note94.4,Note9&#x201D;Pattern&#x201D; is used in legal metrology with the same meaning as &#x201C;type&#x201D;.Note10 Note104.4,Note10For the purposes of the OIML-CS, &#x201C;evaluation report&#x201D; should be read as &#x201C;OIML type evaluation report&#x201D;.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 4 General requirements</title>
+        <sec>
+          <label>4</label>
+          <title>4.1 Impartiality</title>
+          <p>No OIML Guidance (4.1.1 to 4.1.4).</p>
+          <sec>
+            <label>4</label>
+            <title>4.1.5</title>
+            <non-normative-note>Note Note4.5.1.1,Note<bold>G.4.1.5-1</bold> For the purposes of the OIML-CS, when a risk to impartiality is identified regarding any process that may influence an OIML Certificate, the OIML Issuing Authority shall be notified.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>4.2 Confidentiality</title>
+          <p>No OIML Guidance (4.2.1 to 4.2.4).</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 5 Structural requirements</title>
+        <p>No OIML Guidance (5.1 to 5.4).</p>
+        <sec>
+          <label>4</label>
+          <title>5.5</title>
+          <non-normative-note>Note Note4.6.1,Note<bold>G.5.5-1</bold> In the event that the testing laboratory provides consultancy services for the design of measuring instruments, personnel responsible for testing shall not be under the responsibility of managerial personnel in charge of giving such advice.</non-normative-note>
+          <p>If the personnel are in charge of both tests and of advising on the design of measuring instruments, they shall not take part in the tests of those measuring instruments for which they provided advice.</p>
+          <p>No OIML Guidance (5.6 to 5.7).</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 6 Resource requirements</title>
+        <sec>
+          <label>4</label>
+          <title>6.1 General</title>
+          <p>No OIML Guidance.</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>6.2 Personnel</title>
+          <p>No OIML Guidance (6.2.1).</p>
+          <sec>
+            <label>4</label>
+            <title>6.2.2</title>
+            <non-normative-note>Note Note4.7.2.1,Note<bold>G.6.2.2-1</bold> Technical knowledge, skills and experience of personnel could include participation in international work in the field of legal metrology (e.g. development of OIML publications). This may include participating in national committees supporting the development of OIML publications.</non-normative-note>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>6.2.3</title>
+            <non-normative-note>Note1 Note14.7.2.2,Note1<bold>G.6.2.3-1</bold> The personnel in charge of type evaluation testing and examinations shall be aware of the following:&#x2014;relevant OIML publications;&#x2014;these guidelines;&#x2014;applicable OIML-CS Procedural Documents (only for activities associated with the OIML-CS).</non-normative-note>
+            <non-normative-note>Note2 Note24.7.2.2,Note2<bold>G.6.2.3-2</bold> OIML publication D 14 gives guidelines for the training of legal metrology personnel.</non-normative-note>
+            <p>No OIML Guidance (6.2.4).</p>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>6.2.5</title>
+            <non-normative-note>Note Note4.7.2.3,Note<bold>G.6.2.5-1</bold> This Guidance is related to 6.2.5 e). Competence of the personnel responsible for tests and examinations shall be evaluated and validated by the technical management of the testing laboratory.</non-normative-note>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>6.2.6</title>
+            <non-normative-note>Note1 Note14.7.2.4,Note1<bold>G.6.2.6-1</bold> Documented information shall be available, indicating for each category of measuring instrument the&#x2014;personnel authorised to carry out tests and/or examinations,&#x2014;personnel authorised to give an opinion on the statement of compliance/noncompliance of the results with requirements,&#x2014;personnel responsible for training,&#x2014;managerial personnel responsible for validating technical work.</non-normative-note>
+            <non-normative-note>Note2 Note24.7.2.4,Note2<bold>G.6.2.6-2</bold> Personnel in the process of being qualified shall only be in charge of simple or well described activities. They can participate in, but not be responsible for, testing.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>6.3 Facilities and environmental conditions</title>
+          <p>No OIML Guidance (6.3.1 to 6.3.2).</p>
+          <sec>
+            <label>4</label>
+            <title>6.3.3</title>
+            <non-normative-note>Note Note4.7.3.1,Note<bold>G.6.3.3-1</bold> In particular, information related to rain, wind, etc. shall be recorded in the case of tests performed outdoors.</non-normative-note>
+            <p>No OIML Guidance (6.3.4).</p>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>6.3.5</title>
+            <non-normative-note>Note Note4.7.3.2,Note<bold>G.6.3.5-1</bold> This requirement also applies when the testing laboratory performs tests at the customer&#x2019;s (manufacturer&#x2019;s), or other, facilities.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>6.4 Equipment</title>
+          <p>No OIML Guidance (6.4.1).</p>
+          <sec>
+            <label>4</label>
+            <title>6.4.2</title>
+            <non-normative-note>Note1 Note14.7.4.1,Note1<bold>G.6.4.2-1</bold> This requirement also applies when the testing laboratory uses the customer&#x2019;s (manufacturer&#x2019;s) equipment.</non-normative-note>
+            <p>No OIML Guidance (6.4.3 to 6.4.4).Note2 Note24.7.4.1,Note2<bold>G.6.4.5-1</bold> See 7.6.3.Note3 Note34.7.4.1,Note3<bold>G.6.4.5-2</bold> If applicable, standards and test equipment shall be used in the same environmental conditions as those for their calibration. Otherwise, appropriate corrections or new uncertainty calculations shall be performed. In the event that this is not possible, test results shall not be valid. The policy related to this matter shall be documented.</p>
+            <p>No OIML Guidance (6.4.6 to 6.4.13).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>6.5 Metrological traceability</title>
+          <p>No OIML Guidance (6.5.1).Note1 Note14.7.5,Note1<bold>G.6.5.2-1</bold> Any external calibration shall be performed by an accredited calibration laboratory or by a national metrology institute. When used in connection with the OIML-CS, in the case of an accredited calibration laboratory, the respective accreditation body shall be a signatory to the ILAC Mutual Recognition Arrangement or to a regional arrangement recognised by ILAC.Note2 Note24.7.5,Note2<bold>G.6.5.2-2</bold> In the event that the acceptance criteria are either stability, or based on a fault determination, traceability may not be necessary for all the quantities concerned. In such cases, repeatability of the test equipment is much more important than the accuracy of the indicated value, since the requirement is based on differences in errors. To this end, a calibration certificate from an accredited laboratory or from a national metrology institute may not be necessary.Note3 Note34.7.5,Note3<bold>G.6.5.2-3</bold> In the event that the uncertainty calculation demonstrates that the contribution of some components is not significant, an external calibration by an accredited laboratory or by a national metrology institute may not be required.</p>
+          <p>No OIML Guidance (6.5.3).</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>6.6 Externally provided products and services</title>
+          <sec>
+            <label>4</label>
+            <title>6.6.1</title>
+            <non-normative-note>Note1 Note14.7.6.1,Note1<bold>G.6.6.1-1</bold> Under the OIML-CS, a testing laboratory is not authorised to use externally provided testing services without the prior approval of the OIML Issuing Authority.</non-normative-note>
+            <non-normative-note>Note2 Note24.7.6.1,Note2<bold>G.6.6.2-1</bold> Not applicable (see 6.6.1).</non-normative-note>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>6.6.3</title>
+            <non-normative-note>Note Note4.7.6.2,Note<bold>G.6.6.3-1</bold> Not applicable (see 6.6.1).</non-normative-note>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 7 Process requirements</title>
+        <sec>
+          <label>4</label>
+          <title>7.1 Review of requests, tenders and contracts</title>
+          <sec>
+            <label>4</label>
+            <title>7.1.1</title>
+            <non-normative-note>Note1 Note14.8.1.1,Note1<bold>G.7.1.1-1</bold> Where a contract between a testing laboratory and the manufacturer is necessary, the OIML Issuing Authority should review and endorse the contract with respect to the proposed testing to ensure it is relevant and supports the type evaluation of the instrument. It is recommended that testing not commence until the OIML Issuing Authority has endorsed the proposed testing specified in the contract.</non-normative-note>
+            <non-normative-note>Note2 Note24.8.1.1,Note2<bold>G.7.1.1-2</bold> This Guidance is related to 7.1.1 a). In the case of OIML type evaluation, the testing and examination procedures defined in the relevant OIML Recommendation shall be used and understood. When used in connection with the OIML-CS, any additional national requirements shall be understood where they are applied.</non-normative-note>
+            <non-normative-note>Note3 Note34.8.1.1,Note3<bold>G.7.1.1-3</bold> This Guidance is related to 7.1.1 b). This requirement also applies if any test is performed by the testing laboratory which uses the manufacturer&#x2019;s test facilities.</non-normative-note>
+            <non-normative-note>Note4 Note44.8.1.1,Note4<bold>G.7.1.1-4</bold> This Guidance is related to 7.1.1 d). In the case of OIML type evaluation, the requirements to be met are those defined in the relevant OIML Recommendation and, when used in connection with the OIML-CS, those defined in the additional national requirements according to the scope of the Declaration.</non-normative-note>
+            <p>No OIML Guidance (7.1.2).</p>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.1.3</title>
+            <non-normative-note>Note Note4.8.1.2,Note<bold>G.7.1.3-1</bold> Not applicable (see 7.8.3.1).</non-normative-note>
+            <p>No OIML Guidance (7.1.4).</p>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.1.5</title>
+            <non-normative-note>Note Note4.8.1.3,Note<bold>G.7.1.5-1</bold> Any deviation from the contract shall be submitted to the OIML Issuing Authority for endorsement.</non-normative-note>
+            <p>No OIML Guidance (7.1.6 to 7.1.8).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.2 Selection, verification and validation of methods</title>
+          <sec>
+            <label>4</label>
+            <title>7.2.1 Selection and verification of methods</title>
+            <p>No OIML Guidance (7.2.1.1 to 7.2.1.2).Note Note4.8.2.1,Note<bold>G.7.2.1.3-1</bold> In the case of OIML type evaluation, the test and examination procedures shall conform to those defined in the applicable OIML Recommendation and, if applicable, to the additional national requirements procedures specified by Utilizers and Associates in their Declarations.</p>
+            <sec>
+              <label>4</label>
+              <title>7.2.1.4</title>
+              <non-normative-note>Note Note4.8.2.1.1,Note<bold>G.7.2.1.4-1</bold> See 7.2.1.3.</non-normative-note>
+              <p>No OIML Guidance (7.2.1.5).</p>
+            </sec>
+            <sec>
+              <label>4</label>
+              <title>7.2.1.6</title>
+              <non-normative-note>Note1 Note14.8.2.1.2,Note1<bold>G.7.2.1.6-1</bold> Not applicable (see 7.2.1.3).</non-normative-note>
+              <non-normative-note>Note2 Note24.8.2.1.2,Note2<bold>G.7.2.1.7-1</bold> Not applicable (see 7.2.1.3).</non-normative-note>
+            </sec>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.2.2 Validation of methods</title>
+            <p>No OIML Guidance (7.2.2.1).</p>
+            <sec>
+              <label>4</label>
+              <title>7.2.2.2</title>
+              <non-normative-note>Note Note4.8.2.2.1,Note<bold>G.7.2.2.2-1</bold> Not applicable (see 7.2.1.3 and 7.2.2.1).</non-normative-note>
+            </sec>
+            <sec>
+              <label>4</label>
+              <title>7.2.2.3</title>
+              <non-normative-note>Note Note4.8.2.2.2,Note<bold>G.7.2.2.3-1</bold> Not applicable (see 7.2.1.3 and 7.2.2.1).</non-normative-note>
+            </sec>
+            <sec>
+              <label>4</label>
+              <title>7.2.2.4</title>
+              <non-normative-note>Note Note4.8.2.2.3,Note<bold>G.7.2.2.4-1</bold> Not applicable (see 7.2.1.3 and 7.2.2.1).</non-normative-note>
+            </sec>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.3 Sampling</title>
+          <sec>
+            <label>4</label>
+            <title>7.3.1</title>
+            <non-normative-note>Note1 Note14.8.3.1,Note1<bold>G.7.3.1-1</bold> In general there is no sampling in the sense of ISO/IEC 17025 in the type evaluation process in legal metrology. Nevertheless, OIML Recommendations may require a selection of samples amongst a family of measuring instruments. Such a selection is done under the responsibility of the OIML Issuing Authority.</non-normative-note>
+            <non-normative-note>Note2 Note24.8.3.1,Note2<bold>G.7.3.1-2</bold> If sampling is requested for legal metrological control, then this is under the responsibility of the OIML Issuing Authority.</non-normative-note>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.3.2</title>
+            <non-normative-note>Note1 Note14.8.3.2,Note1<bold>G.7.3.2-1</bold> Not applicable (see 7.3.1).</non-normative-note>
+            <non-normative-note>Note2 Note24.8.3.2,Note2<bold>G.7.3.3-1</bold> Not applicable (see 7.3.1).</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.4 Handling of test or calibration items</title>
+          <p>No OIML Guidance (7.4.1 to 7.4.2).Note Note4.8.4,Note<bold>G.7.4.3-1</bold> The procedures of the testing laboratory shall indicate that the OIML Issuing Authority is consulted in such a case.</p>
+          <sec>
+            <label>4</label>
+            <title>7.4.4</title>
+            <non-normative-note>Note Note4.8.4.1,Note<bold>G.7.4.4-1</bold> Provisions for the transportation, conditioning, handling and installation for testing shall be determined with the agreement of the OIML Issuing Authority.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.5 Technical records</title>
+          <p>No OIML Guidance (7.5.1 to 7.5.2).</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.6 Evaluation of measurement uncertainty</title>
+          <p>No OIML Guidance (7.6.1).</p>
+          <sec>
+            <label>4</label>
+            <title>7.6.2</title>
+            <non-normative-note>Note Note4.8.6.1,Note<bold>G.7.6.2-1</bold> If the relevant OIML Recommendation does not specify the method to evaluate measurement uncertainty, the laboratory should refer to the applicable international standards (such as ISO and IEC) or other internationally established methods and practices, e.g. Annex C of OIML G 19:2017 The role of measurement uncertainty in conformity assessment decisions in legal metrology.</non-normative-note>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.6.3</title>
+            <non-normative-note>Note1 Note14.8.6.2,Note1<bold>G.7.6.3-1</bold> Testing laboratories shall include in these procedures the confirmation of the acceptable uncertainties of measurement with the requirements of the relevant OIML Recommendation.</non-normative-note>
+            <non-normative-note>Note2 Note24.8.6.2,Note2<bold>G.7.6.3-2</bold> If the testing laboratory is accredited by a recognised accreditation body, the adequacy of the uncertainty calculations is deemed to be demonstrated if the scope of the accreditation includes type approval testing according to the appropriate requirements. This implies that the laboratory is capable of performing uncertainty calculations and ensuring the appropriate ratio of uncertainty to maximum permissible error is met.</non-normative-note>
+            <non-normative-note>Note3 Note34.8.6.2,Note3<bold>G.7.6.3-3</bold> See 7.6.2-1.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.7 Ensuring the validity of results</title>
+          <p>No OIML Guidance (7.7.1).Note Note4.8.7,Note<bold>G.7.7.2-1</bold> This may include participation in inter-laboratory comparisons organised by the BIML.</p>
+          <p>No OIML Guidance (7.7.3).</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.8 Reporting of results</title>
+          <sec>
+            <label>4</label>
+            <title>7.8.1 General</title>
+            <p>No OIML Guidance (7.8.1.1).</p>
+            <sec>
+              <label>4</label>
+              <title>7.8.1.2</title>
+              <non-normative-note>Note1 Note14.8.8.1.1,Note1<bold>G.7.8.1.2-1</bold> Each testing laboratory issues a partial test report and/or an additional test report corresponding to the tests and examinations it performed.</non-normative-note>
+              <p>Where applicable, the relevant parts of the test report format given in the applicable OIML Recommendation shall be used by each testing laboratory for issuing the test report.Note2 Note24.8.8.1.1,Note2<bold>G.7.8.1.2-2</bold> The test report (including partial test reports and additional test reports) shall indicate&#x2014;whether the tests carried out were split between two or more samples,&#x2014;whether adjustments and/or modifications were performed during tests, and&#x2014;the reason why some tests were not performed, in particular in the case of a compatible and interrelated type approval process.Note3 Note34.8.8.1.1,Note3<bold>G.7.8.1.2-3</bold> When used in connection with the OIML-CS, the test report format specified in the Utilizer or Associate Declaration shall be used to issue the additional test report(s).</p>
+              <p>Not applicable (7.8.1.3).</p>
+            </sec>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.2 Common requirements for reports (test, calibration or sampling)</title>
+            <sec>
+              <label>4</label>
+              <title>7.8.2.1</title>
+              <non-normative-note>Note1 Note14.8.8.2.1,Note1<bold>G.7.8.2.1-1</bold> This Guidance is related to 7.8.2.1 g). The description shall include where tests were split between several samples.</non-normative-note>
+              <non-normative-note>Note2 Note24.8.8.2.1,Note2<bold>G.7.8.2.1-2</bold> Test reports issued under the OIML-CS shall not bear the OIML or the OIML-CS logo.</non-normative-note>
+              <p>No OIML Guidance (7.8.2.2).</p>
+            </sec>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.3 Specific requirements for test reports</title>
+            <sec>
+              <label>4</label>
+              <title>7.8.3.1</title>
+              <non-normative-note>Note1 Note14.8.8.3.1,Note1<bold>G.7.8.3.1-1</bold> This Guidance is related to 7.8.3.1 b). See G.7.8.6.1-1.</non-normative-note>
+              <non-normative-note>Note2 Note24.8.8.3.1,Note2<bold>G.7.8.3.1-2</bold> This Guidance is related to 7.8.3.1 d). Opinions and interpretations related to the conformance of the instrument with the relevant OIML Recommendation are not allowed in OIML test reports. The OIML Issuing Authority is solely responsible for drawing conclusions on the conformance of the instrument with the relevant requirements (e.g. OIML Recommendation).</non-normative-note>
+            </sec>
+            <sec>
+              <label>4</label>
+              <title>7.8.3.2</title>
+              <non-normative-note>Note Note4.8.8.3.2,Note<bold>G.7.8.3.2-1</bold> Under the OIML-CS the OIML Issuing Authority is responsible for providing or endorsing the sample(s).</non-normative-note>
+            </sec>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.4 Specific requirements for calibration certificates</title>
+            <p>No OIML Guidance (7.8.4.1 to 7.8.4.3).Note1 Note14.8.8.4,Note1<bold>G.7.8.4.1-1</bold> Not applicable.Note2 Note24.8.8.4,Note2<bold>G.7.8.4.2-1</bold> Not applicable.Note3 Note34.8.8.4,Note3<bold>G.7.8.4.3-1</bold> Not applicable.</p>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.5 Reporting sampling&#x2009;&#x2014;&#x2009;specific requirements</title>
+            <non-normative-note>Note Note4.8.8.5,Note<bold>G.7.8.5-1</bold> Not applicable.</non-normative-note>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.6 Reporting statements of conformity</title>
+            <sec>
+              <label>4</label>
+              <title>7.8.6.1</title>
+              <non-normative-note>Note1 Note14.8.8.6.1,Note1<bold>G.7.8.6.1-1</bold> A statement of conformity (e.g. pass/fail) for an individual test shall be made in accordance with the decision rule specified for that test in the relevant OIML Recommendation.</non-normative-note>
+              <non-normative-note>Note2 Note24.8.8.6.1,Note2OIML G 1-106:2012 and G 19:2017 provide general guidance for considering decision rules, taking into account risks due to measurement uncertainties.</non-normative-note>
+            </sec>
+            <sec>
+              <label>4</label>
+              <title>7.8.6.2</title>
+              <non-normative-note>Note Note4.8.8.6.2,Note<bold>G.7.8.6.2-1</bold> A statement of conformity shall be reported in accordance with the test report format of the relevant OIML Recommendation.</non-normative-note>
+            </sec>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.7 Reporting opinions and interpretations</title>
+            <sec>
+              <label>4</label>
+              <title>7.8.7.1</title>
+              <non-normative-note>Note1 Note14.8.8.7.1,Note1<bold>G.7.8.7.1-1</bold> See 7.8.3.1-2.</non-normative-note>
+              <non-normative-note>Note2 Note24.8.8.7.1,Note2<bold>G.7.8.7.2-1</bold> See 7.8.3.1-2.</non-normative-note>
+              <non-normative-note>Note3 Note34.8.8.7.1,Note3<bold>G.7.8.7.3-1</bold> See 7.8.7.1-2.</non-normative-note>
+            </sec>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>7.8.8 Amendments to reports</title>
+            <p>No OIML Guidance (7.8.8.1 to 7.8.8.3).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.9 Complaints</title>
+          <p>No OIML Guidance (7.9.1 to 7.9.4).Note Note4.8.9,Note<bold>G.7.9.5-1</bold> Where the testing laboratory receives a complaint relating to technical activities under the OIML-CS, the OIML Issuing Authority shall be informed of the complaint. The provisions of ISO/IEC 17025:2017, 4.2.1 shall be observed.</p>
+          <p>No OIML Guidance (7.9.6).</p>
+          <sec>
+            <label>4</label>
+            <title>7.9.7</title>
+            <non-normative-note>Note Note4.8.9.1,Note<bold>G.7.9.7-1</bold> For a complaint relating to technical activities under the OIML-CS, the testing laboratory shall notify the OIML Issuing Authority of the end of the complaint handling. The provisions of ISO/IEC 17025:2017, 4.2.1 shall be observed.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.10 Nonconforming work</title>
+          <sec>
+            <label>4</label>
+            <title>7.10.1</title>
+            <non-normative-note>Note Note4.8.10.1,Note<bold>G.7.10.1-1</bold> For a decision to be taken, the OIML Issuing Authority shall be informed of any nonconformance of test and examination results with the applicable requirements and of any non-conformance in the implementation of test and examination procedures.</non-normative-note>
+            <p>No OIML Guidance (7.10.2 to 7.10.3).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>7.11 Control of data and information management</title>
+          <p>No OIML Guidance (7.11.1 to 7.11.6).</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>Clause 8 Management system requirements</title>
+        <sec>
+          <label>4</label>
+          <title>8.1 Options</title>
+          <p>No OIML Guidance (8.1.1 to 8.1.2).</p>
+          <sec>
+            <label>4</label>
+            <title>8.1.3 Option B</title>
+            <non-normative-note>Note1 Note14.9.1.1,Note1<bold>G.8.1.3-1</bold> If the testing laboratory adopts Option B, the OIML Guidance given below for Option A is relevant and applicable.</non-normative-note>
+            <non-normative-note>Note2 Note24.9.1.1,Note2<bold>G.8.1.3-2</bold> Where Option B has been adopted, the testing laboratory should submit evidence, such as a copy of the ISO 9001 certificate, to demonstrate that it fulfils the requirements of ISO 9001 in support of an application that it may make to be an approved testing laboratory under the OIML-CS. The evidence should also demonstrate that the scope of the ISO 9001 certification covers all relevant activities of the testing laboratory.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.2 Management system documentation (Option A)</title>
+          <p>No OIML Guidance (8.2.1 to 8.2.3).</p>
+          <sec>
+            <label>4</label>
+            <title>8.2.4</title>
+            <non-normative-note>Note1 Note14.9.2.1,Note1<bold>G.8.2.4-1</bold> Processes and systems include in particular&#x2014;procedures for identification, storage of equipment submitted to testing and examination and of associated documentation,&#x2014;description of the test equipment and facilities, procedures for their maintenance and traceability,&#x2014;procedures for defining and planning tests and examinations,&#x2014;test procedures, and&#x2014;criteria and procedures for dealing with nonconformities of products submitted to testing and examination, including procedures for any exception to the rule defined.</non-normative-note>
+            <non-normative-note>Note2 Note24.9.2.1,Note2<bold>G.8.2.4-2</bold> Processes and procedures shall conform to the requirements of the appropriate regulations, OIML publications and standards.</non-normative-note>
+            <p>No OIML Guidance (8.2.5).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.3 Control of management system documents (Option A)</title>
+          <sec>
+            <label>4</label>
+            <title>8.3.1</title>
+            <non-normative-note>Note Note4.9.3.1,Note<bold>G.8.3.1-1</bold> The testing laboratory shall maintain updated documentation on&#x2014;the legal and contractual requirements applicable to its activity as a testing laboratory for an OIML Issuing Authority,&#x2014;the requirements applicable to the measuring instruments by reference to which the testing and examination is carried out (e.g. OIML Recommendation R xxx, national regulation no. yyy),&#x2014;any relevant general or technical standard pertaining to its testing activity, and&#x2014;the documentation on procedures mentioned in 8.2.4.</non-normative-note>
+            <p>No OIML Guidance (8.3.2).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.4 Control of records (Option A)</title>
+          <p>No OIML Guidance (8.4.1).</p>
+          <sec>
+            <label>4</label>
+            <title>8.4.2</title>
+            <non-normative-note>Note Note4.9.4.1,Note<bold>G.8.4.2-1</bold> Records, including original observations, data and calculations related to an OIML test report shall be kept available for as long as the OIML certificate remains registered.</non-normative-note>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.5 Actions to address risks and opportunities (Option A)</title>
+          <p>No OIML Guidance (8.5.1 to 8.5.3).</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.6 Improvement (Option A)</title>
+          <p>No OIML Guidance (8.6.1 to 8.6.2).</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.7 Corrective actions (Option A)</title>
+          <sec>
+            <label>4</label>
+            <title>8.7.1</title>
+            <non-normative-note>Note1 Note14.9.7.1,Note1<bold>G.8.7.1-1</bold> This applies to nonconformities in the operation of the management system and procedures (e.g. procedures in case of unexpected events during the tests), not to nonconformities of products submitted to testing and examination.</non-normative-note>
+            <non-normative-note>Note2 Note24.9.7.1,Note2<bold>G.8.7.1-2</bold> The actions shall include informing the OIML Issuing Authority when the nonconformity affects the results of a test whose results were used to issue an OIML Certificate.</non-normative-note>
+            <p>No OIML Guidance (8.7.2 to 8.7.3).</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.8 Internal audits (Option A)</title>
+          <p>No OIML Guidance (8.8.1).Note Note4.9.8,Note<bold>G.8.8.2-1</bold> For testing laboratories which are Test Laboratories under the OIML-CS the internal audit programme shall take into consideration the requirement for the associated OIML Issuing Authority to report annually to the OIML-CS Management Committee.</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <title>8.9 Management reviews (Option A)</title>
+          <sec>
+            <label>4</label>
+            <title>8.9.1</title>
+            <non-normative-note>Note Note4.9.9.1,Note<bold>G.8.9.1-1</bold> For testing laboratories which are Test Laboratories under the OIML-CS the management review shall take into consideration the requirement for the associated OIML Issuing Authority to report annually to the OIML-CS Management Committee.</non-normative-note>
+            <p>No OIML Guidance (8.9.2).</p>
+          </sec>
+          <sec>
+            <label>4</label>
+            <title>8.9.3</title>
+            <non-normative-note>Note Note4.9.9.2,Note<bold>G.8.9.3-1</bold> The outputs from management reviews related to management requirements and metrological and technical requirements shall be submitted to the OIML Issuing Authority as far as OIML activities are concerned.</non-normative-note>
+          </sec>
+        </sec>
+      </sec>
+    </sec>
+    <p>Guide for the application of ISO/IEC 17025 to the assessment of Testing Laboratories involved in legal metrology</p>
+  </body>
+</standard>

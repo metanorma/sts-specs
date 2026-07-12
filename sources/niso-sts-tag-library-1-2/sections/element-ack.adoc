@@ -1,0 +1,81 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/ack.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-ack]
+=== `<ack>` Acknowledgments
+
+Textual material that names the parties which the standards organization wishes to thank or recognize for their assistance in, for example, producing the standard, funding the standard or tests for it, inspiring the standard, or assisting in the research on which the standard is based or tested.
+
+#### Usage/Remarks
+For example, the Working Group members who produced a standard may be named in a section in the front matter listing participants, but any deceased members or persons who were only with the Working Group briefly might be thanked in an Acknowledgment section.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption-front,`<adoption-front>`>>, <<element-back,`<back>`>>, <<element-front,`<front>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one Any combination of: Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-p,`<p>`>> <<element-p,Paragraph>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Optionally, the following sequence (in order): One or more of any of: <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-term-sec,`<term-sec>`>> <<element-term-sec,Terms and Definitions Container/Section>> Any combination of: Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  ack          %ack-model;                                  >
+....
+#### Expanded Content Model
+
+(label?, title?, (address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | editing-instruction | def-list | list | tex-math | mml:math | p | related-article | related-object | disp-quote | speech | statement | verse-group | fn-group | glossary | ref-list)*, ((sec | term-sec)+, (fn-group | glossary | ref-list | non-normative-note | normative-note | non-normative-example | normative-example | notes-group)*)?)
+
+#### Tagged Samples
+
+#### Acknowledgment as part of front matter of standards document
+
+[source,xml]
+....
+...
+<front>
+ ...
+ <ack>
+  <title>Acknowledgements</title>
+  <p>The Z39.19 committee thanks the following publishers of vocabularies 
+   or software that were used in the examples of this standard:  Energy 
+   Technology Data Exchange and International Atomic Energy Agency; ...</p>
+ </ack>
+</front>
+...
+....
+#### Slightly more extensive front matter Acknowledgment
+
+[source,xml]
+....
+...
+<ack id="front-ack1">
+ <title>Acknowledgments</title>
+ <p>Grateful acknowledgment is made to the CHAdeMO Association 
+  for permission to use the following source material in Annex A:</p>
+ <list list-type="simple">
+  <list-item><p>CHAdeMO 1.0.1 (21 May 2013), Technical Specifications 
+   of Quick Charger for the Electric Vehicle.</p></list-item>
+ </list>
+</ack>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Acknowledgments
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,68 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/authorization.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-authorization]
+=== `<authorization>` Authorization
+
+Captures the standards authority/process under which _this_ standard has been developed. The element’s content is typically a text phrase that may be, but need not be, displayed as part of the standards document, such as “`An American National Standard`”.
+
+#### Usage/Remarks
+##### Accrediting and Authorization
+
+The idea of accrediting a standards body is typically an American standards issue. American SDOs can be formally “accredited” by ANSI to publish standards. To be so accredited, an SDO must follow ANSI rules, and there are regular audits to ensure compliance. Not all organizations that publish standards in America are accredited, and not all documents published by an accredited organization are authorized to be “An American National Standard”. Thus American SDOs need a structure _in the XML metadata_ to record both that they are accredited (<<element-accrediting-organization,`<accrediting-organization>`>>) and that this particular standard has been authorized (<<element-authorization,`<authorization>`>>).
+#### Naming the Authorization
+
+The attribute <<attribute-authorize-acronym,`@authorize-acronym`>> should be placed on <<element-authorization,`<authorization>`>> to name the type of authorization, for example, United States SDOs can name “`ANS`” indicating an American National Standard. This attribute provides a machine-searchable normalized version of the authorization since the text of the element is free form. For Best Practice, since the attribute name includes the word “acronym”, the values (such as “`ANS`”) should be given in ALL CAPS.
+#### Naming the Accrediting Organization
+
+The attribute <<attribute-accredit-acronym,`@accredit-acronym`>> should be placed on <<element-accrediting-organization,`<accrediting-organization>`>> to name the accrediting organization, for example, United States SDOs can name “`ANSI`”. This attribute provides a machine-searchable normalized version of the organization since the text of the element is free form. For Best Practice, since the attribute name includes the word “acronym”, the values (such as “`ANSI`”) should be given in ALL CAPS.
+
+#### Attributes
+
+* <<attribute-authorize-acronym,`@authorize-acronym`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  authorization
+                        (#PCDATA 
+                         %authorization-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### In `<std-meta>`
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <comm-ref>...</comm-ref>
+ <accrediting-organization accredit-acronym="ANSI">Under the 
+  authority of the American National Standards Institute</accrediting-organization>
+ <authorization authorize-acronym="ANS">An American National 
+  Standard</authorization>
+ <secretariat>...</secretariat>
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

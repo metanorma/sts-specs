@@ -1,0 +1,77 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/collab.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-collab]
+=== `<collab>` Collaborative (Group) Author
+
+Group of contributors credited under a single name, such as an organization credited as a contributor.
+
+#### Usage/Remarks
+This element may contain either a collaboration of individuals or the name of an organization (such as a laboratory, educational institution, corporation, or department) when such a unit acts as a contributor by, for example, authoring the standard.
+This element may be used within bibliographic references (<<element-element-citation,`<element-citation>`>> and <<element-mixed-citation,`<mixed-citation>`>>).
+
+#### Attributes
+
+* <<attribute-collab-type,`@collab-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-symbol,`@symbol`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-collab-alternatives,`<collab-alternatives>`>>, <<element-contrib,`<contrib>`>>, <<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-person-group,`<person-group>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> Address Elements <<element-addr-line,`<addr-line>`>> <<element-addr-line,Address Line>> <<element-city,`<city>`>> <<element-city,City (in an address)>> <<element-country,`<country>`>> <<element-country,Country (in an address)>> <<element-fax,`<fax>`>> <<element-fax,Fax Number (in address)>> <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>> <<element-phone,`<phone>`>> <<element-phone,Phone Number: in an Address>> <<element-postal-code,`<postal-code>`>> <<element-postal-code,Postal Code: in an Address>> <<element-state,`<state>`>> <<element-state,State or Province (in an address)>> <<element-contrib-group,`<contrib-group>`>> <<element-contrib-group,Contributor Group>> <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-aff,`<aff>`>> <<element-aff,Affiliation>> <<element-aff-alternatives,`<aff-alternatives>`>> <<element-aff-alternatives,Affiliation Alternatives>> <<element-author-comment,`<author-comment>`>> <<element-author-comment,Author Comment>> <<element-bio,`<bio>`>> <<element-bio,Biography>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-on-behalf-of,`<on-behalf-of>`>> <<element-on-behalf-of,On Behalf of>> <<element-role,`<role>`>> <<element-role,Role or Function Title of Contributor>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> <<element-fn,`<fn>`>> <<element-fn,Footnote>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  collab       (#PCDATA %collab-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | sub | sup | addr-line | city | country | fax | institution | institution-wrap | phone | postal-code | state | contrib-group | address | aff | aff-alternatives | author-comment | bio | email | ext-link | on-behalf-of | role | uri | xref | fn)*
+
+#### Tagged Sample
+
+##### In mixed-style bibliographic reference (punctuation and spacing preserved)
+[source,xml]
+....
+...
+<ref id="bibr40">
+ <label>40</label>
+ <mixed-citation publication-type="book"
+  ><collab>World Health Organization</collab>, <collab>World 
+  Bank</collab>. (<year iso-8601-date="2011">2011</year>), 
+  <source>World Report on Disability</source>, 
+  <publisher-loc>Geneva</publisher-loc>, available at: 
+  <ext-link 
+    xlink:href="http://www.who.int/disabilities/world_report/2011/en/index.html"   
+  >http://www.who.int/disabilities/world_report/2011/en/index.html</ext-link
+  ></mixed-citation>
+ </ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

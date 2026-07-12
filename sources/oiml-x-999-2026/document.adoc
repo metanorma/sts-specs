@@ -1,0 +1,43 @@
+= OIML Guidelines for publications in NISO STS
+:docidentifier: OIML X 999:2026
+:docnumber: 999
+:series: X
+:edition: 1
+:year: 2026
+:publisher: International Organization of Legal Metrology
+:copyright-year: 2026
+:language: en
+:doctype: guide
+:docstage: 60
+:docsubstage: 60
+:mn-document-class: oiml
+:mn-output-extensions: xml,html,pdf,rxl
+:local-cache-only:
+:toclevels-pdf: 2
+:imagesdir: images
+
+// OIML X 999:2026 supersedes the earlier sample "ASO 1003:2026" document.
+// It specifies how OIML encodes its publications (R, B, D, G, E) in NISO STS.
+// Element references use bare `<element>` form (monospace) — these are
+// defined in the NISO STS Tag Library, not in this document.
+
+include::sections/00-foreword.adoc[]
+include::sections/01-introduction.adoc[]
+include::sections/02-scope.adoc[]
+include::sections/03-normative-references.adoc[]
+include::sections/04-terms-and-definitions.adoc[]
+include::sections/05-oiml-profile.adoc[]
+include::sections/06-oiml-constraints.adoc[]
+include::sections/07-document-structure.adoc[]
+include::sections/08-metadata.adoc[]
+include::sections/09-body-content.adoc[]
+include::sections/10-references.adoc[]
+include::sections/11-math-figures-tables.adoc[]
+include::sections/12-indexing-and-navigation.adoc[]
+include::sections/13-conversion-from-metanorma.adoc[]
+
+[appendix]
+include::sections/annex-a-examples.adoc[]
+
+[appendix]
+include::sections/annex-b-oiml-element-map.adoc[]

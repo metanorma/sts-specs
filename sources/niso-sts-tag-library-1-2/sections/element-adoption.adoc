@@ -1,0 +1,327 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/adoption.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-adoption]
+=== `<adoption>` Standard Adoption Document
+
+A wrapper for a document-level element that may contain its own metadata, front matter, and back matter, and that will contain, in addition, one or more complete standards (<<element-standard,`<standard>`>>) or other adoptions. When a standard is adopted, sometimes the adopting organization wraps their own metadata, front matter, and back matter around a standard, producing a combined, nested document.
+
+#### Usage/Remarks
+##### Nested Standards Model
+
+One of the original goals of NISO STS was to allow (as much as possible) the components within a standards document to be tagged in reading order, that is, in the order in which they occur within the document. Adoption (a wrapper around standards) was created with that in mind, so that the metadata and front matter belonging to an adoption may occur before all parts of the standard being adopted or both before and after the entirety of the standard being adopted.
+As an example, the standard “`DIN EN ISO 1012`” contains an ISO standard, which was adopted by EN, which was then adopted by DIN. The outer wrapper adoption contains information created by DIN (including superseding notes), which is wrapped around the adoption created by EN, which in turn is wrapped around the ISO standard.
+#### Components of an Adoption
+
+A standard adoption document (`<adoption>`) is a wrapper for one or more standards being adopted and some amount of adopting metadata and prose. An adoption document `<adoption>` may be divided into several components: An <<element-adoption-front,`<adoption-front>`>> element, which contains document-level and adoption-level metadata, possibly with notes and prose sections; An optional adopting back matter element (<<element-back,`<back>`>>) provided by the adopting organization, which contains annexes in the local language or additional requirements or notes (Note: Some adopting organizations place all their adoption material, including adoption-specific back matter, _before_ the standard they are adopting; others place the adoption-specific back matter _after_ the standard being adopted. The NISO STS model for <<element-adoption,`<adoption>`>> allows either location to be used, though not both at once.); The contents of the <<element-adoption,`<adoption>`>> that contain or point to the standard being adopted. This may include one or more of the following: One or more full standards (<<element-standard,`<standard>`>>) One or more full adoptions (<<element-adoption,`<adoption>`>>) One or more <<element-xi-include,`<xi:include>`>> elements One or more <<element-std-xref,`<std-xref>`>> elements The <<element-std-xref,`<std-xref>`>> element may be particularly useful when a standards organization does not possess the XML version of the standard they are adopting, but only, for example, the PDF version. The <<element-std-xref,`<std-xref>`>> element can also be used in situations where the adopting organization does not have permission to distribute the standard being adopted. An optional adopting back matter element (<<element-back,`<back>`>>) provided by the adopting organization, which contains annexes in the local language or additional requirements or notes. (Note: Some adopting organizations place all their adoption material, including adoption-specific back matter, _before_ the standard they are adopting; others place the adoption-specific back matter _after_ the standard being adopted. The NISO STS model for <<element-adoption,`<adoption>`>> allows either location to be used, though not both at once.)
+#### Processing Metadata
+
+In addition to the logical and structural components of an adoption, described above, an `<adoption>` may contain processing information concerning the XML file itself (rather than the adoption that is encoded by that file).
+The element <<element-processing-meta,`<processing-meta>`>> describes:
+* Through its attributes, specifics about which version of the tag set is used in the
+                     file (which version of table model, which math model, which terminology model, etc.).
+* Through its content, the tag set extensions (superset) and restrictions (subset, secondary
+                     schema, etc.) that the XML document claims to follow. More than one restriction or
+                     extension may be claimed, and the restrictions on an `<adoption>` need not be the same as on the enclosed `<standard>`.
+
+#### Related Elements
+
+The NISO STS Tag Sets name two top-level elements that may be the document element (root element) for a standards document: *adoption:* An adoption (`<adoption>`) is a wrapper for one or more standards being adopted and some amount of adopting metadata, notes, and prose. *standard:* A standards document (<<element-standard,`<standard>`>>) contains a standard, amendment, corrigendum, errata, etc. as it is published.
+
+#### Attributes
+
+* <<attribute-dtd-version,`@dtd-version`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>> (default = en)
+#### Namespaces
+
+* <<attribute-xmlns-ali,`@xmlns:ali`>> (fixed value = http://www.niso.org/schemas/ali/1.0/)
+* <<attribute-xmlns-mml,`@xmlns:mml`>> (fixed value = http://www.w3.org/1998/Math/MathML)
+* <<attribute-xmlns-oasis,`@xmlns:oasis`>> (fixed value = http://www.niso.org/standards/z39-96/ns/oasis-exchange/table)
+* <<attribute-xmlns-tbx,`@xmlns:tbx`>> (fixed value = urn:iso:std:iso:30042:ed-1)
+* <<attribute-xmlns-xi,`@xmlns:xi`>> (fixed value = http://www.w3.org/2001/XInclude)
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+* <<attribute-xmlns-xsi,`@xmlns:xsi`>> (fixed value = http://www.w3.org/2001/XMLSchema-instance)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption,`<adoption>`>>
+#### Description
+
+The following, in order: <<element-processing-meta,`<processing-meta>`>> <<element-processing-meta,Processing Metadata>>, zero or one <<element-adoption-front,`<adoption-front>`>> <<element-adoption-front,Front Matter, Adoption>> Any one of: The following, in order: <<element-back,`<back>`>> <<element-back,Back Matter>> One or more of any of: <<element-standard,`<standard>`>> <<element-standard,Standards Document>> <<element-adoption,`<adoption>`>> <<element-adoption,Standard Adoption Document>> <<element-std-xref,`<std-xref>`>> <<element-std-xref,Cross-Reference to a Standard>> <<element-xi-include,`<xi:include>`>> <<element-xi-include,XInclude>> The following, in order: One or more of any of: <<element-standard,`<standard>`>> <<element-standard,Standards Document>> <<element-adoption,`<adoption>`>> <<element-adoption,Standard Adoption Document>> <<element-std-xref,`<std-xref>`>> <<element-std-xref,Cross-Reference to a Standard>> <<element-xi-include,`<xi:include>`>> <<element-xi-include,XInclude>> <<element-back,`<back>`>> <<element-back,Back Matter>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  adoption     %adoption-model;                             >
+....
+#### Expanded Content Model
+
+(processing-meta?, adoption-front, ((back, (standard | adoption | std-xref | xi:include)+) | ((standard | adoption | std-xref | xi:include)+, back?)))
+
+#### Tagged Samples
+
+#### Adoption with back matter added by adopting organization after full adopted standard
+
+[source,xml]
+....
+<adoption>
+ <adoption-front>
+  <std-meta id="profile.reg">...</std-meta>
+  <notes>...</notes>
+  ...
+ </adoption-front>
+
+ <standard>
+  <front>...</front>
+  <body>...</body>
+  <back>...</back>
+ </standard>
+
+ <back>...</back>
+</adoption>
+....
+#### ISO standard adopted by CEN, that was then adopted by DIN
+
+[source,xml]
+....
+<adoption>
+ 
+<!-- DIN adoption of CEN standard -->
+ <adoption-front>
+
+<!-- Metadata that is the same for all of the organizations that developed or adopted
+ this standard -->
+  <std-doc-meta>
+   <title-wrap xml:lang="de">
+    <intro>Sicherheit von Maschinen</intro>
+    <main>Sicherheitsbezogene Teile von Steuerungen</main>
+    ...
+   </title-wrap>
+   <title-wrap xml:lang="en">
+    <intro>Safety of machinery</intro>
+    <main>Safety-related parts of control systems</main>
+    ...
+   </title-wrap>
+   <title-wrap xml:lang="fr">
+    <intro>Sécurité des machines</intro>
+    <main>Parties des systèmes de commande relatives à la sécurité</main>
+    ...
+   </title-wrap>
+   <std-ident>
+    <doc-type>st</doc-type>
+    <doc-number>13849</doc-number>
+    <part-number>1</part-number>
+    <version>n</version>
+   </std-ident>
+  </std-doc-meta>
+
+  <std-meta id="profile.nat">
+   <std-org>
+    <std-org-abbrev>DIN</std-org-abbrev>
+    <std-org-loc>Berlin</std-org-loc>
+   </std-org>
+   ...
+  </std-meta>
+  <notes>...</notes>
+  <sec sec-type="foreword" specific-use="foreword.nat">
+   <title>National foreword</title>
+   <p>This standard includes ...</p>
+   ...
+  </sec>
+ </adoption-front>
+
+ <!-- CEN adopted ISO standard -->
+ <adoption>
+  <adoption-front>
+   <std-meta id="profile.reg">
+    <std-org>
+     <std-org-abbrev>CEN</std-org-abbrev>
+    </std-org>
+    ...
+   </std-meta>
+   <notes>...</notes>
+   ...
+  </adoption-front>
+
+  <!-- The ISO standard that was adopted by CEN and then by DIN -->
+  <standard>
+   <front>
+    <iso-meta id="profile.int">
+     <std-org>
+      <std-org-abbrev>ISO</std-org-abbrev>
+     </std-org>
+     <content-language>en</content-language>
+     <std-ref type="undated">ISO 13849-1</std-ref>
+     <doc-ref>ISO 13849-1</doc-ref>
+     <release-date>2006-11</release-date>
+     <permissions>
+      <copyright-year>2006</copyright-year>
+      <copyright-holder>ISO</copyright-holder>
+     </permissions>
+    </iso-meta>
+    <sec sec-type="intro">
+     <title>Introduction</title>
+     <p>The structure of safety standards ... this part of ISO
+      13849.</p>
+    </sec>
+   </front>
+   <body>
+    <sec id="sec_1" sec-type="scope">
+     <label>1</label>
+     <title>Scope</title>
+     <p id="par_1_1">This part of ISO 13849 provides ...</p>
+     ...
+    </sec>
+   </body>
+   <back>
+    <app-group>
+     <app id="sec_A" content-type="inform-annex">
+      <label>Annex A</label>
+      <annex-type>(informative)</annex-type>
+      <title>Determination of required performance ...</title>
+      ...
+     </app>
+     ...
+    </app-group>
+    ...
+   </back>
+  </standard>
+
+  <!-- Back matter added by CEN -->
+  <back>
+   <app-group>
+    <app id="sec_ZA" content-type="inform-annex">
+     <label>Annex ZA</label>
+     <annex-type>(informative)</annex-type>
+     <title>Relationship between this European Standard and the Essential 
+      Requirements of EU Directive 98/37/EC, amended by Directive 98/79/EC</title>
+     <p id="par_ZA_1">This European Standard has been prepared ...</p>
+    </app>
+    ...
+   </app-group>
+  </back>
+ </adoption>
+
+ <!-- Back matter added by DIN -->
+ <back>
+  <app-group>
+   <app id="sec_NA" content-type="bibl">
+    <label>Annex NA</label>
+    <title>Bibliography</title>
+    <p><bold>Standards referred to in</bold> <xref ref-type="sec" rid="sec_2">Clause 2</xref>
+    </p>
+    <ref-list>
+     <ref>
+      <mixed-citation><std std-id="urn:iso:std:beuth:e2b8abae:::en" type="dated">IEV
+       191:2002</std>, International electrotechnical vocabulary — Chapter 191:
+       Dependability and quality of service; (IEC 60050-191 AMD 1:1999-03 and IEC
+       60050-191 AMD 2:2002-01)</mixed-citation>
+     </ref>
+     ...
+    </ref-list>
+   </app>
+  </app-group>
+ </back>
+</adoption>
+....
+#### An adoption of both a standard and an erratum to that standard
+
+[source,xml]
+....
+<adoption
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <adoption-front>
+  <std-meta>
+   <title-wrap>
+    <intro>South American National Standard</intro>
+    <main>IEEE guide for safety in a.c. substation grounding</main>
+   </title-wrap>
+   <std-ident>
+    <originator>SABS</originator>
+   </std-ident>
+   <std-ref type="dated">SANS 725:2010</std-ref>
+   <doc-ref>SANS 725:2010 (Edition 1 and IEEE Erata)</doc-ref>
+   <release-date std-type="standard" 
+     date-type="published"
+     iso-8601-date="2010-11">2010-11</release-date>
+   <meta-note content-type="adoption">
+    <p>This national standard is an adoption of IEEE Std 80-2000 
+     and IEEE errata, and is adopted with the permission of the 
+     Institute of Electrical and Electronics Engineers, Inc.</p>
+   </meta-note> 
+  </std-meta>    
+ </adoption-front>
+ <standard>
+  <front>
+   <std-meta>
+    <title-wrap>
+     <full>Errata to IEEE Guide for Safety in AC Substation Grounding</full>
+    </title-wrap>
+    <std-ident>
+     <originator>IEEE</originator>
+    </std-ident>
+    <std-ref type="undated">IEEE Std 80&trade;-2000</std-ref>
+    <doc-ref>IEEE Std 80&trade;-2000 (Revision of IEEE Std 80-1986)</doc-ref>
+    <release-date std-type="errata" 
+      date-type="published"
+      iso-8601-date="2007-02-21">21 February 2007</release-date>
+   </std-meta> 
+  </front>
+  <body>...</body>
+ </standard>
+ <standard>
+  <front>
+   <std-meta>
+    <title-wrap>
+     <full>IEEE Guide for Safety in AC Substation Grounding</full>
+    </title-wrap>
+    <std-ident>
+     <originator>IEEE</originator>
+    </std-ident>
+    <std-ref type="dated">IEEE Std 80-2000</std-ref>
+    <doc-ref>IEEE Std 80-2000 (Revision of IEEE Std 80-1986)</doc-ref>
+    <release-date std-type="standard" 
+      date-type="approved"
+      iso-8601-date="2000-01-30">30 January 2000</release-date>
+   </std-meta> 
+  </front>
+  <body>...</body>
+ </standard>
+ <back>...</back>
+</adoption>
+....
+#### Adoption holding reference to adopted standard (rather than actual adopted standard)
+
+[source,xml]
+....
+<adoption>
+ <adoption-front>...</adoption-front>
+ <std-xref type="adopts">
+  <std-id-group originator="ISO">
+   <std-id std-id-type="dated" std-id-link-type="urn">urn:iso:std:iso:13849-1:ed-1:en</std-id>
+  </std-id-group>
+  <std-ref>ISO 13849-1:2006</std-ref>
+ </std-xref>
+ <back>...</back>
+</adoption>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Standard Adoption Document
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

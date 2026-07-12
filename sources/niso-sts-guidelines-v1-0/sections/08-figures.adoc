@@ -1,0 +1,37 @@
+== Figures
+
+=== Elements and attributes
+
+Figures are wrapped in <<element-fig,`<fig>`>>. The actual graphic content
+is referenced via <<element-graphic,`<graphic>`>> or
+<<element-media,`<media>`>>.
+
+=== Sub-figures and multiple graphics
+
+A figure may contain multiple `<graphic>` elements (sub-figures a, b, c,
+…). Use <<element-fig-group,`<fig-group>`>> to group several figures
+under a single label.
+
+=== Figure key
+
+Use <<element-legend,`<legend>`>> to hold the key.
+
+=== Unit statements in figures
+
+Unit statements appear inside the figure caption
+(<<element-caption,`<caption>`>>) in NISO STS 1.2. In earlier editions
+they were coded inside a `<p>` within `<fig>` with
+`@content-type="dimension"`.
+
+=== Sample coding
+
+A typical figure:
++
+[source,xml]
+----
+<fig id="fig_1">
+  <label>Figure 1</label>
+  <caption>Title of the figure.</caption>
+  <graphic xlink:href="figures/fig1.png"/>
+</fig>
+----

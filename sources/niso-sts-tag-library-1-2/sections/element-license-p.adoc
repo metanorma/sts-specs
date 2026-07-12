@@ -1,0 +1,91 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/license-p.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-license-p]
+=== `<license-p>` License Paragraph
+
+Paragraph of text within the description of a <<element-license,`<license>`>>.
+
+#### Usage/Remarks
+The ordinary <<element-p,`<p>`>> is not used, because additional tags are allowed only within `<license-p>`.
+The attribute <<attribute-content-type,`@content-type`>> may be used to specify what kind of information is described in the license paragraph, for retrieval or special processing. Typical values are “`open-access`”, “`licensed non-commercial use`”, and “`CCC-statement`”.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-license,`<license>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-award-id,`<award-id>`>> <<element-award-id,Award Identifier>> <<element-funding-source,`<funding-source>`>> <<element-funding-source,Funding Source>> <<element-open-access,`<open-access>`>> <<element-open-access,Open Access>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> <<element-break,`<break>`>> <<element-break,Line Break>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> <<element-price,`<price>`>> <<element-price,Price>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  license-p    (#PCDATA %license-p-elements;)*              >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | citation-alternatives | element-citation | mixed-citation | std | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | award-id | funding-source | open-access | chem-struct | inline-formula | inline-code | inline-graphic | inline-media | private-char | def-list | list | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | ref-list | disp-quote | speech | statement | verse-group | fn | target | tbx:entailedTerm | xref | break | sub | sup | price)*
+
+#### Tagged Samples
+
+#### Providing trademark information
+
+[source,xml]
+....
+...
+<permissions>
+ <copyright-statement>Copyright &#xa9; 2015 by The Institute 
+  of Electrical and Electronics Engineers, Inc. All rights 
+  reserved. Published 18 December 2015. Printed in the United 
+  States of America.</copyright-statement>
+ <copyright-year>2015</copyright-year>
+ <copyright-holder>IEEE</copyright-holder>
+ <license>
+  <license-p>IEEE is a registered trademark in the U.S. Patent 
+   &amp; Trademark Office, owned by The Institute of Electrical 
+   and Electronics Engineers, Incorporated.</license-p>
+ </license>
+</permissions>
+...
+....
+#### In bilingual standard
+
+[source,xml]
+....
+...
+<permissions>
+ <license xml:lang="en">
+  <license-p>Apart from exceptions provided by the law, 
+   nothing from this publication may be duplicated and/or 
+   published ...</license-p>
+  <license-p>The Netherlands Standardization Institute 
+   shall, with the exclusion of any other beneficiary, 
+   collect ...</license-p>
+ </license>
+ <license xml:lang="nl">
+  <license-p>Auteursrecht voorbehouden. Behoudens 
+   uitzondering door de wet gesteld mag zonder schriftelijke 
+   toestemming van het Nederlands Normalisatie-instituut 
+   niets uit deze uitgave worden ...</license-p>
+  <license-p>Het Nederlands Normalisatie-instituut is 
+   met uitsluiting van ieder ander gerechtigd de door 
+   ...</license-p>
+ </license>
+</permissions>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

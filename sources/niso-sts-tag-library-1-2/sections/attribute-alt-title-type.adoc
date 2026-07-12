@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/alt-title-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-alt-title-type]
+=== `@alt-title-type` Type of Alternate Title
+
+Reason for or purpose of an alternate title (for example, “`toc`” for a title used in a Table of Contents, “`right-running`” for a right-running-head title for print).
+
+#### OPTIONAL on element:  <<element-alt-title,`<alt-title>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A word or phrase describing the rationale for this version of the title, for
+                        example, “`right-running-head`”.
+| Restriction| This is an optional  attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

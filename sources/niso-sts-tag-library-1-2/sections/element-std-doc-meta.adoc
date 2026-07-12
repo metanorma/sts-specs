@@ -1,0 +1,155 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-doc-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-doc-meta]
+=== `<std-doc-meta>` Standards Document Metadata
+
+A container element for metadata that pertains to the entire standards document. By design, the elements inside <<element-std-doc-meta,`<std-doc-meta>`>> are the elements that all the standards organizations share. Any element within <<element-std-doc-meta,`<std-doc-meta>`>> may be overridden by placing the same element within any of the four organization-specific metadata elements: <<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>.
+
+#### Usage/Remarks
+##### Avoid Recording Information Redundantly
+
+The element <<element-std-doc-meta,`<std-doc-meta>`>> was created because of a desire to reduce duplication of metadata information within a standards document. For example, if the abstract(s) (<<element-abstract,`<abstract>`>>) for a standard are the same for all versions of the metadata (inside both <<element-iso-meta,`<iso-meta>`>> and <<element-reg-meta,`<reg-meta>`>>, for example), then the <<element-abstract,`<abstract>`>> element can be placed inside <<element-std-doc-meta,`<std-doc-meta>`>> and _not_ placed within the ISO or Regional standards body metadata. In the same vein, if a National standards body has its own unique abstract, that <<element-abstract,`<abstract>`>> will be placed inside the National standards body metadata (<<element-nat-meta,`<nat-meta>`>>).
+
+#### Attributes
+
+* <<attribute-std-meta-type,`@std-meta-type`>>
+* <<attribute-std-org-type,`@std-org-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption-front,`<adoption-front>`>>, <<element-front,`<front>`>>
+#### Description
+
+The following, in order: <<element-title-wrap,`<title-wrap>`>> <<element-title-wrap,Title Wrapper>>, zero or more <<element-release-version,`<release-version>`>> <<element-release-version,Release-Version/Development Stage/Status>>, zero or one <<element-std-ident,`<std-ident>`>> <<element-std-ident,Standard Identification Block>>, zero or one Any combination of: <<element-std-org,`<std-org>`>> <<element-std-org,Standards Organization Description>> <<element-std-org-group,`<std-org-group>`>> <<element-std-org-group,Standards Organization Group>> <<element-content-language,`<content-language>`>> <<element-content-language,Content Language>>, zero or more <<element-std-ref,`<std-ref>`>> <<element-std-ref,Standard Reference Designation>>, zero or more <<element-doc-ref,`<doc-ref>`>> <<element-doc-ref,Document Reference Designation>>, zero or one <<element-pub-date,`<pub-date>`>> <<element-pub-date,Publication Date>>, zero or one <<element-release-date,`<release-date>`>> <<element-release-date,Release-Date>>, zero or more <<element-meta-date,`<meta-date>`>> <<element-meta-date,Other Metadata Date>>, zero or more Any combination of: <<element-comm-ref,`<comm-ref>`>> <<element-comm-ref,Committee Reference>> <<element-comm-ref-group,`<comm-ref-group>`>> <<element-comm-ref-group,Committee Reference Group>> <<element-accrediting-organization,`<accrediting-organization>`>> <<element-accrediting-organization,Accrediting Organization>>, zero or one <<element-authorization,`<authorization>`>> <<element-authorization,Authorization>>, zero or one <<element-secretariat,`<secretariat>`>> <<element-secretariat,Secretariat>>, zero or more Any combination of: <<element-ics,`<ics>`>> <<element-ics,ICS Code Number>> <<element-ics-wrap,`<ics-wrap>`>> <<element-ics-wrap,ICS Code/Description Wrapper>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more <<element-page-count,`<page-count>`>> <<element-page-count,Page Count>>, zero or one <<element-counts,`<counts>`>> <<element-counts,Counts>>, zero or one <<element-is-proof,`<is-proof>`>> <<element-is-proof,Document in Proof Stage?>>, zero or one <<element-std-xref,`<std-xref>`>> <<element-std-xref,Cross-Reference to a Standard>>, zero or more <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>, zero or more <<element-self-uri,`<self-uri>`>> <<element-self-uri,Uri For This Same Article Online>>, zero or more <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-meta-note,`<meta-note>`>> <<element-meta-note,Metadata Note>>, zero or more <<element-custom-meta-group,`<custom-meta-group>`>> <<element-custom-meta-group,Custom Metadata Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-doc-meta %std-doc-meta-model;                         >
+....
+#### Expanded Content Model
+
+(title-wrap*, release-version?, std-ident?, (std-org | std-org-group)*, content-language*, std-ref*, doc-ref?, pub-date?, release-date*, meta-date*, (comm-ref | comm-ref-group)*, accrediting-organization?, authorization?, secretariat*, (ics | ics-wrap)*, (subj-group)*, page-count?, counts?, is-proof?, std-xref*, permissions*, self-uri*, (abstract)*, (kwd-group)*, meta-note*, custom-meta-group*)
+
+#### Tagged Sample
+
+##### `<title-wrap>` elements apply to DIN `<std-meta>`, CEN `<std-meta>`, and ISO `<iso-meta>`.  Each layer of document has its own `<std-ref>`, for example.
+[source,xml]
+....
+<adoption>
+ 
+<!-- DIN adoption of CEN standard -->
+ <adoption-front>
+
+<!-- Metadata that is the same for all of the organizations that developed or adopted
+ this standard -->
+  <std-doc-meta>
+   <title-wrap xml:lang="de">
+    <intro>Sicherheit von Maschinen</intro>
+    <main>Sicherheitsbezogene Teile von Steuerungen</main>
+    ...
+   </title-wrap>
+   <title-wrap xml:lang="en">
+    <intro>Safety of machinery</intro>
+    <main>Safety-related parts of control systems</main>
+    <compl>Part 1: General principles for design</compl>
+    <full>Safety of machinery — Safety-related parts of control systems — Part 1: General principles
+     for design — English version of DIN EN ISO 13849-1:2008-12</full>
+   </title-wrap>
+   <title-wrap xml:lang="fr">
+    <intro>Sécurité des machines</intro>
+    <main>Parties des systèmes de commande relatives à la sécurité</main>
+    ...
+   </title-wrap>
+   <std-ident>
+    <doc-type>st</doc-type>
+    <doc-number>13849</doc-number>
+    <part-number>1</part-number>
+    <version>n</version>
+   </std-ident>
+  </std-doc-meta>
+
+  <std-meta id="profile.nat">
+   <std-org>
+    <std-org-abbrev>DIN</std-org-abbrev>
+    <std-org-loc>Berlin</std-org-loc>
+   </std-org>
+   <content-language>en</content-language>
+   <std-ref type="undated">DIN EN ISO 13849-1</std-ref>
+   <doc-ref>DIN EN ISO 13849-1</doc-ref>
+   <release-date>2008-12</release-date>
+   <ics>13.110</ics>
+   ...
+  </std-meta>
+  <notes>...</notes>
+  <sec sec-type="foreword" specific-use="foreword.nat">
+   <title>National foreword</title>
+   <p>This standard includes ...</p>
+   ...
+  </sec>
+ </adoption-front>
+<!-- CEN adopted ISO standard -->
+ <adoption>
+  <adoption-front>
+   <std-meta id="profile.reg">
+    <std-org>
+     <std-org-abbrev>CEN</std-org-abbrev>
+    </std-org>
+    <content-language>en</content-language>
+    <std-ref type="undated">EN ISO 13849-1</std-ref>
+    <doc-ref>EN ISO 13849-1</doc-ref>
+    <release-date>2008-06</release-date>
+    <ics>13.110</ics>
+    ...
+   </std-meta>
+   <notes>...</notes>
+   <sec sec-type="foreword" specific-use="foreword.reg">
+    <title>Foreword</title> 
+    ...
+   </sec>
+   ...
+  </adoption-front>
+
+  <!-- The ISO standard that was adopted by CEN and then by DIN -->
+  <standard>
+   <front>
+    <iso-meta id="profile.int">
+     <std-org>
+      <std-org-abbrev>ISO</std-org-abbrev>
+     </std-org>
+     <content-language>en</content-language>
+     <std-ref type="undated">ISO 13849-1</std-ref>
+     <doc-ref>ISO 13849-1</doc-ref>
+     <release-date>2006-11</release-date>
+     <permissions>
+      <copyright-year>2006</copyright-year>
+      <copyright-holder>ISO</copyright-holder>
+     </permissions>
+    </iso-meta>
+    ...
+   </front>
+   ...
+  </standard>
+
+  ...
+ </adoption>
+
+ ...
+</adoption>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Standards Document Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/copyright-statement.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-copyright-statement]
+=== `<copyright-statement>` Copyright Statement
+
+Copyright notice or statement, suitable for printing or display.
+
+#### Usage/Remarks
+##### Duplication with the <copyright-holder> and <copyright-year>
+
+The copyright year and copyright holder are usually present within the text of the copyright statement, since this statement is expected to be displayed. For Best Practice for searching and retrieval, the year should be repeated in the element <<element-copyright-year,`<copyright-year>`>>, and the copyright-holder(s) should be repeated in the element <<element-copyright-holder,`<copyright-holder>`>>.
+#### Multiple Copyright Statements
+
+The copyright statement is allowed to repeat (within the <<element-permissions,`<permissions>`>> element), to allow an organization to tag information such as the following: When a standards document has more than one copyright holder (for example, dual copyrights for two separate SDOs), there may be a single <<element-copyright-statement,`<copyright-statement>`>> that names all the copyright owners. But there may also be several <<element-copyright-statement,`<copyright-statement>`>>s, each naming one copyright owner. (Note: Best Practice is to repeat the <<element-copyright-holder,`<copyright-holder>`>> element, once for each copyright owner as well.) Several equivalent copyright statements, each in a different language. Both a historical copyright statement and the current owner’s copyright. The copyright statements for different countries, even if they are all in the same language.
+
+#### Related Elements
+
+There are three copyright elements which may be contained in the <<element-permissions,`<permissions>`>> grouping element: <<element-copyright-statement,`<copyright-statement>`>>, which is a textual statement of the copyright intended for print and display (This full statement usually contains the copyright holder’s name and the year among other information.); <<element-copyright-year,`<copyright-year>`>>, a metadata element that names just the copyright year (This is intended for metadata searching and aggregation and is typically not displayed.); and <<element-copyright-holder,`<copyright-holder>`>>, also a metadata element that is typically not displayed.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-permissions,`<permissions>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  copyright-statement
+                        (#PCDATA %copyright-statement-elements;)*    >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | named-content | styled-content | sub | sup)*
+
+#### Tagged Samples
+
+#### Single copyright holder
+
+[source,xml]
+....
+...
+<permissions>
+ <copyright-statement>&copy; ISO/IEC 2014</copyright-statement>
+ <copyright-year>2014</copyright-year>
+ <copyright-holder>ISO/IEC</copyright-holder>
+</permissions>
+...
+....
+#### Two copyright holders
+
+[source,xml]
+....
+...
+<permissions>
+ <copyright-statement>© NACE International/ASTM International 
+  2015 – All rights reserved</copyright-statement>
+ <copyright-year>2015</copyright-year>
+ <copyright-holder>NACE International</copyright-holder>
+ <copyright-holder>ASTM International</copyright-holder>
+ <license>
+  <license-p>All rights reserved</license-p>
+ </license>
+</permissions>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

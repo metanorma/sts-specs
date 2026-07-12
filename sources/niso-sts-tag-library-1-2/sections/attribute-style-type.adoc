@@ -1,0 +1,92 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/style-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-style-type]
+=== `@style-type` Style Type
+
+Description or explanation of the stylistic difference being recorded (for example, illuminated letters, drop cap).
+
+#### Usage/Remarks
+#### Usage with Custom Metadata
+
+This attribute can be used to point to a <<element-custom-meta,`<custom-meta>`>> pair that records additional styling information. For example, the front matter might contain <<element-custom-meta,`<custom-meta>`>> elements that define styles named “`Amsterdam`”, “`Baltimore`”, and “`Casablanca`”, which differ in their indentation, thus:
+[source,xml]
+....
+<custom-meta-group>
+<custom-meta>
+<meta-name>Amsterdam</meta-name>
+<meta-value>text-indent: 0;</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>Baltimore</meta-name>
+<meta-value>text-indent: 1em;</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>Casablanca</meta-name>
+<meta-value>text-indent: 3em;</meta-value>
+</custom-meta>
+</custom-meta-group>
+....
+#### Usage with Other Elements
+
+When it is necessary to assign a style type manually to an element instead of handling it through a stylesheet, individual elements which can bear this attribute can be assigned the appropriate style, thus:
+[source,xml]
+....
+<p style-type="Amsterdam">
+The assessed working position is the feeding and cutting of
+a stack of paper with a paper trimmer press, powered by
+compressed air and electricity.  Three basic tasks
+have been identified and analyzed:<list>
+<list-item>
+<p>positioning of the paper stack;</p>
+</list-item>
+<list-item>
+<p>pressure on the paper stack;</p>
+</list-item>
+<list-item>
+<p>paper cutting.</p>
+</list-item>
+</list>
+</p>
+...
+<p style-type="Casablanca">For the purposes of this 
+document, the following terms and definitions apply.
+</p>
+....
+#### Usage with  Styled Content
+
+This attribute can be used to name the specific formatting marked with a <<element-styled-content,`<styled-content>`>> element that records non-standard styling information.
+
+#### OPTIONAL on elements:  <<element-p,`<p>`>>, 
+                  <<element-styled-content,`<styled-content>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Type of style being requested.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Style type used for color variations
+[source,xml]
+....
+...
+<list-item>
+ <p><strike><styled-content style="color" style-type="red">IEEE 
+  Std 802.1ad&#x2122; 2005, IEEE Standard for Local and Metropolitan 
+  lAi:rea Networks: Tirtual Bridged Local Area Networks Amendment 4: 
+  Provider Bridges.</styled-content></strike></p>
+</list-item>
+<list-item>
+ <p><underline><styled-content style="color" style-type="blue">IEEE 
+  Std 802.1AE&#x2122;, IEEE Standard for Local and Metropolitan Area 
+  Networks: Media Access Control (MAC) Security.</styled-content></underline></p>
+</list-item>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

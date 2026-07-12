@@ -1,0 +1,23 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/notes-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-notes-type]
+=== `@notes-type` Type of Publishing Notes
+
+Type of notes that are contained in the <<element-notes,`<notes>`>> element. This element is inherited from JATS and is used for publishing notes, not for normative notes, non-normative notes, or metadata notes.
+
+#### Usage/Remarks
+This attribute is used for publishing notes like “`note-in-proof`”. In NISO STS, the type of a normative note, non-normative note, or metadata note is recorded in the attribute <<attribute-content-type,`@content-type`>>, for example, “`superseding`” note.
+
+#### OPTIONAL on element:  <<element-notes,`<notes>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of publishing note.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

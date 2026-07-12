@@ -1,0 +1,86 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/version.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-version]
+=== `<version>` Version Indicator
+
+A version indicator provides an additional identifier for a non-major release of a standard. The `<version>` indicator is used to identify updated and publicly released standards that are typically corrections or amendments between major balloted editions of a standard.
+
+#### Usage/Remarks
+For example, in ISO and the family of ISO-related national and regional standards bodies, a `<version>` element is created when issuing a correction between major balloted editions. A new version does not change the edition number (<<element-edition,`<edition>`>>), instead the standard acquires a new version indicator (`<version>`). These version indicators may be a digital counting number (1. 2. 3…), a similar letter convention (A, B, C…), or a textual string naming the version (e.g., “`1-amd1.v1-cor3`”, for version 1 of the document, as modified by version 1 of Amendment 1 and further modified by version 1 of Technical Corrigendum 3.).
+#### Difference between STS and JATS Version Elements
+
+The `<version>` element is defined and used differently in NISO STS than it is in JATS: Within standards-specific elements (such as <<element-std-ident,`<std-ident>`>>), a `<version>` element names a version indicator for this standards document. Within JATS-defined citation-related elements (such as <<element-mixed-citation,`<mixed-citation>`>> and <<element-related-object,`<related-object>`>>), a `<version>` element contains the version statement for the data or software that is cited or described. This usage may be limited to a version digit, but it may also contain ordinals or text as well.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-designator,`@designator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  version      (#PCDATA %version-elements;)*                >
+....
+#### Expanded Content Model
+
+(#PCDATA | sub | sup)*
+
+#### Tagged Samples
+
+#### ISO-specific part of `<std-ident>`
+
+[source,xml]
+....
+...
+<std-ident>
+ <originator>GOV</originator>
+ <doc-type>...</doc-type>
+ <doc-number>A-A-228</doc-number>
+ <edition>...</edition>
+ <version>A</version>
+</std-ident>
+...
+....
+#### ISO standards version numbers are typically the number “1”.
+
+[source,xml]
+....
+...
+<iso-meta>
+ ...
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>3951</doc-number>
+  <part-number>2</part-number>
+  <edition>1</edition>
+  <version>1</version>
+  ...
+ </std-ident>
+ <content-language>en</content-language>
+ <std-ref type="dated">ISO 3951-2:2006</std-ref>
+ <std-ref type="undated">ISO 3951-2</std-ref>
+ ...
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

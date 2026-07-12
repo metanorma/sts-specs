@@ -1,0 +1,28 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xmlns-oasis.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xmlns-oasis]
+=== `@xmlns:oasis` OASIS Namespace Declaration
+
+This is not an attribute, but the namespace pseudo-attribute. The value provides the URI to use for the OASIS Exchange (CALS) table element. All namespace prefixes must be associated with a URL, and the OASIS table namespace prefix has been set to “`oasis`”.
+
+#### Usage/Remarks
+Documentation for the OASIS XML Exchange Table Model Document Type Definition can be found at: https://www.oasis-open.org/specs/tm9901.htm
+
+#### FIXED (not settable) on many elements; click for list and usage
+
+<<element-adoption,`<adoption>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-oasis-table,`<oasis:table>`>>, <<element-standard,`<standard>`>>
+|===
+| Value| Meaning
+
+| http://www.niso.org/standards/z39-96/ns/oasis-exchange/table| The URI used for the prefix “`oasis`” to use OASIS Exchange (CALS) tables in the standards document.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+#### Related Resource
+
+For a discussion on namespaces used in STS, see Namespacing NISO STS Elements.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

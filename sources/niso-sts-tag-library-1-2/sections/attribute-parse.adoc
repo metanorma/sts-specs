@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/parse.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-parse]
+=== `@parse` XInclude Parse Flag
+
+Treat the included object as text or as parsed XML. See the W3C XInclude documentation (https://www.w3.org/TR/xinclude/).
+
+#### OPTIONAL (defaults to xml) on element:  <<element-xi-include,`<xi:include>`>>
+
+|===
+| Value| Meaning
+
+| text| Included object is to be treated as text.
+| xml| Included object is to be treated as XML.
+| Default value| xml
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

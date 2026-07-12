@@ -1,0 +1,78 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tag-multiver.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tag-multiver]
+=== Tagging Multiple Versions
+
+#### Processing Alternatives
+
+The <<element-alternatives,`<alternatives>`>> element holds multiple, logically equivalent (substitutable) versions of the same information object. The typical case is a graphic (<<element-graphic,`<graphic>`>>) which is provided in multiple formats (such as a TIF, a JPEG, and an SVG image). These various formats offer processing alternatives for use by production personnel or by software in presenting the work to the user. For example, a high-resolution TIF image may be included and designated for use in printing while the same image, provided as a lower-resolution JPEG file, may be designated for use in web display.
+Other potential use cases include:
+* An equation (<<element-disp-formula,`<disp-formula>`>> or
+                     <<element-inline-formula,`<inline-formula>`>>) that is available
+                     as an image as well as both TeX- and MathML-tagged versions;
+* A video for online display and a thumbnail that represents one image from the
+                     video for use in print versions of the work (<<element-media,`<media>`>>); or
+* A table (<<element-table-wrap,`<table-wrap>`>>) for which
+                     both XHTML-inspired table tagging and an image have been provided.
+The <<element-alternatives,`<alternatives>`>> element can be used everywhere that <<element-graphic,`<graphic>`>> and <<element-media,`<media>`>> are allowed. For example, <<element-alternatives,`<alternatives>`>> can be used inside a <<element-fig,`<fig>`>> as part of the large group of options that can be inside a Figure. (See Tagging Figures.) This example shows a single figure (“Figure 3”) with four processing alternatives—3 graphics in different image formats and one media file:
+[source,xml]
+....
+...
+<fig id="Fig12a">
+  <label>Figure 3</label>
+  <caption>
+    <title>Large Poodles</title>
+  </caption>
+  <alternatives>
+    <graphic xlink:href="poodle12.tif"/>
+    <graphic xlink:href="poodle12.jpeg"/>
+    <graphic xlink:href="poodle12.gif"/>
+    <media mimetype="xyz" xlink:href="poodle-jump12"/>
+  </alternatives>
+</fig>
+...
+....
+Similarly, a table (<<element-table-wrap,`<table-wrap>`>>) may be provided in multiple formats; for example, the table below has three alternative formats: an XML-tagged table, the equivalent image file, and a textual version with the tabular look created by lines and spacing.
+[source,xml]
+....
+...
+<table-wrap>
+  <object-id>...a DOI...</object-id>
+  <label>Table 6.</label>
+  <alternatives>
+    <table frame="box" rules="all" cellpadding="5">...an XHTML-inspired formatted table...</table>
+    <preformat>...a tabular form with spaces and tabs...</preformat>
+    <graphic xlink:href="tab437.jpg">...a JPEG of the same table...</graphic>
+  </alternatives>
+  <table-wrap-foot>...</table-wrap-foot>
+  <attrib>...</attrib>
+  <permissions>
+    <copyright-statement>...</copyright-statement>
+  </permissions>
+</table-wrap>
+...
+....
+#### Alternatives for Mixed-content
+
+The element <<element-alternatives,`<alternatives>`>> may contain graphical alternatives, XML-tagged alternatives, and one or more alternatives that contain text characters. For example, the alternatives within an equation might be a JPEG image of the equation, an XML equation tagged in MathML, and a plain text equivalent equation such as `a + b = c`. The <<element-textual-form,`<textual-form>`>> element can be used inside <<element-alternatives,`<alternatives>`>> to hold such plain text version alternatives.
+#### Audience or Use Alternatives
+
+The <<element-alternatives,`<alternatives>`>> element names processing alternatives for a single display object such as a graphic or a table. It does not, however, accommodate versions of semantically equivalent material intended for different audiences (for patients versus for doctors). Typical cases of this type of multiple versions include:
+* Two versions of a section, a short one for print to save paper and a
+                     significantly longer one for online display;
+* A paragraph that is only in the online version and not in the print version of
+                     the same standards document;
+* Two or more versions of a section of semantically equivalent material prepared
+                     at different levels for different audiences (top secret versus secret versus
+                     publicly disseminated or doctor/nurses/patients); or
+* Alternative versions of a <<element-boxed-text,`<boxed-text>`>> for different print products (one for the magazine and one for
+                     the journal).
+These textual/semantic alternatives are very different from the case of multiple formats of the same graphic, in part because there is a structural difference; a given section does or does not contain this paragraph. There is also a slight difference in complexity between this case and that of the graphic in that, for the multiple graphic formats, software can pick one alternative, whereas, for the structure, the software must build a different structural tree. While this Tag Suite does not support alternate trees, it does include an attribute (<<attribute-specific-use,`@specific-use`>>) to record these distinctions.
+The <<attribute-specific-use,`@specific-use`>> attribute can be used to record that certain paragraphs are for print-only:
+[source,xml]
+....
+<p specific-use="print-only">See the latest updates on our website:
+http://www.mulberrytech.com</p>
+....
+The <<attribute-specific-use,`@specific-use`>> attribute can be placed on all the block-level structures, that is, on paragraphs, figures, sections, and all the block display objects. There is no recommended set of values, but publishers have used “`print-only`”, “`web-only`”, “`online-only`”, “`voice-only`”, “`specific-product-name`”, etc.

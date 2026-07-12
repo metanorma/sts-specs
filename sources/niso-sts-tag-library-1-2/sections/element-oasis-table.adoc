@@ -1,0 +1,88 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/oasis-table.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-oasis-table]
+=== `<oasis:table>` OASIS XML Exchange (CALS) Table
+
+#### In STS Extended ONLY
+
+The rows and columns part of a table using the OASIS XML Exchange (CALS) table model. (This structure is available _only_ in the Extended variants of NISO STS; it is _not_ available in the Interchange versions of NISO STS.) In order to distinguish the OASIS XML Exchange (CALS) elements from the XHTML table model, all OASIS XML Exchange (CALS) table elements must be namespaced in NISO STS, by default using the OASIS URI and the namespace prefix “`oasis:`”.
+
+#### Usage/Remarks
+Documentation for the OASIS XML Exchange Table Model Document Type Definition can be found at: https://www.oasis-open.org/specs/tm9901.htm
+#### OASIS Table Note
+
+The OASIS modules for the OASIS XML Exchange table model (based on the CALS table model) have been included in the NISO STS Extended Tag Sets, so that <<element-oasis-table,`<oasis:table>`>> may be used in addition to or in place of the XHTML <<element-table,`<table>`>> element.
+#### XHTML Table Model
+
+The NISO JATS table model (based on and designed to be converted easily to the XHTML 1.1 table model) is the only table model allowed in the NISO STS Interchange Tag Sets. The XHTML 1.1 table model has been used to take advantage of existing software for table handling.
+#### Tables and Table Wrappers
+
+The `<oasis:table>` element contains _only_ the rows and columns of the table, which is typically just part of what would be called a “table” in print or display. A complete table might also include a table number (label), a table title, a table caption, table notes and footnotes, introductory paragraphs, etc., so a complete table is tagged using the <<element-table-wrap,`<table-wrap>`>> element. If the complete table contains rows and columns, then the element <<element-table-wrap,`<table-wrap>`>> will contain a `<oasis:table>` element as well as other content. Note: A complete table may _not_ include an <<element-oasis-table,`<oasis:table>`>> element within it, since other constructions, such as 2-part lists, may also be called “tables” and given table numbers, table titles, captions, etc.
+#### OASIS Table Attributes
+
+The attributes listed below are the NISO STS attributes that may be attached to `<oasis:table>`. An OASIS table element can take many other attributes, as defined by the OASIS table specification.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+#### Namespaces
+
+* <<attribute-xmlns-oasis,`@xmlns:oasis`>> (fixed value = http://www.niso.org/standards/z39-96/ns/oasis-exchange/table)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-alternatives,`<alternatives>`>>, <<element-array,`<array>`>>, <<element-table-wrap,`<table-wrap>`>>
+
+#### Tagged Sample
+
+##### OASIS-tagged table as content of `<table-wrap>`
+[source,xml]
+....
+...
+<table-wrap>
+ <label>Table 1</label>
+ <caption>
+  <title>Approximate equivalent basis weights ...</title>
+ </caption>
+ <oasis:table colsep="1" rowsep="1">
+  <oasis:tgroup cols="3">
+   <oasis:thead>
+    <oasis:row>
+     <oasis:entry>Basis grammag (g/m<sup>2</sup>)</oasis:entry>
+     <oasis:entry>Basis weight of book paper (lbs)</oasis:entry>
+     <oasis:entry>Weight of writing paper (lbs)</oasis:entry>
+    </oasis:row>
+   </oasis:thead>
+   <oasis:tbody>
+    <oasis:row>
+     <oasis:entry>90</oasis:entry>
+     <oasis:entry>60</oasis:entry>
+     <oasis:entry>24</oasis:entry>
+    </oasis:row>
+    <oasis:row>
+     <oasis:entry>75</oasis:entry>
+     <oasis:entry>50</oasis:entry>
+     <oasis:entry>20</oasis:entry>
+    </oasis:row>
+   </oasis:tbody>
+  </oasis:tgroup>
+ </oasis:table>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - OASIS XML Exchange (CALS) Table
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

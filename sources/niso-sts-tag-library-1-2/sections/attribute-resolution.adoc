@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/resolution.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-resolution]
+=== `@resolution` Resolution of the Glyph Bitmap
+
+Resolution of a bitmap in dots per inch, expressed as a decimal integer (for example, “`72`”, “`300`”).
+
+#### OPTIONAL on element:  <<element-glyph-data,`<glyph-data>`>>
+
+|===
+| Value| Meaning
+
+| Decimal integer| The number of dots per inch of the bitmap.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

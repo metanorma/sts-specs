@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS PD-09 Edition 1</doc-identifier>
+      <std-title-group>
+        <title>Utilizers and Associates</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2025-12-24</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2025 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2025</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 1 of OIML-CS PD-09 by electronic ballot on 01 October 2025 and it was published on 24 December 2025. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2025 which contains the framework for the operation of the OIML-CS.</p>
+      <table-wrap id="tab_1">
+        <caption>Table1</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>PD-09 Edition 1 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N102</td>
+            <td>Draft for MG: 2025-01-17</td>
+          </tr>
+          <tr>
+            <td>PD-09 Edition 1 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N106</td>
+            <td>Draft for MG: 2025-03-19</td>
+          </tr>
+          <tr>
+            <td>PD-09 Edition 1 (Draft)</td>
+            <td>OIML-CS_SC1_P4_N165</td>
+            <td>Draft for MC approval: 2025-09-01</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_82e6bca3-8bc9-24bb-9caa-b4d27250c9cf">
+          <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2025 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2025 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the requirements and associated procedures for the admission of Utilizers and Associates to the OIML-CS, including any additional national requirements.</p>
+        <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2025, the Operational Rules as given in OD-01 OIML-CS&#xA0;OD-01 and OD-02 OIML-CS&#xA0;OD-02, and the Procedures as given in PD-01 OIML-CS&#xA0;PD-01, PD-02 OIML-CS&#xA0;PD-02, PD-03 OIML-CS&#xA0;PD-03, PD-04 OIML-CS&#xA0;PD-04, PD-05 OIML-CS&#xA0;PD-05, PD-06 OIML-CS&#xA0;PD-06, PD-07 OIML-CS&#xA0;PD-07 and PD-08 OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2025 apply. == Admission of a Utilizer</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Application</title>
+        <sec>
+          <label>0</label>
+          <p>A national issuing authority or a national responsible body in an OIML Member State can make an application to be a Utilizer by using the Application to be a Utilizer form which can be found on the OIML-CS pages of the OIML website.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The application must be endorsed (signed) by the CIML Member and shall specify information about any additional tests and examinations required for national type approval that the Utilizer may require<xref rid="fn_1" ref-type="fn">1</xref>. In addition, any conditions on the acceptance of OIML certificates and/or OIML type evaluation reports shall be specified, e.g. OIML certificates and/or OIML type evaluation reports issued on the basis of test results of Manufacturer Test Laboratories will not be accepted. The application form shall be submitted to the Executive Secretary by a representative of the Utilizer (&#x201C;the applicant&#x201D;).</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Acceptance of evaluation reports, test reports and test data for additional national requirements is at the discretion of the Utilizer. It is the responsibility of the Utilizer to specify whether they will accept OIML certificates and/or type evaluation reports issued on the basis of a test report(s) from a Manufacturer Test Laboratory. This information shall be provided in the Declaration of the Utilizer.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Executive Secretary shall review the application and will contact the applicant where there are questions or where further information is required. Once the Executive Secretary has all of the relevant information the Executive Secretary will draft a Declaration based on the information provided. The Declaration will be sent to the applicant for checking and signing.Note Note0.3.4,NoteAcceptance of OIML certificates and OIML type evaluation/test reports under Scheme B is voluntary and may be detailed in the Declaration.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Once the Utilizer has signed their Declaration (see PD-08 OIML-CS&#xA0;PD-08), and returned it to the Executive Secretary, the Executive Secretary will update the list of Utilizers on the OIML-CS pages of the OIML website. == Admission of an Associate</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Application</title>
+        <sec>
+          <label>0</label>
+          <p>A national issuing authority or a national responsible body in an OIML Corresponding Member economy can make an application to be an Associate by using the Application to be an Associate form which can be found on the OIML-CS pages of the OIML website.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The application must be endorsed (signed) by the Corresponding Member Representative and shall specify information about any additional tests and examinations required for national type approval that the Associate may require. In addition, any conditions on the acceptance of OIML certificates and/or OIML type evaluation reports shall be specified, e.g. OIML certificates and/or OIML type evaluation certificates issued on the basis of test results of Manufacturer Test Laboratories will not be accepted. The application shall be submitted to the Executive Secretary by a representative of the Associate (&#x201C;the applicant&#x201D;).</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Acceptance of evaluation reports, test reports and test data for additional national requirements is at the discretion of the Associate. It is the responsibility of the Associate to specify whether they will accept OIML certificates and/or type evaluation reports issued on the basis of a test report(s) from a Manufacturer Test Laboratory. This information shall be provided in the Declaration of the Associate.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Executive Secretary shall review the application and will contact the applicant where there are questions or where further information is required. Once the Executive Secretary has all of the relevant information the Executive Secretary will draft a Declaration based on the information provided. The Declaration will be sent to the applicant for checking and signing.Note Note0.4.4,NoteAcceptance of OIML certificates and OIML type evaluation/test reports under Scheme B is voluntary and may be detailed in the Declaration.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Once the Associate has signed their Declaration (see PD-08 OIML-CS&#xA0;PD-08), and returned it to the Executive Secretary, the Executive Secretary will update the list of Associates on the OIML-CS pages of the OIML website. == Amendment of Utilizer and Associate scopes</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>An existing Utilizer or Associate may apply to extend their scope for the following:</p>
+        <list list-type="order" id="_14d9925d-2fea-11c9-8dd6-b2b5419c4a78">
+          <list-item>a)addition of a new category of measuring instrument;</list-item>
+          <list-item>b)addition of a new edition of an OIML Recommendation (where a previous edition of the OIML Recommendation is in its scope);</list-item>
+          <list-item>c)addition of a new, or an amendment of an existing condition; or</list-item>
+          <list-item>d)addition of a new, or amendment of an existing additional national requirement.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Conversely, an existing Utilizer or Associate may apply to reduce their scope for the following:</p>
+        <list list-type="order" id="_c11552f8-b2f8-7b62-4b20-7303c567df9b">
+          <list-item>a)removal of a category of measuring instrument;</list-item>
+          <list-item>b)removal of an edition of an OIML Recommendation;</list-item>
+          <list-item>c)removal of a condition, or an amendment of an existing condition; or</list-item>
+          <list-item>d)removal of an additional national requirement, or an amendment of an existing additional national requirement.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where a Utilizer or an Associate wishes to extend its scope an application shall be made using the Application to be a Utilizer or Application to be an Associate form, as appropriate. The form shall be submitted to the Executive Secretary who will amend the scope of the Utilizer or Associate, as appropriate, in their Declaration. Once the signed Declaration has been received by the Executive Secretary, the Executive Secretary shall update the relevant information on the OIML-CS pages of the OIML website and shall inform the Management Committee.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where a Utilizer or an Associate wishes to reduce its scope a representative from the Utilizer or Associate, as appropriate, shall inform the Executive Secretary. The Executive Secretary shall amend the scope of the Utilizer or Associate accordingly in their Declaration. The Executive Secretary shall update the relevant information on the OIML-CS pages of the OIML website and shall inform the Management Committee. == Withdrawal of a Utilizer or an Associate from the OIML-CS</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A Utilizer or an Associate may decide, for operational, business or commercial reasons, to withdraw from the OIML-CS. In the event that a Utilizer or an Associate wishes to withdraw from the OIML-CS a representative from the Utilizer or Associate shall inform the Executive Secretary.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary shall update the relevant information on the OIML-CS pages of the OIML website and shall inform the Management Committee. == Notification of changes</p>
+        <p>A representative from a Utilizer or an Associate shall inform the Executive Secretary of any changes to the organisation name, contact details, etc.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Utilizers and Associates</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_82e6bca3-8bc9-24bb-9caa-b4d27250c9cf">
+        <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2025 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2025 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the requirements and associated procedures for the admission of Utilizers and Associates to the OIML-CS, including any additional national requirements.</p>
+      <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2025, the Operational Rules as given in OD-01 OIML-CS&#xA0;OD-01 and OD-02 OIML-CS&#xA0;OD-02, and the Procedures as given in PD-01 OIML-CS&#xA0;PD-01, PD-02 OIML-CS&#xA0;PD-02, PD-03 OIML-CS&#xA0;PD-03, PD-04 OIML-CS&#xA0;PD-04, PD-05 OIML-CS&#xA0;PD-05, PD-06 OIML-CS&#xA0;PD-06, PD-07 OIML-CS&#xA0;PD-07 and PD-08 OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2025 apply. == Admission of a Utilizer</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Application</title>
+      <sec>
+        <label>0</label>
+        <p>A national issuing authority or a national responsible body in an OIML Member State can make an application to be a Utilizer by using the Application to be a Utilizer form which can be found on the OIML-CS pages of the OIML website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The application must be endorsed (signed) by the CIML Member and shall specify information about any additional tests and examinations required for national type approval that the Utilizer may require<xref rid="fn_1" ref-type="fn">1</xref>. In addition, any conditions on the acceptance of OIML certificates and/or OIML type evaluation reports shall be specified, e.g. OIML certificates and/or OIML type evaluation reports issued on the basis of test results of Manufacturer Test Laboratories will not be accepted. The application form shall be submitted to the Executive Secretary by a representative of the Utilizer (&#x201C;the applicant&#x201D;).</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Acceptance of evaluation reports, test reports and test data for additional national requirements is at the discretion of the Utilizer. It is the responsibility of the Utilizer to specify whether they will accept OIML certificates and/or type evaluation reports issued on the basis of a test report(s) from a Manufacturer Test Laboratory. This information shall be provided in the Declaration of the Utilizer.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary shall review the application and will contact the applicant where there are questions or where further information is required. Once the Executive Secretary has all of the relevant information the Executive Secretary will draft a Declaration based on the information provided. The Declaration will be sent to the applicant for checking and signing.Note Note0.3.4,NoteAcceptance of OIML certificates and OIML type evaluation/test reports under Scheme B is voluntary and may be detailed in the Declaration.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Once the Utilizer has signed their Declaration (see PD-08 OIML-CS&#xA0;PD-08), and returned it to the Executive Secretary, the Executive Secretary will update the list of Utilizers on the OIML-CS pages of the OIML website. == Admission of an Associate</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Application</title>
+      <sec>
+        <label>0</label>
+        <p>A national issuing authority or a national responsible body in an OIML Corresponding Member economy can make an application to be an Associate by using the Application to be an Associate form which can be found on the OIML-CS pages of the OIML website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The application must be endorsed (signed) by the Corresponding Member Representative and shall specify information about any additional tests and examinations required for national type approval that the Associate may require. In addition, any conditions on the acceptance of OIML certificates and/or OIML type evaluation reports shall be specified, e.g. OIML certificates and/or OIML type evaluation certificates issued on the basis of test results of Manufacturer Test Laboratories will not be accepted. The application shall be submitted to the Executive Secretary by a representative of the Associate (&#x201C;the applicant&#x201D;).</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Acceptance of evaluation reports, test reports and test data for additional national requirements is at the discretion of the Associate. It is the responsibility of the Associate to specify whether they will accept OIML certificates and/or type evaluation reports issued on the basis of a test report(s) from a Manufacturer Test Laboratory. This information shall be provided in the Declaration of the Associate.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary shall review the application and will contact the applicant where there are questions or where further information is required. Once the Executive Secretary has all of the relevant information the Executive Secretary will draft a Declaration based on the information provided. The Declaration will be sent to the applicant for checking and signing.Note Note0.4.4,NoteAcceptance of OIML certificates and OIML type evaluation/test reports under Scheme B is voluntary and may be detailed in the Declaration.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Once the Associate has signed their Declaration (see PD-08 OIML-CS&#xA0;PD-08), and returned it to the Executive Secretary, the Executive Secretary will update the list of Associates on the OIML-CS pages of the OIML website. == Amendment of Utilizer and Associate scopes</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>An existing Utilizer or Associate may apply to extend their scope for the following:</p>
+      <list list-type="order" id="_14d9925d-2fea-11c9-8dd6-b2b5419c4a78">
+        <list-item>a)addition of a new category of measuring instrument;</list-item>
+        <list-item>b)addition of a new edition of an OIML Recommendation (where a previous edition of the OIML Recommendation is in its scope);</list-item>
+        <list-item>c)addition of a new, or an amendment of an existing condition; or</list-item>
+        <list-item>d)addition of a new, or amendment of an existing additional national requirement.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Conversely, an existing Utilizer or Associate may apply to reduce their scope for the following:</p>
+      <list list-type="order" id="_c11552f8-b2f8-7b62-4b20-7303c567df9b">
+        <list-item>a)removal of a category of measuring instrument;</list-item>
+        <list-item>b)removal of an edition of an OIML Recommendation;</list-item>
+        <list-item>c)removal of a condition, or an amendment of an existing condition; or</list-item>
+        <list-item>d)removal of an additional national requirement, or an amendment of an existing additional national requirement.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where a Utilizer or an Associate wishes to extend its scope an application shall be made using the Application to be a Utilizer or Application to be an Associate form, as appropriate. The form shall be submitted to the Executive Secretary who will amend the scope of the Utilizer or Associate, as appropriate, in their Declaration. Once the signed Declaration has been received by the Executive Secretary, the Executive Secretary shall update the relevant information on the OIML-CS pages of the OIML website and shall inform the Management Committee.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where a Utilizer or an Associate wishes to reduce its scope a representative from the Utilizer or Associate, as appropriate, shall inform the Executive Secretary. The Executive Secretary shall amend the scope of the Utilizer or Associate accordingly in their Declaration. The Executive Secretary shall update the relevant information on the OIML-CS pages of the OIML website and shall inform the Management Committee. == Withdrawal of a Utilizer or an Associate from the OIML-CS</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A Utilizer or an Associate may decide, for operational, business or commercial reasons, to withdraw from the OIML-CS. In the event that a Utilizer or an Associate wishes to withdraw from the OIML-CS a representative from the Utilizer or Associate shall inform the Executive Secretary.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The Executive Secretary shall update the relevant information on the OIML-CS pages of the OIML website and shall inform the Management Committee. == Notification of changes</p>
+      <p>A representative from a Utilizer or an Associate shall inform the Executive Secretary of any changes to the organisation name, contact details, etc.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-01</doc-identifier>
+            </std-ident>
+            <title>Appeals, Resolution of Complaints and Disputes</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-02</doc-identifier>
+            </std-ident>
+            <title>Procedures to approve Legal Metrology experts and QMS experts</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-03</doc-identifier>
+            </std-ident>
+            <title>Application and approval of OIML Issuing Authorities</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-04</doc-identifier>
+            </std-ident>
+            <title>Application and approval of Test Laboratories</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-05</doc-identifier>
+            </std-ident>
+            <title>Processing an application for an OIML Type Evaluation Report and OIML certificate</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-06</doc-identifier>
+            </std-ident>
+            <title>Use of OIML Type Evaluation Reports and OIML certificates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-07</doc-identifier>
+            </std-ident>
+            <title>Transition Arrangements under the OIML-CS</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-08</doc-identifier>
+            </std-ident>
+            <title>Signing the OIML-CS Declaration</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2025</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2025</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

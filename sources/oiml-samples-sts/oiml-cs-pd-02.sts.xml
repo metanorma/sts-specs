@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS PD-02 Edition 3</doc-identifier>
+      <std-title-group>
+        <title>Approval of Legal Metrology Experts and Management System Experts</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2022-11-14</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2022 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 3 of OIML-CS PD-02 by electronic ballot on 09 September 2022 it was published on 14 November 2022. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 which contains the framework for the operation of the OIML-CS.</p>
+      <table-wrap id="tab_1">
+        <caption>Table1</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>PD-02 Edition 1</td>
+            <td>PD-02 Edition 1</td>
+            <td>Published July 2017</td>
+          </tr>
+          <tr>
+            <td>PD-02 Edition 2</td>
+            <td>PD-02 Edition 2</td>
+            <td>Published 20 December 2018</td>
+          </tr>
+          <tr>
+            <td>PD-02 Edition 3 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N052</td>
+            <td>Draft for MG comments: 2022-01-11</td>
+          </tr>
+          <tr>
+            <td>PD-02 Edition 3 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N062</td>
+            <td>Draft for MG comments: 2022-03-01</td>
+          </tr>
+          <tr>
+            <td>PD-02 Edition 3 (Draft)</td>
+            <td>OIML-CS_SC1_P1_N311</td>
+            <td>Draft for MC approval: 2022-03-10</td>
+          </tr>
+          <tr>
+            <td>PD-02 Edition 3 (Draft)</td>
+            <td>OIML-CS_SC1_P4_N094</td>
+            <td>Draft for MC approval: 2022-07-15</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_82e6bca3-8bc9-24bb-9caa-b4d27250c9cf">
+          <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the procedures for the approval of Legal Metrology Experts and Management System Experts (Team Leaders), and on-going maintenance of the lists of experts.</p>
+        <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OD-01 OIML-CS&#xA0;OD-01 and OD-02 OIML-CS&#xA0;OD-02, and the Procedures as given in PD-01 OIML-CS&#xA0;PD-01, PD-03 OIML-CS&#xA0;PD-03, PD-04 OIML-CS&#xA0;PD-04, PD-05 OIML-CS&#xA0;PD-05, PD-06 OIML-CS&#xA0;PD-06, PD-07 OIML-CS&#xA0;PD-07 and PD-08 OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == General</p>
+        <p>The criteria for qualification of Legal Metrology Experts and Management System Experts (Team Leaders) are performance oriented and flexible so that the suitability of a Legal Metrology Expert or Management System Expert can be judged on a case-by-case basis. Factors taken into consideration when deciding on the suitability of an expert include education, working knowledge and experience, training and assessment experience, personal skills and auditing skills. == Competence criteria for Legal Metrology Experts</p>
+        <p>The competence criteria for Legal Metrology Experts that will participate in accreditation and peer assessments are defined in OD-01, 13.2.1 OIML-CS&#xA0;OD-01. == Competence criteria for Management System Experts</p>
+        <p>The competence criteria for Management System Experts that will participate in peer assessments are defined in OD-01, 13.2.2 OIML-CS&#xA0;OD-01. == Nomination Process</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Legal Metrology Experts</title>
+        <sec>
+          <label>0</label>
+          <p>A person who considers that they meet the competence criteria to be a Legal Metrology Expert can apply to be a Legal Metrology Expert. They can apply to be an expert for a single category or for multiple categories of measuring instruments and the corresponding OIML Recommendation(s). Applications shall be made using the &#x201C;Application to be a Legal Metrology Expert&#x201D; form (hereafter referred to as the &#x201C;LME Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>A completed LME Application Form shall be submitted to the Executive Secretary by the applicant. The Executive Secretary will review the LME Application Form to ensure that all of the relevant information has been provided. If information is missing, or further detail is required, the Executive Secretary will contact the applicant.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Management System Experts</title>
+        <sec>
+          <label>0</label>
+          <title>Nominations from Accreditation Bodies</title>
+          <sec>
+            <label>0</label>
+            <p>Persons to be included in the list of Management System Experts to participate in OIML peer assessments of Test Laboratories can be nominated by Accreditation Body signatories to the International Laboratory Accreditation Cooperation (ILAC) Mutual Recognition Arrangement or to a Regional Arrangement recognised by ILAC for the scope of &#x201C;Testing ISO/IEC 17025&#x201D;.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>Persons to be included in the list of Management System Experts to participate in OIML peer assessments of OIML Issuing Authorities can be nominated by Accreditation Body signatories to</p>
+            <list list-type="bullet" id="_8dd648da-fbd4-858d-7f16-7b2e08420917">
+              <list-item>&#x2014;the International Accreditation Forum (IAF) Multilateral Recognition Arrangement or to a Regional Arrangement recognised by IAF for the scope of &#x201C;Product Certification ISO/IEC 17065&#x201D; (in the case of ISO/IEC 17065), or</list-item>
+              <list-item>&#x2014;the ILAC Mutual Recognition Arrangement or to a Regional Arrangement recognised by ILAC for the scope of &#x201C;Inspection ISO/IEC 17020&#x201D; (in the case of ISO/IEC 17020).</list-item>
+            </list>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The nomination, along with evidence of an understanding of the OIML-CS and OIML D 32 OIML&#xA0;D&#xA0;32:2018, OIML D 30 OIML&#xA0;D&#xA0;30:2008 and/or OIML D 37 OIML&#xA0;D&#xA0;37:2022, as appropriate, can be submitted to the Executive Secretary by the Management Committee member of the country of the Accreditation Body or by the ILAC secretariat or IAF secretariat, as appropriate.</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Nominations from individuals</title>
+          <p>A person who considers that they meet the qualification criteria to be a Management System Expert can apply to be a Management System Expert. Applications shall be made using the &#x201C;Application to be a Management System Expert&#x201D; form (hereafter referred to as the &#x201C;MSE Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website. A completed MSE Application Form shall be submitted to the Executive Secretary by the applicant. The Executive Secretary will review the MSE Application Form to ensure that all of the relevant information has been provided. If information is missing, or further detail is required, the Executive Secretary will contact the applicant. == Review of application and decision</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When the Executive Secretary is satisfied that all relevant information regarding the proposed expert has been provided the application will be sent to the Review Committee. Members of the Review Committee will review the application, either at a Review Committee meeting or by correspondence, and will provide a recommendation to the Management Committee to approve or reject the applicant. In the event that the Review Committee makes a recommendation to approve the expert the Executive Secretary shall forward the documentation to the Management Committee for approval, either at a Management Committee meeting or by an electronic ballot. In the event that the Review Committee does not make a recommendation to approve the expert the Executive Secretary shall notify the applicant of the decision and the reasons for rejection.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee Members vote on the approval of the applicant. If the applicant is not approved the Executive Secretary shall notify the applicant of the reasons for rejection. If the applicant is approved the Executive Secretary shall notify the applicant of his/her approval. The Executive Secretary shall request that the applicant signs a non-disclosure agreement which guarantees that all information received from and about assessed organisations is held in strict confidence. This agreement is signed with the BIML.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>It is permitted to use a person that has not yet been approved as an expert in an accreditation assessment or peer assessment on the provision that an application to approve the person is made in conjunction with the application to be an OIML Issuing Authority/Test Laboratory. In doing so, the potential OIML Issuing Authority/Test Laboratory accepts the risk that the person may not be approved. In this instance the application to be an OIML Issuing Authority/Test Laboratory could be rejected or delayed. == Publication of Lists of Experts</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When an applicant has been approved by the Management Committee to be a Legal Metrology Expert and/or Management System Expert, the Executive Secretary will update the ILAC-IAF-OIML lists of experts published on the OIML-CS pages of the OIML website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When an expert is included on the list of Management System Experts, the Executive Secretary will send a notification to ILAC and/or IAF as appropriate. == Change of Scope</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Experts may apply to request a change of scope, e.g. Legal Metrology Experts may wish to add or remove a measuring instrument category (and associated Recommendation) and Management System Experts may wish to add or remove assessment of OIML Issuing Authorities (ISO/IEC 17065 ISO/IEC&#xA0;17065:2012 or ISO/IEC 17020 ISO/IEC&#xA0;17020:2012) or Test Laboratories (ISO/IEC 17025 ISO/IEC&#xA0;17025:2017). Experts may also request to be removed from the lists.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where a Legal Metrology Expert wishes to extend their scope to add a measuring instrument category (and associated Recommendation) or a Management System Expert wishes to add the assessment of OIML Issuing Authorities or Test Laboratories, an application and the relevant supporting information shall be provided to the Executive Secretary. The application, and the information supporting the extension of scope, will be processed according to the procedures in 8.1 and 8.2 above.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Reductions in scope, or a request to be removed from the lists, do not need to undergo formal review by the Review Committee. In these cases, the Executive Secretary will notify the Management Committee and the published lists will be updated accordingly. == Monitoring of Experts</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>As outlined in OD-01, 13.4 OIML-CS&#xA0;OD-01, the on-going competence and suitability of experts shall be reviewed at least once every four years.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary shall contact each expert that is on the lists to determine if there has been any change in status, e.g. they no longer wish to be an expert, or if they would like to request a change of scope. Experts, as part of the review process, should provide evidence/information on the activities that they have been involved in during the four-year period to support their on-going competence and suitability.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary will compile a report outlining the evidence/information on the activities that the experts have been involved and any proposed changes to the status or scope of the experts. If, as part of the formal monitoring process, a Legal Metrology Expert wishes to extend their scope to include a measuring instrument category (and associated Recommendation) or a Management System Expert wishes to add the assessment of OIML Issuing Authorities or Test Laboratories, the relevant information shall also be provided to the Executive Secretary. The report, and any information supporting extensions to scope, will be provided to the Review Committee for their review and recommendation according to 8.1 above. The recommendation(s) of the Review Committee regarding the continued competence and suitability of the experts, including any extensions to scope, will be reported to the Management Committee for their approval.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Requests to be removed from the lists do not need to undergo formal review by the Review Committee. In these cases, the Executive Secretary will notify the Management Committee as part of the report and the lists will be updated accordingly.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Approval of Legal Metrology Experts and Management System Experts</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_82e6bca3-8bc9-24bb-9caa-b4d27250c9cf">
+        <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the procedures for the approval of Legal Metrology Experts and Management System Experts (Team Leaders), and on-going maintenance of the lists of experts.</p>
+      <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OD-01 OIML-CS&#xA0;OD-01 and OD-02 OIML-CS&#xA0;OD-02, and the Procedures as given in PD-01 OIML-CS&#xA0;PD-01, PD-03 OIML-CS&#xA0;PD-03, PD-04 OIML-CS&#xA0;PD-04, PD-05 OIML-CS&#xA0;PD-05, PD-06 OIML-CS&#xA0;PD-06, PD-07 OIML-CS&#xA0;PD-07 and PD-08 OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == General</p>
+      <p>The criteria for qualification of Legal Metrology Experts and Management System Experts (Team Leaders) are performance oriented and flexible so that the suitability of a Legal Metrology Expert or Management System Expert can be judged on a case-by-case basis. Factors taken into consideration when deciding on the suitability of an expert include education, working knowledge and experience, training and assessment experience, personal skills and auditing skills. == Competence criteria for Legal Metrology Experts</p>
+      <p>The competence criteria for Legal Metrology Experts that will participate in accreditation and peer assessments are defined in OD-01, 13.2.1 OIML-CS&#xA0;OD-01. == Competence criteria for Management System Experts</p>
+      <p>The competence criteria for Management System Experts that will participate in peer assessments are defined in OD-01, 13.2.2 OIML-CS&#xA0;OD-01. == Nomination Process</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Legal Metrology Experts</title>
+      <sec>
+        <label>0</label>
+        <p>A person who considers that they meet the competence criteria to be a Legal Metrology Expert can apply to be a Legal Metrology Expert. They can apply to be an expert for a single category or for multiple categories of measuring instruments and the corresponding OIML Recommendation(s). Applications shall be made using the &#x201C;Application to be a Legal Metrology Expert&#x201D; form (hereafter referred to as the &#x201C;LME Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A completed LME Application Form shall be submitted to the Executive Secretary by the applicant. The Executive Secretary will review the LME Application Form to ensure that all of the relevant information has been provided. If information is missing, or further detail is required, the Executive Secretary will contact the applicant.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Management System Experts</title>
+      <sec>
+        <label>0</label>
+        <title>Nominations from Accreditation Bodies</title>
+        <sec>
+          <label>0</label>
+          <p>Persons to be included in the list of Management System Experts to participate in OIML peer assessments of Test Laboratories can be nominated by Accreditation Body signatories to the International Laboratory Accreditation Cooperation (ILAC) Mutual Recognition Arrangement or to a Regional Arrangement recognised by ILAC for the scope of &#x201C;Testing ISO/IEC 17025&#x201D;.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Persons to be included in the list of Management System Experts to participate in OIML peer assessments of OIML Issuing Authorities can be nominated by Accreditation Body signatories to</p>
+          <list list-type="bullet" id="_8dd648da-fbd4-858d-7f16-7b2e08420917">
+            <list-item>&#x2014;the International Accreditation Forum (IAF) Multilateral Recognition Arrangement or to a Regional Arrangement recognised by IAF for the scope of &#x201C;Product Certification ISO/IEC 17065&#x201D; (in the case of ISO/IEC 17065), or</list-item>
+            <list-item>&#x2014;the ILAC Mutual Recognition Arrangement or to a Regional Arrangement recognised by ILAC for the scope of &#x201C;Inspection ISO/IEC 17020&#x201D; (in the case of ISO/IEC 17020).</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The nomination, along with evidence of an understanding of the OIML-CS and OIML D 32 OIML&#xA0;D&#xA0;32:2018, OIML D 30 OIML&#xA0;D&#xA0;30:2008 and/or OIML D 37 OIML&#xA0;D&#xA0;37:2022, as appropriate, can be submitted to the Executive Secretary by the Management Committee member of the country of the Accreditation Body or by the ILAC secretariat or IAF secretariat, as appropriate.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Nominations from individuals</title>
+        <p>A person who considers that they meet the qualification criteria to be a Management System Expert can apply to be a Management System Expert. Applications shall be made using the &#x201C;Application to be a Management System Expert&#x201D; form (hereafter referred to as the &#x201C;MSE Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website. A completed MSE Application Form shall be submitted to the Executive Secretary by the applicant. The Executive Secretary will review the MSE Application Form to ensure that all of the relevant information has been provided. If information is missing, or further detail is required, the Executive Secretary will contact the applicant. == Review of application and decision</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>When the Executive Secretary is satisfied that all relevant information regarding the proposed expert has been provided the application will be sent to the Review Committee. Members of the Review Committee will review the application, either at a Review Committee meeting or by correspondence, and will provide a recommendation to the Management Committee to approve or reject the applicant. In the event that the Review Committee makes a recommendation to approve the expert the Executive Secretary shall forward the documentation to the Management Committee for approval, either at a Management Committee meeting or by an electronic ballot. In the event that the Review Committee does not make a recommendation to approve the expert the Executive Secretary shall notify the applicant of the decision and the reasons for rejection.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The Management Committee Members vote on the approval of the applicant. If the applicant is not approved the Executive Secretary shall notify the applicant of the reasons for rejection. If the applicant is approved the Executive Secretary shall notify the applicant of his/her approval. The Executive Secretary shall request that the applicant signs a non-disclosure agreement which guarantees that all information received from and about assessed organisations is held in strict confidence. This agreement is signed with the BIML.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>It is permitted to use a person that has not yet been approved as an expert in an accreditation assessment or peer assessment on the provision that an application to approve the person is made in conjunction with the application to be an OIML Issuing Authority/Test Laboratory. In doing so, the potential OIML Issuing Authority/Test Laboratory accepts the risk that the person may not be approved. In this instance the application to be an OIML Issuing Authority/Test Laboratory could be rejected or delayed. == Publication of Lists of Experts</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>When an applicant has been approved by the Management Committee to be a Legal Metrology Expert and/or Management System Expert, the Executive Secretary will update the ILAC-IAF-OIML lists of experts published on the OIML-CS pages of the OIML website.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>When an expert is included on the list of Management System Experts, the Executive Secretary will send a notification to ILAC and/or IAF as appropriate. == Change of Scope</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Experts may apply to request a change of scope, e.g. Legal Metrology Experts may wish to add or remove a measuring instrument category (and associated Recommendation) and Management System Experts may wish to add or remove assessment of OIML Issuing Authorities (ISO/IEC 17065 ISO/IEC&#xA0;17065:2012 or ISO/IEC 17020 ISO/IEC&#xA0;17020:2012) or Test Laboratories (ISO/IEC 17025 ISO/IEC&#xA0;17025:2017). Experts may also request to be removed from the lists.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where a Legal Metrology Expert wishes to extend their scope to add a measuring instrument category (and associated Recommendation) or a Management System Expert wishes to add the assessment of OIML Issuing Authorities or Test Laboratories, an application and the relevant supporting information shall be provided to the Executive Secretary. The application, and the information supporting the extension of scope, will be processed according to the procedures in 8.1 and 8.2 above.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Reductions in scope, or a request to be removed from the lists, do not need to undergo formal review by the Review Committee. In these cases, the Executive Secretary will notify the Management Committee and the published lists will be updated accordingly. == Monitoring of Experts</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>As outlined in OD-01, 13.4 OIML-CS&#xA0;OD-01, the on-going competence and suitability of experts shall be reviewed at least once every four years.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The Executive Secretary shall contact each expert that is on the lists to determine if there has been any change in status, e.g. they no longer wish to be an expert, or if they would like to request a change of scope. Experts, as part of the review process, should provide evidence/information on the activities that they have been involved in during the four-year period to support their on-going competence and suitability.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The Executive Secretary will compile a report outlining the evidence/information on the activities that the experts have been involved and any proposed changes to the status or scope of the experts. If, as part of the formal monitoring process, a Legal Metrology Expert wishes to extend their scope to include a measuring instrument category (and associated Recommendation) or a Management System Expert wishes to add the assessment of OIML Issuing Authorities or Test Laboratories, the relevant information shall also be provided to the Executive Secretary. The report, and any information supporting extensions to scope, will be provided to the Review Committee for their review and recommendation according to 8.1 above. The recommendation(s) of the Review Committee regarding the continued competence and suitability of the experts, including any extensions to scope, will be reported to the Management Committee for their approval.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Requests to be removed from the lists do not need to undergo formal review by the Review Committee. In these cases, the Executive Secretary will notify the Management Committee as part of the report and the lists will be updated accordingly.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-01</doc-identifier>
+            </std-ident>
+            <title>Appeals, Resolution of Complaints and Disputes</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-03</doc-identifier>
+            </std-ident>
+            <title>Application and approval of OIML Issuing Authorities, Utilizers and Associates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-04</doc-identifier>
+            </std-ident>
+            <title>Assessment of Test Laboratories</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-05</doc-identifier>
+            </std-ident>
+            <title>Processing an application for an OIML Type Evaluation Report and OIML Certificate</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-06</doc-identifier>
+            </std-ident>
+            <title>Use of OIML Type Evaluation Reports and OIML Certificates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-07</doc-identifier>
+            </std-ident>
+            <title>Transition Arrangements under the OIML-CS</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-08</doc-identifier>
+            </std-ident>
+            <title>Signing the OIML-CS Declaration</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2022</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;30:2008</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17025 to the assessment of Testing Laboratories involved in legal metrology</title>
+            <pub-date>
+              <year>2008</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;32:2018</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17065 to assessment of certification bodies in legal metrology</title>
+            <pub-date>
+              <year>2018</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;37:2022</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17020 to the assessment of OIML Issuing Authorities under the OIML Certification System</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17020:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment&#x2009;&#x2014;&#x2009;Requirements for the operation of various types of bodies performing inspection</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2017</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17065:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment&#x2009;&#x2014;&#x2009;Requirements for bodies certifying products, processes and services</title>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

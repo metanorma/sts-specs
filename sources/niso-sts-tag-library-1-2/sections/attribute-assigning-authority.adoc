@@ -1,0 +1,26 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/assigning-authority.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-assigning-authority]
+=== `@assigning-authority` Authority Responsible for an Identifier
+
+Names the authority (such as Crossref, GenBank, or PDB) that assigned the identifier or is responsible for the identifier.
+
+#### Usage/Remarks
+This attribute should be used to record the assigning authority for metadata such as keywords and subjects and for identifiers (such as <<element-pub-id,`<pub-id>`>> to record that a is DOI assigned by “`figshare`”).
+The agency identified as an assigning authority need not be an SDO or the originating standards body. For example, an indexing service could be hired to index a standard, and that indexer could be named in this attribute.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-award-id,`<award-id>`>>, <<element-compound-kwd,`<compound-kwd>`>>, <<element-compound-subject,`<compound-subject>`>>, <<element-contrib-id,`<contrib-id>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-institution-id,`<institution-id>`>>, <<element-issue-id,`<issue-id>`>>, <<element-journal-id,`<journal-id>`>>, <<element-kwd,`<kwd>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-nested-kwd,`<nested-kwd>`>>, <<element-object-id,`<object-id>`>>, <<element-pub-date,`<pub-date>`>>, <<element-pub-id,`<pub-id>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-role,`<role>`>>, <<element-subj-group,`<subj-group>`>>, <<element-subject,`<subject>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The name of the organization assigning the identifier.
+| Restriction| This is an optional attribute;
+                        there is no default. The attribute is only used when the authority is known.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

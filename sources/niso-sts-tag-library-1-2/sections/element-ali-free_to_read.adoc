@@ -1,0 +1,78 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/ali-free_to_read.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-ali-free_to_read]
+=== `<ali:free_to_read>` Free to Read (NISO ALI)
+
+A flag indicating that the document content can be read or viewed at its current location by any user without payment or authentication; it is free to be read.
+
+#### Usage/Remarks
+This element is defined in _NISO Access License and Indicators_ (ALI) NISO RP-22-2015.
+This is a simple indication of the status of the standard that does not make any statements about additional reuse rights or restrictions. Absence of this element in a document does _not_ indicate its negation; it merely indicates that a user would need to look to other information to ascertain the status of the document.
+#### Date Attributes
+
+Start and end dates can be placed on the free-to-read status using the attributes <<attribute-start_date,`@start_date`>> and <<attribute-end_date,`@end_date`>>. Start and end dates can be used to record delayed access, special offers, etc., where the content is free to be read for a period of time or after a particular date. The absence of both start and end dates indicates a permanent “free-to-read” status.
+
+#### Related Elements
+
+Use of this element is independent of both the NISO ALI <<element-ali-license_ref,`<ali:license_ref>`>> and the <<element-license,`<license>`>> elements.
+*Permissions and Licensing Elements:* NISO STS has several elements that deal with the usage, permissions, and licensing. Two of these elements(<<element-ali-free_to_read,`<ali:free_to_read>`>> and <<element-ali-license_ref,`<ali:license_ref>`>>) are provided for users of the _NISO Access License and Indicators_ (ALI) NISO RP-22-2015 specification. The other element (<<element-license,`<license>`>>) is for more general or supplementary license information. <<element-ali-free_to_read,`<ali:free_to_read>`>> — This NISO ALI element is a simple flag whose presence indicates that the document is free to be read, without making statements about any additional reuse rights or restrictions. Date attributes can specify _when_ the document is free to be read. <<element-ali-license_ref,`<ali:license_ref>`>> — This NISO ALI element points to a _public_ license or waiver. By “public”, NISO ALI means that the offer is generally and not privately offered. Such a license may be either human or machine-readable text that explains the terms of use or reuse for the content. <<element-license,`<license>`>> — An element from JATS whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For organizations who adopt the NISO ALI recommendation, the <<element-license,`<license>`>> element can be used to hold a short representation of the license, such as a sentence or two, which is used for display. Alternatively, an organization can choose not to implement NISO ALI and to put the text of the license in <<element-license,`<license>`>>. The <<element-license,`<license>`>> element takes the <<attribute-xlink-href,`@xlink:href`>> attribute to point to the text of the license. However, the new NISO ALI element <<element-ali-license_ref,`<ali:license_ref>`>> performs the same pointing function. NISO STS follows JATS best practice in omitting the <<attribute-xlink-href,`@xlink:href`>> attribute from <<element-license,`<license>`>> if a NISO ALI <<element-ali-license_ref,`<ali:license_ref>`>> is used.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-end_date,`@end_date`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-start_date,`@start_date`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+#### Namespaces
+
+* <<attribute-xmlns-ali,`@xmlns:ali`>> (fixed value = http://www.niso.org/schemas/ali/1.0/)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-permissions,`<permissions>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  ali:free_to_read 
+                        %free-to-read-model;                         >
+....
+#### Expanded Content Model
+
+EMPTY
+
+#### Tagged Sample
+
+##### Free-to-read flag with start date
+Document is free to read anytime after the start date.
+[source,xml]
+....
+...
+<permissions>
+ <ali:free_to_read start_date="2016-01-01"/>
+ <license>
+  <ali:license_ref start_date="2016-01-01"
+   >http://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref>
+  <license-p>For noncommercial purposes only, this publication may be 
+   reproduced or transmitted in any form or by any means without prior 
+   permission in writing from the publisher, provided it is reproduced 
+   accurately, the source of the material is identified, and you do not 
+   in any way that suggests the licensor endorses you or your use.</license-p>
+ </license>
+</permissions>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

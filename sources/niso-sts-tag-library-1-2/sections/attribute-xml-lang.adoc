@@ -1,0 +1,123 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xml-lang.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xml-lang]
+=== `@xml:lang` Language of an Element
+
+The language of the intellectual content of the element for which this is an attribute. This attribute may be set on many elements, including the two document elements (<<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>>) and the values are inherited by all the element’s children, unless overridden explicitly.
+
+#### Usage/Remarks
+#### How to Tag the Language
+
+In NISO STS, there are several ways to describe the natural language of the content of an element: *Content Language Element:* The <<element-content-language,`<content-language>`>> element, in the metadata of a standards document (inside <<element-std-ident,`<std-ident>`>>), identifies the official language(s) used in this standards document. The element appears once for each official language used in the document. For Best Practice, the element content should be the two-letter ISO 639 code for the language, for example, “`en`” for English, “`de`” for German, or “`es`” for Spanish. *XML Lang Language Attribute:* The <<attribute-xml-lang,`@xml:lang`>> attribute can be put on many elements, to indicate the language of the element. This is an inherited value, so that element and all of its children will be in the named language, unless specifically overridden with another <<attribute-xml-lang,`@xml:lang`>> attribute. *Language Element:* For ISO-related processing only, the <<element-language,`<language>`>> element (inside the <<element-doc-ident,`<doc-ident>`>> element in the metadata of a standards document) identifies the official language(s) used in this standards document. This element allows more than one language value to be named. Best Practice Note: the <<element-content-language,`<content-language>`>> element should be used in addition to this element.
+#### Values of XML Language Attribute
+
+The value of this attribute has been set by the W3C as part of the XML specifications. The value of this attribute must conform to the IETF RFC 5646 (http://tools.ietf.org/html/rfc5646). For most uses, a primary-language subtag such as “`fr`” (French), “`en`” (English), “`de`” (German), or “`zh`” (Chinese) is sufficient. These values are *NOT* case sensitive, but current best practice uses all lower case. In addition to the primary language subtag, the value of this attribute may contain other subtags as well. Values for the various subtags (which can be used in certain combinations) can be obtained from the IANA Language Subtag Registry: http://www.iana.org/assignments/language-subtag-registry
+#### Inheritance
+
+The language value inherits down the tree, so an `@xml:lang` attribute names the language of the element and all its descendants, unless the descendant sets its own <<attribute-xml-lang,`@xml:lang`>> attribute. The default value of English (“`en`”) is set at the top-level element, thus it can be overridden there or anywhere lower in the document.
+#### Script and Language (in contexts other than TBX)
+
+In some languages, script codes are also critically important; for example, in Japanese, there is the need to express whether a name is in Kanji as opposed to in Kana (Hiragana or Katakana) to determine sort keys. Best Practice is to use the full language-code-plus-script-code as the value for `@xml:lang`. In our use of both language and script tagging as values for `@xml:lang`, we are following the IETF (Internet Engineering Task Force) Best Practice guideline: _Network Working Group Request for Comments: 5646_ [Tags for Identifying Languages, A. Phillips and M. Davis, Editors, September 2009]. That document defines a language tag as composed of (in part): A language code Language (typically using the shortest ISO 639) Potentially followed by a hyphen and then a script code Script (using the ISO 15924 code) Potentially followed by a hyphen and a region code Region (using the ISO 15924 code)
+#### Script and Language in TBX
+
+For TBX elements, the `@xml:lang` attribute is most often associated with the <<element-tbx-langSet,`<tbx:langSet>`>> element, to specify the language of all the child elements in a language section. However, it can be associated with virtually any element to specify the language of the content of that element.
+As discussed earlier, use the values found for “language” in the IANA language subtag registry; do not use deprecated values. Unlike other NISO STS elements, TBX elements do not combine script and region values with the `@xml:lang` attribute; they instead use the separate `@script` attribute, and the <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>> element.
+
+#### OPTIONAL (defaults to en) on many elements; click for list and usage
+
+<<element-adoption,`<adoption>`>>, <<element-part-of-speech,`<part-of-speech>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-related-term,`<related-term>`>>, <<element-standard,`<standard>`>>, <<element-term-display,`<term-display>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-source,`<term-source>`>>
+|===
+| Value| Meaning
+
+| An alphanumeric string, which may include hyphens| An abbreviation for a natural language (such as “`en`” for English or “`de`” for German) or for a language and a script (“`ja-Kana`”).
+| Default value| en (English is only a default and may be changed in the XML document.)
+|===
+#### REQUIRED on element:  <<element-tbx-langSet,`<tbx:langSet>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| An abbreviation for a natural language (such as “`en`” for English or “`de`” for German) or for a language and a script (“`ja-Kana`”).
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-addr-line,`<addr-line>`>>, <<element-address,`<address>`>>, <<element-aff,`<aff>`>>, <<element-alt-text,`<alt-text>`>>, <<element-alt-title,`<alt-title>`>>, <<element-annotation,`<annotation>`>>, <<element-anonymous,`<anonymous>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-author-comment,`<author-comment>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-caption,`<caption>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-city,`<city>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compl-title-wrap,`<compl-title-wrap>`>>, <<element-conf-acronym,`<conf-acronym>`>>, <<element-conf-date,`<conf-date>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-conf-name,`<conf-name>`>>, <<element-conf-sponsor,`<conf-sponsor>`>>, <<element-content-language,`<content-language>`>>, <<element-contrib-id,`<contrib-id>`>>, <<element-copyright-holder,`<copyright-holder>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-country,`<country>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-custom-meta-group,`<custom-meta-group>`>>, <<element-data-title,`<data-title>`>>, <<element-date-in-citation,`<date-in-citation>`>>, <<element-day,`<day>`>>, <<element-def,`<def>`>>, <<element-def-item,`<def-item>`>>, <<element-def-list,`<def-list>`>>, <<element-degrees,`<degrees>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-doc-ident,`<doc-ident>`>>, <<element-edition,`<edition>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-era,`<era>`>>, <<element-etal,`<etal>`>>, <<element-ext-link,`<ext-link>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fn,`<fn>`>>, <<element-fn-group,`<fn-group>`>>, <<element-fpage,`<fpage>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-glossary,`<glossary>`>>, <<element-gov,`<gov>`>>, <<element-graphic,`<graphic>`>>, <<element-ics-desc,`<ics-desc>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-entry,`<index-entry>`>>, <<element-index-group,`<index-group>`>>, <<element-index-term,`<index-term>`>>, <<element-inline-code,`<inline-code>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-institution-id,`<institution-id>`>>, <<element-intro,`<intro>`>>, <<element-intro-title-wrap,`<intro-title-wrap>`>>, <<element-issue,`<issue>`>>, <<element-issue-id,`<issue-id>`>>, <<element-issue-part,`<issue-part>`>>, <<element-issue-title,`<issue-title>`>>, <<element-journal-id,`<journal-id>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-label,`<label>`>>, <<element-legend,`<legend>`>>, <<element-license,`<license>`>>, <<element-list,`<list>`>>, <<element-list-item,`<list-item>`>>, <<element-long-desc,`<long-desc>`>>, <<element-lpage,`<lpage>`>>, <<element-main,`<main>`>>, <<element-main-title-wrap,`<main-title-wrap>`>>, <<element-media,`<media>`>>, <<element-meta-note,`<meta-note>`>>, <<element-milestone-end,`<milestone-end>`>>, <<element-milestone-start,`<milestone-start>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-month,`<month>`>>, <<element-name,`<name>`>>, <<element-named-content,`<named-content>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-notes,`<notes>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-open-access,`<open-access>`>>, <<element-p,`<p>`>>, <<element-page-range,`<page-range>`>>, <<element-part-title,`<part-title>`>>, <<element-patent,`<patent>`>>, <<element-person-group,`<person-group>`>>, <<element-postal-code,`<postal-code>`>>, <<element-prefix,`<prefix>`>>, <<element-preformat,`<preformat>`>>, <<element-price,`<price>`>>, <<element-pub-date,`<pub-date>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-publisher-name,`<publisher-name>`>>, <<element-rb,`<rb>`>>, <<element-ref,`<ref>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-role,`<role>`>>, <<element-rt,`<rt>`>>, <<element-season,`<season>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-self-uri,`<self-uri>`>>, <<element-series,`<series>`>>, <<element-sig,`<sig>`>>, <<element-size,`<size>`>>, <<element-source,`<source>`>>, <<element-speaker,`<speaker>`>>, <<element-speech,`<speech>`>>, <<element-state,`<state>`>>, <<element-statement,`<statement>`>>, <<element-std,`<std>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-id,`<std-id>`>>, <<element-std-id-group,`<std-id-group>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-meta,`<std-meta>`>>, <<element-std-org,`<std-org>`>>, <<element-std-org-abbrev,`<std-org-abbrev>`>>, <<element-std-org-group,`<std-org-group>`>>, <<element-std-org-name,`<std-org-name>`>>, <<element-string-date,`<string-date>`>>, <<element-string-name,`<string-name>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub-part,`<sub-part>`>>, <<element-subj-group,`<subj-group>`>>, <<element-subtitle,`<subtitle>`>>, <<element-suffix,`<suffix>`>>, <<element-supplement,`<supplement>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-target,`<target>`>>, <<element-term,`<term>`>>, <<element-term-sec,`<term-sec>`>>, <<element-textual-form,`<textual-form>`>>, <<element-title-wrap,`<title-wrap>`>>, <<element-toc,`<toc>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-entry,`<toc-entry>`>>, <<element-toc-group,`<toc-group>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-trans-title-group,`<trans-title-group>`>>, <<element-uri,`<uri>`>>, <<element-verse-group,`<verse-group>`>>, <<element-verse-line,`<verse-line>`>>, <<element-version,`<version>`>>, <<element-volume,`<volume>`>>, <<element-volume-id,`<volume-id>`>>, <<element-volume-series,`<volume-series>`>>, <<element-xref,`<xref>`>>, <<element-year,`<year>`>>
+|===
+| Value| Meaning
+
+| An alphanumeric string, which may include hyphens| An abbreviation for a natural language (such as “`en`” for English or “`de`” for German) or for a language and a script (“`ja-Kana`”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-subjectField,`<tbx:subjectField>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| An abbreviation for a natural language (such as “`en`” for English or “`de`” for German). (Use the <<attribute-script,`@script`>> attribute for any associated script.)
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Languages for licenses
+
+[source,xml]
+....
+...
+<permissions>
+ <license xml:lang="en">
+  <license-p>Apart from exceptions provided by the law, 
+   nothing from this publication may be duplicated and/or 
+   published ...</license-p>
+  ...
+ </license>
+ <license xml:lang="nl">
+  <license-p>Auteursrecht voorbehouden. Behoudens 
+   uitzondering door de wet gesteld mag zonder schriftelijke 
+   toestemming van het Nederlands Normalisatie-instituut 
+   niets uit deze uitgave worden ...</license-p>
+  ...
+ </license>
+</permissions>
+...
+....
+#### Providing the language codes for languages sets in different languages
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

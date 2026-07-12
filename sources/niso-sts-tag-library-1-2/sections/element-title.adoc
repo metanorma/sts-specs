@@ -1,0 +1,177 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/title.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-title]
+=== `<title>` Title
+
+Heading or title for a structural element (for example, <<element-sec,`<sec>`>>, <<element-app,`<app>`>>, <<element-boxed-text,`<boxed-text>`>>).
+
+#### Usage/Remarks
+The element <<element-std,`<std>`>>, which is a citation to a standard, uses the element <<element-title,`<title>`>> to tag the title of a standard rather than the element `<source>`.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-author-comment,`<author-comment>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-caption,`<caption>`>>, <<element-def-list,`<def-list>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-fn-group,`<fn-group>`>>, <<element-glossary,`<glossary>`>>, <<element-index-title-group,`<index-title-group>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-legend,`<legend>`>>, <<element-list,`<list>`>>, <<element-list-item,`<list-item>`>>, <<element-meta-note,`<meta-note>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-notes-group,`<notes-group>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-statement,`<statement>`>>, <<element-std,`<std>`>>, <<element-sub-part,`<sub-part>`>>, <<element-supplement,`<supplement>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-term-display,`<term-display>`>>, <<element-toc-entry,`<toc-entry>`>>, <<element-toc-title-group,`<toc-title-group>`>>, <<element-verse-group,`<verse-group>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> <<element-break,`<break>`>> <<element-break,Line Break>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  title        (#PCDATA %struct-title-elements;)*           >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | tbx:entailedTerm | xref | sub | sup | break | citation-alternatives | element-citation | mixed-citation | std)*
+
+#### Tagged Samples
+
+#### For section with titled subsections
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <sec id="s4">
+  <label>4</label>
+  <title>Accessibility in the standards development 
+   process</title>
+  <sec id="s4_1">
+   <label>4.1</label>
+   <title>General</title>
+   <p>This clause outlines how accessibility can be 
+    addressed in the standards development process:
+    <list list-type="bullet">
+     <list-item><p><xref ref-type="sec" rid="s4_2">4.2</xref> 
+      contains general considerations for standards bodies 
+      related to ...</p></list-item>
+     <list-item><p><xref ref-type="sec" rid="s4_3">4.3</xref> 
+      provides guidance for each of the respective stages of 
+      the standards development process to ensure ...</p></list-item>
+    </list>
+   </p>
+  </sec>
+  <sec id="s4_2">
+   <label>4.2</label>
+   <title>Considerations by standards bodies</title>
+   <p>Standards bodies should develop a process for ...</p>
+  </sec>
+  ...
+ </sec>
+ ...
+</body>
+...
+....
+#### For Foreword
+
+[source,xml]
+....
+...
+<sec sec-type="foreword">
+ <title>Foreword</title>
+ <p>The text of <std type="dated" std-id="iso:std:iso:15423"
+  ><std-ref>ISO/IEC 15423:2004</std-ref></std> has been 
+  prepared by Technical Committee ISO/IEC/JTC 1 "Information 
+  technology" of the International Organization for 
+  Standardization (ISO) and is ...</p>
+ ...
+</sec>
+...
+....
+#### For standard named in “Bibliographic references” section
+
+[source,xml]
+....
+...
+<ref content-type="standard" id="ref3">
+ <label>[3]</label>
+ <std><std-ref type="undated">EN&#x00A0;1006</std-ref>, 
+  <title>Advanced technical ceramics&#x00A0;&#x2014;Monolithic 
+   ceramics&#x00A0;&#x2014; Guidance on the selection of test 
+   pieces for the evaluation of properties</title></std>
+</ref>
+...
+<ref content-type="standard" id="ref9">
+ <label>[9]</label>
+ <std><std-ref type="undated">ISO&#x00A0;13399 (all parts)</std-ref>, 
+  <title>Cutting tool data representation and exchange</title></std>
+</ref>
+...
+....
+#### For two-part list, where each item has term and its definition
+
+[source,xml]
+....
+...
+<sec sec-type="abbreviations" id="s4">
+ <label>4</label>
+ <title>Abbreviations and acronyms</title>
+ <def-list>
+  <title>Abbreviations:</title>
+  <def-item>
+   <term>CCD</term>
+   <def><p>Charge Coupled Device.</p></def>
+  </def-item>
+  <def-item>
+   <term>CMOS</term>
+   <def><p>Complementary Metal Oxide Semiconductor.</p></def>
+  </def-item>
+  <def-item>
+   <term>LED</term>
+   <def><p>Light Emitting Diode.</p></def>
+  </def-item>
+ </def-list>
+</sec>
+...
+....
+#### For index
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  <index-entry>
+   <term>Abbreviations</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx869"/>
+    <nav-pointer specific-use="page">7</nav-pointer></nav-pointer-group>
+  </index-entry>
+
+  <index-entry>
+   <term>Acquisition Management Systems Control (AMSC) number</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx284"/>
+    <nav-pointer specific-use="page">2</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx752"/>
+    <nav-pointer specific-use="page">6</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx1235"/>
+    <nav-pointer specific-use="page">19</nav-pointer></nav-pointer-group>
+  </index-entry>
+ </index>
+ ...
+</back>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

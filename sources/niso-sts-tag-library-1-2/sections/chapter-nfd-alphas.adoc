@@ -1,0 +1,87 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-alphas.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-alphas]
+=== All Diagrams in Alphabetical Order
+
+Subsidiary sections:
+#### Abstract
+#### Acknowledgments
+#### Alternatives For Processing
+#### Appendix
+#### Appendix Group
+#### Array (Simple Tabular Array)
+#### Back Matter
+#### Biography
+#### Body of the Standards Document
+#### Boxed Text
+#### Caption of a Figure, Table, Etc.
+#### Chemical Structure Wrapper
+#### Counts
+#### Cross-Reference to a Standard
+#### Custom Metadata Group
+#### Definition List
+#### Editing Instruction
+#### Figure
+#### Figure Group
+#### Footnote
+#### Footnote Group
+#### Formula, Display Group
+#### Front Matter
+#### Glossary Elements
+#### ICS Code/Description Wrapper
+#### Index
+#### Index Division
+#### Index Entry
+#### Index Group
+#### Index Term
+#### Index Term Range End
+#### Index Title Group
+#### ISO-Specific Document Identification Section
+#### ISO-specific National-Body Metadata
+#### ISO-specific Metadata
+#### ISO-specific Regional Metadata
+#### Keyword Group
+#### Language Set (TBX)
+#### Legend
+#### List
+#### Metadata Note
+#### NISO STS Standard Metadata
+#### NLM Citation Model (deprecated)
+#### Non-Normative-Example
+#### Non-Normative-Note
+#### Normative-Example
+#### Normative-Note
+#### Notes Group
+#### Notes Section
+#### OASIS XML Exchange (CALS) Table
+#### Permissions
+#### Processing Metadata
+#### Quote, Displayed
+#### Reference Item
+#### Reference List (Bibliographic Reference List)
+#### Ruby Wrapper
+#### Section
+#### Section Metadata
+#### Speech
+#### Standard Adoption Document
+#### Standard Identification Block
+#### Standards Document
+#### Standards Document Metadata
+#### Standards Organization Description
+#### Statement, Formal
+#### Subject Group
+#### Sub-Part of a Standard
+#### Supplementary Material
+#### Table (NISO JATS table model)
+#### Table Footer
+#### Table Group
+#### Table Wrapper
+#### Table of Contents
+#### Table of Contents Group
+#### Term-Display
+#### Term Entry (Concept Entry) TBX
+#### Term Information Group (TIG) (TBX)
+#### Terms and Definitions Container/Section
+#### Title Wrapper
+#### Verse Form For Poetry

@@ -1,0 +1,299 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/modules.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-modules]
+=== Modules in NISO STS
+
+This section names and describes all of the modules of the NISO STS that exist in the base Interchange and Extended Tag Sets in the DTD forms. An organization may choose to add additional modules or not call in some of those listed.
+#### The Four NISO STS Tag Sets
+
+Each of the NISO STS Tag Sets will have its own DTD module. The individual DTD modules call in all of the other modules needed and then declare the top-level <<element-standard,`<standard>`>> element.
+|===
+| NISO-STS-interchange-1-mathml2.dtd| The base NISO STS Interchange Tag Set, using MathML 2.0, for  organizations already
+                              using MathML 2.0. This Tag Set is intended not  recommended for new users or users
+                              who are not already tagging math.
+
+| NISO-STS-interchange-1-mathml3.dtd| The base NISO STS Interchange Tag Set, using MathML 3.0. Using MathML 3.0 is Best
+                              Practice, preferred over MathML 2.0.
+| NISO-STS-extended-1-mathml2.dtd| The Extended version of the NISO STS Tag Set, which includes both XHTML and CALS tables
+                              and uses MathML 2.0. This Tag Set is intended for  organizations already using MathML
+                              2.0 and is not recommended for new users or users who are not already tagging math.
+| NISO-STS-extended-1-mathml3.dtd| The Extended version of the NISO STS Tag Set, which includes both XHTML and CALS tables
+                              and uses MathML 3.0.  Using MathML 3.0 is Best Practice, preferred over MathML 2.0.
+|===
+#### NISO-STS-specific Customizations
+
+The NISO STS customization modules are used in each of the NISO STS DTDs to declare NISO-STS-specific elements and provide overrides for the JATS Publishing, JATS Suite, and BITS modules. The filename for each modules will include a version number and a suffix (`.ent`), so, for example, the module “`NISO-STS-modules`” will in this version of NISO STS, take a filename of “`NISO-STS-modules1.ent`”.
+|===
+| `NISO-STS-modules`| Module to Name NISO STS Suite-specific Module — Declares all the external modules
+                              that are specific to NISO STS (except this module itself, so this module must be both
+                              declared and called from inside a DTD). A Tag Set selects from these modules by referencing
+                              the module names through external parameter entities. All modules are declared (named)
+                              in this Module of Modules, but referenced (called in, if wanted) inside a DTD. To
+                              include a set of elements (such as all the non-TBX terms and definitions elements),
+                              a DTD references the external parameter entity of the module that contains these declarations.
+                           
+                           
+                              *Call-in Sequence:* The NISO STS Module to Name NISO STS Suite-specific Modules is the first of the naming
+                              modules. Each NISO STS Tag Set also contains the Journal Publishing Tag-Set-specific
+                              Module of Modules and the JATS base Module to Name the Modules (along with the MathML
+                              3 modules, if used). These modules need to be among the first four external modules
+                              called by a NISO STS Tag Set. Customization modules for classes, mixes, and models
+                              will typically be called following the cluster of Modules to Name the Modules.
+
+| `NISO-STS-classes`| NISO STS DTD Customize Classes Module — Sets up the parameter entities for class overrides.
+                              These 
+                              parameter entities will over-ride selected class definitions in the JATS 
+                              Journal Publishing DTD class module, the JATS base suite default class module, and
+                              selected BITS modules.
+| `NISO-STS-classes-extended`| NISO STS Extended DTD Customize Classes Module 
+                              — Sets up the parameter entities for element 
+                              class overrides that override the NISO STS
+                              ordinary classes when OASIS tables are 
+                              used in a Tag Set.
+| `NISO-STS-mixes`| NISO STS DTD Customize Mixes Module — Sets up the parameter entities for mix overrides.
+                              These parameter entities will over-ride 
+                              selected mix definitions in the JATS 
+                              Journal Publishing DTD mix module, the JATS base suite mix module, and selected BITS
+                              modules.
+| `NISO-STS-models`| NISO STS DTD Customize Content Models and Attributes Module — Sets up the parameter
+                              entities for complete content
+                              models, element-groups within content models, attribute lists, and attribute value
+                              overrides. These parameter entities will over-ride selected
+                              content models and attribute lists in the JATS Publishing
+                              DTD, the JATS base suite, and selected BITS modules.
+|===
+#### NISO STS Element Definition Modules
+
+These modules, which define the NISO-STS-specific elements and attributes, are the base of NISO STS and are shared by all NISO STS Tag Sets:
+|===
+| `NISO-STS-adoption`| NISO STS Top-level Adoption Wrapper Module — Element declarations for the top-level
+                              <<element-adoption,`<adoption>`>> element in the NISO STS Interchange Tag Sets.
+
+| `NISO-STS-adoption-extended`| NISO STS CALS Top-level Adoption Wrapper Module — Element declarations for the NISO
+                              STS top-level <<element-adoption,`<adoption>`>> element in the Extended Tag Sets (which include  CALS tables).
+| `NISO-STS-standards-components`| NISO STS Common Standards Document Components 
+                              Module — Element declarations for high-level
+                              components of a standards document, such as
+                              <<element-body,`<body>`>>, and <<element-back,`<back>`>>.
+| `NISO-STS-notes-exmp`| NISO STS Notes and Examples Elements Module — Element declarations for both normative
+                              and non-normative notes and
+                              examples.
+| `NISO-STS-terms-n-def`| Non-TBX Terms and Definitions Section Modules — Declares the elements for a less complex,
+                              reading-order model for
+                              terms and definitions, which may be used 
+                              instead of or in addition to the TBX term models.
+| `NISO-STS-common-metadata`| NISO STS Common Metadata Elements Module — Declares the metadata elements shared by
+                              all of
+                              the metadata components elements (<<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>>, etc.) and their
+                              contents.
+| `NISO-STS-std-metadata`| NISO STS Standards Metadata Elements Module — Declares the <<element-std-meta,`<std-meta>`>> element.
+| `NISO-STS-iso-metadata`| NISO STS ISO Metadata Elements Module — Declares the <<element-iso-meta,`<iso-meta>`>> element.
+| `NISO-STS-nat-metadata`| NISO STS ISO-related National Metadata Elements Module — Declares the <<element-nat-meta,`<nat-meta>`>> element.
+| `NISO-STS-reg-metadata`| NISO STS ISO-related Regional Metadata Elements Module — Declares the <<element-reg-meta,`<reg-meta>`>> element and its unique contents.
+| `NISO-STS-tbx-setup`| NISO STS TBX Setup Module — Declares the elements and attributes for describing terms
+                              and definitions in a namespace-qualified, TBX (TermBase eXchange) compatible vocabulary
+                              derived from ISO 30042.
+| `NISO-STS-tbx-namespace`| NISO STS TBX Namespace Module — Provides the namespace structure for using the namespace-qualified
+                              version of the TBX DTD. The NISO STS TBX elements define the TBX (TermBase eXchange)
+                              vocabulary, and are based on ISO 30042:2008(E)
+                              Annex A, modified to make all the STS TBX elements
+                              be namespace-qualified.
+|===
+#### Modules Shared with JATS Publishing DTD
+
+The JATS Publishing DTD modules are an integral part of NISO STS, as they were of ISO STS. NISO STS customization modules override portions of the JATS Publishing customization modules, which in term override JATS base-Suite modules. The customization modules of the JATS Journal Publishing Tag Set (`JATS-journalpubcustom-classes1-3.ent`, `JATS-journalpubcustom-mixes1-3.ent`, `JATS-journalpubcustom-models1-3.ent`, and `JATS-journalpubcustom-modules1-3.ent`, and, for the extended NISO Tag Sets the modules `JATS-journalpub-oasis-custom-classes1-3.ent` and `JATS-journalpub-oasis-custom-modules1-3.ent`) are used directly inside NISO STS DTDs. `JATS-journalpubcustom-modules` Module to Name Journal Publishing Tag-Set-specific Modules Module — Declares all the external modules that are specific to the JATS Journal Publishing Tag Set (except itself, so this module must be both named and called inside a DTD). A Tag Set selects from these modules by referencing the module names through external parameter entities. The entities are declared in this module, but referenced (or not) inside a NISO STS DTD. To include a set of elements (such as all the lists or all the MathML elements), a DTD references the external parameter entity of the module that contains these declarations. In NISO STS, this Module of Modules joins those for NISO STS and the JATS base-Suite. `JATS-modules` JATS Base-Suite Module to Name the Modules Module — Declares all the external modules that are part of the modular JATS DTD Suite (except itself, which must be both named and called inside a DTD). In NISO STS, this Module of Modules joins those for NISO STS and the JATS Publishing DTD. `JATS-journalpubcustom-classes` JATS Journal Publishing Tag Set Class Customizations Module — Declares the parameter entities that will be used to override default classes prescribed by the `JATS-default-classes` module. *Implementor’s Note:* This module must be called after the various Module to name the Modules, but before any other JATS-specific modules, including specifically the `JATS-default-classes` module (which this module overrides) and the `JATS-journalpubcustom-mixes` module (which builds on components defined in this module). `JATS-default-classes` JATS Default Element Classes Module — Declares the parameter entities that name the element members of each class that will be used to establish the content models. *Implementor’s Note:* This module must be called before any of the mixes modules, as well before the Journal Publishing Customize Models Module (`JATS-journalpubcustom-models`, which builds on those modules). `JATS-journalpubcustom-mixes` Journal Publishing Tag Set Mix Customizations Module — Declares the parameter entities that will be used to override default mixes (groupings made of “classes”) prescribed by the `JATS-default-mixes` module. *Implementor’s Note:* This module must be called after all the JATS classes modules, but before the `JATS-default-mixes` module (which this module overrides) and the `JATS-journalpubcustom-models` module (which builds on this module). `JATS-default-mixes` JATS Base-Suite Default Element Mixes Module — Declares the parameter entities that name mixes (groupings made of “classes”) that will be used to establish the content models. *Implementor’s Note:* This module must be called before the Journal Publishing Customize Models Module (`JATS-journalpubcustom-models`) or any element-defining modules of the Suite. `JATS-journalpubcustom-models` Journal Publishing Tag Set Models/Attributes Customizations Module — Declares the parameter entities that will be used to override content model parameter entities set elsewhere in the Suite. Also defines customizable attribute Declared Values and attribute lists for the tag set being defined. *Implementor’s Note:* This module must be called after all the class and mixes modules, but before any of the element-defining modules of the Suite.
+#### Modules Shared with BITS
+
+The following modules are used as part of NISO STS, unchanged from BITS. Their content may be overridden by NISO-STS-specific customizations.
+|===
+| `BITS-index`| BITS Structural Index Elements Module — Element declarations for the BITS structural
+                              index model (<<element-index,`<index>`>>).
+
+| `BITS-embedded-index`| BITS Embedded Index Elements Module — Element declarations for the index elements
+                              that are embedded in the document 
+                              narrative for the autogeneration of indexes.
+| `BITS-toc`| BITS Structural Table of Contents Module — Element declarations for the BITS structural
+                              Table of Contents model.
+| `BITS-toc-index-nav`| BITS Structural Navigation Module — Element declarations for the BITS navigation
+                              and pointing mechanism for structural
+                              Indexes and Tables of Contents.
+| `BITS-xinclude`| BITS Xinclude Module — Sets up the namespace and elements for using
+                              <<element-xi-include,`<xi:include>`>> to manage standards and adoptions as components rather than as a whole.
+|===
+#### Modules Shared with JATS Suite
+
+The following modules are used as part of NISO STS, unchanged from the JATS common modules. Their content may be overridden by NISO-STS-specific customizations.
+|===
+| `JATS-ali-namespace`| ALI Namespace Module — Namespace setup for the NISO Access License and Indicators
+                              elements (prefix “`ali:`”). The ALI elements are defined in the JATS Common 
+                              module (described hereafter).
+
+| `JATS-common-atts`| JATS Common (Shared) Attributes Module — Declares the  attributes intended to be used
+                              on 
+                              _ALL_ elements defined in the NISO JATS. The list of all elements includes the table elements
+                              for both the 
+                              XHTML-inspired and OASIS-inspired table 
+                              models. The list of all elements does _not_ include <<element-mml-math,`<mml:math>`>> and its contents, whose namespaces NISO STS does not control.
+                           
+                           This module must be called after all module-of-modules
+                              modules and any namespacing modules, but 
+                              before all customization (over-ride) modules.
+| `JATS-common`| JATS Common (Shared) Elements Module — Declarations for elements, attributes, entities,
+                              and notations that are shared by
+                              more than one class module or tag set.
+                           
+                           
+                              *Implementor’s Note:* This module must be called before any of the NISO-STS-specific element grouping modules
+                              in the NISO STS Suite, but after the NISO STS models module and the JATS Publishing
+                              models module.
+|===
+#### JATS Element and Attribute Definition Modules
+
+The modules that declare the structural and elements and attributes that make up the JATS base-Suite are defined by the following modules. These models and attribute lists may be overridden by the customization modules of NISO STS or of the JATS Publishing DTD.
+|===
+| `JATS-articlemeta`| JATS Journal Article Metadata Elements Module — Declares the metadata elements (issue
+                                 elements and article header elements) originally used to describe a journal article,
+                                 but now included among the metadata elements for standards documents.
+
+| `JATS-backmatter`| JATS Back Matter Elements Module — Declares elements that are not part of the main
+                                 textual flow of a work, but are considered to be ancillary material that follows the
+                                 main document, such as appendices, glossaries, and bibliographic reference lists.
+| `JATS-display`| JATS Display Class Elements Module — Declares the display-related elements, such as
+                                 figures, graphics, chemical expressions and structures, tables, etc.
+| `JATS-format`| JATS Format Class Elements Module — Declares elements concerned with rendition of
+                                 output, for example, printing on a page or displaying on a screen. For example, this
+                                 module declares elements in the Appearance Class, the Break Class, and the Emphasis
+                                 (typographic highlighting) Class.
+| `JATS-funding`| JATS Funding Elements Module — Declares elements that model open access, grant, sponsorship,
+                                 or other funding information, for example, the grant number (<<element-award-id,`<award-id>`>>).
+| `JATS-link`| JATS Link Class Elements Module — Declares elements that are links (internal or external)
+                                 by definition, such as URLs (<<element-uri,`<uri>`>>) and internal cross references (<<element-xref,`<xref>`>>).
+| `JATS-list`| JATS List Class Elements Module — Declares the elements in the List Class; these include
+                                 all lists except normative and non-normative lists of bibliographic references (citations).
+| `JATS-math`| JATS Math Class Elements Module — Declares the elements in the math classes such as
+                                 display equations.
+| `JATS-nlmcitation`| Former JATS NLM Citation Module — Adds the model for the NLM structured bibliographic
+                                 citation element (<<element-nlm-citation,`<nlm-citation>`>>). This element is now obsolete, has been deprecated in JATS, and should be replaced
+                                 by either the <<element-mixed-citation,`<mixed-citation>`>> or the <<element-element-citation,`<element-citation>`>> element.
+| `JATS-para`| JATS Paragraph-Like Elements Module — Declares structural, non-display elements that
+                                 may appear in the same places as a paragraph (such as <<element-statement,`<statement>`>> or <<element-disp-quote,`<disp-quote>`>>). These elements are named in the various paragraph class parameter entities.
+| `JATS-phrase`| JATS Subject Phrase Class Elements Module — Declares the Phrase Class elements, that
+                                 is, names inline elements such as <<element-named-content,`<named-content>`>> and <<element-styled-content,`<styled-content>`>>.
+| `JATS-references`| JATS Bibliographic Reference (Citation) Class Elements Module — Declares the bibliographic
+                                 reference component elements (such as <<element-source,`<source>`>> and <<element-person-group,`<person-group>`>>).
+| `JATS-related-object`| JATS Related Object Elements Module — Defines the container element <<element-related-object,`<related-object>`>>, which is used as a container for text links to a related object, possibly accompanied
+                                 by a very brief description of the object.
+| `JATS-section`| JATS Section Class Elements Module — Declares the elements of the Section Class, that
+                                 is, declares all section-level elements in JATS.
+|===
+#### MathML Modules
+
+The modules that define or customize the elements and attributes of MathML 2.0 and MathML 3.0.
+|===
+| `JATS-mathmlsetup`| JATS MathML 2.0 Setup Module — Invokes the MathML 2.0 modules.
+                              
+                                 *Implementor’s Note:*: To include the MathML 2.0
+                                 elements, a DTD must reference this module. This module sets up all parameter entities
+                                 needed to use
+                                 the MathML 2.0 Tag Set and references (invokes) the MathML 2.0 Tag Set Module, which,
+                                 in turn,
+                                 invokes all the other MathML 2.0 modules.  *MathML  Warning:* MathML 2.0 and MathML 3.0 may not be used together; a Tag Set must choose one or
+                                 the other. *Namespace Warning:* The MathML setup modules and MathML modules establish the namespaces for MathML and
+                                 XLink. Because of XLink, you will need to include the MathML modules, _even if you are not using MathML_.
+
+| `JATS-mathml3-mathmlsetup`| JATS MathML 3.0 Setup Module — Invokes the MathML 3.0 modules.
+                              
+                                 *Implementor’s Note:*: To include the MathML 3.0
+                                 elements, a DTD must reference this module. This module sets up all parameter entities
+                                 needed to use
+                                 the MathML 3.0 Tag Set and references (invokes) the MathML 3.0 Tag Set Module, which,
+                                 in turn,
+                                 invokes all the other MathML 3.0 modules. *MathML  Warning:* MathML 2.0 and MathML 3.0 may not be used
+                                 together; a Tag Set must choose one or the other. *Namespace Warning:* The MathML setup modules and MathML modules establish the namespaces for MathML and
+                                 XLink. Because of XLink, you will need to include the MathML modules, _even if you are not using MathML_.
+| `JATS-mathml3-modules`| JATS MathML 3.0 Modules Module — Names the modules needed for MathML 3.0.
+| `mathml2.dtd` and `mathml3.dtd`| MathML DTDs Modules — Used for either the Mathematical Markup Language (MathML) 2.0
+                                 or the MathML 3.0, an XML application for describing mathematical notation and capturing
+                                 both its structure and content.
+| `mathml2-qname.mod` and `mathml3-qname.mod`| MathML Qualified Names Module — Declares parameter entities to support namespace-qualified
+                                 names, namespace
+                                 declarations, and name prefixing for MathML, as well as declares the parameter
+                                 entities used to provide namespace-qualified names for all MathML element types. Used
+                                 for  
+                                 MathML 2.0 or MathML 3.0, respectively.
+| `mmlextra`| Extra Entities for MathML Module — Declares MathML entities. The same file is used
+                                 for both MathML 2.0 and MathML 3.0 processing.
+| `mmlalias`| Aliases for MathML Module — The same file is used
+                                 for both MathML 2.0 and MathML 3.0 processing.
+|===
+#### XHTML-inspired Table Modules
+
+The modules that define the JATS XHTML-inspired table model are listed below. These models and attribute lists may be overridden by the customization modules of the NISO STS or of the JATS Publishing DTDs.
+|===
+| `JATS-XHTMLtablesetup`| NISO JATS XHTML-inspired Table Setup Module — Sets all parameter entities needed by
+                                 the NISO JATS XHTML-inspired Table Module, and then invokes the module containing
+                                 that model.
+                              
+                              To include the NISO JATS XHTML-inspired table model in a tag set, a DTD
+                                 must reference this module. This module sets up all parameter entities needed to use
+                                 the XHTML-inspired Table Module and references (invokes) the JATS XHTML-inspired Table
+                                 Module. (See next item.)
+
+| `xhtml-table-1.mod`| NISO JATS XHTML-inspired Table Module — The public XML DTD version of the XHTML-inspired
+                                 Table Module. This module is invoked from
+                                 the module `JATS-XHTMLtablesetup.ent`. (See
+                                 previous item.) This is the default table model for NISO STS. In the extended Tag
+                                 Sets, the OASIS Exchange CALS table model may be used in addition or instead of the
+                                 XHTML table model.
+| `xhtml-inlstyle-1.mod`| NISO JATS XHTML-inspired Table Style Module — Declares the <<attribute-style,`@style`>> attribute,
+                                 which supports inline style markup for elements such as <<element-td,`<td>`>> and <<element-tr,`<tr>`>> within an XHTML-inspired Table.
+|===
+#### OASIS Exchange (CALS) Table Modules
+
+The modules that define the JATS version of the OASIS Exchange (CALS) table model are listed below. These models and attribute lists may be overridden by the customization modules of the NISO STS or of the JATS Publishing DTDs. To include the CALS table model in a Tag Set, these modules must be called out in the DTD.
+|===
+| `JATS-journalpub-oasis-custom-modules`| Journal Publishing DTD OASIS Tables DTD-Specific Modules Module — Declares the DTD-specific
+                                 modules necessary to include OASIS Tables.
+
+| `JATS-journalpub-oasis-custom-classes`| JATS Journal Publishing DTD with OASIS Tables Customize Classes Module — The class
+                                 overrides necessary for CALS tables. These repeat all the class overrides of the regular
+                                 Publishing DTD, with the table and alternative 
+                                 classes modified to use the OASIS XML Exchange (CALS) table elements. There is no
+                                 equivalent mix
+                                 override module, because CALS processing uses the ordinary Publishing mix overrides.
+| `JATS-oasis-namespace`| JATS OASIS Table Namespace Module — This modules establishes
+                                 the prefix for the OASIS
+                                 Exchange (CALS) table model, by default “`oasis`”
+                                 (“`<oasis:table>`”).
+| `JATS-oasis-tablesetup`| JATS Namespaced OASIS XML Table Setup Module — Sets all parameter entities
+                                 needed by the OASIS XML Exchange (CALS) table model, and then invokes the module
+                                 containing that model.
+                              
+                              To include the OASIS XML Exchange (CALS) table model, a DTD must reference
+                                 this module. This module sets up all parameter entities needed to use the OASIS
+                                 table model and references (invokes) the OASIS XML Exchange (CALS) Table Model Module.
+                                 This module has been modified to use a hard-coded namespace 
+                                 prefix of “`oasis`” for all table elements, to permit both the OASIS
+                                 Exchange (CALS) table models and XHTML-inspired table models to be used
+                                 in one tag set. There is a separate Tag
+                                 Library (https://jats.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html) describing the OASIS elements, attributes, and parameter entities.
+| `oasis-exchange`| OASIS XML Exchange (CALS) Table Model Module — This is the OASIS XML Exchange (CALS)
+                                 table model DTD fragment, modified to use the OASIS namespace and 
+                                 the “`oasis`” prefix.  This module is invoked from the JATS OASIS XML Exchange
+                                 (CALS) setup module (`JATS-oasis-tablesetup.ent`).
+|===
+#### Character Entities and Notations
+
+The modules that define sets of general entity character entities and the notations (all optional) are listed below.
+|===
+| `JATS-xmlspecchars`| JATS XML Special Characters Module — Standard ISO XML special character entities used
+                                 in this Tag Set.
+
+| `JATS-chars`| JATS Custom Special Characters Module — Custom special character entities created
+                                 specifically for use in this Tag Set.
+| `JATS-notat`| JATS Notation Declarations Module — Container module for the Notation Declarations
+                                 to be used with this Suite. These notations have been placed in their own module for
+                                 easy expansion or replacement. Notations are left over from SGML, were often used
+                                 in the early days of JATS, and are far less useful now.
+|===

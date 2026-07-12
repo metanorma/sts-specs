@@ -1,0 +1,54 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/italic.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-italic]
+=== `<italic>` Italic
+
+Used to mark text that should appear in an italic or slanted font.
+
+#### Usage/Remarks
+The <<attribute-toggle,`@toggle`>> attribute controls the behavior of this element. When the value of <<attribute-toggle,`@toggle`>> is set to “`no`”, the emphasized text remains in the requested style, no matter what the surrounding text does. When the value of <<attribute-toggle,`@toggle`>> is “`yes`”, if the surrounding text is set to the same emphasis style, the text within this element will change to another emphasis style, so that the text will always be typographically distinct from its surroundings.
+Using the element <<element-italic,`<italic>`>> as an example, setting the <<attribute-toggle,`@toggle`>> attribute to “`no`” would mean that material marked as italics will always be italics, even in an italic context. In contrast, if the <<attribute-toggle,`@toggle`>> attribute was set to “`yes`” on the <<element-italic,`<italic>`>> element, if the formatting context imposes italics (whether due to another <<element-italic,`<italic>`>> element, a stylesheet, some CSS, or other means), then the italics would be turned off within that context, making the emphasized text emphasized by contrast, but not italic. The <<element-italic,`<italic>`>> element would still produce italics everywhere else.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-toggle,`@toggle`>> (default = yes)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-data-title,`<data-title>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-element-citation,`<element-citation>`>>, <<element-ext-link,`<ext-link>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-gov,`<gov>`>>, <<element-inline-code,`<inline-code>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-kwd,`<kwd>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-price,`<price>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-rb,`<rb>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-related-term,`<related-term>`>>, <<element-role,`<role>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-series,`<series>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-source,`<source>`>>, <<element-std,`<std>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-target,`<target>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-source,`<term-source>`>>, <<element-textual-form,`<textual-form>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>, <<element-xref,`<xref>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> <<element-std-ref,`<std-ref>`>> <<element-std-ref,Standard Reference Designation>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  italic       (#PCDATA %emphasized-text;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | citation-alternatives | element-citation | mixed-citation | std | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | tbx:entailedTerm | xref | std-ref | sub | sup)*
+
+#### Tagged Sample
+
+##### Emphasis within text
+[source,xml]
+....
+...
+<p>This Guide utilizes the term <italic>accessibility</italic> 
+from an inclusive perspective, recognizing that accessibility
+generally benefits everyone.</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

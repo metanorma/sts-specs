@@ -1,0 +1,151 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/subj-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-subj-group]
+=== `<subj-group>` Subject Group
+
+Container element for the subject matter descriptors (<<element-subject,`<subject>`>>) that name the classifications, categories, topics, or themes of the standards document, for example: IPC Codes, UNSPSC Codes, or UNS Codes.
+
+#### Usage/Remarks
+#### Types of Subjects
+
+This Tag Set contains several differently-structured types of subjects: `<subject>` Used with simple subjects: words or phrases. <<element-compound-subject,`<compound-subject>`>> Used with multi-part subjects, such as a subjects that contains both a code and its expansion/description/name/title. <<element-ics,`<ics>`>> and <<element-ics-wrap,`<ics-wrap>`>> Used to hold ICS codes. The ICS elements were originally part of ISO STS, which did not use other subject groups, so the element <<element-ics,`<ics>`>> and <<element-ics-wrap,`<ics-wrap>`>> are not _inside_ <<element-subj-group,`<subj-group>`>>, but are at the same level as these groupings.
+#### Language in Subjects
+
+A standard may take multiple sets of subject codes, with the <<attribute-subj-group-type,`@subj-group-type`>>, <<attribute-specific-use,`@specific-use`>>, or <<attribute-xml-lang,`@xml:lang`>> attributes used to discriminate between them. The <<element-subject,`<subject>`>> element does not take the <<attribute-xml-lang,`@xml:lang`>> attribute; that is reserved for the `<subj-group>`. This means that subjects must be sorted by language and entered in language groups.
+#### Vocabulary Attributes
+
+For controlled vocabularies, two attributes can be used to link a subject group to its source: <<attribute-vocab,`@vocab`>> — This attribute holds the name of a controlled or generic vocabulary, taxonomy, ontology, database, thesaurus, etc. that is the source of the subject terms in the group, for example, “`ipc`”, “`unspsc`”, or “`uns`”. In cases where there is no named vocabulary, the @vocab attribute should be set to “`uncontrolled`”. <<attribute-vocab-identifier,`@vocab-identifier`>> — This attribute holds a unique identifier and possibly a pointer to the named vocabulary, typically a URI or DOI reference.
+##### Vocabulary Attributes Best Practice
+
+If the subject terms in `<subj-group>` come from a controlled vocabulary, taxonomy, ontology, database, term list, or similar formally defined term source, the <<attribute-vocab,`@vocab`>> attribute (and if possible, the <<attribute-vocab-identifier,`@vocab-identifier`>> attribute) should be used on the `<subj-group>` element to name the source. If there is a subject-term-specific identifier in this source of terms, then also use the <<attribute-vocab-term,`@vocab-term`>> and <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> on the subject term (`<subject>`), if possible.
+If the subject terms come from, or are specific to, a field of study that can be named (particularly where different fields might define the same term differently), name the field of study in the <<attribute-subj-group-type,`@subj-group-type`>> attribute (“`structural engineering`”, “`mechanical engineering`”, “`bird watching`”). Such terms are typically, but not always, informally defined.
+Although subject terms may be from an uncontrolled vocabulary, this is less likely than for terms such as keywords, since subject codes such as IPC, UNSPSC, UNS, etc. are controlled by defined vocabularies. If the subject terms are uncontrolled, either omit the <<attribute-vocab,`@vocab`>> attribute on `<subj-group>` or use the value “`uncontrolled`”.
+#### Subject Group Type Attribute
+
+The <<attribute-subj-group-type,`@subj-group-type`>> attribute most commonly names an uncontrolled vocabulary source of the subject terms, such as “`chemical engineering`”, “`author-generated`”, or “`working-group-generated`”. But <<attribute-subj-group-type,`@subj-group-type`>> has also been used to record the type of subject terms, for example, “`hierarchical`” for subjects that are grouped into a hierarchy, “`abbreviations`” for subjects that contain an abbreviation and its expansion, or “`code`” for subjects that contain a code and its text but where the source of the codes is unknown.
+#### Historical Note
+
+Older documents, coded before NISO STS added the vocabulary attributes, may have used <<attribute-subj-group-type,`@subj-group-type`>> to name the vocabulary source. Going forward, this is information to be recorded in the vocabulary attributes.
+
+#### Related Elements
+
+*ICS Codes:* ICS Codes are a special kind of subjects that identify the overall topic, subject, or theme of a standard using codes from the International Classification for Standards. ICS Codes are _not tagged_ as <<element-subject,`<subject>`>>s, but rather use their own specific elements (<<element-ics-wrap,`<ics-wrap>`>>, <<element-ics,`<ics>`>>, and <<element-ics-desc,`<ics-desc>`>>).
+*Keywords vs Subjects Terms:* Subject terms (collected within a <<element-subj-group,`<subj-group>`>> element) name broad classifications, categories, topics, or themes that describe or classify a standard. Keywords (collected within a <<element-kwd-group,`<kwd-group>`>> element) contain words from the narrative text or words (such as broader and narrower terms) related to that text.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-subj-group-type,`@subj-group-type`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-app-group,`<app-group>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-media,`<media>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-sec-meta,`<sec-meta>`>>, <<element-statement,`<statement>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>, <<element-subj-group,`<subj-group>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+#### Description
+
+The following, in order: One or more of any of: <<element-subject,`<subject>`>> <<element-subject,Subject Name>> <<element-compound-subject,`<compound-subject>`>> <<element-compound-subject,Compound Subject Name>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  subj-group   %subj-group-model;                           >
+....
+#### Expanded Content Model
+
+((subject | compound-subject)+, subj-group*)
+
+#### Tagged Samples
+
+#### UNSPSC codes with their descriptions given using `<compound-subject>`
+
+[source,xml]
+....
+...
+<subj-group vocab="UNSPSC">
+ <compound-subject>
+  <compound-subject-part content-type="code">30102204</compound-subject-part>
+  <compound-subject-part content-type="value">Steel Plate</compound-subject-part>
+ </compound-subject>
+</subj-group>
+...
+....
+#### IPC codes/descriptions
+
+[source,xml]
+....
+...
+<subj-group vocab="ipc">
+ <compound-subject>
+  <compound-subject-part content-type="code">B82B1/00</compound-subject-part>
+  <compound-subject-part content-type="value">Nano structures</compound-subject-part>
+ </compound-subject>
+
+ <compound-subject>
+  <compound-subject-part content-type="code">H01L21/02</compound-subject-part>
+  <compound-subject-part content-type="value">Manufacture or treatment of 
+   semiconductor devices or of parts thereof</compound-subject-part>
+ </compound-subject>
+</subj-group>
+...
+....
+#### Subjects showing named vocabulary that has sub-vocabularies which are also fields
+                  of study, so both `@vocab` and `@subj-group-type` attributes are used
+
+[source,xml]
+....
+...
+<subj-group id="SG1.1" originator="ASME" vocab="ASME-Taxonomy"
+  xml:lang="en" subj-group-type="Industries"
+  vocab-identifier="http:/www.asme.org/ASME-Taxonomy/Industries/">
+ <subject id="SG1.1-1"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Industries/fossil-power"
+  >Fossil Power</subject>
+ <subject id="SG1.1-2"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Industries/power-plants"
+  >Power Plants</subject>
+</subj-group>
+
+<subj-group id="SG1.2" originator="ASME" vocab="ASME-Taxonomy"
+  xml:lang="en" subj-group-type="Materials-Product-Form"
+  vocab-identifier="http:/www.asme.org/ASME-Taxonomy/Materials-Product-Form/">
+ <subject id="SG1.2-1"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Materials-Product-Form/piping"
+  >Piping</subject>
+ <subject id="SG1.2-2"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Materials-Product-Form/pressure-vessels"
+  >Pressure Vessels</subject>
+</subj-group>
+...
+....
+#### Subject from Dewey Decimal showing canonical term in `@vocab-term` attribute and its translation in subject content (Note “Engineering of railroads,
+                  roads” is DDC term, not free text.)
+
+[source,xml]
+....
+...
+<subj-group id="DDC-ex1" vocab="DDC" vocab-identifier="DDC23" xml:lang="en">
+ <subject id="DCC-625" vocab-term="Engineering of railroads, roads"
+   vocab-term-identifier="http://www.oclc.org/en/dewey/features/summaries.html#thou">
+  Ingénierie des chemins de fer, routes</subject>  
+</subj-group>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Subject Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

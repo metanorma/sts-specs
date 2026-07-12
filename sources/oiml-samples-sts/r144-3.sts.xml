@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 144-3</doc-identifier>
+      <std-title-group>
+        <title>Instruments for continuous measurement of CO, NOx in stationary source emissions.&#x2009;&#x2014;&#x2009;Test report format</title>
+      </std-title-group>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2013 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_75a722d6-02e6-1b57-b3d1-e58a137349f9">
+        <list-item>&#x2014;International Recommendations (OIML R), which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;International Documents (OIML D), which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;International Guides (OIML G), which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology;</list-item>
+        <list-item>&#x2014;International Basic Publications (OIML B), which define the operating rules of the various OIML structures and systems; and</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from OIML Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of <bold>Vocabularies (OIML V)</bold> and periodically commissions legal metrology experts to write <bold>Expert Reports (OIML E)</bold>. Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 144-3:2013 (E)&#x2009;&#x2014;&#x2009;was developed by OIML Technical Subcommittee TC 16/SC 1/p 1  <italic>Air pollution</italic>. It was approved for final publication by the International Committee of Legal Metrology at its 48th meeting in Ho Chi Minh City, Viet Nam, in October 2013 and will be submitted to the International Conference on Legal Metrology in 2016 for formal sanction. OIML R 144 is published in three parts: Part 1: Metrological and technical requirements, Part 2: Metrological and performance tests and Part 3 Test report format.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: +33 1 48 78 12 82  Fax: +33 1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+    <introduction>
+      <p>This <italic>Test report format</italic> presents, in a standardized format, the results of the various tests and examinations to which a type of a gas analytical system shall be submitted with a view to its approval.</p>
+      <p>In the framework of the OIML Certificate System for Measuring Instruments, use of this  <italic>Test report</italic> format is mandatory.</p>
+    </introduction>
+  </front>
+  <body>
+    <sec>
+      <label>1</label>
+      <title>Test method</title>
+      <p>Where this Recommendation indicates a recommended number of tests, or recommended test values, these numbers and values shall be used in the framework of the OIML Certificate System.</p>
+      <p>The test report shall indicate what test means were used. Where test means did not conform to this Recommendation, their necessary metrological and technical characteristics shall be given.</p>
+      <p>Where this Recommendation offers an alternative, the assurance of its requirements shall be indicated. Any arguments or results of tests necessary to demonstrate the equivalence of results shall be given.</p>
+      <p>Any problem (fault to be repaired) observed during tests shall be mentioned.</p>
+      <p>Any useful information about test conditions (ambient temperature, humidity, etc.) shall be indicated.</p>
+    </sec>
+    <sec>
+      <label>2</label>
+      <title>Report</title>
+      <sec>
+        <label>2</label>
+        <title>Name and address of the testing laboratory(ies)</title>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Location at which tests were performed (if other than the address of the testing laboratory(ies))</title>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Name and address of the manufacturer</title>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Name and address of the applicant (if other than the manufacturer)</title>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Identification of the type tested</title>
+        <p>Trade name: _______________________________________________________________________</p>
+        <p>Model no.: _______________________________________________________________________</p>
+        <p>Serial no.: _______________________________________________________________________</p>
+        <p>Brief description (if useful, including reference to diagrams and inscriptions)</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Composition of the type tested</title>
+        <p>(The main components of the gas analytical system are to be listed. If the component is purchased, its name, model, serial no. and manufacturer are to be specified):</p>
+        <table-wrap id="tab_1">
+          <table>
+            <tr>
+              <th>Component</th>
+              <th>Manufacturer</th>
+              <th>Model</th>
+              <th>Serial no.</th>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Visual and technical examination</title>
+        <table-wrap id="tab_2">
+          <table>
+            <tr>
+              <th>Reference in R 144-1:2013</th>
+              <th>Requirements indicated in the operating manual</th>
+              <th>Actual results</th>
+              <th>Complies with requirement (yes/no)</th>
+              <th>Comments</th>
+            </tr>
+            <tr>
+              <td>Unit of measurement</td>
+              <td>4.1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Measuring range</td>
+              <td>4.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Response time</td>
+              <td>4.6</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Warm-up time</td>
+              <td>4.7</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Air-tightness of the gas handling system</td>
+              <td>5.1.6</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Display device</td>
+              <td>5.2.1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.2.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.2.3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Printing device</td>
+              <td>5.3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Computing device</td>
+              <td>5.4</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Alarm system</td>
+              <td>5.5.1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.5.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.5.3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Adjustment facilities</td>
+              <td>5.6.1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.6.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.6.3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.6.4</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Security of the gas analyzer operation</td>
+              <td>5.7.1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>5.7.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Inscriptions/markings</td>
+              <td>5.8</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Comments may be provided separately if necessary.</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Conclusion of the tests</title>
+        <table-wrap id="tab_3">
+          <table>
+            <tr>
+              <th>Reference in other parts of this OIML Recommendation</th>
+              <th>Requirements indicated in the operating manual</th>
+              <th>Actual results</th>
+              <th>Complies with requirement (yes/no)</th>
+              <th>Comments</th>
+            </tr>
+            <tr>
+              <td>Intrinsic error</td>
+              <td>R 144-1, 4.3.1  R 144-2, 1.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Repeatability</td>
+              <td>R 144-1, 4.4  R 144-2, 1.4</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Cross sensitivity</td>
+              <td>R 144-1, 4.5.2  R 144-2, 1.10</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Drift</td>
+              <td>R 144-1, 4.8  R 144-2, 1.3</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Physical influence factors&#x2009;&#x2014;&#x2009;R 144-1, 4.5.1</td>
+            </tr>
+            <tr>
+              <td>AC supply voltage</td>
+              <td>R 144-2, 1.9</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Temperature</td>
+              <td>R 144-2, 1.5  R 144-2, 1.6</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td>R 144-2, 1.7</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Pressure</td>
+              <td>R 144-2, 1.8</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Supply frequency</td>
+              <td>R 144-2, 1.9</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>DC supply voltage</td>
+              <td>R 144-2, 1.9</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Disturbances&#x2009;&#x2014;&#x2009;R 144-1, 4.5.4</td>
+            </tr>
+            <tr>
+              <td>Mechanical vibrations</td>
+              <td>R 144-2, 1.11.1</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Mechanical shocks</td>
+              <td>R 144-2, 1.11.2</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Short time power reduction</td>
+              <td>R 144-2, 1.12</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Voltage pulses from the mains</td>
+              <td>R 144-2, 1.13</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Electrostatic discharges</td>
+              <td>R 144-2, 1.16</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Radio frequency electromagnetic fields</td>
+              <td>R 144-2, 1.17</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Comments may be provided separately if necessary.</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Brief statement on general conclusion as to whether the samples tested meet the requirements of this Recommendation</title>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+        <p>_______________________________________________________________________</p>
+      </sec>
+      <sec>
+        <label>2</label>
+        <title>Person(s) responsible for the testing</title>
+        <p>&#x200C;</p>
+        <p>&#x200C;</p>
+        <p>&#x200C;</p>
+        <p>&#x200C;</p>
+      </sec>
+    </sec>
+    <p>Instruments for continuous measurement of CO, NO<sub>x</sub> in stationary source emissions. &#x2014; Part&#xA0;3:Test report format</p>
+  </body>
+</standard>

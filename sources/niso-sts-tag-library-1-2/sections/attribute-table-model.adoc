@@ -1,0 +1,56 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/table-model.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-table-model]
+=== `@table-model` Table Model Used
+
+Which table model is used by the tag set for this document?
+
+#### Usage/Remarks
+#### Related Attributes
+
+Several attributes on the <<element-processing-meta,`<processing-meta>`>> element describe the tag set version choices more fully than the <<attribute-dtd-version,`@dtd-version`>> attribute alone: <<attribute-tagset-family,`@tagset-family`>> Which of the JATS tag set families is the basis for this document’s tag set? (e.g., “`sts`” or “`jats`”) <<attribute-base-tagset,`@base-tagset`>> Which of the STS standard tag sets is the basis for this document? (e.g., “`interchange`” or “`extended`”) <<attribute-table-model,`@table-model`>> Which table model is used by the tag set for this document? (e.g., “`xhtml`” or “`oasis`”) <<attribute-mathml-version,`@mathml-version`>> Which version of MathML is used by the tag set for this document? (e.g., “`3.0`” or “`2.0`”) <<attribute-terminology-model,`@terminology-model`>> Are the terms for this standard described by TBX or by <<element-term-display,`<term-display>`>>? <<attribute-math-representation,`@math-representation`>> A list of the (possibly many) ways mathematical expressions may be represented in this document (e.g., both MathML and TeX [“`mathml tex`”])
+##### Best Practice for no Tables
+
+If no table model is used in this tag set, either because this is a derivative tag set that does not use a table model or because standard STS (which defines a table model) is used but tables are never tagged, this attribute should be set to “`none`”.
+
+#### OPTIONAL on element:  <<element-processing-meta,`<processing-meta>`>>
+
+|===
+| Value| Meaning
+
+| both| Both XHTML-inspired and OASIS CALS models are used
+| none| No table models are used
+| oasis| Only the OASIS XML Exchange (CALS) table model is used
+| xhtml| Only the XHTML-inspired table model is used
+| Restriction| `@table-model` is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### XHTML table model
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <processing-meta
+   base-tagset="interchange"
+   mathml-version="3.0"
+   table-model="xhtml"
+   terminology-model="term-display"
+   math-representation="mathml png"
+   tagset-family="sts" />  
+ <front>...</front>
+ <body>...</body>
+ <back>...</back>
+</standard>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

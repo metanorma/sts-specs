@@ -1,0 +1,581 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML D 9</doc-identifier>
+      <std-title-group>
+        <title>Principles of metrological supervision</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2004-01-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2004 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2004</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>D</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States.</p>
+      <p>The two main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_76eefbfe-2d84-147d-b5f7-7d014fca74a1">
+        <list-item>&#x2014;<bold>International Recommendations (OIML R)</bold>, which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity; the OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;<bold>International Documents (OIML D)</bold>, which are informative in nature and intended to improve the work of the metrological services.</list-item>
+      </list>
+      <p>OIML Draft Recommendations and Documents are developed by technical committees or subcommittees which are formed by the Member States. Certain international and regional institutions also participate on a consultation basis.</p>
+      <p>Cooperative agreements are established between OIML and certain institutions, such as ISO and IEC, with the objective of avoiding contradictory requirements; consequently, manufacturers and users of measuring instruments, test laboratories, etc. may apply simultaneously OIML publications and those of other institutions.</p>
+      <p>International Recommendations and International Documents are published in French (F) and English (E) and are subject to periodic revision.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;OIML D 9, Edition 2004 (E)&#x2009;&#x2014;&#x2009;was developed by TC 3/SC 2 Metrological supervision. This version supersedes the previous Edition dated 1984 and was approved for final publication by the International Committee of Legal Metrology in 2004.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+    <introduction>
+      <p>The landscape in the field of legal metrology has changed considerably in recent years, mainly due to the effects of liberalization, elimination of technical barriers to trade on a regional basis, privatization/contractorization and a wide use of accreditation.</p>
+      <p>Firstly, voluntary accreditation and various mutual recognition agreements have now covered in a systematic way a number of areas in metrology that otherwise might be a target of metrological supervision (measuring instruments in non-regulated fields of metrology, national standards and dissemination of units of measurements, etc.).</p>
+      <p>Secondly, conformity assessment procedures based on quality systems and other tools are sometimes used for placing legally controlled measuring instruments on the market and putting them in use, replacing traditional type approval and initial verification procedures.</p>
+      <p>A considerable part of responsibilities has been transferred in this respect from third party public bodies to manufacturers, distributors and owners. The driving force behind this development is the effort coordinated by the World Trade Organization (WTO) to facilitate trade among countries and regions by removing technical barriers to trade (TBT). A number of free trade areas with a harmonized legislation to that effect have thus come into existence in various regions (e.g. the European Union&#x2009;&#x2014;&#x2009;EU) or based on trade agreements introducing extensive mutual recognitions (e.g. North American Free Trade Area NAFTA). Furthermore, these changes have enabled non-Governmental and private bodies to become involved in supervision activities once third party assessment of their technical competence has been satisfactorily demonstrated.</p>
+      <p>This development pushes metrological supervision to the foreground as a very important operating tool used by responsible public bodies to protect public interests in the liberalized world and has also generated optional types of regulations requiring effective supervision on the part of public bodies (prepackages conformity assessment procedures). All these developments have led to the preparation of the OIML generic strategy document by K. Birkeland Birkeland and gradually they will require a complete overhaul of the corresponding OIML International Documents, especially those of general nature, to bring them up-to-date without compromising effective consumer protection generally, legal metrology is an area where Government intervention is needed.</p>
+      <p>Naturally, the above-mentioned changes might not be currently suitable for all the possible socio-economic environments in OIML Member States and Corresponding Members so this Document should be flexible enough to fit reasonably well in this variety&#x2009;&#x2014;&#x2009;it should offer a list of possible forms of metrological supervision to be used by national authorities in preparation of the legislation. The original OIML D 9 played a crucial role in this respect and was officially approved in 1984, though at that time naturally it did not reflect these changes so its revision has been considered by TC 3/SC 2 as being long overdue.</p>
+      <p>Practical considerations in the preparation and implementation of legislation in various countries may require an extension of the scope of metrological supervision as defined in the International Vocabulary of Terms in Legal Metrology (VIML) OIML&#xA0;V&#xA0;1:2000 because the existing supervisory infrastructures and their expertise can be used advantageously for the other forms of supervision specified by that legislation.</p>
+      <p>This is the case, for example, for various gaming machines subject to legal control by laws on gambling/gaming, and pre-packages subject to metrological legislation. In the latter case, their metrological control is dealt with in the revised OIML&#xA0;R&#xA0;87:2004 but the corresponding market surveillance, if specified by the legislation, is in principal identical to that in the field of measuring instruments.</p>
+      <p>This revised Document aims to define the necessary terminology which is important in the field of metrological supervision and includes some terms not referenced in the VIML. The proposed definitions attempt to assign available, more or less synonymous words in English to certain activities connected with metrological supervision, even though the selection is to some extent arbitrary (and it is still not clear how it will work in other languages). The definition of terms should be considered with this in mind. However, once approved these terms should be consequently used throughout legal metrology regulations because nowadays the use of supervision related terms is rather arbitrary.</p>
+    </introduction>
+  </front>
+  <body>
+    <sec>
+      <label>1</label>
+      <title>Scope</title>
+      <p>Metrological supervision is defined (VIML 2.3 OIML&#xA0;V&#xA0;1:2000) as control exercised in respect of the manufacture, import, installation, use, maintenance and repair of measuring instruments and/or in respect of their use, performed in order to check that they are used correctly as regards the observance of metrology laws and regulations. It includes checking the correctness of the quantities indicated on and contained in prepackages.</p>
+      <p>This Document reflects the ongoing efforts to eliminate technical barriers to trade and ensure equity in the marketplace. It is recommended that OIML Members refer to OIML&#xA0;D&#xA0;1:2004 when drawing up their metrological legislation.</p>
+      <p>Metrological supervision in a given country must conform to the pertinent laws, regulations, decrees and decisions of competent national authorities and official bodies in the field of legal metrology. However, legislation may differ between individual countries. Therefore, the structure of metrological supervision in any country must take into account the economic system of that country, the principles of its legal system, its territorial organization, and also its other features and specific conditions.</p>
+      <p>The purpose of this International Document is to provide elements to be considered for developing a model of metrological supervision in Member States which can be used as a basis for the harmonization of metrological supervision at an international level.</p>
+    </sec>
+    <sec>
+      <label>3</label>
+      <title>General</title>
+      <p>Metrological supervision consists of the metrological, technical and other activities performed by the competent authorities to determine compliance of measuring instruments, measurements, goods, services or any other matter subject to the requirements of any Law on Metrology or any corresponding legislation. The structure of activities associated with legal metrological control and their mutual relationships are given in <xref rid="fig-1" ref-type="other"/>FigureA.1 to highlight the difference between the definitions and scope of legal control of measuring instruments and prepackages and metrological supervision.</p>
+      <p>For measuring instruments, countries normally adopt and publish a list of measuring instruments required to be submitted to type approval and initial and subsequent verification and/or a harmonized legislation is in place in a free trade area. The scope of metrological supervision may be extended, if required, to cover some aspects of measurements, of measuring instruments in general and of prepackages.</p>
+    </sec>
+    <sec>
+      <label>4</label>
+      <title>Structure of metrological supervision</title>
+      <sec>
+        <label>4</label>
+        <p>The individual activities performed as a function of metrological supervision are shown in <xref rid="fig-2" ref-type="other"/>FigureA.2. <xref rid="fig-3" ref-type="other"/>FigureA.3 outlines the procedure to be followed in performing these activities.</p>
+      </sec>
+      <sec>
+        <label>4</label>
+        <p>Information gathering (planning) is where targeted actions of metrological supervision are carried out either as planned periodic activities or as non-periodic activities. The planned periodic activities are regular investigations where the targeted actions are of a more systematic character and are usually completed according to a work program for the current year. The non-periodic activities may be carried out as an immediate response to complaints and information received from the general public, competitors, and other sources. On occasions, a modified procedure may be used for special cases of metrological supervision, targeting individual cases where fraud is suspected. The sources of information for planning individual actions of inspection during metrological supervision can be summarized as follows:</p>
+        <list list-type="bullet" id="_783750f4-9176-32e7-ab75-cef1dd4426ea">
+          <list-item>&#x2014;notifications by various bodies and individuals;</list-item>
+          <list-item>&#x2014;risk assessment;</list-item>
+          <list-item>&#x2014;market analysis;</list-item>
+          <list-item>&#x2014;initial (if applicable), and especially subsequent verification;</list-item>
+          <list-item>&#x2014;information from bodies performing conformity assessment procedures;</list-item>
+          <list-item>&#x2014;other concerned bodies (in case of optional forms of supervision).</list-item>
+        </list>
+        <p>Non-periodic activities can be initiated by complaints or notifications from the general public, by randomly found systematic or technical defects of instruments or by notifications from other conformity assessment bodies that are involved with legal metrology. Periodic activities are best planned using special databases, preferably in an electronic form. The periodic activities can be effectively organized in the form of round trips in conjunction with additional activities (verification of instruments, other forms of metrological supervision) provided there is no conflict of interests.</p>
+        <p>Other than non-periodic cases, metrological supervision is normally carried out by inspectors under the orders of the authority. The inspector carries out the activities in accordance with the requirements of the relevant legislation.</p>
+      </sec>
+      <sec>
+        <label>4</label>
+        <p>Where testing samples of measuring instruments or prepackages is involved, the inspection function is based on the following elements:</p>
+        <list list-type="bullet" id="_8c49448c-de2f-c31d-45e9-af02b0ed658c">
+          <list-item>&#x2014;to determine, when not otherwise specified, the number of measuring instruments or prepackages to be examined (e.g. all units in a lot or the size of a representative sample) and to choose an appropriate sampling plan;</list-item>
+          <list-item>&#x2014;to determine the method of examination (on-site, without dismantling and/or at a verification station, after dismantling), to specify the method, range and procedure by which the test must be carried out, as well as the testing device (including a suitable check standard&#x2009;&#x2014;&#x2009;see VIM 6.7, note 2) to be used;</list-item>
+          <list-item>&#x2014;to check the measuring instrument by comparing one or several indications with those of the check standard or by means of a prescribed, recommended or chosen verification method, i.e. complete, simplified, subsequent or exceptional verification;</list-item>
+          <list-item>&#x2014;prepackages are taken from stock or the point-of-sale and the contents are checked in accordance with OIML&#xA0;R&#xA0;87:2004;</list-item>
+          <list-item>&#x2014;to carry out a detailed examination of the measuring instrument or pre-packaged product (conformity with the approved type, marking, general condition, wear, unauthorized tampering, etc.);</list-item>
+          <list-item>&#x2014;to evaluate the results of the examination and to formulate conclusions.</list-item>
+        </list>
+        <p>When testing on samples forms a part of the examination, the corresponding standard for quality acceptance inspection shall be used.</p>
+        <p>This form of inspection carried out by a third party can be substituted for one of the requirements stipulated in ISO/IEC&#xA0;17025:2005, par. 5.9.1) for assuring the quality of test and calibration results: c) to replicate tests or calibrations using the same and different methods.</p>
+        <p>In general, the appropriate quality standard in this case is ISO/IEC&#xA0;17020:1998<xref rid="fn_1" ref-type="fn">1</xref>. When the examination only consists of testing, the appropriate standard is ISO/IEC 17025.</p>
+        <p>The actual inspection can be carried out in the following main forms:</p>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>On-site conditions (in situ)</title>
+        <p>These inspections are used as circumstances require and are preferred in cases when the testing of a measuring instrument or pre-packaged product is relatively simple and manageable on-site (e.g. metrological characteristics of balances). On-site inspections are also used where the measuring instruments cannot be moved (e.g. weighbridges, automatic weighing instruments, fuel dispensers) or when their performance is installation dependent. The authority should be suitably equipped to perform all of the testing.</p>
+        <p>On-site testing is normally performed:</p>
+        <list list-type="bullet" id="_40c33819-c5b0-76ec-ac85-bcc256be73a2">
+          <list-item>&#x2014;at the premises of either the manufacturer, the repairer or their agents;</list-item>
+          <list-item>&#x2014;at the premises of the user of the measuring instrument; or</list-item>
+          <list-item>&#x2014;at the point-of-sale or the premises of the distributor in the case of prepackages.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>4</label>
+        <title>In the laboratory of the authority (in-house)</title>
+        <p>In-house inspection is collecting samples of measuring instruments or prepackaged products for inspection, examination, testing and evaluation of their technical and metrological characteristics, in the authority&#x2019;s properly equipped laboratory. It could be a &#x201C;temporary laboratory&#x201D;, for instance in a public building such as a town hall, a school, or even in a hired room, etc. The testing function could be subcontracted to a technically competent calibration or testing laboratory. Subcontracting is especially suitable for inspection of bulk verification of utility meters because it ensures the correct type of testing equipment will be readily available. If applicable, the corresponding international standards or OIML Recommendations should be followed when carrying out the procedures described above (e.g. prepackages, electricity meters).</p>
+      </sec>
+      <sec>
+        <label>4</label>
+        <p>The proper evaluation of findings at the investigation stage is an essential part of the inspection. If appropriate, statistical methods from OIML Recommendations drawn up within the various TCs can be used, for instance, TC 3/SC 4 (Statistical methods), TC 6 (Prepackages) and TC 12 (Electricity meters). After the inspection, a report is prepared to build up a history of findings and should contain all the relevant information concerning the scope, place of examination and results. Reports are kept on file by the authorities for a period determined by each jurisdiction&#x2019;s record retention laws.</p>
+      </sec>
+      <sec>
+        <label>4</label>
+        <p>Any deviations from and/or violations of the metrological legislation found during the inspection shall be specified in an accurate, factual, unambiguous and comprehensive manner in the report. The report shall specifically include a full description of the measuring instruments or prepackages found to be violating the legislation. Any comments made by the authorized representative of the supervised body should be recorded in writing in the report. If the representative of the supervised body refuses to provide comments and/or sign the report, the inspector shall note this fact in the report.</p>
+      </sec>
+      <sec>
+        <label>4</label>
+        <p>Where violations are found, the investigation stage is followed by the enforcement stage, which consists of applying and enforcing various types of sanctions against the supervised body based on the history of findings. For significant violations of the legislation, the sanctions listed below shall be imposed. Also, the inspector shall conduct the associated investigations in accordance with the following model methodology (not mandatory):</p>
+        <list list-type="bullet" id="_1b20c028-358f-3f6f-0294-886863c5bca7">
+          <list-item>&#x2014;in the event of severe violations (e.g. large measurement errors compared to maximum permissible errors) the measuring instruments concerned are immediately put out of service if supported by national legislation;</list-item>
+          <list-item>&#x2014;after consulting the supervised body, an official letter is issued to (the chief executive officer of) the supervised body setting the deadline for completion of corrective actions. The supervised body shall subsequently provide a written report detailing the corrective actions taken;</list-item>
+          <list-item>&#x2014;prohibit their further use, either temporarily or permanently. The appropriate course of action would be based on the inspector&#x2019;s findings and would depend on the nature of the non-compliances;</list-item>
+          <list-item>&#x2014;if corrective actions have not been taken or if they cannot be completed within the deadline, measures must be taken to withdraw non-compliant measuring instruments or prepackages from the market within one month of the missed deadline;</list-item>
+          <list-item>&#x2014;a temporary, full or a partial halt to the manufacture or distribution of measuring instruments or prepackages to restrict or prohibit their further placing on the market;</list-item>
+          <list-item>&#x2014;a financial penalty (a fine) or a legal action against the offender corresponding to the significance of the violation(s);</list-item>
+          <list-item>&#x2014;suspension or complete withdrawal of the supervised body&#x2019;s (or their Agent&#x2019;s) authorization or registration to officially run a metrology-related business;</list-item>
+          <list-item>&#x2014;a corresponding notification to the police or to the court of justice or any other body, as stipulated by the legislation, in cases where there is evidence of criminal behavior;</list-item>
+          <list-item>&#x2014;a withdrawal of the type approval, if foreseen by the legislation, on a recommendation of the authority to the issuing authority based on the finding that an excessive number of individual items under investigation do not comply with the requirements.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>4</label>
+        <p>Metrological supervision according to the above structure can be carried out by authorities in either of two ways.</p>
+        <sec>
+          <label>4</label>
+          <p>The first one relies on the appropriate authorities which perform all the activities (planning, inspection and enforcement). The essential principle to be maintained during metrological supervision shall be the highest achievable guarantee of impartiality and protection of public interests by the Government. Therefore, only metrological supervision performed by authorities is appropriate.</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <p>In the other arrangement, the authority delegates the task of performing metrological supervision to an appropriate recognized body, (Government, Government-owned, non-profit or &#x201C;fully&#x201D; private body(ies)). The planning activities are split or shared between both, by a special authorization or a contract for this activity. The general responsibility and enforcement must always rest with the authority; it is only the inspection function that is solely passed over to other bodies&#x2009;&#x2014;&#x2009;they have, therefore, the character of a suitable conformity assessment body (for inspection or management system certification). Their overall competence must be assessed against requirements given by the corresponding regulation. Formal accreditation for granting the appropriate authorization shall be carried out according to national metrological regulations compatible with international standards (e.g. ISO/IEC 17020 on inspection bodies ISO/IEC&#xA0;17020:1998, ISO/IEC&#xA0;17021-2:2011, ISO/IEC 17025 on calibration and testing laboratories ISO/IEC&#xA0;17025:2005). However, when specifically required by the inspection body, an alternative way to demonstrate its competence should be available, especially in the case of major liberalization towards manufacturers (e.g. conformity assessment procedures are widely employed) with the accreditation body having a monopoly.</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <p>In general it is necessary, if not stated in the metrological legislation, to specify the corresponding rights and duties of the authorities and conformity assessment bodies, if appropriate, and to stipulate the means of examining their qualifications to perform these operations. These bodies can issue (usually on the basis of professional training and subsequent examination of the staff qualification) a certificate of competence to each inspector performing metrological supervision. However a certificate of competence may not be necessary where there is other appropriate professional qualification. Certification of personnel according to ISO/IEC&#xA0;17024:2003<xref rid="fn_2" ref-type="fn">1</xref> is recommended when a rigorously systematic approach is preferred. This type of certificate should be valid for longer periods of time.</p>
+        </sec>
+        <sec>
+          <label>4</label>
+          <p>The detailed organizational structure of the arrangement to carry out metrological supervision is specific for any given country, depending on its historical administrative and legal development. In addition, in creating this structure, the following considerations should be taken into account:</p>
+          <list list-type="bullet" id="_a34626e2-3846-8270-1ed4-a9932d1f3de0">
+            <list-item>&#x2014;national geography to cover the entire area of the country by supervision;</list-item>
+            <list-item>&#x2014;guarantees of impartial performance;</list-item>
+            <list-item>&#x2014;economic efficiency.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>4</label>
+          <p>Depending on the country&#x2019;s organizational structure of metrological supervision, the sanctions can be applied either:</p>
+          <list list-type="bullet" id="_7ec2125b-bf3f-6668-ea0f-1c1b92079526">
+            <list-item>&#x2014;directly by the authority (see 4.7.1); or</list-item>
+            <list-item>&#x2014;by the authority responsible for enforcement under the legislation on the basis of the report prepared by the conformity assessment body that completed the investigation (see 4.7.2).</list-item>
+          </list>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <label>5</label>
+      <title>Forms of metrological supervision</title>
+      <p>The target areas (forms) of metrological supervision are as follows:</p>
+      <list list-type="bullet" id="_41258a65-1197-3317-51f6-45e60eb5228e">
+        <list-item>&#x2014;use of legal units;</list-item>
+        <list-item>&#x2014;market surveillance;</list-item>
+        <list-item>&#x2014;quality system surveillance;</list-item>
+        <list-item>&#x2014;field surveillance;</list-item>
+        <list-item>&#x2014;repairs and installation of measuring instruments.</list-item>
+      </list>
+      <sec>
+        <label>5</label>
+        <title>Use of legal units</title>
+        <p>The aim of this area of metrological supervision is to determine whether the application of units and markings are in accordance with the legislation in the following fields:</p>
+        <list list-type="bullet" id="_72627b64-72f5-9a88-5a26-4f4435a90cb5">
+          <list-item>&#x2014;on measuring instruments;</list-item>
+          <list-item>&#x2014;on prepackages;</list-item>
+          <list-item>&#x2014;in advertisements;</list-item>
+          <list-item>&#x2014;in other publications, as far as applicable.</list-item>
+        </list>
+        <p>The process consists of checking that:</p>
+        <list list-type="bullet" id="_aa560437-4e2a-26f2-e5bf-4b5c7d0d3a9a">
+          <list-item>&#x2014;the legal units and their prescribed or authorized multiples or submultiples are used;</list-item>
+          <list-item>&#x2014;the correct names of units and the correct prefixes of their multiples and submultiples are used;</list-item>
+          <list-item>&#x2014;the correct symbols of units, of their multiples and submultiples are used;</list-item>
+          <list-item>&#x2014;the accuracy is indicated in the prescribed form, completely, and in the proper place (manufacturer&#x2019;s markings on measuring instruments, tolerances on prepackaged products);</list-item>
+          <list-item>&#x2014;the names and symbols of the quantities are correct;</list-item>
+          <list-item>&#x2014;the mandatory printed information on prepackaged products is clear and permanent and of suitable height;</list-item>
+          <list-item>&#x2014;on prepackaged products, the unit price information (if applicable) is correctly positioned;</list-item>
+          <list-item>&#x2014;the ratio between the contents and the volume of the package is adequate (to avoid &#x201C;deceptive packages&#x201D;).</list-item>
+        </list>
+        <p>The inspection is completed in accordance with 4.3.1.</p>
+      </sec>
+      <sec>
+        <label>5</label>
+        <title>Market surveillance</title>
+        <sec>
+          <label>5</label>
+          <p>This form of supervision is used to ensure that measuring instruments or prepackages bearing the required markings are only placed on the market and/or put into service if the corresponding requirements have been met. Market surveillance ensures that conformity assessment procedures or metrological control of prepackages and the performance of customs authorities in relation to imports, are working properly and effectively throughout a country or a free trade area, to achieve the level of consumer protection established by law. It is a complementary activity to the metrological controls over instruments and prepackages at the market stage.</p>
+          <p>The purpose of market surveillance is twofold:</p>
+          <list list-type="bullet" id="_678fcc89-0104-14b6-1557-ff2505dd1567">
+            <list-item>&#x2014;to ensure equivalent consumer protection throughout the given area regardless of the origin of the product, especially in a liberalized conformity assessment system; and</list-item>
+            <list-item>&#x2014;to serve the interest of economic operators in helping to eliminate unfair competition.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Market surveillance is performed on instruments and prepackages at the market stage when all the procedures of legal control (e.g. required conformity assessment procedures) have been finalized before the measuring instruments and prepackages are placed on the market. If this is not the case (e.g. weighing instruments destined for use in as yet undecided different gravitational zones), it shall be performed in the early in-service life of the instruments. Targeting measuring instruments and prepackages when they are on the market aims at establishing a direct link to the manufacturer or manufacturer&#x2019;s representative (a distributor) to prevent illegal measuring instruments or prepackages from being put into use.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Market surveillance is intended to detect only typical, systematic non-compliances (e.g. a type of a measuring instrument or of a prepackage). In free trade areas, measuring instruments or prepackages are predominantly subject to market surveillance where it is specified by the corresponding harmonized regulations.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Market surveillance consists of checking that measuring instruments and prepackages:</p>
+          <list list-type="bullet" id="_75f56efb-d7ce-b8cf-f694-9834eb4a45fa">
+            <list-item>&#x2014;are placed on the market and only put into service when correctly manufactured (special attention is paid to the software version and its protection);</list-item>
+            <list-item>&#x2014;are marked in the required language in the correct position;</list-item>
+            <list-item>&#x2014;have undergone metrological control (conformity assessments, type approval, initial verification) as required;</list-item>
+            <list-item>&#x2014;satisfy the requirements of their corresponding regulation.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>For market surveillance, either of the inspection methods in 4.3.1 and 4.3.2 can be used or combined as necessary. However, in-house surveillance (4.3.2) is preferred. Where the inspection necessitates destructive testing, the authority may purchase the samples.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Market surveillance shall be performed solely by authorities themselves (see 4.7.1). Only necessary technical tasks (e.g. testing) and provision of information for market surveillance planning (to be delivered e.g. by authorized private bodies involved in procedures of metrological control or in corresponding conformity assessment procedures) can be subcontracted. This is on the condition that the authority retains the responsibility for its decisions and no conflict of interest can arise.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Manufacturers or their representatives shall notify responsible market surveillance authorities of the location of instruments that have been put into use. The authorities should act in collaboration with manufacturers and their representatives in preventing the placement of non-compliant measuring instruments and prepackages on the market and should cooperate with responsible conformity assessment bodies as to the access to the technical documentation and input information for risk assessment.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Market surveillance planning is based on market analysis and risk assessment&#x2009;&#x2014;&#x2009;there is no intention to reach total coverage. To monitor the measuring instruments or prepackages placed on the market, the surveillance authorities shall have the power, competence and resources:</p>
+          <list list-type="bullet" id="_64b57368-d672-5c2f-620b-a85e2cc8e90c">
+            <list-item>&#x2014;to regularly visit commercial, industrial and storage premises;</list-item>
+            <list-item>&#x2014;to organize random spot checks;</list-item>
+            <list-item>&#x2014;to take (purchase) samples of measuring instruments or prepackages and to subject them to examination and testing;</list-item>
+            <list-item>&#x2014;to obtain all the necessary information.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <label>5</label>
+        <title>Quality system surveillance</title>
+        <sec>
+          <label>5</label>
+          <p>Quality system surveillance ensures that authorized private bodies and/or manufacturers of instruments and their representatives within the conformity assessment system (if such is in place), duly fulfill the obligations arising out of the approved quality system.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Quality system surveillance is carried out by the conformity assessment body that approved the quality system of the supervised body. It may be the authority itself or, preferably, it is a conformity assessment body having the character of a certification body (subclause 4.7.2)&#x2009;&#x2014;&#x2009;an accreditation body or a certification body for quality systems. In the latter case, the authority is not directly involved&#x2009;&#x2014;&#x2009;however, it may subsequently act upon the findings.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Quality system surveillance will depend on the type of the quality system stipulated by national legislation. In the case of verification of measuring instruments or conformity to the approved type (a replacement of initial verification in conformity assessment systems), the quality system is based on ISO/IEC&#xA0;17025:2005 supplemented with relevant requirements of legal metrology. For manufacturing, the quality system is based on ISO&#xA0;9001:2000<xref rid="fn_3" ref-type="fn">1</xref> with some additional technical requirements taken from ISO/IEC 17025 (e.g. uncertainties) as given by the corresponding regulation (see also OIML&#xA0;D&#xA0;27:2001). Among the requirements set out in the above mentioned standards the following are of utmost importance:</p>
+          <list list-type="bullet" id="_454078f9-ccf5-0e1c-37d9-f6a5882165de">
+            <list-item>&#x2014;the observance of requirements concerning possession of measurement standards and testing equipment (especially their calibration status);</list-item>
+            <list-item>&#x2014;the observance of prescribed or recommended (at national or international level, especially by the OIML) measurement methods and procedures and way of evaluating the measurements;</list-item>
+            <list-item>&#x2014;the completion of performed tests and examinations prescribed by regulations and compliance with these instructions on the part of supervised bodies;</list-item>
+            <list-item>&#x2014;the observance of principles of traceability of measurement results;</list-item>
+            <list-item>&#x2014;successful history of participation in interlaboratory comparisons or proficiency testing schemes within the scope of activity of supervised bodies.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>In the case of authorized private bodies, the quality system surveillance procedure will depend on whether the measuring instruments are to be verified on-site or in-house. In the former case, due to time constraints, no testing on samples is performed at the premises of the supervised body (this is left to field surveillance) and only the quality system documentation and other relevant documentation (see 5.3.5) is checked. In the latter case, the quality system documentation and other relevant documentation is checked and testing of samples is performed either at the laboratory of the supervised body (4.3.1) or samples can be transported to a competent calibration or testing laboratory (4.3.2) to perform the tests specified by the conformity assessment body. The conformity assessment body shall periodically carry out these audits at regular prescribed intervals (e.g. annually). Additionally, the conformity assessment body may carry out unannounced visits to supervised bodies, performing a full or partial audit. In any event, the conformity assessment body shall provide the supervised body with a corresponding report.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>The supervised body shall grant the conformity assessment body access to its premises for inspection purposes and shall provide the authority with all necessary information, in particular:</p>
+          <list list-type="bullet" id="_3bf2da9e-ef5a-088e-4cfc-b4c6a2b0a834">
+            <list-item>&#x2014;the quality system documentation;</list-item>
+            <list-item>&#x2014;the design documentation in the case of a manufacturer;</list-item>
+            <list-item>&#x2014;the quality records, e.g. inspection reports, test and calibration data, reports on qualification of personnel involved, etc.;</list-item>
+            <list-item>&#x2014;the full authorization decree, if applicable, to check the conditions of authorization.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>The costs of the supervisions are charged to the supervised bodies and, if applicable, the other parties of the regional arrangement (in a free trade area), shall be notified of the findings of the surveillance.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>5</label>
+        <title>Field surveillance</title>
+        <sec>
+          <label>5</label>
+          <p>The purpose of this form of metrological supervision is to ensure that, as stipulated by legislation, the responsibilities of:</p>
+          <list list-type="bullet" id="_faf8738a-96b4-98a2-dff4-c7609d3e8e9b">
+            <list-item>&#x2014;end users of measuring instruments;</list-item>
+            <list-item>&#x2014;authorized private bodies to perform their initial, if applicable, and subsequent verification on-site, if such bodies exist (see also 5.3 and the note after 5.4.3);</list-item>
+            <list-item>&#x2014;other bodies involved in putting measuring instruments into use (installers and repairers, see <xref rid="installation" ref-type="other"/>5.5)</list-item>
+          </list>
+          <p>in relation to regulated measurements OIML&#xA0;D&#xA0;1:2004 and to measuring instruments OIML&#xA0;D&#xA0;1:2004 being in use are properly discharged. In this sense, it is basically a complementary activity to the preventive metrological controls over measuring instruments in service (e.g. subsequent verification), especially those verified on-site. Field surveillance is very important in countries that do not have a system of mandatory subsequent verification at regular intervals.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Depending on the circumstances, either of the methods described in 4.3.1 and 4.3.2 can be used for this form of supervision. Where fraudulent infringements are suspected, inspectors should anonymously carry out field surveillance by purchasing goods whose quantity is measured by the measuring instrument under supervision.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Field surveillance can consist basically of checking:</p>
+          <list list-type="bullet" id="_cc862f9a-5f11-d4b1-2d71-a2833cad8676">
+            <list-item>&#x2014;that the measurements made in the public interest are carried out in compliance with the legal requirements;</list-item>
+            <list-item>&#x2014;the legal requirements of the measuring instrument (whether the instrument is or is not subject to legal control);</list-item>
+            <list-item>&#x2014;that the measuring instrument subject to legal control is used wherever prescribed by legislation or regulations;</list-item>
+            <list-item>&#x2014;that the measuring instrument has been put into service, correctly installed and used in accordance with the manufacturers&#x2019; instructions, if applicable;</list-item>
+            <list-item>&#x2014;that the measuring instrument is properly marked and sealed (markings and seals are in place, correct, untampered with and undamaged) or, when placing these marks on a measuring instrument is impossible, the relevant documentation confirms that the legal metrology regulations are fulfilled;</list-item>
+            <list-item>&#x2014;that the measuring instrument has not suffered any accidental damage or excessive wear and tear during its use;</list-item>
+            <list-item>&#x2014;that the measuring instrument shows no evidence of misuse or deliberate damage likely to influence its technical, especially metrological, characteristics;</list-item>
+            <list-item>&#x2014;the completeness and the correctness of the prescribed accessories;</list-item>
+            <list-item>&#x2014;the completeness and validity of the documentation prescribed for the instrument;</list-item>
+            <list-item>&#x2014;the knowledge of the personnel, maintenance personnel and their qualifications are adequate, if prescribed;</list-item>
+            <list-item>&#x2014;the method of conservation or storage of a measuring instrument which is not in constant use;</list-item>
+            <list-item>&#x2014;the correctness of its installation in the given environment and its general fitness for the given application (external examination);</list-item>
+            <list-item>&#x2014;that no schemes of manipulation of the measuring instrument&#x2019;s errors within the tolerances given by maximum permissible errors (MPEs) are in progress (the distribution of errors of a verified measuring instrument around zero should exhibit no bias);</list-item>
+            <list-item>&#x2014;that tests of technical characteristics in part or in full against the corresponding technical regulation and/or technical standard are carried out. OIML Recommendations should be preferably used for this purpose. In addition to other tests, the errors of a measuring instrument in actual use are compared with the corresponding maximum permissible errors (MPEs) established in the legal requirements for its metrological characteristics. Unless the legislation stipulates otherwise, the errors of an instrument in service which has a valid verification status (verification period, if any, not exceeded) shall be within twice the MPE to take into consideration the effects of normal wear and tear over time (see corresponding OIML publications on uncertainties in legal metrology);</list-item>
+            <list-item>&#x2014;that the manufacturer, installer and/or repairer of a measuring instrument is correctly registered when required and as specified by national metrological legislation and meets the requirements determined therein;</list-item>
+            <list-item>&#x2014;that a newly manufactured or installed measuring instrument which is in service is in accordance with the approved type (special attention is paid to the software version and its protection);</list-item>
+            <list-item>&#x2014;that a measuring instrument which has just been manufactured or repaired has been properly verified before being released for normal use;</list-item>
+            <list-item>&#x2014;that a measuring instrument in service is regularly verified at the intervals, if any, established by existing legal metrological regulations;</list-item>
+            <list-item>&#x2014;that the ancillary equipment is properly used and calibrated in regular intervals, if necessary, that the calibration certificates are available and that the requirements concerning its use are observed;</list-item>
+            <list-item>&#x2014;the number and nature of users&#x2019; complaints concerning the measuring instrument.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Field surveillance shall be performed directly by authorities (see 4.7.1) or by licensed conformity assessment bodies (see 4.7.2)&#x2009;&#x2014;&#x2009;in this case they have the character of inspection bodies. Due to the very similar resources and expertise of the inspection bodies responsible for field surveillance and of authorized private bodies, these can be merged if careful precautions are taken to ensure the sufficient impartiality within the unified body. It is not charged to the supervised bodies.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>The possible combinations as to the use of various bodies in metrological supervision can be summarized as follows:</p>
+          <list list-type="bullet" id="_b6457a88-433d-d6da-3d3b-0026fa2fd970">
+            <list-item>&#x2014;in the case of public bodies: these can in principle carry out all the forms of surveillance under 5.2&#x2014;&#x200B;5.4;</list-item>
+            <list-item>&#x2014;in the case of private bodies: these can perform only the technical tasks of market surveillance specified in 5.2.6, they can carry out quality system surveillance as a whole and the inspection function of field surveillance.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>In the case of unified legislation not requiring a split between market and field surveillance, both forms of metrological supervision can be merged.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>5</label>
+        <title>Installation and repair of measuring instruments</title>
+        <sec>
+          <label>5</label>
+          <p>Where there is insufficient legal coverage of metrology or a low level of public awareness of legislation, it is advisable to subject manufacturers, installers and repairers of measuring instruments (hereinafter referred to as &#x201C;registered bodies&#x201D;) to mandatory registration. Registration and the associated conformity assessment procedures would ensure strict observance of the applicable regulations. It would also ensure technical uniformity amongst staff within the registered bodies. Manufacturers and their representatives, if subjected to the conformity assessment system, are automatically excluded from this type of regulation. The aim of having metrological supervision of this highly preventive nature is to enable an authority to allow registered bodies longer periods between accreditation assessments (e.g. once every three years).</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>The overall performance of registered bodies is indirectly supervised by means of field surveillance.</p>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>Supervision executed at registered bodies&#x2019; premises (form of inspection 4.3.1) is to establish whether:</p>
+          <list list-type="bullet" id="_5f0aed6d-f156-f1a3-4fd5-aaae5b3e5aa1">
+            <list-item>&#x2014;the supervised body is correctly registered when required and as specified by national metrological legislation, and meets the requirements determined therein;</list-item>
+            <list-item>&#x2014;the required documentation is available and properly maintained;</list-item>
+            <list-item>&#x2014;the required qualification of personnel is properly established and maintained (e.g. proper licenses for installers from the manufacturers of measuring instruments);</list-item>
+            <list-item>&#x2014;the standards and the accessory equipment used for the activities performed are maintained under proper metrological control.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>5</label>
+          <p>This supervision shall be performed solely by authorities.</p>
+        </sec>
+      </sec>
+    </sec>
+    <p>Principles of metrological supervision</p>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <label>A</label>
+        <title>Figures</title>
+        <fig id="fig_37">
+          <caption>FigureA.1</caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/figure-1.svg"/>
+        </fig>
+        <p>Figure 1&#x2009;&#x2014;&#x2009;Structure of legal metrological control</p>
+        <fig id="fig_38">
+          <caption>FigureA.2</caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/figure-2.svg"/>
+        </fig>
+        <p>Figure 2&#x2009;&#x2014;&#x2009;Structure of supervision</p>
+        <fig id="fig_39">
+          <caption>FigureA.3</caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/figure-3.svg"/>
+        </fig>
+        <p>Figure 3&#x2009;&#x2014;&#x2009;Procedure for performing supervision</p>
+      </app>
+    </app-group>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;9001:2000</doc-identifier>
+            </std-ident>
+            <title>Quality management systems</title>
+            <pub-date>
+              <year>2000-12-08</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17020:1998</doc-identifier>
+            </std-ident>
+            <title>General criteria for the operation of various types of bodies performing inspection</title>
+            <pub-date>
+              <year>1998-11-26</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17021-2:2011</doc-identifier>
+            </std-ident>
+            <title>ISO/IEC 17021-2 Conformity assessment&#x2009;&#x2014;&#x2009;Requirements for bodies providing audit and certification of management systems.</title>
+            <pub-date>
+              <year>2011</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17024:2003</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2003-03-28</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2005</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories.</title>
+            <pub-date>
+              <year>2005</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>Birkeland</doc-identifier>
+            </std-ident>
+            <title>Legal metrology at the dawn of the 21st century</title>
+            <pub-date>
+              <year>1998-10</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;1:2004</doc-identifier>
+            </std-ident>
+            <title>Elements for a law on metrology</title>
+            <pub-date>
+              <year>2004</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;V&#xA0;1:2000</doc-identifier>
+            </std-ident>
+            <title>International Vocabulary of Terms in Legal Metrology (VIML)</title>
+            <pub-date>
+              <year>2000</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;V&#xA0;2-200:1993</doc-identifier>
+            </std-ident>
+            <title>International Vocabulary of Basic and General Terms in Metrology (VIM)</title>
+            <pub-date>
+              <year>1993</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;27:2001</doc-identifier>
+            </std-ident>
+            <title>Initial verification of measuring instruments using the manufacturer&#x2019;s quality system</title>
+            <pub-date>
+              <year>2001</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;R&#xA0;87:2004</doc-identifier>
+            </std-ident>
+            <title>Quantity of product in prepackages</title>
+            <pub-date>
+              <year>2004</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

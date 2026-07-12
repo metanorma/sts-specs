@@ -1,0 +1,94 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/content-language.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-content-language]
+=== `<content-language>` Content Language
+
+That part of the metadata of a standards document that identifies the official language(s) used in this standard.
+
+#### Usage/Remarks
+##### Best Practice
+
+This element should appear once for each official language used in the document. For Best Practice, the element content should be the two-letter ISO 639 code for the language, for example, “`en`” for English, “`de`” for German, or “`es`” for Spanish.
+#### ISO Note: Content of the Element
+
+For ISO standards documents, the content (in 2016) of this element should always be one of “`en`”, “`fr`”, “`ru`”, “`es`”, or “`ar`”.
+#### ISO Note: Related <language> Element
+
+For ISO-related standards only, the <<element-language,`<language>`>> element (that is part of the ISO-specific <<element-doc-ident,`<doc-ident>`>> element) provides the same language information as the <<element-content-language,`<content-language>`>> element, sometimes in a different form. For monolingual documents, <<element-language,`<language>`>> and <<element-content-language,`<content-language>`>> will have the same content. However, in each ISO standards document, while the <<element-content-language,`<content-language>`>> element may repeat, there must be a single <<element-language,`<language>`>> element, so for documents written in more than one official language, the <<element-language,`<language>`>> element will contain a comma-separated (no whitespace) list of language codes for example: “`en,fr,de`”.
+
+#### Related Elements
+
+*How to Tag the Language:* In NISO STS, there are several ways to describe the natural language of the content of an element: *Content Language Element:* The <<element-content-language,`<content-language>`>> element, in the metadata of a standards document (inside <<element-std-ident,`<std-ident>`>>), identifies the official language(s) used in this standards document. The element appears once for each official language used in the document. For Best Practice, the element content should be the two-letter ISO 639 code for the language, for example, “`en`” for English, “`de`” for German, or “`es`” for Spanish. *XML Lang Language Attribute:* The <<attribute-xml-lang,`@xml:lang`>> attribute can be put on many elements, to indicate the language of the element. This is an inherited value, so that element and all of its children will be in the named language, unless specifically overridden with another <<attribute-xml-lang,`@xml:lang`>> attribute. *Language Element:* For ISO-related processing only, the <<element-language,`<language>`>> element (inside the <<element-doc-ident,`<doc-ident>`>> element in the metadata of a standards document) identifies the official language(s) used in this standards document. This element allows more than one language value to be named. Best Practice Note: the <<element-content-language,`<content-language>`>> element should be used in addition to this element.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  content-language  
+                        (#PCDATA %content-language-elements;)*       >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### As part of `<std-meta>`
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>...</title-wrap>
+ <std-ident>...</std-ident>   
+ <std-org-group>...</std-org-group>
+ <content-language>en</content-language>
+ <release-date date-type="published" std-type="revised" 
+   iso-8601-date="2013-10-21">October 21, 2013</release-date>
+ <meta-date type="date-of-issuance" iso-8601-date="2013-10-21">October 21, 2013</meta-date>
+ ...
+</std-meta>
+...
+....
+#### In an ISO standard (part of `<iso-meta>`
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <part-number></part-number>
+  <edition>3</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language>
+ ...
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

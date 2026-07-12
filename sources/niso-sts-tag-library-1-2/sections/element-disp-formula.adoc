@@ -1,0 +1,124 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/disp-formula.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-disp-formula]
+=== `<disp-formula>` Formula, Display
+
+Mathematical equation, expression, or formula that is to be displayed as a block (callout) within the narrative flow.
+
+#### Usage/Remarks
+A <<element-disp-formula,`<disp-formula>`>> need not be a “formula” in the strict mathematical sense, but can be used for any mathematical expression or equation.
+This element may contain the actual characters that make up an equation or formula or a graphic that contains the formula. Thus, the mathematics can be expressed as ASCII characters; MathML, TeX, or LaTeX expressions; or as a graphic or series of graphics.
+A display equation may numbered, using automatic numbering or by storing the number in a <<element-label,`<label>`>> element.
+
+#### Related Elements
+
+For a mathematical equation, expression, or formula which is to be displayed inline with the text, use the <<element-inline-formula,`<inline-formula>`>> element.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-break,`<break>`>> <<element-break,Line Break>> <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>> <<element-legend,`<legend>`>> <<element-legend,Legend>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  disp-formula %disp-formula-model;                         >
+....
+#### Expanded Content Model
+
+(#PCDATA | alt-text | long-desc | email | ext-link | uri | break | caption | legend | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | kwd-group | subj-group | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | label | named-content | styled-content | tex-math | mml:math | alternatives | array | code | graphic | media | preformat | sub | sup)*
+
+#### Tagged Samples
+
+#### Equation using `<mml:math>`
+
+[source,xml]
+....
+...
+<p>In the case of dollies of diameter 20 mm, the 
+ breaking strength, in megapascals, is given by
+ <xref ref-type="disp-formula" rid="formula_2">Formula
+ (2)</xref>
+ <disp-formula id="formula_2"
+  ><mml:math display="block" 
+     id="mml_m2"
+     xmlns:mml="http://www.w3.org/1998/Math/MathML" >
+   <mml:mrow>
+    <mml:mi>s</mml:mi><mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mrow>
+      <mml:mn>4</mml:mn><mml:mi>F</mml:mi></mml:mrow>
+     <mml:mrow>
+      <mml:mn>400</mml:mn><mml:mi>p</mml:mi></mml:mrow>
+    </mml:mfrac>
+    <mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mi>F</mml:mi>
+     <mml:mrow>
+      <mml:mn>314</mml:mn></mml:mrow>
+    </mml:mfrac>
+   </mml:mrow>
+  </mml:math>
+  <label>(2)</label>
+ </disp-formula>
+</p>
+...
+....
+#### Showing varied placement of the label and captions
+
+[source,xml]
+....
+...
+<disp-formula>
+ <mml:math>...</mml:math>
+ <caption>
+  <p>In ... represents labor productivity growth between 
+   time (t) and time (t – 1) and RATIOit the distance to the 
+   labor productivity frontier for industry i at time t.</p>
+ </caption>
+</disp-formula>
+
+<disp-formula>
+ <label>(1)</label>
+ <caption>
+  <p>In ... represents labor productivity growth between 
+   time (t) and time (t – 1) and RATIOit the distance to the 
+   labor productivity frontier for industry i at time t.</p>
+ </caption>
+ <mml:math>...</mml:math>
+</disp-formula>
+
+<disp-formula>
+ <label>(1)</label>
+ <alternatives>
+  <mml:math>...</mml:math>
+  <graphic xlink:href="...">...</graphic>
+ </alternatives>
+ <caption>
+  <p>n ... represents labor productivity growth between 
+   time (t) and time (t – 1) and RATIOit the distance to the 
+   labor productivity frontier for industry i at time t.</p>
+ </caption>
+</disp-formula>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

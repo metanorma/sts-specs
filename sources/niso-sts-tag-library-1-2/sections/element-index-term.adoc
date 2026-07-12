@@ -1,0 +1,77 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/index-term.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-index-term]
+=== `<index-term>` Index Term
+
+An index term to be embedded into the narrative of a standards document so that an Index can be created programmatically.
+
+#### Usage/Remarks
+Index entries are recursive, so if a category (“drinks”) contains a sub-category (“lemonade”), the category <<element-index-term,`<index-term>`>> will contain two components: its own <<element-term,`<term>`>> (“drinks”), and an <<element-index-term,`<index-term>`>> for the sub-category. This subordinate index term will contain its own <<element-term,`<term>`>> (“lemonade”).
+[source,xml]
+....
+<index-term>
+ <term>drinks</term>
+ <index-term>
+  <term>lemonade</term>
+ </index-term>
+</index-term>
+....
+An <<element-index-term,`<index-term>`>> is either a single target point or the start of an index range. When it is the start of a range, an <<attribute-id,`@id`>> attribute is required, so that the <<element-index-term-range-end,`<index-term-range-end>`>> element can point to the start of the range.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-index-type,`@index-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-def-head,`<def-head>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-index-term,`<index-term>`>>, <<element-inline-code,`<inline-code>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-preformat,`<preformat>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-tbx-termEntry,`<tbx:termEntry>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-head,`<term-head>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+The following, in order: <<element-term,`<term>`>> <<element-term,Term>> Any one of: <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> Any combination of: <<element-see,`<see>`>> <<element-see,See (in an index term)>> <<element-see-also,`<see-also>`>> <<element-see-also,See-Also (in an index-term)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT index-term    %index-term-model;                           >
+....
+#### Expanded Content Model
+
+(term, (index-term | (see | see-also)*))
+
+#### Tagged Sample
+
+##### Acronym indexed under full form
+[source,xml]
+....
+...
+<p>The approved and dated document shall have one-inch 
+margins. Approved and dated unclassified documents 
+shall be sent to the DoDSSP<index-term id="idx688">
+<term>DoD Single Stock Point</term></index-term> in 
+searchable Portable Document Format (<abbrev>PDF</abbrev>) 
+using the Electronic Document Submittal tool in the 
+ASSIST database.</p>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Index Term
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

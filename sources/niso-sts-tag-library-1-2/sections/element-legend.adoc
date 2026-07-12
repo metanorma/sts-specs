@@ -1,0 +1,143 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/legend.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-legend]
+=== `<legend>` Legend
+
+A list or table of the _explanations_ for symbols, characters, terms, or abbreviations, where each entry in the list names a symbol (or similar) and provides a gloss for that symbol. Such lists act as a key to the symbology of a graphic, figure, or table.
+
+#### Usage/Remarks
+Legends typically accompany figures or tables to act as a key to the symbols, characters, or abbreviations used in the graphic, figure, table, etc. Such lists may show a heading such as “Key” (“Légende” in French, “Legende” in German). Legends may also be called “where lists”, “keys”, “variable lists”, “legends”, “symbol charts”, etc., with the exact list heading given as the <<element-title,`<title>`>> of the `<legend>` element.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one Any combination of: Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-p,`<p>`>> <<element-p,Paragraph>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  legend       %legend-model;                               >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, (def-list | list | array | non-normative-note | normative-note | table-wrap | p)*)
+
+#### Tagged Samples
+
+#### Key to a Figure (as a table)
+
+[source,xml]
+....
+...
+<fig id="fig_5" fig-type="figure">
+ <label>Figure&#x00A0;5</label>
+ <caption>
+  <title>Heater energy inputs, outputs and energy balance</title>
+ </caption>
+ <legend>
+  <title>Key</title>
+  <table-wrap id="tab_b" position="float" content-type="fig-index">
+   <table width="408">
+    <col width="18.71%"/>
+    <col width="81.29%"/>
+    <tbody>
+     <tr>
+      <td valign="top" align="justify" scope="row">LRH</td>
+      <td valign="top" align="justify">Heater energy balance boundary</td>
+     </tr>
+     <tr>
+      <td valign="top" align="justify" scope="row">HF</td>
+      <td valign="top" align="justify">Heating fluid balance boundary</td>
+     </tr>
+     ...
+    </tbody>
+   </table>
+  </table-wrap>
+ </legend>
+ <graphic xlink:href="005"/>
+</fig>
+...
+....
+#### Key to a Figure (as a 2-part list)
+
+[source,xml]
+....
+...
+<fig id="fig_A.1" orientation="portrait">
+ <label>Bild A.1</label>
+ <caption>
+  <title>Anwendungsbereich von <xref ref-type="bibr" 
+    rid="nla-nat-5">DIN 25463-2</xref>, DWR</title>
+ </caption>
+ <legend>
+  <title>Key</title>
+  <def-list>
+   <def-item>
+    <term>I</term>
+    <def>
+     <p>input</p>
+    </def>
+   </def-item>
+   ...
+  </def-list>
+ </legend>
+ <graphic xlink:href="1234"/>
+</fig>
+...
+....
+#### Legende to a Figure (as a 2-part list)
+
+[source,xml]
+....
+...
+<fig id="fig_4" orientation="portrait">
+ <label>Bild 4</label>
+ <caption>
+  <title>Reaktionsketten zur Berücksichtigung der 
+   Neutroneneinfangreaktionen an Spaltprodukten im 
+   Differentialgleichungssystem (<xref ref-type="sec" 
+   rid="sec_2">2</xref>)</title>
+ </caption>
+ <legend>
+  <title>Legende</title>
+  <def-list list-type="key">
+   <def-item specific-use="normal-para">
+    <term/>
+    <def>
+     <p>Siehe <xref ref-type="fig" rid="fig_3">Bild 3</xref> und:</p>
+    </def>
+   </def-item>
+   <def-item>
+    <term>I</term>
+    <def>
+     <p>input</p>
+    </def>
+   </def-item>
+  </def-list>
+ </legend>
+</fig>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Legend
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

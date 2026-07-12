@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/authorize-acronym.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-authorize-acronym]
+=== `@authorize-acronym` Authorization Acronym
+
+Names the type of authorization, for example, United States SDOs can name “`ANS`” indicating an American National Standard. This attribute provides a machine-searchable normalized version of the authorization since the content of the <<element-authorization,`<authorization>`>> element is free form.
+
+#### Usage/Remarks
+##### Best Practice
+
+Since the attribute name includes the word “acronym”, the values (such as “`ANS`”) should be given in ALL CAPS.
+
+#### OPTIONAL on element:  <<element-authorization,`<authorization>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| An acronym that names the authorization type referenced in the <<element-authorization,`<authorization>`>> element.
+| Restriction| This attribute is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### An American National Standard
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <comm-ref>...</comm-ref>
+ <accrediting-organization accredit-acronym="ANSI">Under the 
+  authority of the American National Standards Institute</accrediting-organization>
+ <authorization authorize-acronym="ANS">An American National 
+  Standard</authorization>
+ <secretariat>...</secretariat>
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

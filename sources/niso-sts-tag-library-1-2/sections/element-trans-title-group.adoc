@@ -1,0 +1,47 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/trans-title-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-trans-title-group]
+=== `<trans-title-group>` Translated Title Group
+
+Container element for translated and transliterated titles.
+
+#### Usage/Remarks
+This element (Translated Title Group) may be repeated, for example, to provide translations in multiple languages, with the language indicated using the <<attribute-xml-lang,`@xml:lang`>> attribute.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-index-title-group,`<index-title-group>`>>
+#### Description
+
+The following, in order: <<element-trans-title,`<trans-title>`>> <<element-trans-title,Translated Title>> <<element-trans-subtitle,`<trans-subtitle>`>> <<element-trans-subtitle,Translated Subtitle>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  trans-title-group
+                        %trans-title-group-model;                    >
+....
+#### Expanded Content Model
+
+(trans-title, trans-subtitle*)
+
+#### Related Resources
+
+* See: Hierarchy diagram - Index Title Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

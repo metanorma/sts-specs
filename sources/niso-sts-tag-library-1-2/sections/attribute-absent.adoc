@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/absent.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-absent]
+=== `@absent` absent
+
+Used to state that the required element <<element-tbx-term,`<tbx:term>`>> has been left empty deliberately and is therefore not an error.
+
+#### OPTIONAL on element:  <<element-tbx-term,`<tbx:term>`>>
+
+|===
+| Value| Meaning
+
+| yes| The element <<element-tbx-term,`<tbx:term>`>> has no content, it has been left empty deliberately
+| no| The element <<element-tbx-term,`<tbx:term>`>> has content as usual. This value need never be used, the content of <<element-tbx-term,`<tbx:term>`>> is sufficient.
+| Restriction| This attribute is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,1432 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 129-2</doc-identifier>
+      <std-title-group>
+        <title>Multi-dimensional measuring instruments&#x2009;&#x2014;&#x2009;Metrological controls and performance tests</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2020-01-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2020 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <p>International Recommendations (OIML R), which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</p>
+      <p>International Documents (OIML D), which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</p>
+      <p>International Guides (OIML G), which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</p>
+      <p>International Basic Publications (OIML B), which define the operating rules of the various OIML structures and systems.</p>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from OIML Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of Vocabularies (OIML V) and periodically commissions legal metrology experts to write Expert Reports (OIML E). Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 129-2, Edition 2020 (E)&#x2009;&#x2014;&#x2009;was developed by Project Group 1 in the OIML Technical Subcommittee TC 7/SC 5 Dimensional Measuring Instruments. It was approved for final publication by the International Committee of Legal Metrology in 2020. It supersedes the previous edition dated 2000.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <list list-type="bullet" id="_1cabd05d-8c3a-ed0a-03c5-a4009d129e45">
+        <list-item>&#x2014;Bureau International de M&#xE9;trologie L&#xE9;gale</list-item>
+        <list-item>&#x2014;11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France</list-item>
+        <list-item>&#x2014;Telephone: 33 (0)1 48 78 12 82</list-item>
+        <list-item>&#x2014;Fax: 33 (0)1 42 82 17 27</list-item>
+        <list-item>&#x2014;E-mail: <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/></list-item>
+        <list-item>&#x2014;Internet: www.oiml.org</list-item>
+      </list>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <title>Type evaluation</title>
+      <p>A type of instrument is presumed to comply with the requirements of R 129-1, 4.2, 4.3 and 4.4, if it has passed the examination and tests specified in Annex A.</p>
+      <sec>
+        <title>Documentation</title>
+        <sec>
+          <title>General documentation</title>
+          <p>Submission of an instrument to a national metrology service for type evaluation shall be accompanied by sufficient technical information including drawings, specifications, photographs and descriptions to ensure complete understanding of the construction and method of operation of the instrument.</p>
+          <p>Details of the measurement data contained in the memory and calculation methods shall also be provided.</p>
+        </sec>
+        <sec>
+          <title>Software documentation</title>
+          <p>This Recommendation does not ask manufacturers for extra declarations that the documentation is correct and complete; however, any country may require this declaration, as a part of the specified software examination process.</p>
+          <p>The manufacturer shall submit all such documentation to allow for a reasonable evaluation of the legally relevant software. This includes:</p>
+          <list list-type="bullet" id="_cf3d592c-1733-5546-6cfe-d9289d94805b">
+            <list-item>&#x2014;a description of the legally relevant software and how the requirements are met:</list-item>
+            <list-item>&#x2014;list of the software modules that belong to the legally relevant part;</list-item>
+            <list-item>&#x2014;description of the software interfaces of the legally relevant software part and of the commands and data flows via this interface;</list-item>
+            <list-item>&#x2014;list of the parameters to be protected and description of the protection means;</list-item>
+            <list-item>&#x2014;a description of suitable system configuration and minimal required resources (see R 129-1, B.5.1(a));</list-item>
+            <list-item>&#x2014;a description of the means of securing the operating system (password, etc. if applicable);</list-item>
+            <list-item>&#x2014;a description of the (software) sealing method(s);</list-item>
+            <list-item>&#x2014;an overview of the system hardware, e.g. topology block diagram, type of computer(s), type of network, etc. Where a hardware component is deemed legally relevant or where it performs legally relevant functions, this shall also be identified;</list-item>
+            <list-item>&#x2014;a description of the user interface, menus and dialogues;</list-item>
+            <list-item>&#x2014;the software identification and instructions for obtaining it from an instrument in use;</list-item>
+            <list-item>&#x2014;if an audit trail is realised in the software, a description on how to access the audit trail;</list-item>
+            <list-item>&#x2014;the operating manual;</list-item>
+            <list-item>&#x2014;a list of commands of each hardware interface of the measuring instrument/component;</list-item>
+            <list-item>&#x2014;a description of the accuracy of the algorithms (e.g. filtering of A/D conversion results, price calculation, rounding algorithms, etc.);</list-item>
+            <list-item>&#x2014;a description of the datasets stored or transmitted;</list-item>
+            <list-item>&#x2014;if detection of significant defects is realised in the software, a list of significant defects that are detected and a description of the detecting algorithm;</list-item>
+            <list-item>&#x2014;if fault detection is realised in the software, a list of faults that are detected and a description of the detecting algorithm;</list-item>
+            <list-item>&#x2014;a list of durability errors that are detected by the software and, if necessary for understanding, a description of the detecting algorithms.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <title>Instruments submitted for testing</title>
+        <p>Examination shall be carried out on one or more sample instruments submitted for laboratory tests. If all tests cannot be completed in the laboratory, an examination of a sample instrument on site shall also be carried out.</p>
+      </sec>
+      <sec>
+        <title>Laboratory examination</title>
+        <p>The instrument shall be examined in conjunction with the submitted documentation to ensure that it complies with the metrological and technical requirements specified in R 129-1.</p>
+      </sec>
+      <sec>
+        <title>Laboratory tests</title>
+        <sec>
+          <title>General</title>
+          <p>Laboratory tests shall be performed in accordance with any limitations of use marked on the instrument or included in any documentation accompanying the instrument.</p>
+        </sec>
+        <sec>
+          <title>Test objects</title>
+          <p>The test shall be carried out using appropriate test objects of various sizes and of stable dimensions. The test objects shall be opaque, rigid and with flat faces and well defined straight edges. Test objects may consist of rectangular boxes with dimensions which are known to an expanded uncertainty (coverage factor k=2) of not more than one-third of the mpe. The dimensions shall also be checked to the same uncertainty when used at the extreme values of the influence factors. The dimensions of these objects shall lie within the range of values bounded by the minimum and maximum dimensions measurable by the instrument. All adjacent faces and edges shall be perpendicular to each other.</p>
+          <p>The dimensions of the test object shall be \mathN\&#xD7;d\mathrm{N} \times d\mathN\&#xD7;d\mathrm{N} \times d where N is a whole number and d is the value of the scale interval. An acceptable tolerance for the product of \mathN\&#xD7;d\mathrm{N} \times d\mathN\&#xD7;d\mathrm{N} \times d is \&#xB1;13\pm 1/3\&#xB1;13\pm 1/3 d. For the different scale intervals, namely 1,21, 21,21, 2 or 5\&#xD7;10n5 \times 10^n5\&#xD7;10n5 \times 10^n, \mathN=10,20\mathrm{N} = 10, 20\mathN=10,20\mathrm{N} = 10, 20, etc. would be suitable as a test object for all. This is applicable for type evaluation and verification tests.</p>
+          <p>Instruments may be equipped with an extended indication device or mode which displays the indication with a scale interval equal to, or less than, 1/5 d. Where an instrument has such a feature, and that feature is used during type evaluation or verification, the dimensions of the test object are not restricted to \mathN\&#xD7;d\mathrm{N} \times d\mathN\&#xD7;d\mathrm{N} \times d provided that the dimensions of the test object are known to at least 1/5 d.</p>
+        </sec>
+        <sec>
+          <title>Acceptable indications</title>
+          <p>For compliance with the mpe, indications where the error of indication is less than or equal to the absolute value of the mpe are acceptable.</p>
+          <p>For compliance with the significant fault, a difference of 1 d between indications with and without the disturbance applied is acceptable. A difference of more than 1 d is not acceptable.</p>
+        </sec>
+        <sec>
+          <title>Tests for influence factors, disturbances, and light and acoustic effects</title>
+          <p>Before a test is conducted and without a test object on the instrument, the instrument shall be in a zero or ready condition. The test object shall be placed in accordance with the manufacturer&#x2019;s instructions. Instruments tested under laboratory conditions shall comply with the mpe (R 129-1, 4.1.2) for influence factors and humidity effects (R 129-1, 4.2.1), and comply with the significant fault requirements for disturbances (R 129-1, 4.3). Instruments based on light or acoustic techniques shall comply with the mpe (R 129-1, 4.1.2) for light and acoustic effects (R 129-1, 4.4).</p>
+        </sec>
+        <sec>
+          <title>Tests for irregular shaped objects</title>
+          <p>For irregular shaped test objects the smallest dimension of that test object for an axis shall be equal to, or greater than, the minimum dimension for that axis. However, it must be possible to determine the dimensions of the object to such an accuracy that the smallest rectangular box which fully encloses the object can be calculated within the required uncertainty.</p>
+          <p>If the instrument is marked with a minimum protrusion to be measured, a test object with that size protrusion shall be used to verify the marked limit.</p>
+        </sec>
+        <sec>
+          <title>Tests for different orientations and positions</title>
+          <p>If the instrument does not depend on a particular orientation of the object, several different orientations shall be tested.</p>
+          <p>If the instrument does not depend on the object being placed in a particular position on the measuring plane, several different positions shall be tested.</p>
+        </sec>
+        <sec>
+          <title>Tests for automatic instruments</title>
+          <p>For automatic instruments, tests at the maximum and minimum speeds of relative movement shall be carried out.</p>
+        </sec>
+        <sec>
+          <title>Tests for multi-interval instruments</title>
+          <p>For multi-interval instruments, tests shall be performed for all values of the scale interval, i.e. d1,d2,\s.,drd_1, d_2, \dots, d_rd1,d2,\s.,drd_1, d_2, \dots, d_r.</p>
+        </sec>
+        <sec>
+          <title>Tests for different surfaces</title>
+          <p>Instruments shall be tested with objects of varying surface characteristics to check the limits of such characteristics marked on the instrument or included in the user&#x2019;s manual. R 129-1, Annex A, gives guidelines on known surface characteristics to be checked such as colour (uniform and non-uniform), contrast of colour with the measurement plane, reflectivity and absorption of sound and light, transparency, roughness or other.</p>
+        </sec>
+        <sec>
+          <title>Tests for interface</title>
+          <p>If the instrument is provided with an interface through which ancillary devices or other instruments can be connected, the tests shall be carried out with a sample device connected and tests applicable to the interface applied (see R 129-1, 5.5.2). The immunity to RF electromagnetic fields test (see A.3.5) may be carried out on an instrument with only an unterminated cable, connected to the interface. The length of this cable will be in accordance with the relevant standard referenced in the test procedure.</p>
+        </sec>
+        <sec>
+          <title>Software evaluation</title>
+          <p>The risk associated with the software of multi-dimensional measuring instruments is level I. Validation in accordance with examination level A is adequate for solutions implemented to fulfil requirements at the normal severity level.</p>
+          <p><xref rid="table-1" ref-type="other"/>Table1 below provides an overview of the proposed verification and evaluation methods applicable to this Recommendation.</p>
+          <p><xref rid="table-2" ref-type="other"/>Table2 below provides an overview of the combination of various software requirements and relevant evaluation methods. The acronyms in <xref rid="table-2" ref-type="other"/>Table2 are defined in <xref rid="table-1" ref-type="other"/>Table1.</p>
+          <table-wrap id="tab_1">
+            <caption>Overview of the proposed verification and evaluation methods</caption>
+            <table>
+              <tr>
+                <td>AD</td>
+                <td>Analysis of the documentation and evaluation of the design (D31, 7.3.2.1 OIML&#xA0;D&#xA0;31:2019)</td>
+                <td>Always</td>
+                <td>Documentation</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>VFTM</td>
+                <td>Verification by functional testing of metrological functions (D31, 7.3.2.2 OIML&#xA0;D&#xA0;31:2019)</td>
+                <td>Correctness of the algorithms, uncertainty, compensating and correcting algorithms, rules for price calculation</td>
+                <td>Documentation, specimen</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>VFTSw</td>
+                <td>Verification by functional testing of software functions (D31, 7.3.2.3 OIML&#xA0;D&#xA0;31:2019)</td>
+                <td>Correct functioning of communication, indication, evidence of intervention, protection against operating errors, protection of parameters, detection of significant defects</td>
+                <td>Documentation, specimen</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </table-wrap>
+          <table-wrap id="tab_2">
+            <caption>Combination of software requirements and relevant evaluation methods</caption>
+            <table>
+              <tr>
+                <td>6.1 Software identification</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.2 Correctness of algorithms and functions</td>
+                <td>AD+VFTM</td>
+              </tr>
+              <tr>
+                <td>
+                  <italic>Securing and protecting software, parameters and measurement data and the measurand value</italic>
+                </td>
+              </tr>
+              <tr>
+                <td>6.3 Securing and protecting software</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.3 Securing and protecting parameters</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.3 Securing measurement data and the measurand value</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.4 Authentication of the presented measurement results</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.5 Audit trail</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.7 Detection of significant defects</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>6.8 Support for durability protection</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>
+                  <italic>Requirements for specific configurations</italic>
+                </td>
+              </tr>
+              <tr>
+                <td>B.1.1 to B.1.3 Separation of parts</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>B.2 Shared indications</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>B.3 Storage of data</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>B.4 Transmission of measurement process information</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>B.5 Operating system</td>
+                <td>AD+VFTSw</td>
+              </tr>
+              <tr>
+                <td>B.6 Software update</td>
+                <td>AD+VFTSw</td>
+              </tr>
+            </table>
+          </table-wrap>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Initial verification</title>
+      <sec>
+        <title>Verification conditions</title>
+        <p>Initial verification of instruments is normally carried out after installation and under the intended conditions of use. The installation and conditions of use shall be appropriate for the design of the instrument as described in the type evaluation certificate and shall allow the specified performance requirements to be achieved.</p>
+        <sec>
+          <title>Software verification</title>
+          <p>For software controlled devices, the verification of the software shall include</p>
+          <list list-type="order" id="_d54f4539-ad6f-8f53-fe8d-3647ad5c9610">
+            <list-item>a)an examination of the conformity of the software to verify that it is the certified version (e.g. verify the software identification, verify the integrity of securing and protection),</list-item>
+            <list-item>b)an examination of the configuration to verify that it is compatible with the declared minimal configuration, if given in the certificate,</list-item>
+            <list-item>c)an examination of the measuring function, including price calculation if available, and</list-item>
+            <list-item>d)an examination of the legally relevant parameters (especially the adjustment parameters) to verify that they are correctly set.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <title>Conformity</title>
+        <p>An instrument shall conform to the certificate with respect to its construction and metrological functions. Devices such as zero adjustment, indicators, printers, etc. shall be checked for correct functioning.</p>
+        <p>The nameplate shall contain the required information including the type evaluation mark.</p>
+        <p>Any notices, including notices of limitations of use required by the certificate, shall be checked to ensure that they are readily available to the operator and processes are in place to ensure that they are adhered to.</p>
+      </sec>
+      <sec>
+        <title>Test objects</title>
+        <p>Test objects shall be available and comply with requirements of 1.4.2.</p>
+      </sec>
+      <sec>
+        <title>Accuracy tests</title>
+        <p>Accuracy tests shall be carried out in accordance with test A.1.2 at the operating conditions in effect at the time of verification.</p>
+      </sec>
+      <sec>
+        <title>Other tests</title>
+        <p>The following tests shall be carried out as applicable, depending on the mode of operation, environment location, and the intended use of the instrument:</p>
+        <list list-type="order" id="_452ab892-ae55-4200-4cc9-f5dc636861b3">
+          <list-item>a)tests for irregular shaped objects (1.4.5);</list-item>
+          <list-item>b)tests for different orientations and positions (1.4.6);</list-item>
+          <list-item>c)tests for automatic instruments (1.4.7);</list-item>
+          <list-item>d)tests for multi-interval instruments (1.4.8); and</list-item>
+          <list-item>e)tests for different surfaces (1.4.9).</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <title>Subsequent verification</title>
+      <p>Unless national regulations specify otherwise, subsequent verification tests shall be carried out in accordance with accuracy tests specified in 2.4, using test objects specified in 2.3. For software controlled devices, software verification shall be carried out as specified in 2.1.1.</p>
+    </sec>
+    <p>Multi-dimensional measuring instruments &#x2014; Part&#xA0;2:Metrological controls and performance tests</p>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <title>Performance tests</title>
+        <p>Performance tests carried out under the influence factors, disturbances and humidity effects specified in R 129-1, 4.2, 4.3 and 4.4, ensure that measuring instruments perform over a range of environmental conditions likely to be met in normal use.</p>
+        <sec>
+          <title>General</title>
+          <sec>
+            <title>Instrument warm up time</title>
+            <table-wrap id="tab_3">
+              <caption>TableA.1</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>The instrument shall be switched on for a period of time equal to, or greater than, the warm-up time specified by the manufacturer. Power is to be &#x201C;on&#x201D; for the duration of each test.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>All multi-dimensional instruments.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in R 129-1, 5.1.7.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>Two test objects shall be used, one near minimum dimensions and one near maximum dimensions. One test shall be carried out for each test object at 0, 5, 15 and 30 minutes after the dimensions are first displayed after switch-on.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The results at each dimension for each object shall be compared with the mpe (R 129-1, 4.1.2). This test shall be performed at reference conditions (R 129-1, 4.1.7&#xA9;).</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>The instrument shall be correct (within the mpe) as soon as the values of the dimensions are displayed (R 129-1, 5.1.7). All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Repeatability</title>
+            <table-wrap id="tab_4">
+              <caption>TableA.2</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Repeatability</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>All multi-dimensional measuring instruments.</td>
+                </tr>
+                <tr>
+                  <th>Object of test</th>
+                  <td>Verification of compliance with the provisions in R 129-1, 4.2.1 under conditions of repeated measurement.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>Before the test is conducted and without a test object in the measurement area, the instrument shall be in zero or ready condition. Test objects shall be used such that three measurements of five dimensions approximately equally spaced between and including at or near minimum and maximum dimensions, shall be carried out for each axis (L, W and H) under reference conditions (R 129-1, 4.1.7&#xA9;). Any calculated quantities shall be checked for correct multiplication and rounding (R 129-1, 4.1.6).</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The results at each dimension for each object shall be compared with the mpe (R 129-1, 4.1.2). The instrument shall be correct (within the mpe) for each measurement of each dimension.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Tests for influence factors</title>
+            <p>Before tests are conducted and without a test object in the measurement area, the instrument shall be in zero or ready condition. Test objects shall be used such that at least one measurement of at least five dimensions approximately equally spaced between and including at or near minimum and maximum dimensions, shall be carried out for each axis (L, W and H). For the following influence factor tests it is permitted to use test objects only near the minimum dimensions:</p>
+            <list list-type="bullet" id="_b56afff9-529c-33a8-b8a9-6b065c56426c">
+              <list-item>&#x2014;static temperatures;</list-item>
+              <list-item>&#x2014;damp heat, steady-state (non-condensing).</list-item>
+            </list>
+            <p>The tests shall first be carried out under reference conditions (R 129-1, 4.1.7&#xA9;) and then at each of the extreme conditions of the influence factors specified in R 129-1, 4.2.1.</p>
+            <p>When the effect of one influence factor is being evaluated, all other factors shall be held relatively constant at a value close to the reference conditions specified in R 129-1, 4.1.7&#xA9;. The test results at each dimension and each condition shall be compared with the mpes (R 129-1, 4.1.2). If applicable, the variation between indicators shall be checked against the permissible difference (R 129-1, 4.1.4). Any calculated quantities shall be checked for correct multiplication and rounding (R 129-1, 4.1.6).</p>
+            <p>The effect of influence factors on any interfaces (R 129-1, 5.5.2) or electronic sealing provisions (R 129-1, 6.3.1) shall also be checked.</p>
+          </sec>
+          <sec>
+            <title>Tests for disturbances</title>
+            <p>Tests for disturbances shall be carried out on all electronic instruments. The damp heat, cyclic test (A.3.6) is only carried out on instruments intended for use in locations where they may be subject to condensate water.</p>
+            <p>Tests using at least one test object shall be carried out, firstly at reference conditions (R 129-1, 4.1.7&#xA9;) and no disturbance, and then with the applications of each disturbance specified in R 129-1, 4.3. Only one disturbance at a time shall be applied. The disturbances shall be applied during the display mode of the three dimensions (L, W and H). The difference between the tests with and without the disturbance shall be compared with the significant fault (R 129-1, 2.3.7). All indicators shall be checked.</p>
+            <p>The effect of disturbances on any interfaces (R 129-1, 5.5.2) or electronic sealing provisions (R 129-1, 6.3.1) shall also be checked.</p>
+          </sec>
+          <sec>
+            <title>Tests for light and acoustic effects</title>
+            <p>The tests shall be carried out as specified in A.1.3 under the variation of light and acoustic effects given in A.4.</p>
+            <p>The test results at each dimension and at each condition shall be compared with the mpe (R 129-1, 4.1.2).</p>
+          </sec>
+          <sec>
+            <title>Tests for other effects</title>
+            <p>Tests for (see 1.4.5 to 1.4.10)</p>
+            <list list-type="bullet" id="_ae60d88d-66b5-2bff-fb6c-f57fc66e0681">
+              <list-item>&#x2014;irregularly shaped objects,</list-item>
+              <list-item>&#x2014;different orientations of the object,</list-item>
+              <list-item>&#x2014;the range of relative motion,</list-item>
+              <list-item>&#x2014;multi-interval instruments,</list-item>
+              <list-item>&#x2014;different surfaces, and</list-item>
+              <list-item>&#x2014;interfaces, if applicable</list-item>
+            </list>
+            <p>shall be carried out under reference conditions (R 129-1, 4.1.7&#xA9;). The tests as specified in A.1.3 shall be used, except that at least three measurements of at least three dimensions shall be carried out for each axis. All results shall be compared with the mpe (R 129-1, 4.1.2).</p>
+          </sec>
+          <sec>
+            <title>Applicable tests</title>
+            <p>The following tests apply to the various types of electronic instruments using the following principles of operation.</p>
+            <table-wrap id="tab_5">
+              <caption>Applicable tests</caption>
+              <table>
+                <tr>
+                  <td>A.2.1</td>
+                  <td>Static temperatures</td>
+                  <td>I</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>A.2.2 &amp; A.3.6</td>
+                  <td>Damp heat</td>
+                  <td>I/D</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>A.2.3</td>
+                  <td>AC mains voltage variation</td>
+                  <td>I</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>A.2.4</td>
+                  <td>Low voltage of internal battery</td>
+                  <td>I</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>A.3.1</td>
+                  <td>AC mains voltage dips, short interruptions and reductions</td>
+                  <td>D</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>A.3.2</td>
+                  <td>Electrical bursts</td>
+                  <td>D</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>A.3.3</td>
+                  <td>Electrostatic discharge</td>
+                  <td>D</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>A.3.4</td>
+                  <td>Electrical surges</td>
+                  <td>D</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>A.3.5</td>
+                  <td>Immunity to RF Electromagnetic fields</td>
+                  <td>D</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>A.4.1</td>
+                  <td>Ambient light</td>
+                  <td/>
+                  <td/>
+                  <td>x</td>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td>A.4.2</td>
+                  <td>Acoustics</td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td>x</td>
+                  <td/>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+        </sec>
+        <sec>
+          <title>Test procedures for influence factors</title>
+          <p>Additional information for carrying out the test procedures for influence factors is given below. The instrument being tested is referred to as the equipment under test (EUT).</p>
+          <sec>
+            <title>Static temperatures</title>
+            <table-wrap id="tab_6">
+              <caption>TableA.4</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Exposure to dry heat (non-condensing) and cold.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>All multi-dimensional measuring instruments.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.3 and R 129-1, 4.2.1 under conditions of high and low temperatures.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The test comprises exposure to the specified high and low temperatures under &#x201C;free air&#x201D; conditions during the period of time specified (the period specified is the period following the moment at which the EUT has reached temperature stability). One measurement on every sample is taken using each unit, at every test condition.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.3:a)at a temperature of 20 &#xB0;C&#xB0;C&#xB0;C&#xB0;C following conditioning;b)at the specified high temperature;c)at the specified low temperature; andd)again at 20 &#xB0;C&#xB0;C&#xB0;C&#xB0;C following conditioning.The change in temperature shall not exceed 1 &#xB0;C&#xB0;C&#xB0;C&#xB0;C/min during heating up and cooling down.The absolute humidity of the test atmosphere shall not exceed 20 gm3g/m^3gm3g/m^3.When tests are performed at temperatures below 35 &#xB0;C&#xB0;C&#xB0;C&#xB0;C, the relative humidity shall not exceed 50 %.Exposure duration:&#x2014;at least 2 h (following EUT stabilisation) at specified high temperature;&#x2014;at least 2 h (following EUT stabilisation) at specified low temperature.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013, IEC 60068-2-1 IEC&#xA0;60068-2-1:2007, IEC 60068-2-2 IEC&#xA0;60068-2-2:2007 and IEC 60068-3-1 IEC&#xA0;60068-3-1:2011.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Damp heat&#x2009;&#x2014;&#x2009;Steady-state (non-condensing)</title>
+            <table-wrap id="tab_7">
+              <caption>TableA.5</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Exposure to damp heat in steady-state.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>All electronic multi-dimensional measuring instruments.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.3 and R 129-1, 4.2.1 under conditions of high humidity and constant temperature. The steady-state test should always be used where adsorption or absorption play the main part. When diffusion but not breathing is involved, either the steady-state or the cyclic test shall be prescribed depending on the type of instrument and its application.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The test comprises exposure to the specified high level temperature and the specified constant relative humidity for a certain fixed period of time. The EUT shall be handled such that no condensation of water occurs on it.Note NoteTableA.5,NoteOne measurement on every sample is taken using each unit, at every test condition.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.3:
+* at the reference conditions of 20 &#xB0;C&#xB0;C&#xB0;C&#xB0;C and 50 % relative humidity; 
+* at the specified high temperature or 40 &#xB0;C&#xB0;C&#xB0;C&#xB0;C, whichever is lower and 85 % relative humidity after 48 h; and
+* again at 20 &#xB0;C&#xB0;C&#xB0;C&#xB0;C and 50 % relative humidity.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013, IEC 60068-2-78 IEC&#xA0;60068-2-78:2012 and IEC 60068-3-4 IEC&#xA0;60068-3-4:2001.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>AC mains voltage variation</title>
+            <table-wrap id="tab_8">
+              <caption>TableA.6</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Applying low and high level AC mains power voltage (single phase).</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable for multi-dimensional measuring instruments which are temporarily or permanently connected to an AC mains power network while in operation.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.3 and R 129-1, 4.2.1 under conditions of AC mains network voltage changes between upper and lower limit.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The EUT shall be subjected to AC mains power variations specified in R 129-1, 4.2.1 under constant environmental conditions. One measurement on the sample is taken using each unit, at every test condition. In case of three-phase mains power, the voltage variation shall apply for each phase successively.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.3:&#x2014;at nominal voltage;&#x2014;at an upper limit of 110 % of nominal voltage; and&#x2014;at a lower limit of 85 % of nominal voltage.Note NoteTableA.6,NoteThe nominal voltage is that specified by the manufacturer. If a voltage range is marked, the upper limit applies to the high level value of the range and the lower limit applies to the low level value of the range.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013, IEC 61000-4-1 IEC&#xA0;61000-4-1:2006 and IEC/TR 61000-2-1 IEC&#xA0;TR&#xA0;61000-2-1:1990.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Low voltage of internal battery</title>
+            <table-wrap id="tab_9">
+              <caption>TableA.7</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Applying minimum supply voltage.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable to all multi-dimensional measuring instruments supplied by internal battery.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.3 and R 129-1, 4.2.1 during low battery voltage.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The test comprises exposure of the EUT to the specific low battery level condition during a period sufficient for achieving temperature stability and for performing the required measurements. The maximum internal impedance of the battery and the minimum battery supply voltage level shall be specified by the manufacturer of the instrument. If an alternative power supply source is used instead of the internal battery, for instance in bench testing, the internal impedance of the specified type of battery shall also be simulated. The alternative power supply shall be capable of delivering sufficient current at the applicable supply voltage.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.3a)at nominal voltage;b)at various reduced voltages below nominal voltage; andc)90 % of the minimum battery supply voltage level.The nominal voltage is that specified by the manufacturer.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2 or alternatively the indication shall be blank.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+        </sec>
+        <sec>
+          <title>Test procedures for disturbances</title>
+          <sec>
+            <title>AC mains voltage dips, short interruptions and reductions</title>
+            <table-wrap id="tab_10">
+              <caption>TableA.8</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Introducing short-time reductions of mains voltage using the test setup defined in the applicable standard.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable to all electronic multi-dimensional measuring instruments supplied by AC mains voltage.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 during short time power reduction.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>A test generator is to be used which is suitable to reduce the amplitude of the AC mains voltage for the required period of time. The performance of the test generator shall be verified before connecting the EUT. The mains voltage reduction tests shall be repeated 10 times with intervals of at least 10 s between the tests. If the instrument operates over a range of voltages and that range is equal to or greater than 20 % of the minimum voltage then the test should be carried out at the voltage minimum and maximum.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>Each test shall be repeated ten times with an interval of at least 10 s. The EUT shall be tested as specified in A.1.4 with the following reductions:a)reduction to 0 % for 0.5 cycle;b)reduction to 0 % for 1 cycle;c)reduction to 40 % for 10/12 cycles;d)reduction to 70 % for 25/30 cycles;e)reduction to 80 % for 250/300 cycles; andf)reduction to 100 % for 250/300 cycles.Note NoteTableA.8,NoteValues applicable for 50 Hz/60 Hz respectively.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the short time power reduction, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013, IEC 61000-4-11 IEC&#xA0;61000-4-11:2004, IEC 61000-6-1 IEC&#xA0;61000-6-1:2005 and IEC 61000-6-2 IEC&#xA0;61000-6-2:2005.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Electrical bursts</title>
+            <table-wrap id="tab_11">
+              <caption>TableA.9</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Introducing transients on the mains power lines.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable to all multi-dimensional measuring instruments supplied by AC mains voltage.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 when an electrical burst is applied to the power line, input/output control circuits and communication lines.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The EUT shall be subjected to electrical bursts of voltage spikes. The test shall be conducted under constant environmental conditions. The transient generator shall have an output impedance of 50 \&#x3A9;\Omega\&#x3A9;\Omega and 1000 \&#x3A9;\Omega\&#x3A9;\Omega and shall be adjusted before connecting the EUT. At least ten positive and ten negative randomly phased bursts of voltage spikes with a double exponential waveform shall be applied. Each spike shall have a rise time of 5 ns and a half amplitude duration of 50 ns. The burst length shall be 15 ms, the burst period (repetition time interval) shall be 300 ms.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.4 at the following amplitudes (peak values):a)2 kV for power supply lines; andb)1 kV for input/output control circuits and communication lines.With a repetition frequency of the impulses of 5 kHz \&#xB1;\pm\&#xB1;\pm 20 %.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the electrical bursts, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013 and IEC 61000-4-4 IEC&#xA0;61000-4-4:2012.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Electrostatic discharge</title>
+            <table-wrap id="tab_12">
+              <caption>TableA.10</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Exposure to electrostatic discharge (ESD).</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable to all electronic multi-dimensional measuring instruments.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 when an electrical discharge is applied.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The EUT shall be subjected to both direct and indirect electrostatic discharges under constant environmental conditions. At least ten discharges shall be applied. The time interval between successive discharges shall be at least 1 second.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.4 at a test voltage up to and including 6 kV for the contact mode and 8 kV for the air mode.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the electrostatic discharge, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013 and IEC 61000-4-2 IEC&#xA0;61000-4-2:2008.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Electrical surges</title>
+            <sec>
+              <title>Surges on AC mains power lines</title>
+              <table-wrap id="tab_13">
+                <caption>TableA.11</caption>
+                <table>
+                  <tr>
+                    <th>Test method</th>
+                    <td>Introducing electrical surges on the mains power lines.</td>
+                  </tr>
+                  <tr>
+                    <th>Applicability</th>
+                    <td>Applicable for electronic multi-dimensional measuring instruments which are temporarily or permanently connected to an AC mains power network while in operation.</td>
+                  </tr>
+                  <tr>
+                    <th>Object of the test</th>
+                    <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 during conditions where electrical surges are superimposed on the AC mains voltage.</td>
+                  </tr>
+                  <tr>
+                    <th>Test procedure in brief</th>
+                    <td>A surge generator as defined in the referred standard shall be used. The characteristics of the generator shall be verified before connecting the EUT. The test comprises exposure to electrical surges for which the rise time, pulse width, peak values of the output voltage/current on high/low impedance load and the minimum time interval between two successive pulses are defined in the referred standard. At least 3 positive and 3 negative surges shall be applied. On AC mains supply lines the surges shall be synchronised with the AC supply frequency and shall be repeated such that the injection of surges on all the 4 phase shifts: 0&#xB0;, 90&#xB0;, 180&#xB0; and 270&#xB0; with the mains frequency is covered.</td>
+                  </tr>
+                  <tr>
+                    <th>Test level</th>
+                    <td>The EUT shall be tested as specified in A.1.4 at the following amplitudes (peak values):a)1 kV for AC line to line; andb)2 kV for AC line to ground.</td>
+                  </tr>
+                  <tr>
+                    <th>Acceptance criteria</th>
+                    <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the surge, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                  </tr>
+                  <tr>
+                    <th>References</th>
+                    <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013 and IEC 61000-4-5 IEC&#xA0;61000-4-5:2005.</td>
+                  </tr>
+                </table>
+              </table-wrap>
+            </sec>
+            <sec>
+              <title>Surges on signal, data and control lines</title>
+              <table-wrap id="tab_14">
+                <caption>TableA.12</caption>
+                <table>
+                  <tr>
+                    <th>Test method</th>
+                    <td>Introducing electrical surges on signal, data and control lines.</td>
+                  </tr>
+                  <tr>
+                    <th>Applicability</th>
+                    <td>Applicable for electronic multi-dimensional measuring instruments containing active electronic circuits which during operation are temporarily or permanently connected to electrical signal, data and/or control lines that may exceed a length of 10 m.</td>
+                  </tr>
+                  <tr>
+                    <th>Object of the test</th>
+                    <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 during conditions where electrical surges are superimposed on I/O and communication ports.</td>
+                  </tr>
+                  <tr>
+                    <th>Test procedure in brief</th>
+                    <td>A surge generator as defined in the referred standard shall be used. The characteristics of the generator shall be verified before connecting the EUT. The test comprises exposure to electrical surges for which the rise time, pulse width, peak values of the output voltage/current on high/low impedance load and the minimum time interval between two successive pulses are defined in the referred standard. At least 3 positive and 3 negative surges shall be applied. The applicable injection network depends on the kind of wiring the surge is coupled into and is defined in the referred standard. If the EUT is an integrating instrument, the test pulses shall be continuously applied during the measurement time.</td>
+                  </tr>
+                  <tr>
+                    <th>Test level</th>
+                    <td>The EUT shall be tested as specified in A.1.4 at the following amplitudes (peak values):a)1 kV for unsymmetrical lines&#x2009;&#x2014;&#x2009;line to line;b)2 kV for unsymmetrical lines&#x2009;&#x2014;&#x2009;line(s) to ground;c)2 kV for symmetrical lines&#x2009;&#x2014;&#x2009;line(s) to ground; andd)2 kV for shielded I/O and communication lines&#x2009;&#x2014;&#x2009;line(s) to ground.</td>
+                  </tr>
+                  <tr>
+                    <th>Acceptance criteria</th>
+                    <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the surge, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                  </tr>
+                  <tr>
+                    <th>References</th>
+                    <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013 and IEC 61000-4-5 IEC&#xA0;61000-4-5:2005.</td>
+                  </tr>
+                </table>
+              </table-wrap>
+            </sec>
+          </sec>
+          <sec>
+            <title>Immunity to RF electromagnetic fields</title>
+            <sec>
+              <title>Radiated RF electromagnetic fields</title>
+              <table-wrap id="tab_15">
+                <caption>TableA.13</caption>
+                <table>
+                  <tr>
+                    <th>Test method</th>
+                    <td>Exposure to radiated radio frequency electromagnetic fields.</td>
+                  </tr>
+                  <tr>
+                    <th>Applicability</th>
+                    <td>Applicable for electronic multi-dimensional measuring instruments containing active electronic circuits.</td>
+                  </tr>
+                  <tr>
+                    <th>Object of the test</th>
+                    <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 under conditions of exposure to electromagnetic fields.</td>
+                  </tr>
+                  <tr>
+                    <th>Test procedure in brief</th>
+                    <td>The EUT is exposed to electromagnetic fields with the required field strength and the field uniformity under constant environmental conditions. The level of field strength specified refers to the field generated by the unmodulated carrier wave. The EUT shall be exposed to the modulated wave field. The frequency sweep shall be made only pausing to adjust the RF signal level or to switch RF-generators, amplifiers and antennas if necessary. Where the frequency range is swept incrementally, the step size shall not exceed 1 % of the preceding frequency value. The dwell time of the amplitude modulated carrier at each frequency shall not be less than the time necessary for the EUT to be exercised and to respond, but shall in no case be less than 0.5 s. Adequate EM fields can be generated in facilities of different type and setup, the use of which is limited by the dimensions of the EUT and the frequency range of the facility. The expected most critical frequencies (e.g. clock frequencies) shall be analysed separately.</td>
+                  </tr>
+                  <tr>
+                    <th>Test level</th>
+                    <td>The EUT shall be tested as specified in A.1.4 at a field strength of 10 V/m, 80 % AM, 1 kHz sine wave over frequency ranges of 26 MHz to 3000 MHz for EUT having no mains or other input port available and 80 MHz to 3000 MHz for EUT having mains or other input port available.</td>
+                  </tr>
+                  <tr>
+                    <th>Acceptance criteria</th>
+                    <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the electromagnetic susceptibility of the instrument, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                  </tr>
+                  <tr>
+                    <th>References</th>
+                    <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013, IEC 61000-4-3 IEC&#xA0;61000-4-3:2010 and IEC 61000-4-20 IEC&#xA0;61000-4-20:2010.</td>
+                  </tr>
+                </table>
+              </table-wrap>
+            </sec>
+            <sec>
+              <title>Conducted RF electromagnetic fields</title>
+              <table-wrap id="tab_16">
+                <caption>TableA.14</caption>
+                <table>
+                  <tr>
+                    <th>Test method</th>
+                    <td>Exposure to conducted radio frequency electromagnetic fields.</td>
+                  </tr>
+                  <tr>
+                    <th>Applicability</th>
+                    <td>Applicable for electronic multi-dimensional measuring instruments containing active electronic circuits.</td>
+                  </tr>
+                  <tr>
+                    <th>Object of the test</th>
+                    <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 under conditions of exposure to electromagnetic fields.</td>
+                  </tr>
+                  <tr>
+                    <th>Test procedure in brief</th>
+                    <td>The test procedure involves the use of radio frequency EM current, simulating the influence of EM fields coupled or injected into the power ports and I/O ports of the EUT using coupling/decoupling devices as defined in the referred standard. The performance of the test equipment consisting of an RF generator, decoupling devices, attenuators, etc. shall be verified. The functional performance of the EUT is observed (e.g. displayed indications and/or error messages) while at least ten measurements are taken with the conducted radio-frequency fields applied.</td>
+                  </tr>
+                  <tr>
+                    <th>Test level</th>
+                    <td>The EUT shall be tested as specified in A.1.4 at a RF amplitude (50 \&#x3A9;\Omega\&#x3A9;\Omega), 10 V (e.m.f), 80 % AM, 1 kHz sine wave over EM frequency range of 0.15-80 MHz.</td>
+                  </tr>
+                  <tr>
+                    <th>Acceptance criteria</th>
+                    <td>If the instrument does not detect and react to a significant fault occurring as a consequence of the electromagnetic susceptibility of the instrument, then the fault shall not exceed the value defined in R 129-1, 2.3.7.</td>
+                  </tr>
+                  <tr>
+                    <th>References</th>
+                    <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013 and IEC 61000-4-6 IEC&#xA0;61000-4-6:2013.</td>
+                  </tr>
+                </table>
+              </table-wrap>
+            </sec>
+          </sec>
+          <sec>
+            <title>Damp heat cyclic (condensing)</title>
+            <table-wrap id="tab_17">
+              <caption>TableA.15</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Exposure to damp heat with cyclic temperature variation.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>All electronic multi-dimensional measuring instruments that are intended to be used in locations where they may be subject to condensate water.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.4 and R 129-1, 4.3 under conditions of high humidity combined with cyclic temperature changes.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The test comprises exposure to cyclic temperature variation between 25 &#xB0;C&#xB0;C&#xB0;C&#xB0;C and 40 &#xB0;C&#xB0;C&#xB0;C&#xB0;C while maintaining the relative humidity above 95 % during the temperature change and the low temperature phases and at or above 93 % RH at the upper temperature phases.Condensation is expected to occur on the EUT during the temperature rise.The 24 h cycle comprises:a)temperature rise during 3 hours;b)temperature maintained at upper value until 12 hours from the start of the cycle;c)temperature lowered to lower temperature level within a period of 3 to 6 hours, the declination (rate of fall). during the first hour and a half being such that the lower temperature level would be reached in a 3 hour period; andd)temperature maintained at the lower level until the 24 hour period is completed.The stabilising period before and recovery period after the cyclic exposure shall be such that the temperature of all parts of the EUT is within 3 &#xB0;C&#xB0;C&#xB0;C&#xB0;C of its final value.Special electrical conditions and recovery conditions may need to be specified.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.4 at:a)40 &#xB0;C&#xB0;C&#xB0;C&#xB0;Cb)Duration: 24 hoursc)Number of cycles: 2</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>After the application of the disturbance and the subsequent recovery:&#x2014;the instrument shall detect and react to a significant fault occurring as a consequence of the damp heat with cyclic temperature variation; or&#x2014;the difference between each indication before the test and the associated indication after the test shall not exceed the fault limit defined in R 129-1, 2.3.7.</td>
+                </tr>
+                <tr>
+                  <th>References</th>
+                  <td>OIML D 11 OIML&#xA0;D&#xA0;11:2013, IEC 60068-2-30 IEC&#xA0;60068-2-30:2005 and IEC 60068-3-4 IEC&#xA0;60068-3-4:2001.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+        </sec>
+        <sec>
+          <title>Tests for light and acoustic effects</title>
+          <sec>
+            <title>Ambient light</title>
+            <table-wrap id="tab_18">
+              <caption>TableA.16</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Exposure to ambient light variations.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable for multi-dimensional measuring instruments based on light techniques.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of the compliance with the provisions in A.1.5 and R 129-1, 4.4.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The EUT shall be subjected to ambient light variations under constant environmental conditions. The EUT shall be tested as specified in A.1.5 at the following levels of illuminance using a normal industrial white light source (for example halogen incandescent lights in a room such as an environmental chamber where the illumination can be controlled).</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>a)200 lx to 500 lx (reference);b)100 lx; andc)1000 lx to 1500 lx.In addition, tests (a) and &#xA9; shall be repeated with uneven illumination. The reference light intensity is considered to be 200 lx to 500 lx. The levels apply where the object to be measured is normally placed. The luminance can be measured with a photographic light meter (photometer) with the light detecting surface pointing towards the light source. The light source for test (a) can be the normal room lighting suitably dimmed. The light source for tests (b) and &#xA9; can be a photographic slide projector with a halogen projection lamp. The angle of projection should be at approximately 45&#xB0; to the axis of the light measurement transducer of the instrument. The specified levels of illuminance can be achieved by placing the projector at different distances from the instrument. Other light sources can be used. Uneven light can be achieved by using a masked slide in the slide projector so that light and dark areas cover the test object. If the manufacturer specifies special uses for the instrument outside the severity levels given, tests at those levels shall be carried out (for example at 15 000 lx for sunlight).</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2. Alternative operations may be provided if the instrument can only perform correctly over a limited range of light intensity, for example:a)the instrument is either made inoperative automatically or a visual or audible indication is provided automatically when outside the limits; orb)the instrument is provided with a light source to ensure the limited range is maintained. If the light source fails (a) above applies.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+          <sec>
+            <title>Acoustics</title>
+            <table-wrap id="tab_19">
+              <caption>TableA.17</caption>
+              <table>
+                <tr>
+                  <th>Test method</th>
+                  <td>Exposure to acoustic noise disturbances.</td>
+                </tr>
+                <tr>
+                  <th>Applicability</th>
+                  <td>Applicable for multi-dimensional measuring instruments with devices based on acoustic techniques.</td>
+                </tr>
+                <tr>
+                  <th>Object of the test</th>
+                  <td>Verification of compliance with the provisions in A.1.5 and R 129-1, 4.4.</td>
+                </tr>
+                <tr>
+                  <th>Test procedure in brief</th>
+                  <td>The EUT shall be subjected to acoustic noise disturbances under constant environmental conditions.</td>
+                </tr>
+                <tr>
+                  <th>Test level</th>
+                  <td>The EUT shall be tested as specified in A.1.5 at a sound pressure level of 100 dB at the nominal centre frequency (resonant frequency) of the transducer(s) employed on the EUT. The noise source shall be operated continuously throughout the measurement process using a sinusoidal waveform.For EUTs with multiple transducers, each one shall be subjected to the test separately.The noise source shall be positioned in such a way that it does not cause damage to the EUT or impede the normal use of the EUT as specified by the manufacturer. The noise source shall be directed toward and along the axis of the transducer used in the EUT (insofar as possible given the design of the EUT). The sound pressure shall be measured at the acoustic source with the EUT off. The acoustic source shall be placed at 1 m distance of the transducer used in the EUT. The test shall be conducted in a room large enough that there are no walls or objects other than testing equipment within 2 m of the EUT or acoustic source. The transducer in the EUT and acoustic source shall be at least 1 m from the floor. A small table can be used to support the equipment.The test equipment shall include:&#x2014;acoustic source; and&#x2014;sound pressure level meter.</td>
+                </tr>
+                <tr>
+                  <th>Acceptance criteria</th>
+                  <td>All functions shall operate as designed. The test results shall comply with the mpe specified in R 129-1, 4.1.2. Alternatively, the EUT shall recognise the interference and prevent any measurements from being taken or functions producing results.</td>
+                </tr>
+              </table>
+            </table-wrap>
+          </sec>
+        </sec>
+      </app>
+      <app>
+        <title>Comparison table</title>
+        <table-wrap id="tab_20">
+          <caption>Comparison between OIML R 129-2:2020 and OIML R 129:2000</caption>
+          <table>
+            <tr>
+              <td>Reference</td>
+              <td>Description</td>
+              <td>Reference</td>
+              <td>Description</td>
+              <td>Remarks</td>
+            </tr>
+            <tr>
+              <td>1.1.2</td>
+              <td>Software documentation</td>
+              <td/>
+              <td/>
+              <td>New requirements for software documentation to be submitted for type approval.</td>
+            </tr>
+            <tr>
+              <td>1.4.2</td>
+              <td>Test objects</td>
+              <td>11.1.4.2</td>
+              <td>Test objects</td>
+              <td>The dimensions of the test objects known to an expanded uncertainty&#x2009;&#x2014;&#x2009;Changed to 1/3 mpe. An acceptable tolerance for the test objects for the product of N\&#xD7;dN \times dN\&#xD7;dN \times d as \&#xB1;13\pm 1/3\&#xB1;13\pm 1/3 d was specified. Requirements for test objects used on instruments with extended indication device.</td>
+            </tr>
+            <tr>
+              <td>1.4.11</td>
+              <td>Software evaluation</td>
+              <td/>
+              <td/>
+              <td>New requirements for software evaluation and evaluation methods.</td>
+            </tr>
+            <tr>
+              <td>2.1.1</td>
+              <td>Software verification</td>
+              <td/>
+              <td/>
+              <td>New additional verification requirements for software controlled devices.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Subsequent verification</td>
+              <td>11.3</td>
+              <td>Subsequent verification</td>
+              <td>Additional requirements for software controlled devices added.</td>
+            </tr>
+            <tr>
+              <td>Annex A</td>
+              <td>Performance tests</td>
+              <td>Annex A</td>
+              <td>Performance tests</td>
+              <td>Tests amended to align with OIML D 11:2013 OIML&#xA0;D&#xA0;11:2013.</td>
+            </tr>
+            <tr>
+              <td>A.1.1</td>
+              <td>Instrument warm up time</td>
+              <td/>
+              <td/>
+              <td>Test added.</td>
+            </tr>
+            <tr>
+              <td>A.1.2</td>
+              <td>Repeatability</td>
+              <td/>
+              <td/>
+              <td>Test added.</td>
+            </tr>
+            <tr>
+              <td>A.1.3</td>
+              <td>Tests for influence factors</td>
+              <td>A.1.1</td>
+              <td>Tests for influence factors</td>
+              <td>Number of tests at each dimension reduced to one.</td>
+            </tr>
+            <tr>
+              <td>A.1.4</td>
+              <td>Tests for disturbances</td>
+              <td>A.1.2</td>
+              <td>Tests for disturbances</td>
+              <td>Damp heat cyclic test to be carried based on the instrument&#x2019;s intended use and location.</td>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td>A.1.5</td>
+              <td>Tests for humidity effects</td>
+              <td>Deleted and the requirements split between static temperatures and damp heat condensing tests.</td>
+            </tr>
+            <tr>
+              <td>A.3.6</td>
+              <td>Damp heat cyclic</td>
+              <td/>
+              <td/>
+              <td>Damp heat cyclic test to be carried out based on the instrument&#x2019;s intended use location.</td>
+            </tr>
+            <tr>
+              <td>A.3.4</td>
+              <td>Electrical surges</td>
+              <td/>
+              <td/>
+              <td>Test added. Testing for the impact of electrical surges.</td>
+            </tr>
+            <tr>
+              <td>A.4.2</td>
+              <td>Acoustics tests</td>
+              <td>A.4.2</td>
+              <td>Acoustics tests</td>
+              <td>Test amended from the previous version.</td>
+            </tr>
+          </table>
+        </table-wrap>
+      </app>
+    </app-group>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-1:2007</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2007-03-13</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-2:2007</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2007-07-16</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-30:2005</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2005-08-10</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-78:2012</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2012-10-30</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;TR&#xA0;61000-2-1:1990</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>1990-05-31</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-3-1:2011</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2011-08-19</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-3-4:2001</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2001-08-28</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-11:2004</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2004-03-24</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-1:2006</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2006-10-25</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-20:2010</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2010-08-31</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-2:2008</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2008-12-09</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-4:2012</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2012-04-30</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-5:2005</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2005-11-29</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-6:2013</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2013-10-23</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-6-1:2005</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2005-03-09</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-6-2:2005</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2005-01-27</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-3:2010</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)&#x2009;&#x2014;&#x2009;Part 4: Testing and measurement techniques&#x2009;&#x2014;&#x2009;Section 3: Radiated, radio-frequency, electromagnetic field immunity test</title>
+            <pub-date>
+              <year>2010</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;11:2013</doc-identifier>
+            </std-ident>
+            <title>General requirements for measuring instruments&#x2009;&#x2014;&#x2009;Environmental conditions</title>
+            <pub-date>
+              <year>2013</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;16:2011</doc-identifier>
+            </std-ident>
+            <title>Principles of assurance of metrological control</title>
+            <pub-date>
+              <year>2011</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;31:2019</doc-identifier>
+            </std-ident>
+            <title>General requirements for software controlled measuring instruments</title>
+            <pub-date>
+              <year>2019</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

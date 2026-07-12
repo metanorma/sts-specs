@@ -1,0 +1,7 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/alpha-nfd-term-sec.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-alpha-nfd-term-sec]
+=== Terms and Definitions Container/Section
+
+image::images/term-sec.png[term-sec.png]

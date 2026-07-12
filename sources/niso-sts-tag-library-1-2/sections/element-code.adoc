@@ -1,0 +1,107 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/code.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-code]
+=== `<code>` Code Block
+
+A block-level container element for technical content such as programming language code, pseudo-code, schemas and DTDs, or a markup fragment.
+
+#### Usage/Remarks
+The `<code>` element may contain preformatted text, which may contain emphasis elements for syntax coloring, or it may contain an external link to a binary executable file.
+##### Best Attribute Practice
+
+The various semantic attributes should be used to name the type of code, the language, the intended platform(s), etc. Executable code should always be marked as such using the <<attribute-executable,`@executable`>> attribute. The <<attribute-specific-use,`@specific-use`>> attribute may also be used to describe the rationale or uses for a code sample.
+#### Alternatives
+
+When code is present in more than one form, the `<code>` element can be used inside an <<element-alternatives,`<alternatives>`>> element. The various versions of the code can be syntax colored using the face markup from this Tag Set, syntax colored using processing instructions or other mechanisms from a syntax coloring program, plain ASCII for cut and paste, an executable version, etc.
+#### MathML
+
+The MathML elements to describe equations are not permitted within `<code>`. If equations are encountered within computer code, they can be tagged using the element <<element-named-content,`<named-content>`>> to preserve the fact that they were equations or the element <<element-styled-content,`<styled-content>`>> to preserve the fact that they were set in a math font.
+
+#### Related Elements
+
+*Compare to <<element-preformat,`<preformat>`>>:* This element is similar to <<element-preformat,`<preformat>`>> in the preservation of whitespace, line-endings, and such formatting. The `<code>` element differs from <<element-preformat,`<preformat>`>> semantically; a <<element-preformat,`<preformat>`>> element may contain almost anything, for example, ASCII art, a man-machine dialog, error messages, 3 words on a line with space between them, or a poem. The `<code>` element is specifically for technical coding fragments, for example: computer programming language code; executable binary code; illustrative pseudo-code; an XSD, RNG, or DTD schema fragment; an SQL or XQuery query; or a markup fragment that is part of an XML document instance.
+*Inline versus Block:* The element <<element-code,`<code>`>> is used for block-level code fragments. The element <<element-inline-code,`<inline-code>`>> is used for very short computer code snippets, parameters and operators, etc. _that are inline with other text_.
+
+#### Attributes
+
+* <<attribute-code-type,`@code-type`>>
+* <<attribute-code-version,`@code-version`>>
+* <<attribute-executable,`@executable`>>
+* <<attribute-language,`@language`>>
+* <<attribute-language-version,`@language-version`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-platforms,`@platforms`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Miscellaneous non-STS-specific Attributes
+
+* <<attribute-xml-space,`@xml:space`>> (fixed value = preserve)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  code         (#PCDATA %code-elements;)*                   >
+....
+#### Expanded Content Model
+
+(#PCDATA | alt-text | long-desc | email | ext-link | uri | citation-alternatives | element-citation | mixed-citation | std | attrib | permissions | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | tbx:entailedTerm | xref | sub | sup)*
+
+#### Tagged Samples
+
+#### Binary code
+
+[source,xml]
+....
+...
+<p>... If code position 01 is assigned to &ldquo;a&rdquo;, 
+ code position 02 assigned to &ldquo;A&rdquo;, code position 
+ 03 to &ldquo;b&rdquo;, code position 04 to &ldquo;B&rdquo; 
+ and so on, a list sorted directly according to these 
+ rearranged values will yield the following:
+ <code>
+       Sorted  Internal
+       List    Values
+       
+       aaaa    01010101
+       abbb    01030303
+       Aaaa    02010101
+       Abbb    02030303
+ </code>
+</p>
+...
+....
+#### Coding for line types
+
+[source,xml]
+....
+...
+<p>Define the line types:</p>
+<code>
+     simple_line =     (symbol_definition | collating_element | 
+                        weight_assignment | order_end)? line_completion ;
+     table_line =      simple_line | tailoring_line ;
+     tailoring_line =  (reorder_after | order_start | reorder_end | 
+                        section_definition | reorder_section_after) 
+                        line_completion ;
+</code>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

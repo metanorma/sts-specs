@@ -1,3 +1,29 @@
 .DS_Store
 TODO*
 
+# Metanorma build outputs
+_site/
+*.log
+*.asciidoc.log*
+*.pdf.err*
+*.pdf.err.lck
+*.pdf.xsl
+*_tmp
+
+sources/**/document.html
+sources/**/document.pdf
+sources/**/document.xml
+sources/**/document.presentation.xml
+sources/**/document.err.html
+sources/**/document.rxl
+sources/**/collection-output/
+sources/**/collection.err.html
+sources/**/sections/*.html
+
+# Local Ruby bits
+.bundle/
+.ruby-lsp/
+coverage/
+
+# Ignore Gemfile.lock — this is a library-style repo, not an app
+Gemfile.lock

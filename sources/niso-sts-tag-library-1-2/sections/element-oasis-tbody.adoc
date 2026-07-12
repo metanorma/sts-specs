@@ -1,0 +1,75 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/oasis-tbody.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-oasis-tbody]
+=== `<oasis:tbody>` Table Body for an OASIS XML Exchange (CALS) Table
+
+#### In STS Extended ONLY
+
+Container element that holds the rows and columns of the _body_ (as opposed to the _header_) portions of an OASIS XML Exchange (CALS) table. (This structure is available _only_ in the Extended versions of NISO STS; it is _not_ available in the Interchange versions of NISO STS.) In order to distinguish the OASIS XML Exchange (CALS) elements from the XHTML table model, all OASIS XML Exchange (CALS) table elements must be namespaced in NISO STS, by default using the OASIS URI and the namespace prefix “`oasis:`”.
+
+#### Usage/Remarks
+Documentation for the OASIS XML Exchange Table Model Document Type Definition can be found at: https://www.oasis-open.org/specs/tm9901.htm
+#### OASIS Table Note
+
+The OASIS modules for the OASIS XML Exchange table model (based on the CALS table model) have been included in the NISO STS Extended Tag Sets, so <<element-oasis-table,`<oasis:table>`>> may be used in addition to or in place of the XHTML <<element-table,`<table>`>> element.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-array,`<array>`>>
+
+#### Tagged Sample
+
+##### A table group with both a table head and a table body
+[source,xml]
+....
+...
+<table-wrap>
+ <label>Table 1</label>
+ <caption>
+  <title>Approximate equivalent basis weights ...</title>
+ </caption>
+ <oasis:table colsep="1" rowsep="1">
+  <oasis:tgroup cols="3">
+   <oasis:thead>
+    <oasis:row>
+     <oasis:entry>Basis grammag (g/m<sup>2</sup>)</oasis:entry>
+     <oasis:entry>Basis weight of book paper (lbs)</oasis:entry>
+     <oasis:entry>Weight of writing paper (lbs)</oasis:entry>
+    </oasis:row>
+   </oasis:thead>
+   <oasis:tbody>
+    <oasis:row>
+     <oasis:entry>90</oasis:entry>
+     <oasis:entry>60</oasis:entry>
+     <oasis:entry>24</oasis:entry>
+    </oasis:row>
+    <oasis:row>
+     <oasis:entry>75</oasis:entry>
+     <oasis:entry>50</oasis:entry>
+     <oasis:entry>20</oasis:entry>
+    </oasis:row>
+   </oasis:tbody>
+  </oasis:tgroup>
+ </oasis:table>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Array (Simple Tabular Array)
+* See: Hierarchy diagram - OASIS XML Exchange (CALS) Table
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

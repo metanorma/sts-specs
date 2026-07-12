@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/fig-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-fig-type]
+=== `@fig-type` Type of Figure
+
+Type or format of the figure (for example, “`cartoon`”, “`chart`”, “`diagram`”, “`map`”, “`plate`”, “`workflow`”).
+
+#### Usage/Remarks
+This attribute was created to preserve semantic content when converting from a standards organization’s existing tag set. Some tag sets for standards make a distinction between different types of graphical objects, some by means of attributes, others with distinct elements named for the type of figure (such as diagram, line drawing, map, scheme, photograph, or flow-chart). In this NISO STS Tag Set, all these figure types will be tagged using a single element, the <<element-fig,`<fig>`>> element. Distinctions between different types of figures can be preserved using the <<attribute-fig-type,`@fig-type`>> attribute, for example, by recording the content type of the figure, such as “`map`”.
+
+#### OPTIONAL on element:  <<element-fig,`<fig>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of object shown in the figure, for example,
+                        “`diagram`”, “`chart`”, or
+                        “`map`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

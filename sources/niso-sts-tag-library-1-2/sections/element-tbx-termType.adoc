@@ -1,0 +1,70 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-termType.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-termType]
+=== `<tbx:termType>` Term Type Flag (TBX)
+
+The `<tbx:termType>` element identifies a term as being of a specific sub-type such as an “acronym” or a “symbol”. Each term can have only one term type.
+
+#### Usage/Remarks
+The `<tbx:termType>` is an `EMPTY` element, with the required <<attribute-value,`@value`>> attribute holding the specific type, for example:
+[source,xml]
+....
+<tbx:termType value="acronym"/>
+....
+The `<tbx:termType>` element is recommended when you have several terms (synonyms) in the term entry. For example, one term might be an abbreviation and another a variant of the main term. Note: If the term entry only contains one term, it is not necessary or useful to use the `<tbx:termType>` element.
+##### Display
+
+The term type has no specific rendering or labeling in the published standard. It is typically used for filtering and extraction purposes, for example to publish a reference describing acronyms or symbols.
+
+#### Attributes
+
+* <<attribute-value,`@value`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-tig,`<tbx:tig>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.termType; 
+                        EMPTY                                        >
+....
+
+#### Tagged Sample
+
+##### Showing full form and acronym
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

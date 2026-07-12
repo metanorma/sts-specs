@@ -1,0 +1,47 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/rt.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-rt]
+=== `<rt>` Ruby Textual Annotation
+
+This element is one half of a Ruby annotation (<<element-ruby,`<ruby>`>>), and it contains the text that annotates the material in the Ruby Base (<<element-rb,`<rb>`>>), which may be as small as a single character.
+
+#### Usage/Remarks
+##### What is Ruby
+
+A Ruby textual annotation is an annotation, typically short, applied to a letter, word, phrase, or name that appears in narrative text. Ruby annotations can indicate, for example, pronunciation advice, notes for translation, semantic annotations, etc. Ruby is used with Japanese, for example, in Furigana, which typically uses Hiragana annotations on Kanji base text. Ruby is also used in Chinese Pīnyīn (a phonetic system for transcribing the sound of Chinese characters into Latin script) as well as for some Korean names. In display or print, the characters of a Ruby annotation are frequently placed above the characters they modify, in parentheses after the characters they modify, or to the right of vertically set text.
+##### Structure of NISO JATS Ruby
+
+The <<element-ruby,`<ruby>`>> element is an inline wrapper element that contains some of the document narrative text (inside a Ruby Base <<element-rb,`<rb>`>> element) and associates that base text with a Ruby Textual Annotation (inside an <<element-rt,`<rt>`>> element).
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ruby,`<ruby>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  rt           (#PCDATA %rt-elements;)*                     >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

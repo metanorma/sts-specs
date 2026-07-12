@@ -1,0 +1,62 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-geographicalUsage.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-geographicalUsage]
+=== `<tbx:geographicalUsage>` Geographical Usage Flag (TBX)
+
+An indicator of the geographical area in which the term is used. Use values found for “region” in the link:https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry[IANA language subtag registry]. (Do not use deprecated values.)
+
+#### Usage/Remarks
+The `<tbx:geographicalUsage>` element may be omitted when it makes no useful distinction (as where terms do not vary between countries or regions).
+
+#### Attributes
+
+* <<attribute-script,`@script`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-tig,`<tbx:tig>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.geographicalUsage; 
+                        (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### First example is British English; second example is American English
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a27.234">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>deck structure supported by vertical and possibly inclined piles extending into
+      the sea, frequently in a direction normal to the coastline</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a27.234-1">jetty</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:geographicalUsage>en GB</tbx:geographicalUsage>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a27.234-2">pier</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:geographicalUsage>en US</tbx:geographicalUsage>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

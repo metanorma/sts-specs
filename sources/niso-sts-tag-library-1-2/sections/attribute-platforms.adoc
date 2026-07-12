@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/platforms.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-platforms]
+=== `@platforms` Platforms
+
+Name(s) of hardware and/or software platform(s) on which this code is intended to run. It is assumed that each such platform will have a one-word “name”, and multiple platform names will be separated by spaces.
+
+#### OPTIONAL on elements:  <<element-code,`<code>`>>, 
+                  <<element-inline-code,`<inline-code>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Platform on which the <<element-code,`<code>`>> is intended
+                        to run, for example, “`Mac OS X`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,104 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/th.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-th]
+=== `<th>` Table Header Cell (NISO JATS table model)
+
+One cell in the table header, as opposed to an ordinary cell in the body of a table. (This element is based on and intended to be converted easily to the XHMTL `th` element.)
+
+#### Usage/Remarks
+Use W3C documentation for the XHTML 1.1 table model (https://www.w3.org/TR/xhtml-modularization/abstract_modules.html#s_tablemodule).
+
+#### Related Elements
+
+There are two elements in the NISO JATS XHTML-inspired table model that should be used to contain the contents of the table: <<element-td,`<td>`>> contains ordinary data (the content of cells in the table) and <<element-th,`<th>`>> contains table header data.
+
+#### Attributes
+
+* <<attribute-abbr,`@abbr`>>
+* <<attribute-align,`@align`>>
+* <<attribute-axis,`@axis`>>
+* <<attribute-char,`@char`>>
+* <<attribute-charoff,`@charoff`>>
+* <<attribute-colspan,`@colspan`>> (default = 1)
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-headers,`@headers`>>
+* <<attribute-rowspan,`@rowspan`>> (default = 1)
+* <<attribute-scope,`@scope`>>
+* <<attribute-style,`@style`>>
+* <<attribute-valign,`@valign`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tr,`<tr>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-hr,`<hr>`>> <<element-hr,Horizontal Rule>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-break,`<break>`>> <<element-break,Line Break>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-p,`<p>`>> <<element-p,Paragraph>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %th.qname;  %th.content; >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | hr | inline-supplementary-material | related-article | related-object | disp-formula | disp-formula-group | break | citation-alternatives | element-citation | mixed-citation | std | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-code | inline-graphic | inline-media | private-char | fig | fig-group | chem-struct | inline-formula | disp-quote | speech | statement | def-list | list | tex-math | mml:math | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | p | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | alternatives | array | code | graphic | media | preformat | fn | target | tbx:entailedTerm | xref | sub | sup)*
+
+#### Tagged Sample
+
+##### Header data for a titled table
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

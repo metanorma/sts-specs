@@ -1,0 +1,103 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/list-item.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-list-item]
+=== `<list-item>` List Item
+
+Single item (one entry) in a list of items.
+
+#### Usage/Remarks
+On display or in print, a list entry may be preceded by a prefix character, such as a bullet or a number. This character is typically determined by attributes: The <<attribute-list-type,`@list-type`>> attribute specifies whether there should be a prefix preceding each item and determines the prefix type (such as bullet or number). A simple list takes no prefix character. The <<attribute-prefix-word,`@prefix-word`>> attribute can be used to prepend a word such as “Step”, “Method”, or “Procedure” to a list item, in addition to, typically, a number (thus “Step 1.”). If the <<attribute-list-type,Type of List>> names a bulleted style (“`@list-type="bullet"`”), the <<attribute-style-detail,Styling Detail>> attribute _may_ be used to name the preferred prefix character, for example, a “`dash`”, “`hollow-bullet`”, or “`square`”. If no <<attribute-style-detail,Styling Detail>> is given, the processing system will choose the bullet character.
+The prefix character may instead be hard-coded into the <<element-label,`<label>`>> element in the XML data. When the <<element-label,`<label>`>> element is used in a <<element-list-item,`<list-item>`>>, it overrides the <<attribute-list-type,`@list-type`>>, <<attribute-style-detail,Styling Detail>>, and <<attribute-prefix-word,`@prefix-word`>> attributes.
+##### Best Practice
+
+While this element contains an optional <<element-label,`<label>`>> element, the <<element-label,`<label>`>> element should be included only in those circumstances where a formatting override is needed; <<element-label,`<label>`>> should NOT be used in the ordinary course of tagging.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-list,`<list>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  list-item    %list-item-model;                            >
+....
+#### Expanded Content Model
+
+(label?, title?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group | def-list | list)+)
+
+#### Tagged Samples
+
+#### Within numerical list
+
+[source,xml]
+....
+...
+<p>Each of the 11 goals is introduced by its name and 
+ presented in the same structure:
+ <list list-type="order">
+  <list-item>
+   <p><bold>The goal:</bold> The basic goal statement.</p></list-item>
+  <list-item>
+   <p><bold>Discussion:</bold> An elaboration on the basic goal 
+    statement.</p></list-item>
+  <list-item>
+   <p><bold>Background:</bold> Sources from which the goal is 
+    derived.</p></list-item>
+  <list-item>
+   <p><bold>Common user accessibility needs:</bold> User accessibility 
+    needs related to the goal.</p></list-item>
+  <list-item>
+   <p><bold>Questions to consider:</bold> Questions for applying 
+    the goal.</p></list-item>
+ </list>
+</p>
+...
+....
+#### As part of ordered list using lowercase alphabetical prefix characters
+
+[source,xml]
+....
+...
+<sec id="s6_2_1_5">
+ <label>6.2.1.5</label>
+ <title>Questions to consider</title>
+ <list list-type="alpha-lower">
+  <list-item><p>Who are the potential users of systems 
+   that will be addressed by or who will relate to this 
+   deliverable?</p></list-item>
+  <list-item><p>Which potential users, if any, might be 
+   excluded by the requirements and recommendations in
+   this deliverable?</p></list-item>
+  <list-item><p>What are all the contexts of use in which 
+   systems that relate to this deliverable could be 
+   used?</p></list-item>
+  <list-item><p>Which contexts of use might be excluded 
+   by the requirements and recommendations in this 
+   deliverable?</p></list-item>
+ </list>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - List
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

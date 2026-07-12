@@ -1,0 +1,120 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/content-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-content-type]
+=== `@content-type` Type of Content
+
+Subject or type of content that makes this element semantically distinct.
+
+#### Usage/Remarks
+The values for this attribute may include information classes, semantic categories, or functions for grouping elements. This attribute could identify: the name of a drug, company, or product; systematics terms such as genus, species, or family; or biological systems components, such as gene, protein, or peptide. The attribute could also be used to record that the content of a table cell is a total or subtotal amount, that a sidebar (<<element-boxed-text,`<boxed-text>`>>) contains a part of a related standard, or that a <<element-statement,`<statement>`>> is a theorem or a proof.
+#### Conversion Note
+
+This attribute can be used to preserve semantic tagging that can’t be captured directly with an element defined in this Tag Set.
+#### Display/Formatting Note
+
+The presence of a <<attribute-content-type,`@content-type`>> attribute may be used to treat its element in a distinct way, for example, giving the word, phrase, or structure a different look in print or on display. This type of formatting may be guided by the value of the attribute, for example, making all circulatory system words (identified by a <<element-named-content,`<named-content>`>> element) red or putting a background image behind case studies.
+
+#### REQUIRED on element:  <<element-named-content,`<named-content>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names/describes the distinct function for the <<element-named-content,`<named-content>`>> that cannot otherwise be described by
+                        the elements in this Suite. For example, a chapter in a medical book might use the
+                        value
+                        “`body-system`” or “`gene`”
+                        while a chapter in a management book might use the value
+                        “`product-name`” or
+                        “`stock-code`”.
+| Restriction| This attribute  is required; it must be provided if the element is used.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-access-date,`<access-date>`>>, <<element-ack,`<ack>`>>, <<element-addr-line,`<addr-line>`>>, <<element-address,`<address>`>>, <<element-aff,`<aff>`>>, <<element-ali-free_to_read,`<ali:free_to_read>`>>, <<element-ali-license_ref,`<ali:license_ref>`>>, <<element-alt-text,`<alt-text>`>>, <<element-annotation,`<annotation>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-author-comment,`<author-comment>`>>, <<element-bio,`<bio>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-caption,`<caption>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-city,`<city>`>>, <<element-col,`<col>`>>, <<element-colgroup,`<colgroup>`>>, <<element-comment,`<comment>`>>, <<element-compound-kwd,`<compound-kwd>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject,`<compound-subject>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-conf-acronym,`<conf-acronym>`>>, <<element-conf-date,`<conf-date>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-conf-name,`<conf-name>`>>, <<element-conf-sponsor,`<conf-sponsor>`>>, <<element-contrib-group,`<contrib-group>`>>, <<element-contrib-id,`<contrib-id>`>>, <<element-copyright-holder,`<copyright-holder>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-copyright-year,`<copyright-year>`>>, <<element-country,`<country>`>>, <<element-custom-meta-group,`<custom-meta-group>`>>, <<element-data-title,`<data-title>`>>, <<element-date-in-citation,`<date-in-citation>`>>, <<element-day,`<day>`>>, <<element-degrees,`<degrees>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-edition,`<edition>`>>, <<element-elocation-id,`<elocation-id>`>>, <<element-email,`<email>`>>, <<element-era,`<era>`>>, <<element-fax,`<fax>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-fn-group,`<fn-group>`>>, <<element-fpage,`<fpage>`>>, <<element-glossary,`<glossary>`>>, <<element-gov,`<gov>`>>, <<element-graphic,`<graphic>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-entry,`<index-entry>`>>, <<element-index-group,`<index-group>`>>, <<element-index-term,`<index-term>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-institution-id,`<institution-id>`>>, <<element-isbn,`<isbn>`>>, <<element-issn,`<issn>`>>, <<element-issue,`<issue>`>>, <<element-issue-id,`<issue-id>`>>, <<element-issue-part,`<issue-part>`>>, <<element-issue-title,`<issue-title>`>>, <<element-kwd,`<kwd>`>>, <<element-legend,`<legend>`>>, <<element-license-p,`<license-p>`>>, <<element-long-desc,`<long-desc>`>>, <<element-lpage,`<lpage>`>>, <<element-media,`<media>`>>, <<element-milestone-end,`<milestone-end>`>>, <<element-milestone-start,`<milestone-start>`>>, <<element-month,`<month>`>>, <<element-name,`<name>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-nested-kwd,`<nested-kwd>`>>, <<element-oasis-table,`<oasis:table>`>>, <<element-object-id,`<object-id>`>>, <<element-p,`<p>`>>, <<element-page-range,`<page-range>`>>, <<element-patent,`<patent>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-prefix,`<prefix>`>>, <<element-price,`<price>`>>, <<element-rb,`<rb>`>>, <<element-ref,`<ref>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-object,`<related-object>`>>, <<element-role,`<role>`>>, <<element-rt,`<rt>`>>, <<element-ruby,`<ruby>`>>, <<element-season,`<season>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-self-uri,`<self-uri>`>>, <<element-series,`<series>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-source,`<source>`>>, <<element-speaker,`<speaker>`>>, <<element-speech,`<speech>`>>, <<element-state,`<state>`>>, <<element-statement,`<statement>`>>, <<element-std,`<std>`>>, <<element-string-date,`<string-date>`>>, <<element-string-name,`<string-name>`>>, <<element-sub-part-number,`<sub-part-number>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-suffix,`<suffix>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table,`<table>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-tbody,`<tbody>`>>, <<element-td,`<td>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-tex-math,`<tex-math>`>>, <<element-tfoot,`<tfoot>`>>, <<element-th,`<th>`>>, <<element-thead,`<thead>`>>, <<element-time-stamp,`<time-stamp>`>>, <<element-title,`<title>`>>, <<element-toc,`<toc>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-entry,`<toc-entry>`>>, <<element-toc-group,`<toc-group>`>>, <<element-tr,`<tr>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-title,`<trans-title>`>>, <<element-trans-title-group,`<trans-title-group>`>>, <<element-uri,`<uri>`>>, <<element-verse-group,`<verse-group>`>>, <<element-verse-line,`<verse-line>`>>, <<element-version,`<version>`>>, <<element-volume,`<volume>`>>, <<element-volume-id,`<volume-id>`>>, <<element-volume-series,`<volume-series>`>>, <<element-year,`<year>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names/describes any distinct semantics of the associated element. This may be used
+                        to preserve the semantic intent of prior tagging, for example, to record that a table
+                        cell was a total or subtotal amount. This may also be used to attach information classes
+                        to an element for retrieval purposes.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-non-normative-example,`<non-normative-example>`>>, <<element-normative-example,`<normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes-group,`<notes-group>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names/describes any distinct semantics of the associated note or group of notes. The
+                        <<attribute-content-type,`@content-type`>> attribute may be used to describe the semantic intent of the note.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on element:  <<element-meta-note,`<meta-note>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names/describes any distinct semantics of the associated metadata note (<<element-meta-note,`<meta-note>`>>). The <<attribute-content-type,`@content-type`>> attribute may be used to preserve the semantic intent of the note, such as a adoption
+                        note or issuance information.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*For <meta-note> only:* Although there are no set values for the <<attribute-content-type,`@content-type`>> attribute when used on the <<element-meta-note,`<meta-note>`>> element, and thus the attribute may contain any string, formal meta note types may include: adoption cautionary / Anwendungswarnvermerk code-info (information of regulatory agency adoption) committee-contact-info (information concerning committee pages) endorsement errata-info (where to look for and find errata online) issuance-info (text regarding date of issuance) legalese (text blocks inside the front matter that pertain to legal matters or rights, typically displayed as part of the copyright page or title page material) next-scheduled-issuance-info (information concerning the next scheduled edition/issuance/updates) objection / Einspruchsvermerk preliminary / Vorbemerkungen publication / Veröffentlichungsvermerk status / Statusvermerk superseding / Ersatzvermerk validity / Beginn der Gültigkeit /
+
+#### Tagged Samples
+
+#### `@content-type` attribute names semantic content of `<meta-note>`
+
+[source,xml]
+....
+...  
+<meta-note content-type="superseding" id="superseding.note.reg">
+ <p>Supersedes EN ISO 13849-1:2006</p>
+</meta-note>
+<meta-note content-type="superseding" id="superseding.note.nat">
+ <p>Supersedes DIN EN ISO 13849-1:2007-07</p>
+</meta-note>
+<meta-note content-type="validity" id="validity.note.nat">
+ <title>Start of validity</title>
+ <p>This standard takes effect on 2008-12-01.</p>
+ <p>DIN EN 954-1:1997-03 and DIN EN 954-1 Supplement 1:2000-01 may be 
+  used in parallel until 2009-11-30 and DIN EN ISO 13849-1:2007-07 
+  until 2009-12-28.</p>
+</meta-note>
+...
+....
+#### `@content-type` attribute names Annex as non-normative (See also 
+                  `<annex-type>`.)
+
+[source,xml]
+....
+...
+<back>
+ <app-group>
+  <app content-type="inform-annex" id="annA">
+   <label>Annex A</label>
+   <annex-type>(informative)</annex-type>
+   <title>Global trends supporting accessibility</title>
+   ...
+   <sec id="A1">
+    <label>A.1</label>
+    <title>Trends in global demographics and market diversity</title>
+    <p>According to the <italic>World Report on Disability</italic> 
+     (published by the World Health Organization and the World Bank 
+     in June 2011,<sup><xref ref-type="bibr" rid="bibr40">[40]</xref></sup> 
+     approximately 15 % of the world population (over one billion 
+     people) has ...</p>
+   </sec>
+   ...
+  </app>
+ </app-group>
+ <ref-list>...</ref-list>
+</back>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

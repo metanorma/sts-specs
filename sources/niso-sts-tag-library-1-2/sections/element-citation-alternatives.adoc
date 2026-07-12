@@ -1,0 +1,37 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/citation-alternatives.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-citation-alternatives]
+=== `<citation-alternatives>` Citation Alternatives
+
+Holds alternative versions of a single citation, for example, the same citation in multiple languages or a single citation tagged as both a <<element-mixed-citation,`<mixed-citation>`>>, complete with punctuation and spacing preserved, and as an <<element-element-citation,`<element-citation>`>>, with punctuation and spacing removed.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-attrib,`<attrib>`>>, <<element-bold,`<bold>`>>, <<element-code,`<code>`>>, <<element-compl,`<compl>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-monospace,`<monospace>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-preformat,`<preformat>`>>, <<element-ref,`<ref>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-strike,`<strike>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-underline,`<underline>`>>
+#### Description
+
+The following, in order: <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more One or more of any of: <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-nlm-citation,`<nlm-citation>`>> <<element-nlm-citation,NLM Citation Model (deprecated)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  citation-alternatives
+                        %citation-alternatives-model;                >
+....
+#### Expanded Content Model
+
+((object-id)*, (element-citation | mixed-citation | nlm-citation)+)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

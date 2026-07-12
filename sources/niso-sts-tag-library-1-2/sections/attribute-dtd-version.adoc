@@ -1,0 +1,35 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/dtd-version.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-dtd-version]
+=== `@dtd-version` Version of the Tag Set (DTD)
+
+Version of the Tag Set to which this document claims to be valid.
+
+#### Usage/Remarks
+##### Best Practice
+
+Best Practice is to always use this attribute, even when using the XSD or RNG versions of this Tag Set.
+#### Historical Note
+
+Until Version 1.3 of JATS, `@dtd-version` in JATS, BITS, and STS was a `#FIXED` attribute, set in the schema/DTD, that could not be changed by the user. It was intended to name the highest-level version of STS to which the document was valid. Being `#FIXED` meant that the attribute was always there, even if it was not present in the document.
+Having a set version number was convenient for some applications, but inconvenient for others, particularly for repositories that house STS documents of different versions at the same time, most of which may be valid to more than one version of STS.
+The <<attribute-dtd-version,`@dtd-version`>> attribute has never provided a complete description of which version of the tag set a document is associated with, since it did not provide information such as which table model(s), which MathML version, etc. were used. Therefore several attributes were added to the <<element-processing-meta,`<processing-meta>`>> element to describe the STS Tag Set version choices more fully: <<attribute-tagset-family,`@tagset-family`>> (jats | bits | sts) <<attribute-base-tagset,`@base-tagset`>> (interchange | extended) <<attribute-table-model,`@table-model`>> (xhtml | oasis | both | none) <<attribute-mathml-version,`@mathml-version`>> (2.0 | 3.0) <<attribute-terminology-model,`@terminology-model`>> (TBX | term-display) <<attribute-math-representation,`@math-representation`>> (as many as apply)
+
+#### OPTIONAL on elements:  <<element-adoption,`<adoption>`>>, 
+                  <<element-standard,`<standard>`>>
+
+|===
+| Value| Meaning
+
+| iso-0.9| Version 0.9 of ISO STS
+| iso-1.0| Version 1.0 of ISO STS
+| iso-1.1| Version 1.1 of ISO STS
+| 1.0| Version 1.0 of NISO STS, an ANSI/NISO standard
+| 1.1d1| Standing Committee Draft 1.1d1 of NISO STS
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

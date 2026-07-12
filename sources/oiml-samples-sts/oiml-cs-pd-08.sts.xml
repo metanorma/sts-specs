@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS PD-08 Edition 3</doc-identifier>
+      <std-title-group>
+        <title>Signing a Declaration</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2024-03-11</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 3 of OIML-CS PD-08 at its Ninth meeting on 06 March 2024 and it was published on 11 March 2024. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to the Framework for the OIML Certification System (OIML-CS) (OIML B 18 OIML&#xA0;B&#xA0;18:2022) which contains the framework for the operation of the OIML-CS.</p>
+      <table-wrap id="tab_1">
+        <caption>Edition history</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>PD-08 Edition 1</td>
+            <td>PD-08 Edition 1</td>
+            <td>Published: July 2017</td>
+          </tr>
+          <tr>
+            <td>PD-08 Edition 2</td>
+            <td>PD-08 Edition 2</td>
+            <td>Published: 20 December 2018</td>
+          </tr>
+          <tr>
+            <td>PD-08 Edition 3 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N089</td>
+            <td>Draft for MG comment-20231213</td>
+          </tr>
+          <tr>
+            <td>PD-08 Edition 3 (Draft)</td>
+            <td>OIML-CS_SC1_P1_N415</td>
+            <td>Draft for MC vote-20240228</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+          <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the procedures associated with OIML Issuing Authorities, Utilizers and Associates signing a Declaration under the OIML-CS. Templates are provided on the OIML-CS website for the Declaration.</p>
+        <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-01, OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-04, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06 and OIML-CS&#xA0;PD-07. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Record of participation in the OIML-CS</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Each OIML Issuing Authority, Utilizer and Associate in the OIML-CS shall sign a Declaration drawn up according to the format defined in the relevant &#x201C;Declaration&#x201D; template which can be found on the OIML-CS website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary is responsible for recording the Declarations and arranging for the relevant information regarding the participants to be uploaded to the OIML-CS website and notifying participants when completed.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The relevant information of each participant, as recorded in its Declaration, shall specify</p>
+        <list list-type="order" id="_eef2831e-99de-fe68-229d-42771d8e279b">
+          <list-item>a)the scope of each OIML Issuing Authority detailing the category of measuring instrument(s) and the OIML certificate(s) and OIML type evaluation report(s) issued under Scheme A and/or Scheme B, and</list-item>
+          <list-item>b)the scope of each Utilizer and Associate detailing the acceptance and utilization of OIML certificates and/or OIML type evaluation reports issued under Scheme A and/or Scheme B and any additional national requirements which deviate from those in the relevant OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Once an OIML Issuing Authority has been approved by the Management Committee they must sign a Declaration before they can issue OIML certificates and OIML type evaluation reports for the categories of measuring instruments in the OIML-CS. If the OIML Issuing Authority extends or reduces its scope (see OIML-CS&#xA0;PD-04), then its Declaration shall be updated to reflect the updated scope.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Evaluation and testing of an instrument may be performed for an application received before the OIML Issuing Authority has signed its Declaration, or before the scope of the OIML Issuing Authority has been updated in its Declaration in the case of an extension to scope.</p>
+        <p>However, in this case, the evaluation and testing shall be performed after the Review Committee (RC) has made a positive recommendation to the Management Committee to approve (without conditions) the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) and/or Test Laboratory (see OIML-CS&#xA0;PD-04). In all cases, the OIML certificate and the OIML type evaluation report cannot be issued until the Declaration of the OIML Issuing Authority has been signed or updated, as appropriate.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The requirements in 5.2 apply to</p>
+        <list list-type="order" id="_a34a6c0f-38cd-fdac-bcc1-e65ccda35c43">
+          <list-item>a)a new potential OIML Issuing Authority and the associated Test Laboratory(ies), and</list-item>
+          <list-item>b)an existing OIML Issuing Authority that has applied to extend its scope to include a new or existing category of measuring instrument, including the associated Test Laboratory.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Following the periodic review detailed in OIML-CS&#xA0;PD-03, any changes to the scope or status of an OIML Issuing Authority shall be recorded in its Declaration.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Any changes in the acceptance and utilization of OIML certificates and OIML type evaluation reports by Utilizers and Associates shall be recorded in the respective Declaration. == Acceptance of OIML certificates and OIML type evaluation reports</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Although signing a Declaration commits in principle signatories to accept OIML certificates and/or OIML type evaluation reports from OIML Issuing Authorities, in accordance with OIML B 18, 15.9 OIML&#xA0;B&#xA0;18:2022 there are conditions under which test data may legitimately not be accepted on the provision that a written justification and explanation is provided.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Acceptance of test results from a Manufacturer Test Laboratory (MTL) is on a voluntary basis and does not require a justification or explanation where they are not accepted. Due to the voluntary nature of the acceptance of test results from MTLs, this information is not detailed in the Declaration.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The acceptance by a Utilizer or Associate of existing OIML MAA certificates issued under the OIML MAA Certificate System shall be detailed in its Declaration along with any conditions.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Signing a Declaration</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+        <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the procedures associated with OIML Issuing Authorities, Utilizers and Associates signing a Declaration under the OIML-CS. Templates are provided on the OIML-CS website for the Declaration.</p>
+      <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-01, OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-04, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06 and OIML-CS&#xA0;PD-07. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Record of participation in the OIML-CS</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Each OIML Issuing Authority, Utilizer and Associate in the OIML-CS shall sign a Declaration drawn up according to the format defined in the relevant &#x201C;Declaration&#x201D; template which can be found on the OIML-CS website.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The Executive Secretary is responsible for recording the Declarations and arranging for the relevant information regarding the participants to be uploaded to the OIML-CS website and notifying participants when completed.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The relevant information of each participant, as recorded in its Declaration, shall specify</p>
+      <list list-type="order" id="_eef2831e-99de-fe68-229d-42771d8e279b">
+        <list-item>a)the scope of each OIML Issuing Authority detailing the category of measuring instrument(s) and the OIML certificate(s) and OIML type evaluation report(s) issued under Scheme A and/or Scheme B, and</list-item>
+        <list-item>b)the scope of each Utilizer and Associate detailing the acceptance and utilization of OIML certificates and/or OIML type evaluation reports issued under Scheme A and/or Scheme B and any additional national requirements which deviate from those in the relevant OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Once an OIML Issuing Authority has been approved by the Management Committee they must sign a Declaration before they can issue OIML certificates and OIML type evaluation reports for the categories of measuring instruments in the OIML-CS. If the OIML Issuing Authority extends or reduces its scope (see OIML-CS&#xA0;PD-04), then its Declaration shall be updated to reflect the updated scope.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Evaluation and testing of an instrument may be performed for an application received before the OIML Issuing Authority has signed its Declaration, or before the scope of the OIML Issuing Authority has been updated in its Declaration in the case of an extension to scope.</p>
+      <p>However, in this case, the evaluation and testing shall be performed after the Review Committee (RC) has made a positive recommendation to the Management Committee to approve (without conditions) the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) and/or Test Laboratory (see OIML-CS&#xA0;PD-04). In all cases, the OIML certificate and the OIML type evaluation report cannot be issued until the Declaration of the OIML Issuing Authority has been signed or updated, as appropriate.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The requirements in 5.2 apply to</p>
+      <list list-type="order" id="_a34a6c0f-38cd-fdac-bcc1-e65ccda35c43">
+        <list-item>a)a new potential OIML Issuing Authority and the associated Test Laboratory(ies), and</list-item>
+        <list-item>b)an existing OIML Issuing Authority that has applied to extend its scope to include a new or existing category of measuring instrument, including the associated Test Laboratory.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Following the periodic review detailed in OIML-CS&#xA0;PD-03, any changes to the scope or status of an OIML Issuing Authority shall be recorded in its Declaration.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Any changes in the acceptance and utilization of OIML certificates and OIML type evaluation reports by Utilizers and Associates shall be recorded in the respective Declaration. == Acceptance of OIML certificates and OIML type evaluation reports</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Although signing a Declaration commits in principle signatories to accept OIML certificates and/or OIML type evaluation reports from OIML Issuing Authorities, in accordance with OIML B 18, 15.9 OIML&#xA0;B&#xA0;18:2022 there are conditions under which test data may legitimately not be accepted on the provision that a written justification and explanation is provided.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Acceptance of test results from a Manufacturer Test Laboratory (MTL) is on a voluntary basis and does not require a justification or explanation where they are not accepted. Due to the voluntary nature of the acceptance of test results from MTLs, this information is not detailed in the Declaration.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The acceptance by a Utilizer or Associate of existing OIML MAA certificates issued under the OIML MAA Certificate System shall be detailed in its Declaration along with any conditions.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-01</doc-identifier>
+            </std-ident>
+            <title>Appeals, Resolution of Complaints and Disputes</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-02</doc-identifier>
+            </std-ident>
+            <title>Procedures to approve Legal Metrology experts and QMS experts</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-03</doc-identifier>
+            </std-ident>
+            <title>Application and approval of OIML Issuing Authorities, Utilizers and Associates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-04</doc-identifier>
+            </std-ident>
+            <title>Assessment of Test Laboratories</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-05</doc-identifier>
+            </std-ident>
+            <title>Processing an application for an OIML Type Evaluation Report and OIML certificate</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-06</doc-identifier>
+            </std-ident>
+            <title>Use of OIML Type Evaluation Reports and OIML certificates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-07</doc-identifier>
+            </std-ident>
+            <title>Transition arrangements under the OIML-CS</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2022</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

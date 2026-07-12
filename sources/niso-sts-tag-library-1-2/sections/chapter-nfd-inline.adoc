@@ -1,0 +1,15 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-inline.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-inline]
+=== Inlines
+
+#### Index Term
+
+image::images/index-term.png[index-term.png]
+#### Index Term Range End
+
+image::images/index-term-range-end.png[index-term-range-end.png]
+#### Ruby Wrapper
+
+image::images/ruby.png[ruby.png]

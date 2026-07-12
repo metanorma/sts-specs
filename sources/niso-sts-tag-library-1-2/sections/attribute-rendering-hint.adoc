@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/rendering-hint.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-rendering-hint]
+=== `@rendering-hint` Rendering Hint
+
+Suggestions for display of the content. Rendering systems are allowed, but not required, to display as indicated.
+
+#### OPTIONAL on element:  <<element-term-display-string,`<term-display-string>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters.| Instructions to aid in displaying (rendering) the text content of the <<element-term-display-string,Term-display String>> inside a <<element-term-display,Term-Display>>, for example “newline”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

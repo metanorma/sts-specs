@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/sort-key.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-sort-key]
+=== `@sort-key` Sort Key for Index Entry
+
+Provide an alternative version of the index entry for use as a sort key, for example, an ASCII version replacing an accented character with an unaccented one.
+
+#### OPTIONAL on element:  <<element-index-entry,`<index-entry>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A version of the index entry for sorting.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

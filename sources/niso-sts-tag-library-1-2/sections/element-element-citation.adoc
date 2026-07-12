@@ -1,0 +1,100 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/element-citation.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-element-citation]
+=== `<element-citation>` Element Citation
+
+Bibliographic description of a work. Includes bibliographic reference elements only. Does not include untagged text, spacing, or punctuation.
+
+#### Related Elements
+
+*Types of Citations:* There are three types of citations described by this Tag Set: `<std>` is used to cite standards. It contains textual content (with all interior punctuation and spacing preserved and the components of the citation given in any order) and may also include standards-specific elements such as <<element-title,`<title>`>> for the title of the standard being cited, <<element-std-id-group,`<std-id-group>`>>, and <<element-std-ref,`<std-ref>`>> as well as interior links such as footnotes and cross-references. `<mixed-citation>` is used for citing books, journal articles, etc. It contains textual content (with all interior punctuation and spacing preserved and the components of the citation given in any order) and may include all the references elements first described for JATS. <<element-element-citation,`<element-citation>`>> is used for citing books, journal articles, etc. It contains element-only content made up of all the references elements first described for JATS in any order, with no interior punctuation or spacing.
+*Citing versus Interior Pointing:* This `<element-citation>` element contains the bibliographic description of a work; the pointer to that cited description uses the <<element-xref,`<xref>`>> element. These two elements are sometimes confused because in common language both may be called “citations”.
+
+#### Attributes
+
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-publication-format,`@publication-format`>>
+* <<attribute-publication-type,`@publication-type`>>
+* <<attribute-publisher-type,`@publisher-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-use-type,`@use-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-attrib,`<attrib>`>>, <<element-bold,`<bold>`>>, <<element-citation-alternatives,`<citation-alternatives>`>>, <<element-code,`<code>`>>, <<element-compl,`<compl>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-monospace,`<monospace>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-preformat,`<preformat>`>>, <<element-ref,`<ref>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-strike,`<strike>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-underline,`<underline>`>>
+#### Description
+
+One or more of any of: <<element-break,`<break>`>> <<element-break,Line Break>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-annotation,`<annotation>`>> <<element-annotation,Annotation (in a citation)>> <<element-article-title,`<article-title>`>> <<element-article-title,Article Title (in a citation)>> <<element-chapter-title,`<chapter-title>`>> <<element-chapter-title,Chapter Title (in a citation)>> <<element-collab,`<collab>`>> <<element-collab,Collaborative (Group) Author>> <<element-collab-alternatives,`<collab-alternatives>`>> <<element-collab-alternatives,Collaboration Alternatives>> <<element-comment,`<comment>`>> <<element-comment,Comment (in a citation)>> <<element-conf-acronym,`<conf-acronym>`>> <<element-conf-acronym,Conference Acronym (in a citation)>> <<element-conf-date,`<conf-date>`>> <<element-conf-date,Conference Date (in a citation)>> <<element-conf-loc,`<conf-loc>`>> <<element-conf-loc,Conference Location (in a citation)>> <<element-conf-name,`<conf-name>`>> <<element-conf-name,Conference Name (in a citation)>> <<element-conf-sponsor,`<conf-sponsor>`>> <<element-conf-sponsor,Conference Sponsor (in a citation)>> <<element-data-title,`<data-title>`>> <<element-data-title,Data Title (in a citation)>> <<element-date,`<date>`>> <<element-date,Date (in a citation)>> <<element-date-in-citation,`<date-in-citation>`>> <<element-date-in-citation,Date in Citation (in a citation)>> <<element-day,`<day>`>> <<element-day,Day (in a citation)>> <<element-edition,`<edition>`>> <<element-edition,Edition Number>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-elocation-id,`<elocation-id>`>> <<element-elocation-id,Electronic Location Identifier (in a citation)>> <<element-etal,`<etal>`>> <<element-etal,Et Al. (in a citation)>> <<element-fpage,`<fpage>`>> <<element-fpage,First Page (in a citation)>> <<element-gov,`<gov>`>> <<element-gov,Government Report (in a citation)>> <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>> <<element-isbn,`<isbn>`>> <<element-isbn,ISBN>> <<element-issn,`<issn>`>> <<element-issn,ISSN (in a citation)>> <<element-issn-l,`<issn-l>`>> <<element-issn-l,ISSN-L (Linking ISSN) (in a citation)>> <<element-issue,`<issue>`>> <<element-issue,Issue Number (in a citation)>> <<element-issue-id,`<issue-id>`>> <<element-issue-id,Issue Identifier (in a citation)>> <<element-issue-part,`<issue-part>`>> <<element-issue-part,Issue Part (in a citation)>> <<element-issue-title,`<issue-title>`>> <<element-issue-title,Issue Title (in a citation)>> <<element-lpage,`<lpage>`>> <<element-lpage,Last Page (in a citation)>> <<element-month,`<month>`>> <<element-month,Month (in a citation)>> <<element-name,`<name>`>> <<element-name,Name of Person (Structured)>> <<element-name-alternatives,`<name-alternatives>`>> <<element-name-alternatives,Name Alternatives>> <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>> <<element-page-range,`<page-range>`>> <<element-page-range,Page Ranges (in a citation)>> <<element-part-title,`<part-title>`>> <<element-part-title,Part Title (in a citation)>> <<element-patent,`<patent>`>> <<element-patent,Patent Number (in a citation)>> <<element-person-group,`<person-group>`>> <<element-person-group,Person Group (in a citation)>> <<element-pub-id,`<pub-id>`>> <<element-pub-id,Publication Identifier (in a citation)>> <<element-publisher-loc,`<publisher-loc>`>> <<element-publisher-loc,Publisher’s Location (in a citation)>> <<element-publisher-name,`<publisher-name>`>> <<element-publisher-name,Publisher's Name (in a citation)>> <<element-role,`<role>`>> <<element-role,Role or Function Title of Contributor>> <<element-season,`<season>`>> <<element-season,Season (in a citation)>> <<element-series,`<series>`>> <<element-series,Series (in a citation)>> <<element-size,`<size>`>> <<element-size,Size (in a citation)>> <<element-source,`<source>`>> <<element-source,Source (in a citation)>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> <<element-string-date,`<string-date>`>> <<element-string-date,Date as a String>> <<element-string-name,`<string-name>`>> <<element-string-name,Name of Person (Unstructured)>> <<element-supplement,`<supplement>`>> <<element-supplement,Supplement (in a citation)>> <<element-trans-source,`<trans-source>`>> <<element-trans-source,Translated Source (in a citation)>> <<element-trans-title,`<trans-title>`>> <<element-trans-title,Translated Title>> <<element-version,`<version>`>> <<element-version,Version Indicator>> <<element-volume,`<volume>`>> <<element-volume,Volume Number (in a citation)>> <<element-volume-id,`<volume-id>`>> <<element-volume-id,Volume Identifier (in a citation)>> <<element-volume-series,`<volume-series>`>> <<element-volume-series,Volume Series (in a citation)>> <<element-year,`<year>`>> <<element-year,Year>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  element-citation
+                        (%citation-elements;)+                       >
+....
+#### Expanded Content Model
+
+(break | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | label | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | annotation | article-title | chapter-title | collab | collab-alternatives | comment | conf-acronym | conf-date | conf-loc | conf-name | conf-sponsor | data-title | date | date-in-citation | day | edition | email | elocation-id | etal | ext-link | fpage | gov | institution | institution-wrap | isbn | issn | issn-l | issue | issue-id | issue-part | issue-title | lpage | month | name | name-alternatives | object-id | page-range | part-title | patent | person-group | pub-id | publisher-loc | publisher-name | role | season | series | size | source | std | string-date | string-name | supplement | trans-source | trans-title | uri | version | volume | volume-id | volume-series | year | fn | target | tbx:entailedTerm | xref | sub | sup)+
+
+#### Tagged Sample
+
+##### To journal article
+[source,xml]
+....
+...
+<ref>
+ <label>...</label>
+ <element-citation publication-type="journal">
+  <person-group><name>
+    <surname>Chandler</surname>
+    <given-names>Adam</given-names>
+   </name>
+   <name>
+    <surname>Wiley</surname>
+    <given-names>Glen</given-names>
+   </name>
+   <name>
+    <surname>LeBlanc</surname>
+    <given-names>Jim</given-names>
+   </name></person-group> 
+  <article-title>Towards Transparent and Scalable 
+   OpenURL Quality Metrics</article-title> 
+  <source>D-Lib Magazine</source> 
+  <date iso-8601-date="2011-03">
+   <month>March/April</month>
+   <year>2011</year>
+  </date>
+  <volume>17</volume>
+  <issue>3/4</issue> 
+  <pub-id pub-id-type="doi" xlink:href="http://dx.doi.org/10.1045/march2011-chandler"
+   >http://dx.doi.org/10.1045/march2011-chandler</pub-id> 
+  <comment>Available at: </comment>
+  <ext-link xlink:href="http://dlib.org/dlib/march11/chandler/03chandler.html"
+   >http://dlib.org/dlib/march11/chandler/03chandler.html</ext-link>
+ </element-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

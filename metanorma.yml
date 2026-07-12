@@ -1,0 +1,12 @@
+metanorma:
+  source:
+    files:
+      - sources/niso-sts-tag-library-1-2/document.adoc
+      - sources/iso-sts-coding-changes-2-1/document.adoc
+      - sources/niso-sts-1-2-compare-1-0/document.adoc
+      - sources/niso-sts-guidelines-v1-0/document.adoc
+      - sources/oiml-x-999-2026/document.adoc
+
+  collection:
+    name: "OIML/IEC/ISO NISO STS Encoding Specifications"
+    organization: "OIML / ISO / IEC / NISO"

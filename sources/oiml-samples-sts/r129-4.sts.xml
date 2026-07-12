@@ -1,0 +1,2232 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 129-4</doc-identifier>
+      <std-title-group>
+        <title>Multi-dimensional measuring instruments&#x2009;&#x2014;&#x2009;Type evaluation report format</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2020-01-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2020 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <p>International Recommendations (OIML R), which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</p>
+      <p>International Documents (OIML D), which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</p>
+      <p>International Guides (OIML G), which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</p>
+      <p>International Basic Publications (OIML B), which define the operating rules of the various OIML structures and systems.</p>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from OIML Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of Vocabularies (OIML V) and periodically commissions legal metrology experts to write Expert Reports (OIML E). Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 129-4, Edition 2020 (E)&#x2009;&#x2014;&#x2009;was developed by Project Group 1 in Technical Subcommittee TC 7/SC 5 Dimensional Measuring Instruments. It was approved for final publication by the International Committee of Legal Metrology in 2020. It supersedes the previous edition dated 2000.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <list list-type="bullet" id="_1cabd05d-8c3a-ed0a-03c5-a4009d129e45">
+        <list-item>&#x2014;Bureau International de M&#xE9;trologie L&#xE9;gale</list-item>
+        <list-item>&#x2014;11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France</list-item>
+        <list-item>&#x2014;Telephone: 33 (0)1 48 78 12 82</list-item>
+        <list-item>&#x2014;Fax: 33 (0)1 42 82 17 27</list-item>
+        <list-item>&#x2014;E-mail: <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/></list-item>
+        <list-item>&#x2014;Internet: www.oiml.org</list-item>
+      </list>
+    </foreword>
+    <introduction>
+      <p>This &#x201C;Type evaluation report format&#x201D;, the subject of OIML R 129-4, aims at presenting, in a standardised format, the results of the evaluation to which a type of a multi-dimensional measuring instrument shall be submitted with a view to its approval.</p>
+      <p>The &#x201C;Checklist&#x201D; is a summary of the evaluation and examinations carried out on the instrument. It includes the conclusions of the results of the tests performed, experimental or visual checks based on the required performance criteria and associated tests in OIML R 129-1 and -2. The words or condensed sentences intend to remind the examiner of the requirements of R 129-1 and -2 without reproducing them.</p>
+      <p>All metrology services evaluating types of multi-dimensional measuring instrument according to OIML R 129-1 and -2 or to national or regional regulations based on OIML R 129-1 and -2 are strongly advised to use this &#x201C;Type evaluation report format&#x201D;, directly or after translation into a language other than English or French. Its direct use in English or in French, or in both languages, is even more strongly recommended whenever the results of type evaluation may be transmitted by the country performing these evaluations to the approving authorities of another country, under bi- or multi-lateral cooperation agreements. In the framework of the OIML Certification System (OIML-CS), use of the &#x201C;Type evaluation report format&#x201D; is mandatory.</p>
+    </introduction>
+  </front>
+  <body>
+    <sec>
+      <title>Explanatory notes</title>
+      <p>Meaning of symbols used in this report:</p>
+      <sec>
+        <title>Identification of the instrument</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Identification no.: <italic>_</italic></p>
+        <p>Software version: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Documentation from the manufacturer:</p>
+        <p>(Record as necessary to identify the equipment under evaluation)</p>
+        <table-wrap id="tab_1">
+          <caption>Table1</caption>
+          <table>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <list list-type="bullet" id="_8f24353d-5acd-8ef7-8dc2-9ccfb7c8315b">
+          <list-item>&#x2014;Identification of the instrument (continued)</list-item>
+        </list>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Identification no.: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Simulator function (summary) (if applicable):</p>
+        <p>(Simulator description and drawings, block diagram, etc. should be attached to the report if available)</p>
+        <list list-type="bullet" id="_5c907404-b0da-1398-7906-298e839ec281">
+          <list-item>&#x2014;Identification of the instrument (continued)</list-item>
+        </list>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Identification no.: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <sec>
+          <title>Physical description of the instrument</title>
+          <p>Describe, using point form, the physical construction of the MDMI (materials, configuration and location of components, interfaces and communications ports). Attach photographs, diagrams or drawings if available:</p>
+          <p>Describe, using point form, the measurement technology used (include details such as physical contact method, laser class, power and wavelength, ultrasonic frequency, or camera spectrum):</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>General information concerning the type</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Applicant: <italic>_</italic></p>
+        <p>Instrument category: <italic>_</italic></p>
+        <table-wrap id="tab_2">
+          <caption>Parameter limits</caption>
+          <table>
+            <tr>
+              <td>Temperature limits (&#xB0;C&#xB0;C&#xB0;C&#xB0;C)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Speed limitations (m/s)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Voltage (V)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Minimum spacing</td>
+              <td/>
+              <td>/</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <table-wrap id="tab_3">
+          <caption>Limitation</caption>
+          <table>
+            <tr>
+              <td>Object</td>
+              <td>Cuboidal</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Irregular</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Singulated</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Non-singulated, non-touching</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Touching</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Measurement dynamics</td>
+            </tr>
+            <tr>
+              <td>Static measurement only</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Fixed speed</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Variable speed</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Unidirectional</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Bidirectional</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Installation</td>
+              <td>Permanent</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Mobile</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>Power supply</td>
+            </tr>
+            <tr>
+              <td>AC</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>AC-DC converter</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>DC</td>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Evaluation period: <italic>_</italic></p>
+        <p>Date of report: <italic>_</italic></p>
+        <p>Observer: <italic>_</italic></p>
+        <list list-type="bullet" id="_57d502e0-7beb-f0cb-fc56-d99952d190f0">
+          <list-item>&#x2014;General information concerning the type (continued)</list-item>
+        </list>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Applicant: <italic>_</italic></p>
+        <p>Instrument category: <italic>_</italic></p>
+        <sec>
+          <title>Scale interval and limits of indication</title>
+          <table-wrap id="tab_4">
+            <caption>Table4</caption>
+            <table>
+              <tr>
+                <td>X</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Y</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>Z</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+          <p>Describe, using point form, each axis and its relation to the physical object being measured and/or the MDMI itself:</p>
+          <p>Use this space to describe, using point form, any other use or installation limitations not detailed in the above on the previous page (such as special applications other than postage, freight or storage, restrictions on object material, texture, reflectivity or colour, object positioning):</p>
+          <p>Use this space to indicate additional remarks and/or information: connecting equipment, interfaces, choice of the manufacturer regarding protection against disturbances, etc.:</p>
+          <list list-type="bullet" id="_88eba784-eaff-ea86-c92c-852bf502faa4">
+            <list-item>&#x2014;General information concerning the type (continued)</list-item>
+          </list>
+          <p>Application no.: <italic>_</italic></p>
+          <p>Manufacturer: <italic>_</italic></p>
+          <p>Type designation: <italic>_</italic></p>
+          <p>Applicant: <italic>_</italic></p>
+          <p>Instrument category: <italic>_</italic></p>
+        </sec>
+        <sec>
+          <title>Indications and controls</title>
+          <p>Describe, using point form, all indications and controls of the instrument (such as wired or wireless communication with the instrument, zero method, ready indication, computed quantities, error codes). Describe each measurement (L, W, and H) and its relation to the physical object being measured and/or the MDMI itself:</p>
+        </sec>
+        <sec>
+          <title>Sealing</title>
+          <p>Describe, using point form, the physical and electronic seals (e.g. audit trails) used to protect the metrological characteristics of the instrument, and how to access them. Also describe any remote access abilities available and how these are sealed:</p>
+        </sec>
+        <sec>
+          <title>Software</title>
+          <p>Describe, using point form, the means used to protect legally relevant software in the instrument and indicate the version of the software present at the time of testing and how to verify this version number:</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Configuration for type evaluation</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Use this space for additional information relating to equipment configuration, interfaces, data rates, EMC protection options, etc., for the instrument and/or simulator:</p>
+      </sec>
+      <sec>
+        <title>Selection of sample(s)</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Use this space for additional information relating to the justification for the selection of sample(s), in particular if a family of instruments or modules or if specific requirements are mentioned in OIML R 129-1 and -2:</p>
+      </sec>
+      <sec>
+        <title>Adjustments or modifications</title>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Manufacturer: <italic>_</italic></p>
+        <p>Use this space for additional information relating to the identification of any authorised and agreed upon adjustments or modifications made to the sample or samples during the evaluation:</p>
+      </sec>
+      <sec>
+        <title>Summary of test report(s)</title>
+        <p>Use the table below to summarise the test report(s) used to support the type evaluation:</p>
+        <table-wrap id="tab_5">
+          <caption>Table5</caption>
+          <table>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <list list-type="bullet" id="_c23176de-6ca4-bda9-0bb6-d61c5ce680fe">
+          <list-item>&#x2014;Use this column to record if the test report was issued:</list-item>
+          <list-item>&#x2014;under the OIML Basic Certificate System, the OIML Mutual Acceptance Arrangement (MAA) or the OIML Certification System (OIML-CS) Scheme A or B. Where the test report was used as the basis for issuing an existing OIML Certificate, the relevant OIML Certificate number should be noted;</list-item>
+          <list-item>&#x2014;by a Manufacturer Test Laboratory (MTL);</list-item>
+          <list-item>&#x2014;under the scope of ISO/IEC 17025 accreditation.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>Appraisal of test data (where applicable)</title>
+        <p>Use this space to record the appraisal of test data:</p>
+        <table-wrap id="tab_6">
+          <caption>Table6</caption>
+          <table>
+            <tr>
+              <td>Correct method has been used</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Test data from acceptable testing facility</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Testing facility capable of performing the testing (accredited or peer assessed)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Test report provided in OIML format</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Test performed against OIML R 129 (versions)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Results acceptable for all the tests performed</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Further information/clarification needed</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Further testing to be performed</td>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>If there is more than one test report, indicate in the remarks if the answers are not the same for all test reports by referring to the test report number from the previous table.</p>
+        <sec>
+          <title>Corrective actions required</title>
+          <table-wrap id="tab_7">
+            <caption>Table7</caption>
+            <table>
+              <tr>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </table-wrap>
+        </sec>
+      </sec>
+      <sec>
+        <title>Summary of the checklist</title>
+        <p>For each test, the &#x201C;Summary of the checklist&#x201D; below and the &#x201C;Checklist&#x201D; in clause 1 shall be completed according to this example:</p>
+        <table-wrap id="tab_8">
+          <caption>Table8</caption>
+          <table>
+            <tr>
+              <td>When the instrument has passed the test:</td>
+              <td>X</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>When the instrument has failed the test:</td>
+              <td/>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>When the test is not applicable:</td>
+              <td>/</td>
+              <td>/</td>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Summary of the checklist:</p>
+        <table-wrap id="tab_9">
+          <caption>Table9</caption>
+          <table>
+            <tr>
+              <td>Metrological requirements (R 129-1 clause 4)</td>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Technical requirements (R 129-1 clause 5)</td>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Additional requirements for software controlled multi-dimensional measuring instruments (R 129-1 clause 6)</td>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Test procedures (R 129-2)</td>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>Overall result</td>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Application no.: <italic>_</italic></p>
+        <p>Type designation: <italic>_</italic></p>
+        <p>Report date: <italic>_</italic></p>
+        <p>Use this page to detail remarks from the summary of the checklist:</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Checklist</title>
+      <p>Report no.: <italic>_</italic></p>
+      <p>Application no.: <italic>_</italic></p>
+      <p>Manufacturer: <italic>_</italic></p>
+      <p>Make and model: <italic>_</italic></p>
+      <p>Serial no.: <italic>_</italic></p>
+      <p>Date: <italic>_</italic></p>
+      <p>Observer: <italic>_</italic></p>
+      <table-wrap id="tab_10">
+        <caption>Table10</caption>
+        <table>
+          <tr>
+            <td>3</td>
+            <td>Units of measurement</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Correct units and symbols used</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.1.1</td>
+            <td>Scale intervals, minimum dimension</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Correct minimum dimensions</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.1.2</td>
+            <td>Value of mpe</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>mpe applicable to any of the three dimensions = \&#xB1;\pm\&#xB1;\pm1.0 dddd</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.1.3</td>
+            <td>Value of the fault limit</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Value of one scale interval (dddd)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.1.4</td>
+            <td>Variation between indicators</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>No variation in indications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.1.5</td>
+            <td>Multi-interval instruments</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Appropriate mpe for applicable range and axis</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.1.6</td>
+            <td>Calculated quantities</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Derived from displayed value of measured dimensions</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Rounded to nearest applicable scale interval</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Calculated quantities in mathematical agreement</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.2.1</td>
+            <td>Rated operating conditions</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>At least 30 &#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>If powered by direct current, instrument functions correctly or does not indicate quantity below manufacturer&#x2019;s specified nominal voltage</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Instrument designed and manufactured such that it does not exceed the mpe when exposed to:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.2.1(a)</td>
+            <td>mains power voltage variations: &#x2212;-&#x2212;-15 % to ++++10 % of nominal voltage</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.2.1(b)</td>
+            <td>air temperature variations at the temperature limits stated in the descriptive markings or &#x2212;-&#x2212;-10 &#xB0;C&#xB0;C&#xB0;C&#xB0;C to ++++40 &#xB0;C&#xB0;C&#xB0;C&#xB0;C</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.2.1&#xA9;</td>
+            <td>relative humidity of 85 % (non-condensing) at the high temperature limit of the instrument or 40 &#xB0;C&#xB0;C&#xB0;C&#xB0;C, whichever is lower</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.3.1</td>
+            <td>Disturbances applied to measuring instrument</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Instrument is designed and manufactured such that, when exposed to disturbances, either:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.3.1(a)</td>
+            <td>significant faults do not occur, or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.3.1(b)</td>
+            <td>significant faults are detected and acted upon</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.3.3</td>
+            <td>Tests for disturbances; severity levels</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Instrument withstands disturbances when subject to the applicable severity levels</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>4.4</td>
+            <td>Light and acoustic effects</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Remains within mpe when subjected to the applicable light or acoustic effects, or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>has provisions for alternative operations</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.1</td>
+            <td>Fraudulent use</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Instrument shall not facilitate fraudulent use</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </table>
+      </table-wrap>
+      <list list-type="bullet" id="_cb6f191f-5f27-5320-8561-b68f5d9aad49">
+        <list-item>&#x2014;Checklist (continued)</list-item>
+      </list>
+      <table-wrap id="tab_11">
+        <caption>Table11</caption>
+        <table>
+          <tr>
+            <td>5.1.2</td>
+            <td>Suitability of construction</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>All controls, indicators etc. are suitable</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.3</td>
+            <td>Suitability for use</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Suit the method of operation and objects</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.4</td>
+            <td>Suitability for verification</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Constructed so that test of performance requirements can be carried out</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Test mode provided (only volume indicated in normal position)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.5</td>
+            <td>Zero or ready adjustment</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Facilities for zero or ready condition</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Can only be set with no object in the measurement area</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Zero or ready condition indicated</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Condition set automatically or inhibited if not set correctly</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.6</td>
+            <td>Tare device</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.6(a)</td>
+            <td>Only operates subtractively with respect to the zero or ready condition</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.6(b)</td>
+            <td>Value of the tare scale interval is the same as that for the respective axis and range</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.6&#xA9;</td>
+            <td>Operation of tare indicated</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.1.7</td>
+            <td>Warm-up</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Indications within mpe following warm-up</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1</td>
+            <td>Indicators and printing devices</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(a)</td>
+            <td>Instrument has an indicator or printer which displays dimensions or volume</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(b)</td>
+            <td>Device to transmit, store and preserve measurement results</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1&#xA9;</td>
+            <td>Indications automatically displayed or are readily available</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(d)</td>
+            <td>Other indications (e.g. DW, F) are automatically displayed or are readily available</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(e)</td>
+            <td>Previously displayed indication persists long enough for easy reading by observer</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(f)</td>
+            <td>Indication clearly assignable to a specific object</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(g)</td>
+            <td>Display of extended indication device:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>while pressing a key; or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>limited to 5 seconds</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Printing and data transmission restricted in extended indication</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(h)</td>
+            <td>Extended indication device not fitted to instrument for direct sales to public</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.1(i)</td>
+            <td>All indications are identified</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.2</td>
+            <td>Presentation of indications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Indications, printing reliable, clear and unambiguous and printing indelible</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Figures easy to read</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Printed numbers and symbols at least 2 mm high</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Digits oriented normally and permit reading by simple juxtaposition</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.3</td>
+            <td>Units of measurement</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>All indications include the name/symbol of the unit of measurement</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>On tickets, name or symbol printed by printer or pre-printed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>For any one indication, only one unit of measurement used</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.4</td>
+            <td>Value of scale interval</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Value of scale interval in the form 1,21, 21,21, 2 or 5\&#xD7;10n5 \times 10^n5\&#xD7;10n5 \times 10^n</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>The scale interval shall be:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.4(a)</td>
+            <td>the same for each axis; or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.4(b)</td>
+            <td>different for one axis from the other provided instructions are marked, or indication of incorrect use given; or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </table>
+      </table-wrap>
+      <list list-type="bullet" id="_436336b5-66b7-3438-28d7-64a5f6e8baa5">
+        <list-item>&#x2014;Checklist (continued)</list-item>
+      </list>
+      <table-wrap id="tab_12">
+        <caption>Table12</caption>
+        <table>
+          <tr>
+            <td>5.2.4&#xA9;</td>
+            <td>variable, on one or more axes provided:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>all three axes are multi-interval &#x2212;-&#x2212;- all the same</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>two axes are multi-interval and the third is fixed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>instrument limitations are clearly marked</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>one axis is multi-interval and the others are fixed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>instrument limitations are clearly marked</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.5</td>
+            <td>Decimal numbers</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>At least one zero before decimal mark for values &lt;&lt;&lt;&lt; 1</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Decimal mark printed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>One or more fixed zeros to the right of variable numbers for values &gt;&gt;&gt;&gt; 1</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>All decades to right of decimal are active and least significant digit is scale interval</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.6</td>
+            <td>Limits of indication</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Displaying, storing, transmitting or printing the quantity value is inhibited if the entire object is not in, or does not pass through, the measuring area</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.6(a)</td>
+            <td>Dimensions below minimum either:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- blank; or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- displayed with error code</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.6(b)</td>
+            <td>Dimensions above maximum ++++9dddd either:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- blank; or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- displayed with error code</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.7</td>
+            <td>Multi-interval instruments</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.7(a)</td>
+            <td>For each partial measuring range:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>d1&lt;d2&lt;&#x2026;&lt;drd_1 &lt; d_2 &lt; ... &lt; d_rd1&lt;d2&lt;&#x2026;&lt;drd_1 &lt; d_2 &lt; ... &lt; d_r</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.7(b)</td>
+            <td>M&#x2208;=M&#x2208;1Min = Min_1M&#x2208;=M&#x2208;1Min = Min_1, Max=MaxrMax = Max_rMax=MaxrMax = Max_r, Max1=M&#x2208;2Max_1 = Min_2Max1=M&#x2208;2Max_1 = Min_2 etc.</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.7&#xA9;</td>
+            <td>Minimum dimension of any axis = minimum dimension of the lowest partial range of that axis</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.7(d)</td>
+            <td>Maximum dimension of any axis = minimum dimension of the highest partial range of that axis</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.7(e)</td>
+            <td>Minimum dimension of any partial measuring range is no smaller than minimum specified in 4.1.1</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.8</td>
+            <td>Multi-instrument systems</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Indications on common indicator and test indicator agree</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Indication from each device clearly identified on the common indicator</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9</td>
+            <td>Printed and displayed information &#x2212;-&#x2212;- general</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.1</td>
+            <td>Displayed results include the measured dimensions</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2</td>
+            <td>Printed ticket or stored measurement includes:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(a)</td>
+            <td>&#x2212;-&#x2212;- dimensions: length (L), width (W) and height (H)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(b)</td>
+            <td>&#x2212;-&#x2212;- date, transaction number, etc.</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2&#xA9;</td>
+            <td>&#x2212;-&#x2212;- volume (V)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(d)</td>
+            <td>&#x2212;-&#x2212;- weight (Wt)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(e)</td>
+            <td>&#x2212;-&#x2212;- dimensional weight (DW &#x2026;&#x200B; kg)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(f)</td>
+            <td>&#x2212;-&#x2212;- dimensional tare (DT &#x2026;&#x200B; kg) or linear tare (LT &#x2026;&#x200B; cm)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(g)</td>
+            <td>&#x2212;-&#x2212;- conversion factor (F)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(h)</td>
+            <td>&#x2212;-&#x2212;- quantity for charging</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.2(i)</td>
+            <td>&#x2212;-&#x2212;- price rate and price</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.3</td>
+            <td>Additional requirements for printed tickets</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>A printed ticket contains printed or pre-printed notices stating:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.3(a)</td>
+            <td>&#x2212;-&#x2212;- dimensions and/or volume are those of the smallest rectangular box</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.9.3(b)</td>
+            <td>&#x2212;-&#x2212;- dimensional weight is a calculated value</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </table>
+      </table-wrap>
+      <list list-type="bullet" id="_2362e270-35e1-0be3-d6dd-27c2818e330a">
+        <list-item>&#x2014;Checklist (continued)</list-item>
+      </list>
+      <table-wrap id="tab_13">
+        <caption>Table13</caption>
+        <table>
+          <tr>
+            <td>5.2.10</td>
+            <td>Availability of indications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Indications must be available to the customer as follows:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.10(a)</td>
+            <td>if customer present, all indications are available to customer at time of measurement</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.2.10(b)</td>
+            <td>if customer not present, information in 5.2.9 shall be available on request, if not displayed or printed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1</td>
+            <td>Nameplate</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Instrument or descriptive nameplate permanently affixed to the instrument, permanently and clearly marked and clearly visible at all times</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Nameplate contains the following information</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(a)</td>
+            <td>manufacturer&#x2019;s name or mark</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(b)</td>
+            <td>model designation</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1&#xA9;</td>
+            <td>serial number and year of manufacture</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(d)</td>
+            <td>type evaluation mark</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(e)</td>
+            <td>minimum and maximum dimensions for each axis</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(f)</td>
+            <td>maximum and minimum measuring speeds</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(g)</td>
+            <td>scale interval(s) in the form of d=&#x2026;d = ...d=&#x2026;d = ...</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.1(h)</td>
+            <td>temperature limits (if other than &#x2212;-&#x2212;-10 &#xB0;C&#xB0;C&#xB0;C&#xB0;C to 40 &#xB0;C&#xB0;C&#xB0;C&#xB0;C)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.2</td>
+            <td>Technical specifications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Specifications or limitations of use clearly marked and visible to the operator, or in operator&#x2019;s manual</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.2(a)</td>
+            <td>Special application</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.2(b)</td>
+            <td>Minimum spacing</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.2&#xA9;</td>
+            <td>Measure only rectangular boxes</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.2(d)</td>
+            <td>Box location</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.3.2(e)</td>
+            <td>Limitations of surface characteristics</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Other special notices relating to the instrument</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.1</td>
+            <td>Verification mark</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Provision made for the application of a verification mark</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>The following requirements apply:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.1(a)</td>
+            <td>mark easily affixed without affecting the metrological properties</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.1(b)</td>
+            <td>mark visible without moving or dismantling instrument when in use</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.1&#xA9;</td>
+            <td>the part on which the mark is located is not removable from the instrument without damaging the mark</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.1(d)</td>
+            <td>the size of the space sufficient for a mark (e.g. at least 200 mm ^2^2^2^2)</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2</td>
+            <td>Sealing</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Provision made for sealing by mechanical or electronic means</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Mechanical seal applied</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>For electronic seals:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2(a)</td>
+            <td>access by authorised persons protected by physical key or password</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2(b)</td>
+            <td>access to alter parameters automatically recorded</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2&#xA9;</td>
+            <td>record readily accessible by simple action</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2(d)</td>
+            <td>record readily identifiable</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2(e)</td>
+            <td>reference record permanently marked on the instrument</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2(f)</td>
+            <td>record does not repeat in a sequence of less than 999 alterations</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>record persists reliably for a period of at least two years</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.4.2(g)</td>
+            <td>record persists through tests for influence factors and disturbances</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </table>
+      </table-wrap>
+      <list list-type="bullet" id="_cd4919b8-c6d1-f427-0be2-8999dfb27789">
+        <list-item>&#x2014;Checklist (continued)</list-item>
+      </list>
+      <table-wrap id="tab_14">
+        <caption>Table14</caption>
+        <table>
+          <tr>
+            <td>5.5.2</td>
+            <td>Interfaces for peripheral devices</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Interface does not allow metrological functions to be affected by the operation of the ancillary devices or connected instruments or disturbances acting on the interface</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Interface sealed if instructions or data affecting the measurement result can be introduced through the interface</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.6.1</td>
+            <td>Acting upon significant faults</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Instrument made automatically inoperative; or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>visible or audible indication until user takes action or fault disappears</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Automatic instrument made inoperative automatically</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>5.6.2</td>
+            <td>Indication check</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Display check needed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Display check not needed</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>All elements of the indication are active and non-active long enough to be checked by the operator</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.1</td>
+            <td>Software identification</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Software of a measuring instrument/component is clearly identified</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- displayed on command, or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- displayed during operation, or</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>&#x2212;-&#x2212;- displayed on start-up</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.2</td>
+            <td>Correctness of algorithms and function</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Measuring algorithms and functions of a measuring instrument appropriate and functionally correct</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Possible to assess algorithms and functions either by metrological tests, software tests or software examination</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>No hidden or undocumented functions or parameters shall exist</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.3</td>
+            <td>Securing and protecting software, parameters, the measurand value and measurement data</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Constructed in such a way that possibilities for unintentional, unauthorised, or intentional misuse are minimal</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.3.1</td>
+            <td>Protected in such a way that evidence of any intervention (e.g. software updates) shall be available</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Protected against unauthorised modification, loading, or changes by swapping the memory device</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.3.2</td>
+            <td>Only clearly documented functions may be activated by the user interface</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.3.3</td>
+            <td>Legally relevant characteristics are protected such that evidence of intervention is available</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Displaying or printing of the current legally relevant parameter settings is possible</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.3.4</td>
+            <td>Measurement data and the measurand value protected against modification</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Fitted with a checking facility to ensure that if modification or corruption is detected, the measurement data and the measurand value are discarded or marked unusable</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.4</td>
+            <td>Not possible to fraudulently simulate legally relevant software for presenting measurement results, using easily available and manageable tools</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </table>
+      </table-wrap>
+      <list list-type="bullet" id="_65d697ec-5eb9-a546-e8b5-5652376f88fd">
+        <list-item>&#x2014;Checklist (continued)</list-item>
+      </list>
+      <table-wrap id="tab_15">
+        <caption>Table15</caption>
+        <table>
+          <tr>
+            <td>6.5</td>
+            <td>Audit trail</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Audit trail is protected</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Not possible to delete or exchange audit trail</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Content of audit trail shown or displayed on command</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Storage device for audit trail has sufficient capacity for at least three successive verifications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Audit trail contains:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>success/failure of the update procedure</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>time stamp of the event</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>for software download: software identification of the installed version</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>for software download: software identification of the previous installed version</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>for parameter change: identification of the changed parameter</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>for parameter change: the old and new values of the changed parameter</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.6</td>
+            <td>Requirements for specific configurations of electronic instruments</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Meets specific requirements for following technologies:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.7</td>
+            <td>Detection of significant defects</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Software is made inoperative automatically or a visual or audible indication is provided automatically until user takes action when significant defect detected</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>All necessary documentation provided</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>6.8</td>
+            <td>Support of durability protection</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>When durability is jeopardised the instrument starts measures to ensure further durability or become inoperable until the user takes action, or the problem disappears</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>All necessary documentation provided</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.1</td>
+            <td>Specification and separation of legally relevant parts and specification of interfaces</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.1.1</td>
+            <td>Interfaces</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.1.2</td>
+            <td>Separation of components</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.1.3</td>
+            <td>Specification and separation of software parts</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.2</td>
+            <td>Shared indications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.3</td>
+            <td>Storage of data</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.4</td>
+            <td>Transmission of measured quantity values and/or measurement data</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.5</td>
+            <td>Operating systems</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>Annex B.6</td>
+            <td>Software updates</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td>R 129-2, 1.1</td>
+            <td>Documentation</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Submission accompanied by sufficient documentation, to ensure complete understanding of the construction and method of operation of the instrument including:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>drawings</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>specifications</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>photographs</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>descriptions</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>Details of the measurement data contained in the memory and calculation methods provided</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>For electronic instruments, documentation includes:</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>list of all electronic sub-assemblies with their essential characteristics</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <td/>
+            <td>description of electronic devices with drawings, diagrams and general software information explaining their construction and operation</td>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </table>
+      </table-wrap>
+      <sec>
+        <title>RESULT</title>
+        <list list-type="bullet" id="_258f880d-46c4-2daf-73f8-feef87c38074">
+          <list-item>&#x2014;PASS</list-item>
+          <list-item>&#x2014;FAIL</list-item>
+        </list>
+        <p>Use this page to detail remarks from the checklist:</p>
+      </sec>
+    </sec>
+    <p>Multi-dimensional measuring instruments &#x2014; Part&#xA0;4:Type evaluation report format</p>
+  </body>
+</standard>

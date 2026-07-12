@@ -1,0 +1,40 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/author-comment.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-author-comment]
+=== `<author-comment>` Author Comment
+
+Used for extra textual material associated with a contributor such as an author or editor.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-contrib-group,`<contrib-group>`>>
+#### Description
+
+The following, in order: <<element-title,`<title>`>> <<element-title,Title>>, zero or one One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  author-comment
+                        %author-comment-model;                       >
+....
+#### Expanded Content Model
+
+(title?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)+)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

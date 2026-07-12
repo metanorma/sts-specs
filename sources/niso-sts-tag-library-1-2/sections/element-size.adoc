@@ -1,0 +1,64 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/size.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-size]
+=== `<size>` Size (in a citation)
+
+Size of a resource or object described in a bibliographic reference or related object description. The <<attribute-units,`@units`>> attribute must be used to name the units of measure (for example, minutes, hours, linear feet, pages).
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-units,`@units`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  size         (#PCDATA %size-elements;)*                   >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Number of pages, in a citation
+[source,xml]
+....
+...
+<ref>
+ <mixed-citation publisher-type="gov"
+  ><person-group person-group-type="author"
+   ><string-name><surname>Norman</surname>, 
+    <given-names>John C</given-names></string-name>, 
+   <aff>Texas Heart Institute, Houston, TX</aff></person-group>. 
+  <gov>Report No.: NIH-N01-HV-5-3006-4-VI. Contract No. 
+   N01-HV-5-3006</gov>. <source>ALVAD: 1980. A comprehensive 
+   final report to NHLI</source>. Vol. <volume>1</volume>. 
+  <publisher-loc>Bethesda (MD)</publisher-loc>:
+  <publisher-name>National Institutes of Health, National Heart 
+   and Lung Institute, Devices and Services Branch</publisher-name>;
+  <month>01</month> <year iso-8601-date="1980-01">1980</year>.
+  <size units="pages">340</size> p. Available from: NTIS,
+  Springfield, VA; PB80-148810</mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

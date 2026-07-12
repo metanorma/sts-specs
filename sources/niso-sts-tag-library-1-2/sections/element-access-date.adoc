@@ -1,0 +1,44 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/access-date.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-access-date]
+=== `<access-date>` Access Date For Cited Work (deprecated)
+
+The date on which the work which is cited was examined.
+This element comes from an older version of JATS and is now deprecated in JATS; therefore, NISO STS users should avoid using it. Use the <<element-date-in-citation,`<date-in-citation>`>> element to record the access date for a citation.
+
+#### Usage/Remarks
+The `<access-date>` element has been replaced by the <<element-date-in-citation,`<date-in-citation>`>> element with a <<attribute-content-type,`@content-type`>> attribute value “`access-date`” that records the date on which the cited work was examined.
+
+#### Attributes
+
+* <<attribute-calendar,`@calendar`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-iso-8601-date,`@iso-8601-date`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-nlm-citation,`<nlm-citation>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  access-date  (#PCDATA %access-date-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

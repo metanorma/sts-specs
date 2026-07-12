@@ -1,0 +1,99 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/fn-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-fn-group]
+=== `<fn-group>` Footnote Group
+
+Container element for collecting footnotes in one place, for example, at the end of the standards document body or the footnotes inside a structure such as a section (<<element-sec,`<sec>`>>, an annex (<<element-app,`<app>`>>), or a text box (<<element-boxed-text,`<boxed-text>`>>).
+
+#### Usage/Remarks
+##### Best Practice Footnote Placement
+
+Within a document, footnotes that are specific to a structure, such as a table or figure, should be placed inside that structure. Footnotes in the narrative text should either be placed: Throughout the XML, at the place to which they are linked, or Grouped at the end of the document in a (<<element-fn-group,`<fn-group>`>>). There is no preference as to which practice to choose except that one or the other should be used consistently, not both in the same document.
+When footnotes are grouped at the end of a standards document, wrap them in a `<fn-group>` and use an <<element-xref,`<xref>`>> element in the text, as usual, to tie each footnote in the list to a particular location in the text.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-fig,`<fig>`>>, <<element-index-title-group,`<index-title-group>`>>, <<element-notes,`<notes>`>>, <<element-sec,`<sec>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-term-sec,`<term-sec>`>>, <<element-toc,`<toc>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-fn,`<fn>`>> <<element-fn,Footnote>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  fn-group     %fn-group-model;                             >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, (fn)+)
+
+#### Tagged Sample
+
+##### Multiple `<fn>`s
+[source,xml]
+....
+...
+<table-wrap>
+ ...
+ <table>...</table>
+ <table-wrap-foot>
+  <fn-group>
+
+   <fn id="tfn00001">
+    <label>A</label>
+    <p>From Benz et al. <bold>(<xref rid="pr00032">32</xref>)</bold>, 
+     Stoltzfus <bold>(<xref rid="pr00044">35</xref>)</bold>, specimens 
+     3.2 mm ( 1/8 in.) in diameter by 127 mm (5 in.) long.</p>
+   </fn>
+
+   <fn id="tfn00002">
+    <label>B</label>
+    <p>See <xref rid="tx00008" ref-type="table">Table X1.8</xref>
+     for alloy compositions.</p>
+   </fn>
+
+   <fn id="tfn00003">
+    <label>C</label>
+    <p>A 3-L accumulator was added to the test chamber on all 
+     tests that were conducted at 3.5 or 6.9 MPa (500 or 1000 
+     psig), except on those tests marked with FootnoteC.</p>
+   </fn>
+
+   <fn id="tfn00004">
+    <label>D</label>
+    <p>NP=Nonpropagating (less than 5 cm of the specimen length 
+     was consumed), CB=Completely burned.</p>
+   </fn>
+
+   <fn id="tfn00005">
+    <label>E</label>
+    <p>These tests were conducted using the video setup. No burn
+     rate was calculated.</p>
+   </fn>
+  </fn-group>
+ </table-wrap-foot>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Footnote Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

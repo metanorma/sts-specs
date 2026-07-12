@@ -1,0 +1,20 @@
+== Annex C (informative) — Amendments
+
+This annex covers the encoding of amendments to existing ISO and IEC
+publications. The two SDOs use slightly different conventions; both
+rely on the <<element-standard,`<standard>`>> root element with
+`@std-family` and `@publication-type` attributes that identify the
+document as an amendment.
+
+For IEC amendments, the document carries
+<<element-editing-instruction,`<editing-instruction>`>> elements that
+mark up insertions and deletions.
+
+For ISO amendments, a similar pattern uses
+<<element-text-ruby,`<text-ruby>`>> or
+<<element-styled-content,`<styled-content>`>> with appropriate
+`@style-type` values to mark up changes.
+
+NOTE: The full amendment-coding details from the source guidelines
+(Annex C) are available in the OCR transcript at
+`reference-docs/.glm-ocr-cache/niso-sts-guidelines-v1-0.md`.

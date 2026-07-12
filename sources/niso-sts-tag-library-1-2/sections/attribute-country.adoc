@@ -1,0 +1,48 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/country.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-country]
+=== `@country` Country
+
+An abbreviation or code that names a country. This is information that can be used to identify a country that granted a patent or to provide a machine-comparable form of the name of a country as an addition to the content of the <<element-country,`<country>`>> element.
+
+#### Usage/Remarks
+##### Best Practice
+
+Although this attribute is optional and open to any value, for Best Practice, the country code should be provided whenever it is known, and the ISO 3166-1 2-letter alphabetic codes should be used, for example: US United States GB United Kingdom CA Canada The complete list is available from ISO, in HTML, text-file, and XML-file versions at the following location: https://www.iso.org/obp/ui/#search. Choose the country code button and search using the search icon.
+
+#### OPTIONAL on elements:  <<element-country,`<country>`>>, 
+                  <<element-funding-source,`<funding-source>`>>, 
+                  <<element-patent,`<patent>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| An abbreviation for a country, typically using the ISO 3166-1 two-letter
+                        alphabetic codes, for example, “`US`” for the United
+                        States of America.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Country of cited patent
+[source,xml]
+....
+...
+<mixed-citation publication-type="patent"
+  publication-format="print"
+ ><person-group person-group-type="inventor"
+  ><string-name><surname>Goss</surname>, 
+   <given-names>K.</given-names></string-name></person-group>, 
+ <source>Cryptographic Method and Apparatus 
+  for Public Key Exchange with Authentications</source>, 
+ <patent country="US">U.S, Patent no. 4,956,863</patent>, 
+ <month>Sept.</month> <day>11</day>, 
+ <year>1990</year>.</mixed-citation>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

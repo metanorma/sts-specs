@@ -1,0 +1,70 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tex-math.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tex-math]
+=== `<tex-math>` TeX Math Equation
+
+Used to hold encoded math, expressed in TeX or LaTeX.
+
+#### Usage/Remarks
+##### Best Practice
+
+Although this Tag Set has no way to enforce it, Best Practice is to enclose the contents of this element in a `CDATA` marked section, because the use of the ampersand in TeX and LaTeX presents a problem on occasion.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-notation,`@notation`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-version,`@version`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-alt-title,`<alt-title>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-bold,`<bold>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-term,`<related-term>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-sec,`<term-sec>`>>, <<element-textual-form,`<textual-form>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  tex-math     (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### As alternative to graphic inline formula
+[source,xml]
+....
+...
+<p><italic>Slow-front transient overvoltage (SFO)</italic>: 
+ Transient overvoltage, usually unidirectional, with time to 
+ peak 20 &#x3bc;s &lt; 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_p}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m1.eps"
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 5 000 &#x3bc;s, and 
+ time&#xa0;to&#xa0;half&#xa0;value&#xa0;of&#xa0;a&#xa0;
+ decreasing&#xa0;voltage 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_2}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m2.eps" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 20 ms.</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

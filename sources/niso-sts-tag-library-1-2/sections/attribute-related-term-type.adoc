@@ -1,0 +1,48 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/related-term-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-related-term-type]
+=== `@related-term-type` Related Term Type
+
+Describes the relationship between the related term (<<element-related-term,`<related-term>`>>) and the term (<<element-term,`<term>`>>) that is being defined in a term section using the <<element-term-display,`<term-display>`>> element. For example, the related term is a deprecated form of the term being defined.
+
+#### REQUIRED on element:  <<element-related-term,`<related-term>`>>
+
+|===
+| Value| Meaning
+
+| acronym| The related term is the initial letters of the preferred term, or other combination
+                        pronounced as a word, rather than as a sequence of letters.
+| contrast-with| The related term is unlike the preferred term and provides a contrast.
+| custom| Not one of the meanings named in this list. The type can be found as the value of
+                        the attribute <<attribute-custom-type,`@custom-type`>>.
+| deprecatedTerm| The related term is not preferred and should not be used.
+| see| Someone looking for a term should use this related term instead of the term found.
+| see-also| Someone looking at the preferred term might also be interested in this related term.
+| synonym| The related term has a very similar meaning to the preferred term.
+| translation| The related term is the preferred term, translated into a second language.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+
+#### Tagged Sample
+
+##### Related term is an acronym
+[source,xml]
+....
+...
+  <term-display>
+   <term term-type="fullForm">hoogwerker</term>
+   <part-of-speech>noun</part-of-speech>
+   <related-term related-term-type="acronym">HW</related-term>
+   <def><p>hefplatform bestaande uit een werkplatform en 
+    een hydraulische hefinrichting gemonteerd op een zelfaangedreven 
+    chassis</p></def>
+   <non-normative-note>
+    <p>Zie <std><std-ref>EN 1777</std-ref></std>.</p>
+   </non-normative-note>
+  </term-display>...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

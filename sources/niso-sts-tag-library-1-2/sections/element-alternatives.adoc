@@ -1,0 +1,75 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/alternatives.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-alternatives]
+=== `<alternatives>` Alternatives For Processing
+
+Container element used to hold a group of processing alternatives, for example, a single <<element-graphic,`<graphic>`>> that ships in several formats (`tif`, `gif`, and `jpeg`) or in different resolutions. This element is a physical grouping to contain multiple logically equivalent (substitutable) versions of the same information object. Typically these are processing alternatives, and the reader is expected to see only one version of the object.
+
+#### Usage/Remarks
+<<element-alternatives,`<alternatives>`>> is neither inherently block nor inline in nature, because the block or inline quality is determined by context and usage. A typical example for this element as a block construct is a <<element-graphic,`<graphic>`>> that ships with a document in multiple versions, for example, as a `.tif`, a `.jpeg`, and an SVG file or as both a color graphic and a black-and-white. A typical example of an inline alternatives is an <<element-inline-formula,`<inline-formula>`>> that is available in four forms: as a `.tif` image (<<element-inline-graphic,`<inline-graphic>`>>), encoded in MathML (<<element-mml-math,`<mml:math>`>>), encoded in TeX, and a version in plain ASCII.
+#### Accessibility
+
+This element, by providing a container for alternative versions of a graphic or media object, enables providing a textual alternative to any graphic or media object as well as providing an enlarged graphic version for accessibility.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-addr-line,`<addr-line>`>>, <<element-alt-title,`<alt-title>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-bold,`<bold>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-term,`<related-term>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-sig-block,`<sig-block>`>>, <<element-source,`<source>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-head,`<term-head>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+The following, in order: <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more One or more of any of: <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table,`<table>`>> <<element-table,Table (NISO JATS table model)>> <<element-oasis-table,`<oasis:table>`>> <<element-oasis-table,OASIS XML Exchange (CALS) Table>> (In STS Extended ONLY) <<element-textual-form,`<textual-form>`>> <<element-textual-form,Textual Form>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  alternatives %alternatives-model;                         >
+....
+#### Expanded Content Model
+
+((object-id)*, (array | chem-struct | code | graphic | inline-code | inline-graphic | inline-media | inline-supplementary-material | media | preformat | private-char | supplementary-material | table | oasis:table | textual-form | tex-math | mml:math)+)
+
+#### Tagged Sample
+
+##### Equation with 3 alternatives: graphic, accessible graphic, and MathML
+[source,xml]
+....
+...
+<disp-formula id="num00001">
+ <alternatives>
+   <graphic xlink:href="http://www.astm.org/HTTP/IMAGES/G0094-05R14_1.gif"
+     specific-use="no MathML"/>
+   <graphic xlink:href="http://www.astm.org/HTTP/IMAGES/G0094-05R14_1-accessible.gif"
+     specific-use="accessible"/>
+   <mml:math display="block">
+     <mml:mrow>
+      <mml:mi mathvariant="normal">P</mml:mi>
+      <mml:mo>&amp;</mml:mo>
+      <mml:mi mathvariant="normal">B</mml:mi>
+      <mml:mspace width="0.25em"/>
+      <mml:mtext>Ratio</mml:mtext>
+      <mml:mo>=</mml:mo>
+      <mml:mtext>Wd/awD</mml:mtext>
+     </mml:mrow>
+   </mml:math>
+  </alternatives>
+</disp-formula>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Multiple Versions
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,47 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/date-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-date-type]
+=== `@date-type` Type of Date
+
+Event in the lifecycle of a standard that this date is marking, for example, the date the standards document was published. These values are not standard lifecycle events, such as “`amended`”.
+
+#### OPTIONAL on elements:  <<element-date,`<date>`>>, 
+                  <<element-release-date,`<release-date>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names a date referring to a single instance of a specific published edition of a standard
+                        (single publication of a dated designation). In other words, this names a date in
+                        the lifecycle of this standard rather than a type of standard from the standards lifecycle
+                        (such as “Addenda”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+Although designed to accept any text as its value, the following are suggested date types: published Date on which the particular edition/version of a standard is published editorial-change Date of a modification with no changes of technical merit or that require balloting reaffirmed Date a standard is reaffirmed or reapproved with no technical or substantial change (redesignation adds to previous, dated designation) stabilized-maintenance A maintenance date, indicating no change, a previously published standard under ANS stabilized maintenance (adds to previous dated designation) withdrawn Date on which a document is no longer a formal standard — may still be available for historical reference
+#### OPTIONAL on element:  <<element-meta-date,`<meta-date>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names, for example, a lifecycle stage that should *not* be expressed with  <<element-release-date,`<release-date>`>> or a circumstance that is unique to a particular standards organization, for example,
+                        “`Date of Issuance`” for ASME or “`Date of ratification`” for CEN-CENELEC. There are no suggested  values for this attribute. Best Practice
+                        for new documents is to use this  <<attribute-date-type,`@date-type`>> attribute instead of the ISO-specific <<attribute-type,`@type`>> attribute to record this date-typing information.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on element:  <<element-pub-date,`<pub-date>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The meaning and values for <<attribute-date-type,`@date-type`>> for this element were taken directly from JATS and are more appropriate to journal
+                        articles than to standards. Best Practice for NISO STS is to use the element <<element-release-date,`<release-date>`>> to indicate publication dates.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+Although designed to accept any text as its value, the following are suggested date types: accepted The date a manuscript was accepted received The date a manuscript was received rev-recd The date a revised manuscript was received rev-request The date revisions were requested or a manuscript was returned
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

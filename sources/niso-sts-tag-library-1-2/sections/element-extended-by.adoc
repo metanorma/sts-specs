@@ -1,0 +1,72 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/extended-by.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-extended-by]
+=== `<extended-by>` Extended-by Model
+
+Identification of an STS extension that the document claims to be following.
+
+#### Usage/Remarks
+The <<element-extended-by,`<extended-by>`>> element names an STS extension or superset that the document claims to be following. The content of <<element-extended-by,`<extended-by>`>> may be a name or a URI of an extension. The element is repeatable so that more than one extension can be claimed.
+#### Processing Metadata
+
+The Processing Metadata element (<<element-processing-meta,`<processing-meta>`>>) provides a more complete in-the-XML description of the tag set associated with a document than the <<attribute-dtd-version,`@dtd-version`>>. A <<element-processing-meta,`<processing-meta>`>> names (through attributes) the tag set family, base tag set, table model, terminology model, and math options a document follows and (through elements) some of the modeling restrictions or extensions the document claims to follow.
+Processing Metadata is not considered to be part of the content of a standard or adoption, or part of the metadata for citing a standard; it is metadata about how the XML is constructed — not about how the standard is structured. This metadata is information at the “file level” and thus not part of <<element-std-doc-meta,`<std-doc-meta>`>> or <<element-std-meta,`<std-meta>`>>, but inside the standard as a peer to <<element-front,`<front>`>>, which is the standard metadata container in STS. The Processing Metadata container element (<<element-processing-meta,`<processing-meta>`>>) was added to the model of <<element-standard,`<standard>`>>, as a child element, the peer of <<element-front,`<front>`>> and to the model of <<element-adoption,`<adoption>`>>, as a child element, the peer of <<element-adoption-front,`<adoption-front>`>>. The elements inside <<element-processing-meta,`<processing-meta>`>> name tag set extensions (superset) and restrictions (subset, secondary schema, etc.) that the XML document claims to follow. More than one restriction or extension is allowed. The restrictions on an <<element-adoption,`<adoption>`>> need not be the same as on the enclosed <<element-standard,`<standard>`>>, although they typically will be. The attributes on <<element-processing-meta,`<processing-meta>`>> describe the modeling choices made by this document in terms of tag set family, base tag set, table model, terminology model, and math tagging.
+###### `<processing-meta>`
+
+This optional container element holds the processing metadata elements that describe processing information descriptive of the XML-tagged document (document instance). The <<element-processing-meta,`<processing-meta>`>> element contains the following elements:
+* <<element-restricted-by,`<restricted-by>`>> —  Identification of one of the guidelines or other restrictions (such as a tighter
+                        subset schema) the document claims to be following. The content of <<element-restricted-by,`<restricted-by>`>> may be a name such as “sts4i” or a URI, for example, the URL of a particular ISO
+                        recommendation. The element is repeatable so that multiple restrictions can be claimed.
+* <<element-extended-by,`<extended-by>`>> —  Identification of an STS extension or superset that the document claims to be
+                        following. The content of <<element-extended-by,`<extended-by>`>> may be a name or a URI. The element is repeatable so that more than one extension
+                        can be claimed.
+* <<element-custom-meta-group,`<custom-meta-group>`>> —  To hold other processing metadata an STS user might want to express in the XML
+                        file.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-designator,`@designator`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-processing-meta,`<processing-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  extended-by  (#PCDATA %extended-by-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

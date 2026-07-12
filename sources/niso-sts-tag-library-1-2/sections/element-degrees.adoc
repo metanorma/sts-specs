@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/degrees.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-degrees]
+=== `<degrees>` Degree(s)
+
+Academic titles or professional certifications displayed following a personal name (for example, “`MD`”, “`PhD`”).
+
+#### Related Elements
+
+This element is not related to the similarly named MathML `<degree>` element, which is a mathematical term for angles and relationships and does not relate to people or education.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-contrib,`<contrib>`>>, <<element-speaker,`<speaker>`>>, <<element-string-name,`<string-name>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  degrees      (#PCDATA %degrees-elements;)*                >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

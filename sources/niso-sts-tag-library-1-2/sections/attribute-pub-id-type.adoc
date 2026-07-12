@@ -1,0 +1,104 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/pub-id-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-pub-id-type]
+=== `@pub-id-type` Type of Publication Identifier (in a citation)
+
+Type of publication identifier or the organization or system that defined the identifier.
+
+#### Usage/Remarks
+This attribute is used in several contexts: Inside a bibliographic citation element (such as <<element-mixed-citation,`<mixed-citation>`>> or <<element-element-citation,`<element-citation>`>>), for example, on the <<element-pub-id,`<pub-id>`>> element, which identifies a publication cited in a bibliographic reference list; or On an object identifier element (<<element-object-id,`<object-id>`>>), which can act as an identifier for any number of different elements.
+
+#### OPTIONAL on element:  <<element-pub-id,`<pub-id>`>>
+
+|===
+| Value| Meaning
+
+| accession| (Bioinformatics) a unique identifier given to a DNA or protein sequence record for
+                        tracking the sequence record and the associated sequence over time in a data repository.
+| archive| Generic identifier type for an identifier assigned by an archive or other repository
+                        (generally used with elements <<element-object-id,`<object-id>`>>, <<element-issue-id,`<issue-id>`>>, and <<element-volume-id,`<volume-id>`>>).
+| ark| Archival Resource Key — a Uniform Resource Locator (URL) containing the word 
+                        “`ark`” that is a multi-purpose identifier for information objects of any type.
+| art-access-id| Generic article accession identifier for interchange and retrieval between archives.
+| arxiv| arXiv archive of electronic preprints.
+| coden| Obsolete PDB/CCDC identifier (may be present on older articles).
+| custom| Not one of the meanings named in this list. The type can be found as the value of
+                        the attribute <<attribute-custom-type,`@custom-type`>>.
+| doaj| Directory of Open Access Journals.
+| doi| Digital Object Identifier.
+| handle| Handle identifier, part of the Handle System for assigning, managing, and resolving
+                        persistent identifiers for digital objects and other resources on the Internet.
+| index| Generic identifier type for an identifier assigned by an abstracting or indexing service
+                        (generally used with elements <<element-object-id,`<object-id>`>>, <<element-issue-id,`<issue-id>`>>, and <<element-volume-id,`<volume-id>`>>).
+| isbn| International Standard Book Number.
+| manuscript| Identifier assigned to a manuscript.
+| medline| NLM Medline identifier.
+| mr| Mathematical Reviews (MR) identifier
+| other| None of the named identifiers in this list.
+| pii| The original “Publisher Item Identifier” (PII) 
+                        was a system to provide unique and concise identification for individual published
+                        
+                        documents with a highly specified string. The PII specification is no longer in common
+                        use (2010).
+| pmcid| PubMed Central identifier.
+| pmid| PubMed ID; see https://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed.
+| publisher-id| Publisher’s identifier, such as an “article-id”, “artnum”, “identifier”, “article-number”,
+                        “pub-id”, etc.
+| sici| Serial Item and Contribution Identifier. (An older ANSI/NISO Z39.56 code to uniquely
+                        identify volumes, journal articles, or other parts of a periodical. A journal article
+                        may have more than one SICI, for example, one for a print version and another for
+                        an electronic version.)
+| std-designation| The official number of a standard, from a standards body such as ISO,
+                        NISO, IEEE, ASME, and others, for example, “`Z39.96-2015`”.
+| zbl| Zentralblatt MATH (zbMATH) identifier.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on elements:  <<element-issue-id,`<issue-id>`>>, 
+                  <<element-volume-id,`<volume-id>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of identifier of the cited objects, which may be a standard, book, journal
+                        article, etc. This attribute is typically used to name the type of identifier (such
+                        as “`doi`”) or the name of the organization or type of
+                        organization that created the identifier
+                        (“`ISO`” or “`archive`”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* The values for this attribute are not constrained. Ideally, the first choice should be the type-of-identifier that is an established type (DOIs, ISBN, Standard Designation). If the identifier is not of an established type, name the assigning agency (ISO, ASTM) or type of assigning agency (aggregator, archive, indexing service, standards organization) which assigned the identifier. Potential values include (but are in no way limited to): aggregator Identifier assigned by a data aggregator (generally used with elements <<element-object-id,`<object-id>`>>, <<element-issue-id,`<issue-id>`>>, and <<element-volume-id,`<volume-id>`>>) archive Identifier assigned by an archive or other repository (generally used with elements <<element-object-id,`<object-id>`>>, <<element-issue-id,`<issue-id>`>>, and <<element-volume-id,`<volume-id>`>>) arxiv arXiv archive of electronic preprints doaj Directory of Open Access Journals doi Digital Object Identifier index Identifier assigned by an abstracting or indexing service (generally used with elements <<element-object-id,`<object-id>`>>, <<element-issue-id,`<issue-id>`>>, and <<element-volume-id,`<volume-id>`>>) isbn International Standard Book Number manuscript Identifier assigned to a manuscript pmcid PubMed Central identifier pmid PubMed ID; see https://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed publisher-id Publisher’s identifier standards organization An SDO, national standards organization, regional standards organization, international standards organization, or similar named the identifier of the standard being cited std-designation The official designation of a standard (from a standards body such as ISO, NISO, IEEE, ASME, and others), for example, “`Z39.96-2015`” or “`ISO 9100`”.
+#### OPTIONAL on element:  <<element-object-id,`<object-id>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of identifier assigned to an internal structure such as a figure or boxed
+                        text (typically, a “`doi`”, but the attribute may name the organization that created the identifier, “`CEN`”, or the type of organization that created the identifier,“`reseller`”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* The values for this attribute are not constrained. Ideally, the type-of-identifier should be named as an established type (DOI). If the identifier is not of an established type, name the assigning agency (ISO, ASME) or type of assigning agency (aggregator, archive, indexing service, standards organization) which assigned the identifier.
+
+#### Tagged Sample
+
+##### Identifying a `<pub-id>`as a DOI in a citation
+[source,xml]
+....
+...
+<ref>
+ <mixed-citation publication-type="data">Xu, J. <etal/> 
+  <data-title>Cross-platform ultradeep transcriptomic profiling 
+   of human reference RNA samples by RNA-Seq</data-title>. 
+  <source>Sci. Data</source> 
+  <volume>1</volume>:<elocation-id>140020</elocation-id> 
+  doi: <pub-id pub-id-type="doi">10.1038/sdata.2014.20</pub-id> 
+  (<year iso-8601-date="2014">2014</year>).</mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

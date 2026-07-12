@@ -1,0 +1,40 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/sec-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-sec-meta]
+=== `<sec-meta>` Section Metadata
+
+Container element for section-level metadata that is different from the parent document, for example section-specific keywords.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-app,`<app>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-sec,`<sec>`>>
+#### Description
+
+The following, in order: <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  sec-meta     %sec-meta-model;                             >
+....
+#### Expanded Content Model
+
+((kwd-group)*, (subj-group)*)
+
+#### Related Resources
+
+* See: Hierarchy diagram - Section Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

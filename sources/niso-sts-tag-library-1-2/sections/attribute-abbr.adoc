@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/abbr.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-abbr]
+=== `@abbr` Abbreviation (NISO JATS table model)
+
+An abbreviated version of the cell’s content. This allows visual browsers to use the short form if space is limited, and non-visual browsers can give a cell’s header information in an abbreviated form before rendering each cell. (This attribute is based on and intended to be converted easily to the XHMTL `abbr` attribute.)
+
+#### OPTIONAL on elements:  <<element-td,`<td>`>>, 
+                  <<element-th,`<th>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A brief note of what is in the cell, mostly for use by accessibility
+                        software.
+| Restriction| This attribute is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

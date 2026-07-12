@@ -1,0 +1,135 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tr.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tr]
+=== `<tr>` Table Row
+
+Container element for all the cells in a single table row. (This element is based on and intended to be converted easily to the XHMTL `tr` element.)
+
+#### Usage/Remarks
+Use W3C documentation for the XHTML 1.1 table model (https://www.w3.org/TR/xhtml-modularization/abstract_modules.html#s_tablemodule).
+
+#### Attributes
+
+* <<attribute-align,`@align`>>
+* <<attribute-char,`@char`>>
+* <<attribute-charoff,`@charoff`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-style,`@style`>>
+* <<attribute-valign,`@valign`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-table,`<table>`>>, <<element-tbody,`<tbody>`>>, <<element-tfoot,`<tfoot>`>>, <<element-thead,`<thead>`>>
+#### Description
+
+One or more of any of: <<element-th,`<th>`>> <<element-th,Table Header Cell (NISO JATS table model)>> <<element-td,`<td>`>> <<element-td,Table Data Cell (NISO JATS table model)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %tr.qname;  %tr.content; >
+....
+#### Expanded Content Model
+
+(th | td)+
+
+#### Tagged Samples
+
+#### As part of titled table
+
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+#### As part of array
+
+[source,xml]
+....
+...
+<p>Visually inspect the fracture surfaces to establish 
+ the nature of the fracture, and assess the type of 
+ fracture as follows:
+ <array id="tab_g">
+  <table rules="groups">
+   <col width="9.23%"/>
+   <col width="90.77%"/>
+   <tbody>
+    <tr>
+     <td align="left" scope="row" valign="top">A</td>
+     <td align="left" valign="top">is cohesive failure of 
+      substrate;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">A/B</td>
+     <td align="left" valign="top">is adhesive failure 
+      between substrate and first coat;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">B</td>
+     <td align="left" valign="top">is cohesive failure 
+      of first coat;</td>
+    </tr>
+    ...
+   </tbody>
+  </table>
+ </array>
+</p>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Array (Simple Tabular Array)
+* See: Hierarchy diagram - Table (NISO JATS table model)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

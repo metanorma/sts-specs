@@ -1,0 +1,91 @@
+== Attribute modifications
+
+* Added <<attribute-assigning-authority,`@assigning-authority`>> to more
+  elements: <<element-article-id,`<article-id>`>>, <<element-award-id,`<award-id>`>>,
+  <<element-compound-kwd,`<compound-kwd>`>>,
+  <<element-compound-subject,`<compound-subject>`>>,
+  <<element-contrib-id,`<contrib-id>`>>,
+  <<element-institution-id,`<institution-id>`>>,
+  <<element-issue-id,`<issue-id>`>>, <<element-journal-id,`<journal-id>`>>,
+  <<element-kwd,`<kwd>`>>, `<kwd-group>`,
+  <<element-nested-kwd,`<nested-kwd>`>>,
+  <<element-object-id,`<object-id>`>>,
+  <<element-resource-id,`<resource-id>`>>,
+  <<element-subject,`<subject>`>>, `<subj-group>`,
+  <<element-volume-id,`<volume-id>`>>.
+
+* Added attributes to `<award-id>`: <<attribute-award-id-type,`@award-id-type`>>,
+  <<attribute-award-type,`@award-type`>>, and all the XLink linking
+  attributes (<<attribute-xmlns-xlink,`@xmlns:xlink`>>,
+  <<attribute-xlink-type,`@xlink:type`>>, <<attribute-xlink-href,`@xlink:href`>>,
+  <<attribute-xlink-role,`@xlink:role`>>, <<attribute-xlink-title,`@xlink:title`>>,
+  <<attribute-xlink-show,`@xlink:show`>>, <<attribute-xlink-actuate,`@xlink:actuate`>>).
+
+* Added the `@custom-type`/`@custom-value` solution to the following static
+  lists: <<attribute-form-type,`@form-type`>>,
+  <<attribute-person-group-type,`@person-group-type`>>,
+  <<attribute-pub-id-type,`@pub-id-type`>>,
+  <<attribute-related-term-type,`@related-term-type`>>,
+  <<attribute-ref-type,`@ref-type`>>, `std/@type` (dated, undated, and multipart),
+  `std-ref/@type`.
+
+* Made <<attribute-dtd-version,`@dtd-version`>> optional and provided a value
+  list, one value for each published version of NISO STS, with the intention
+  that new values will be added over time as new versions are voted.
+** The initial values for the list will include the ISO STS values (`iso-0.9`,
+   `iso-1.0`, `iso-1.1`).
+** The initial values for the list will include the NISO STS values, without
+   prefix, since NISO STS is the main focus. The list of NISO STS version
+   numbers (currently `1.0` and `1.1d1`) will grow over time.
+
+* Added <<attribute-degree-contribution,`@degree-contribution`>> to
+  <<element-role,`<role>`>>.
+
+* Added <<attribute-hreflang,`@hreflang`>> to any element that can take
+  `@xlink:href`. This includes adding `@hreflang` to
+  <<element-related-article,`<related-article>`>> and
+  <<element-related-object,`<related-object>`>>.
+
+* Added the value `arabic` to the suggested <<attribute-list-type,`@list-type`>>
+  values.
+
+* Added <<attribute-originator,`@originator`>> to the following elements:
+  <<element-meta-date,`<meta-date>`>>, <<element-release-date,`<release-date>`>>,
+  <<element-release-version-id,`<release-version-id>`>>,
+  <<element-secretariat,`<secretariat>`>>, <<element-self-uri,`<self-uri>`>>,
+  <<element-wi-number,`<wi-number>`>>.
+
+* Made <<attribute-std-id-type,`@std-id-type`>> optional on
+  <<element-std-id,`<std-id>`>>.
+
+* Added explicit tagging for additional list types by adding second-level
+  styling information for a bulleted list named using the
+  <<attribute-style-detail,`@style-detail`>> attribute:
++
+[source,xml]
+----
+<list list-type="bullet" style-detail="dash">
+----
+
+* Added <<attribute-specific-use,`@specific-use`>> to
+  <<element-release-version,`<release-version>`>>.
+
+* Added `@style-detail` to <<element-styled-content,`<styled-content>`>>.
+
+* Added <<attribute-use-type,`@use-type`>> and the linking attributes to
+  <<element-std,`<std>`>>.
+
+* Added `@use-type` to both <<element-mixed-citation,`<mixed-citation>`>> and
+  <<element-element-citation,`<element-citation>`>>.
+
+* Added <<attribute-vocab,`@vocab`>> and
+  <<attribute-vocab-identifier,`@vocab-identifier`>> to:
+  `<kwd>`, `<compound-kwd>`, `<nested-kwd>`,
+  `<subject>`, `<compound-subject>`,
+  `<inline-media>`, `<institution-id>`.
+
+* Added <<attribute-vocab-term,`@vocab-term`>> and
+  <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> to
+  `<inline-media>`.
+
+* Added new `xref/@ref-type` value `abbreviation`.

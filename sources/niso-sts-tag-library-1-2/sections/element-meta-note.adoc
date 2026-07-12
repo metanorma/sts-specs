@@ -1,0 +1,125 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/meta-note.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-meta-note]
+=== `<meta-note>` Metadata Note
+
+Notes within the metadata of a standards document (as opposed to within the <<element-front,`<front>`>> matter or the narrative text <<element-body,`<body>`>>). Such notes are typically a prose representation of some data that may be included as part of the metadata displayed on the cover page, title page, copyright page, or amongst similar metadata.
+
+#### Usage/Remarks
+##### Best Practice
+
+Notes such as superseding notes, adoption notes, and errata information notes are typically tagged as <<element-meta-note,`<meta-note>`>>s. The <<attribute-content-type,`@content-type`>> attribute to distinguish note types; see <<attribute-content-type,`@content-type`>> page for a list of suggested values of meta-note types.
+#### ASME Note
+
+ASME cover blurbs should be tagged as `<meta-note>`s, using the <<attribute-content-type,`@content-type`>> attribute to distinguish note types.
+
+#### Related Elements
+
+This Tag Set contains several elements that are notes or may be used to group notes: <<element-normative-note,`<normative-note>`>> A note with normative content that can be part of the narrative text or inside one of the notes grouping elements in the body text, front matter, or back matter of a standard or adoption. <<element-non-normative-note,`<non-normative-note>`>> A note with non-normative content that can be part of the narrative text or inside one of the notes grouping elements in the body text, front matter, or back matter of a standard or adoption. <<element-notes,`<notes>`>> A section containing notes that may appear in the front or back matter of a standard or adoption. <<element-notes-group,`<notes-group>`>> A headed (titled) group of normative or non-normative notes and examples within the narrative body of a standard or adoption. <<element-meta-note,`<meta-note>`>> A note within the metadata of a standards or adoption document, as opposed to the other note types that occur within the front matter, body, or back matter of a document.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+The following, in order: <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-p,`<p>`>> <<element-p,Paragraph>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  meta-note    %meta-note-model;                            >
+....
+#### Expanded Content Model
+
+(title?, p+)
+
+#### Tagged Samples
+
+#### `<meta-note>` is “superseding” note
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <abstract>
+  <p>This document provides a means by which the information needed 
+   for the procurement of welding consumables to a filler metal 
+   specification can ...</p>
+ </abstract>
+ <meta-note content-type="superseding">
+  <p>Supersedes AWS A5.01M/A5.01:2008 (ISO 14344:2002 MOD)</p>
+ </meta-note>
+</std-meta>
+...
+....
+#### `<meta-note>` is “adoption” note describing double adoption
+
+[source,xml]
+....
+...
+<adoption-front>
+ <std-meta>
+  <title-wrap>
+   <intro>South American National Standard</intro>
+   <main>IEEE guide for safety in a.c. substation grounding</main>
+  </title-wrap>
+  <std-ident>
+   <originator>SABS</originator>
+  </std-ident>
+  <std-ref type="dated">SANS 725:2010</std-ref>
+  <doc-ref>SANS 725:2010 (Edition 1 and IEEE Erata)</doc-ref>
+  <release-date std-type="standard" 
+    date-type="published"
+    iso-8601-date="2010-11">2010-11</release-date>
+  <meta-note content-type="adoption">
+   <p>This national standard is an adoption of IEEE Std 80-2000 
+    and IEEE errata, and is adopted with the permission of the 
+    Institute of Electrical and Electronics Engineers, Inc.</p>
+  </meta-note> 
+ </std-meta>    
+</adoption-front>
+...
+....
+#### There may be many `<meta-note>`s
+
+[source,xml]
+....
+...  
+<meta-note content-type="superseding" id="superseding.note.reg">
+ <p>Supersedes EN ISO 13849-1:2006</p>
+</meta-note>
+<meta-note content-type="superseding" id="superseding.note.nat">
+ <p>Supersedes DIN EN ISO 13849-1:2007-07</p>
+</meta-note>
+<meta-note content-type="validity" id="validity.note.nat">
+ <title>Start of validity</title>
+ <p>This standard takes effect on 2008-12-01.</p>
+ <p>DIN EN 954-1:1997-03 and DIN EN 954-1 Supplement 1:2000-01 may be 
+  used in parallel until 2009-11-30 and DIN EN ISO 13849-1:2007-07 
+  until 2009-12-28.</p>
+</meta-note>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Metadata Note
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

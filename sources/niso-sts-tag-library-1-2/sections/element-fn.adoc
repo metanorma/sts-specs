@@ -1,0 +1,130 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/fn.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-fn]
+=== `<fn>` Footnote
+
+Additional information tied to a particular location in the text. This material is not considered to be part of the body of the text, but is an aside used instead of, in addition to, as a source for, or as a commentary on either some body text or on an element in the metadata.
+
+#### Usage/Remarks
+A footnote `<fn>` usually contains material that cannot stand alone: material that is related to a word, phrase, table cell, or paragraph already in the basic textual material and thus is tied to a particular location in the text or to a structure in the text, such as a table or figure. Thus footnotes may appear within paragraphs of text in the narrative body or inside structures such as figures, boxed-text, and tables as part of that structure.
+#### Collections Footnotes
+
+Footnotes may be collected together for display, inside a grouping element (<<element-fn-group,`<fn-group>`>>).
+#### Display of Footnotes
+
+In print, footnotes are traditionally displayed: at the bottom (foot) of a printed page, at the bottom of the structure such as a table (table notes) or figure (figure notes) they are inside, or in a list at the end of a standards document (which are sometimes called end notes; this grouping is tagged with the <<element-fn-group,`<fn-group>`>> element). Each reference to a footnote is marked by a number or symbol, and the text of the footnote is prefixed by the same number or symbol to help the reader associate the text with its reference(s). On screen, footnotes may appear as clickable icons, in a separate pop-up window, in a list with links at the end of the standards document (<<element-fn-group,`<fn-group>`>>), or in a separate footnote area.
+#### Referencing a Footnote
+
+A reference to a <<element-fn,`<fn>`>> is made with the <<element-xref,`<xref>`>> element, using the <<attribute-ref-type,`@ref-type`>> attribute set to “`fn`”.
+#### Language
+
+To describe a footnote that is not in the same language as the original standards document (for example, a German or Latin footnote for a document in English), use the <<attribute-xml-lang,`@xml:lang`>> attribute on the footnote.
+##### Best Practice Footnote Placement
+
+Within a document, footnotes that are specific to a structure, such as a table of figure, should be placed inside that structure. Footnotes in the narrative text should either be placed: Throughout the XML, at the place to which they are linked, or Grouped at the end of the document. There is no preference as to which practice to choose except that one or the other should be used consistently, not both in the same document.
+When footnotes are grouped at the end of a standards document, wrap them in a <<element-fn-group,`<fn-group>`>> and use an <<element-xref,`<xref>`>> element in the text, as usual, to tie each footnote in the list to a particular location in the text.
+
+#### Attributes
+
+* <<attribute-fn-type,`@fn-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-symbol,`@symbol`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-aff,`<aff>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-def-head,`<def-head>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fig,`<fig>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-fn-group,`<fn-group>`>>, <<element-full,`<full>`>>, <<element-inline-code,`<inline-code>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-related-term,`<related-term>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-speaker,`<speaker>`>>, <<element-std,`<std>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  fn           %fn-model;                                   >
+....
+#### Expanded Content Model
+
+(label?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)+)
+
+#### Tagged Samples
+
+#### Footnote and cross-reference to it
+
+[source,xml]
+....
+...
+<p>... Stakeholders should include older persons and 
+ persons with disabilities from organizations representing 
+ these populations and those persons with a knowledge of 
+ the accessibility needs of children and gender-related 
+ groups<sup><xref ref-type="fn" rid="fn1">1</xref>)</sup>.
+ <fn id="fn1">
+  <p>Further information relating to the involvement of users and 
+   potential users can be found in ...</p>
+ </fn>
+</p>
+...
+....
+#### Table footnotes in a `<fn-group>`
+
+[source,xml]
+....
+...
+<table-wrap>
+ ...
+ <table>...</table>
+ <table-wrap-foot>
+  <fn-group>
+
+   <fn id="tfn00001">
+    <label>A</label>
+    <p>From Benz et al. <bold>(<xref rid="pr00032">32</xref>)</bold>, 
+     Stoltzfus <bold>(<xref rid="pr00044">35</xref>)</bold>, specimens 
+     3.2 mm ( 1/8 in.) in diameter by 127 mm (5 in.) long.</p>
+   </fn>
+
+   <fn id="tfn00002">
+    <label>B</label>
+    <p>See <xref rid="tx00008" ref-type="table">Table X1.8</xref>
+     for alloy compositions.</p>
+   </fn>
+
+   <fn id="tfn00003">
+    <label>C</label>
+    <p>A 3-L accumulator was added to the test chamber on all 
+     tests that were conducted at 3.5 or 6.9 MPa (500 or 1000 
+     psig), except on those tests marked with FootnoteC.</p>
+   </fn>
+
+   <fn id="tfn00004">
+    <label>D</label>
+    <p>NP=Nonpropagating (less than 5 cm of the specimen length 
+     was consumed), CB=Completely burned.</p>
+   </fn>
+
+   <fn id="tfn00005">
+    <label>E</label>
+    <p>These tests were conducted using the video setup. No burn
+     rate was calculated.</p>
+   </fn>
+  </fn-group>
+ </table-wrap-foot>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Footnote
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

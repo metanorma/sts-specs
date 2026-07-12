@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/equal-contrib.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-equal-contrib]
+=== `@equal-contrib` Equal Contribution
+
+Indicates whether or not all contributors contributed equally.
+
+#### Usage/Remarks
+If the contributor whom this attribute modifies contributed equally with all other contributors, this attribute should be set to “`yes`”; if his/her contribution was greater or lesser, then this attribute should be set to “`no`”.
+
+#### OPTIONAL on element:  <<element-contrib,`<contrib>`>>
+
+|===
+| Value| Meaning
+
+| no| This contributor did not participate equally with all other
+                        contributors.
+| yes| This contributor participated equally with all other contributors.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

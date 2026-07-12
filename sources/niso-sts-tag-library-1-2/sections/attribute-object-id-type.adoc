@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/object-id-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-object-id-type]
+=== `@object-id-type` Object Identifier Type (in Related Object)
+
+Type of object identifier (for example, an XML `ID`, a string, the label of the object, a DOI) for a <<element-related-object,`<related-object>`>> element.
+
+#### OPTIONAL on element:  <<element-related-object,`<related-object>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of the identifier, for example, “ID” for an XML
+                        attribute of type `ID`.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

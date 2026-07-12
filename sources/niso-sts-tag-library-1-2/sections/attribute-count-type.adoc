@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/count-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-count-type]
+=== `@count-type` Count Type
+
+Names what is being counted by the <<element-count,`<count>`>> element, for example, methods, working group members, non-normative references, algorithms, etc.
+
+#### Usage/Remarks
+This attribute names the countable object (for example, working group members, images, lemmas, or color figures, algorithms) for which there is no specifically named counting element. The <<element-count,`<count>`>> element and this is attribute _should not_ be used to count elements for which a precombined counting element exists (figures, tables, equations, references, pages, or words).
+
+#### REQUIRED on element:  <<element-count,`<count>`>>
+
+|===
+| Value| Meaning
+
+| The name of an object, element, structure| The object being counted, for example,
+                        “`code`” when counting the number of code fragments or
+                        “`method`” for the number of methods.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+
+#### Tagged Sample
+
+##### `<count>` element distinguishes between normative and ordinary references
+[source,xml]
+....
+...
+<counts>
+ <count count-type="norm-ref" count="61"/>
+ <count count-type="biblio-ref" count="102"/>
+ <fig-count count="3"/>
+ <table-count count="2"/>
+ <equation-count count="0"/>
+ <ref-count count="163"/>
+ <page-count count="67"/>
+</counts>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,41 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tag-terms.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tag-terms]
+=== Tagging Terms and Definitions
+
+NISO STS provides two very different structures for tagging the terms and definitions inside a Term Section (<<element-term-sec,`<term-sec>`>>). One way is to tag terms using TBX (a namespaced vocabulary based on _ISO 30042; TermBase eXchange _). The second way is to use <<element-term-display,`<term-display>`>>, a simpler but less powerful alternative. *TBX:* TBX is a concept-oriented encoding of terminological data. The TBX element <<element-tbx-termEntry,`<tbx:termEntry>`>> models a term using the TBX-namespaced vocabulary and ontology for terms, which can record information about any number of synonymous terms in multiple languages. See _ISO 30042; TermBase eXchange (TBX)_. *Term Display:* The NISO STS element <<element-term-display,`<term-display>`>> uses natural language to describe terms, and may OR MAY NOT incorporate semantic term elements such as definition (<<element-def,`<def>`>>) or pronunciation (<<element-pronunciation,`<pronunciation>`>>). Semantic tagging is encouraged as Best Practice, but is not enforced by the model.
+#### NISO STS <<element-term-display,`<term-display>`>>
+
+The term display element provides a looser description of a term and its definition than TBX-tagging allows (potentially containing just text). The content of the <<element-term-display,`<term-display>`>> element was designed to: Enable tagging term and definition content in the sequence in which that content appears in the standards document; Enable, but not require, tagging of the principle semantic components of terms (such as the term itself, its definition, related-terms, part of speech, pronunciation, etc.); Enable tagging that will make it possible to extract terms and definitions for use in glossaries containing the terms and definitions from many standards; and Make tagging existing terms and definitions easier (in some senses) than using the more strictly structured TBX tagging.
+While the element `<term-display>` _may_ contain only generic textual structures such as lists, it may also contain semantic markup. Use of the semantic elements described below is encouraged, as they enable rich retrieval and reuse as well as display in the narrative text. Term The `<term>` element contains the term being described or defined. Definition The `<def>` element contains the definition for the term being described. Part of Speech A `<part-of-speech>` element contains one part-of-speech associated with this usage of the term. Pronunciation A `<pronunciation>` element contains one way to pronounce the given term. Pronunciation elements typically have very simple content: <pronunciation>trænskrɪpʃən</pronunciation> <pronunciation>'äb-`ərs</pronunciation> <pronunciation>//dıˈstɜ:bəns/</pronunciation> This elements takes the XLink attributes, so a pronunciation element can link to a sound file. Related Term A `<related-term>` element contains a term that is related to the <<element-term,`<term>`>> that is being described. The related term may be a synonym, see or see also, etc. The type of relationship between the term and the related term should be described by the <<attribute-related-term-type,`@related-term-type`>> attribute. Source of the Term The `<term-source>` element names the original source of the term being described.
+The new element <<element-term-display-string,`<term-display-string>`>> may be used to provide additional text, such as annotations, within a <<element-term-display,`<term-display>`>> that does not fit into one of the semantic elements.
+#### TBX Terms
+
+The profile of TBX used in NISO STS is based on _ISO 30042; TermBase eXchange (TBX)_, but has been modified to meet the needs of standards document. The TBX in NISO STS is described at: https://www.iso.org/schema/nisosts/v0.2/doc/tbx/index.html
+The TBX-namespaced elements are also included in the description of the STS elements in this Tag Library.
+#### Using both TBX and <<element-term-display,`<term-display>`>>
+
+While <<element-term-display,`<term-display>`>> will mostly be used by organizations that choose not to employ TBX tagging, even TBX-coding standards organizations may use <<element-term-display,`<term-display>`>> on occasion. An organization can choose to use one or the other; or the two encodings may appear side-by-side as equivalents. Processes that consume NISO STS documents should be prepared to see either or both forms of a term entry and to use one or the other (or both) as appropriate.
+Thus, a term in a term section may be tagged twice, once using a <<element-tbx-termEntry,`<tbx:termEntry>`>> element and once using a <<element-term-display,`<term-display>`>> element. The element <<element-term-display,`<term-display>`>> provides a more appearance-oriented encoding of terminological data that may be used when, for example:
+* It is difficult to generate the 
+                     desired formatted display from a particular TBX entry, or
+* For document conversion when it is difficult to create a useful TBX term entry from
+                     a source document.
+#### Multiple Paragraphs Inside Definitions and Notes
+
+#### Compromises for NISO STS
+
+During the initial development of NISO STS, there were multiple requests to add paragraphs (<<element-p,`<p>`>>) to TBX definitions and notes. This request was denied because of the decision that NISO STS be backwards-compatible with ISO STS. We could see no backwards-compatible way to turn definitions and notes (which are currently text-only) into text _or_ paragraph elements that would not lead to the possibility of very awkward, hard-to-correct data.
+While there is a clear need to divide definitions and notes into paragraphs, such additions to the TBX models will not be made until a future version of NISO STS, when backwards-incompatible changes to ISO STS can be introduced. At _that_ time, the NISO STS Technical Working Group may suggest changing the models of both `<tbx:definition>` and `<tbx:note>` to one or more paragraphs.
+#### Current Best Practice Workaround
+
+Current standards documents sometimes need to tag multiple paragraphs within TBX definitions and notes. An optimal way to do this, such as using a paragraph element, will not be available in Version 1.2 of NISO STS.
+The workaround will accomplish the formatting objective of a paragraph element, but not the semantic one. Current Best Practice, until this issue can be resolved, is to use two <<element-break,`<break>`>> elements to make paragraph distinctions.
+Some current ISO STS users are using return characters to accomplish a paragraph-look now. NISO STS deprecates this practice and encourages the use of double <<element-break,`<break>`>> elements for this purpose, until a proper paragraph element can be added to `<tbx:definition>` and `<tbx:note>`.
+#### Relationship Between the ISO TBX Standard and the TBX in NISO STS
+
+The ISO TBX standard (ISO 30042) and the TBX profile in NISO STS (hereafter STS-TBX) have different purposes. ISO 30042 is designed for use with terminological databases and for exchange in translations. STS-TBX has been designed as a tagging format for the publishing and interchange of prose standards documents. Because STS-TBX focuses on _standards documents_, and ISO 30042 focuses on _databases_, STS-TBX is _very different from_ ISO TBX.
+STS-TBX is a tag set “informed by” the TBX standard and can be considered a profile of ISO TBX. Although STS uses the “tbx:” prefix and namespace, STS has changed some TBX element names, modified character data models to include STS internal elements, and added both new elements and additional attributes to existing elements. For example, the ISO 30042 term and related elements have no inline components; they are plain text strings. By contrast, the STS-TBX allows inline elements such as formulas, images, chemical structures, and internal and external links inside terms.
+As a result, _current STS-TBX is not ISO TBX-compatible_.
+Note, also, that STS-TBX is based on the TBX profile used in ISO STS (the specification on which NISO STS is based), and is backward compatible with the TBX profile in ISO STS.

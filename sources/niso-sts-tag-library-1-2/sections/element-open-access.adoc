@@ -1,0 +1,45 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/open-access.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-open-access]
+=== `<open-access>` Open Access
+
+A container element to hold metadata concerning the open access provisions that apply to a work (for example, which model of charging was used or who paid the open access charges) or the funding information that provided the open access provisions.
+
+#### Usage/Remarks
+This tag is for in-line discussions of open access that cannot readily be captured in the <<element-license,`<license>`>>, or that are in addition to the information there. If there is a paragraph in the text that mentions that this is an open access document, there should be a license element that describes it.
+
+#### Related Elements
+
+The <<element-ali-free_to_read,`<ali:free_to_read>`>> is a simple indication of the status of the standard that does not make any statements about additional reuse rights or restrictions.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-license-p,`<license-p>`>>, <<element-p,`<p>`>>
+#### Description
+
+Any one of: One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  open-access  %open-access-model;                          >
+....
+#### Expanded Content Model
+
+((p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)+)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,21 @@
+== Terms and definitions
+
+The Terms and definitions clause holds terminological entries for the
+document. NISO STS provides two ways to encode them:
+
+=== TBX (ISO 30042 profile)
+
+Use namespaced TBX elements (e.g., <<element-tbx-termEntry,`<tbx:termEntry>`>>,
+<<element-tbx-tig,`<tbx:tig>`>>, <<element-tbx-term,`<tbx:term>`>>,
+<<element-tbx-definition,`<tbx:definition>`>>). TBX is the recommended
+encoding when full semantic information is needed.
+
+=== `<term-display>`
+
+Use <<element-term-display,`<term-display>`>> for simpler, appearance-driven
+terminology tagging. The element
+<<element-term-display-string,`<term-display-string>`>> was added in NISO
+STS 1.2 to hold narrative material.
+
+For a discussion of when to use TBX vs `<term-display>`, see the OCR
+transcript of the source guidelines (Clause 9.2).

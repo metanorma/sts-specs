@@ -1,0 +1,29 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/designator.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-designator]
+=== `@designator` Designator of Journal Edition/Version
+
+This attribute was inherited from JATS and _does not_ have anything to do with a standard’s designation. The attribute is used to hold the edition number, version number, or similar publishing identifier (for a journal, book, etc.) as an unadorned numeric or alphabetic value for machine comparisons.
+
+#### Usage/Remarks
+#### Standards Designation
+
+The standards designation is tagged with the <<element-std-ref,`<std-ref>`>> element.
+#### Use for Book and Journals
+
+When an edition, version, or similar statement concerning a journal contains ordinals (such as “`3rd`”) or words such as “`3rd print edition`”, this attribute can preserve the edition/version number as a simple, machine-processable number, such as “`3`”.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-edition,`<edition>`>>, <<element-extended-by,`<extended-by>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-version,`<version>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Machine processable version of an edition/version number for journal articles.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

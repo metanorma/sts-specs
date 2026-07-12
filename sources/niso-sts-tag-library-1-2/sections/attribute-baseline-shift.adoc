@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/baseline-shift.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-baseline-shift]
+=== `@baseline-shift` Baseline Shift
+
+The position of an inline graphic with respect to the current text baseline (above, on, or below the baseline).
+
+#### Usage/Remarks
+Potential values include the values for baseline offset established as part of the W3C CSS specification and described below. In case of disagreement, values or definitions below are superseded by those in any official W3C publication.
+
+#### OPTIONAL on element:  <<element-inline-graphic,`<inline-graphic>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names the position of the inline graphic.
+| Restriction| This is an optional  attribute; there is no default.
+|===
+###### Suggested usage
+Although designed to accept any text as its value, the following values are suggested for describing the position (above or below the current text baseline) for an inline graphic: baseline There is no shift; the inline graphic displays on the text baseline. sub The inline graphic is offset below the baseline by the same amount as an ordinary subscript. (This is also an XSL-FO value.) sup The inline graphic is offset above the baseline by the same amount as an ordinary superscript. (This is also an XSL-FO value.) top The inline graphic aligns with tallest character on the same line. text-top The inline graphic is offset above the baseline to the top of the tallest ascender. middle The inline graphic is aligned to the middle of the text line (baseline plus half x-height). bottom The inline graphic aligns with the lowest element on the same line. text-bottom The inline graphic is offset below the baseline, to the bottom of the lowest descender. percentage The inline graphic is offset above (positive percent) or below (negative percent) this percentage of the line height. 0% is baseline. (This is also an XSL-FO value.) length The inline graphic is offset above (positive value) or below (negative value) by this amount. This value must carry its units as well as a numeric value. (This is also an XSL-FO value.)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

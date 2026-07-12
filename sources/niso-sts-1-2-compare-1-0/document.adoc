@@ -1,0 +1,20 @@
+= Changes between NISO STS 1.0 and NISO STS 1.2
+:docidentifier: NISO STS 1.2 vs 1.0 Comparison
+:docnumber: NISO-STS-1-2-compare-1-0
+:edition: October 2022
+:publisher: NISO
+:language: en
+:doctype: report
+:mn-document-class: generic
+:publisher: NISO
+:toclevels-pdf: 2
+:local-cache-only:
+
+include::sections/01-introduction.adoc[]
+include::sections/02-backwards-compatible.adoc[]
+include::sections/03-processing-meta.adoc[]
+include::sections/04-elements-added.adoc[]
+include::sections/05-element-modifications.adoc[]
+include::sections/06-attributes-added.adoc[]
+include::sections/07-attribute-modifications.adoc[]
+include::sections/08-tbx-and-term-display.adoc[]

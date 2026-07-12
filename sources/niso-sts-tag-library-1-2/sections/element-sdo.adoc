@@ -1,0 +1,70 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/sdo.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-sdo]
+=== `<sdo>` ISO-Specific Name For a Standards Development Organization
+
+For ISO-specific processing, indicates the standards development organization from which this document emanates. (The NISO STS Tag Set recommends using the <<element-std-org,`<std-org>`>> or the <<element-originator,`<originator>`>> element to hold this information.)
+
+#### Usage/Remarks
+This element is specific to ISO-related standards processing and may be used only inside <<element-doc-ident,`<doc-ident>`>> within <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>. The element is retained for backwards-compatibility purposes.
+#### ISO Note
+
+When used for ISO-related processing, the <<element-sdo,`<sdo>`>> element (which appears as a child of the <<element-doc-ident,`<doc-ident>`>> element) will usually have the same content as the <<element-originator,`<originator>`>> element (which appears as a child of <<element-std-ident,`<std-ident>`>>).
+Also within ISO standards documents, the textual sub-components of <<element-sdo,`<sdo>`>> are closely related to the fields of ISO URNs as documented in RFC 5141 (from which some of the text describing them is borrowed). Content of this element is expected, though not required, to be: ISO (International Organization for Standardization) IEC (International Electro-Technical Commission) ISO-IEC (ISO/IEC joint work) ISO-CIE (ISO/CIE joint work) ISO-ASTM (ISO/ASTM joint work) ISO-IEEE (ISO/IEEE joint work)
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-doc-ident,`<doc-ident>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  sdo          %sdo-model;                                  >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### ISO-specific, inside `<iso-meta>`
+[source,xml]
+....
+...
+<iso-meta>
+ <title-wrap xml:lang="en">...</title-wrap>
+ <doc-ident>
+  <sdo>ISO</sdo>
+  <proj-id>...</proj-id>
+  <language>en</language>
+  <release-version stage-code="60.60">IS</release-version>
+  <urn>urn:iso:std:iso:2560:ed-3:v1:en</urn>
+ </doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <edition>3</edition>
+  <version>1</version>
+ </std-ident>
+ ...  
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

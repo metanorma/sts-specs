@@ -1,0 +1,104 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/align.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-align]
+=== `@align` Horizontal Alignment (NISO JATS table model)
+
+Sets the horizontal (line) alignment inside a table cell. (This attribute is based on and intended to be converted easily to the XHMTL `align` attribute.)
+
+#### Usage/Remarks
+The <<attribute-align,`@align`>> attribute is used in two different ways: It specifies the horizontal alignment for the entire cell (such as “`center`” or “`justify`”). It is used for aligning values in table cells on a particular character within the cell, commonly a decimal point. Alignment on a particular character requires that three attributes be set in the XML document: The <<attribute-align,`@align`>> attribute value is set to the word “`char`”. The <<attribute-char,`@char`>> attribute value is set to the actual character to use for the aligning, for example, to align on a decimal point, the “`.`” character. The <<attribute-charoff,`@charoff`>> attribute value is set to the percent of the current column width to be placed to the left of the (left edge of the) alignment character, for example, “`30`”.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-col,`<col>`>>, <<element-colgroup,`<colgroup>`>>, <<element-tbody,`<tbody>`>>, <<element-td,`<td>`>>, <<element-tfoot,`<tfoot>`>>, <<element-th,`<th>`>>, <<element-thead,`<thead>`>>, <<element-tr,`<tr>`>>
+|===
+| Value| Meaning
+
+| center| Center align the cell contents.
+| char| Align the text on the character identified with the <<attribute-char,`@char`>> attribute.
+| justify| Fully justify cell contents (right and left justification).
+| left| Left justify cell contents.
+| right| Right justify cell contents.
+| Restriction| This is an optional  attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Setting alignment for table cells
+
+[source,xml]
+....
+...
+<table border="2" rules="groups" style="border-collapse: collapse; 
+ border-style: solid;" width="298">
+ <col width="41.86%"/>
+ <col width="58.14%"/>
+ <thead>
+  <tr>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Shore AO value</bold></th>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Value of spring force</bold>, 
+    <italic>F</italic>, <bold>in</bold> mN<break/>
+    (&Delta;<italic>F</italic>&equals; &plusmn; 37,5 mN)<xref 
+    ref-type="fn" rid="table-fn_23.1"><sup>a</sup></xref></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">0</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">550,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">10</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">1 300,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">20</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 
+    1px" valign="middle">2 050,0</td>
+  </tr>
+  ...
+ </tbody>
+</table>
+...
+....
+#### Character/character offset alignment
+
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+...
+<table border="1">
+<colgroup>
+<col span="1"/>
+<col align="char" char="." charoff="50%" span="1"/>
+</colgroup>
+...
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

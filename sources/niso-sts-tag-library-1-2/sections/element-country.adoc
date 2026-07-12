@@ -1,0 +1,82 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/country.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-country]
+=== `<country>` Country (in an address)
+
+Country name used within an address.
+
+#### Related Elements
+
+An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as a company or organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-country,`@country`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-collab,`<collab>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-std-org-loc,`<std-org-loc>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  country      (#PCDATA %country-elements;)*                >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### `<country>` as part of standards organization location `<std-org-loc>`
+
+[source,xml]
+....
+... 
+<std-org std-org-level="2" std-org-role="co-producer" std-org-type="sdo">
+ <std-org-name>CSA Group</std-org-name>
+ <std-org-abbrev>CSA</std-org-abbrev>
+ <std-org-loc
+  ><addr-line>5060 Spectrum Way, Suite 100</addr-line>
+  <city>Mississauga</city>
+  <state>Ontario</state>
+  <country>Canada</country>
+  <postal-code>L4W 5N6</postal-code>
+  <uri>http://www.csagroup.org/</uri></std-org-loc>
+</std-org>
+...
+....
+#### `<country>` used in address
+
+[source,xml]
+....
+...
+<p>Comments on standards should be submitted to the following address:
+ <address>
+  <addr-line>Secretary, IEEE-SA Standards Board</addr-line>
+  <addr-line>445 Hoes Lane</addr-line>
+  <addr-line><city>Piscataway</city>, <state>NJ</state> 
+   <postal-code>08854</postal-code></addr-line>
+  <addr-line><country>USA</country></addr-line>
+ </address>
+</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

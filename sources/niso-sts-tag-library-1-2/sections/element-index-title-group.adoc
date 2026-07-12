@@ -1,0 +1,151 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/index-title-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-index-title-group]
+=== `<index-title-group>` Index Title Group
+
+Container element to hold the various titles for a structured Index (or a subdivision of such an Index).
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-subtitle,`<subtitle>`>> <<element-subtitle,Article Subtitle>>, zero or more <<element-trans-title-group,`<trans-title-group>`>> <<element-trans-title-group,Translated Title Group>>, zero or more <<element-alt-title,`<alt-title>`>> <<element-alt-title,Alternate Title (in an Index)>>, zero or more <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  index-title-group
+                        %index-title-group-model;                    >
+....
+#### Expanded Content Model
+
+(label?, title?, subtitle*, trans-title-group*, alt-title*, fn-group?)
+
+#### Tagged Samples
+
+#### In index, with page numbers
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  <index-entry>
+   <term>Abbreviations</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx869"/>
+    <nav-pointer specific-use="page">7</nav-pointer></nav-pointer-group>
+  </index-entry>
+
+  <index-entry>
+   <term>Acquisition Management Systems Control (AMSC) number</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx284"/>
+    <nav-pointer specific-use="page">2</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx752"/>
+    <nav-pointer specific-use="page">6</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx1235"/>
+    <nav-pointer specific-use="page">19</nav-pointer></nav-pointer-group>
+  </index-entry>
+ </index>
+ ...
+</back>
+...
+....
+#### In index with alphabetical divisions
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  ...
+
+  <index-div>
+   <index-title-group>
+    <title>D</title>
+   </index-title-group>
+   <index-entry>
+    <term>degree of linear polarization</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.41"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>device efficiency</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.18"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>divergence angle</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.19.1"/>, 
+     <nav-pointer specific-use="section" rid="sec_3.19.2"/></nav-pointer-group>
+   </index-entry>
+  </index-div>
+  ...
+
+ </index>
+ ...
+</back>
+...
+....
+#### In another index with alphabetical divisions, where entry includes page range
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group><title>Index</title></index-title-group>
+  <index-div>
+   <index-title-group><title>A</title></index-title-group>
+   ...
+   <index-entry>
+    <term>access vocabularies</term>
+    <see-entry>entry terms</see-entry>
+   </index-entry>
+   ...
+   <index-entry>
+    <term>adjectives</term>
+    <nav-pointer-group
+     ><nav-pointer rid="idx320" nav-pointer-type="start-of-range"
+     >26</nav-pointer>&ndash;<nav-pointer rid="idx486" nav-pointer-type="end-of-range"
+     >27</nav-pointer></nav-pointer-group>    
+    <see-also-entry>modifiers in compound terms</see-also-entry>
+   </index-entry>
+   ...
+  </index-div>
+  ...
+ </index>
+</back>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Index Title Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

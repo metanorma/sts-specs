@@ -1,0 +1,7 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/alpha-nfd-index-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-alpha-nfd-index-group]
+=== Index Group
+
+image::images/index-group.png[index-group.png]

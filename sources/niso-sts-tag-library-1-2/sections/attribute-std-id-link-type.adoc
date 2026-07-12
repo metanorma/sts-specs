@@ -1,0 +1,49 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/std-id-link-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-std-id-link-type]
+=== `@std-id-link-type` Standard ID Link Type
+
+Names the type of link that the <<element-std-id,`<std-id>`>> contains, for example, a DOI
+
+#### OPTIONAL on element:  <<element-std-id,`<std-id>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of link that the <<element-std-id,`<std-id>`>> contains, for example, a DOI.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* Although this attribute may take any text as values, the suggested values should be the following or similar: `doi` The standard identifier (<<element-std-id,`<std-id>`>>) is a Digital Object Identifier (DOI). `urn` The standard identifier (<<element-std-id,`<std-id>`>>) is a Uniform Resource Name (URN). `internal-pub-id` The standard identifier (<<element-std-id,`<std-id>`>>) is an internal publication identifier of a standards organization.
+
+#### Tagged Sample
+
+##### Three `<std-id>` all DOIs
+[source,xml]
+....
+...
+<std
+ ><std-ref>ISO 9001:2015</std-ref>
+ <std-id-group>
+  <std-id 
+    std-id-type="dated" 
+    std-id-link-type="doi" 
+    originator="ISO">10.9999/ISO-9001:2015</std-id>
+  <std-id 
+    std-id-type="dated" 
+    std-id-link-type="doi"
+    std-relationship-type="adopted-from" 
+    originator="EN">10.9998/EN-ISO-9001:2015</std-id>
+  <std-id 
+    std-id-type="dated" 
+    std-id-link-type="doi"
+    std-relationship-type="adopted-from"
+    originator="BSI" >10.9998/BS-EN-ISO-9001:2015</std-id>
+ </std-id-group></std>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

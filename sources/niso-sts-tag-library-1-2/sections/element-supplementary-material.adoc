@@ -1,0 +1,108 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/supplementary-material.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-supplementary-material]
+=== `<supplementary-material>` Supplementary Material
+
+Container element for a description of, and possibly a pointer to, external resources that support the standards document, but which are not part of the content of the standard.
+
+#### Usage/Remarks
+Supplemental material is used to add detail, background, or context to a standards document by providing, for example, multimedia objects such as audio clips and applets; additional XML-tagged sections, tables, or figures; raw data in a spreadsheet; or a software application in a repository. Supplementary material includes resources such as the following: Voluminous material (such as a materials database or the multiple data sets behind a standard that references the highlights of those datasets) that supports the conclusions of the narrative but can never accompany a standard based on sheer mass; “Extra” tables that do not display with the work, but that record the measurements on which the standard is based; Adjunctive material, for example: X-rays, blue prints, gauges, discs, etc. that cannot be included in the body of the standards document for physical reasons; Material added to the work for enhancement purposes, such as a quiz, an instructional video, the 3-minute version of the reaction that was described in the work with narrative and a few still images, a form that can be filled out or copied, or similar material; or A movie, MP3 file, or other binary material that is not directly part of the content of the standards document. An object that cannot be fully represented in print (such as a movie, sound file, or animation) should not _automatically_ be considered supplemental. If the object is necessary for understanding the standard (in other words, the object is “integral” as defined by NISO RP-15-2013, discussed below), it should be tagged at the appropriate location in the text using the <<element-media,`<media>`>> element.
+#### Contents of the Supplementary Material Element
+
+The <<element-supplementary-material,`<supplementary-material>`>> element _does not_ contain the supplementary object(s), even if the objects are expressed in XML; supplementary objects are external to the XML standards document rather than part of the XML standards document. The <<element-supplementary-material,`<supplementary-material>`>> element contains descriptions of the object(s), and it may also, _but is not required to_, contain a pointer to the objects(s). For example, if the supplementary object is an additional graphic, that graphic is _described_ in the supplementary material but not held there. The <<element-graphic,`<graphic>`>> element that is permissible inside <<element-supplementary-material,`<supplementary-material>`>> is intended for a description of an object, not to hold the object. For example, a <<element-supplementary-material,`<supplementary-material>`>> element could contain a description of an animation, including the first frame of the animation (tagged as a <<element-graphic,`<graphic>`>> element), a caption describing the animation, and a cross-reference made to the external file that holds the full animation.
+#### Typing
+
+The <<attribute-mimetype,`@mimetype`>> attribute may be used to identify a file type for a <<element-supplementary-material,`<supplementary-material>`>> element.
+
+#### Related Elements
+
+The NISO STS Tag Sets contain several elements that describe and point to non-XML material: <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-media,`<media>`>>, <<element-supplementary-material,`<supplementary-material>`>>, and <<element-inline-supplementary-material,`<inline-supplementary-material>`>>. The elements <<element-graphic,`<graphic>`>> and <<element-inline-graphic,`<inline-graphic>`>> contain a pointer to a still image (such as a photograph, diagram, line drawing, etc.) that is part of the document. The element <<element-media,`<media>`>> contains a pointer to a non-XML, frequently binary, object (such as a movie, audio clip, dataset, or other non-XML format) that is integral to the document’s content, where “integral” means that the media object is discussed within (and possibly displayed within) the document; the media object is part of the document.
+In contrast, the elements <<element-supplementary-material,`<supplementary-material>`>> and <<element-inline-supplementary-material,`<inline-supplementary-material>`>> are used to _describe_ either XML material (such as figures, tables, and sections) or non-XML material (such as graphics, films, audio clips, datasets, or other material) that are considered to be “additional material” (non-integral) accompanying a document. Like <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, and <<element-media,`<media>`>>, the supplementary material elements never contain the object they describe, even if it is an XML object such as a figure, although they may point to it.
+The element <<element-inline-supplementary-material,`<inline-supplementary-material>`>> is used to mark up a reference to additional material, where the reference appears within the regular flow of the text and does not have a preview image or separate caption. The <<element-supplementary-material,`<supplementary-material>`>> element is used to describe a more complicated reference, where the description of the supplementary object resembles a figure in that it can be positioned as a floating or anchored object and may take a caption.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-mime-subtype,`@mime-subtype`>>
+* <<attribute-mimetype,`@mimetype`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Any combination of: <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> Any combination of: Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  supplementary-material
+                        %supplementary-material-model;               >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, (object-id)*, label?, (caption)?, (legend)*, (kwd-group)*, (subj-group)*, (alt-text | long-desc | email | ext-link | uri)*, (disp-formula | disp-formula-group | chem-struct-wrap | fn-group | fn | disp-quote | speech | statement | table-wrap | p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group | def-list | list | alternatives | array | code | graphic | media | preformat)*, (attrib | permissions)*)
+
+#### Tagged Sample
+
+##### `<supplementary-material>` structure describing a supplementary resource
+[source,xml]
+....
+...
+<body>
+ <p>...</p>
+ <fig id="F1">...</fig>
+ <supplementary-material id="S1" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xlink:title="local_file" xlink:href="1471-2105-1-1-s1.pdf"
+   mimetype="application/pdf">
+  <label>Additional material</label>
+  <caption>
+   <p>Supplementary PDF file supplied by authors.</p>
+  </caption>
+ </supplementary-material>
+ <p>RNAPs seem to have arisen twice in evolution
+  (see the <inline-supplementary-material
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xlink:title="local_file" xlink:href="timeline">
+  Timeline</inline-supplementary-material>. A large
+  family of multisubunit RNAPs includes bacterial
+  enzymes, archeal enzymes, eukaryotic nuclear RNAPs,
+  plastid-encoded chloroplast RNAPs, and RNAPs from
+  some eukaryotic viruses. ...</p>
+ ...
+</body>
+...
+....
+
+#### Related Resources
+
+* See: “Additional (Non-integral) Display Objects” in Tagging Figures, Graphics, and Multimedia
+* See: Hierarchy diagram - Supplementary Material
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

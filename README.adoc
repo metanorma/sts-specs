@@ -1,0 +1,56 @@
+= NISO STS Encoding Specifications for IEC and ISO
+
+:this-repo: https://github.com/riboseinc/sts-specs[this repository]
+
+== Purpose
+
+{this-repo} stores the Metanorma AsciiDoc source for the coding guidelines that
+IEC and ISO publish for encoding and using
+https://www.niso.org/standards-committees/sts{empty}[NISO STS]
+(NISO Standard Tag Suite, ANSI/NISO Z39.102-2022).
+
+The repository also authors a derived, sample encoding specification for a
+fictional standards body ("Acme Standards Organization", ASO), published as
+document _ASO 1003:2026_, that mirrors the best practices documented in the
+ISO/IEC guidelines.
+
+== Copyright
+
+All content hosted here — including the contents of the `reference-docs/`
+directory — is the copyright of their respective owners. Copyright holders
+include, but are not limited to:
+
+* ISO (International Organization for Standardization)
+* IEC (International Electrotechnical Commission)
+* NISO (National Information Standards Organization)
+* Mulberry Technologies, Inc. (Tag Library software)
+
+Source documents under `reference-docs/` are reproduced here for editorial
+reference while authoring the AsciiDoc derivatives in `sources/`. Any
+redistribution of the reference material must comply with the terms set by
+their respective owners.
+
+== Documents in this repository
+
+* `sources/niso-sts-tag-library-1-2/` — the NISO STS 1.2 Tag Library
+  (470 pages: 116 chapters + 354 element pages) converted to Metanorma
+  AsciiDoc from `reference-docs/NISO-STS-TL-1-2-html/`. Built with
+  `:mn-document-class: iso`.
+* `sources/aso-1003-2026/` — _ASO 1003:2026, Encoding specification for ASO
+  publications in NISO STS_, a sample SDO profile derived from _ISO STS
+  Guidelines for coding ed.2.1_. Built with `:mn-document-class: generic`.
+
+Future documents will be added as the OCR pipeline (TODO.impl/02-ocr-run-all)
+unblocks them.
+
+== Tooling
+
+This repository ships two Ruby libraries under `lib/sts_specs/`:
+
+* `StsSpecs::Ocr` — wraps the shared GLM OCR client for PDF text extraction.
+* `StsSpecs::TagLibrary` — converts the NISO STS Tag Library HTML tree to
+  AsciiDoc.
+
+Run the test suite with `bundle exec rspec`. Run the conversion scripts from
+`scripts/` (see each script's `--help` / `--dry-run` mode).
+

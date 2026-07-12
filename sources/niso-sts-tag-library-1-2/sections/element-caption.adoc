@@ -1,0 +1,204 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/caption.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-caption]
+=== `<caption>` Caption of a Figure, Table, Etc.
+
+Container element for the textual description and title that are associated with an object, for example, with a figure (<<element-fig,`<fig>`>>) or a table (<<element-table-wrap,`<table-wrap>`>>).
+
+#### Usage/Remarks
+A caption is a visible textual description of a table, figure, or similar object. In print or display, a caption is usually recognizable because it is not part of the ordinary text flow; it sits just under, above, beside, or in the same small window or page area as the tabular portions of a table or the graphical portions of a figure.
+#### Content of a Caption
+
+A <<element-caption,`<caption>`>> may contain many kinds of text associated with its object, for example: a title (tagged as <<element-title,`<title>`>>), one or more descriptive paragraphs (tagged as <<element-p,`<p>`>>), normative or non-normative notes and examples, or
+A legend, key, where-list, variable list, or similar structure that describes symbols, letters, or terms used in this figure, table, etc. should be tagged using the <<element-legend,`<legend>`>> element, which is a peer to <<element-caption,`<caption>`>>. In previous versions of this tag set, such lists were tagged within paragraphs as part of the caption.
+#### Labels
+
+The text of the caption does not typically include words such as “Figure 3.” or “Table 11-a”. These labels may not be present in the XML file, since many publishers choose to generate such text at display time. If they are present in the source XML, they should be preserved using the <<element-label,`<label>`>> element on the structure (such as a figure) that contains the <<element-caption,`<caption>`>>.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-style,`@style`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-title,`<title>`>> <<element-title,Title>>, zero or one Any combination of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  caption      %caption-model;                              >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, title?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)*)
+
+#### Tagged Samples
+
+#### For table
+
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+#### For typical figure
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### Figure whose caption includes table
+
+[source,xml]
+....
+...
+<fig id="fB.1">
+ <label>Figure B.1</label>
+ <caption>
+  <title>Reading diagram for single-axis scanner</title>
+  <p><table-wrap>
+    <table>
+     <thead>
+      <tr><th align="center" colspan="2">Scanner with single 
+       axis reading diagram</th></tr>
+      <tr><th align="center">Parameter</th>
+       <th align="center">Term</th></tr>
+     </thead>
+     <tbody>
+      <tr><td align="center">A</td>
+       <td>minimum reading distance</td></tr>
+      <tr><td align="center">B</td>
+       <td>depth of field</td></tr>
+      <tr><td align="center">R</td>
+       <td>maximum reading distance</td></tr>
+     </tbody>
+    </table>
+   </table-wrap></p>
+ </caption>
+ <graphic position="anchor" xlink:href="f-b-1.png"/>
+</fig>
+...
+....
+#### Table captions with paragraph or non-normative note
+
+image::images/Caption-w-title-plus.png[Caption-w-title-plus.png]
+[source,xml]
+....
+...
+<table-wrap>
+ <caption>
+  <title>Coffee Mug Options</title>
+  <p content-type="scale">Measurements in centimeters</p>
+ </caption>
+ <table border="1" style="border:1px solid black; border-collapse: collapse;">
+  <thead>
+   <tr><th>Product</th><th>Height</th><th>Diameter</th></tr>
+  </thead>
+  <tbody style="text-align: right;">
+   <tr><td>1</td><td>9</td><td>7.5</td></tr>
+   <tr><td>2</td><td>10</td><td>11</td></tr>
+   <tr><td>2s</td><td>12</td><td>11</td></tr>
+  </tbody>
+ </table>
+</table-wrap>
+
+<table-wrap>
+ <caption>
+  <title>Coffee cup Options</title>
+  <non-normative-note>
+   <p>This list is not intended to exclude other configurations; 
+    it provides a few conforming configurations as examples.</p>
+  </non-normative-note>
+ </caption>
+ <table border="1" style="border:1px solid black; border-collapse: collapse;">
+  <thead>
+   <tr><th>Product</th><th>Height</th><th>Diameter</th></tr>
+  </thead>
+  <tbody style="text-align: right;">
+   <tr><td>c1</td><td>3</td><td>7.5</td></tr>
+   <tr><td>c2</td><td>4</td><td>11</td></tr>
+   <tr><td>c3</td><td>5</td><td>11</td></tr>
+  </tbody>
+ </table>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Caption of a Figure, Table, Etc.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

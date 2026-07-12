@@ -1,0 +1,1503 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/combined-themes.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-combined-themes]
+=== Theme Index
+
+This Theme Index is provided to help new users of NISO STS gain familiarity with the tag suite.
+#### Top-level Elements
+
+* <<element-standard,`<standard>`>>
+* <<element-adoption,`<adoption>`>>
+#### Primary Structural Components
+
+* <<element-front,`<front>`>>
+* <<element-body,`<body>`>>
+* <<element-back,`<back>`>>
+* <<element-adoption-front,`<adoption-front>`>>
+#### Front Matter Elements
+
+* Front Matter Groupings
+                     
+                        
+                           <<element-std-doc-meta,`<std-doc-meta>`>>
+                           
+                        
+                        
+                           <<element-std-meta,`<std-meta>`>>
+                           
+                        
+                        
+                           <<element-iso-meta,`<iso-meta>`>>
+                           
+                        
+                        
+                           <<element-reg-meta,`<reg-meta>`>>
+                           
+                        
+                        
+                           <<element-nat-meta,`<nat-meta>`>>
+                           
+                        
+                        
+                           <<element-ack,`<ack>`>>
+                           
+                        
+                        
+                           <<element-notes,`<notes>`>>
+                           
+                        
+                        
+                           <<element-toc,`<toc>`>>
+                           
+                        
+                        
+                           <<element-toc-group,`<toc-group>`>>
+                           
+                        
+                        
+                           <<element-sec,`<sec>`>>
+* Metadata (usually contained in <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>)
+                     
+                        Identifying the standard
+                           
+                              
+                                 <<element-std-ident,`<std-ident>`>>
+                                 
+                              
+                              
+                                 <<element-doc-number,`<doc-number>`>>
+                                 
+                              
+                              
+                                 <<element-part-number,`<part-number>`>>
+                                 
+                              
+                              
+                                 <<element-doc-type,`<doc-type>`>>
+                                 
+                              
+                              
+                                 <<element-edition,`<edition>`>>
+                                 
+                              
+                              
+                                 <<element-version,`<version>`>>
+                                 
+                              
+                              
+                                 <<element-std-id-group,`<std-id-group>`>>
+                                 
+                              
+                              
+                                 <<element-isbn,`<isbn>`>>
+                                 
+                              
+                              
+                                 <<element-issn,`<issn>`>>
+                                 
+                              
+                              
+                                 <<element-issn-l,`<issn-l>`>>
+                                 
+                              
+                              
+                                 <<element-suppl-type,`<suppl-type>`>>
+                                 
+                              
+                              
+                                 <<element-suppl-number,`<suppl-number>`>>
+                                 
+                              
+                              
+                                 <<element-suppl-version,`<suppl-version>`>>
+                                 
+                              
+                              
+                                 <<element-year,`<year>`>>
+                                 
+                              
+                              
+                                 <<element-doc-ident,`<doc-ident>`>>
+                                 
+                              
+                              
+                                 <<element-sdo,`<sdo>`>>
+                                 
+                              
+                              
+                                 <<element-proj-id,`<proj-id>`>>
+                                 
+                              
+                              Titles
+                                 
+                                    
+                                       <<element-title-wrap,`<title-wrap>`>>
+                                       
+                                    
+                                    
+                                       <<element-intro,`<intro>`>>
+                                       
+                                    
+                                    
+                                       <<element-intro-title-wrap,`<intro-title-wrap>`>>
+                                       
+                                    
+                                    
+                                       <<element-main,`<main>`>>
+                                       
+                                    
+                                    
+                                       <<element-main-title-wrap,`<main-title-wrap>`>>
+                                       
+                                    
+                                    
+                                       <<element-compl,`<compl>`>>
+                                       
+                                    
+                                    
+                                       <<element-compl-title-wrap,`<compl-title-wrap>`>>
+                                       
+                                    
+                                    
+                                       <<element-full,`<full>`>>
+                                       
+                                    
+                                 
+                              
+                              Dates
+                                 
+                                    
+                                       <<element-pub-date,`<pub-date>`>>
+                                       
+                                    
+                                    
+                                       <<element-release-date,`<release-date>`>>
+                                       
+                                    
+                                    
+                                       <<element-meta-date,`<meta-date>`>>
+                                       
+                                    
+                                 
+                              
+                           
+                        
+                        Organizational information
+                           
+                              
+                                 <<element-std-org,`<std-org>`>>
+                                 
+                              
+                              
+                                 <<element-std-org-group,`<std-org-group>`>>
+                                 
+                              
+                              
+                                 <<element-std-ref,`<std-ref>`>>
+                                 
+                              
+                              
+                                 <<element-doc-ref,`<doc-ref>`>>
+                                 
+                              
+                              
+                                 <<element-comm-ref,`<comm-ref>`>>
+                                 
+                              
+                              
+                                 <<element-comm-ref-group,`<comm-ref-group>`>>
+                                 
+                              
+                              
+                                 <<element-secretariat,`<secretariat>`>>
+                                 
+                              
+                              
+                                 <<element-std-org,`<std-org>`>>
+                                 
+                              
+                              
+                                 <<element-std-org-name,`<std-org-name>`>>
+                                 
+                              
+                              
+                                 <<element-std-org-abbrev,`<std-org-abbrev>`>>
+                                 
+                              
+                              
+                                 <<element-std-org-loc,`<std-org-loc>`>>
+                                 
+                              
+                              
+                                 <<element-std-org-group,`<std-org-group>`>>
+                                 
+                              
+                              
+                                 <<element-accrediting-organization,`<accrediting-organization>`>>
+                                 
+                              
+                              
+                                 <<element-authorization,`<authorization>`>>
+                                 
+                              
+                              
+                                 <<element-proj-id,`<proj-id>`>>
+                                 
+                              
+                              
+                                 <<element-doc-ident,`<doc-ident>`>>
+                                 
+                              
+                              
+                                 <<element-wi-number,`<wi-number>`>>
+                                 
+                              
+                              
+                                 <<element-originator,`<originator>`>>
+                                 
+                              
+                           
+                        
+                        Describing the standard
+                           
+                              
+                                 <<element-content-language,`<content-language>`>>
+                                 
+                              
+                              
+                                 <<element-pub-date,`<pub-date>`>>
+                                 
+                              
+                              
+                                 <<element-release-date,`<release-date>`>>
+                                 
+                              
+                              
+                                 <<element-meta-date,`<meta-date>`>>
+                                 
+                              
+                              
+                                 <<element-page-count,`<page-count>`>>
+                                 
+                              
+                              
+                                 <<element-counts,`<counts>`>>
+                                 
+                              
+                              
+                                 <<element-std-xref,`<std-xref>`>>
+                                 
+                              
+                              
+                                 <<element-self-uri,`<self-uri>`>>
+                                 
+                              
+                              
+                                 <<element-meta-note,`<meta-note>`>>
+                                 
+                              
+                              
+                                 <<element-abstract,`<abstract>`>>
+                                 
+                              
+                              
+                                 <<element-language,`<language>`>>
+                                 
+                              
+                              
+                                 <<element-urn,`<urn>`>>
+                                 
+                              
+                              Subject matter information
+                                 
+                                    ICS Elements
+                                       
+                                          
+                                             <<element-ics-wrap,`<ics-wrap>`>>
+                                             
+                                          
+                                          
+                                             <<element-ics,`<ics>`>>
+                                             
+                                          
+                                          
+                                             <<element-ics-desc,`<ics-desc>`>>
+                                             
+                                          
+                                       
+                                    
+                                    Subject Group Elements
+                                       
+                                          
+                                             <<element-subj-group,`<subj-group>`>>
+                                             
+                                          
+                                          
+                                             <<element-subject,`<subject>`>>
+                                             
+                                          
+                                          
+                                             <<element-compound-subject,`<compound-subject>`>>
+                                             
+                                          
+                                          
+                                             <<element-compound-subject-part,`<compound-subject-part>`>>
+                                             
+                                          
+                                       
+                                    
+                                    Keyword Elements
+                                       
+                                          
+                                             <<element-kwd-group,`<kwd-group>`>>
+                                             
+                                          
+                                          
+                                             <<element-kwd,`<kwd>`>>
+                                             
+                                          
+                                          
+                                             <<element-compound-kwd,`<compound-kwd>`>>
+                                             
+                                          
+                                          
+                                             <<element-compound-kwd-part,`<compound-kwd-part>`>>
+                                             
+                                          
+                                          
+                                             <<element-nested-kwd,`<nested-kwd>`>>
+                                             
+                                          
+                                       
+                                    
+                                 
+                              
+                              Status information
+                                 
+                                    
+                                       <<element-release-version-id,`<release-version-id>`>>
+                                       
+                                    
+                                    
+                                       <<element-is-proof,`<is-proof>`>>
+                                       
+                                    
+                                    
+                                       <<element-release-version,`<release-version>`>>
+                                       
+                                    
+                                 
+                              
+                              Counts
+                                 
+                                    
+                                       <<element-counts,`<counts>`>>
+                                       
+                                    
+                                    
+                                       <<element-count,`<count>`>>
+                                       
+                                    
+                                    
+                                       <<element-fig-count,`<fig-count>`>>
+                                       
+                                    
+                                    
+                                       <<element-table-count,`<table-count>`>>
+                                       
+                                    
+                                    
+                                       <<element-equation-count,`<equation-count>`>>
+                                       
+                                    
+                                    
+                                       <<element-ref-count,`<ref-count>`>>
+                                       
+                                    
+                                    
+                                       <<element-page-count,`<page-count>`>>
+                                       
+                                    
+                                    
+                                       <<element-word-count,`<word-count>`>>
+                                       
+                                    
+                                 
+                              
+                           
+                        
+                        Ownership
+                           
+                              
+                                 <<element-permissions,`<permissions>`>>
+                                 
+                              
+                              
+                                 <<element-copyright-statement,`<copyright-statement>`>>
+                                 
+                              
+                              
+                                 <<element-copyright-year,`<copyright-year>`>>
+                                 
+                              
+                              
+                                 <<element-copyright-holder,`<copyright-holder>`>>
+                                 
+                              
+                              
+                                 <<element-ali-free_to_read,`<ali:free_to_read>`>>
+                                 
+                              
+                              
+                                 <<element-license,`<license>`>>
+                                 
+                              
+                              
+                                 <<element-ali-license_ref,`<ali:license_ref>`>>
+                                 
+                              
+                              
+                                 <<element-license-p,`<license-p>`>>
+                                 
+                              
+                              
+                                 <<element-price,`<price>`>>
+                                 
+                              
+                              
+                                 <<element-attrib,`<attrib>`>>
+                                 
+                              
+                           
+                        
+                        Custom Metadata
+                           
+                              
+                                 <<element-custom-meta-group,`<custom-meta-group>`>>
+                                 
+                              
+                              
+                                 <<element-custom-meta,`<custom-meta>`>>
+                                 
+                              
+                              
+                                 <<element-meta-name,`<meta-name>`>>
+                                 
+                              
+                              
+                                 <<element-meta-value,`<meta-value>`>>
+#### Back Matter Elements
+
+* <<element-bio,`<bio>`>>
+* <<element-fn-group,`<fn-group>`>>
+* <<element-glossary,`<glossary>`>>
+* <<element-ref-list,`<ref-list>`>>
+* <<element-ack,`<ack>`>>
+* <<element-notes,`<notes>`>>
+* Appendix Elements
+                     
+                        
+                           <<element-app-group,`<app-group>`>>
+                           
+                        
+                        
+                           <<element-app,`<app>`>>
+                           
+                        
+                        
+                           <<element-annex-type,`<annex-type>`>>
+#### Text Structures
+
+* Labels & Titles
+                     
+                        
+                           <<element-title,`<title>`>>
+                           
+                        
+                        
+                           <<element-subtitle,`<subtitle>`>>
+                           
+                        
+                        
+                           <<element-trans-title-group,`<trans-title-group>`>>
+                           
+                        
+                        
+                           <<element-trans-title,`<trans-title>`>>
+                           
+                        
+                        
+                           <<element-trans-subtitle,`<trans-subtitle>`>>
+                           
+                        
+                        
+                           <<element-alt-title,`<alt-title>`>>
+                           
+                        
+                        
+                           <<element-label,`<label>`>>
+                           
+                        
+                        
+                           <<element-caption,`<caption>`>>
+                           
+                        
+                        
+                           <<element-legend,`<legend>`>>
+                           
+                        
+                        
+                           <<element-toc-title-group,`<toc-title-group>`>>
+                           
+                        
+                        
+                           <<element-index-title-group,`<index-title-group>`>>
+* Terms & Definitions
+                     
+                        
+                           <<element-tbx-termEntry,`<tbx:termEntry>`>>
+                           
+                        
+                        
+                           <<element-term-display,`<term-display>`>>
+                           
+                        
+                        
+                           <<element-def,`<def>`>>
+                           
+                        
+                        
+                           <<element-part-of-speech,`<part-of-speech>`>>
+                           
+                        
+                        
+                           <<element-pronunciation,`<pronunciation>`>>
+                           
+                        
+                        
+                           <<element-related-term,`<related-term>`>>
+                           
+                        
+                        
+                           <<element-term,`<term>`>>
+                           
+                        
+                        
+                           <<element-term-source,`<term-source>`>>
+                           
+                        
+                        
+                           <<element-term-display-string,`<term-display-string>`>>
+* Block Display Elements
+                     
+                        
+                           <<element-address,`<address>`>>
+                           
+                        
+                        
+                           <<element-alternatives,`<alternatives>`>>
+                           
+                        
+                        
+                           <<element-textual-form,`<textual-form>`>>
+                           
+                        
+                        
+                           <<element-array,`<array>`>>
+                           
+                        
+                        
+                           <<element-boxed-text,`<boxed-text>`>>
+                           
+                        
+                        
+                           <<element-chem-struct-wrap,`<chem-struct-wrap>`>>
+                           
+                        
+                        
+                           <<element-code,`<code>`>>
+                           
+                        
+                        
+                           <<element-fig,`<fig>`>>
+                           
+                        
+                        
+                           <<element-fig-group,`<fig-group>`>>
+                           
+                        
+                        
+                           <<element-graphic,`<graphic>`>>
+                           
+                        
+                        
+                           <<element-media,`<media>`>>
+                           
+                        
+                        
+                           <<element-preformat,`<preformat>`>>
+                           
+                        
+                        
+                           <<element-supplementary-material,`<supplementary-material>`>>
+                           
+                        
+                        
+                           <<element-table-wrap,`<table-wrap>`>>
+                           
+                        
+                        
+                           <<element-table-wrap-group,`<table-wrap-group>`>>
+                           
+                        
+                        
+                           <<element-disp-formula,`<disp-formula>`>>
+                           
+                        
+                        
+                           <<element-disp-formula-group,`<disp-formula-group>`>>
+                           
+                        
+                        
+                           <<element-editing-instruction,`<editing-instruction>`>>
+                           
+                        
+                        
+                           <<element-disp-quote,`<disp-quote>`>>
+                           
+                        
+                        
+                           <<element-speech,`<speech>`>>
+                           
+                        
+                        
+                           <<element-speaker,`<speaker>`>>
+                           
+                        
+                        
+                           <<element-statement,`<statement>`>>
+                           
+                        
+                        
+                           <<element-verse-group,`<verse-group>`>>
+                           
+                        
+                        
+                           <<element-verse-line,`<verse-line>`>>
+                           
+                        
+                        Signatures
+                           
+                              
+                                 <<element-sig-block,`<sig-block>`>>
+                                 
+                              
+                              
+                                 <<element-sig,`<sig>`>>
+                                 
+                              
+                           
+                        
+                        Notes & Examples
+                           
+                              
+                                 <<element-notes-group,`<notes-group>`>>
+                                 
+                              
+                              
+                                 <<element-normative-note,`<normative-note>`>>
+                                 
+                              
+                              
+                                 <<element-non-normative-note,`<non-normative-note>`>>
+                                 
+                              
+                              
+                                 <<element-normative-example,`<normative-example>`>>
+                                 
+                              
+                              
+                                 <<element-non-normative-example,`<non-normative-example>`>>
+                                 
+                              
+                           
+                        
+                        Tables
+                           
+                              
+                                 <<element-table-wrap,`<table-wrap>`>>
+                                 
+                              
+                              
+                                 <<element-table-wrap-group,`<table-wrap-group>`>>
+                                 
+                              
+                              
+                                 <<element-table,`<table>`>>
+                                 
+                              
+                              
+                                 <<element-table-wrap-foot,`<table-wrap-foot>`>>
+                                 
+                              
+                              
+                                 <<element-col,`<col>`>>
+                                 
+                              
+                              
+                                 <<element-colgroup,`<colgroup>`>>
+                                 
+                              
+                              
+                                 <<element-thead,`<thead>`>>
+                                 
+                              
+                              
+                                 <<element-tr,`<tr>`>>
+                                 
+                              
+                              
+                                 <<element-th,`<th>`>>
+                                 
+                              
+                              
+                                 <<element-tfoot,`<tfoot>`>>
+                                 
+                              
+                              
+                                 <<element-tbody,`<tbody>`>>
+                                 
+                              
+                              
+                                 <<element-td,`<td>`>>
+                                 
+                              
+                              
+                                 <<element-hr,`<hr>`>>
+                                 
+                              
+                              
+                                 <<element-oasis-table,`<oasis:table>`>>
+                                 
+                              
+                              
+                                 <<element-oasis-tbody,`<oasis:tbody>`>>
+                                 
+                              
+                           
+                        
+                        Lists
+                           
+                              
+                                 <<element-list,`<list>`>>
+                                 
+                              
+                              
+                                 <<element-list-item,`<list-item>`>>
+                                 
+                              
+                              
+                                 <<element-def-list,`<def-list>`>>
+                                 
+                              
+                              
+                                 <<element-term-head,`<term-head>`>>
+                                 
+                              
+                              
+                                 <<element-def-head,`<def-head>`>>
+                                 
+                              
+                              
+                                 <<element-def-item,`<def-item>`>>
+                                 
+                              
+                              
+                                 <<element-term,`<term>`>>
+                                 
+                              
+                              
+                                 <<element-def,`<def>`>>
+* Inline/Phrase Elements
+                     
+                        
+                           <<element-award-id,`<award-id>`>>
+                           
+                        
+                        
+                           <<element-funding-source,`<funding-source>`>>
+                           
+                        
+                        
+                           <<element-open-access,`<open-access>`>>
+                           
+                        
+                        
+                           <<element-chem-struct,`<chem-struct>`>>
+                           
+                        
+                        
+                           <<element-inline-code,`<inline-code>`>>
+                           
+                        
+                        
+                           <<element-inline-formula,`<inline-formula>`>>
+                           
+                        
+                        
+                           <<element-inline-graphic,`<inline-graphic>`>>
+                           
+                        
+                        
+                           <<element-inline-media,`<inline-media>`>>
+                           
+                        
+                        
+                           <<element-private-char,`<private-char>`>>
+                           
+                        
+                        
+                           <<element-abbrev,`<abbrev>`>>
+                           
+                        
+                        
+                           <<element-index-term,`<index-term>`>>
+                           
+                        
+                        
+                           <<element-index-term-range-end,`<index-term-range-end>`>>
+                           
+                        
+                        
+                           <<element-milestone-end,`<milestone-end>`>>
+                           
+                        
+                        
+                           <<element-milestone-start,`<milestone-start>`>>
+                           
+                        
+                        
+                           <<element-named-content,`<named-content>`>>
+                           
+                        
+                        
+                           <<element-fn,`<fn>`>>
+                           
+                        
+                        
+                           <<element-target,`<target>`>>
+                           
+                        
+                        
+                           <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>
+                           
+                        
+                        
+                           <<element-xref,`<xref>`>>
+                           
+                        
+                        Emphasis
+                           
+                              
+                                 <<element-bold,`<bold>`>>
+                                 
+                              
+                              
+                                 <<element-fixed-case,`<fixed-case>`>>
+                                 
+                              
+                              
+                                 <<element-italic,`<italic>`>>
+                                 
+                              
+                              
+                                 <<element-monospace,`<monospace>`>>
+                                 
+                              
+                              
+                                 <<element-num,`<num>`>>
+                                 
+                              
+                              
+                                 <<element-overline,`<overline>`>>
+                                 
+                              
+                              
+                                 <<element-roman,`<roman>`>>
+                                 
+                              
+                              
+                                 <<element-sans-serif,`<sans-serif>`>>
+                                 
+                              
+                              
+                                 <<element-sc,`<sc>`>>
+                                 
+                              
+                              
+                                 <<element-strike,`<strike>`>>
+                                 
+                              
+                              
+                                 <<element-underline,`<underline>`>>
+                                 
+                              
+                           
+                        
+                        Ruby
+                           
+                              
+                                 <<element-ruby,`<ruby>`>>
+                                 
+                              
+                              
+                                 <<element-rb,`<rb>`>>
+                                 
+                              
+                              
+                                 <<element-rt,`<rt>`>>
+                                 
+                              
+                           
+                        
+                        Formatting
+                           
+                              
+                                 <<element-break,`<break>`>>
+                                 
+                              
+                              
+                                 <<element-hr,`<hr>`>>
+                                 
+                              
+                              
+                                 <<element-styled-content,`<styled-content>`>>
+                                 
+                              
+                              
+                                 <<element-sub,`<sub>`>>
+                                 
+                              
+                              
+                                 <<element-sup,`<sup>`>>
+                                 
+                              
+                           
+                        
+                        Special Characters
+                           
+                              
+                                 <<element-private-char,`<private-char>`>>
+                                 
+                              
+                              
+                                 <<element-glyph-data,`<glyph-data>`>>
+                                 
+                              
+                              
+                                 <<element-glyph-ref,`<glyph-ref>`>>
+* Math
+                     
+                        
+                           <<element-tex-math,`<tex-math>`>>
+                           
+                        
+                        
+                           <<element-mml-math,`<mml:math>`>>
+#### Navigation & Linking Elements
+
+* Table of Contents
+                     
+                        
+                           <<element-toc,`<toc>`>>
+                           
+                        
+                        
+                           <<element-toc-title-group,`<toc-title-group>`>>
+                           
+                        
+                        
+                           <<element-p,`<p>`>>
+                           
+                        
+                        
+                           <<element-toc-entry,`<toc-entry>`>>
+                           
+                        
+                        
+                           <<element-nav-pointer,`<nav-pointer>`>>
+                           
+                        
+                        
+                           <<element-nav-pointer-group,`<nav-pointer-group>`>>
+                           
+                        
+                        
+                           <<element-toc-div,`<toc-div>`>>
+                           
+                        
+                        
+                           <<element-toc-group,`<toc-group>`>>
+* Index
+                     
+                        
+                           <<element-index,`<index>`>>
+                           
+                        
+                        
+                           <<element-index-title-group,`<index-title-group>`>>
+                           
+                        
+                        
+                           <<element-index-entry,`<index-entry>`>>
+                           
+                        
+                        
+                           <<element-nav-pointer,`<nav-pointer>`>>
+                           
+                        
+                        
+                           <<element-nav-pointer-group,`<nav-pointer-group>`>>
+                           
+                        
+                        
+                           <<element-see-entry,`<see-entry>`>>
+                           
+                        
+                        
+                           <<element-see-also-entry,`<see-also-entry>`>>
+                           
+                        
+                        
+                           <<element-index-div,`<index-div>`>>
+                           
+                        
+                        
+                           <<element-index-term,`<index-term>`>>
+                           
+                        
+                        
+                           <<element-term,`<term>`>>
+                           
+                        
+                        
+                           <<element-see,`<see>`>>
+                           
+                        
+                        
+                           <<element-see-also,`<see-also>`>>
+                           
+                        
+                        
+                           <<element-index-term-range-end,`<index-term-range-end>`>>
+* External Linking
+                     
+                        
+                           <<element-email,`<email>`>>
+                           
+                        
+                        
+                           <<element-ext-link,`<ext-link>`>>
+                           
+                        
+                        
+                           <<element-uri,`<uri>`>>
+                           
+                        
+                        
+                           <<element-inline-supplementary-material,`<inline-supplementary-material>`>>
+                           
+                        
+                        
+                           <<element-related-article,`<related-article>`>>
+                           
+                        
+                        
+                           <<element-related-object,`<related-object>`>>
+* Related Materials
+                     
+                        
+                           <<element-related-object,`<related-object>`>>
+                           
+                        
+                        
+                           <<element-related-article,`<related-article>`>>
+                           
+                        
+                        
+                           <<element-journal-id,`<journal-id>`>>
+#### Persons and/or Groups Elements
+
+* <<element-person-group,`<person-group>`>>
+* <<element-anonymous,`<anonymous>`>>
+* <<element-collab,`<collab>`>>
+* <<element-collab-alternatives,`<collab-alternatives>`>>
+* <<element-contrib-group,`<contrib-group>`>>
+* <<element-contrib,`<contrib>`>>
+* <<element-contrib-id,`<contrib-id>`>>
+* <<element-name,`<name>`>>
+* <<element-surname,`<surname>`>>
+* <<element-given-names,`<given-names>`>>
+* <<element-prefix,`<prefix>`>>
+* <<element-suffix,`<suffix>`>>
+* <<element-name-alternatives,`<name-alternatives>`>>
+* <<element-string-name,`<string-name>`>>
+* <<element-degrees,`<degrees>`>>
+* <<element-address,`<address>`>>
+* <<element-aff,`<aff>`>>
+* <<element-aff-alternatives,`<aff-alternatives>`>>
+* <<element-author-comment,`<author-comment>`>>
+* <<element-bio,`<bio>`>>
+* <<element-on-behalf-of,`<on-behalf-of>`>>
+* <<element-role,`<role>`>>
+* <<element-etal,`<etal>`>>
+#### Date Elements
+
+* <<element-date,`<date>`>>
+* <<element-month,`<month>`>>
+* <<element-day,`<day>`>>
+* <<element-era,`<era>`>>
+* <<element-string-date,`<string-date>`>>
+#### Address Elements
+
+* <<element-address,`<address>`>>
+* <<element-addr-line,`<addr-line>`>>
+* <<element-city,`<city>`>>
+* <<element-country,`<country>`>>
+* <<element-fax,`<fax>`>>
+* <<element-institution,`<institution>`>>
+* <<element-institution-wrap,`<institution-wrap>`>>
+* <<element-institution-id,`<institution-id>`>>
+* <<element-phone,`<phone>`>>
+* <<element-postal-code,`<postal-code>`>>
+* <<element-state,`<state>`>>
+#### Bibliographic References & Referencing Other Documents
+
+* Referencing Standards
+                     
+                        
+                           <<element-std-xref,`<std-xref>`>>
+                           
+                        
+                        
+                           <<element-std-ident,`<std-ident>`>>
+                           
+                        
+                        
+                           <<element-std-ref,`<std-ref>`>>
+                           
+                        
+                        
+                           <<element-std-id-group,`<std-id-group>`>>
+                           
+                        
+                        
+                           <<element-std-id,`<std-id>`>>
+* Reference/Citation Elements
+                     
+                        
+                           <<element-ref-list,`<ref-list>`>>
+                           
+                        
+                        
+                           <<element-ref,`<ref>`>>
+                           
+                        
+                        
+                           <<element-citation-alternatives,`<citation-alternatives>`>>
+                           
+                        
+                        
+                           <<element-element-citation,`<element-citation>`>>
+                           
+                        
+                        
+                           <<element-mixed-citation,`<mixed-citation>`>>
+                           
+                        
+                        
+                           <<element-annotation,`<annotation>`>>
+                           
+                        
+                        
+                           <<element-article-title,`<article-title>`>>
+                           
+                        
+                        
+                           <<element-chapter-title,`<chapter-title>`>>
+                           
+                        
+                        
+                           <<element-collab,`<collab>`>>
+                           
+                        
+                        
+                           <<element-collab-alternatives,`<collab-alternatives>`>>
+                           
+                        
+                        
+                           <<element-comment,`<comment>`>>
+                           
+                        
+                        
+                           <<element-conf-acronym,`<conf-acronym>`>>
+                           
+                        
+                        
+                           <<element-conf-date,`<conf-date>`>>
+                           
+                        
+                        
+                           <<element-conf-loc,`<conf-loc>`>>
+                           
+                        
+                        
+                           <<element-conf-name,`<conf-name>`>>
+                           
+                        
+                        
+                           <<element-conf-sponsor,`<conf-sponsor>`>>
+                           
+                        
+                        
+                           <<element-data-title,`<data-title>`>>
+                           
+                        
+                        
+                           <<element-date,`<date>`>>
+                           
+                        
+                        
+                           <<element-date-in-citation,`<date-in-citation>`>>
+                           
+                        
+                        
+                           <<element-day,`<day>`>>
+                           
+                        
+                        
+                           <<element-edition,`<edition>`>>
+                           
+                        
+                        
+                           <<element-email,`<email>`>>
+                           
+                        
+                        
+                           <<element-elocation-id,`<elocation-id>`>>
+                           
+                        
+                        
+                           <<element-etal,`<etal>`>>
+                           
+                        
+                        
+                           <<element-ext-link,`<ext-link>`>>
+                           
+                        
+                        
+                           <<element-fpage,`<fpage>`>>
+                           
+                        
+                        
+                           <<element-gov,`<gov>`>>
+                           
+                        
+                        
+                           <<element-institution,`<institution>`>>
+                           
+                        
+                        
+                           <<element-institution-wrap,`<institution-wrap>`>>
+                           
+                        
+                        
+                           <<element-institution-id,`<institution-id>`>>
+                           
+                        
+                        
+                           <<element-isbn,`<isbn>`>>
+                           
+                        
+                        
+                           <<element-issn,`<issn>`>>
+                           
+                        
+                        
+                           <<element-issn-l,`<issn-l>`>>
+                           
+                        
+                        
+                           <<element-issue,`<issue>`>>
+                           
+                        
+                        
+                           <<element-issue-id,`<issue-id>`>>
+                           
+                        
+                        
+                           <<element-issue-part,`<issue-part>`>>
+                           
+                        
+                        
+                           <<element-issue-title,`<issue-title>`>>
+                           
+                        
+                        
+                           <<element-lpage,`<lpage>`>>
+                           
+                        
+                        
+                           <<element-month,`<month>`>>
+                           
+                        
+                        
+                           <<element-name,`<name>`>>
+                           
+                        
+                        
+                           <<element-name-alternatives,`<name-alternatives>`>>
+                           
+                        
+                        
+                           <<element-object-id,`<object-id>`>>
+                           
+                        
+                        
+                           <<element-page-range,`<page-range>`>>
+                           
+                        
+                        
+                           <<element-part-title,`<part-title>`>>
+                           
+                        
+                        
+                           <<element-patent,`<patent>`>>
+                           
+                        
+                        
+                           <<element-person-group,`<person-group>`>>
+                           
+                        
+                        
+                           <<element-pub-id,`<pub-id>`>>
+                           
+                        
+                        
+                           <<element-publisher-loc,`<publisher-loc>`>>
+                           
+                        
+                        
+                           <<element-publisher-name,`<publisher-name>`>>
+                           
+                        
+                        
+                           <<element-role,`<role>`>>
+                           
+                        
+                        
+                           <<element-season,`<season>`>>
+                           
+                        
+                        
+                           <<element-series,`<series>`>>
+                           
+                        
+                        
+                           <<element-size,`<size>`>>
+                           
+                        
+                        
+                           <<element-source,`<source>`>>
+                           
+                        
+                        
+                           <<element-std,`<std>`>>
+                           
+                        
+                        
+                           <<element-string-name,`<string-name>`>>
+                           
+                        
+                        
+                           <<element-supplement,`<supplement>`>>
+                           
+                        
+                        
+                           <<element-trans-source,`<trans-source>`>>
+                           
+                        
+                        
+                           <<element-trans-title,`<trans-title>`>>
+                           
+                        
+                        
+                           <<element-uri,`<uri>`>>
+                           
+                        
+                        
+                           <<element-version,`<version>`>>
+                           
+                        
+                        
+                           <<element-volume,`<volume>`>>
+                           
+                        
+                        
+                           <<element-volume-id,`<volume-id>`>>
+                           
+                        
+                        
+                           <<element-volume-series,`<volume-series>`>>
+                           
+                        
+                        
+                           <<element-year,`<year>`>>
+#### Processing Elements
+
+* Alternative Versions
+                     
+                        
+                           <<element-alternatives,`<alternatives>`>>
+                           
+                        
+                        
+                           <<element-citation-alternatives,`<citation-alternatives>`>>
+                           
+                        
+                        
+                           <<element-collab-alternatives,`<collab-alternatives>`>>
+                           
+                        
+                        
+                           <<element-name-alternatives,`<name-alternatives>`>>
+                           
+                        
+                        
+                           <<element-aff-alternatives,`<aff-alternatives>`>>
+* Accessibility
+                     
+                        
+                           <<element-alt-text,`<alt-text>`>>
+                           
+                        
+                        
+                           <<element-long-desc,`<long-desc>`>>
+* Other
+                     
+                        
+                           <<element-editing-instruction,`<editing-instruction>`>>
+                           
+                        
+                        
+                           <<element-xi-include,`<xi:include>`>>
+                           
+                        
+                        
+                           <<element-xi-fallback,`<xi:fallback>`>>
+#### Processing Metadata Elements
+
+* <<element-processing-meta,`<processing-meta>`>>
+* <<element-extended-by,`<extended-by>`>>
+* <<element-restricted-by,`<restricted-by>`>>

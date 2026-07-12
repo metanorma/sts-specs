@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sample OIML NISO STS XML — OIML R 7:1979 (Clinical thermometers).
+
+  This is a hand-authored reference output that conforms to the rules in
+  OIML X 999:2026. It is the converter's reference output for the matching
+  Metanorma presentation XML at ../examples/r007-e1979.presentation.xml
+  (extracted from mn-samples-oiml/sources/r007-e79/).
+
+  Generated sample outputs for every other mn-samples-oiml document live
+  alongside their sources under mn-samples-oiml-samples/.
+-->
+<standard xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:lang="en"
+          dtd-version="1.2">
+  <processing-meta tagset-family="sts"
+                   base-tagset="interchange"
+                   table-model="xhtml"
+                   mathml="MathML 3.0"
+                   terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 7:1979</doc-identifier>
+      <std-title-group>
+        <title>Clinical thermometers (mercury-in-glass, with maximum device)</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>1979</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>© 1979 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>1979</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+  </front>
+  <body>
+    <sec id="sec_scope">
+      <label>1</label>
+      <title>Scope</title>
+      <p>This Recommendation applies to clinical thermometers, mercury-in-glass,
+        with maximum device.</p>
+    </sec>
+    <sec id="sec_field_of_application">
+      <label>2</label>
+      <title>Field of application</title>
+      <p>This Recommendation applies to all clinical thermometers of the
+        maximum device type placed on the market in OIML Member States.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ANSI/NISO Z39.102-2022</doc-identifier>
+            </std-ident>
+            <title>STS: Standards Tag Suite (Version 1.2)</title>
+            <pub-date><year>2022</year></pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

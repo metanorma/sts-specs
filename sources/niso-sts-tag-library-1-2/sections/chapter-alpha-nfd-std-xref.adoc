@@ -1,0 +1,7 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/alpha-nfd-std-xref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-alpha-nfd-std-xref]
+=== Cross-Reference to a Standard
+
+image::images/std-xref.png[std-xref.png]

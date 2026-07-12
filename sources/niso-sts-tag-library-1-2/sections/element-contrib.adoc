@@ -1,0 +1,54 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/contrib.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-contrib]
+=== `<contrib>` Contributor
+
+Wrapper element to contain the information about a single contributor, for example, an author or editor.
+
+#### Attributes
+
+* <<attribute-contrib-type,`@contrib-type`>>
+* <<attribute-corresp,`@corresp`>>
+* <<attribute-deceased,`@deceased`>>
+* <<attribute-equal-contrib,`@equal-contrib`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-rid,`@rid`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-contrib-group,`<contrib-group>`>>
+#### Description
+
+The following, in order: <<element-contrib-id,`<contrib-id>`>> <<element-contrib-id,Contributor Identifier>>, zero or more Any combination of: Contributor Naming Elements <<element-anonymous,`<anonymous>`>> <<element-anonymous,Anonymous>> <<element-collab,`<collab>`>> <<element-collab,Collaborative (Group) Author>> <<element-collab-alternatives,`<collab-alternatives>`>> <<element-collab-alternatives,Collaboration Alternatives>> <<element-name,`<name>`>> <<element-name,Name of Person (Structured)>> <<element-name-alternatives,`<name-alternatives>`>> <<element-name-alternatives,Name Alternatives>> <<element-string-name,`<string-name>`>> <<element-string-name,Name of Person (Unstructured)>> <<element-degrees,`<degrees>`>> <<element-degrees,Degree(s)>>, zero or more Any combination of: <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-aff,`<aff>`>> <<element-aff,Affiliation>> <<element-aff-alternatives,`<aff-alternatives>`>> <<element-aff-alternatives,Affiliation Alternatives>> <<element-author-comment,`<author-comment>`>> <<element-author-comment,Author Comment>> <<element-bio,`<bio>`>> <<element-bio,Biography>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-on-behalf-of,`<on-behalf-of>`>> <<element-on-behalf-of,On Behalf of>> <<element-role,`<role>`>> <<element-role,Role or Function Title of Contributor>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  contrib      %contrib-model;                              >
+....
+#### Expanded Content Model
+
+((contrib-id)*, (anonymous | collab | collab-alternatives | name | name-alternatives | string-name)*, (degrees)*, (address | aff | aff-alternatives | author-comment | bio | email | ext-link | on-behalf-of | role | uri | xref)*)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

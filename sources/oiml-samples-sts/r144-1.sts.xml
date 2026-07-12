@@ -1,0 +1,1116 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 144-1</doc-identifier>
+      <std-title-group>
+        <title>Instruments for continuous measurement of CO, NOx in stationary source emissions.&#x2009;&#x2014;&#x2009;Metrological and technical requirements</title>
+      </std-title-group>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2013 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_75a722d6-02e6-1b57-b3d1-e58a137349f9">
+        <list-item>&#x2014;International Recommendations (OIML R), which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;International Documents (OIML D), which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;International Guides (OIML G), which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology;</list-item>
+        <list-item>&#x2014;International Basic Publications (OIML B), which define the operating rules of the various OIML structures and systems; and</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from OIML Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of Vocabularies (OIML V) and periodically commissions legal metrology experts to write Expert Reports (OIML E). Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 144-1:2013 (E)&#x2009;&#x2014;&#x2009;was developed by OIML Technical Subcommittee TC 16/SC 1/p 1 Air pollution. It was approved for final publication by the International Committee of Legal Metrology at its 48th meeting in Ho Chi Minh City, Viet Nam, in October 2013 and will be submitted to the International Conference on Legal Metrology in 2016 for formal sanction. OIML R 144 is published in three parts: Part 1: Metrological and technical requirements, Part 2: Metrological and performance tests and Part 3 Test report format. OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: +33 1 48 78 12 82  Fax: +33 1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org  OIML R 144-1:2013 (E)</p>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <title>Scope</title>
+      <sec>
+        <title>Application</title>
+        <p>This Recommendation applies to measuring instruments (hereafter referred to as &#x201C;gas analytical systems&#x201D;) that serve to determine the volume fraction of carbon monoxide (CO), nitrogen monoxide (NO), nitrogen dioxide (NO2), or sum of nitrogen oxides (NOx) and establishes the conditions and requirements with which such systems shall comply in order to meet the requirements for measurement results of the pollutant content in stationary source emissions within OIML Member States.</p>
+        <p>This Recommendation applies to gas analytical systems intended for measuring (analyzing) industrial emissions, and provides metrological and technical requirements for gas analytical systems, as well as means and methods for checking their normalized characteristics.</p>
+        <p>The principle of operation of gas analytical systems can be based on infrared (IR)
+and ultraviolet (UV) absorption methods, chemiluminescence, electrochemistry or IR
+methods with correlation filters, as well as on a combination of the methods mentioned
+above.Note Note1.1,NoteThis Recommendation is also applicable to analyzers that are capable of analyzing only one or two of mentioned components.</p>
+      </sec>
+      <sec>
+        <title>Restrictions</title>
+        <p>Gas analytical system software certification problems are beyond the scope of this Recommendation.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Terminology</title>
+      <sec>
+        <title>gas analytical system</title>
+        <p>assembly to carry out specified gas analytical measurements (ISO&#xA0;7504:2001<xref rid="fn_1" ref-type="fn">1</xref>)Note Note2.1,NoteIn this Recommendation, a gas analytical system means a system that continuously measures the volume fraction of CO (carbon monoxide), NO (nitrogen monoxide ), NO<sub>2</sub> (nitrogen dioxide), or sum of nitrogen oxides (NO<sub>x</sub>), or measures only CO or only NO and NO2, or NOx by analyzing the gas samples taken directly from the smokestack or gas pipe in industry. This system includes</p>
+        <list list-type="bullet" id="_8a3496c3-aedf-4f38-87aa-f55ab9985241">
+          <list-item>&#x2014;a means for sampling and sample preparation (in the case of extractive sampling),</list-item>
+          <list-item>&#x2014;a gas analyzer,</list-item>
+          <list-item>&#x2014;a means for adjusting zero (gas analyzer),</list-item>
+          <list-item>&#x2014;a means for adjusting the gas analyzer using a calibration gas mixture,</list-item>
+          <list-item>&#x2014;a means for the accumulation, processing and storage of measurement results,</list-item>
+          <list-item>&#x2014;a means for the control and adjustment of the main components of the system,</list-item>
+          <list-item>&#x2014;an interface to connect devices measuring the gas flow parameters of exhaust emissions, and</list-item>
+          <list-item>&#x2014;gas and electric lines of communication.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>sampling probe</title>
+        <p>device inserted into the gas, designed to take a representative sample thereof, to which a sample line or a sample container is connected (ISO&#xA0;7504:2001)</p>
+      </sec>
+      <sec>
+        <title>sample line</title>
+        <p>line provided to remove a representative sample of a gas to be analyzed and to transport
+it to the analyzer (ISO&#xA0;7504:2001)Note Note2.3,NoteA sample line may include devices such as coarse and fine filters, dryers or separators which are necessary to prepare the sample for analysis.</p>
+      </sec>
+      <sec>
+        <title>gas analyzer</title>
+        <p>assembly which enables qualitative and/or quantitative determinations (measurements)
+of substances content on the basis of their chemical or physical properties (ISO&#xA0;7504:2001)Note Note2.4,NoteA gas analyzer measures all components covered by this Recommendation (CO, NO, NO<sub>2</sub>, or NO<sub>x</sub>), or measures only CO, or only NO and NO<sub>2</sub>, or NO<sub>x</sub>.</p>
+      </sec>
+      <sec>
+        <title>input measurement signal</title>
+        <p>measurement signal functionally related to the measurand&#x2009;&#x2014;&#x2009;the volume fraction of a component to be measured, which enters the input of a measuring instrument, a measuring channel or a separate converter component</p>
+      </sec>
+      <sec>
+        <title>gas handling system</title>
+        <p>all components of the gas analytical system, from the sampling probe to the tube of the gas sample outlet, through which the gas samples, including the Calibration Gas Mixture (hereafter termed &#x201C;CGM&#x201D;) and the zero gas, are conveyed by the pump</p>
+      </sec>
+      <sec>
+        <title>adjustment</title>
+        <p>set of operations carried out on a measuring system so that it provides prescribed indications corresponding to given values of a quantity to be measured (3.11OIML&#xA0;V&#xA0;2:2012,  3.11)</p>
+        <sec>
+          <title>user adjustment</title>
+          <p>adjustment employing only the means at the disposal of the user</p>
+        </sec>
+        <sec>
+          <title>adjustment means</title>
+          <p>means allowing the adjustment of the gas analytical system by the user OIML R 144-1:2013 (E)</p>
+        </sec>
+        <sec>
+          <title>semi-automatic adjustment means</title>
+          <p>means allowing the user to adjust the gas analytical system without having the possibility
+of changing the input measurement signal, whether the automatic adjustment is required
+or notNote Note2.7.3,NoteFor those gas analytical systems that require the calibration gas mixture to be entered manually, the adjustment means are considered to be semi-automatic.</p>
+        </sec>
+        <sec>
+          <title>automatic adjustment means</title>
+          <p>means which perform the adjustment of the gas analytical system as programmed without the intervention of the user, to initiate the adjustment or regulate the measurement signal</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>zero-setting means (of a gas analyzer)</title>
+        <p>means to set the indication of the gas analyzer to zero</p>
+      </sec>
+      <sec>
+        <title>means for adjustment of a gas analyzer by the calibration gas mixture</title>
+        <p>means to adjust the indication of the gas analyzer to the value of the CO, NO and NO<sub>2</sub> volume fraction in a CGM</p>
+      </sec>
+      <sec>
+        <title>internal adjustment means</title>
+        <p>means to adjust the gas analyzer without the use of a CGM</p>
+      </sec>
+      <sec>
+        <title>warm-up time</title>
+        <p>period of time that the gas analytical system requires from applying power to the
+instrument to attaining the operating mode at which the instrument will operate within
+the maximum permissible errorsNote Note2.11,NoteFor a gas analyzer this is the time between the instant at which power is applied to it and the instant at which the measurement result of the volume fraction, a CGM being supplied to the input, is within the permissible limits.</p>
+      </sec>
+      <sec>
+        <title>response time</title>
+        <p>time interval between the instant of a stepwise concentration change of the component being measured (CO, NO, NO<sub>2</sub> or NO<sub>x</sub>) and the instant at which the signal reaches 90 % of its stable value</p>
+      </sec>
+      <sec>
+        <title>error</title>
+        <p>measured quantity value minus a reference quantity value (2.16OIML&#xA0;V&#xA0;2:2012,  2.16)</p>
+      </sec>
+      <sec>
+        <title>intrinsic error</title>
+        <p>error of a gas analyzer, determined under reference conditions</p>
+      </sec>
+      <sec>
+        <title>relative error</title>
+        <p>absolute error of measurement divided by the reference value of the measurand</p>
+      </sec>
+      <sec>
+        <title>fault</title>
+        <p>difference between the error of indication and the intrinsic error of the measuring
+instrument (5.11OIML&#xA0;V&#xA0;1:2012,  5.11)Note Note2.16,NoteRandom errors presenting momentary variations in the indication but which cannot be interpreted, recorded or transmitted as measuring results are considered to be insignificant faults.</p>
+      </sec>
+      <sec>
+        <title>influence quantity</title>
+        <p>quantity that, in a direct measurement, does not affect the quantity that is actually measured, but that affects the relation between the indication and the measurement result (2.52OIML&#xA0;V&#xA0;2:2012,  2.52)</p>
+      </sec>
+      <sec>
+        <title>rated operating conditions</title>
+        <p>operating conditions that must be fulfilled during measurement in order that a measuring instrument or measuring system perform as designed (4.9OIML&#xA0;V&#xA0;2:2012,  4.9)</p>
+      </sec>
+      <sec>
+        <title>disturbance</title>
+        <p>influence quantity having a value within the limits specified in this Recommendation but outside the specified rated operating conditions of a measuring instrument (5.16OIML&#xA0;V&#xA0;1:2012,  5.16)</p>
+      </sec>
+      <sec>
+        <title>reference condition</title>
+        <p>operating condition prescribed for evaluating the performance of a measuring instrument or measuring system or for comparison of measurement results (4.11OIML&#xA0;V&#xA0;2:2012,  4.11)</p>
+      </sec>
+      <sec>
+        <title>checking facility</title>
+        <p>facility that is incorporated in a measuring instrument and which enables significant
+faults to be detected and acted uponNote Note2.21,Note&#x201D;Acted upon&#x201D; refers to any adequate response by the measuring instrument (luminous signal, acoustic signal, prevention of the measurement process, etc.) (5.06OIML&#xA0;V&#xA0;1:2012,  5.06).</p>
+      </sec>
+      <sec>
+        <title>gas sample</title>
+        <p>gas taken from the pipe or gas duct of the stationary source of emissions, conveyed to the gas analyzer for analysis</p>
+      </sec>
+      <sec>
+        <title>instrumental drift</title>
+        <p>continuous or incremental change over time in the indication, due to changes in the
+metrological properties of a measuring instrument (4.21OIML&#xA0;V&#xA0;2:2012,  4.21)Note Note2.23,NoteIn this Recommendation, &#x201C;drift&#x201D; means a change in the indication which occurs during a stated period of time at a given concentration of CO, NO and NO<sub>2</sub> in a sample to be analyzed.</p>
+      </sec>
+      <sec>
+        <title>calibration gas mixture (CGM)</title>
+        <p>stable gas mixture of known concentration (volume fraction) of a component being determined and used for periodic calibration and adjustment of the gas analyzer, as well as for tests of its metrological characteristics for compliance with the requirements of normative documents</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Description of the gas analytical system</title>
+      <sec>
+        <title>General</title>
+        <p>The gas analytical system consists of a means for sampling, preparation of samples, and measurement of the CO, NO, NO<sub>2</sub> or NO<sub>x</sub> concentration in the pipes and gas ducts of industrial enterprises, as well as a means for conveying the gas sample through a gas handling system. The gas analyzer incorporated in the gas handling system analyzes the sample and provides a signal related to the volume fraction of the gas component being determined which arrives at the data accumulation unit where it is processed, recorded and stored.</p>
+        <p>The metrological characteristics of the gas analytical system depend on the corresponding characteristics of the units included. An example of the composition of a gas analytical system using calibration gas mixtures for its adjustment is shown in Figure 1.</p>
+      </sec>
+      <sec>
+        <title>Principal units</title>
+        <p>The gas analytical system in general consists of the following principle units:</p>
+        <list list-type="bullet" id="_c51fbd89-f7d9-8130-5cd5-26518b508fb9">
+          <list-item>&#x2014;sampling probe with a coarse filter, which is introduced into the pipe or gas duct of a stationary source of emissions;</list-item>
+          <list-item>&#x2014;heated main pipe for supplying a gas sample from the sampling probe to the input of the gas analyzer;</list-item>
+          <list-item>&#x2014;pump to convey the gas sample through the gas handling system;</list-item>
+          <list-item>&#x2014;gas flow rate measurement system, for example a rotameter, to measure the gas flow rate in the gas handling system;</list-item>
+          <list-item>&#x2014;condensate separator to prevent condensation in the gas handling system;</list-item>
+          <list-item>&#x2014;fine filter to remove dust from the gas sample, which could cause contamination of various inner parts of the gas analyzer;</list-item>
+          <list-item>&#x2014;electro-pneumatic valve to switch a sample to be analyzed, a calibration gas mixture or a zero gas to the input of the gas analyzer (a pipe connecting two three-way valves is intended for delivering the CGM to a sampling system through a three-way valve to estimate the absence of probe composition change);</list-item>
+          <list-item>&#x2014;means for adjusting zero (gas analyzer);</list-item>
+          <list-item>&#x2014;means for adjusting the gas analyzer by a calibration gas mixture;</list-item>
+          <list-item>&#x2014;gas analyzer;</list-item>
+          <list-item>&#x2014;means to check operation of the gas analytical system and means to adjust the units;</list-item>
+          <list-item>&#x2014;means for data accumulation, processing and storage.</list-item>
+        </list>
+        <p>The gas analytical system may include means to signal and record</p>
+        <list list-type="bullet" id="_7961dd6b-239a-8f53-eb65-0bfef2322bf5">
+          <list-item>&#x2014;the malfunction of the units of the gas analytical system,</list-item>
+          <list-item>&#x2014;the reduction of the gas amount in a cylinder required for automatic adjustment of the gas analyzer to an amount below the permissible value, and</list-item>
+          <list-item>&#x2014;the current value of the volume fraction being determined in the sample exceeding the maximum permissible value.</list-item>
+        </list>
+        <fig id="fig_1">
+          <caption>Example of the composition of a gas analytical system using calibration gas mixtures for its adjustment (for illustrative purpose only)</caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/figure1.svg"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec>
+      <title>Metrological requirements</title>
+      <sec>
+        <title>Presentation of the measurement results</title>
+        <p>The measurement results of the concentration of carbon monoxide and nitrogen oxides in the sample shall be expressed in the units of volume fraction and reduced to reference conditions.</p>
+        <p>The reference conditions are:</p>
+        <list list-type="bullet" id="_4e8fcac1-ecde-71e9-dfbd-ea2bf8646e89">
+          <list-item>&#x2014;temperature: 273.15&#x2062;K273.15 "unitsml(K)"273,15&#x2062;K273.15 "unitsml(K)";</list-item>
+          <list-item>&#x2014;pressure: 101.325&#x2062;kPa101.325 "unitsml(kPa)"101,325&#x2062;kPa101.325 "unitsml(kPa)".</list-item>
+        </list>
+        <p>In this Recommendation, ppm is used (9.15ISO&#xA0;80000-9:2009,  9.15) for the volume fraction unit.</p>
+      </sec>
+      <sec>
+        <title>Measuring range</title>
+        <p>The gas analyzer shall provide measurements of a volume fraction of the components determined in the following ranges:</p>
+        <list list-type="bullet" id="_aba8449f-ca94-1764-983b-ec3c9d3fea14">
+          <list-item>&#x2014;carbon monoxide: 10&#x2062;ppm10 "unitsml(ppm)"10&#x2062;ppm10 "unitsml(ppm)" to 20000&#x2062;ppm20000 "unitsml(ppm)"20&#xA0;000&#x2062;ppm20000 "unitsml(ppm)";</list-item>
+          <list-item>&#x2014;nitrogen monoxide: 10&#x2062;ppm10 "unitsml(ppm)"10&#x2062;ppm10 "unitsml(ppm)" to 5000&#x2062;ppm5000 "unitsml(ppm)"5&#xA0;000&#x2062;ppm5000 "unitsml(ppm)";</list-item>
+          <list-item>&#x2014;nitrogen dioxide: 10&#x2062;ppm10 "unitsml(ppm)"10&#x2062;ppm10 "unitsml(ppm)" to 500&#x2062;ppm500 "unitsml(ppm)"500&#x2062;ppm500 "unitsml(ppm)".</list-item>
+        </list>
+        <p>These measuring ranges may be divided into sub-ranges.</p>
+      </sec>
+      <sec>
+        <title>Maximum permissible errors</title>
+        <sec>
+          <title>Maximum permissible intrinsic error</title>
+          <p>For any measurement within the measuring range or sub-range (see <xref rid="sec-4.2" ref-type="other"/>4.2) under the reference conditions specified in  <xref rid="sec-8" ref-type="other"/>Clause8, the MPE, positive or negative, is the larger of the two following values:</p>
+          <list list-type="bullet" id="_b373eb7c-fcc0-310c-39ce-059742c2b5a2">
+            <list-item>&#x2014;2&#x2062;ppm2 "unitsml(ppm)"2&#x2062;ppm2 "unitsml(ppm)";</list-item>
+            <list-item>&#x2014;5 % of the measured value.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Maximum permissible errors on verification under rated operating conditions (without dismounting the gas analytical system)</title>
+          <p>The MPE, positive or negative under the rated operating conditions specified in <xref rid="sec-4.5.1" ref-type="other"/>4.5.1, may be equal to or greater than the maximum permissible intrinsic errors, taking into account the actual values of the influence quantities, but they should not exceed the larger of the two following values:</p>
+          <list list-type="bullet" id="_d46dca3e-1d95-a4f2-79e9-90444aaf5d21">
+            <list-item>&#x2014;5&#x2062;ppm5 "unitsml(ppm)"5&#x2062;ppm5 "unitsml(ppm)";</list-item>
+            <list-item>&#x2014;10 % of the measured value.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <title>Repeatability</title>
+        <p>An estimate of the standard deviation is used as a characteristic of repeatability (R 144-2, 1.4).The estimate of the standard deviation shall not exceed 1/3 of the maximum permissible intrinsic error (<xref rid="sec-4.3.1" ref-type="other"/>4.3.1) at the given point of the measuring range.</p>
+      </sec>
+      <sec>
+        <title>Influence quantities</title>
+        <sec>
+          <title>Rated operating conditions (for use of the gas analyzer)</title>
+          <list list-type="order" id="_a116954b-a3c9-8beb-4182-e5c59f597442">
+            <list-item>a)temperature: 5&#x2062;&#xB0;C5 "unitsml(degC)"5&#x2062;&#xB0;C5 "unitsml(degC)" to 40&#x2062;&#xB0;C40 "unitsml(degC)"40&#x2062;&#xB0;C40 "unitsml(degC)";</list-item>
+            <list-item>b)relative humidity: up to 90 % at 25&#x2062;&#xB0;C25 "unitsml(degC)"25&#x2062;&#xB0;C25 "unitsml(degC)";</list-item>
+            <list-item>c)atmospheric pressure: from 86&#x2062;kPa86 "unitsml(kPa)"86&#x2062;kPa86 "unitsml(kPa)" to 106&#x2062;kPa106 "unitsml(kPa)"106&#x2062;kPa106 "unitsml(kPa)";</list-item>
+            <list-item>d)supply from AC mains power:&#x2014;voltage: nominal value, with deviation from nominal value: -15 %, +10 %;&#x2014;frequency: nominal value &#xB1;2%pm 2 %&#xB1;2%pm 2 %.</list-item>
+          </list>
+          <p>If a battery is used to power the gas analyzer, the limits of power supplied shall
+be within the gas analyzer manufacturer&#x2019;s specifications. If a current generator
+is used, the limits of variation of the parameters shall comply with the specifications
+for the mains voltage.Note1 Note14.5.1,Note1The above rated operating conditions for temperature, relative humidity and atmospheric pressure may be changed to extend the ranges.Note2 Note24.5.1,Note2Instruments using a battery power supply should be equipped with an indicator to warn when the battery becomes discharged.Note3 Note34.5.1,Note3Requirements for the input gas temperature and particulate level of a sampling probe are given in  <xref rid="sec-8.7" ref-type="other"/>8.7 and <xref rid="sec-8.8" ref-type="other"/>8.8.</p>
+        </sec>
+        <sec>
+          <title>Influence of the gas components of emissions other than the measurand (cross sensitivity)</title>
+          <p>The indications of the gas analyzer shall not vary by more than half the absolute
+value of the maximum permissible intrinsic error (<xref rid="sec-4.3.1" ref-type="other"/>4.3.1) at the given point
+of the measurement range if the value of the volume fraction of the gas components
+other than the measurand does not exceed the maximum permissible value.Note Note4.5.2,NoteThe manufacturer of the gas analytical system shall provide the list of gas components other than the measurand and their maximum permissible concentrations in the operating instructions.</p>
+        </sec>
+        <sec>
+          <title>Vibration</title>
+          <p>The gas analyzer shall be protected against the effects of vibration. The manufacturer
+shall indicate in the specifications the requirements for the vibration parameters,
+at which the metrological characteristics of the gas analyzer are within the permissible
+limits (<xref rid="sec-4.3.2" ref-type="other"/>4.3.2). The minimum requirements should correspond to severity
+level 1 of 11.1OIML&#xA0;D&#xA0;11:2013,  11.1.Note Note4.5.3,NoteThe requirements for the individual units of the gas analytical system may vary.</p>
+        </sec>
+        <sec>
+          <title>Disturbances</title>
+          <p>The error of the gas analyzer shall lie within the permissible limits, or its failure shall be detected by the checking facility for the following disturbances:</p>
+          <list list-type="order" id="_94905a6d-22b8-f003-0233-7045553592c7">
+            <list-item>a)mechanical shocks;</list-item>
+            <list-item>b)short time power reduction;</list-item>
+            <list-item>c)voltage pulses from the mains;</list-item>
+            <list-item>d)electrostatic discharges;</list-item>
+            <list-item>e)radio frequency electromagnetic fields.</list-item>
+          </list>
+          <p>The disturbance norms and test methods are described in R 144-2.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Response time</title>
+        <p>When a volume fraction of a component being determined at the input changes abruptly from 0 % to 100 %, the reading of the gas analyzer shall reach, within four minutes, a value of at least 90 %.</p>
+      </sec>
+      <sec>
+        <title>Warm-up time</title>
+        <p>After switching on the gas analytical system and after the warm-up time specified by the manufacturer of this system, it shall meet the metrological requirements stated in this Recommendation.</p>
+      </sec>
+      <sec>
+        <title>Stability with time or drift</title>
+        <p>When a gas analyzer equipped with semi-automatic adjustment means is operated in accordance with its operating instructions under stable environmental conditions, its error shall remain within the maximum permissible errors (according to  <xref rid="sec-4.3.1" ref-type="other"/>4.3.1) for at least seven days from the moment of adjustment of the gas analyzer using the CGM. If the gas analyzer is equipped with a means for drift compensation, such as automatic zero correction or automatic internal adjustment, the action of these adjustments shall not produce any indication that can be confused with a measurement result of the volume fraction of the components in the analyzed sample.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Technical requirements</title>
+      <sec>
+        <title>Construction</title>
+        <sec>
+          <title>5.1.1</title>
+          <p>All components of the gas handling system shall be made of corrosion resistant material. The materials used shall not influence the composition of the gas sample.</p>
+        </sec>
+        <sec>
+          <title>5.1.2</title>
+          <p>The means for sampling and sample preparation during extractive sampling shall provide for representative sampling and shall comply with  ISO&#xA0;10396:2007.</p>
+        </sec>
+        <sec>
+          <title>5.1.3</title>
+          <p>The gas handling system shall contain a switching system to allow the zero gas, gas calibration mixtures, and gas sample to be analyzed to flow into the analyzer.</p>
+        </sec>
+        <sec>
+          <title>5.1.4</title>
+          <p>A dehydrating charcoal filter or equivalent system shall be used when ambient air is supplied as a zero gas.</p>
+        </sec>
+        <sec>
+          <title>5.1.5</title>
+          <p>The pump conveying the gas sample shall be mounted so that its vibrations do not
+affect the measurement result. It shall be possible for the user to turn the pump
+on and off separately from the other components of the gas analytical system; however,
+it shall not be possible to make a measurement when the pump is switched off.Note Note5.1.5,NoteIt is recommended to flush the gas handling system automatically with ambient air before the pump is switched off.</p>
+        </sec>
+        <sec>
+          <title>5.1.6</title>
+          <p>The gas handling system shall be equipped with a gas flow meter, by which the user can check the measuring mode specified by the manufacturer of the gas analytical system.</p>
+        </sec>
+        <sec>
+          <title>5.1.7</title>
+          <p>The gas handling system shall be air-tight.</p>
+        </sec>
+        <sec>
+          <title>5.1.8</title>
+          <p>The gas analytical system may be equipped with an interface permitting it to be coupled to any peripheral devices or other instruments, e.g. facilities for measuring the characteristics of the flow gas in a pipe or gas duct.</p>
+        </sec>
+        <sec>
+          <title>5.1.9</title>
+          <p>The interface and peripherals coupled to it shall not affect the metrological characteristics of the gas analytical system or the measurement data obtained.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Display devices</title>
+        <sec>
+          <title>Indication range of the gas analyzer</title>
+          <p>The indication range of the display device shall be from 0.0 ppm to the maximum measuring
+range. In normal operation the recording device may indicate 0.0 ppm for the volume
+fraction of the component being determined equal to or smaller than 1&#x2062;ppm1 "unitsml(ppm)"1&#x2062;ppm1 "unitsml(ppm)".</p>
+        </sec>
+        <sec>
+          <title>Interval and marks of analog scales</title>
+          <p>If an analog scale is fitted, the distance between the scale marks shall be at least
+1.25&#x2062;mm1.25 "unitsml(mm)"1,25&#x2062;mm1.25 "unitsml(mm)". The interval of the marks shall be smaller than or equal to 2 % of the span of the analog scale.</p>
+          <p>The thickness of the pointer shall not exceed one quarter of the distance between the scale marks. The pointer shall overlap at least one third of the shortest scale mark and shall be clearly seen.</p>
+          <p>The height of the figures shall be at least 5&#x2062;mm5 "unitsml(mm)"5&#x2062;mm5 "unitsml(mm)" and they shall be marked in such a way that any misinterpretation is not possible.</p>
+        </sec>
+        <sec>
+          <title>Digital display</title>
+          <p>The height of the figures shall be at least 5&#x2062;mm5 "unitsml(mm)"5&#x2062;mm5 "unitsml(mm)" for illuminated
+displays and 10&#x2062;mm10 "unitsml(mm)"10&#x2062;mm10 "unitsml(mm)" in all other cases.</p>
+          <p>The symbol of the unit of measurement shall appear in close proximity to the figures
+indicating the measurement results and the characters used shall be at least
+3&#x2062;mm3 "unitsml(mm)"3&#x2062;mm3 "unitsml(mm)" in height.</p>
+          <p>When a measurement result is zero, it shall not be possible to confuse such a result with the zero indication prior to measurement.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Durable recording of measurement results</title>
+        <p>When the gas analytical system has interfaces to submit analytical data, it shall be equipped with a printing device, which prints</p>
+        <list list-type="bullet" id="_44fb1d57-e913-00ab-c5eb-37e47b3f304f">
+          <list-item>&#x2014;the date and time of measurement,</list-item>
+          <list-item>&#x2014;the measurement results and their units, and</list-item>
+          <list-item>&#x2014;the result of self-checking by means of automatic adjustment facilities.</list-item>
+        </list>
+        <p>Printed measurement results shall not differ from the measurement results provided by the indicating device.</p>
+        <p>The minimum height for the figures of the printing device is 2&#x2062;mm2 "unitsml(mm)"2&#x2062;mm2 "unitsml(mm)".Note Note5.3,NoteWhen values of the component concentration to be determined are continuously recorded on paper, the duration of the recording shall be no less than that required for the report documentation (records) for the reporting period (e.g. 24 hours, a month, a decade, etc.) established by the legal authority.</p>
+        <p>Printouts shall remain readable for the relevant period as required by the national authority, even when exposed to daylight or equivalent lighting.</p>
+        <p>The legal authority may require that a printing device be provided. It may also require that more information appear on the printed document than requested above, e.g. the result of the volume fraction calculation during a specified period.</p>
+        <p>The printing device shall not print out the records for the reporting period if the checking facilities provide evidence of errors in excess of the maximum permissible errors, or of failures. The measurement mode shall also be prevented if no paper (or other recording medium) is available in the printing device.</p>
+      </sec>
+      <sec>
+        <title>Computing device</title>
+        <p>The gas analytical system may be equipped with a computing device (such as a data processing unit or a personal computer), which calculates emissions (e.g. the average emission during the specified time, etc.) and transmits their values to the printing device with an estimated uncertainty. The relevant authority shall certify the computational algorithm of the measurement results and their estimated uncertainty.</p>
+        <p>Since information about the flow rate, temperature, gas pressure and diameter of a pipe (gas duct) is necessary to calculate the stationary source emissions, such information shall be provided with the required accuracy and automatically introduced into the computing device.</p>
+      </sec>
+      <sec>
+        <title>Alarm system</title>
+        <sec>
+          <title>5.5.1</title>
+          <p>The gas analytical system may be equipped with an alarm system that shall give an audible or visible signal when the maximum permissible unit emission specified for the given stationary source is exceeded. If an alarm system is fitted, it shall be tested.</p>
+        </sec>
+        <sec>
+          <title>5.5.2</title>
+          <p>The gas handling system shall have a device that measures or signals that the gas flow is not available or that its rate is outside the limits specified by the manufacturer.</p>
+        </sec>
+        <sec>
+          <title>5.5.3</title>
+          <p>An indication that the gas analytical system is ready for measurement shall be provided. If it is not ready, any indication on a recording device and any printing of the results on a printing device shall be prevented.</p>
+        </sec>
+        <sec>
+          <title>5.5.4</title>
+          <p>For a gas analytical system with electrochemical sensors, a warning device shall be provided to signal that the effective life of the sensors has expired. Sensors for indicating the expiry of the filters shall be fitted.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Adjustment facilities</title>
+        <sec>
+          <title>5.6.1</title>
+          <p>The gas analytical system shall have adjustment facilities that provide readings for zero-setting, CGM and internal adjustment. The facilities may be manual, semi-automatic or automatic.</p>
+        </sec>
+        <sec>
+          <title>5.6.2</title>
+          <p>The internal adjustment shall neither affect the zero set, nor the instrument&#x2019;s linearity and it shall not be connected with the CGM adjustment. The approach should be such that each time a calibration gas mixture is applied to the input of the gas analyser, the adjustment facilities will enable the readings to be brought into conformity with the value of the volume fraction of the component to be determined in the CGM.</p>
+        </sec>
+        <sec>
+          <title>5.6.3</title>
+          <p>The adjustment facility for zero-setting shall give negative indications near zero for certain tests or manual adjustment, if necessary.</p>
+        </sec>
+        <sec>
+          <title>5.6.4</title>
+          <p>The automatic adjustment facilities shall display or print out the results of all internal adjustments: flow rate (its deceleration), internal reference adjustment, calibration and leak immediately after switching on and then during operation with the periodicity specified by the operator.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Security of the gas analyzer operation</title>
+        <sec>
+          <title>5.7.1</title>
+          <p>The technical means by which the gas analyzer is adjusted (particularly devices for adjusting the calibration with the CGM and zero-setting) shall be inaccessible to the operator or user. Access shall be possible only by entering a code, or by some other equivalent procedure.</p>
+        </sec>
+        <sec>
+          <title>5.7.2</title>
+          <p>The means used to change from one mode of operation to another shall be inaccessible to the operator or user. Access shall be possible only by entering a code, or by some other equivalent procedure.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Inscriptions/markings</title>
+        <p>All inscriptions and markings shall be made on clearly visible parts of the instruments.</p>
+        <p>The gas analyzer in the gas analytical system shall be inscribed indelibly and irremovably with the following information:</p>
+        <list list-type="bullet" id="_1f122c7e-1273-6ed9-68a5-c849fd1862d7">
+          <list-item>&#x2014;manufacturer&#x2019;s trademark/corporate name;</list-item>
+          <list-item>&#x2014;symbolic designation of the gas analytical system;</list-item>
+          <list-item>&#x2014;serial number;</list-item>
+          <list-item>&#x2014;year of manufacture;</list-item>
+          <list-item>&#x2014;type approval mark;</list-item>
+          <list-item>&#x2014;power supply parameters (voltage, frequency, power consumption).</list-item>
+        </list>
+        <p>Each constituent part (unit) of the gas analytical system shall be inscribed with the following information:</p>
+        <list list-type="bullet" id="_ada148f4-ec73-6ed5-59d1-71cb685a32e5">
+          <list-item>&#x2014;symbolic designation of the unit;</list-item>
+          <list-item>&#x2014;serial number;</list-item>
+          <list-item>&#x2014;year of manufacture;</list-item>
+          <list-item>&#x2014;gas analytical system to which it belongs;</list-item>
+          <list-item>&#x2014;power supply parameters (voltage, frequency, power consumption).</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <title>Operating manual</title>
+      <sec>
+        <title>6.1</title>
+        <p>The operating manual shall be in the official language(s) of the country (or another generally accepted language according to national legislation) and easily understandable. An operating manual for users shall be made available for each individual instrument.</p>
+      </sec>
+      <sec>
+        <title>6.2</title>
+        <p>The operating manual shall include the following information:</p>
+        <list list-type="order" id="_cb084987-7318-cffd-c7ec-13a09dff63df">
+          <list-item>a)instructions for the correct operation of the instrument;</list-item>
+          <list-item>b)maximum and minimum storage temperatures;</list-item>
+          <list-item>c)rated operating conditions;</list-item>
+          <list-item>d)warm-up time after switching on the instrument/electrical power;</list-item>
+          <list-item>e)all other relevant mechanical and electromagnetic environmental conditions;</list-item>
+          <list-item>f)mechanical and electromechanical environmental classes;</list-item>
+          <list-item>g)safety and security conditions.</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <title>Metrological controls</title>
+      <sec>
+        <title>Type evaluation</title>
+        <sec>
+          <title>Documentation</title>
+          <p>The documentation for a gas analytical system supplied by the manufacturer when applying for type evaluation shall include the following information:</p>
+          <list list-type="order" id="_4df1f7c6-3cbb-8e65-8c12-594ba7a41ba0">
+            <list-item>a)a description of its general principle of measurement;</list-item>
+            <list-item>b)a list of its essential components with their characteristics;</list-item>
+            <list-item>c)a description of its essential components with drawings and diagrams;</list-item>
+            <list-item>d)general information on the software used as part of the gas analytical system;</list-item>
+            <list-item>e)a description of the formula applied for calculation of mass emission components;</list-item>
+            <list-item>f)the operating manual to be provided to the user;</list-item>
+            <list-item>g)details and results of any testing which may have been carried out by the manufacturer.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>General requirements</title>
+          <p>Type evaluation shall be carried out on at least one unit, which represents the definitive type.</p>
+        </sec>
+        <sec>
+          <title>External examination and tests</title>
+          <sec>
+            <title>General</title>
+            <p>The external examination and testing of a gas analytical system is intended to verify compliance with the requirements of  <xref rid="sec-4" ref-type="other"/>Clauses 4,5and6 of this Recommendation.</p>
+            <p>Where possible, tests should be carried out with a completely mounted gas analytical
+system. However, it is permitted to perform the test on separate units or devices
+of the gas analytical system if it is impossible to test the system as a whole due
+to its size or configuration, or when testing only the operation of that separate
+unit or device. Such tests can only be performed in cases where it is possible to
+simulate the operating conditions for that separate unit or device included in a
+gas analytical system.Note Note7.1.3.1,NoteIt is not intended that separate components be dismantled for testing.</p>
+            <p>The contents and metrological characteristics of calibration gas mixtures used during type approval shall conform to those specified in  <xref rid="annex-a" ref-type="other"/>AnnexA.</p>
+          </sec>
+          <sec>
+            <title>7.1.3.2</title>
+            <p>A gas analytical system shall undergo an external examination to obtain a general appraisal of its design and construction.</p>
+          </sec>
+          <sec>
+            <title>7.1.3.3</title>
+            <p>When testing a gas analytical system for compliance with the requirements of <xref rid="sec-4" ref-type="other"/>Clauses 4and5 of this Recommendation, the correctness of its operation shall be checked.</p>
+          </sec>
+          <sec>
+            <title>7.1.3.4</title>
+            <p>The operating manual for a gas analytical system shall be checked to ensure that correct procedures are clearly indicated, especially those specified in  <xref rid="sec-6.2" ref-type="other"/>6.2.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>Initial verification</title>
+        <sec>
+          <title>General requirements</title>
+          <p>A new gas analytical system shall undergo initial verification only after type approval (depending on the legislation in each specific country). The initial verification shall be carried out using suitable testing means and calibration gas mixture.</p>
+        </sec>
+        <sec>
+          <title>External examination and tests</title>
+          <sec>
+            <title>7.2.2.1</title>
+            <p>Initial verification of a gas analytical system includes an external examination
+to determine conformance with the approved type, and also compliance with the contents
+of the set of accompanying documents.Note Note7.2.2.1,NoteThe verification procedures shall be approved by the responsible legal authority that carried out the type approval tests.</p>
+          </sec>
+          <sec>
+            <title>7.2.2.2</title>
+            <p>After adjusting a gas analytical system according to the routine adjustment procedure described in the operating manual, tests to determine its errors shall be carried out under rated operating conditions at several values over the measuring range.</p>
+            <p>The tests shall be performed using at least three calibration gas mixtures (CGMs) with values of the volume fractions for components to be determined that are uniformly distributed over the measurement range.</p>
+            <p>The smallest and the largest values of the volume fraction for components to be determined in a CGM shall not differ from the lower and upper values of the measurement range by more than +10 % and -10 %, respectively.</p>
+            <p>The uncertainty on the volume fraction for components to be determined in a CGM shall be such that the ratio between the absolute value of the uncertainty of the CGM and the maximum permissible error of the gas analytical system at the given point of the measurement range shall be not more than 1:3. However, the responsible legal authority may allow the ratio 1:2.</p>
+            <p>The errors observed during the tests shall be within the permissible limits according to  <xref rid="sec-4.3.2" ref-type="other"/>4.3.2 for initial verification at each measurement.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>Subsequent verification</title>
+        <p>The responsible legal authority shall provide instructions with requirements giving</p>
+        <list list-type="bullet" id="_edadf6e0-7e7d-ec17-3cb7-7637f97bef35">
+          <list-item>&#x2014;the content and volume of subsequent verifications,</list-item>
+          <list-item>&#x2014;recalibration intervals, and</list-item>
+          <list-item>&#x2014;recommendations for on-line testing indicated in the operating manual.</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <title>Performance tests for type evaluation</title>
+      <p>Prior to the type evaluation tests or when specified by the manufacturer, gas analytical systems shall be calibrated against the CGM according to the operating manual procedures and under reference conditions (if not specified otherwise):</p>
+      <list list-type="order" id="_4fba96af-598b-3644-8516-5eb67421a03d">
+        <list-item>a)temperature: 20&#x2062;&#xB0;C&#xB1;5&#x2062;&#xB0;C20 "unitsml(degC)" pm 5 "unitsml(degC)"20&#x2062;&#xB0;C&#xB1;5&#x2062;&#xB0;C20 "unitsml(degC)" pm 5 "unitsml(degC)"</list-item>
+        <list-item>b)relative humidity: 60%&#xB1;10%60 % pm 10 %60%&#xB1;10%60 % pm 10 %</list-item>
+        <list-item>c)ambient pressure: 86&#x2062;kPa86 "unitsml(kPa)"86&#x2062;kPa86 "unitsml(kPa)" to 106&#x2062;kPa106 "unitsml(kPa)"106&#x2062;kPa106 "unitsml(kPa)", stable
+&#xB1;1&#x2062;kPapm 1 "unitsml(kPa)"&#xB1;1&#x2062;kPapm 1 "unitsml(kPa)"</list-item>
+        <list-item>d)AC mains power supply:&#x2014;voltage: nominal voltage &#xB1;2%pm 2 %&#xB1;2%pm 2 %&#x2014;frequency: nominal frequency &#xB1;1%pm 1 %&#xB1;1%pm 1 %</list-item>
+        <list-item>e)presence of influencing gas components: none</list-item>
+        <list-item>f)vibrations: none</list-item>
+        <list-item>g)radiated radio-frequency electromagnetic fields: &lt;0.2&#x2062;V&#x2062;m&#x2212;1&lt;0.2 "unitsml(V/m)"&lt;0,2&#x2062;V&#x2062;m&#x2212;1&lt;0.2 "unitsml(V/m)"</list-item>
+        <list-item>h)conducted radio-frequency fields: 0.2&#x2062;Vemf0.2 "unitsml(V)" "emf"0,2&#x2062;Vemf0.2 "unitsml(V)" "emf"</list-item>
+        <list-item>i)electrostatic discharge: none</list-item>
+        <list-item>j)power frequency magnetic field: &lt;1&#x2062;A&#x2062;m&#x2212;1&lt;1 "unitsml(A/m)"&lt;1&#x2062;A&#x2062;m&#x2212;1&lt;1 "unitsml(A/m)"</list-item>
+        <list-item>k)bursts (transients) on signal, data and control lines: negligible</list-item>
+        <list-item>l)surges on signal, data and control lines: negligible</list-item>
+        <list-item>m)AC mains voltage dips, short interruptions and voltage variations: none</list-item>
+        <list-item>n)bursts (transients) on AC and DC mains power: negligible</list-item>
+        <list-item>o)surges on AC and DC mains power: none</list-item>
+        <list-item>p)low voltage of internal battery (not connected to the main power) none</list-item>
+      </list>
+      <sec>
+        <title>Determination of the intrinsic error of the gas analyzer</title>
+        <p>This test shall be carried out according to R 144-2, 1.2, under reference conditions. During this test, the errors shall not exceed the maximum permissible intrinsic error of  <xref rid="sec-4.3.1" ref-type="other"/>4.3.1 for any measurement.</p>
+      </sec>
+      <sec>
+        <title>Stability with time or drift</title>
+        <p>This test shall be carried out according to R 144-2, 1.3, under reference conditions. During this test the requirements of  <xref rid="sec-4.8" ref-type="other"/>4.8 shall be met.</p>
+      </sec>
+      <sec>
+        <title>Repeatability</title>
+        <p>This test shall be carried out according to R 144-2, 1.4, under reference conditions. For 20 consecutive measurement of the same CGM, made by the same operator using the same gas analytical system during a short period of time, the standard deviation shall not exceed 1/3 of the absolute value of the maximum permissible error according to  <xref rid="sec-4.4" ref-type="other"/>4.4, for the relevant point of the measurement range.</p>
+      </sec>
+      <sec>
+        <title>Effect of influence quantities</title>
+        <p>Only one influence quantity shall be varied during a test, while all the others are maintained at their reference values.</p>
+        <sec>
+          <title>Environmental conditions and electrical supply</title>
+          <p>The reading of the gas analytical system shall remain within the maximum permissible error specified in  <xref rid="sec-4.3.2" ref-type="other"/>4.3.2 during the following tests covering the rated operating conditions defined in  <xref rid="sec-4.5.1" ref-type="other"/>4.5.1:</p>
+          <list list-type="order" id="_8e1efaad-a5b9-9a4a-fe89-d83e09d18ad2">
+            <list-item>a)dry heat: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. R 144-2, 1.5</list-item>
+            <list-item>b)cold: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. R 144-2, 1.6</list-item>
+            <list-item>c)damp heat, steady state: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. R 144-2, 1.7</list-item>
+            <list-item>d)atmospheric pressure: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. R 144-2, 1.8</list-item>
+            <list-item>e)power supply variations: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. R 144-2, 1.9</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Influence of gas components other than the measurand (cross sensitivity)</title>
+          <p>This test shall be carried out under reference conditions. During this test (R 144-2, 1.10) the volume fraction of gas components other than the measurand in CGM shall correspond to that specified in  <xref rid="sec-4.5.2" ref-type="other"/>4.5.2. The absolute value of the variation of the reading shall not exceed the value given in  <xref rid="sec-4.5.2" ref-type="other"/>4.5.2.</p>
+        </sec>
+        <sec>
+          <title>Vibration stability of the gas analytical system</title>
+          <p>This test shall be carried out under reference conditions. During this test (R 144-2, 1.11.1) the absolute value of the reading variation shall not exceed the value given in the operating manual.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Disturbances</title>
+        <p>The MPE of the gas analytical system shall be in compliance with <xref rid="sec-4.3.2" ref-type="other"/>4.3.2. Significant faults shall be detected and fixed by means of checking facilities during the following tests, carried out to verify the requirements of  <xref rid="sec-4.5.4" ref-type="other"/>4.5.4 under rated operating conditions (as specified in  <xref rid="sec-4.5.1" ref-type="other"/>4.5.1):</p>
+        <list list-type="order" id="_29f48a85-ffb5-b173-0523-8c1eebc185b6">
+          <list-item>a)mechanical shocks: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B; R 144-2, 1.11.2;</list-item>
+          <list-item>b)short time power reduction: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B; R 144-2, 1.12;</list-item>
+          <list-item>c)bursts from the mains (transients):  &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B; R 144-2, 1.13;</list-item>
+          <list-item>d)electrostatic discharges: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. R 144-2, 1.14;</list-item>
+          <list-item>e)radio frequency electromagnetic fields: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B; R 144-2, 1.15.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>Other important technical requirements</title>
+        <p>The gas analytical system shall be tested for conformity to the following requirements:</p>
+        <list list-type="order" id="_620ef0b1-2bfe-6064-d07c-05a64488fc7b">
+          <list-item>a)warm-up time: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;.. according to 4.7 and R 144-2, 1.16;</list-item>
+          <list-item>b)response time: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;. according to 4.6 and R 144-2, 1.17;</list-item>
+          <list-item>c)change in the gas flow rate (in a gas handling system): .. according to 5.1.5, 5.5.2 and R 144-2, 1.18;</list-item>
+          <list-item>d)leakproofness of the gas handling system: &#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;&#x2026;&#x200B;. according to 5.1.6, 5.5.2 and R 144-2, 1.19.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>Temperature of input gas</title>
+        <p>The temperature of the input gas for a sampling probe shall be specified by the manufacturer of a sampling device.</p>
+        <p>The temperature of the input gas for a gas analyzer shall be specified by the manufacturer of a gas analyzer.</p>
+      </sec>
+      <sec>
+        <title>Particulate content</title>
+        <p>The maximum particulate content of the input gas for a sampling probe shall be specified by its manufacturer.</p>
+        <p>The maximum particulate content of the input gas for a gas analyzer shall be specified by its manufacturer.</p>
+      </sec>
+    </sec>
+    <p>Instruments for continuous measurement of CO, NO<sub>x</sub> in stationary source emissions. &#x2014; Part&#xA0;1:Metrological and technical requirements</p>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <title>Designation of calibration gas mixtures and their composition</title>
+        <sec>
+          <title>General requirements</title>
+          <sec>
+            <title>A.1.1</title>
+            <p>The CGM shall be supplied either from a gas cylinder under pressure or from a gas mixture generator.</p>
+            <list list-type="order" id="_e9d350f2-9721-f60c-bc5b-319a0f9ed44f">
+              <list-item>a)Each gas cylinder shall be identified with the following information (included as a mark, label, and/or certificate):&#x2014;manufacturer of the gas cylinder and serial number;&#x2014;composition of the gas mixture;&#x2014;amount of substance of each component and the corresponding measurement uncertainty (k=2k=2k=2k=2);&#x2014;statement about the traceability of the measurement results to accepted (inter)national gaseous measurement standards;&#x2014;temperature limits for use and storage;&#x2014;date of certification and expiry date;&#x2014;name of the authority that carried out the certification;&#x2014;the marking &#x201C;calibration gas mixture&#x201D;; and&#x2014;the method of preparation: gravimetric according to ISO&#xA0;6142:2001<xref rid="fn_2" ref-type="fn">1</xref> and ISO&#xA0;6143:2001<xref rid="fn_3" ref-type="fn">1</xref>.</list-item>
+              <list-item>b)The gases obtained from the gas mixture generator using the dynamic method shall
+meet the requirements of ISO&#xA0;6145-1:2003<xref rid="fn_4" ref-type="fn">1</xref> and in addition the requirements of
+B.1.2, B.2 and B.1.1.a) concerning amount of substance, measurement uncertainty and
+accepted (inter)national traceability to gaseous measurement standards.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>A.1.2</title>
+            <p>The composition of the CGM used for type approval and verification shall be certified as complying with the requirements of B.2 by a competent authority. The unit of volume fraction for the components to be determined shall be traceable to national, regional or international standards.</p>
+          </sec>
+          <sec>
+            <title>A.1.3</title>
+            <p>For all other purposes the CGMs (except those indicated in B.1.2) shall be certified by the supplier of the gases and shall be traceable to the appropriate measurement standards.</p>
+          </sec>
+          <sec>
+            <title>A.1.4</title>
+            <p>For testing with the purpose of determining errors, three binary gas mixtures with a volume fraction of the components to be determined, corresponding to the range points of (5 + 5) %, (50 + 5) % and (95&#x2009;&#x2014;&#x2009;5) %, are used.</p>
+            <p>For cross sensitivity testing, the gas mixtures with the maximum content of influencing
+components, other than the measurand are used.Note NoteA.1.4,NoteIt is permitted to use the three-component mixtures CO+NO+N2"CO" + "NO" + "N"_2CO+NO+N2"CO" + "NO" + "N"_2
+and CO+NO2+N2"CO" + "NO"_2 + "N"_2CO+NO2+N2"CO" + "NO"_2 + "N"_2.</p>
+          </sec>
+          <sec>
+            <title>A.1.5</title>
+            <p>The material of gas cylinders shall be inert to the gases contained therein.</p>
+          </sec>
+          <sec>
+            <title>A.1.6</title>
+            <p>The appropriate safety regulations shall be followed when handling the gases.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Characteristics and uncertainties of the composition of the gas mixtures</title>
+          <sec>
+            <title>A.2.1</title>
+            <p>The volume fraction for the components to be determined in N<sub>2</sub> in cylinders or in a gas mixture obtained from the generator shall be given in parts per million (ppm) (see  <xref rid="sec-4.1" ref-type="other"/>4.1).</p>
+          </sec>
+          <sec>
+            <title>A.2.2</title>
+            <p>The blend tolerances of the calibration gas mixtures shall not exceed 10 % of the volume fraction of each component.</p>
+          </sec>
+          <sec>
+            <title>A.2.3</title>
+            <p>For calibration gas mixtures the uncertainty in the composition shall be 2 % or less of the certified (assigned) value of the volume fraction for the components to be determined. The composition of other gas mixture components shall have an uncertainty of no more than 3 %.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Zero-setting</title>
+          <p>Ambient air shall be drawn through a charcoal filter or equivalent system when it is used to set zero for the gas analytical system. High pure nitrogen can be also used directly to set zero.</p>
+        </sec>
+      </app>
+    </app-group>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;6142:2001</doc-identifier>
+            </std-ident>
+            <title>Gas analysis</title>
+            <pub-date>
+              <year>2001-04-12</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;6143:2001</doc-identifier>
+            </std-ident>
+            <title>Gas analysis</title>
+            <pub-date>
+              <year>2001-05-31</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;6145-1:2003</doc-identifier>
+            </std-ident>
+            <title>Gas analysis</title>
+            <pub-date>
+              <year>2003-11-12</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;7504:2001</doc-identifier>
+            </std-ident>
+            <title>Gas analysis</title>
+            <pub-date>
+              <year>2001-11-22</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;10396:2007</doc-identifier>
+            </std-ident>
+            <title>Stationary source emissions</title>
+            <pub-date>
+              <year>2007-01-15</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;80000-9:2009</doc-identifier>
+            </std-ident>
+            <title>Quantities and units</title>
+            <pub-date>
+              <year>2009-04-02</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-17:1994</doc-identifier>
+            </std-ident>
+            <title>Basic environmental testing procedures</title>
+            <pub-date>
+              <year>1994-07-07</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-1:2007</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2007-03-13</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-2:2007</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2007-07-16</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-31:2008</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2008-05-21</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-47:2005</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2005-04-13</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-64:2008</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2008-04-29</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-2-78:2012</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2012-10-30</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-3-1:2011</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2011-08-19</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-3-4:2001</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2001-08-28</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;60068-3-8:2003</doc-identifier>
+            </std-ident>
+            <title>Environmental testing</title>
+            <pub-date>
+              <year>2003-08-28</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-11:2004</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2004-03-24</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-2:2008</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2008-12-09</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-3:2006</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2006-02-07</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-4:2012</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2012-04-30</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-5:2005</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2005-11-29</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>IEC</std-org>
+              <doc-identifier>IEC&#xA0;61000-4-6:2013</doc-identifier>
+            </std-ident>
+            <title>Electromagnetic compatibility (EMC)</title>
+            <pub-date>
+              <year>2013-10-23</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;V&#xA0;1:2012</doc-identifier>
+            </std-ident>
+            <title>International vocabulary of terms in legal metrology (VIML)</title>
+            <pub-date>
+              <year>2012</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;V&#xA0;2:2012</doc-identifier>
+            </std-ident>
+            <title>International Vocabulary of Metrology&#x2009;&#x2014;&#x2009;Basic and general concepts and associated terms (VIM)</title>
+            <pub-date>
+              <year>2012</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>SI&#xA0;8th&#xA0;Edition:2006</doc-identifier>
+            </std-ident>
+            <title>Syst&#xE8;me International des Unit&#xE9;s (SI)</title>
+            <pub-date>
+              <year>2006</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;11:2013</doc-identifier>
+            </std-ident>
+            <title>General requirements for electronic measuring instruments</title>
+            <pub-date>
+              <year>2013</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

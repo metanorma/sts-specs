@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-body-and-sec.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-body-and-sec]
+=== Body, Sections, and Sub-parts
+
+image::images/body.png[body.png]
+#### Section
+
+image::images/sec.png[sec.png]
+#### Section Metadata
+
+image::images/sec-meta.png[sec-meta.png]
+#### Terms and Definitions Container/Section
+
+image::images/term-sec.png[term-sec.png]
+#### Term-Display
+
+image::images/term-display.png[term-display.png]
+#### Sub-Part of a Standard
+
+image::images/sub-part.png[sub-part.png]

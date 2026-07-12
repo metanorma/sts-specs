@@ -1,0 +1,80 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd]
+=== Document Hierarchy Diagrams
+
+These diagrams illustrate portions of the hierarchical (nested) structure of this Tag Set. Each diagram has one element “root” and may illustrate the structures of several additional elements. For each element illustrated, its name appears in a box on the left, with lines to boxes for each of its possible child-elements, which are in a column on the right.
+Boxes for child elements can have names and/or symbols within. If the box has merely “...”, it means that the actual content has been omitted, to save space or improve clarity. If it has merely an icon of a page with lines, it stands for text content rather than an actual element.
+If a box has an element name, then symbols at the left end of the box indicate whether that element is required and/or repeatable. These symbols are called “occurrence indicators”:
+|===
+| *?*| item is optional (zero or one)
+
+| ***| item may occur any number of times (zero or
+                           more)
+| *+*| item must occur at least once, but may occur any number
+                           of times (one or more)
+| | vertical bar on the left of the box; item is the “document element” (the top-most
+                           element such as <<element-standard,`<standard>`>> or <<element-adoption,`<adoption>`>>) and is therefore
+                           required
+| (no symbol)| item must occur exactly once
+|===
+The symbols at the right end of a box have these meanings:
+|===
+| *˜* (a tilde)| the item may take one or more attributes
+
+| | vertical bar on the right of the box; the item is expanded elsewhere (For example,
+                           if an element
+                           is permitted in multiple places within a certain parent element, there
+                           is little point in repeating its information many times.)
+|===
+The lines that connect a box to boxes on its right may either be squared-off or direct (angled) lines. The squared-off lines mean the items to the right must occur in the order shown; the angled lines indicate that any order is permitted.
+#### Key to the Near & Far Diagrams
+
+##### Element Occurrences
+
+|===
+| | Required
+
+| | Optional. May occur zero or one times.
+| | Required, repeatable. May occur one or more times.
+| | Optional, repeatable. May occur zero or more times.
+|===
+##### Additional Symbols Associated with Elements
+
+|===
+| | Element content is expanded elsewhere in the diagram.
+
+| | The element has attributes.
+| | One or more elements collapsed for clarity
+| | Element is the root element of the model.
+| | Text, numbers, and special characters
+|===
+##### Grouping Elements
+
+|===
+| | Required sequence: Element1 followed by Element2 followed by Element3
+
+| | Choice of sequence: Element1 or Element2 or Element3
+|===
+##### Compound Examples
+
+|===
+| | Zero or more repetitions of Element1 or Element2 or Element3 followed by zero or one
+                              occurrences of Element4
+
+| | Zero or one occurrences of either Element1 followed by Element2 followed by Element3
+                              or one or more occurrences of Element4
+| | Either one or more repetitions of Element1 followed by Element2 or one or more occurrences
+                              of Element4
+|===
+Subsidiary sections:
+#### Top-level Elements
+#### Processing Metadata
+#### Front Matter
+#### Body, Sections, and Sub-parts
+#### Back Matter
+#### Body Blocks
+#### Inlines
+#### TBX Tag Set Components
+#### All Diagrams in Alphabetical Order

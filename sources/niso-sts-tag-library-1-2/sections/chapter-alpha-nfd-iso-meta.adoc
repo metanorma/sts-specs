@@ -1,0 +1,7 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/alpha-nfd-iso-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-alpha-nfd-iso-meta]
+=== ISO-specific Metadata
+
+image::images/iso-meta.png[iso-meta.png]

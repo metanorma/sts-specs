@@ -1,0 +1,104 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/uri.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-uri]
+=== `<uri>` Uniform Resource Identifier (URI)
+
+Identifies a Uniform Resource Identifier (such as a URL) that may be used as a live link, typically naming a website, such as: “`<uri>https://www.mulberrytech.com</uri>`”).
+
+#### Usage/Remarks
+While the `<uri>` element has the form of a URI such as a URL, it is not automatically a link, nor even expected to be a live link. To make this element into a live link, use the XLink <<attribute-xlink-href,`@xlink:href`>> attribute.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-aff,`<aff>`>>, <<element-alt-title,`<alt-title>`>>, <<element-array,`<array>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-contrib,`<contrib>`>>, <<element-contrib-group,`<contrib-group>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-data-title,`<data-title>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-code,`<inline-code>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-media,`<media>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-std,`<std>`>>, <<element-std-org-loc,`<std-org-loc>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-source,`<term-source>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  uri          (#PCDATA %uri-elements;)*                    >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### Part of an address in `<std-org-loc>`
+
+[source,xml]
+....
+...
+<std-org std-org-type="sdo" std-org-role="co-producer" std-org-level="1">
+ <std-org-name>American Society of Mechanical Engineers</std-org-name>
+ <std-org-abbrev>ASME</std-org-abbrev>
+ <std-org-loc
+  ><addr-line>2 Park Ave.</addr-line>
+  <city>New York</city>
+  <state>NY</state>
+  <postal-code>10016</postal-code>
+  <uri>https://www.asme.org/</uri></std-org-loc>
+</std-org>
+...
+....
+#### In a citation
+
+[source,xml]
+....
+...
+<ref id="ref_16">
+ <label>[16]</label>
+ <mixed-citation publication-type="webpage" publication-format="print"
+  ><source>Moving Mountains Project &mdash; Physical Delivery 
+   of Library Materials</source> [website]. Available at: 
+  <uri>http://www.clicweb.org/colleagues-and-connections/moving-mountains/178-moving-mountains-moving-materials</uri>
+ </mixed-citation>
+</ref>
+...
+....
+#### Referenced in text (not as a live link)
+
+[source,xml]
+....
+...
+<p>In order to determine whether a given document is the current 
+edition and whether it has been amended through the issuance of 
+amendments, corrigenda, or errata, visit the IEEE-SA Website at 
+<uri>http://ieeexplore.ieee.org/xpl/standards.jsp</uri> or contact 
+IEEE at the address listed previously. For more information about 
+the IEEE-SA or IEEE&#x0027;s standards development process, visit 
+the IEEE-SA Website at <uri>http://standards.ieee.org</uri>.</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

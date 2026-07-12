@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/nlm-citation.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-nlm-citation]
+=== `<nlm-citation>` NLM Citation Model (deprecated)
+
+This alternative type of citation comes from an older version of JATS and is now deprecated in JATS; avoid using it. For NISO STS, use the element <<element-std,`<std>`>> for a citation to a standard; use either the <<element-element-citation,`<element-citation>`>> element or the <<element-mixed-citation,`<mixed-citation>`>> element to tag a dataset, journal article, book, or any document that is not a standard.
+
+#### Attributes
+
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-publication-format,`@publication-format`>>
+* <<attribute-publication-type,`@publication-type`>>
+* <<attribute-publisher-type,`@publisher-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-citation-alternatives,`<citation-alternatives>`>>
+#### Description
+
+The following, in order: Any combination of: <<element-person-group,`<person-group>`>> <<element-person-group,Person Group (in a citation)>> <<element-collab,`<collab>`>> <<element-collab,Collaborative (Group) Author>> Any combination of: <<element-article-title,`<article-title>`>> <<element-article-title,Article Title (in a citation)>> <<element-trans-title,`<trans-title>`>> <<element-trans-title,Translated Title>> <<element-source,`<source>`>> <<element-source,Source (in a citation)>>, zero or one <<element-patent,`<patent>`>> <<element-patent,Patent Number (in a citation)>>, zero or one <<element-trans-source,`<trans-source>`>> <<element-trans-source,Translated Source (in a citation)>>, zero or one <<element-year,`<year>`>> <<element-year,Year>>, zero or one Any one of: The following, in order: <<element-month,`<month>`>> <<element-month,Month (in a citation)>>, zero or one <<element-day,`<day>`>> <<element-day,Day (in a citation)>>, zero or one <<element-time-stamp,`<time-stamp>`>> <<element-time-stamp,Time Stamp For Cited Work (deprecated)>>, zero or one <<element-season,`<season>`>> <<element-season,Season (in a citation)>>, zero or one <<element-access-date,`<access-date>`>> <<element-access-date,Access Date For Cited Work (deprecated)>>, zero or one <<element-volume,`<volume>`>> <<element-volume,Volume Number (in a citation)>>, zero or one <<element-edition,`<edition>`>> <<element-edition,Edition Number>>, zero or one <<element-conf-name,`<conf-name>`>> <<element-conf-name,Conference Name (in a citation)>>, zero or one <<element-conf-date,`<conf-date>`>> <<element-conf-date,Conference Date (in a citation)>>, zero or one <<element-conf-loc,`<conf-loc>`>> <<element-conf-loc,Conference Location (in a citation)>>, zero or one Any combination of: <<element-issue,`<issue>`>> <<element-issue,Issue Number (in a citation)>> <<element-supplement,`<supplement>`>> <<element-supplement,Supplement (in a citation)>> <<element-publisher-loc,`<publisher-loc>`>> <<element-publisher-loc,Publisher’s Location (in a citation)>>, zero or one <<element-publisher-name,`<publisher-name>`>> <<element-publisher-name,Publisher's Name (in a citation)>>, zero or one Zero or more occurrences of the following, in order: <<element-fpage,`<fpage>`>> <<element-fpage,First Page (in a citation)>>, zero or one <<element-lpage,`<lpage>`>> <<element-lpage,Last Page (in a citation)>>, zero or one <<element-page-count,`<page-count>`>> <<element-page-count,Page Count>>, zero or one <<element-series,`<series>`>> <<element-series,Series (in a citation)>>, zero or one <<element-comment,`<comment>`>> <<element-comment,Comment (in a citation)>>, zero or more <<element-pub-id,`<pub-id>`>> <<element-pub-id,Publication Identifier (in a citation)>>, zero or more <<element-annotation,`<annotation>`>> <<element-annotation,Annotation (in a citation)>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  nlm-citation
+                        ((person-group | collab)*,
+                         (article-title | trans-title)*,
+                         source?, patent?, trans-source?, year?,
+                         ((month?, day?, time-stamp?) | season?),
+                         access-date?, volume?, edition?,
+                         conf-name?, conf-date?, conf-loc?,
+                         (issue | supplement)*, publisher-loc?,
+                         publisher-name?, (fpage?, lpage?)*,
+                         page-count?, series?, comment*, pub-id*,
+                         annotation?)                                >
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

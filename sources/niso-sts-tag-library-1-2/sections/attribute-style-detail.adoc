@@ -1,0 +1,96 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/style-detail.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-style-detail]
+=== `@style-detail` Styling Detail
+
+Additional formatting information for lists and named styles. This attribute names the prefix character for a bulleted list or adds information to the <<attribute-style,`@style`>> attribute for a <<element-styled-content,`<styled-content>`>> element.
+
+#### Usage/Remarks
+#### Bulleted List Style
+
+If the <<attribute-list-type,`@list-type`>> names a bulleted style (“`@list-type="bullet"`”), the <<attribute-style-detail,`@style-detail`>> attribute _may_ be used to name the preferred prefix character such as “`dash`”, “`hollow-bullet`”, or “`square`”. If no `@style-detail` is given, the processing system will choose the bullet character.
+The NISO STS standard neither establishes nor suggests values for this use of the <<attribute-style-detail,`@style-detail`>> attribute, but this capability was requested to add explicit dashed lists and symbol lists to standards.
+When the `@style-detail` attribute sets the prefix character for a bulleted list, it is merely replacing the display-system chosen prefix character. Therefore use of Styling Detail does not change the interaction with <<attribute-prefix-word,Prefix Word (For a List Item)>>. (See <<attribute-prefix-word,Prefix Word (For a List Item)>> for details.)
+Note: An explicit <<element-label,`<label>`>> that is part of a list item always takes precedence over the <<attribute-list-type,`@list-type`>> or <<attribute-style-detail,`@style-detail`>> attributes.
+#### Kenten and Similar Markup
+
+For some highlighting styles, three pieces of style information are most useful: the style name or style class, the style type (human readable), and further specific information concerning the style, which is recorded in this Styling Detail attribute.
+Being able to indicate three separate styling-related specifications is particularly useful in Japanese, where authors typically use emphasizing marks (dots or sesamis), called “Kenten”, which are associated with individual Japanese characters as dots above, dots beside, or similar typographic construction. Many languages (Japanese, Korean, Thai, Chinese, Arabic, Hungarian, and Armenian, to name but a few) use stress marks and similar typographic conventions (such as dots or sesamis) in the same way that English (as one example) uses <<element-bold,`<bold>`>> or <<element-italic,`<italic>`>> emphasis.
+Here are some Japanese examples illustrating how the Styling Detail attribute might be used to modify the style (<<attribute-style-type,`@style-type`>>): `style-type` style-detail values `dot` open closed (filled) double (dot inside dot) `sesami (sesame)` open closed (filled) `circle` open closed (filled) double (circle inside circle) `hatched` forward (slant left) backward (slant right) `triangle` open closed (filled)
+
+#### OPTIONAL on elements:  <<element-list,`<list>`>>, 
+                  <<element-styled-content,`<styled-content>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| 1) Names a prefix character for bulleted list items (`<list  list-type="bullet">`), for example a dash prefix character (`<list  list-type="bullet" style-detail="dash">`).  2) Provides additional styling information about a display style (<<element-styled-content,`<styled-content>`>>), for example, a sub-style can distinguish between dots or sesamis in <<element-styled-content,`<styled-content>`>>, by declaring some to be 
+                        “`hollow`” dots and some to be  “`solid`” or filled dots.
+| Restriction| `@style-detail`  is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Provide bullet-style for a bulleted list
+
+image::images/list-dash-iso_iec-guide-71_2014.png[list-dash-iso_iec-guide-71_2014.png]
+[source,xml]
+....
+...
+<p>... To assist standards developers to define accessibility 
+requirements and recommendations, the Guide presents:
+ <list list-type="bullet" style-detail="dash">
+  <list-item>
+   <p>a summary of current terminology relating to accessibility;</p></list-item>
+  <list-item>
+   <p>issues to consider in support of accessibility in the standards 
+    development process;</p></list-item>
+  <list-item>
+   <p>a set of accessibility goals (used to identify user accessibility 
+    needs);</p></list-item>
+  <list-item>
+   <p>descriptions of (and design considerations for) human abilities 
+    and characteristics;</p></list-item>
+  <list-item>
+   <p>strategies for addressing user accessibility needs and design 
+    considerations in standards.</p></list-item>
+ </list>
+</p>
+...
+....
+#### A non-standard bullet character
+
+[source,xml]
+....
+...
+<p>The Tag Suite is the complete set of elements and attributes 
+described in the standard. Along with these descriptions, the 
+standard includes two discrete standards models or Tag Sets:
+ <list list-type="bullet" style-detail="symbol">
+  <list-item>
+   <p>The Interchange Tag Set (in MathML 2.0 and MathML 3.0 
+    variants)</p></list-item>
+  <list-item>
+   <p>The Extended Tag Set (in MathML 2.0 and MathML 3.0 
+    variants)</p></list-item>
+ </list>
+</p>
+...
+....
+#### Different dot styles are used as emphasis in many non-western languages.
+
+[source,xml]
+....
+...
+<p><styled-content 
+     specific-use="emphasis" 
+     style-type="dot" 
+     style-detail="open"  
+     toggle="no">あいうえお</styled-content> ...</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

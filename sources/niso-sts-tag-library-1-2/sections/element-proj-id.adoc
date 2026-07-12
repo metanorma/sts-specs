@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/proj-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-proj-id]
+=== `<proj-id>` ISO-Specific Project Identifier
+
+The project number for the project within which this standards document was developed.
+
+#### Usage/Remarks
+#### Different Metadata Levels
+
+The `<proj-id>` element may be used directly inside <<element-std-meta,`<std-meta>`>> or within <<element-doc-ident,`<doc-ident>`>> (which is inside the three ISO-related standards metadata elements: <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, and <<element-nat-meta,`<nat-meta>`>>).
+#### ISO Note
+
+For ISO-related Processing, this element holds an ISO or ISO associate’s project number. In ISO STS, from which this Tag Set was developed, a <<element-proj-id,`<proj-id>`>> element was _required_ in the metadata, but the ISO STS documentation states that authors/adopters would not always be able to provide this identifier. Therefore, software that processes the ISO-specific STS vocabulary (in both NISO STS and ISO STS) needs to be prepared for the empty string as content of this element.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-doc-ident,`<doc-ident>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  proj-id      %proj-id-model;                              >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### ISO-specific, part of `<doc-ident>`
+[source,xml]
+....
+...
+<doc-ident>
+ <sdo>ISO</sdo>
+ <proj-id>57385</proj-id>
+ <language>en</language>
+ <release-version>IS</release-version>
+ <urn>iso:std:iso-iec:guide:71:ed-2:v1:en</urn>
+</doc-ident>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

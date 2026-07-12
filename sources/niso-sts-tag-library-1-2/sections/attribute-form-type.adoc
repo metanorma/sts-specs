@@ -1,0 +1,53 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/form-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-form-type]
+=== `@form-type` Form Type
+
+When an object such as a figure or boxed text is marked as a “form” (using the attribute <<attribute-is-form,`@is-form`>>), this `@form-type` attribute may be used to indicate the type of the form’s content.
+
+#### Usage/Remarks
+This version of NISO STS makes no attempt to tag forms semantically or for behavior such as filling out a form interactively. There is one attribute to mark a structure as a form (<<attribute-is-form,`@is-form`>>) and another to indicate the type/style of form being displayed (`@form-type`). (See suggested form types/styles below.)
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-boxed-text,`<boxed-text>`>>, <<element-fig,`<fig>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-preformat,`<preformat>`>>, <<element-table-wrap,`<table-wrap>`>>
+|===
+| Value| Meaning
+
+| blank| No content, an empty form that could be printed and filled in.
+| custom| Not one of the meanings named in this list. The type can be found as the value of
+                        the attribute <<attribute-custom-type,`@custom-type`>>.
+| exemplar| The form is already filled in, with words that provide a user with real examples of
+                        how the form should be filled in, such as 
+                        “`phone:` +1 301-315-9631”.
+| instructions| The form is already filled in, with words that provide a user with explanations or
+                        instructions concerning how the form is to be filled out, for example, 
+                        “`insert phone number, including country prefix`”.
+| unspecified| The type of form content is not given.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### An empty form that could be printed and filled in
+[source,xml]
+....
+...
+<sec sec-type="inspection">
+ <title>Field Notes</title>
+ <p>Inspectors must record all variances at the time of observation. A form 
+  such as the one in <xref rid="nne-fe">Example F-2</xref> may be used.</p>
+ ...
+ <non-normative-example id="nne-fe">
+  <fig is-form="form" form-type="blank">
+   <graphic orientation="landscape" mimetype="pdf" xlink:href="FieldObs.pdf"/>
+  </fig>
+ </non-normative-example>
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

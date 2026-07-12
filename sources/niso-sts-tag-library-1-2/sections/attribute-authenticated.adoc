@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/authenticated.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-authenticated]
+=== `@authenticated` Authenticated
+
+An authority (such as Crossref) has marked this contributor identifier as “authenticated”.
+
+#### Usage/Remarks
+The initial use of this attribute is to record the `@authenticated` attribute that Crossref may assign to an ORCID or other contributor ID.
+
+#### OPTIONAL (defaults to false) on element:  <<element-contrib-id,`<contrib-id>`>>
+
+|===
+| Value| Meaning
+
+| true| This contributor identifier has been marked by the issuing authority as authenticated.
+| false| No guarantee has been made about this contributor identifier.
+| Default value| false
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

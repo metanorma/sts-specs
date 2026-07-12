@@ -1,0 +1,89 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/compound-kwd.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-compound-kwd]
+=== `<compound-kwd>` Compound Keyword
+
+Wrapper element for multi-part keywords (for example, a code and its description/title/meaning).
+
+#### Usage/Remarks
+##### When to Use Compound Keyword
+
+Some keywords are a simple word or phrase; such keywords should generally be tagged using the <<element-kwd,`<kwd>`>> element. The <<element-compound-kwd,`<compound-kwd>`>> element is used when keywords are composed of multiple parts, such as: a code and its meaning, or an abbreviation and its expansion.
+#### Language in Keywords
+
+Keywords are contained in <<element-kwd-group,`<kwd-group>`>> elements. There may be several <<element-kwd-group,`<kwd-group>`>>s, each of which can be identified separately by language, vocabulary, or taxonomy source. Since different languages could mean, for example, different writing directions, none of the individual keyword elements (<<element-kwd,`<kwd>`>>, <<element-compound-kwd,`<compound-kwd>`>>, <<element-nested-kwd,`<nested-kwd>`>>) take the <<attribute-xml-lang,`@xml:lang`>> attribute; that is reserved for the <<element-kwd-group,`<kwd-group>`>> element. This means that if there are keywords in several languages they should be in different <<element-kwd-group,`<kwd-group>`>>s.
+#### Vocabulary Attributes
+
+For controlled vocabularies, two attributes can be used to link a keyword to specific term source in a controlled vocabulary: <<attribute-vocab-term,`@vocab-term`>> — This attribute holds the canonical form of the keyword as expressed in the vocabulary named in the <<element-kwd-group,`<kwd-group>`>>. The content of the keyword element (`<kwd>`, <<element-compound-kwd,`<compound-kwd>`>>, <<element-nested-kwd,`<nested-kwd>`>>) might not be exactly the same as the canonical form of the term, as the keyword element content might be a user-specific variant, for example, the term in another language. <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> — This attribute holds a unique identifier and possible pointer to the specific term in the named vocabulary (typically a URI or DOI reference), but <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> could be an item number or other system-specific identifier.
+If the controlled vocabulary is it not named on the <<element-kwd-group,`<kwd-group>`>>, it is also possible to use two additional vocabulary attributes on `<kwd>` to name the entire controlled vocabulary: <<attribute-vocab,`@vocab`>> — This attribute holds the name of a controlled or generic (uncontrolled) vocabulary, taxonomy, ontology, database, thesaurus, etc. that is the source of the keywords in the group, for example, “`CRediT`”, “`inspec`”, “`structural engineering`”, or “`VWL`”. In cases where there is no named vocabulary, the <<attribute-vocab,`@vocab`>> attribute should be set to “`uncontrolled`”. <<attribute-vocab-identifier,`@vocab-identifier`>> — This attribute holds a unique identifier and possible pointer to the named vocabulary (typically a URI or DOI reference).
+
+#### Related Elements
+
+*Types of Keywords:* This Tag Set contains several differently-structured types of keywords: `<kwd>` Used with simple keywords, such as words or phrases. <<element-compound-kwd,`<compound-kwd>`>> Used with multi-part keywords, such as keywords that contain both a code and its expansion/description/name/title. <<element-nested-kwd,`<nested-kwd>`>> Used with hierarchical keyword structures, such as taxonomies, to record a portion of a taxonomic hierarchy. Both simple and compound keywords can be nested hierarchically.
+*Keywords vs Subjects Terms:* Subject terms (collected within a <<element-subj-group,`<subj-group>`>> element) name broad classifications, categories, topics, or themes that describe or classify a standard. Keywords (collected within a <<element-kwd-group,`<kwd-group>`>> element) contain words from the narrative text or words (such as broader and narrower terms) related to that text.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-kwd-group,`<kwd-group>`>>, <<element-nested-kwd,`<nested-kwd>`>>
+#### Description
+
+<<element-compound-kwd-part,`<compound-kwd-part>`>> <<element-compound-kwd-part,Compound Keyword Part>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  compound-kwd %compound-kwd-model;                         >
+....
+#### Expanded Content Model
+
+(compound-kwd-part+)
+
+#### Tagged Sample
+
+##### INSPEC keywords added by SDO
+[source,xml]
+....
+...
+<kwd-group id="KG1" originator="ASME" vocab="Inspec"
+  vocab-identifier="http://www.theiet.org/resources/inspec/about/records/ithesaurus.cfm"
+  xml:lang="en">
+ <compound-kwd id="KG1.1">
+  <compound-kwd-part content-type="code">A7865P</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of other 
+   inorganic semiconductors and insulators (thin films/low dimensional 
+   structures)</compound-kwd-part>
+ </compound-kwd>
+
+ <compound-kwd id="KG1.2">
+  <compound-kwd-part content-type="code">A7865T</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of organic
+   compounds and polymers (thin films/low dimensional structures)</compound-kwd-part>
+ </compound-kwd>
+</kwd-group>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Keyword Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

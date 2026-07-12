@@ -1,0 +1,105 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/license.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-license]
+=== `<license>` License Information
+
+Set of conditions under which the content may be used, accessed, and distributed.
+
+#### Related Elements
+
+*Usage:* Use of this element is independent of both the NISO ALI <<element-ali-free_to_read,`<ali:free_to_read>`>> and the <<element-ali-license_ref,`<ali:license_ref>`>> elements.
+*Permissions and Licensing Elements:* NISO STS has several elements that deal with the usage, permissions, and licensing. Some of these elements are taken from the _NISO Access License and Indicators_ (ALI) NISO RP-22-2015 specification. The other element is based on JATS and predates the NISO ALI recommendation. <<element-ali-free_to_read,`<ali:free_to_read>`>> — This NISO ALI element is a simple flag whose presence indicates that the document is free to be read, without making statements about any additional reuse rights or restrictions. Date attributes can specify _when_ the document is free to be read. <<element-ali-license_ref,`<ali:license_ref>`>> — This NISO ALI element points to a _public_ license or waiver. By “public”, NISO ALI means that the offer is generally and not privately offered. Such a license may be either human or machine-readable text that explains the terms of use or reuse for the content. <<element-license,`<license>`>> — An element from JATS whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For organizations who adopt the NISO ALI recommendation, the <<element-license,`<license>`>> element can be used to hold a short representation of the license, such as a sentence or two, which is used for display. Alternatively, an organization can choose not to implement NISO ALI and to put the text of the license in <<element-license,`<license>`>>. The <<element-license,`<license>`>> element takes the <<attribute-xlink-href,`@xlink:href`>> attribute to point to the text of the license. However, the new NISO ALI element <<element-ali-license_ref,`<ali:license_ref>`>> performs the same pointing function. NISO STS follows JATS best practice in omitting the <<attribute-xlink-href,`@xlink:href`>> attribute from <<element-license,`<license>`>> if a NISO ALI <<element-ali-license_ref,`<ali:license_ref>`>> is used.
+
+#### Attributes
+
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-license-type,`@license-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-permissions,`<permissions>`>>
+#### Description
+
+Any one of: One or more of any of: <<element-ali-license_ref,`<ali:license_ref>`>> <<element-ali-license_ref,License Reference (NISO ALI)>> <<element-license-p,`<license-p>`>> <<element-license-p,License Paragraph>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  license      %license-model;                              >
+....
+#### Expanded Content Model
+
+((ali:license_ref | license-p)+)
+
+#### Tagged Samples
+
+#### Providing trademark information
+
+[source,xml]
+....
+...
+<permissions>
+ <copyright-statement>Copyright &#xa9; 2015 by The Institute 
+  of Electrical and Electronics Engineers, Inc. All rights 
+  reserved. Published 18 December 2015. Printed in the United 
+  States of America.</copyright-statement>
+ <copyright-year>2015</copyright-year>
+ <copyright-holder>IEEE</copyright-holder>
+ <license>
+  <license-p>IEEE is a registered trademark in the U.S. Patent 
+   &amp; Trademark Office, owned by The Institute of Electrical 
+   and Electronics Engineers, Incorporated.</license-p>
+ </license>
+</permissions>
+...
+....
+#### In bilingual standard
+
+[source,xml]
+....
+...
+<permissions>
+ <license xml:lang="en">
+  <license-p>Apart from exceptions provided by the law, 
+   nothing from this publication may be duplicated and/or 
+   published ...</license-p>
+  <license-p>The Netherlands Standardization Institute 
+   shall, with the exclusion of any other beneficiary, 
+   collect ...</license-p>
+ </license>
+ <license xml:lang="nl">
+  <license-p>Auteursrecht voorbehouden. Behoudens 
+   uitzondering door de wet gesteld mag zonder schriftelijke 
+   toestemming van het Nederlands Normalisatie-instituut 
+   niets uit deze uitgave worden ...</license-p>
+  <license-p>Het Nederlands Normalisatie-instituut is 
+   met uitsluiting van ieder ander gerechtigd de door 
+   ...</license-p>
+ </license>
+</permissions>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

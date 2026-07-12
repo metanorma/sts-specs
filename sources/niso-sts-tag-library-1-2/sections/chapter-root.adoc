@@ -1,0 +1,7 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/root.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-root]
+=== Root Elements
+
+NISO STS contains two root elements, either of which may be used as a document element to enclose a standards document: *Standard:* The <<element-standard,`<standard>`>> element is used for standards and other standards-like documents. A <<element-standard,`<standard>`>> may be at any stage in the standards and document life cycle, it may be developed by and published by one or more organizations, and it may be a simple short document or a very complex and/or long document. Although these Tag Sets were designed for normative standards, if the elements in this Tag Suite can be used to tag another type of standards document appropriately, using the <<element-standard,`<standard>`>> element for a document such as, for example, a Guide or Handbook, is not misuse of the NISO STS. *Adoption:* In the situation where a completed standard is adopted by organizations that did not create or publish it, the <<element-adoption,`<adoption>`>> structure contains information about the adoption _and_ the original standard. An adoption may include information on the organization(s) adopting the standard and include front matter (such as introductions) and back matter provided by the adopting organization(s). The <<element-adoption,`<adoption>`>> element can be used for nested adoptions and for adoptions of one or more <<element-standard,`<standard>`>>s.

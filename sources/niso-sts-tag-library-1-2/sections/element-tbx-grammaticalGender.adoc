@@ -1,0 +1,70 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-grammaticalGender.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-grammaticalGender]
+=== `<tbx:grammaticalGender>` Grammatical Gender Flag (TBX)
+
+Records the gender of the term in the given language (<<element-tbx-langSet,`<tbx:langSet>`>>), for instance, “`<tbx:grammaticalGender value="feminine"/>`”.
+
+#### Attributes
+
+* <<attribute-value,`@value`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-tig,`<tbx:tig>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.grammaticalGender; 
+                        EMPTY                                        >
+....
+
+#### Tagged Sample
+
+##### French noun is masculine and German noun is feminine
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

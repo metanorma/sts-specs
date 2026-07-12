@@ -1,0 +1,66 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/toggle.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-toggle]
+=== `@toggle` Toggle Switch
+
+Specifies if the styling of the element it modifies should act as a toggle-switch. When the toggle-switch is on, the textual content of the element will always be visually set apart from its context. When the switch is off, the rendition is fixed to the style requested and will not change based on context.
+
+#### OPTIONAL (defaults to yes) on element:  <<element-italic,`<italic>`>>
+
+|===
+| Value| Meaning
+
+| no| The element does not act as a toggle; the emphasized text remains in the requested
+                        style, no matter what the surrounding text does.
+| yes| The emphasis element acts as a toggle. If the surrounding text is set to the same
+                        
+                        emphasis style, the text within this element will change to another emphasis style,
+                        so that the text will always
+                        be typographically distinct from its surroundings.
+| Default value| yes
+|===
+#### OPTIONAL (defaults to no) on element:  <<element-roman,`<roman>`>>
+
+|===
+| Value| Meaning
+
+| no| The element does not act as a toggle; the emphasized text remains in the same
+                        emphasis, no matter what the surrounding text does.
+| yes| The emphasis element acts as a toggle. If the surrounding text is set to the same
+                        
+                        emphasis, the text within this element will change to another emphasis style, so that
+                        the text will always
+                        be typographically distinct from its surroundings.
+| Default value| no
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-bold,`<bold>`>>, <<element-monospace,`<monospace>`>>, <<element-overline,`<overline>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-underline,`<underline>`>>
+|===
+| Value| Meaning
+
+| no| The element does not act as a toggle; the emphasized text remains in the same
+                        emphasis, no matter what the surrounding text does.
+| yes| The emphasis element acts as a toggle. If the surrounding text is set to the same
+                        
+                        emphasis, the text within this element will change to another emphasis style, so that
+                        the text will always
+                        be typographically distinct from its surroundings.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Overline Q will remain overlined in all contexts
+[source,xml]
+....
+...
+<p>As Q and <overline toggle="no">Q</overline> are always 
+different ...</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

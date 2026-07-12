@@ -1,0 +1,34 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/custom-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-custom-type]
+=== `@custom-type` Custom Attribute Value Escape Hatch
+
+Used in the same attribute list as an attribute with a set list of values, to provide a way for the content creator to say “my attribute value is not on the set list”.
+
+#### Usage/Remarks
+Used _only_ in the same attribute list as an attribute whose value comes from a set list.
+##### Custom Value
+
+When a JATS tagger needs to record an attribute value that is not named on the list of possible attribute values, they use the value “`custom`”. This tells a JATS processor that this attribute value is not one of the named values.
+The Best Practice (unenforceable in DTDs, but very enforceable in Schematron, for example) is, that if you use the value “`custom`” for an attribute, you should then record what type of custom (the value not in the set list) in the `@custom-type` attribute. For example:
+[source,xml]
+....
+<person-group person-group-type="custom" custom-type="statisticians">
+<xref ref-type="custom" custom-type="data-avail-statement">
+....
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-boxed-text,`<boxed-text>`>>, <<element-fig,`<fig>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-person-group,`<person-group>`>>, <<element-preformat,`<preformat>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-term,`<related-term>`>>, <<element-std,`<std>`>>, <<element-std-ref,`<std-ref>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-xref,`<xref>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The value of the type attribute for this element, when that value is not found in
+                        a set list of values.
+| Restriction| `@custom-type` is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

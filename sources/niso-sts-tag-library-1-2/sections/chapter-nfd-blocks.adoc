@@ -1,0 +1,88 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-blocks.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-blocks]
+=== Body Blocks
+
+Block structures are elements, such as tables and figures, that are content units separated from other content visually and logically, typically with whitespace before and after them. These elements are typically used in the same places a paragraph may be used, for example inside a section after the section title.
+#### Alternatives For Processing
+
+image::images/alternatives.png[alternatives.png]
+#### Array (Simple Tabular Array)
+
+image::images/array.png[array.png]
+#### Boxed Text
+
+image::images/boxed-text.png[boxed-text.png]
+#### Caption of a Figure, Table, Etc.
+
+image::images/caption.png[caption.png]
+#### Legend
+
+image::images/legend.png[legend.png]
+#### Chemical Structure Wrapper
+
+image::images/chem-struct-wrap.png[chem-struct-wrap.png]
+#### Figure
+
+image::images/fig.png[fig.png]
+#### Figure Group
+
+image::images/fig-group.png[fig-group.png]
+#### Non-Normative-Note
+
+image::images/non-normative-note.png[non-normative-note.png]
+#### Normative-Note
+
+image::images/normative-note.png[normative-note.png]
+#### Non-Normative-Example
+
+image::images/non-normative-example.png[non-normative-example.png]
+#### Normative-Example
+
+image::images/normative-example.png[normative-example.png]
+#### Notes Group
+
+image::images/notes-group.png[notes-group.png]
+#### Supplementary Material
+
+image::images/supplementary-material.png[supplementary-material.png]
+#### Table Wrapper
+
+image::images/table-wrap.png[table-wrap.png]
+#### Table (NISO JATS table model)
+
+image::images/table.png[table.png]
+#### OASIS XML Exchange (CALS) Table
+
+image::images/oasis-table.png[oasis-table.png]
+#### Table Footer
+
+image::images/table-wrap-foot.png[table-wrap-foot.png]
+#### Table Group
+
+image::images/table-wrap-group.png[table-wrap-group.png]
+#### Formula, Display Group
+
+image::images/disp-formula-group.png[disp-formula-group.png]
+#### Editing Instruction
+
+image::images/editing-instruction.png[editing-instruction.png]
+#### Definition List
+
+image::images/def-list.png[def-list.png]
+#### List
+
+image::images/list.png[list.png]
+#### Quote, Displayed
+
+image::images/disp-quote.png[disp-quote.png]
+#### Speech
+
+image::images/speech.png[speech.png]
+#### Statement, Formal
+
+image::images/statement.png[statement.png]
+#### Verse Form For Poetry
+
+image::images/verse-group.png[verse-group.png]

@@ -1,0 +1,117 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/processing-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-processing-meta]
+=== `<processing-meta>` Processing Metadata
+
+Optional container element, used to hold the processing metadata elements, which describe processing information descriptive of the XML-tagged document (document instance).
+
+#### Usage/Remarks
+The Processing Metadata element (`<processing-meta>`) allows a document creator to provide a more complete in-the-XML description of the tag set associated with a document. A <<element-processing-meta,`<processing-meta>`>> names (through attributes) the tag set family, base tag set, table model, terminology model, and math options a document follows and (through elements) some of the modeling restrictions or extensions the document claims to follow.
+Processing Metadata is not considered to be part of the content of a standards document, or part of the metadata for citing a standard; it is metadata about how the XML is constructed — not about how the standard is structured. This metadata is information at the “file level” and thus not part of <<element-std-doc-meta,`<std-doc-meta>`>> or the <<element-std-meta,`<std-meta>`>>, but inside the standard as a peer to <<element-front,`<front>`>>, which is the overarching metadata container in STS. The <<element-processing-meta,`<processing-meta>`>> was added to the model of <<element-standard,`<standard>`>>, as a child element, the peer of <<element-front,`<front>`>> and to the model of <<element-adoption,`<adoption>`>>, as a child element, the peer of <<element-adoption-front,`<adoption-front>`>>. The elements inside <<element-processing-meta,`<processing-meta>`>> name tag set extensions (superset) and restrictions (subset, secondary schema, etc.) that the XML document claims to follow. More than one restriction or extension is allowed. The restrictions on an <<element-adoption,`<adoption>`>> need not be the same as on the enclosed <<element-standard,`<standard>`>>, although they will typically be the same. The attributes on <<element-processing-meta,`<processing-meta>`>> describe the modeling choices made by this document in terms of tag set family, base tag set, table model, terminology model, and math tagging.
+#### `<processing-meta>` Content
+
+This optional container element holds processing metadata elements, which describe processing information descriptive of the XML-tagged document (document instance). The <<element-processing-meta,`<processing-meta>`>> element contains the following elements: <<element-restricted-by,`<restricted-by>`>> — Identification of one of the guidelines or other restrictions (such as a tighter subset schema) the document claims to be following. The content of <<element-restricted-by,`<restricted-by>`>> may be a name such as “sts4i” or a URI, for example, the URL of a particular ISO recommendation. The element is repeatable so that multiple restrictions can be claimed. <<element-extended-by,`<extended-by>`>> — Identification of a JATS extension or superset that the document claims to be following. The content of <<element-extended-by,`<extended-by>`>> may be a name or a URI. The element is repeatable so that more than one extension can be claimed. <<element-custom-meta-group,`<custom-meta-group>`>> — To hold other processing metadata a JATS user might want to express in the XML file.
+#### Tag Set Identification Attributes
+
+Several attributes on the <<element-processing-meta,`<processing-meta>`>> element describe the tag set version choices more fully than the <<attribute-dtd-version,`@dtd-version`>> attribute alone: <<attribute-tagset-family,`@tagset-family`>> Which of the JATS tag set families is the basis for this document’s tag set? (e.g., “`sts`” or “`jats`”) <<attribute-base-tagset,`@base-tagset`>> Which of the STS standard tag sets is the basis for this document? (e.g., “`interchange`” or “`extended`”) <<attribute-table-model,`@table-model`>> Which table model is used by the tag set for this document? (e.g., “`xhtml`” or “`oasis`”) <<attribute-mathml-version,`@mathml-version`>> Which version of MathML is used by the tag set for this document? (e.g., “`3.0`” or “`2.0`”) <<attribute-terminology-model,`@terminology-model`>> Are the terms for this standard described by TBX or by <<element-term-display,`<term-display>`>>? <<attribute-math-representation,`@math-representation`>> A list of the (possibly many) ways mathematical expressions may be represented in this document (e.g., both MathML and TeX [“`mathml tex`”])
+###### @tagset-family
+
+Which of the JATS tag set families is the basis for this document’s tag set? `@tagset-family` is an optional attribute; there is no default. The attribute has a set value list: bits BITS (Book Interchange Tag Suite) jats JATS (Journal Article Tag Suite) sts STS (Standards Tag Suite) This value is the most likely to be used in STS.
+###### @base-tagset
+
+Which of the JATS standard tag sets is the basis for this document? `@base-tagset` is an optional attribute; there is no default. The attribute has a set value list:
+|===
+| interchange| Basic NISO STS tag set with only XHTML tables
+
+| extended| NISO STS tag set with both OASIS and XHTML table models
+|===
+###### @table-model
+
+Which table model is used by the tag set for this document? `@table-model` is an optional attribute; there is no default. both Both XHTML-inspired and OASIS CALS models are used none No table models are used oasis The OASIS XML Exchange (CALS) table model xhtml The XHTML-inspired table model
+###### @mathml-version
+
+Which version of MathML is used by the tag set for this document? `@mathml-version` is an optional attribute; there is no default. 2.0 MathML 2.0 is used 3.0 MathML 3.0 is used
+###### @terminology-model
+
+Which terminology model(s) are used to describe terms in this standard.
+|===
+| tbx| Terms within term sections are defined using the namespaced TBX vocabulary
+
+| term-display| Terms within term sections are defined using the <<element-term-display,`<term-display>`>>  element
+| both| Some terms or portions of term descriptions are defined using the <<element-term-display,`<term-display>`>> element and some using the TBX vocabulary
+| none| Terms and term sections are not defined using either the TBX vocabulary or the <<element-term-display,`<term-display>`>> element. Terminology sections are tagged as ordinary text paragraphs and sections.
+|===
+###### @math-representation
+
+A list of the (possibly many) ways mathematical expressions may be represented in this document, for example, both MathML and TeX (“mathml tex”) or using MathML, SVG graphics, and narrative text (“mathml images plain-text”).
+This attribute has an NMTOKENS value, meaning a space-separated list of values, so that a document can declare that their documents use both TeX and images, for example, or MathML, gif images, and TeX. Likely values include:
+[source,xml]
+....
+mathml   tex   latex   images   plain-text 
+....
+
+#### Attributes
+
+* <<attribute-base-tagset,`@base-tagset`>>
+* <<attribute-math-representation,`@math-representation`>>
+* <<attribute-mathml-version,`@mathml-version`>>
+* <<attribute-table-model,`@table-model`>>
+* <<attribute-tagset-family,`@tagset-family`>>
+* <<attribute-terminology-model,`@terminology-model`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption,`<adoption>`>>, <<element-standard,`<standard>`>>
+#### Description
+
+The following, in order: <<element-restricted-by,`<restricted-by>`>> <<element-restricted-by,Restricted-by Model>>, zero or more <<element-extended-by,`<extended-by>`>> <<element-extended-by,Extended-by Model>>, zero or more <<element-custom-meta-group,`<custom-meta-group>`>> <<element-custom-meta-group,Custom Metadata Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  processing-meta
+                        %processing-meta-model;                      >
+....
+#### Expanded Content Model
+
+(restricted-by*, extended-by*, custom-meta-group*)
+
+#### Tagged Sample
+
+##### Metadata about the XML file, not the standard
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <processing-meta
+   base-tagset="interchange"
+   mathml-version="3.0"
+   table-model="xhtml"
+   terminology-model="term-display"
+   math-representation="mathml png"
+   tagset-family="sts" />  
+ <front>...</front>
+ <body>...</body>
+ <back>...</back>
+</standard>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Processing Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

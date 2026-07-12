@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/document-id-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-document-id-type]
+=== `@document-id-type` Related Object Document Identifier Type
+
+Type of document identifier (for example, a DOI or a publisher’s identifier) named in the <<attribute-document-id,`@document-id`>> attribute of the <<element-related-object,`<related-object>`>> element to identify a document.
+
+#### OPTIONAL on element:  <<element-related-object,`<related-object>`>>
+
+|===
+| Value| Meaning
+
+| The type of document identifier of the related object, for example, a DOI| The type of document identifier named in the <<attribute-document-id,`@document-id`>> attribute for a (<<element-related-object,`<related-object>`>>) element. This attribute qualifies the <<attribute-document-id,`@document-id`>> attribute.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

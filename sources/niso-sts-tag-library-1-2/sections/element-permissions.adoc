@@ -1,0 +1,129 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/permissions.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-permissions]
+=== `<permissions>` Permissions
+
+Container element for copyright and license information.
+
+#### Usage/Remarks
+The children of this element are repeatable. If multiple values are applicable (such as multiple copyright years), they should be tagged separately rather than as multiple values within a single element.
+
+#### Related Elements
+
+NISO STS has several elements dealing with the usage, permissions, and licensing of standards material; these elements may be contained inside `<permissions>`. Some of these elements are taken from the NISO Access License and Indicators (ALI) 2015 _Recommended Practice_ specification. The other element was defined by and predates the NISO ALI recommendation. <<element-ali-free_to_read,`<ali:free_to_read>`>> — This NISO ALI element is a simple flag whose presence indicates that the document is free to be read, without making statements about any additional reuse rights or restrictions. Date attributes can specify _when_ the document is free to be read. <<element-ali-license_ref,`<ali:license_ref>`>> — This NISO ALI element points to a _public_ license or waiver. By “public”, NISO means that the offer is generally and not privately offered. Such a license may be either human or machine-readable text that explains the terms of use or reuse for the content. <<element-license,`<license>`>> — This is an element from JATS whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For standards organizations who adopt the NISO ALI recommendation, the <<element-license,`<license>`>> element could be used to hold a short representation of the license, such as a sentence or two, which is used for display. Alternatively, a standards organization could choose not to implement NISO ALI and to put the text of the license in <<element-license,`<license>`>>. The <<element-license,`<license>`>> element takes the <<attribute-xlink-href,`@xlink:href`>> attribute to point to the text of the license. However, the new NISO ALI element <<element-ali-license_ref,`<ali:license_ref>`>> performs the same pointing function. NISO STS best practice is to omit the <<attribute-xlink-href,`@xlink:href`>> attribute from <<element-license,`<license>`>> if a NISO ALI <<element-ali-license_ref,`<ali:license_ref>`>> is used.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-app,`<app>`>>, <<element-array,`<array>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-code,`<code>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-graphic,`<graphic>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-media,`<media>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-preformat,`<preformat>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-statement,`<statement>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-verse-group,`<verse-group>`>>
+#### Description
+
+The following, in order: <<element-copyright-statement,`<copyright-statement>`>> <<element-copyright-statement,Copyright Statement>>, zero or more <<element-copyright-year,`<copyright-year>`>> <<element-copyright-year,Copyright Year>>, zero or more <<element-copyright-holder,`<copyright-holder>`>> <<element-copyright-holder,Copyright Holder>>, zero or more Any combination of: <<element-ali-free_to_read,`<ali:free_to_read>`>> <<element-ali-free_to_read,Free to Read (NISO ALI)>> <<element-license,`<license>`>> <<element-license,License Information>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  permissions  %permissions-model;                          >
+....
+#### Expanded Content Model
+
+(copyright-statement*, copyright-year*, copyright-holder*, (ali:free_to_read | license)*)
+
+#### Tagged Samples
+
+#### Copyright inside `<std-meta>`
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <permissions>
+  <copyright-statement>ASME is the registered trademark of The American Society 
+   of Mechanical Engineers.</copyright-statement>
+  <copyright-year>2017</copyright-year>
+  <copyright-holder>THE AMERICAN SOCIETY OF MECHANICAL ENGINEERS</copyright-holder> </permissions>
+</std-meta>
+...
+....
+#### ISO-specific, copyright inside `<iso-meta>`
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ ...
+ <secretariat>...</secretariat>
+ <permissions>
+  <copyright-year>2006</copyright-year>
+  <copyright-holder>ISO</copyright-holder>
+ </permissions>
+</iso-meta>
+...
+....
+#### Both copyright and license information
+
+[source,xml]
+....
+...
+<permissions>
+ <copyright-statement>Copyright &#x00A9; 2014 by The Institute of 
+  Electrical and Electronics Engineers, Inc. All rights reserved. 
+  Published 4 November 2014. Printed in the United States of 
+  America.</copyright-statement>
+ <copyright-year>2014</copyright-year>
+ <copyright-holder>IEEE</copyright-holder>
+ <copyright-holder>ISO</copyright-holder>
+ <copyright-holder>IEC</copyright-holder>
+ <license>
+  <license-p>IEEE is a registered trademark in the U.S. Patent &#x0026; 
+   Trademark Office, owned by The Institute of Electrical and Electronics 
+   Engineers, Incorporated.</license-p>
+  <license-p><italic>No part of this publication may be reproduced in 
+   any form, in an electronic retrieval system or otherwise, without 
+   the prior written permission of the publisher</italic>.</license-p>
+  <license-p>COPYRIGHT PROTECTED DOCUMENT</license-p>
+  <license-p>&#x00A9; ISO/IEC 2013</license-p>
+  <license-p>All rights reserved. Unless otherwise specified, no part 
+   of this publication may be reproduced or utilized otherwide in any 
+   form or by any means, electronic or mechanical, including photocopying, 
+   or posting on the internet or an intranet, without prior written 
+   permission. Permission can be requested from either ISO at the address 
+   below or ISO&#x0027;s member body in the country of the requester:
+   <list list-type="simple">
+    <list-item>
+     <p><address>
+       <addr-line>ISO copyright office</addr-line>
+       <addr-line>Case postage 56 &#x2022;</addr-line>
+       <postal-code>CH-1211</postal-code>
+       <city>Geneva 20</city>
+       <addr-line>Tel. <phone>+ 41 22 749 01 11</phone></addr-line>
+       <addr-line>Fax <fax>+ 41 22 749 09 47</fax></addr-line>
+      </address></p>
+     <p>E-mail <email>copyright@iso.org</email></p>
+     <p>Web <uri>www.iso.org</uri></p>
+     <p>Published in Switzerland</p>
+    </list-item>
+   </list>
+  </license-p>
+ </license>
+</permissions>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Permissions
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,157 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/table-wrap-foot.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-table-wrap-foot]
+=== `<table-wrap-foot>` Table Wrap Footer
+
+Container element to hold the footnotes, general notes, or other paragraphs at the end of a table. This element does not contain tabular data.
+
+#### Usage/Remarks
+Footnotes referenced in a table may be stored here, as may general notes to the table which are not explicitly called out in the table, or merely paragraphs of information about the table that appear after the last row.
+#### Display/Formatting Note
+
+This element is typically displayed as one or more block paragraphs of text directly following a table.
+#### ISO Legacy Note
+
+In some existing ISO STS usage at both ISO and CEN, the element <<element-table-wrap-foot,`<table-wrap-foot>`>> (which holds material at the bottom of a table that is _not_ part of the rows and columns) has been used to hold content intended to be displayed as the last row of the table, content that should more correctly have been tagged with the element <<element-tfoot,`<tfoot>`>>. This usage stems from the coding instructions used to outsource the conversion of thousands of pre-2014 ISO standards to XML, which considered <<element-tfoot,`<tfoot>`>> and <<element-table-wrap-foot,`<table-wrap-foot>`>> as equivalent alternatives for housing table footnotes. That coding instruction has since been shared in similar effort by CEN and individual CEN members to convert CEN standards to ISO STS. Best Practice (going forward) is to distinguish between <<element-tfoot,`<tfoot>`>> (for repeating rows and columns) and <<element-table-wrap-foot,`<table-wrap-foot>`>> (for non-tabular notes) as the current NISO STS table models intend, but many legacy documents will contain the usage just described.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-table-wrap,`<table-wrap>`>>
+#### Description
+
+The following, in order: <<element-title,`<title>`>> <<element-title,Title>>, zero or one One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  table-wrap-foot
+                        %table-wrap-foot-model;                      >
+....
+#### Expanded Content Model
+
+(title?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group | fn-group | fn | attrib | permissions)+)
+
+#### Tagged Samples
+
+#### Containing single footnote
+
+[source,xml]
+....
+...
+<table-wrap id="tab_23" position="float"><!--<?Table Small_9?>-->
+ <label>Table 23</label>
+ <caption>
+  <title>Type AO spring force versus hardness</title>
+ </caption>
+ <table border="2" rules="groups" style="border-collapse: collapse; 
+  border-style: solid;" width="298">
+  <col width="41.86%"/>
+  <col width="58.14%"/>
+  <thead>
+   <tr>
+    <th align="center" scope="col" style="border-left: solid 1px; 
+     border-top: solid 1px; border-right: solid 1px; border-bottom: 
+     solid 2px" valign="middle"><bold>Shore AO value</bold></th>
+    <th align="center" scope="col" style="border-left: solid 1px; 
+     border-top: solid 1px; border-right: solid 1px; border-bottom: 
+     solid 2px" valign="middle"><bold>Value of spring force</bold>, 
+     <italic>F</italic>, <bold>in</bold> mN<break/>
+     (&Delta;<italic>F</italic> &equals; &plusmn; 37,5 mN)<xref 
+     ref-type="fn" rid="table-fn_23.1"><sup>a</sup></xref></th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td align="center" scope="row" style="border-left: solid 1px; 
+     border-top: solid 1px; border-right: solid 1px; border-bottom: 
+     solid 1px" valign="middle">0</td>
+    <td align="center" style="border-left: solid 1px; border-top: 
+     solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+     valign="middle">550,0</td>
+   </tr>
+   <tr>
+    <td align="center" scope="row" style="border-left: solid 1px; 
+     border-top: solid 1px; border-right: solid 1px; border-bottom: 
+     solid 1px" valign="middle">10</td>
+    <td align="center" style="border-left: solid 1px; border-top: 
+     solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+     valign="middle">1 300,0</td>
+   </tr>
+   ...
+  </tbody>
+ </table>
+ <table-wrap-foot>
+  <fn id="table-fn_23.1">
+   <label><sup>a</sup></label>
+   <p>For hand-held durometers, the spring force tolerance 
+    (&Delta;<italic>F</italic>) may be &plusmn; 75,0 mN.</p>
+  </fn>
+ </table-wrap-foot>
+</table-wrap>
+...
+....
+#### Containing multiple footnotes (grouped within `<fn-group>`)
+
+[source,xml]
+....
+...
+<table-wrap>
+ ...
+ <table>...</table>
+ <table-wrap-foot>
+  <fn-group>
+
+   <fn id="tfn00001">
+    <label>A</label>
+    <p>From Benz et al. <bold>(<xref rid="pr00032">32</xref>)</bold>, 
+     Stoltzfus <bold>(<xref rid="pr00044">35</xref>)</bold>, specimens 
+     3.2 mm ( 1/8 in.) in diameter by 127 mm (5 in.) long.</p>
+   </fn>
+
+   <fn id="tfn00002">
+    <label>B</label>
+    <p>See <xref rid="tx00008" ref-type="table">Table X1.8</xref>
+     for alloy compositions.</p>
+   </fn>
+
+   <fn id="tfn00003">
+    <label>C</label>
+    <p>A 3-L accumulator was added to the test chamber on all 
+     tests that were conducted at 3.5 or 6.9 MPa (500 or 1000 
+     psig), except on those tests marked with FootnoteC.</p>
+   </fn>
+
+   <fn id="tfn00004">
+    <label>D</label>
+    <p>NP=Nonpropagating (less than 5 cm of the specimen length 
+     was consumed), CB=Completely burned.</p>
+   </fn>
+
+   <fn id="tfn00005">
+    <label>E</label>
+    <p>These tests were conducted using the video setup. No burn
+     rate was calculated.</p>
+   </fn>
+  </fn-group>
+ </table-wrap-foot>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table Footer
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

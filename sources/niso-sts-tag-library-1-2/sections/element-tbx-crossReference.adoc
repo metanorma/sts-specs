@@ -1,0 +1,81 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-crossReference.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-crossReference]
+=== `<tbx:crossReference>` Cross Reference (TBX)
+
+The `<tbx:crossReference>` element is a hyperlinking element that points to the location of another term in the same document, usually a related term (such as an antonym or homonym). This element is repeatable; so you can include as many cross references to terms as you need in an entry.
+
+#### Usage/Remarks
+The content of the `<tbx:crossReference>` element is the display text of the link.
+In the rendered output, the content of this elements is typically prepended with the label *Related term:*.
+(Note: _Do not use_ a formulation such as “Note: See ...” for an internal cross-reference to another term, use this `<tbx:crossReference>` element.)
+
+#### Related Elements
+
+*External Cross Reference:* A `<tbx:crossReference>` can only occur at the <<element-tbx-langSet,`<tbx:langSet>`>> level, whereas an <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>> can occur at either the <<element-tbx-langSet,`<tbx:langSet>`>> or the <<element-tbx-termEntry,`<tbx:termEntry>`>> level. The <<attribute-target,`@target`>> attribute is optional for `<tbx:crossReference>`, and the <<attribute-xtarget,`@xtarget`>> attribute mandatory for <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>
+*Cross Reference inside Definition or Example:* A `<tbx:crossReference>` cannot be embedded into a definition or an example. For that purpose, use <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>.
+
+#### Attributes
+
+* <<attribute-script,`@script`>>
+* <<attribute-target,`@target`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-langSet,`<tbx:langSet>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> <<element-break,`<break>`>> <<element-break,Line Break>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.crossReference; 
+                        %simpleText-model;                           >
+....
+#### Expanded Content Model
+
+(#PCDATA | disp-formula | disp-formula-group | chem-struct | inline-formula | mml:math | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | sub | sup | def-list | list | fn | target | xref | citation-alternatives | element-citation | mixed-citation | std | break | named-content | styled-content | address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | email | ext-link | uri | inline-code | inline-graphic | inline-media | private-char)*
+
+#### Tagged Sample
+
+##### Inside `<tbx:termEntry>`, referencing a related term
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a228.14">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>part capable of conducting electric current</tbx:definition>
+    <tbx:note>Although not necessarily electrically energized in normal operating conditions, it may
+      become electrically energized under fault conditions of the <tbx:entailedTerm>basic insulation
+      (4)</tbx:entailedTerm>.</tbx:note>
+    <tbx:crossReference>exposed conductive part</tbx:crossReference>
+    <tbx:tig>
+      <tbx:term id="a228.14-1">conductive part</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>pièce à même de conduire le courant électrique</tbx:definition>
+    <tbx:note>Bien que non nécessairement sous tension dans les conditions normales de service, elle
+      peut devenir sous tension en cas de défaillance de l'<tbx:entailedTerm>isolation de base
+      (4)</tbx:entailedTerm>.</tbx:note>
+    <tbx:crossReference>pièce conductrice apparente</tbx:crossReference>
+    <tbx:tig>
+      <tbx:term id="a228.14-2">pièce conductrice</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,96 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/alt-text.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-alt-text]
+=== `<alt-text>` Alternate Title Text For a Figure, Etc.
+
+Short phrase used for pronunciation or as an alternative display for a structure or graphical object, typically for reasons of accessibility or graphic-limited devices. For example, <<element-alt-text,`<alt-text>`>> may be used to display “behind” a figure, table, graphic, or other structure.
+
+#### Related Elements
+
+The similarly non-visual element <<element-long-desc,`<long-desc>`>> is meant for an extended description of the figure, table, graphic, inline-graphic, etc.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-array,`<array>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-code,`<code>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-media,`<media>`>>, <<element-preformat,`<preformat>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  alt-text     (#PCDATA)                                    >
+....
+
+#### Tagged Samples
+
+#### To provide simple text that can be pronounced by eReaders in addition to or instead
+                  of visual graphic
+
+[source,xml]
+....
+...
+<fig id="f00001">
+ <label>FIG. 1</label>
+ <caption>
+  <p>Single-Hub and Double-Hub Cast Iron Soil Pipe Laying Lengths</p>
+ </caption>
+ <graphic xlink:href="http://www.astm.org/HTTP/IMAGES/A0074_60200.png">
+  <alt-text>Single-Hub and Double-Hub Cast Iron Soil Pipe Laying Lengths</alt-text>
+ </graphic>
+</fig>
+...
+....
+#### To provide additional information concerning figure for graphic-impaired
+
+[source,xml]
+....
+...
+<fig>
+ <caption><title>Truth Table</title></caption>
+ <alt-text>Truth Table: NOR Gate</alt-text>
+ <long-desc>Truth table showing that the output of a NOR gate is zero 
+  if any of the input is 1 and the output is 1 only if both the inputs 
+  of the gate is 0.</long-desc>
+ <graphic xlink:href="flip-flop-NOR-gate.jpg"></graphic>
+</fig>
+...
+....
+#### To provide readable/pronounceable alternative to inline graphic
+
+[source,xml]
+....
+... 
+<sec>
+ <label>79.1</label>
+ <p>Elongate ... in the form of a 
+  <private-char description="dogleg">
+   <inline-graphic  
+     xlink:href="http://www1.astm.org/HTTP/IMAGESxHTML/images/glyphs/ASTM_SpecChar/dogleg_12">
+    <alt-text content-type="special character">dogleg character</alt-text>
+   </inline-graphic>
+  </private-char>. During the ...</p>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Accessibility
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

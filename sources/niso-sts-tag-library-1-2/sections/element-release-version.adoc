@@ -1,0 +1,105 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/release-version.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-release-version]
+=== `<release-version>` Release-Version/Development Stage/Status
+
+Metadata that describes the specific draft status or development lifecycle stage of this standard.
+
+#### Usage/Remarks
+For example, in ISO standards, the `<release-version>` element identifies the version of the standard in terms of the ISO standard maturity stages (“`WD`”, “`CD`”, “`DIS`”, “`FDIS`”, and “`IS`”). NSBs and SDOs may use their own life cycle stage nomenclature systems instead of the ISO maturity stages. For example, DIN uses the code “`N`” for “`published`” and a code “`VN`” for “`preliminary`”.
+#### ISO Note
+
+In current ISO-related documents, the `<release-version>` element identifies the version of the document in terms of the ISO standard maturity stages. Inside <<element-doc-ident,`<doc-ident>`>> within <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>, the content for this element would therefore be expected to be one of the following: WD Working Draft CD Committee Draft DIS Draft International Standard FDIS Final Draft IS International Standard (This value is also used for later corrected editions and alternate language versions of an IS.)
+#### Vocabulary Attributes
+
+Two vocabulary attributes can be used to link a keyword to its specific term source in a controlled vocabulary: <<attribute-vocab-term,`@vocab-term`>> — This attribute holds the canonical form of the keyword as expressed in the vocabulary named in the <<element-kwd-group,`<kwd-group>`>>. The content of the keyword element (`<kwd>`, <<element-compound-kwd,`<compound-kwd>`>>, <<element-nested-kwd,`<nested-kwd>`>>) need not be exactly the same as the canonical form of the term, as the keyword element content might be a user-specific variant, for example, the term in another language. <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> — This attribute holds a unique identifier and possible pointer to the specific term in the named vocabulary (typically a URI or DOI reference), but <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> could be an item number or other system-specific identifier.
+If the controlled vocabulary is it not named on the <<element-kwd-group,`<kwd-group>`>>, it is also possible to use two additional vocabulary attributes on `<kwd>` to name the entire controlled vocabulary: <<attribute-vocab,`@vocab`>> — This attribute holds the name of a controlled or generic (uncontrolled) vocabulary, taxonomy, ontology, database, thesaurus, etc. that is the source of the keywords in the group, for example, “`CRediT`”, “`inspec`”, “`structural engineering`”, or “`VWL`”. In cases where there is no named vocabulary, the <<attribute-vocab,`@vocab`>> attribute should be set to “`uncontrolled`”. <<attribute-vocab-identifier,`@vocab-identifier`>> — This attribute holds a unique identifier and possible pointer to the named vocabulary (typically a URI or DOI reference).
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-stage-code,`@stage-code`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-doc-ident,`<doc-ident>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  release-version
+                        (#PCDATA %release-version-elements;)*        >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### For ISO standard
+
+[source,xml]
+....
+...
+<iso-meta>
+ <title-wrap xml:lang="en">...</title-wrap>
+ <doc-ident>
+  <sdo>ISO</sdo>
+  <proj-id>...</proj-id>
+  <language>en</language>
+  <release-version stage-code="60.60">IS</release-version>
+  <urn>urn:iso:std:iso:2560:ed-3:v1:en</urn>
+ </doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <edition>3</edition>
+  <version>1</version>
+ </std-ident>
+ ...  
+</iso-meta>
+...
+....
+#### For non-ISO standard
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>
+  <full>STS: Standards Tag Suite</full>
+ </title-wrap>
+ <release-version>Draft for Public Comment</release-version>
+ <std-ident>
+  <originator>NISO</originator>
+  <doc-type>standard</doc-type>
+  <version>0.2</version>
+  <std-id-group>
+   <std-id std-id-type="">NISO Z39.102-201x</std-id>
+  </std-id-group>
+  <issn>1041-5653</issn>
+  <year iso-8601-date="201x">201x</year>
+ </std-ident>
+ ...
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,45 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/term-status.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-term-status]
+=== `@term-status` Term Status
+
+The current status of a term (<<element-term,`<term>`>> inside a <<element-term-display,`<term-display>`>>) in a terms and definitions section, for example, “`deprecated`”.
+
+#### Usage/Remarks
+The current <<attribute-term-status,`@term-status`>> values are from a TBX list of term statuses.
+
+#### OPTIONAL on element:  <<element-term,`<term>`>>
+
+|===
+| Value| Meaning
+
+| admitted| A term that does not meet the requirements to be a preferred term, but is not deprecated,
+                        possibly because it is in common use. Expanded and abbreviated forms of a term are
+                        sometimes used as admitted terms.
+| non-preferred| This term is deprecated in favor of a preferred term. 
+                        Deprecated terms include obsolete and superseded terms.
+| preferred| This term is the one to be used.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Preferred term
+[source,xml]
+....
+...
+<term-display>
+ <term term-status="preferred">Kapselung</term>
+ <term-display-string>(en: <term xml:lang="en" 
+   term-type="translation">enclosure</term>)</term-display-string>
+ <def>
+  <p>Teil einer gasisolierten, metallgekapselten Schaltanlage, ...</p>
+ </def>
+</term-display>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

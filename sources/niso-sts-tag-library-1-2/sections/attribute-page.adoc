@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/page.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-page]
+=== `@page` Page (of Related Article)
+
+Page number of a related journal article, which may be either the number of the journal page on which the article starts or a page range.
+
+#### Usage/Remarks
+The <<attribute-page,`@page`>> attribute can be used with the <<attribute-vol,`@vol`>>, <<attribute-issue,`@issue`>>, and <<attribute-journal-id,`@journal-id`>> attributes to identify the related article <<element-related-article,`<related-article>`>>.
+
+#### OPTIONAL on element:  <<element-related-article,`<related-article>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The page number on which a related article starts or the range of pages for a
+                        related article. For example, the value may be a page number such as
+                        “`1145`”, a page range such as
+                        “`35-583`”, or a letter/number combination, such as
+                        “`46a`” or “`iii`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

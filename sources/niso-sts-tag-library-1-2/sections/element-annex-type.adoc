@@ -1,0 +1,202 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/annex-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-annex-type]
+=== `<annex-type>` Type of Annex
+
+This element acts as a flag whose content can be both interrogated and displayed. It answers the question, “Is this Annex (<<element-app,`<app>`>>) normative or informative (non-normative)?”. The element content is expected to be “`(normative)`” or “`(informative)`”.
+
+#### Usage/Remarks
+The element content is _expected_ to be “`(normative)`” or “`(informative)`”; however, other values may be needed in contexts this work does not anticipate.
+Strictly speaking, this element is redundant with the appendix (<<element-app,`<app>`>>) element’s <<attribute-content-type,`@content-type`>> attribute, whose expected values are “`norm-annex`” and “`inform-annex`”. The description of the annex type in this element is intended for display to the end user, so the element should contain the text that will print/display in the formatted standard.
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-app,`<app>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  annex-type   (#PCDATA)                                    >
+....
+
+#### Tagged Samples
+
+#### For informative annex
+
+[source,xml]
+....
+...
+<back>
+ <app-group>
+  <app content-type="inform-annex" id="annA">
+   <label>Annex A</label>
+   <annex-type>(informative)</annex-type>
+   <title>Global trends supporting accessibility</title>
+   ...
+   <sec id="A1">
+    <label>A.1</label>
+    <title>Trends in global demographics and market diversity</title>
+    <p>According to the <italic>World Report on Disability</italic> 
+     (published by the World Health Organization and the World Bank 
+     in June 2011,<sup><xref ref-type="bibr" rid="bibr40">[40]</xref></sup> 
+     approximately 15 % of the world population (over one billion 
+     people) has ...</p>
+   </sec>
+   ...
+  </app>
+ </app-group>
+ <ref-list>...</ref-list>
+</back>
+...
+....
+#### For normative annex
+
+[source,xml]
+....
+...
+<back>
+ ...
+ <app-group>
+  <app content-type="norm-annex" id="annA">
+   <label>Annex A</label>
+   <annex-type>(normative)</annex-type>
+   <title>General operational requirements</title>
+   <sec id="annA.1">
+    <label>A.1</label>
+    <title>Installation, operation and maintenance 
+     &mdash; general</title>
+    <p>The manufacturer shall specify in documentation 
+     provided for or available to the installer, user and
+     maintainer of the equipment the conditions for ...</p>
+    ...
+   </sec>
+   ...
+  </app>
+  ...
+ </app-group>
+</back>
+...
+....
+#### Multiple annexes
+
+[source,xml]
+....
+...
+<back>
+ ...
+ <app-group>
+  <app content-type="norm-annex" id="annA">
+   <label>Annex A</label>
+   <annex-type>(normative)</annex-type>
+   <title>Specification for welded jointers</title>
+   <sec id="annA.1">
+    <label>A.1</label>
+    <title>Method</title>
+    <sec id="annA.1.1">
+     <label>A.1.1</label>
+     <p>Welding of any type that uses deposited filler metal 
+      and is ...</p>
+    </sec>
+    ...
+   </sec>
+   ...
+  </app>
+
+  <app content-type="norm-annex" id="annB">
+   <label>Annex B</label>
+   <annex-type>(normative)</annex-type>
+   <title>Manufacturing procedure qualification for PSL 2 pipe</title>
+   <sec id="annB.1">
+    <label>B.1</label>
+    <title>Introduction</title>
+    <sec id="annB.1.1">
+     <label>B.1.1</label>
+     <p>This annex specifies additional provisions that apply 
+      if manufacturing procedure qualification is ...</p>
+    </sec>
+    ...
+   </sec>
+   ...
+  </app>
+  ...
+ </app-group>
+</back>
+...
+....
+#### Annex and multiple appendixes
+
+[source,xml]
+....
+<standard 
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <front>...</front>
+ <body>...</body>
+ <back>
+  <app-group content-type="annex">
+   <title>ANNEX</title>
+   <app>
+    <label>A1</label>
+    <annex-type>(Mandatory Information)</annex-type>
+    <title>ANALYZER PRECISION AND BIAS</title>
+    <sec>
+     <label>A1.1</label>
+     <title>Bias at Zero Concentration</title>
+     <p>Most analyzers ...</p>
+    </sec>
+   </app>
+  </app-group>
+
+  <app-group content-type="appendix">
+   <title>APPENDIXES</title>
+   <app>
+    <label>X1</label>
+    <annex-type>(Nonmandatory Information)</annex-type>
+    <title>TRACER GASES USED TO DETERMINE AIR CHANGE</title>
+    <sec>
+     <label>X1.1</label>
+     <p>Table X1.1 and Table X1.2 list ...</p>
+    </sec>
+   </app>
+   <app>
+    <label>X2</label>
+    <annex-type>(Nonmandatory Information)</annex-type>
+    <title>CALIBRATION OF CERTAIN GAS ANALYZERS</title>
+    <sec>
+     <label>X2.1</label>
+     <title>Applicability</title>
+     <p>Certain gas analyzers, including ...</p>
+    </sec>
+   </app>
+   <app>
+    <label>X3</label>
+    <annex-type>(Nonmandatory Information)</annex-type>
+    <title>CONFIDENCE INTERVALS</title>
+    <sec>
+     <label>X3.1</label>
+     <title>Concentration Decay Method</title>
+     <sec>
+      <label>X3.1.1</label>
+      <title>Test for Constant A</title>
+      <p>The following ...</p>
+     </sec>
+    </sec>
+   </app>
+  </app-group>
+ </back>
+</standard>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

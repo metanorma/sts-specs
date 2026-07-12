@@ -1,0 +1,28 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/frame.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-frame]
+=== `@frame` Frame (NISO JATS table model)
+
+Specifies which sides of the table should be given rules, making a box or frame of lines around the table. (This attribute is based on and intended to be converted easily to the XHMTL `frame` attribute.)
+
+#### OPTIONAL on element:  <<element-table,`<table>`>>
+
+|===
+| Value| Meaning
+
+| above| Rule above only (top).
+| below| Rule below only (bottom).
+| border| Rules on all table rows and columns.
+| box| Rules on all 4 sides.
+| hsides| Rules on horizontal sides only (topbot).
+| lhs| Left side rule only.
+| rhs| Right side rule only.
+| void| No border (none).
+| vsides| Rules on vertical sides only (sides).
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,71 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/std-id-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-std-id-type]
+=== `@std-id-type` Standard Identifier Type
+
+What type of identifier is named in the <<element-std-id,`<std-id>`>> element, for example, “`dated`” or “`undated`”.
+
+#### Usage/Remarks
+The values for this attribute (and the <<attribute-std-relationship-type,`@std-relationship-type`>> attribute) answer requirements of the Crossref Standards Working Group to support NSB adoption or co-published standards documents that are equivalent, to allow both a designation and an alternative designation when, for example, a single document is co-published, but has a different designator for each of the co-publishing bodies.
+
+#### OPTIONAL on element:  <<element-std-id,`<std-id>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of identifier expressed in a <<element-std-id,`<std-id>`>> element, for example, “`dated`”, “`undated`”, or “`short`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* Although this attribute may take any text as values, the suggested values are: `undated` The <<element-std-id,`<std-id>`>> refers to a standard designation without specifying a date (“`ISO 9100`”). `dated` The <<element-std-id,`<std-id>`>> refers to the specific dated designation/version of a standard (“`ISO 9100:2015`”). `alt-dated` The <<element-std-id,`<std-id>`>> refers to a different designation of a specific dated version of a standard than is specified in the “`dated`” value. `alt-undated` The <<element-std-id,`<std-id>`>> refers to a different designation of a specific undated version of a standard, than the “`undated`” value. `short` The <<element-std-id,`<std-id>`>> is for a standards document’s family or series short designation.
+
+#### Tagged Sample
+
+##### Dated and undated `<std-id>`s
+[source,xml]
+....
+...
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="dated">ASME A17.1-2013/CSA B44-13</std-id>
+ <std-id 
+   std-id-type="dated" 
+   std-id-link-type="doi">10.1115/ASME A17.1-2013/CSA B44-13</std-id>
+</std-id-group>
+
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="undated">ASME A17.1/CSA B44</std-id>
+ <std-id 
+   std-id-type="undated" 
+   std-id-link-type="doi">10.1115/ASME A17.1/CSA B44</std-id>
+</std-id-group>
+
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="short" 
+   std-relationship-type="std-family">A17</std-id>
+ <std-id 
+   std-id-type="short" 
+   std-id-link-type="doi">10.1115/ASME.A17</std-id>
+</std-id-group>
+
+<std-id-group 
+  originator="CSA" 
+  std-relationship-type="std-alt-as-published">
+ <std-id 
+   std-id-type="dated">CSA B44-13</std-id>
+ <std-id 
+   std-id-type="dated" 
+   std-id-link-type="doi">10.XYZ/CSA.B44-13</std-id>
+</std-id-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

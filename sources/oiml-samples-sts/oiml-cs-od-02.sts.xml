@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS OD-02 Edition 3</doc-identifier>
+      <std-title-group>
+        <title>Test Laboratories Forum</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2024-03-11</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 3 of OIML-CS OD-02 at its Ninth meeting on 06 March 2024 and it was published on 11 March 2024. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to the Framework for the OIML Certification System (OIML-CS) (OIML B 18 OIML&#xA0;B&#xA0;18:2022) which contains the framework for the operation of the OIML-CS.</p>
+      <table-wrap id="tab_1">
+        <caption>Edition history</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>OD-02 Edition 1</td>
+            <td>OD-02 Edition 1</td>
+            <td>Published: July 2017</td>
+          </tr>
+          <tr>
+            <td>OD-02 Edition 2</td>
+            <td>OD-02 Edition 2</td>
+            <td>Published: 20 December 2018</td>
+          </tr>
+          <tr>
+            <td>OD-02 Edition 3 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N086</td>
+            <td>Draft for MG comment-20231213</td>
+          </tr>
+          <tr>
+            <td>OD-02 Edition 3 (draft)</td>
+            <td>OIML-CS_SC1_P1_N413</td>
+            <td>Draft for MC vote-20240228</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+          <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the Operational Rules of the OIML-CS Test Laboratories Forum (TLF) which specify how the TLF shall perform its duties and responsibilities. These Operational Rules relate to the framework for the OIML-CS, as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Composition and appointment of members of the TLF</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Composition</title>
+        <p>The composition of the TLF is defined in OIML B 18, 12.1 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Participation</title>
+        <p>A representative from each Test Laboratory listed in the Declaration of an OIML Issuing Authority may participate in the activities and/or meetings of the TLF. The Management Committee Member from each OIML Member State that has at least one OIML Issuing Authority shall notify the Executive Secretary of the name(s) of the TLF representative(s) and any changes in representation.Note Note0.4,NoteWhere a Test Laboratory provides testing services for more than one category of measuring instrument a representative for each measuring instrument category is permitted.</p>
+        <p>An up-to-date list of the representatives from Test Laboratories in the TLF is maintained by the Executive Secretary. == Duties, roles and responsibilities of the TLF and its members</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Duties and responsibilities of the TLF</title>
+        <p>The tasks of the TLF are defined in OIML B 18, 12.2 OIML&#xA0;B&#xA0;18:2022.</p>
+        <p>In respect of inter-laboratory comparison programs, as specified in OIML B 18, 12.2 d) OIML&#xA0;B&#xA0;18:2022, the role of the TLF is to encourage inter-laboratory comparison programs amongst OIML Issuing Authorities and their Test Laboratories. For example, the TLF could encourage the development of an inter-laboratory comparison program at a regional level, with the support of the relevant Regional Legal Metrology Organization (RLMO). When encouraging the development of an inter-laboratory comparison program, the TLF should encourage the adoption of the applicable requirements of ISO/IEC 17043 ISO/IEC&#xA0;17043:2023.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Obligations of Members</title>
+        <p>Representatives from Test Laboratories are chosen to participate in the activities of the TLF for their technical and metrological expertise and knowledge of the relevant test procedures for a range of measuring instruments and modules.</p>
+        <p>Members of the TLF are encouraged to participate in the activities of the TLF for the respective measuring instrument(s) or module(s) for which they have been designated as an expert.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Executive Secretary</title>
+        <p>The Executive Secretary provides the administrative and secretarial services to the TLF. This will include convening and chairing meetings of the TLF and reporting to the Management Committee. == Principles of operation of the TLF</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Conduct of work</title>
+        <p>The TLF shall perform their activities primarily by correspondence, although meetings of the TLF may be held as and when deemed necessary. A TLF Workspace is provided on the OIML-CS website for use by the TLF, with members of the TLF provided with a username and password to access the TLF Workspace.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Communication</title>
+        <p>The Executive Secretary shall keep all TLF Members informed of all developments within the TLF. Such communication should as far as possible be electronic and additionally make full use of the TLF Workspace on the OIML-CS website. However, the Executive Secretary shall take account of any problems which the TLF Members may have with electronic communication, so as not to exclude members from its work.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Meetings</title>
+        <p>Meetings of the TLF may be convened either if decided upon by the Executive Secretary or if requested by a TLF Member in writing to the Executive Secretary. Meetings may be held in-person and/or online as determined by the Executive Secretary in collaboration with TLF members.</p>
+        <p>Notice of the meetings shall be circulated by the Executive Secretary at least three months prior to the meeting. The agenda and proposal documents shall be circulated at least two months prior to the meeting. Shorter time periods are permitted with the prior agreement of TLF Members.</p>
+        <p>In preparing the agenda, the Executive Secretary shall, as far as possible, list and identify all the documents related to the various items for discussion.</p>
+        <p>The TLF may refuse to consider matters set before it if the relevant documents have not been circulated in accordance with the above.</p>
+        <p>Participants in meetings of the TLF shall be appointed by the Management Committee Members and shall be experts from Test Laboratories. The names of the participants shall be communicated to the Executive Secretary in due time before each meeting. The number of participants appointed by each Management Committee Member simultaneously present at a meeting shall not exceed three. The participants may, however, change during a particular meeting according to the subject to be discussed.</p>
+        <p>The Executive Secretary shall, as soon as possible after a meeting, prepare and distribute a report and the minutes for consideration by the Management Committee. They shall embody all conclusions of the relevant meeting, together with a brief account of the discussions, covering:</p>
+        <list list-type="order" id="_74216c57-2de3-4bc9-64f9-a661aec95cb4">
+          <list-item>a)the results of the meeting;</list-item>
+          <list-item>b)proposals being submitted to TCs and SCs; and</list-item>
+          <list-item>c)proposals submitted to the Management Committee for discussion.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Recommendations of the TLF</title>
+        <p>Recommendations of the TLF shall be arrived at by consensus. Where consensus cannot be achieved the matter shall be referred, as appropriate, to the Management Committee or to the relevant OIML TC/SC.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Interface with OIML TCs/SCs</title>
+        <p>If the TLF decides that it is necessary to revise the testing requirements in an OIML Recommendation, a proposal detailing the changes shall be submitted, by the Executive Secretary, to the relevant OIML TC/SC. The Management Committee Chairperson shall be notified of the proposal.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Test Laboratories Forum</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+        <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the Operational Rules of the OIML-CS Test Laboratories Forum (TLF) which specify how the TLF shall perform its duties and responsibilities. These Operational Rules relate to the framework for the OIML-CS, as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Composition and appointment of members of the TLF</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Composition</title>
+      <p>The composition of the TLF is defined in OIML B 18, 12.1 OIML&#xA0;B&#xA0;18:2022.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Participation</title>
+      <p>A representative from each Test Laboratory listed in the Declaration of an OIML Issuing Authority may participate in the activities and/or meetings of the TLF. The Management Committee Member from each OIML Member State that has at least one OIML Issuing Authority shall notify the Executive Secretary of the name(s) of the TLF representative(s) and any changes in representation.Note Note0.4,NoteWhere a Test Laboratory provides testing services for more than one category of measuring instrument a representative for each measuring instrument category is permitted.</p>
+      <p>An up-to-date list of the representatives from Test Laboratories in the TLF is maintained by the Executive Secretary. == Duties, roles and responsibilities of the TLF and its members</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Duties and responsibilities of the TLF</title>
+      <p>The tasks of the TLF are defined in OIML B 18, 12.2 OIML&#xA0;B&#xA0;18:2022.</p>
+      <p>In respect of inter-laboratory comparison programs, as specified in OIML B 18, 12.2 d) OIML&#xA0;B&#xA0;18:2022, the role of the TLF is to encourage inter-laboratory comparison programs amongst OIML Issuing Authorities and their Test Laboratories. For example, the TLF could encourage the development of an inter-laboratory comparison program at a regional level, with the support of the relevant Regional Legal Metrology Organization (RLMO). When encouraging the development of an inter-laboratory comparison program, the TLF should encourage the adoption of the applicable requirements of ISO/IEC 17043 ISO/IEC&#xA0;17043:2023.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Obligations of Members</title>
+      <p>Representatives from Test Laboratories are chosen to participate in the activities of the TLF for their technical and metrological expertise and knowledge of the relevant test procedures for a range of measuring instruments and modules.</p>
+      <p>Members of the TLF are encouraged to participate in the activities of the TLF for the respective measuring instrument(s) or module(s) for which they have been designated as an expert.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Executive Secretary</title>
+      <p>The Executive Secretary provides the administrative and secretarial services to the TLF. This will include convening and chairing meetings of the TLF and reporting to the Management Committee. == Principles of operation of the TLF</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Conduct of work</title>
+      <p>The TLF shall perform their activities primarily by correspondence, although meetings of the TLF may be held as and when deemed necessary. A TLF Workspace is provided on the OIML-CS website for use by the TLF, with members of the TLF provided with a username and password to access the TLF Workspace.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Communication</title>
+      <p>The Executive Secretary shall keep all TLF Members informed of all developments within the TLF. Such communication should as far as possible be electronic and additionally make full use of the TLF Workspace on the OIML-CS website. However, the Executive Secretary shall take account of any problems which the TLF Members may have with electronic communication, so as not to exclude members from its work.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Meetings</title>
+      <p>Meetings of the TLF may be convened either if decided upon by the Executive Secretary or if requested by a TLF Member in writing to the Executive Secretary. Meetings may be held in-person and/or online as determined by the Executive Secretary in collaboration with TLF members.</p>
+      <p>Notice of the meetings shall be circulated by the Executive Secretary at least three months prior to the meeting. The agenda and proposal documents shall be circulated at least two months prior to the meeting. Shorter time periods are permitted with the prior agreement of TLF Members.</p>
+      <p>In preparing the agenda, the Executive Secretary shall, as far as possible, list and identify all the documents related to the various items for discussion.</p>
+      <p>The TLF may refuse to consider matters set before it if the relevant documents have not been circulated in accordance with the above.</p>
+      <p>Participants in meetings of the TLF shall be appointed by the Management Committee Members and shall be experts from Test Laboratories. The names of the participants shall be communicated to the Executive Secretary in due time before each meeting. The number of participants appointed by each Management Committee Member simultaneously present at a meeting shall not exceed three. The participants may, however, change during a particular meeting according to the subject to be discussed.</p>
+      <p>The Executive Secretary shall, as soon as possible after a meeting, prepare and distribute a report and the minutes for consideration by the Management Committee. They shall embody all conclusions of the relevant meeting, together with a brief account of the discussions, covering:</p>
+      <list list-type="order" id="_74216c57-2de3-4bc9-64f9-a661aec95cb4">
+        <list-item>a)the results of the meeting;</list-item>
+        <list-item>b)proposals being submitted to TCs and SCs; and</list-item>
+        <list-item>c)proposals submitted to the Management Committee for discussion.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Recommendations of the TLF</title>
+      <p>Recommendations of the TLF shall be arrived at by consensus. Where consensus cannot be achieved the matter shall be referred, as appropriate, to the Management Committee or to the relevant OIML TC/SC.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Interface with OIML TCs/SCs</title>
+      <p>If the TLF decides that it is necessary to revise the testing requirements in an OIML Recommendation, a proposal detailing the changes shall be submitted, by the Executive Secretary, to the relevant OIML TC/SC. The Management Committee Chairperson shall be notified of the proposal.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17043:2023</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2023-05-08</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2022</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

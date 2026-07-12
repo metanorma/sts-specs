@@ -1,0 +1,38 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/xi-fallback.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-xi-fallback]
+=== `<xi:fallback>` XInclude Fallback
+
+To quote the XInclude Recommendation, “the `<xi:fallback>` element appears as a child of an <<element-xi-include,`<xi:include>`>> element. It provides a mechanism for recovering from missing resources. When a resource error is encountered, the <<element-xi-include,`<xi:include>`>> element is replaced with the contents of the `<xi:fallback>` element. If the `<xi:fallback>` element is empty, the <<element-xi-include,`<xi:include>`>> element is removed from the result.”
+
+#### Usage/Remarks
+Since it is not the business of this Tag Set to specify processing, the `<xi:fallback>` element will default to `#PCDATA`, but the parameter entity for the fallback-model can be redefined in a NISO STS customization for any standards-producing organization that desires a different fallback result.
+
+#### Attribute
+
+#### Namespaces
+
+* <<attribute-xmlns-xi,`@xmlns:xi`>> (fixed value = http://www.w3.org/2001/XInclude)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-xi-include,`<xi:include>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  xi:fallback  %fallback-model;                             >
+....
+#### Expanded Content Model
+
+(#PCDATA)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

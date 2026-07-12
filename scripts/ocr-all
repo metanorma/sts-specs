@@ -1,0 +1,59 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# OCR every reference PDF listed in StsSpecs::Ocr::TargetSet and cache the
+# output under reference-docs/.glm-ocr-cache/.
+#
+# Usage:
+#   ./scripts/ocr-all --dry-run     # list targets, no network
+#   ./scripts/ocr-all               # OCR every target
+#   ./scripts/ocr-all <slug>        # OCR one target by slug
+#
+# Requires the shared GLM OCR client from
+# ~/src/oimlsmart/publications (added to $LOAD_PATH below) and a Z.AI API key
+# (set $Z_AI_API_KEY or create ~/.zai-api-key).
+
+$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+
+require "sts_specs"
+
+OIML_LIB = File.expand_path("#{ENV['HOME']}/src/oimlsmart/publications/lib")
+unless File.directory?(OIML_LIB)
+  warn "Missing shared OCR client at #{OIML_LIB}."
+  warn "Clone oimlsmart/publications alongside this repo first."
+  exit 1
+end
+$LOAD_PATH.unshift(OIML_LIB)
+require "oiml/pub_parse"
+
+require "fileutils"
+require "pathname"
+
+REPO_ROOT = Pathname.new(File.expand_path("..", __dir__))
+CACHE_ROOT = REPO_ROOT.join("reference-docs", ".glm-ocr-cache")
+FileUtils.mkdir_p(CACHE_ROOT)
+
+client = Oiml::PubParse::Ocr::Client.new(
+  api_key: Oiml::PubParse::Ocr::ApiKey.read!,
+  cache: Oiml::PubParse::Ocr::Cache.new(dir: CACHE_ROOT.to_s)
+)
+transcript_writer = StsSpecs::Ocr::TranscriptWriter.new(cache_root: CACHE_ROOT)
+runner = StsSpecs::Ocr::Runner.new(client: client, transcript_writer: transcript_writer)
+
+if ARGV.delete("--dry-run")
+  puts "Target set (#{StsSpecs::Ocr::TargetSet.to_a.size} entries):"
+  puts runner.dry_run
+  exit 0
+end
+
+targets =
+  if ARGV.empty?
+    StsSpecs::Ocr::TargetSet.to_a
+  else
+    ARGV.map { |slug| StsSpecs::Ocr::TargetSet.find(slug) || (abort "Unknown slug: #{slug}") }
+  end
+
+targets.each do |target|
+  warn "OCR #{target.slug} (#{target.basename})..."
+  runner.call(target)
+end

@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/summary.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-summary]
+=== `@summary` Summary (NISO JATS table model)
+
+A summary of the contents or the semantics of the table, provided for speech-synthesis and non-visual browsers. (This attribute is based on and intended to be converted easily to the XHMTL `summary` attribute.)
+
+#### OPTIONAL on element:  <<element-table,`<table>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Textual description of the contents of a table, intended to be read to the
+                        audience for the table.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

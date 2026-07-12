@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/custom-meta-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-custom-meta-group]
+=== `<custom-meta-group>` Custom Metadata Group
+
+Container element for metadata not otherwise defined in the NISO STS Tag Sets.
+
+#### Usage/Remarks
+Some DTDs and schemas allow for metadata elements above and beyond that which can be specified by this Tag Set. This element can be used as an escape-hatch to record additional metadata that a standards organization wishes to preserve (so that the intellectual work to capture that content will not be lost) even though there is no direct expression for the metadata element in this Tag Set.
+The <<element-custom-meta,`<custom-meta>`>> element allows for an infinite variety of name/value pairs (<<element-meta-name,`<meta-name>`>> and <<element-meta-value,`<meta-value>`>>), with few constraints on the length or content of the value. This element will probably be used for special cases, product-specific material, or other organization-specific metadata.
+The `<custom-meta-group>` element is repeatable to hold different types of information (production, editorial, conversion, legal, for example), with typing attributes at the group level (<<attribute-content-type,`@content-type`>> and <<attribute-specific-use,`@specific-use`>>) to distinguish between uses.
+#### Inside <<element-processing-meta,`<processing-meta>`>>
+
+When used as part of <<element-processing-meta,`<processing-meta>`>>, the <<element-custom-meta-group,`<custom-meta-group>`>> element is typically, but not exclusively, used for internal processing purposes. Thus this element is more likely than <<element-extended-by,`<extended-by>`>>, <<element-restricted-by,`<restricted-by>`>>, or the <<element-processing-meta,`<processing-meta>`>> attributes to be used during internal processing and stripped out before interchange.
+Such custom metadata might hold information about the XML file (as opposed to the standard encoded by the file) such as: Generation or conversion date Name of the conversion vendor Name of the conversion software and/or its version number Initials of the chief proofreader Claimed quality level An indication that the document had been approved by the legal team Created-by (to distinguish among files originating from outsourcing partners, subsidiaries, projects etc. and those originating with the parent organization) Released-by (to distinguish between files from the co-authors of a multi-author standard, and keep track of situations where a third party has created an XML version of a standard for their own use, but also given the XML version back to the original SDO to be released by them.)
+
+#### Related Elements
+
+The element <<element-custom-meta-group,`<custom-meta-group>`>> is a grouping element that holds one or more <<element-custom-meta,`<custom-meta>`>> elements. Each <<element-custom-meta,`<custom-meta>`>> element contains a name/value pair, <<element-meta-name,`<meta-name>`>> and <<element-meta-value,`<meta-value>`>> respectively, which name and provide a value for a single metadata field.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-processing-meta,`<processing-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+<<element-custom-meta,`<custom-meta>`>> <<element-custom-meta,Custom Metadata>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  custom-meta-group
+                        %custom-meta-group-model;                    >
+....
+#### Expanded Content Model
+
+(custom-meta+)
+
+#### Tagged Sample
+
+##### Sales numbers and suppliers are not explicit elements in JATS.
+[source,xml]
+....
+...
+<nat-meta originator="DIN" id="profile.nat">
+ ...
+ <custom-meta-group>
+  ...
+  <custom-meta>
+   <meta-name>sales.number</meta-name>
+   <meta-value>1454006</meta-value>
+  </custom-meta>
+
+  <custom-meta>
+   <meta-name>supply</meta-name>
+   <meta-value>Alleinverkauf der Normen durch 
+    Beuth Verlag GmbH, 10772 Berlin</meta-value>
+  </custom-meta>
+  ...
+ </custom-meta-group>
+</nat-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Custom Metadata Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

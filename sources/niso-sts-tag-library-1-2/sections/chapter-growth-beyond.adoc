@@ -1,0 +1,69 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/growth-beyond.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-growth-beyond]
+=== NISO STS Extends ISO STS
+
+NISO STS extends ISO STS with the goal of making it better meet the needs of a wide variety of standards organizations. The ability to handle standards embedded in an adoption document, many additional JATS-based metadata elements (such as keywords and subject groupings), new ways to identify standards organizations, more complex titles for standards, and selected BITS (Book Interchange Tag Suite) structures (such as Indexes, Tables of Contents, and an XInclude mechanism) are just a few of the additions. (For a complete list, see _Differences between ISO STS 1.1 and NISO STS_ at link:http://niso-sts.org[niso-sts.org].)
+All of the original ISO STS 1.1 elements and attributes are available as part of NISO STS.
+However, in some cases NISO STS has more flexible alternatives for the ISO STS elements. Best Practice for new implementations, and new users, is to use these new structures, and existing users should consider transitioning to them. The ISO STS elements with new alternatives include:
+* <<element-release-version,`<release-version>`>> — Which Best Practice replaces with <<element-version,`<version>`>>.
+* <<element-std-ref,`<std-ref>`>> — Which allows many elements inside it, but for Best Practice should be tagged as
+                  a simple string, since the elements that are allowed inside <<element-std-ref,`<std-ref>`>> should more properly be tagged as part of the <<element-std-ident,`<std-ident>`>>.
+* <<element-doc-ident,`<doc-ident>`>>  — 
+                  This element has been retained for backwards compatibility with ISO STS. For non-ISO
+                  processing, the element <<element-doc-ident,`<doc-ident>`>>, and all the elements within it, have been replaced by elements within <<element-std-meta,`<std-meta>`>> and <<element-std-ident,`<std-ident>`>>. All the information currently inside <<element-doc-ident,`<doc-ident>`>> can be tagged outside of the <<element-doc-ident,`<doc-ident>`>> element as follows:
+                  
+                  
+                     
+                        
+                           
+                              sdo
+                           
+                           
+                              Use the <<element-std-org,`<std-org>`>> container element to record the name, short name, and location for an SDO, or use
+                                 the <<element-originator,`<originator>`>> element within element <<element-std-ident,`<std-ident>`>>.
+                              
+                           
+                        
+                        
+                           
+                              proj-id
+                           
+                           
+                              Use the <<element-proj-id,`<proj-id>`>> element within <<element-std-meta,`<std-meta>`>>.
+                              
+                           
+                        
+                        
+                           
+                              language
+                           
+                           
+                              Use one or more <<element-content-language,`<content-language>`>> element(s) within <<element-std-meta,`<std-meta>`>>.
+                              
+                           
+                        
+                        
+                           
+                              release-version
+                           
+                           
+                              Use the <<element-release-version,`<release-version>`>> element within <<element-std-meta,`<std-meta>`>>.
+                              
+                           
+                        
+                        
+                           
+                              urn
+                           
+                           
+                              Use <<element-self-uri,`<self-uri>`>> element within <<element-std-meta,`<std-meta>`>>.
+* <<element-pub-date,`<pub-date>`>> — Use <<element-release-date,`<release-date>`>>.
+* <<element-normative-note,`<normative-note>`>> and <<element-normative-example,`<normative-example>`>> — ISO STS uses only non-normative notes and example. NISO STS allows both normative
+                  and non-normative notes and examples.
+* <<element-normative-note,`<normative-note>`>> and <<element-non-normative-note,`<non-normative-note>`>> — NISO STS introduces a new note type that ISO STS did not have, the <<element-meta-note,`<meta-note>`>>.  Best Practice: Notes such as superseding notes, adoption notes, and errata information
+                  notes should be tagged as <<element-meta-note,`<meta-note>`>> elements. The <<attribute-content-type,`@content-type`>>  attribute can distinguish note types; see <<attribute-content-type,`@content-type`>> page for a list of suggested values for meta-note types.
+* <<element-access-date,`<access-date>`>> — Use <<element-date-in-citation,`<date-in-citation>`>>.
+* <<element-time-stamp,`<time-stamp>`>> — Use <<element-date-in-citation,`<date-in-citation>`>>.
+* <<element-nlm-citation,`<nlm-citation>`>> — Use <<element-std,`<std>`>> for citations of standards, and either <<element-element-citation,`<element-citation>`>> or <<element-mixed-citation,`<mixed-citation>`>> for all other citations.

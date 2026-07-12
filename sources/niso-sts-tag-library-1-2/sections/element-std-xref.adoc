@@ -1,0 +1,102 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-xref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-xref]
+=== `<std-xref>` Cross-Reference to a Standard
+
+Used within one of the standards metadata elements to identify, and possibly provide a link to, another standard. This element is used to name a related standard, for example, a standard that has been revised, amended, or replaced by the current standard.
+
+#### Usage/Remarks
+##### Relationship to Standard Citation
+
+The <<element-std-xref,`<std-xref>`>> element is part of the metadata of a standards document, where it is used to mention and/or point to a related standard, for example, a standard that this standards document amends. In contrast, when a standard is mentioned _within the prose_ of a standards document, the element <<element-std,`<std>`>> holds the designation and other information for the standard being cited. Inside the <<element-std,`<std>`>> citation, the element <<element-std-ref,`<std-ref>`>> may be used to identify the designation of the cited standard and separate it from other information concerning the standard.
+The <<attribute-type,`@type`>> attribute can be used to indicate the relationship between the current standards document and the standard being referenced. For example, the value “`amends`” indicates that this is a reference to the standard which the current document amends, and the value “`revises`” indicates that the reference is to the standard which the current document revises.
+The typical <<element-std-xref,`<std-xref>`>> element contains just the designator of the standard (tagged as a <<element-std-ref,`<std-ref>`>>) and an attribute to explain the relationship to the standard being mentioned. To tag a full citation to a standard, Best Practice is to use the <<element-std,`<std>`>> element.
+
+#### Attributes
+
+* <<attribute-type,`@type`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption,`<adoption>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+The following, in order: One or more of any of: <<element-std-ident,`<std-ident>`>> <<element-std-ident,Standard Identification Block>> <<element-std-ref,`<std-ref>`>> <<element-std-ref,Standard Reference Designation>> <<element-std-id-group,`<std-id-group>`>> <<element-std-id-group,Standard ID Group>> <<element-release-date,`<release-date>`>> <<element-release-date,Release-Date>>, zero or more <<element-meta-date,`<meta-date>`>> <<element-meta-date,Other Metadata Date>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT std-xref      %std-xref-model;                             >
+....
+#### Expanded Content Model
+
+((std-ident | std-ref | std-id-group)+, release-date*, meta-date*)
+
+#### Tagged Samples
+
+#### Showing `<std-ref>` within `<std-xref>`
+
+[source,xml]
+....
+...
+<reg-meta originator="CEN" id="profile.reg">
+ ...
+ <secretariat>...</secretariat>
+ <ics>13.110</ics>
+ <std-xref type="supersedes">
+  <std-ref>EN ISO 13849-1:2006</std-ref>
+ </std-xref>
+ <permissions>
+  <copyright-statement>All rights of exploitation in any form 
+   and by any means reserved worldwide for CEN national
+   Members.</copyright-statement>
+  <copyright-year>2008</copyright-year>
+  <copyright-holder>CEN</copyright-holder>
+ </permissions>
+</reg-meta>
+...
+....
+#### Showing use of `<std-id-group>` within `<std-xref>`
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <std-xref type="revision_of">
+  <std-id-group>
+   <std-id std-id-type="dated">ASME A17.1-2010/CSA B44-10</std-id>
+   <std-id std-id-type="dated" 
+     std-id-link-type="doi">10.1115/ASME A17.1-2010/CSA B44-10</std-id>
+  </std-id-group>
+ </std-xref>
+ <permissions>
+  <copyright-statement>ASME is the registered trademark of The American Society 
+   of Mechanical Engineers.</copyright-statement>
+  <copyright-year>2013</copyright-year>
+  <copyright-holder>THE AMERICAN SOCIETY OF MECHANICAL ENGINEERS</copyright-holder>
+ </permissions>
+ <self-uri 
+   xlink:href="https://www.asme.org/products/codes-standards/a171-2013-safety-code-elevators-escalators"/>
+ <abstract>
+  <p>Major changes for the 2013 edition include: Requirements for ...</p>
+ </abstract>
+ ...
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Cross-Reference to a Standard
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

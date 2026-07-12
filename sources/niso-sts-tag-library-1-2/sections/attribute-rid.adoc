@@ -1,0 +1,64 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/rid.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-rid]
+=== `@rid` Reference to an Identifier
+
+Value of the identifier of an associated element; used for internal links of related elements. For example, an <<element-xref,`<xref>`>> can point to the <<attribute-id,`@id`>> of a figure (<<element-fig,`<fig>`>>).
+
+#### REQUIRED on element:  <<element-index-term-range-end,`<index-term-range-end>`>>
+
+|===
+| Value| Meaning
+
+| An identifier (IDREF)| Must point to an existing identifier within the standards document.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-milestone-end,`<milestone-end>`>>, <<element-milestone-start,`<milestone-start>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-related-term,`<related-term>`>>
+|===
+| Value| Meaning
+
+| An identifier (IDREF)| Points to the existing identifier within the standards document.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-aff,`<aff>`>>, <<element-award-id,`<award-id>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-contrib,`<contrib>`>>, <<element-def,`<def>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-funding-source,`<funding-source>`>>, <<element-named-content,`<named-content>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-term,`<term>`>>, <<element-xref,`<xref>`>>
+|===
+| Value| Meaning
+
+| One or more identifiers (IDREFS)| Points to one or more existing identifiers within the standards document.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Cross reference pointing to figure
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

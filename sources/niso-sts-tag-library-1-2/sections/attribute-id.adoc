@@ -1,0 +1,132 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-id]
+=== `@id` Document Internal Identifier
+
+Unique internal identifier of an element; allows element to be cross-referenced (made into a link). Value must be unique across a document, not just for an element type.
+
+#### Usage/Remarks
+The `ID` and `IDREF` attribute values constitute a primitive reference mechanism for XML that allows internal linking, for example, from a reference in the text to a figure or a table. As another example, when an <<attribute-id,`@id`>> attribute has been used on a <<element-glyph-data,`<glyph-data>`>> element, that identifier can be referenced by an `IDREF`-style attribute on a <<element-glyph-ref,`<glyph-ref>`>> element, so that the full glyph data can be pointed to and need not be repeated every time the character is used.
+An identifier string is typically 1-32 characters in length and must start with a letter of the alphabet. (It is an XML rule that identifiers may not start with a digit.)
+#### External Identifiers
+
+This attribute holds an internal document identifier that can be used by software to perform a simple link. It should not be confused with elements such as <<element-contrib-id,`<contrib-id>`>> or <<element-institution-id,`<institution-id>`>> that are used to hold externally defined identifiers such as an ORCID personal identifier (for the contributor id), or a Ringgold identifier (for an institution id).
+
+#### REQUIRED on element:  <<element-target,`<target>`>>
+
+|===
+| Value| Meaning
+
+| An XML identifier (ID)| A unique identifier for the element. An XML parser can verify that an `IDREF`-style attribute pointing to one of these is pointing to a valid `ID`.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-abstract,`<abstract>`>>, <<element-access-date,`<access-date>`>>, <<element-accrediting-organization,`<accrediting-organization>`>>, <<element-ack,`<ack>`>>, <<element-addr-line,`<addr-line>`>>, <<element-address,`<address>`>>, <<element-adoption,`<adoption>`>>, <<element-aff,`<aff>`>>, <<element-aff-alternatives,`<aff-alternatives>`>>, <<element-ali-free_to_read,`<ali:free_to_read>`>>, <<element-ali-license_ref,`<ali:license_ref>`>>, <<element-alt-text,`<alt-text>`>>, <<element-alt-title,`<alt-title>`>>, <<element-alternatives,`<alternatives>`>>, <<element-annotation,`<annotation>`>>, <<element-anonymous,`<anonymous>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-author-comment,`<author-comment>`>>, <<element-authorization,`<authorization>`>>, <<element-award-id,`<award-id>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-bold,`<bold>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-break,`<break>`>>, <<element-caption,`<caption>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-citation-alternatives,`<citation-alternatives>`>>, <<element-city,`<city>`>>, <<element-code,`<code>`>>, <<element-col,`<col>`>>, <<element-colgroup,`<colgroup>`>>, <<element-collab,`<collab>`>>, <<element-collab-alternatives,`<collab-alternatives>`>>, <<element-comm-ref,`<comm-ref>`>>, <<element-comm-ref-group,`<comm-ref-group>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compl-title-wrap,`<compl-title-wrap>`>>, <<element-compound-kwd,`<compound-kwd>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject,`<compound-subject>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-conf-acronym,`<conf-acronym>`>>, <<element-conf-date,`<conf-date>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-conf-name,`<conf-name>`>>, <<element-conf-sponsor,`<conf-sponsor>`>>, <<element-content-language,`<content-language>`>>, <<element-contrib,`<contrib>`>>, <<element-contrib-group,`<contrib-group>`>>, <<element-contrib-id,`<contrib-id>`>>, <<element-copyright-holder,`<copyright-holder>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-copyright-year,`<copyright-year>`>>, <<element-count,`<count>`>>, <<element-country,`<country>`>>, <<element-counts,`<counts>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-custom-meta-group,`<custom-meta-group>`>>, <<element-data-title,`<data-title>`>>, <<element-date,`<date>`>>, <<element-date-in-citation,`<date-in-citation>`>>, <<element-day,`<day>`>>, <<element-def,`<def>`>>, <<element-def-head,`<def-head>`>>, <<element-def-item,`<def-item>`>>, <<element-def-list,`<def-list>`>>, <<element-degrees,`<degrees>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-doc-ident,`<doc-ident>`>>, <<element-doc-number,`<doc-number>`>>, <<element-doc-ref,`<doc-ref>`>>, <<element-doc-type,`<doc-type>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-edition,`<edition>`>>, <<element-element-citation,`<element-citation>`>>, <<element-elocation-id,`<elocation-id>`>>, <<element-email,`<email>`>>, <<element-equation-count,`<equation-count>`>>, <<element-era,`<era>`>>, <<element-etal,`<etal>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-fax,`<fax>`>>, <<element-fig,`<fig>`>>, <<element-fig-count,`<fig-count>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-fn,`<fn>`>>, <<element-fn-group,`<fn-group>`>>, <<element-fpage,`<fpage>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-given-names,`<given-names>`>>, <<element-glossary,`<glossary>`>>, <<element-glyph-data,`<glyph-data>`>>, <<element-glyph-ref,`<glyph-ref>`>>, <<element-gov,`<gov>`>>, <<element-graphic,`<graphic>`>>, <<element-hr,`<hr>`>>, <<element-ics,`<ics>`>>, <<element-ics-desc,`<ics-desc>`>>, <<element-ics-wrap,`<ics-wrap>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-entry,`<index-entry>`>>, <<element-index-group,`<index-group>`>>, <<element-index-term,`<index-term>`>>, <<element-index-term-range-end,`<index-term-range-end>`>>, <<element-index-title-group,`<index-title-group>`>>, <<element-inline-code,`<inline-code>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-institution-id,`<institution-id>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-intro,`<intro>`>>, <<element-intro-title-wrap,`<intro-title-wrap>`>>, <<element-is-proof,`<is-proof>`>>, <<element-isbn,`<isbn>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-issn,`<issn>`>>, <<element-issn-l,`<issn-l>`>>, <<element-issue,`<issue>`>>, <<element-issue-id,`<issue-id>`>>, <<element-issue-part,`<issue-part>`>>, <<element-issue-title,`<issue-title>`>>, <<element-italic,`<italic>`>>, <<element-journal-id,`<journal-id>`>>, <<element-kwd,`<kwd>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-label,`<label>`>>, <<element-language,`<language>`>>, <<element-legend,`<legend>`>>, <<element-license,`<license>`>>, <<element-license-p,`<license-p>`>>, <<element-list,`<list>`>>, <<element-list-item,`<list-item>`>>, <<element-long-desc,`<long-desc>`>>, <<element-lpage,`<lpage>`>>, <<element-main,`<main>`>>, <<element-main-title-wrap,`<main-title-wrap>`>>, <<element-media,`<media>`>>, <<element-meta-date,`<meta-date>`>>, <<element-meta-name,`<meta-name>`>>, <<element-meta-note,`<meta-note>`>>, <<element-meta-value,`<meta-value>`>>, <<element-milestone-end,`<milestone-end>`>>, <<element-milestone-start,`<milestone-start>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-month,`<month>`>>, <<element-name,`<name>`>>, <<element-name-alternatives,`<name-alternatives>`>>, <<element-named-content,`<named-content>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-nav-pointer-group,`<nav-pointer-group>`>>, <<element-nested-kwd,`<nested-kwd>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-notes-group,`<notes-group>`>>, <<element-num,`<num>`>>, <<element-oasis-table,`<oasis:table>`>>, <<element-oasis-tbody,`<oasis:tbody>`>>, <<element-object-id,`<object-id>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-open-access,`<open-access>`>>, <<element-originator,`<originator>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-page-count,`<page-count>`>>, <<element-page-range,`<page-range>`>>, <<element-part-number,`<part-number>`>>, <<element-part-of-speech,`<part-of-speech>`>>, <<element-part-title,`<part-title>`>>, <<element-patent,`<patent>`>>, <<element-permissions,`<permissions>`>>, <<element-person-group,`<person-group>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-prefix,`<prefix>`>>, <<element-preformat,`<preformat>`>>, <<element-price,`<price>`>>, <<element-private-char,`<private-char>`>>, <<element-processing-meta,`<processing-meta>`>>, <<element-proj-id,`<proj-id>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-date,`<pub-date>`>>, <<element-pub-id,`<pub-id>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-publisher-name,`<publisher-name>`>>, <<element-rb,`<rb>`>>, <<element-ref,`<ref>`>>, <<element-ref-count,`<ref-count>`>>, <<element-ref-list,`<ref-list>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-related-term,`<related-term>`>>, <<element-release-date,`<release-date>`>>, <<element-release-version,`<release-version>`>>, <<element-release-version-id,`<release-version-id>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-role,`<role>`>>, <<element-roman,`<roman>`>>, <<element-rt,`<rt>`>>, <<element-ruby,`<ruby>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-sdo,`<sdo>`>>, <<element-season,`<season>`>>, <<element-sec,`<sec>`>>, <<element-sec-meta,`<sec-meta>`>>, <<element-secretariat,`<secretariat>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-self-uri,`<self-uri>`>>, <<element-series,`<series>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-size,`<size>`>>, <<element-source,`<source>`>>, <<element-speaker,`<speaker>`>>, <<element-speech,`<speech>`>>, <<element-standard,`<standard>`>>, <<element-state,`<state>`>>, <<element-statement,`<statement>`>>, <<element-std,`<std>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-id,`<std-id>`>>, <<element-std-id-group,`<std-id-group>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-meta,`<std-meta>`>>, <<element-std-org,`<std-org>`>>, <<element-std-org-abbrev,`<std-org-abbrev>`>>, <<element-std-org-group,`<std-org-group>`>>, <<element-std-org-name,`<std-org-name>`>>, <<element-std-ref,`<std-ref>`>>, <<element-std-xref,`<std-xref>`>>, <<element-strike,`<strike>`>>, <<element-string-date,`<string-date>`>>, <<element-string-name,`<string-name>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-sub-part,`<sub-part>`>>, <<element-sub-part-number,`<sub-part-number>`>>, <<element-subj-group,`<subj-group>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-suffix,`<suffix>`>>, <<element-sup,`<sup>`>>, <<element-suppl-number,`<suppl-number>`>>, <<element-suppl-type,`<suppl-type>`>>, <<element-suppl-version,`<suppl-version>`>>, <<element-supplement,`<supplement>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-surname,`<surname>`>>, <<element-table,`<table>`>>, <<element-table-count,`<table-count>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-tbody,`<tbody>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>>, <<element-tbx-grammaticalGender,`<tbx:grammaticalGender>`>>, <<element-tbx-grammaticalNumber,`<tbx:grammaticalNumber>`>>, <<element-tbx-langSet,`<tbx:langSet>`>>, <<element-tbx-normativeAuthorization,`<tbx:normativeAuthorization>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-partOfSpeech,`<tbx:partOfSpeech>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-subjectField,`<tbx:subjectField>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-termEntry,`<tbx:termEntry>`>>, <<element-tbx-termType,`<tbx:termType>`>>, <<element-tbx-tig,`<tbx:tig>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-tbx-xGraphic,`<tbx:xGraphic>`>>, <<element-tbx-xMathML,`<tbx:xMathML>`>>, <<element-tbx-xSource,`<tbx:xSource>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-sec,`<term-sec>`>>, <<element-term-source,`<term-source>`>>, <<element-tex-math,`<tex-math>`>>, <<element-textual-form,`<textual-form>`>>, <<element-tfoot,`<tfoot>`>>, <<element-th,`<th>`>>, <<element-thead,`<thead>`>>, <<element-time-stamp,`<time-stamp>`>>, <<element-title,`<title>`>>, <<element-title-wrap,`<title-wrap>`>>, <<element-toc,`<toc>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-entry,`<toc-entry>`>>, <<element-toc-group,`<toc-group>`>>, <<element-toc-title-group,`<toc-title-group>`>>, <<element-tr,`<tr>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-trans-title-group,`<trans-title-group>`>>, <<element-underline,`<underline>`>>, <<element-uri,`<uri>`>>, <<element-urn,`<urn>`>>, <<element-verse-group,`<verse-group>`>>, <<element-verse-line,`<verse-line>`>>, <<element-version,`<version>`>>, <<element-volume,`<volume>`>>, <<element-volume-id,`<volume-id>`>>, <<element-volume-series,`<volume-series>`>>, <<element-wi-number,`<wi-number>`>>, <<element-word-count,`<word-count>`>>, <<element-xref,`<xref>`>>, <<element-year,`<year>`>>
+|===
+| Value| Meaning
+
+| An XML identifier (ID)| A unique identifier for the element. An XML parser can verify that an `IDREF`-style attribute pointing to one of these is pointing to a valid `ID`.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Section and table in-the-document identifiers
+
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+#### Section and figure in-the-document identifiers
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### Showing unique in-the-document identifiers for both `<tbx:termEntry>` and `<tbx:term>`
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

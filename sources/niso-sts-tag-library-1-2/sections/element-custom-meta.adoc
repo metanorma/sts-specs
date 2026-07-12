@@ -1,0 +1,93 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/custom-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-custom-meta]
+=== `<custom-meta>` Custom Metadata
+
+Wrapper element for a single piece of metadata not otherwise defined in the NISO STS Tag Sets.
+
+#### Usage/Remarks
+Some DTDs and schemas allow for metadata elements above and beyond that which can be specified by this Tag Set. This element can be used as an escape-hatch to record additional metadata that a standards organization wishes to preserve (so that the intellectual work to capture that content will not be lost) even though there is no direct expression for the metadata element in this Tag Set.
+The <<element-custom-meta,`<custom-meta>`>> element allows for an infinite variety of name/value pairs (<<element-meta-name,`<meta-name>`>> and <<element-meta-value,`<meta-value>`>>), with few constraints on the length or content of the value. This element will probably be used for special cases, product-specific material, or other organization-specific metadata.
+
+#### Related Elements
+
+The element <<element-custom-meta-group,`<custom-meta-group>`>> is a grouping element that holds one or more <<element-custom-meta,`<custom-meta>`>> elements. Each <<element-custom-meta,`<custom-meta>`>> element contains a name/value pair, <<element-meta-name,`<meta-name>`>> and <<element-meta-value,`<meta-value>`>> respectively, which name and provide a value for a single metadata field.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-custom-meta-group,`<custom-meta-group>`>>
+#### Description
+
+The following, in order: <<element-meta-name,`<meta-name>`>> <<element-meta-name,Metadata Data Name for Custom Metadata>> <<element-meta-value,`<meta-value>`>> <<element-meta-value,Metadata Data Value for Custom Metadata>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  custom-meta  %custom-meta-model;                          >
+....
+#### Expanded Content Model
+
+(meta-name, meta-value)
+
+#### Tagged Sample
+
+##### Sales numbers and suppliers are not explicit elements in JATS.
+[source,xml]
+....
+...
+<nat-meta originator="DIN" id="profile.nat">
+ ...
+ <custom-meta-group>
+  ...
+  <custom-meta>
+   <meta-name>sales.number</meta-name>
+   <meta-value>1454006</meta-value>
+  </custom-meta>
+
+  <custom-meta>
+   <meta-name>supply</meta-name>
+   <meta-value>Alleinverkauf der Normen durch 
+    Beuth Verlag GmbH, 10772 Berlin</meta-value>
+  </custom-meta>
+  ...
+ </custom-meta-group>
+</nat-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Custom Metadata Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

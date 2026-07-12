@@ -1,0 +1,88 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-org-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-org-group]
+=== `<std-org-group>` Standards Organization Group
+
+A grouping element to hold the name and location information (<<element-std-org,`<std-org>`>>) for several standards organizations associated with producing/adopting a standard.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+<<element-std-org,`<std-org>`>> <<element-std-org,Standards Organization Description>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-org-group    
+                        %std-org-group-model;                        >
+....
+#### Expanded Content Model
+
+(std-org+)
+
+#### Tagged Sample
+
+##### With two `<std-org>` elements (co-producers)
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>...</title-wrap>
+ <std-ident>
+  <originator>...</originator>
+  <doc-type>...</doc-type>
+  <doc-number>...</doc-number>
+ </std-ident>
+ <std-org-group>
+  <std-org std-org-type="sdo" std-org-role="co-producer" std-org-level="1">
+   <std-org-name>American Society of Mechanical Engineers</std-org-name>
+   <std-org-abbrev>ASME</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>2 Park Ave.</addr-line>
+    <city>New York</city>
+    <state>NY</state>
+    <postal-code>10016</postal-code>
+    <uri>https://www.asme.org/</uri></std-org-loc>
+  </std-org>
+
+  <std-org std-org-type="sdo" std-org-role="co-producer" std-org-level="2">
+   <std-org-name>American Petroleum Institute</std-org-name>
+   <std-org-abbrev>API</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>1220 L Street, N.W.</addr-line>
+    <city>Washington</city>
+    <state>D.C.</state>
+    <postal-code>20005</postal-code>
+    <uri>http://www.api.org/</uri></std-org-loc>
+  </std-org>
+ </std-org-group>
+ ...
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - ISO-specific Metadata
+* See: Hierarchy diagram - ISO-specific National-Body Metadata
+* See: Hierarchy diagram - ISO-specific Regional Metadata
+* See: Hierarchy diagram - Standards Document Metadata
+* See: Hierarchy diagram - NISO STS Standard Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

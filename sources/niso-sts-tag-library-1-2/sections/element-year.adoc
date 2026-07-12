@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/year.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-year]
+=== `<year>` Year
+
+Numerical, 4-digit year.
+
+#### Attributes
+
+* <<attribute-calendar,`@calendar`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-iso-8601-date,`@iso-8601-date`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-date,`<date>`>>, <<element-date-in-citation,`<date-in-citation>`>>, <<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>, <<element-string-date,`<string-date>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  year         (#PCDATA)                                    >
+....
+
+#### Tagged Samples
+
+#### As part of bibliographic reference for book
+
+[source,xml]
+....
+...
+<ref id="bibr40">
+ <label>40</label>
+ <mixed-citation publication-type="book"
+  ><collab>World Health Organization</collab>, <collab>World 
+  Bank</collab>. (<year iso-8601-date="2011">2011</year>), 
+  <source>World Report on Disability</source>, 
+  <publisher-loc>Geneva</publisher-loc>, available at: 
+  <ext-link 
+    xlink:href="http://www.who.int/disabilities/world_report/2011/en/index.html"   
+  >http://www.who.int/disabilities/world_report/2011/en/index.html</ext-link
+  ></mixed-citation>
+ </ref>
+...
+....
+#### As part of bibliographic reference for journal
+
+[source,xml]
+....
+...
+<ref-list>
+ <title>Bibliography</title>
+ ...
+ <ref id="ref_4">
+  <label>4</label>
+  <mixed-citation publication-type="journal"
+   ><person-group
+    ><string-name><surname>Hadorn</surname>,  
+     <given-names>H.</given-names></string-name>, 
+    <string-name><surname>Z&uuml;rchner</surname>,  
+     <given-names>K</given-names></string-name></person-group>. 
+   <source>Dtsch. Lebensmitt. Rundsch</source>. 
+   <year iso-8601-date="1974">1974</year>, 
+   <volume>70</volume> p. <fpage>57</fpage></mixed-citation>
+ </ref>
+ ...
+</ref-list>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

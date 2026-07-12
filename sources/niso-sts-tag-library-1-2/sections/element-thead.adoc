@@ -1,0 +1,102 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/thead.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-thead]
+=== `<thead>` Table Header (NISO JATS table model)
+
+Container element for the table header rows of a table. (This element is based on and intended to be converted easily to the XHMTL `thead` element.)
+
+#### Usage/Remarks
+Use W3C documentation for the XHTML 1.1 table model (https://www.w3.org/TR/xhtml-modularization/abstract_modules.html#s_tablemodule).
+
+#### Related Elements
+
+A NISO JATS XHTML-inspired table may be divided into header elements <<element-thead,`<thead>`>> and table body elements <<element-tbody,`<tbody>`>>.
+
+#### Attributes
+
+* <<attribute-align,`@align`>>
+* <<attribute-char,`@char`>>
+* <<attribute-charoff,`@charoff`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-style,`@style`>>
+* <<attribute-valign,`@valign`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-table,`<table>`>>
+#### Description
+
+<<element-tr,`<tr>`>> <<element-tr,Table Row>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %thead.qname;  %thead.content; >
+....
+#### Expanded Content Model
+
+(tr)+
+
+#### Tagged Sample
+
+##### Header structure for a titled table
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table (NISO JATS table model)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,41 @@
+== Tables
+
+Tables in NISO STS are wrapped in a <<element-table-wrap,`<table-wrap>`>>
+element. Two table models are supported:
+
+* XHTML table model — uses <<element-table,`<table>`>>,
+  <<element-tr,`<tr>`>>, <<element-td,`<td>`>>,
+  <<element-th,`<th>`>>.
+* OASIS CALS table model — uses <<element-oasis-table,`<oasis:table>`>>,
+  <<element-oasis-tgroup,`<oasis:tgroup>`>>,
+  <<element-oasis-entry,`<oasis:entry>`>>.
+
+The `@table-model` attribute on <<element-processing-meta,`<processing-meta>`>>
+declares which model the document uses.
+
+=== Table headers
+
+Use <<element-th,`<th>`>> (XHTML) or `<oasis:entry>` with
+`@valign` and `@align` set (OASIS).
+
+=== Cell content
+
+Cells may contain paragraphs, lists, graphics, and even nested tables.
+Disp-quotas, speeches, and statements were added as permissible cell
+content in NISO STS 1.2.
+
+=== Formal vs informal tables
+
+Formal tables carry a <<element-label,`<label>`>> and
+<<element-caption,`<caption>`>> inside
+<<element-table-wrap,`<table-wrap>`>>; informal tables omit them.
+
+=== Table notes and footnotes
+
+Table notes live inside `<table-wrap>` using
+<<element-table-wrap-foot,`<table-wrap-foot>`>>. Footnotes use the
+<<element-fn,`<fn>`>> element.
+
+For detailed table-coding conventions (alignment, merged cells, line
+breaks, lists, landscape, rules, frames, border styling, text rotation),
+see <<annex-b-coding-tables-in-niso-sts,Annex B>>.

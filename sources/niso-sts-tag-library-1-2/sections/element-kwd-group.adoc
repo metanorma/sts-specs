@@ -1,0 +1,141 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/kwd-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-kwd-group]
+=== `<kwd-group>` Keyword Group
+
+Container element for one set of keywords (<<element-kwd,`<kwd>`>>, <<element-nested-kwd,`<nested-kwd>`>>, or <<element-compound-kwd,`<compound-kwd>`>>) used to describe a document. A keyword records one specific term, key phrase, abbreviation, taxonomic structure, or other expression that is found within the text of a standards document, or implied (broader, narrower, etc.) from terms found within this text.
+
+#### Usage/Remarks
+##### Language in Keywords
+
+A standard may take multiple sets of keywords, with the <<attribute-kwd-group-type,`@kwd-group-type`>>, <<attribute-specific-use,`@specific-use`>>, or <<attribute-xml-lang,`@xml:lang`>> attributes used to discriminate between them. The keyword elements (<<element-kwd,`<kwd>`>>, <<element-nested-kwd,`<nested-kwd>`>>, or <<element-compound-kwd,`<compound-kwd>`>>) do not take the <<attribute-xml-lang,`@xml:lang`>> attribute; that is reserved for the `<kwd-group>` element. This means that keywords must be sorted by language and entered in language groups.
+#### Vocabulary Attributes
+
+Two vocabulary attributes can be used to link a keyword group to a controlled vocabulary: <<attribute-vocab,`@vocab`>> — This attribute holds the name of a controlled or generic (uncontrolled) vocabulary, taxonomy, ontology, database, thesaurus, etc. that is the source of the keywords in the group, for example, “`CRediT`”, “`inspec`”, “`structural engineering`”, or “`VWL`”. In cases where there is no named vocabulary, the <<attribute-vocab,`@vocab`>> attribute should be set to “`uncontrolled`”. <<attribute-vocab-identifier,`@vocab-identifier`>> — This attribute holds a unique identifier and possible pointer to the named vocabulary (typically a URI or DOI reference).
+#### Keyword Group Type
+
+The <<attribute-kwd-group-type,`@kwd-group-type`>> attribute most commonly names an uncontrolled vocabulary source of the keywords, such as “`chemical engineering`”, “`author-generated`”, or “`working-group-generated`”. But <<attribute-kwd-group-type,`@kwd-group-type`>> has also been used to record the type of keywords, for example, “`hierarchical`” for keywords that are grouped into a hierarchy, “`abbreviations`” for keywords that contain an abbreviation and its expansion, or “`code`” for keywords that contain a code and its text but where the source of the codes is unknown.
+#### Historical Note
+
+Older documents, coded before NISO STS added the vocabulary attributes, may have used <<attribute-kwd-group-type,`@kwd-group-type`>> to name the vocabulary source. Going forward, this information should be recorded using the vocabulary attributes.
+##### Vocabulary Attributes Best Practice
+
+If the keywords in a `<kwd-group>` come from a controlled vocabulary, taxonomy, ontology, database, term list, index, or similar formally defined term source, the <<attribute-vocab,`@vocab`>> attribute (and if possible, the <<attribute-vocab-identifier,`@vocab-identifier`>> attribute) should be used on the `<kwd-group>` element to name the source. If there is a keyword-specific identifier in this source of terms, then also use the <<attribute-vocab-term,`@vocab-term`>> and <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> on the keyword element (<<element-kwd,`<kwd>`>>, <<element-nested-kwd,`<nested-kwd>`>>, or <<element-compound-kwd,`<compound-kwd>`>>), if possible.
+If the keywords come from, or are specific to, a field of study that can be named (particularly where different fields might define the same term differently), name the field of study in the <<attribute-kwd-group-type,`@kwd-group-type`>> attribute (“`structural engineering`”, “`mechanical engineering`”, “`bird watching`”). Such terms are typically, but not always, informally defined.
+If the keyword terms are uncontrolled, either omit the <<attribute-vocab,`@vocab`>> attribute on `<kwd-group>` element or use the value “`uncontrolled`”.
+
+#### Related Elements
+
+*Keywords vs Subjects Terms:* Subject terms (collected within a <<element-subj-group,`<subj-group>`>> element) name broad classifications, categories, topics, or themes that describe or classify a standard. Keywords (collected within a <<element-kwd-group,`<kwd-group>`>> element) contain words from the narrative text or words (such as broader and narrower terms) related to that text.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-kwd-group-type,`@kwd-group-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-app-group,`<app-group>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-media,`<media>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-sec-meta,`<sec-meta>`>>, <<element-statement,`<statement>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one One or more of any of: <<element-kwd,`<kwd>`>> <<element-kwd,Keyword>> <<element-compound-kwd,`<compound-kwd>`>> <<element-compound-kwd,Compound Keyword>> <<element-nested-kwd,`<nested-kwd>`>> <<element-nested-kwd,Nested Keyword>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  kwd-group    %kwd-group-model;                            >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, (kwd | compound-kwd | nested-kwd)+)
+
+#### Tagged Samples
+
+#### INSPEC keywords added by SDO
+
+[source,xml]
+....
+...
+<kwd-group kwd-group-type="INSPEC" originator="IEEE">
+ <kwd>social networking (online)</kwd>
+ <kwd>buyer&#x0027;s guides</kwd>
+ <kwd>electronic commerce</kwd>
+</kwd-group> 
+
+<kwd-group kwd-group-type="InspecFree" originator="IEEE">
+ <kwd>whiz list</kwd>
+ <kwd>social networking sites</kwd>
+ <kwd>online purchase</kwd>
+ <kwd>e-commerce portals</kwd>
+ <kwd>Web site users</kwd>
+ <kwd>marketing strategy</kwd>
+</kwd-group>
+...
+....
+#### INSPEC keywords from SDO
+
+[source,xml]
+....
+...
+<kwd-group id="KG1" originator="ASME" vocab="Inspec"
+  vocab-identifier="http://www.theiet.org/resources/inspec/about/records/ithesaurus.cfm"
+  xml:lang="en">
+ <compound-kwd id="KG1.1">
+  <compound-kwd-part content-type="code">A7865P</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of other 
+   inorganic semiconductors and insulators (thin films/low dimensional 
+   structures)</compound-kwd-part>
+ </compound-kwd>
+
+ <compound-kwd id="KG1.2">
+  <compound-kwd-part content-type="code">A7865T</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of organic
+   compounds and polymers (thin films/low dimensional structures)</compound-kwd-part>
+ </compound-kwd>
+</kwd-group>
+...
+....
+#### Working Group keywords
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <kwd-group kwd-group-type="working group" vocab="uncontrolled">
+  <kwd>adoption</kwd>
+  <kwd>assurance</kwd>
+  <kwd>assurance case</kwd>
+  <kwd>claim</kwd>
+  <kwd>IEEE 15026-1 &#x2122;</kwd>
+  <kwd>integrity level</kwd>
+  <kwd>life cycle processes</kwd>
+  <kwd>reliability</kwd>
+  <kwd>software assurance</kwd>
+  <kwd>software engineering</kwd>
+  <kwd>system assurance</kwd>
+  <kwd>systems engineering</kwd>
+ </kwd-group>
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Keyword Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

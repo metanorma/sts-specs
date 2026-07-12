@@ -1,0 +1,8 @@
+== Introduction
+
+This document lists the tagging changes between _IEC/ISO Coding Guidelines
+ed. 1.11_ and _ed. 2.1_. It is intended as a quick reference for editors and
+tooling engineers migrating XML from the earlier edition to the current one.
+
+The changes apply variously to ISO, IEC, or both — the rightmost two columns
+of the table in <<_changes>> indicate which SDOs each change affects.

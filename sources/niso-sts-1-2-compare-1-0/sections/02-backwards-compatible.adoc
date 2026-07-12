@@ -1,0 +1,5 @@
+== Backwards compatible
+
+NISO STS 1.2 is fully backward compatible with NISO STS 1.0. That is, all
+documents that are valid against NISO STS 1.0 are also valid against NISO STS
+1.2.

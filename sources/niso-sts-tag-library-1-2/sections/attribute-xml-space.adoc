@@ -1,0 +1,36 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xml-space.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xml-space]
+=== `@xml:space` Space
+
+When printing or displaying the associated element, all white space (such as tabs, ordinary spaces, and line breaks) should be preserved.
+
+#### Usage/Remarks
+Used to keep explicit formatting, for example, in computer code, ASCII art, or poetry.
+
+#### FIXED (not settable) on elements:  <<element-code,`<code>`>>, 
+                  <<element-glyph-data,`<glyph-data>`>>, 
+                  <<element-preformat,`<preformat>`>>
+
+|===
+| Value| Meaning
+
+| preserve| White space should be preserved. (This value is fixed and cannot be changed
+                        in a document.)
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+#### OPTIONAL (defaults to preserve) on element:  <<element-inline-code,`<inline-code>`>>
+
+|===
+| Value| Meaning
+
+| default| Processing system (rather than the XML document) determines whether space is preserved
+                        or not.
+| preserve| White space should be preserved.
+| Default value| preserve
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

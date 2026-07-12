@@ -1,0 +1,30 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/source-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-source-type]
+=== `@source-type` Source Type
+
+This attribute can be used with two elements: to identify the kind of source providing an award that sponsored a work or the research on which a work was based (with the element <<element-funding-source,`<funding-source>`>>); or to identify the type of publication, for example, a “`book`”, “`guide`”, or “`database`” that is (or contains) the target of the <<element-related-object,`<related-object>`>>.
+
+#### OPTIONAL on element:  <<element-funding-source,`<funding-source>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Type of entity (such as an organization or an individual) that is the source
+                        of an award which sponsors a work or the research underlying the work.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on element:  <<element-related-object,`<related-object>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of object named in the related object (<<element-related-object,`<related-object>`>>) element, for example, a 
+                        “`database`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

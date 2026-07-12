@@ -1,0 +1,64 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/position.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-position]
+=== `@position` Position
+
+Typically indicates whether a display object (for example, figure, table, boxed text) must be anchored in its exact location within the text or may float to a different location in the document (for example, top of the next page, into the next column, within a separate window). Also used to indicate that the display object should be placed in the margin or used as a background image behind the text.
+
+#### OPTIONAL (defaults to float) on many elements; click for list and usage
+
+<<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-code,`<code>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-preformat,`<preformat>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+|===
+| Value| Meaning
+
+| anchor| The object must remain in its exact location in the text flow.
+| background| The object (typically an image) is used as background displayed visually
+                        “behind” the narrative text.
+| float| The object is not anchored and may be moved to a new column, a new window, a
+                        new page, the end of the document, etc.
+| margin| In print, the object should be placed in the margin or gutter; online, the
+                        object should remain closely associated with the text.
+| Default value| float
+|===
+#### OPTIONAL (defaults to float) on element:  <<element-fig,`<fig>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Whether the figure (<<element-fig,`<fig>`>> must be anchored in its exact location within the text or may float to a different
+                        location in the document (for example, top of the next page). Values for this attribute
+                        are unlimited; they include any one of the values listed above, as well as other values
+                        such as “`float-left`” and “`float-right`”.
+| Default value| float
+|===
+
+#### Tagged Sample
+
+##### Figure anchored to its place in the text
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

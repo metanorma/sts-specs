@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/std-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-std-type]
+=== `@std-type` Type of Standards Document
+
+Names a standards lifecycle event (document type) that extends or modifies a base standard (i.e., the undated designation)
+
+#### Usage/Remarks
+The values shown in the _Suggested Usage_ below do not align perfectly with _ISO IEC Guide: Standardization and Related Activities — General Vocabulary_, and they also may not fit all circumstances for individual standards organizations. Since the value of this attribute is an open list, a wide variety of current practices can be accommodated. No preferred values will be indicated in this NISO STS version, and individual standards organizations are free to decide which of these values are synonymous for them. For example, in a multiply adopted standard, NISO STS will not require all the parties to the adoption to use the same values.
+
+#### OPTIONAL on element:  <<element-release-date,`<release-date>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The name of the lifecycle event named by this date.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+Although designed to accept any text as its value, and many other values are possible, the following are suggested date types: addenda Adds to previously published, dated standard adopted Adopts previously existing standard (with minimally some additional adopting organization data) adopt-modify Adopts previously existing standard with some modification and some additional adopting organization data amendment Replaces previously published dated standard (and adds to previous dated designation) consolidate Combines previous standards/designations corrigenda Creates a new standard/designation by adding to previous dated designation errata Notes a correction to previously published standard/designation—creates a new designation by adding to previous dated designation new-standard An entirely new standard/designation (not based on previous standards) reaffirm-redesignate A previously published standard is reaffirmed but given new designation redesignate-consolidate Two or more standards are consolidated and given new designation reinstate Reinstate a previously withdrawn or defunct standard (typically following revision) revised Revised standard with a new year designation revise-partition Revised and split standard with new designation revise-redesignate Revised and redesignated standard revise-redesignate-consolidate Revised and redesignated consolidation of two or more standards supplement Adds to existing standard and builds a new designation by adding to previous dated designation of previously published standard
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

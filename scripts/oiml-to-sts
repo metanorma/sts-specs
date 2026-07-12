@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Thin wrapper around the metanorma-oiml CLI that ships in this repo for
+# convenience. Converts a Metanorma presentation XML to OIML NISO STS XML.
+#
+# Usage:
+#   ./scripts/oiml-to-sts <path-to-presentation.xml> [output-path]
+
+require "metanorma/oiml/sts/cli"
+
+Metanorma::Oiml::Sts::Cli.start(ARGV)

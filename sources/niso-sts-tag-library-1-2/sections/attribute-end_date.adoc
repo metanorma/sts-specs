@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/end_date.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-end_date]
+=== `@end_date` NISO ALI End Date
+
+Date on which the document stops being “free-to-read” or ends the given license, as defined in _NISO Access License and Indicators_ (ALI) NISO RP-22-2015.
+
+#### Usage/Remarks
+##### Best Practice
+
+NISO RP-22-2015 recommends that the end date be given in the ISO 8601 format “YYYY-MM-DD”, without inclusion of a time or a time zone.
+
+#### OPTIONAL on element:  <<element-ali-free_to_read,`<ali:free_to_read>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The ISO 8601 date on which this standards  document stops being “free-to-read”. If
+                        this attribute
+                        is not used, the absence indicates that the document is permanently “free-to-read”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

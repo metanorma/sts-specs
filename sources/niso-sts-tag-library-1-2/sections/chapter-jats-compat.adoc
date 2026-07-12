@@ -1,0 +1,23 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/jats-compat.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-jats-compat]
+=== JATS Compatibility
+
+The NISO STS Working Group tried (to the extent possible) to make NISO STS a JATS-Compatible tag suite, as described in the The JATS Compatibility Meta-Model (“JATS Compatibility Model Description Draft” published for comment by NISO at https://groups.niso.org/higherlogic/ws/public/download/21033/JATS-Compatibility-Model-v0-10.pdf). The Meta-Model document provides guidance on how to create JATS-based tag sets that will interoperate in expected ways with other JATS-based documents in databases, display systems, and similar applications.
+This compatibility for NISO STS is only “to the extent possible” because ISO STS was developed before the Meta-Model guidelines were written, and there are places where ISO STS violates the guidelines. After significant discussion, the Technical Committee decided that backward compatibility with ISO STS was more important than JATS compatibility whenever a conflict was identified.
+Organizations with mixed NISO STS/JATS databases will need to be aware of these differences.
+Elements where the ISO STS interpretation prevailed in designing NISO STS, and that are therefore _unlike JATS_, include:
+* <<element-version,`<version>`>> — Which has two different contexts with two different meanings. NISO STS 1.2 has
+                  revised the meaning of <<element-version,`<version>`>> ( a version statement for the standards document), which should help separate STS
+                  <<element-version,`<version>`>> from JATS versions. (See <<element-version,`<version>`>> Remarks section.)
+* <<element-std,`<std>`>> — Which has differences in where used, content, and in how the title of a cited standard
+                  should be tagged. The NISO STS <<element-std,`<std>`>> is a peer of <<element-mixed-citation,`<mixed-citation>`>> and <<element-element-citation,`<element-citation>`>>. The JATS <<element-std,`<std>`>> is _inside_ the citation elements. Some reconciliation work was done by the JATS Standing Committee,
+                  so that JATS now deprecates  <<element-std,`<std>`>>. JATS has also added <<element-std-ref,`<std-ref>`>> to citations, so that standard designations will be cited in the same way in STS
+                  and JATS. (See <<element-std,`<std>`>> Remarks section.)
+* <<element-array,`<array>`>> — Which may take a full <<element-table,`<table>`>> inside it in NISO STS, but not in JATS. (See <<element-array,`<array>`>> 
+                  _Remarks: 
+                     Best Practice Content of an Array_.)
+* <<element-pub-date,`<pub-date>`>> — The JATS element <<element-pub-date,`<pub-date>`>> is an element content model; both the ISO STS and the NISO STS <<element-pub-date,`<pub-date>`>> elements are character-data only models. Because this situation can raise compatibility
+                  issues going forward, STS Best Practice for new standards documents is to tag the
+                  date published as <<element-release-date,`<release-date>`>>  rather then as <<element-pub-date,`<pub-date>`>>. Going forward, the element <<element-pub-date,`<pub-date>`>> should not be used as part of a standards document’s metadata.

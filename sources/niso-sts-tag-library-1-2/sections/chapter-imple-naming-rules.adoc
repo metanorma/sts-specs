@@ -1,0 +1,116 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/imple-naming-rules.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-imple-naming-rules]
+=== Tag Suite Naming Conventions
+
+#### Element and Attribute Naming Rules
+
+* *CASE* — All XML names originating in this
+                     Tag Set or in the Suite are to be in lower case. Such names include element names,
+                     attribute names,
+                     parameter entity names, notation names, and `ID`s. The casing and interior punctuation of
+                     element-type names, attribute names, and parameter entity names inherited from PUBLIC
+                     models (such
+                     as the NISO JATS XHTML-inspired table model, the MathML Tag Set, or the OASIS XML
+                     Exchange (CALS) table model) are unchanged. That means that they occur in the case
+                     in which they were found in the original module, and so may be in mixed case or upper
+                     case (e.g., `%Flow.mix;`).
+* *MULTI-WORD NAMES* — When two or more words are concatenated into an element name, attribute name, or
+                     parameter entity name, a hyphen is placed between the words, for example, <<element-verse-group,`<verse-group>`>>, <<element-main-title-wrap,`<main-title-wrap>`>>, <<element-word-count,`<word-count>`>>.
+* *WORD STANDARDIZATION* — Abbreviations may be used when words are used in combination. When a word stands
+                     alone as a name, it may not be abbreviated. Abbreviations are standardized so that,
+                     for example, “figure” is always used as “fig” (as in the element <<element-fig-group,`<fig-group>`>>) and group is not abbreviated (as in the elements <<element-fig-group,`<fig-group>`>>, <<element-kwd-group,`<kwd-group>`>>, and <<element-fn-group,`<fn-group>`>>).
+* *EMPHASIS* — The typographic emphasis elements are usually spelled out in full, for example,
+                     <<element-bold,`<bold>`>> (rather than “`<b>`”), <<element-italic,`<italic>`>>, and <<element-underline,`<underline>`>> instead of being differentiated using attribute values on an element such as `<emphasis>`. Superscript and subscript are not considered to be purely typographic, and each
+                     is a separate element: <<element-sub,`<sub>`>> and <<element-sup,`<sup>`>>.
+The following table contains an initial list of abbreviations/names to be used in combined tag names (element type names), attribute names, and parameter entity names. (Words in the list below that are not abbreviated are displayed in italics.)
+|===
+| ORIGINAL WORD| ABBREVIATION
+
+| acknowledgment| ack
+| address| addr
+| affiliation| aff
+| alternate/alternative-something| alt
+| alternatives| _alternatives_
+| article| _article_
+| attribution| attrib
+| author| _author_
+| biography| bio
+| chemical| chem
+| committee| _comm_
+| conference| conf
+| contributor/contribution| contrib
+| corresponding| corresp
+| count| _count_
+| cross| x (no hyphen)
+| definition| def
+| description| desc
+| display| disp
+| editor| _editor_
+| end| _end_
+| equal| _equal_
+| external| ext
+| figure| fig
+| first| f (no hyphen; <<element-fpage,`<fpage>`>>)
+| footnote| fn
+| formula| _formula_
+| government| gov
+| graphic| _graphic_
+| group/grouping| group
+| heading/header| head
+| identifier/ID| id
+| inline| _inline_
+| institution| _institution_
+| item| _item_
+| journal| _journal_
+| keyword| kwd
+| last| l (no hyphen; <<element-lpage,`<lpage>`>>)
+| link| _link_
+| list| _list_
+| location| loc
+| material| _material_
+| metadata| meta
+| number| num
+| page| _page_
+| paragraph| p
+| prefix| _prefix_
+| proceedings| _proceedings_
+| publication| pub
+| publisher| _publisher_
+| quote| _quote_
+| reference| ref
+| related| _related_
+| section| sec
+| sequence/sequential| seq
+| series| _series_
+| size| _size_
+| standard| std
+| start| _start_
+| statement| _statement_
+| structure| struct
+| subject| subj
+| subscript| sub (rather than “inferior”)
+| suffix| _suffix_
+| superscript| sup (rather than “superior”)
+| supplement| _supplement_
+| supplementary| _supplementary_
+| table| _table_
+| title| _title_
+| translated/translator| trans
+| type| _type_
+| underline| _underline_
+| version| _version_
+| volume| volume
+| word| _word_
+| wrapper| wrap
+|===
+#### JATS File Naming Conventions
+
+This Tag Library describes the naming conventions for the Journal Publishing Tag Set. These naming conventions carry over to NISO STS. Each JATS-family Tag Set is described in a DTD, an XSD schema, and a RELAX NG schema. The shared JATS Suite modules take the prefix “`JATS-`”. The BITS shared modules take the prefix “`BITS-`”. For the NISO STS Interchange DTDs, the base DTD modules (delivered as the file `NISO-STS-interchange-1-mathml2.dtd` and `NISO-STS-interchange-1-mathml3.dtd`) call in all the other DTD fragment modules as external parameter entities. For the NISO STS Extended DTDs, the base DTD modules (delivered as the file `NISO-STS-extended-1-mathml2.dtd` and `NISO-STS-extended-1-mathml3.dtd`) call in all the other DTD fragment modules as external parameter entities.
+Each DTD and DTD fragment module has been assigned a unique formal public identifier (fpi). File names are never referenced directly in the DTD; the file is referred to by the name of an external parameter entity, which names the fpi and a system name for the file. The external parameter entity name has been set to the initial delivery filename, that is the version number is not part of the name.
+The four NISO STS DTDs; the individual DTD-fragment modules of the NISO Tag Set; the BITS and JATS shared Suite modules, the XSD schema modules, and the RELAX NG schema modules have been given DOS/Windows 3-digit suffixes indicating their type: `*.dtd` A module that can be used as the top level of an XML hierarchy. Used for the four top-level NISO STS DTDs, but also taken unchanged for public tag set modules that have been included in this Tag Set such as the MathML Tag Set and the NISO JATS XHTML-inspired Table Module. `*.ent` A DTD fragment for incorporation into a full DTD. May contain element declarations, entity declarations, etc., for example, `JATS-articlemeta1-3.ent`. `*.mod` A DTD fragment for incorporation into a full DTD. May contain element declarations, entity declarations, etc. This extension has the same meaning as `*.ent` and is only used to maintain the extension names dictated by the inclusion of PUBLIC tag set and/or schema fragments, for example, `mathml2-qname-1.mod`. `*.xsd` A W3C XML Schema (XSD) schema module, for example, `NISO-STS-interchange-1-mathml2.xsd`. `*.rng` A RELAX NG schema module, for example, `NISO-STS-interchange-1-mathml2.rng` and `JATS-articlemeta1-3.ent.rng`.
+#### Version Numbers in Filenames
+
+All NISO STS, JATS, and BITS versions reflect the major version number of the standard in the file name. For example, a module whose name without a version number would be `NISO-STS-classes.ent` is named `NISO-STS-classes1.ent` (to indicate that it is part of the NISO STS 1.1d1 or 1.2 release). (*Note: *The parameter entity that _references_ the file is called `NISO-STS-classes.ent` without the version number embedded, but it calls the file `NISO-STS-classes1.ent` that contains a version number.)
+The current plan is that future dot releases (1.1, 1.2, 1.3, etc.) will not be reflected in the filename (not `NISO-STS-classes1-1.ent`) but will remain named with a single digit (“1”) as `NISO-STS-classes1.ent`), which will not change until the next major release. The next major release `2.0` will be `NISO-STS-classes2.ent`.

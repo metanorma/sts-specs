@@ -1,0 +1,53 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-grammaticalNumber.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-grammaticalNumber]
+=== `<tbx:grammaticalNumber>` Grammatical Number Flag (TBX)
+
+An indicator of whether the term is singular or plural, for instance: `<tbx:grammaticalNumber value="plural"/>`.
+
+#### Attributes
+
+* <<attribute-value,`@value`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-tig,`<tbx:tig>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.grammaticalNumber; 
+                        EMPTY                                        >
+....
+
+#### Tagged Sample
+
+##### With part of speech, describing a term
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a229.131">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>grain of <italic>Avena sativa</italic> L.</tbx:definition>
+    <tbx:source>ISO 11520-2:2001, 3.10.</tbx:source>
+    <tbx:tig>
+      <tbx:term id="a229.131-1">oats</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalNumber value="singular"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

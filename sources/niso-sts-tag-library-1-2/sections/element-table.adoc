@@ -1,0 +1,197 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/table.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-table]
+=== `<table>` Table (NISO JATS table model)
+
+The rows and columns part of a full table. (This element is based on and intended to be converted easily to the XHMTL `table` element.)
+
+#### Usage/Remarks
+#### XHTML Table Model
+
+The NISO JATS table model (based on and designed to be converted easily to the XHTML 1.1 table model) is the only table model allowed in the NISO STS Interchange Tag Sets. The XHTML 1.1 table model has been used to take advantage of existing software for table handling.
+#### Tables and Table Wrappers
+
+The <<element-table,`<table>`>> element contains _only_ the rows and columns of the table, which is typically just part of what would be called a “table” in print or display. A complete table might also include a table number (label), a table title, a table caption, table notes and footnotes, introductory paragraphs, etc., so a complete table is tagged using the <<element-table-wrap,`<table-wrap>`>> element. If the complete table contains rows and columns, then the element <<element-table-wrap,`<table-wrap>`>> will contain a `<table>` element as well as other content. Note: A complete table may _not_ include an <<element-table,`<table>`>> element within it, since other constructions, such as 2-part lists, may also be called “tables” and given table numbers, table titles, captions, etc.
+#### Modifications to the XHTML Table Model
+
+In the NISO JATS table model, the XHMTL™ table model has been modified to remove the <<element-caption,`<caption>`>> element from within the <<element-table,`<table>`>> element, because, in the NISO STS Tag Sets, the <<element-caption,`<caption>`>> element has been made part of the <<element-table-wrap,`<table-wrap>`>> element.
+#### OASIS CALS Table Note
+
+The OASIS modules for the OASIS XML Exchange table model (based on the CALS table model) have been included in the NISO STS Extended Tag Sets, so <<element-oasis-table,`<oasis:table>`>> may be used in addition to or in place of the XHTML <<element-table,`<table>`>> element.
+
+#### Attributes
+
+* <<attribute-border,`@border`>>
+* <<attribute-cellpadding,`@cellpadding`>>
+* <<attribute-cellspacing,`@cellspacing`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-frame,`@frame`>>
+* <<attribute-rules,`@rules`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-style,`@style`>>
+* <<attribute-summary,`@summary`>>
+* <<attribute-width,`@width`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-alternatives,`<alternatives>`>>, <<element-array,`<array>`>>, <<element-table-wrap,`<table-wrap>`>>
+#### Description
+
+The following, in order: Any one of: <<element-col,`<col>`>> <<element-col,Table Column (NISO JATS table model)>>, zero or more <<element-colgroup,`<colgroup>`>> <<element-colgroup,Table Column Group (NISO JATS table model)>>, zero or more Any one of: The following, in order: <<element-thead,`<thead>`>> <<element-thead,Table Header (NISO JATS table model)>>, zero or one <<element-tfoot,`<tfoot>`>> <<element-tfoot,Table Footer (NISO JATS table model)>>, zero or one <<element-tbody,`<tbody>`>> <<element-tbody,Table Body for an XHTML Table>>, one or more <<element-tr,`<tr>`>> <<element-tr,Table Row>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %table.qname;  %table.content; >
+....
+#### Expanded Content Model
+
+((col* | colgroup*), ((thead?, tfoot?, tbody+) | (tr+)))
+
+#### Tagged Samples
+
+#### Titled table inside `<table-wrap>`
+
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+#### Tables with titles and caption paragraphs  inside `<table-wrap>`
+
+image::images/Caption-w-title-plus.png[Caption-w-title-plus.png]
+[source,xml]
+....
+...
+<table-wrap>
+ <caption>
+  <title>Coffee Mug Options</title>
+  <p content-type="scale">Measurements in centimeters</p>
+ </caption>
+ <table border="1" style="border:1px solid black; border-collapse: collapse;">
+  <thead>
+   <tr><th>Product</th><th>Height</th><th>Diameter</th></tr>
+  </thead>
+  <tbody style="text-align: right;">
+   <tr><td>1</td><td>9</td><td>7.5</td></tr>
+   <tr><td>2</td><td>10</td><td>11</td></tr>
+   <tr><td>2s</td><td>12</td><td>11</td></tr>
+  </tbody>
+ </table>
+</table-wrap>
+
+<table-wrap>
+ <caption>
+  <title>Coffee cup Options</title>
+  <non-normative-note>
+   <p>This list is not intended to exclude other configurations; 
+    it provides a few conforming configurations as examples.</p>
+  </non-normative-note>
+ </caption>
+ <table border="1" style="border:1px solid black; border-collapse: collapse;">
+  <thead>
+   <tr><th>Product</th><th>Height</th><th>Diameter</th></tr>
+  </thead>
+  <tbody style="text-align: right;">
+   <tr><td>c1</td><td>3</td><td>7.5</td></tr>
+   <tr><td>c2</td><td>4</td><td>11</td></tr>
+   <tr><td>c3</td><td>5</td><td>11</td></tr>
+  </tbody>
+ </table>
+</table-wrap>
+...
+....
+#### As part of array (deprecated)
+
+(Note: This tagging is retained for historical reasons, but using `<tbody>` inside `<array>` is best practice.)
+[source,xml]
+....
+...
+<p>Visually inspect the fracture surfaces to establish 
+ the nature of the fracture, and assess the type of 
+ fracture as follows:
+ <array id="tab_g">
+  <table rules="groups">
+   <col width="9.23%"/>
+   <col width="90.77%"/>
+   <tbody>
+    <tr>
+     <td align="left" scope="row" valign="top">A</td>
+     <td align="left" valign="top">is cohesive failure of 
+      substrate;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">A/B</td>
+     <td align="left" valign="top">is adhesive failure 
+      between substrate and first coat;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">B</td>
+     <td align="left" valign="top">is cohesive failure 
+      of first coat;</td>
+    </tr>
+    ...
+   </tbody>
+  </table>
+ </array>
+</p>
+...
+....
+
+#### Related Resource
+
+* For a discussion on the table formatting, see Table Formatting. For a discussion on the use of `<table>`s inside <<element-table-wrap,`<table-wrap>`>> and for related groups of tables, see Table, Table Wrapper, and Table Group.
+* For additional information concerning Accessibility (specifically, the <<attribute-scope,`@scope`>> and <<attribute-headers,`@headers`>> attributes), see 
+                  Accessibility: Table Headers.
+* See: Hierarchy diagram - Table (NISO JATS table model)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

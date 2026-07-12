@@ -1,0 +1,16 @@
+== Annex D (informative) — IEC corrigenda, interpretation sheets, and software supplements
+
+This annex covers IEC-specific publication types beyond ordinary
+amendments:
+
+* Corrigenda — corrections to a published document.
+* Interpretation Sheets (ISH) — formal interpretations issued by the
+  committee.
+* Software supplements — supplements that ship with software components.
+
+Each is encoded as a `<standard>` with distinct
+`@publication-type` and section structure.
+
+NOTE: The full details from the source guidelines (Annex D) are
+available in the OCR transcript at
+`reference-docs/.glm-ocr-cache/niso-sts-guidelines-v1-0.md`.

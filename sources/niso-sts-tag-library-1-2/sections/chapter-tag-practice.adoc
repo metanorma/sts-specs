@@ -1,0 +1,14 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tag-practice.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tag-practice]
+=== Common Tagging Practice
+
+Since there are as many different uses of these Tag Sets as there are users, “Best Practice” is an elusive concept, impossible to define for all users. But in many situations there are common practices, and it is sometimes possible to explain several good practices, allowing a standards organization or publisher to determine if one practice fits their situation. This section contains tagging write-ups, more extensive than is appropriate for any single element page, that offer such tagging advice and alternatives.
+Subsidiary sections:
+#### Tagging Terms and Definitions
+#### Tagging Tables
+#### Tagging Figures, Graphics, and Multimedia
+#### Tagging Multiple Versions
+#### Citing Data
+#### Tagging Personal Names in Citations

@@ -1,0 +1,90 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/nat-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-nat-meta]
+=== `<nat-meta>` ISO-specific National-Body Metadata
+
+This element is a container element for metadata specific to or produced by an ISO-related national standards body. This element contains any national-organization-specific overrides to the metadata described for the whole standards document (<<element-std-doc-meta,`<std-doc-meta>`>>) as well as the organization-specific metadata for the national standards body.
+
+#### Usage/Remarks
+##### Best Practice
+
+Organizations that have not used ISO STS in the past, should use the NISO STS element <<element-std-meta,`<std-meta>`>> instead of the element <<element-nat-meta,`<nat-meta>`>>.
+#### Inside an Adoption
+
+The element `<nat-meta>` cannot be used inside the front matter for an adoption (<<element-adoption-front,`<adoption-front>`>>); only `<std-meta>` may be used at the top level of an adoption. The element `<nat-meta>` can be used in the front matter of a standard (`<front>`).
+
+#### Related Elements
+
+The element <<element-nat-meta,`<nat-meta>`>> is the fourth of the organization-describing metadata elements with: <<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>>, and <<element-reg-meta,`<reg-meta>`>>. By design, the <<element-nat-meta,`<nat-meta>`>> content model is very similar to and was based on the model for <<element-iso-meta,`<iso-meta>`>>.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-front,`<front>`>>
+#### Description
+
+The following, in order: <<element-title-wrap,`<title-wrap>`>> <<element-title-wrap,Title Wrapper>>, zero or more <<element-doc-ident,`<doc-ident>`>> <<element-doc-ident,ISO-Specific Document Identification Section>>, zero or one <<element-std-ident,`<std-ident>`>> <<element-std-ident,Standard Identification Block>>, zero or one Any combination of: <<element-std-org,`<std-org>`>> <<element-std-org,Standards Organization Description>> <<element-std-org-group,`<std-org-group>`>> <<element-std-org-group,Standards Organization Group>> <<element-content-language,`<content-language>`>> <<element-content-language,Content Language>>, zero or more <<element-std-ref,`<std-ref>`>> <<element-std-ref,Standard Reference Designation>>, zero or more <<element-doc-ref,`<doc-ref>`>> <<element-doc-ref,Document Reference Designation>>, zero or one <<element-pub-date,`<pub-date>`>> <<element-pub-date,Publication Date>>, zero or one <<element-release-date,`<release-date>`>> <<element-release-date,Release-Date>>, zero or more <<element-meta-date,`<meta-date>`>> <<element-meta-date,Other Metadata Date>>, zero or more Any combination of: <<element-comm-ref,`<comm-ref>`>> <<element-comm-ref,Committee Reference>> <<element-comm-ref-group,`<comm-ref-group>`>> <<element-comm-ref-group,Committee Reference Group>> <<element-secretariat,`<secretariat>`>> <<element-secretariat,Secretariat>>, zero or more Any combination of: <<element-ics,`<ics>`>> <<element-ics,ICS Code Number>> <<element-ics-wrap,`<ics-wrap>`>> <<element-ics-wrap,ICS Code/Description Wrapper>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more <<element-page-count,`<page-count>`>> <<element-page-count,Page Count>>, zero or one <<element-counts,`<counts>`>> <<element-counts,Counts>>, zero or one <<element-std-xref,`<std-xref>`>> <<element-std-xref,Cross-Reference to a Standard>>, zero or more <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>, zero or more <<element-self-uri,`<self-uri>`>> <<element-self-uri,Uri For This Same Article Online>>, zero or more <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-meta-note,`<meta-note>`>> <<element-meta-note,Metadata Note>>, zero or more <<element-custom-meta-group,`<custom-meta-group>`>> <<element-custom-meta-group,Custom Metadata Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  nat-meta     %nat-meta-model;                             >
+....
+#### Expanded Content Model
+
+(title-wrap*, doc-ident?, std-ident?, (std-org | std-org-group)*, content-language*, std-ref*, doc-ref?, pub-date?, release-date*, meta-date*, (comm-ref | comm-ref-group)*, secretariat*, (ics | ics-wrap)*, (subj-group)*, page-count?, counts?, std-xref*, permissions*, self-uri*, (abstract)*, (kwd-group)*, meta-note*, custom-meta-group*)
+
+#### Tagged Sample
+
+##### ISO-specific, showing typical contents
+[source,xml]
+....
+...
+<front>
+ ...
+ <nat-meta originator="DIN" id="profile.nat">
+  <title-wrap xml:lang="de">
+   <intro>Sicherheit von Maschinen</intro>
+   ...
+  </title-wrap>
+  <doc-ident>
+   <sdo>DIN</sdo>
+   ...
+  </doc-ident>
+  <std-ident>
+   <originator>DIN</originator>
+   ...
+  </std-ident>
+  <content-language>...</content-language>
+  <std-ref type="undated">DIN EN ISO 13849-1</std-ref>
+  <doc-ref>DIN EN ISO 13849-1</doc-ref>
+  <release-date iso-8601-date="2008-12" date-type="published" 
+    std-type="new-standard">2008-12</release-date>
+  <comm-ref>...</comm-ref>
+  <secretariat>...</secretariat>
+  <ics>13.110</ics>
+  <std-xref type="supersedes">...</std-xref>
+  <permissions>...</permissions>
+  <custom-meta-group>...</custom-meta-group>
+ </nat-meta>
+</front>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - ISO-specific National-Body Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

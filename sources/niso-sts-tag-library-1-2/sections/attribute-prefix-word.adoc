@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/prefix-word.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-prefix-word]
+=== `@prefix-word` Prefix Word (For a List Item)
+
+Word or phrase to be added to the beginning of each item in a list (for example, “`Step`”, “`Procedure`”).
+
+#### Usage/Remarks
+Any prefix word is in addition to and typically precedes any prefix characters (numbers, bullets). For example, a list type of “`order`” and a prefix word of “`Step`” would produce: “`Step1. aaaa`”, “`Step2. bbbb`”, “`Step3. cccc`”, etc. Note that typically, no white space follows the inserted word, i.e., “`Step`” rather than “`Step `”.
+The standard exception to this order is the bulleted list, in which the prefix character would precede the prefix word—“`• Step`” rather than “` Step•`”.
+
+#### OPTIONAL on elements:  <<element-def-list,`<def-list>`>>, 
+                  <<element-list,`<list>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The prefix word to be used for the list; for example, the word “`Step`” might be used to display a list numbered “`Step1.`”, “`Step2.`”, “`Step3.`”, etc.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

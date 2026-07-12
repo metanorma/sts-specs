@@ -1,0 +1,137 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tag-fig-graphic.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tag-fig-graphic]
+=== Tagging Figures, Graphics, and Multimedia
+
+NISO STS provides several elements related to the still graphic images and the multimedia objects contained within a standards document. These elements do not contain the actual image or object; they point to an external file that contains the image or object. The primary NISO STS elements are:
+* Graphic, Inline (<<element-inline-graphic,`<inline-graphic>`>>) — inline still images such as logos,
+* Graphic (<<element-graphic,`<graphic>`>>) — still images such as drawings and photographs, and
+* Media (<<element-media,`<media>`>>) — moving images, sound files, and other media that cannot be represented in print.
+* Media, Inline (<<element-inline-media,`<inline-media>`>>) — inline media objects such as sound files for pronouncing a character.
+#### Inline Graphic
+
+The simplest graphic object is the <<element-inline-graphic,`<inline-graphic>`>>, which is used when the image should appear inline with surrounding text. Inline graphics may contain no labels, titles, or captions. A typical inline graphic is an empty element, using an attribute to point to a logo or to a special math or chemistry symbol that is used inside a paragraph or a title. (Best Practice: If the image represents a special private character, the <<element-private-char,`<private-char>`>> element should be used instead of <<element-inline-graphic,`<inline-graphic>`>>.)
+#### Graphic
+
+Still images that _do not_ appear inline are tagged with the <<element-graphic,`<graphic>`>> element, typically inside a figure (<<element-fig,`<fig>`>>), which holds associated information such as a figure number, title, caption, etc. (see below). When an image in a standards document has no associated information (title, figure number, etc.), a <<element-graphic,`<graphic>`>> element should not be embedded in a <<element-fig,`<fig>`>> element.
+Most <<element-graphic,`<graphic>`>> elements are empty, used only to point to their external file. A <<element-graphic,`<graphic>`>> element may contain a <<element-label,`<label>`>> or <<element-caption,`<caption>`>>, but <<element-graphic,`<graphic>`>> elements that are block-level objects in the text rather than inside a larger object such as a figure rarely do. When a <<element-graphic,`<graphic>`>> is within a figure (<<element-fig,`<fig>`>>), the associated <<element-label,`<label>`>> or <<element-caption,`<caption>`>> is typically within the <<element-fig,`<fig>`>>, not within the <<element-graphic,`<graphic>`>>. A <<element-label,`<label>`>> within a <<element-graphic,`<graphic>`>> is typically used only when a single figure (`<fig><label>Fig 4.</label>…</fig>`) contains 3 or 4 graphics, each with a separate label such as:
+[source,xml]
+....
+    …<graphic …><label>Part A</label>…</graphic>…
+....
+or
+[source,xml]
+....
+    …<graphic …><label>Part B</label>…</graphic>…
+....
+*Accessibility:* A <<element-graphic,`<graphic>`>> that is not inside a <<element-fig,`<fig>`>> or <<element-table-wrap,`<table-wrap>`>> should contain several sub-elements, including <<element-alt-text,`<alt-text>`>> and <<element-long-desc,`<long-desc>`>>, which are especially important to enable access for visually impaired users. For graphics inside another element (such as a <<element-fig,`<fig>`>>), the containing element typically holds the accessibility information, although in rare cases the accessibility elements may need to be in both places.
+*Decorations:* If a graphic is purely decorative and is not part of the narrative of a standards document (such as a background image of a wheat field on the first page of a standards document concerning harvester combine specifications or a section symbol between sections), the <<element-graphic,`<graphic>`>> element may be marked with an empty <<attribute-alt,`@alt`>> attribute to indicate that it is purely decorative, and thus can be ignored by screen readers and other accessibility aids.
+#### Media
+
+Objects such as an MP3 sound clip accompanying a standards document are tagged with the <<element-media,`<media>`>> element, typically inside a figure (<<element-fig,`<fig>`>>), which holds associated information such as a figure number, title, caption, etc. (see below). When a media object in a standards document has no associated information (title, figure number, etc.), a <<element-media,`<media>`>> element should be not be embedded in a <<element-fig,`<fig>`>> element.
+*Accessibility:* A <<element-media,`<media>`>> object that is not inside a <<element-fig,`<fig>`>> or <<element-table-wrap,`<table-wrap>`>> should contain several sub-elements, including <<element-alt-text,`<alt-text>`>> and <<element-long-desc,`<long-desc>`>>, which are especially important to enable access for visually impaired users. For objects inside another element (such as a <<element-fig,`<fig>`>>), the containing element typically holds the accessibility information, although in rare cases the accessibility elements may need to be in both places.
+#### Inline Media
+
+The simplest media object is the <<element-inline-media,`<inline-media>`>>, which is used when the media should appear inline with surrounding text. A typical inline media is an empty element, using an attribute to point to a pronunciation sound file for a word or character that is used inside a paragraph or a title. The element <<element-inline-media,`<inline-media>`>> relates to the <<element-media,`<media>`>> element as the <<element-inline-graphic,`<inline-graphic>`>> element relates to <<element-graphic,`<graphic>`>>. The “content” of the <<element-inline-media,`<inline-media>`>> element is not the media object itself, but information concerning the object and a pointer to the object. The external file that contains the object is named by the <<attribute-xlink-href,`@xlink:href`>> attribute.
+#### Figures and Figure Groups
+
+This Tag Suite also contains two elements typically used for associating a graphic or media object with related information (such as a caption, label, title, or credits and other attribution) or with other graphic, media, or textual objects.
+* Figure (<<element-fig,`<fig>`>>) — typically, a labeled wrapper for images and media and their metadata
+* Figure Group (<<element-fig-group,`<fig-group>`>>) — A grouping of several <<element-fig,`<fig>`>> elements
+Inside a figure (<<element-fig,`<fig>`>>), the most commonly occurring related information is a figure number (<<element-label,`<label>`>>) and a caption (<<element-caption,`<caption>`>>). Some publishers consider the display of a figure number definitive for deciding when to use a <<element-fig,`<fig>`>> element; others depend more on whether the image ought to be listed in a List of Figures. Usually the two criteria match up, but there may be exceptions where numbered figures do not appear in the list, or vice versa.
+Like tables, figures typically contain titles and captions. In this Tag Set, the <<element-title,`<title>`>> element is included inside the <<element-caption,`<caption>`>> element. A <<element-caption,`<caption>`>> may contain many kinds of text associated with its figure, typically a <<element-title,`<title>`>> (which acts as a heading for the figure), one or more descriptive paragraphs (<<element-p,`<p>`>>), or a legend (tagged, for example, as a list within a <<element-p,`<p>`>>).
+Figures do not always contain pictures. While many <<element-fig,`<fig>`>> elements contain graphic objects (<<element-graphic,`<graphic>`>> or <<element-media,`<media>`>>), a <<element-fig,`<fig>`>> element may also contain a variety of display and textual objects, such as formulas, chemical structures, tables, bulleted or numbered lists, simple paragraphs, definition lists, or a mixture of any of these items as well as one or more graphic objects.
+A Figure Group element (<<element-fig-group,`<fig-group>`>>) contains one or more Figure elements (<<element-fig,`<fig>`>>), placed in one container for editorial or production convenience. Specifically, a <<element-fig-group,`<fig-group>`>> contains two or more labeled, possibly captioned <<element-fig,`<fig>`>> elements that form a logical group, perhaps with an overall <<element-label,`<label>`>>, <<element-caption,`<caption>`>>, or other information on the <<element-fig-group,`<fig-group>`>> element that applies to all of the figures inside it.
+#### Legends or Keys
+
+Inside block structures (such as figures, tables, boxed-text, chemical structures, equations, graphics, and media) a <<element-legend,`<legend>`>> is a table or list of the explanations for symbols, characters, terms, or abbreviations, etc. Legends typically accompany figures or tables to act as a key to the symbols, characters, or abbreviations used in the graphic, figure, table, etc. Such lists may show a heading such as “Key” (“Légende” in French, “Legende” in German). Legends may also be called “where lists”, “keys”, “variable lists”, “legends”, “symbol charts”, etc., with the exact list heading given as the <<element-title,`<title>`>> of the <<element-legend,`<legend>`>> element.
+#### Positioning Graphic Objects
+
+In common with other block-level display objects, figures, graphics, and media objects may take the <<attribute-position,`@position`>> attribute, which is used to indicate where the object should be displayed. The values for this attribute are slightly overloaded, as two values indicate the position of the object (such as a graphic) in relation to the text: anchor Object should appear exactly where it is found in the narrative flow. float Object should appear near its position in the narrative flow, but it may float to the top of a page or column, or into another window. and two indicate the relationship between the object (such as a graphic) and the page: background Object, typically a decorative graphic, should appear behind the narrative. This does not displace the narrative; ideally, both the graphic and the narrative are visible, and the narrative is legible through the graphic. Accessibility: Best practice is to mark all purely decorative graphics with an empty <<attribute-alt,`@alt`>> attribute, so that screen readers and other accessibility devices know that they may be ignored. margin Object should appear beside the text that contains it in the narrative flow, as though it were in the margin of a printed page. Accessibility: Best practice is to mark all purely decorative graphics with an empty <<attribute-alt,`@alt`>> attribute, so that screen readers and other accessibility devices know that they may be ignored.
+#### Figure and Graphic Examples
+
+Here is a typical figure with a label, caption, and graphic inside. As is usually the case, the <<element-graphic,`<graphic>`>> element is empty, only used to point to the external file.
+[source,xml]
+....
+...
+<fig id="fg-012">
+<label>Figure 12.</label>
+<caption>
+<title>My Dog</title>
+<p>He is so sweet! This is his best pose.</p>
+</caption>
+<graphic xlink:href="frontView.png"/>
+</fig>
+...
+....
+Here is a figure that contains no graphics at all, but encloses some bulleted items in a <<element-list,`<list>`>>. Note: The prefix word attribute has been used in the example below to generate a more complicated label; each label will have the prefix “Pet” (“Pet 1. Poodle”, “Pet 2. Persian Cat”, etc.).
+[source,xml]
+....
+<fig id="fg-012">
+<label>Figure 3.</label>
+<caption><title>Pet Show and Tell Order</title></caption>
+<list list-type="order" prefix-word="Pet ">
+<list-item><label>1.</label><p>Poodle</p></list-item>
+<list-item><label>2.</label><p>Persian Cat</p></list-item>
+<list-item><label>3.</label><p>Weaver Finches</p></list-item>
+<list-item><label>4.</label><p>Gecko</p></list-item>
+</list>
+</fig>
+....
+Here is a figure with three graphics inside. The <<element-fig,`<fig>`>> element also contains a <<element-label,`<label>`>> and <<element-title,`<title>`>> that apply to all the graphics. In this example, the <<element-graphic,`<graphic>`>> elements are not empty; each <<element-graphic,`<graphic>`>> has its own <<element-label,`<label>`>> and <<element-caption,`<caption>`>>.
+[source,xml]
+....
+...
+<fig id="fg-012">
+<label>Figure 12.</label>
+<caption><title>Three Perspectives on My Dog</title></caption>
+<graphic xlink:href="frontView.png">
+<label>a.</label>
+<caption><p>View A: From the Front, Laughing</p></caption>
+</graphic>
+    
+<graphic xlink:href="sideView.png">
+<label>b.</label>
+<caption><p>View B: From the Side, Best Profile</p></caption>
+</graphic>
+    
+<graphic xlink:href="motionView.png">
+<label>c.</label>
+<caption><p>View C: In Motion, A Blur on Feet</p></caption>
+</graphic>
+</fig>
+...
+....
+Here is a figure group, with three figures inside, each of which contains a graphic. The <<element-fig-group,`<fig-group>`>> element also contains a <<element-label,`<label>`>> and a <<element-title,`<title>`>> that apply to all the <<element-fig,`<fig>`>> elements in the group. Each figure also has its own <<element-label,`<label>`>> and <<element-title,`<title>`>>.
+[source,xml]
+....
+...
+<fig-group id="dogpix4">
+<label>Figures 12-14 Bonnie Lassie</label>
+<caption><title>Three perspectives on My Dog</title></caption>
+<fig id="fg-12">
+<label>a.</label>
+<caption><p>View A: From the Front, Laughing</p></caption>
+<graphic xlink:href="frontView.png"/>
+</fig>
+<fig id="fg-13">
+<label>b.</label>
+<caption><p>View B: From the Side, Best Profile</p></caption>
+<graphic xlink:href="sideView.png"/>
+</fig>
+<fig id="fg-14">
+<label>c.</label>
+<caption><p>View C: In Motion, A Blur on Feet</p></caption>
+<graphic xlink:href="motionView.png"/>
+</fig>
+</fig-group>
+...
+....
+#### Other Block-level Display Objects
+
+Several other elements may also contain graphic objects. See the specific elements for more information: <<element-alternatives,`<alternatives>`>>, <<element-array,`<array>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-preformat,`<preformat>`>>, <<element-private-char,`<private-char>`>>, and <<element-table-wrap,`<table-wrap>`>>.
+#### Additional (Non-integral) Display Objects
+
+The elements for describing supplementary material that is associated with a standards document but not part of the standards document (<<element-supplementary-material,`<supplementary-material>`>>) may also contain graphics or media as part of their description of the additional material. Neither of the supplementary elements contains the supplementary object; they contain descriptions of the material. Such descriptions may incorporate <<element-graphic,`<graphic>`>> or <<element-media,`<media>`>> elements.
+The external supplementary material itself may be tagged using JATS and contain <<element-graphic,`<graphic>`>> or <<element-media,`<media>`>> elements. These objects may be pointed to by the standards document text, but are not part of it.

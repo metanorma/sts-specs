@@ -1,0 +1,23 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/journal-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-journal-id]
+=== `@journal-id` Journal Identifier of a Related Article
+
+Identifier for the journal that contains the related article.
+
+#### Usage/Remarks
+The <<attribute-journal-id,`@journal-id`>> attribute can be used, along with the <<attribute-vol,`@vol`>>, <<attribute-issue,`@issue`>>, and <<attribute-page,`@page`>> attributes, to provide the metadata for the related journal article.
+
+#### OPTIONAL on element:  <<element-related-article,`<related-article>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A journal abbreviation or other journal identifier.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

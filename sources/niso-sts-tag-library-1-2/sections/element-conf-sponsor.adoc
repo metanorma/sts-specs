@@ -1,0 +1,63 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/conf-sponsor.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-conf-sponsor]
+=== `<conf-sponsor>` Conference Sponsor (in a citation)
+
+Within a citation (such as a <<element-mixed-citation,`<mixed-citation>`>> or an <<element-element-citation,`<element-citation>`>>), one organization identified as a sponsor of a conference.
+
+#### Usage/Remarks
+If more than one organization sponsored the conference, use a separate <<element-conf-sponsor,`<conf-sponsor>`>> element for each one.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  conf-sponsor (#PCDATA %conf-sponsor-elements;)*           >
+....
+#### Expanded Content Model
+
+(#PCDATA | institution | institution-wrap)*
+
+#### Tagged Sample
+
+##### Describing a cited conference
+[source,xml]
+....
+...
+<mixed-citation publication-type="confproc" publication-format="print"
+ ><person-group person-group-type="author"
+  ><string-name><surname>Andersson</surname>, 
+   <given-names>F.</given-names></string-name>, and 
+  <string-name><given-names>W. A.</given-names> 
+   <surname>Elmore</surname></string-name></person-group>, 
+ &#x201C;<article-title>Overview of series-compensated line 
+  protection philosophies</article-title>,&#x201D; 
+ <source>Seventeenth Annual Western Protective Relay Conference</source>, 
+ <conf-sponsor>Washington State University</conf-sponsor>, 
+ <conf-loc>Pullman, WA</conf-loc>, 
+ <conf-date>Oct. 1990</conf-date>.</mixed-citation>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

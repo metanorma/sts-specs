@@ -1,0 +1,106 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/release-date.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-release-date]
+=== `<release-date>` Release-Date
+
+An important date in the life of a standard, such as the date it was first published or the date it was reinstated. The attributes <<attribute-date-type,`@date-type`>> and <<attribute-std-type,`@std-type`>> should be used to specify what event the date names.
+
+#### Usage/Remarks
+#### Date Type Attribute
+
+<<attribute-date-type,`@date-type`>> is used to name events in the publishing cycle of the standards document (not in the lifecycle of the standard). Thus date types include events such as “`published`”, “`editorial-change`”, or “`stabilized-maintenance`”.
+#### Standard Type Attribute
+
+A <<attribute-std-type,`@std-type`>> attribute is used to name events (standards document types) in the lifecycle of the standard, such as “`addenda`” (which creates a new product, with a new designation that typically adds to a previous dated designation) or “`amendment`” (which replaces a previously published dated standard and also adds to a previous dated designation).
+The original publication of a standard will carry a <<attribute-date-type,`@date-type`>> of “`published`” and a <<attribute-std-type,`@std-type`>> attribute of “`new-standard`”:
+[source,xml]
+....
+<release-date date-type="published"
+     std-type="new-standard">
+....
+Later corrections, amendments, editions, and alternate language versions for a standard will all carry this same release date naming the original publication; but they will also carry additional <<element-release-date,`<release-date>`>> elements that name the different dates on which they are published and the different types of lifecycle events they represent.
+#### Specific Use Attribute
+
+By design, the <<element-release-date,`<release-date>`>> element _does not_ take an <<attribute-specific-use,`@specific-use`>> attribute. If a date does not fit neatly into the <<attribute-date-type,`@date-type`>> and <<attribute-std-type,`@std-type`>> attributes just described, then that date should be tagged as a <<element-meta-date,`<meta-date>`>> element.
+##### Use in Place of <<element-pub-date,`<pub-date>`>>
+
+In the original ISO STS Tag Set, the element <<element-pub-date,`<pub-date>`>> was used to record the date on which an international standard was first published. NISO JATS has its own journal-article-based definition and attributes for the element <<element-pub-date,`<pub-date>`>>. In order to avoid a conflict for organizations which have both journal articles and standards in a single data store, NISO STS Best Practice is to record the date on which a standard is published (as well as other significant dates) using the element <<element-release-date,`<release-date>`>> instead of the element <<element-pub-date,`<pub-date>`>>.
+##### If Release Date is _Not_ Available
+
+The <<element-release-date,`<release-date>`>> is an optional element, so if the release date is not available, the element can just be omitted. If the <<element-release-date,`<release-date>`>> is unknown (for whatever reason) the word “`unknown`” could also be used as the element content:
+[source,xml]
+....
+<release-date>unknown</release-date>
+....
+
+#### Attributes
+
+* <<attribute-date-type,`@date-type`>>
+* <<attribute-iso-8601-date,`@iso-8601-date`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-publication-format,`@publication-format`>>
+* <<attribute-std-type,`@std-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>, <<element-std-xref,`<std-xref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  release-date (#PCDATA %release-date-elements;)*           >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### Published date inside `<std-meta>`
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <doc-ref>...</doc-ref>
+ <release-date 
+   iso-8601-date="2014-12-01" 
+   date-type="published" 
+   std-type="new-standard">2014-12-01</release-date>
+ <comm-ref>...</comm-ref>
+ ...
+</std-meta>
+...
+....
+#### ISO-specific, published date inside `<iso-meta>`
+
+[source,xml]
+....
+...
+<iso-meta>
+ ...
+ <content-language>en</content-language>
+ <std-ref type="undated">ISO 2560</std-ref>
+ <std-ref type="dated">ISO 2560:2009</std-ref>
+ <doc-ref>ISO 2560:2009(en)</doc-ref>
+ <release-date iso-8601-date="2009-05-30" 
+   date-type="published">2009-05-30</release-date>
+ ...  
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

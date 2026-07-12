@@ -1,0 +1,47 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/rb.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-rb]
+=== `<rb>` Ruby Base Text
+
+This element is one half of a Ruby annotation (<<element-ruby,`<ruby>`>>), and it contains the narrative text in the document, which may be as short as a single character, to which a Ruby Textual Annotation (<<element-rt,`<rt>`>>) should be applied.
+
+#### Usage/Remarks
+##### What is Ruby
+
+A Ruby textual annotation is an annotation, typically short, applied to a letter, word, phrase, or name that appears in narrative text. Ruby annotations can indicate, for example, pronunciation advice, notes for translation, semantic annotations, etc. Ruby is used with Japanese, for example, in Furigana, which typically uses Hiragana annotations on Kanji base text. Ruby is also used in Chinese Pīnyīn (a phonetic system for transcribing the sound of Chinese characters into Latin script) as well as for some Korean names. In display or print, the characters of a Ruby annotation are frequently placed above the characters they modify, in parentheses after the characters they modify, or to the right of vertically set text.
+##### Structure of NISO STS Ruby
+
+The <<element-ruby,`<ruby>`>> element is an inline wrapper element that contains some of the document narrative text (inside a Ruby Base <<element-rb,`<rb>`>> element) and associates that base text with a Ruby Textual Annotation (inside an <<element-rt,`<rt>`>> element).
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ruby,`<ruby>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  rb           (#PCDATA %rb-elements;)*                     >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

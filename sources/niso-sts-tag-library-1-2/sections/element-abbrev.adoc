@@ -1,0 +1,97 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/abbrev.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-abbrev]
+=== `<abbrev>` Abbreviation or Acronym
+
+Abbreviation, acronym, or emoticon used in the text of a document, possibly including an expansion of the acronym.
+
+#### Usage/Remarks
+The `<abbrev>` element is intended for marking abbreviations in running text, and not for the documentation of common abbreviations in a list of symbols and abbreviated terms.
+Although an abbreviation is typically a few capitalized letters (“NIH”, “WHO”, “UN”, or “GAO”), emoticons (“;-)”) can also be tagged as abbreviations (“smile-wink”).
+##### Linking
+
+*Internal links to an abbreviation* — The <<element-xref,`<xref>`>> element can be used to point to an abbreviation from within the narrative text of a standard. For this use, the <<attribute-ref-type,`@ref-type`>> attribute should be set to “`abbreviation`”:
+[source,xml]
+....
+..<xref ref-type="abbreviation" rid="abbr-rat" >...</xref>..
+....
+*External links from an abbreviation* — The XLink linking attributes on the <<element-abbrev,`<abbrev>`>> element can be used to provide a live link to an external expansion, definition, or additional explanation of the abbreviation.
+##### Accessibility
+
+Sometimes an `<abbrev>` needs to be pronounced in a way that is not reflected in its content or its tagging. The <<attribute-alt,`@alt`>> attribute can be used to record the pronunciation for screen readers and other accessibility devices. For example, the abbreviation “WHO” might be better pronounced as “World Health Organization” or as “W.H.O.” than as “who” as the word would normally be. The <<attribute-alt,`@alt`>> attribute can also be used to provide the textual interpretation of a symbol such as an emoticon (for “;-)” use “`alt="smile-wink"`”).
+
+#### Attributes
+
+* <<attribute-alt,`@alt`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-def-head,`<def-head>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-inline-code,`<inline-code>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-head,`<term-head>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-def,`<def>`>> <<element-def,Definition>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  abbrev       (#PCDATA %abbrev-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA | def)*
+
+#### Tagged Samples
+
+#### For abbreviation
+
+[source,xml]
+....
+...
+<p>... The first time an abbreviation is used in text, 
+it shall be placed in parentheses and shall be preceded 
+by the word or term spelled out in full (for example, 
+circuit (<abbrev>ckt</abbrev>), frequency converter 
+(<abbrev>freq conv</abbrev>), and maximum working pressure 
+(<abbrev>mwp</abbrev>)). ...</p>
+...
+....
+#### For acronym
+
+[source,xml]
+....
+...
+<list-item>
+ <label>f.</label>
+ <p>Replacement of the DoD Index of Specifications and 
+  Standards (<abbrev>DoDISS</abbrev>) with the Acquisition 
+  Streamlining and Standardization Information System 
+  (<abbrev alt="A.S.S.I.S.T.">ASSIST</abbrev>) database.</p>
+</list-item>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,75 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-xGraphic.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-xGraphic]
+=== `<tbx:xGraphic>` External Graphic (TBX)
+
+The `<tbx:xGraphic>` element is a hyperlinking element that points, through the <<attribute-xtarget,`@xtarget`>> attribute, to a graphic file that is in an external document. Examples of “external graphics” include non-textual (non-verbal) representations such as a graphic, table, or media object such as a video or sound file
+
+#### Usage/Remarks
+##### Best Practice
+
+In general, `<tbx:xGraphic>` elements should not replace a definition but complement it, except in domains or subjects in which nonverbal representations are conventionally used instead of a definition
+##### Content/Display
+
+Typically, this element will be rendered in the published text with the label “*See: *” before it. The element content should contain the desired display text of the link. For example:
+[source,xml]
+....
+<tbx:xGraphic xtarget="http://www.example.com/graphic.html">Picture of a circuit board</tbx:xGraphic>
+....
+##### Linking
+
+The required <<attribute-xtarget,`@xtarget`>> attribute will hold the URI for the actual link.
+
+#### Attributes
+
+* <<attribute-xtarget,`@xtarget`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-langSet,`<tbx:langSet>`>>, <<element-tbx-termEntry,`<tbx:termEntry>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.xGraphic; 
+                        (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### Within a `<tbx:termEntry>`
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a222.1112">
+  <tbx:xGraphic xtarget="images/gantry-crane4.jpg"/>
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>crane with the bridge girders supported on the rail tracks by
+      legs</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a222.1112-1">gantry crane</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a222.1112-2">portal bridge crane</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+    </tbx:tig>
+  </tbx:langSet>
+  ...
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

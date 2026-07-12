@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Print the OCR transcript for a target slug. Useful while authoring the
+# source-derived AsciiDoc documents (TODOs 06, 07, 08, 10).
+#
+# Usage:
+#   ./scripts/read-transcript iso-sts-guidelines-coding-2-1
+#   ./scripts/read-transcript iso-sts-guidelines-coding-2-1 | less
+
+require "pathname"
+
+$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+require "sts_specs"
+
+REPO_ROOT = Pathname.new(File.expand_path("..", __dir__))
+CACHE_ROOT = REPO_ROOT.join("reference-docs", ".glm-ocr-cache")
+
+slug = ARGV.shift || abort("usage: #{$0} <slug>")
+target = StsSpecs::Ocr::TargetSet.find(slug) ||
+  abort("Unknown slug: #{slug}\nAvailable: #{StsSpecs::Ocr::TargetSet.to_a.map(&:slug).join(', ')}")
+
+writer = StsSpecs::Ocr::TranscriptWriter.new(cache_root: CACHE_ROOT)
+content = writer.read(target) ||
+  abort("No transcript yet for #{slug}. Run scripts/ocr-all first.")
+
+puts content

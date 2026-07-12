@@ -1,0 +1,66 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/volume.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-volume]
+=== `<volume>` Volume Number (in a citation)
+
+Number of a journal (or other document) within a series.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-seq,`@seq`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  volume       (#PCDATA %volume-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### As part of bibliographic reference for journal
+[source,xml]
+....
+...
+<ref-list>
+ <title>Bibliography</title>
+ ...
+ <ref id="ref_4">
+  <label>4</label>
+  <mixed-citation publication-type="journal"
+   ><person-group
+    ><string-name><surname>Hadorn</surname>,  
+     <given-names>H.</given-names></string-name>, 
+    <string-name><surname>Z&uuml;rchner</surname>,  
+     <given-names>K</given-names></string-name></person-group>. 
+   <source>Dtsch. Lebensmitt. Rundsch</source>. 
+   <year iso-8601-date="1974">1974</year>, 
+   <volume>70</volume> p. <fpage>57</fpage></mixed-citation>
+ </ref>
+ ...
+</ref-list>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

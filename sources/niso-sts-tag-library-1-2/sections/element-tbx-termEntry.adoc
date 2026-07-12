@@ -1,0 +1,151 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-termEntry.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-termEntry]
+=== `<tbx:termEntry>` Term Entry (Concept Entry) TBX
+
+Container for TBX encoding of one entry in a terminological database.
+The `<tbx:termEntry>` element is the root element for a terminological entry, which contains all the elements, and their attributes, that describe a concept and all the terms that denote that concept, potentially in several languages.
+
+#### Usage/Remarks
+The `<tbx:termEntry>` element is often referred to as the “concept level” of the entry. At this level, only external-type references (references that point to locations outside of the document) plus the various <<element-tbx-langSet,`<tbx:langSet>`>> elements are allowed.
+##### Tagging Terms and Definitions in NISO STS
+
+There are two very different strategies for tagging terms and definitions. Both structures occur optionally inside a Term Section (<<element-term-sec,`<term-sec>`>>) in NISO STS standards or adoption document: one is TBX and the other is a simpler, less powerful TBX-alternative. *TBX:* TBX is a concept-oriented encoding of terminological data. The TBX element <<element-tbx-termEntry,`<tbx:termEntry>`>> models a term using the TBX-namespaced vocabulary and ontology for terms, which can record information about any number of synonymous terms in multiple languages. The TBX vocabulary is derived and extended from ISO 30042. *Term Display:* The NISO STS element `<term-display>` uses natural language to describe terms, and may OR MAY NOT incorporate semantic term elements such as definition (<<element-def,`<def>`>> and part of speech <<element-part-of-speech,`<part-of-speech>`>>). Semantic tagging is encouraged, but nothing is enforced.
+An organization can choose to use one or the other or, the two encodings may appear side-by-side as equivalents. Processes that deal with NISO STS documents should be prepared to see either (or both) forms of a term entry and to use one or the other (or both) as appropriate.
+##### Tagging with Term-Display
+
+The <<element-term-display,`<term-display>`>> element is a more appearance-oriented encoding of terminological data that may be used when: a standards organization that chooses not to employ TBX, it is difficult to generate the desired formatted display from a TBX entry, or For backfile conversion, in cases where it is difficult to create a useful TBX term entry from an appearance-oriented input document.
+The looser term display description of a term and its definition (potentially containing nothing but undifferentiated text) was designed to: Enable tagging term and definition content in the sequence in which that content appears in the standards document; Enable, but not require, tagging of the principle semantic components of term and definition sections (such as the term, the definition, related elements, part of speech, etc.); Enable tagging that will allow extraction of terms and definitions for use in glossaries containing terms and definitions from many standards; and Make tagging existing terms and definitions easier (in some senses) than using the more structured TBX tagging.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+#### Namespaces
+
+* <<attribute-xmlns-tbx,`@xmlns:tbx`>> (fixed value = urn:iso:std:iso:30042:ed-1)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: Any combination of: <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>> <<element-tbx-externalCrossReference,External Cross Reference (TBX)>> <<element-tbx-xGraphic,`<tbx:xGraphic>`>> <<element-tbx-xGraphic,External Graphic (TBX)>> <<element-tbx-xMathML,`<tbx:xMathML>`>> <<element-tbx-xMathML,External MathML (TBX)>> <<element-tbx-xSource,`<tbx:xSource>`>> <<element-tbx-xSource,External Source (TBX)>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-tbx-langSet,`<tbx:langSet>`>> <<element-tbx-langSet,Language Set (TBX)>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.termEntry; 
+                        ((%TBX.externalCrossReference; | 
+                          %TBX.xGraphic; | %TBX.xMathML; | 
+                          %TBX.xSource; | 
+                          %niso-sts-termEntry-additions.class;)*, 
+                        (%TBX.langSet;)+ )                           >
+....
+#### Expanded Content Model
+
+((tbx:externalCrossReference | tbx:xGraphic | tbx:xMathML | tbx:xSource | index-term)*, (tbx:langSet)+)
+
+#### Tagged Samples
+
+#### Containing single `<tbx:langSet>`
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### `<tbx:termEntry>` containing multiple `<tbx:langSet>`s
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### `<tbx:termEntry>` in context within a `<term-sec>`
+
+[source,xml]
+....
+<sec>
+  <label>3</label>
+  <title>Terms and definitions</title>
+  ...
+  <term-sec>
+    <tbx:termEntry id="iso_9000_2005_en_term_3.1.6">
+      ...
+    </tbx:termEntry>
+
+  ...
+
+    <tbx:termEntry id="iso_9000_2005_en_term_3.9.9">
+      <tbx:langSet xml:lang="en">
+        <tbx:definition>person with the demonstrated personal attributes and <tbx:entailedTerm
+          target="iso_9000_2005_en_term_3.1.6">competence (3.1.6 and 3.9.14)</tbx:entailedTerm> to
+          conduct an <tbx:entailedTerm>audit (3.9.1)</tbx:entailedTerm></tbx:definition>
+        <tbx:note>The relevant personal attributes for an auditor are described in ISO
+          19011.</tbx:note>
+        <tbx:tig>
+          <tbx:term>auditor</tbx:term>
+          <tbx:partOfSpeech value="noun"/>
+        </tbx:tig>
+      </tbx:langSet>
+    </tbx:termEntry>
+  </term-sec>
+  ...
+</sec>
+....
+
+#### Related Resources
+
+* For a discussion on tagging terms and definitions in a Term Section (<<element-term-sec,`<term-sec>`>>), see Tagging Terms and Definitions.
+* See: Hierarchy diagram - Term Entry (Concept Entry) TBX
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

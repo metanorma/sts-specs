@@ -1,0 +1,100 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/scope.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-scope]
+=== `@scope` Scope (NISO JATS table model)
+
+Specifies the cells for which the current <<element-td,`<td>`>> element or <<element-th,`<th>`>> element provides header information. Screen readers and other Assistive Technologies use <<attribute-scope,`@scope`>> to provide information about the table structure that would be obvious to most sighted people. (This attribute is based on and intended to be converted easily to the XHMTL `scope` attribute.)
+
+#### Usage/Remarks
+The <<attribute-scope,`@scope`>> attribute applies to both <<element-td,`<td>`>> or <<element-th,`<th>`>> since, for example, a table cell in the first column may act as a label (header) for the other cells in the same row. The values for <<attribute-scope,`@scope`>> are keywords, which provide an alternative to describing the header by naming header elements explicitly (using <<attribute-headers,`@headers`>> on a <<element-th,`<th>`>> or <<element-td,`<td>`>> element).
+The following graphic shows the scope of the different scope values. The figure and the value table below apply to a table in which columns progress from left to right. In a table in which the columns progress from right to left, the effect is down and/or to the right instead of down and/or to the left.
+<<attribute-scope,`@scope`>> is based on and intended to be converted easily to the XHTML “`scope`” attribute. It also maps to the “`Scope`” attribute in Tagged PDF.
+In HTML 4.01, scope applies to both <<element-td,`<td>`>> and <<element-th,`<th>`>> elements. In HTML5, scope applies only to <<element-th,`<th>`>> elements. When scope is not specified, the “missing value default” in HTML5 is “`auto`”, where the scope is determined based on context: in short, a <<element-th,`<th>`>> element is automatically a column header if there are no <<element-td,`<td>`>> elements in either the rows spanned by the a <<element-th,`<th>`>> element or any preceding rows, and it is automatically a row header if there are no <<element-td,`<td>`>> elements in either the columns spanned by the a <<element-th,`<th>`>> element or any preceding columns. A <<element-th,`<th>`>> element may, therefore, automatically be both a column header and a row header.
+The <<attribute-scope,`@scope`>> attribute in Tagged PDF has values for “Row”, “Column”, or “Both”. Scope applies only to the TH structure element, so a <<element-td,`<td>`>> with a scope attribute must be tagged as TH in the PDF. However there is no harm in tagging a <<element-td,`<td>`>> as TH since the usual visual differences between <<element-td,`<td>`>> and <<element-th,`<th>`>> elements are not relevant to a screen reader. Scope was added in PDF 1.5. Up to and including PDF 1.7, there was no automatic Scope assignment. PDF 2.0 assumes that the TH in the first row and column has a Scope value of “Both”, that other TH(s) in the first row have a value of “Column”, and that any other TH in the first column have a value of “Row”.
+#### References
+
+https://www.w3.org/TR/html50/tabular-data.html#the-th-element https://www.w3.org/TR/html50/tabular-data.html#table-model https://www.w3.org/TR/html401/struct/tables.html#adef-scope
+#### Standards Note
+
+This attribute has nothing to do with the _Scope_ section of a standard or adoption; this scope is for XHTML tables only.
+#### Caution
+
+This attribute is not universally supported in HTML browsers (as of 2021).
+
+#### OPTIONAL on elements:  <<element-td,`<td>`>>, 
+                  <<element-th,`<th>`>>
+
+|===
+| Value| Meaning
+
+| col| Acts as a header for cells in the same column in following row.
+| colgroup| Acts as a header for cells in the current colgroup that are down and to the right
+                        of the current cell (i.e., the remaining cells named in the <<element-colgroup,`<colgroup>`>> element).
+| row| Acts as a header cell for cells in the same row in following columns.
+| rowgroup| Acts as a header cell for cells in the current row group (i.e., in the current <<element-thead,`<thead>`>>, <<element-tfoot,`<tfoot>`>>, or <<element-body,`<body>`>>) that are down and to the right of the current cell.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Showing both row and column scopes
+Accessibility
+[source,xml]
+....
+...
+<table border="2" rules="groups" style="border-collapse: collapse; 
+ border-style: solid;" width="298">
+ <col width="41.86%"/>
+ <col width="58.14%"/>
+ <thead>
+  <tr>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Shore AO value</bold></th>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Value of spring force</bold>, 
+    <italic>F</italic>, <bold>in</bold> mN<break/>
+    (&Delta;<italic>F</italic>&equals; &plusmn; 37,5 mN)<xref 
+    ref-type="fn" rid="table-fn_23.1"><sup>a</sup></xref></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">0</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">550,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">10</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">1 300,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">20</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 
+    1px" valign="middle">2 050,0</td>
+  </tr>
+  ...
+ </tbody>
+</table>
+...
+....
+
+#### Related Resource
+
+For additional information concerning <<attribute-scope,`@scope`>>, see Accessibility: Table Headers.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

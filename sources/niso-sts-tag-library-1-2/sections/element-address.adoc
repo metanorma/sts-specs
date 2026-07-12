@@ -1,0 +1,65 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/address.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-address]
+=== `<address>` Address/Contact Information
+
+Container element for contact information such as a postal address for a person or organization.
+
+#### Related Elements
+
+An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as a company or organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-contrib-group,`<contrib-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+Any combination of: Address Elements <<element-addr-line,`<addr-line>`>> <<element-addr-line,Address Line>> <<element-city,`<city>`>> <<element-city,City (in an address)>> <<element-country,`<country>`>> <<element-country,Country (in an address)>> <<element-fax,`<fax>`>> <<element-fax,Fax Number (in address)>> <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>> <<element-phone,`<phone>`>> <<element-phone,Phone Number: in an Address>> <<element-postal-code,`<postal-code>`>> <<element-postal-code,Postal Code: in an Address>> <<element-state,`<state>`>> <<element-state,State or Province (in an address)>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  address      %address-model;                              >
+....
+#### Expanded Content Model
+
+(addr-line | city | country | fax | institution | institution-wrap | phone | postal-code | state | email | ext-link | uri)*
+
+#### Tagged Sample
+
+##### Address in text
+[source,xml]
+....
+...
+<p>... Written requests supported by a verifiable 
+ need-to-know shall be submitted to:
+ <address>
+  <addr-line>Commander</addr-line> 
+  <addr-line><institution>US Army TACOM-ARDEC</institution></addr-line>
+  <addr-line>Attn: AMSRD-AAR-AIC-S, Bldg 12</addr-line> 
+  <addr-line><city>Picatinny</city>, <state>NJ</state> 
+   <postal-code>07806-5000</postal-code></addr-line>
+  <email>ardec-stdzn@pica.army.mil</email>
+ </address>
+</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,85 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/colgroup.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-colgroup]
+=== `<colgroup>` Table Column Group (NISO JATS table model)
+
+A container element to hold column descriptions (element <<element-col,`<col>`>>) for a group of columns in a table—or for all of the columns in the table if there is only one <<element-colgroup,`<colgroup>`>> in the table. Attributes on the <<element-colgroup,`<colgroup>`>> apply to all of the columns in the group unless over-ridden on the <<element-col,`<col>`>>. (This element is based on and intended to be converted easily to the XHMTL `colgroup` element.)
+
+#### Usage/Remarks
+Use W3C documentation for the XHTML 1.1 table model (https://www.w3.org/TR/xhtml-modularization/abstract_modules.html#s_tablemodule).
+
+#### Attributes
+
+* <<attribute-align,`@align`>>
+* <<attribute-char,`@char`>>
+* <<attribute-charoff,`@charoff`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-span,`@span`>> (default = 1)
+* <<attribute-style,`@style`>>
+* <<attribute-valign,`@valign`>>
+* <<attribute-width,`@width`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-table,`<table>`>>
+#### Description
+
+<<element-col,`<col>`>> <<element-col,Table Column (NISO JATS table model)>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %colgroup.qname;  %colgroup.content; >
+....
+#### Expanded Content Model
+
+(col)*
+
+#### Tagged Sample
+
+##### Group of three columns
+[source,xml]
+....
+...
+<table-wrap id="TX0.180">
+ <label>Table 3</label>
+ <table frame="box" rules="all" width="1800">
+  <colgroup>
+   <col align="left" width="38*"/>
+   <col width="30*"/>
+   <col width="30*"/>
+  </colgroup>
+  <thead>
+   <tr>
+    <th align="center">Location</th>
+    <th>lux</th>
+    <th>footcandles</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td><bold>Generating station (interior)</bold></td>
+    <td align="center"></td>
+    <td align="center"></td>
+   </tr>
+   ...
+  </tbody>
+ </table>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table (NISO JATS table model)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

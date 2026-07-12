@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/toc-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-toc-group]
+=== `<toc-group>` Table of Contents Group
+
+Collection of one or more Tables of Contents. Collected Tables of Contents need not be grouped inside this element.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption-front,`<adoption-front>`>>, <<element-back,`<back>`>>, <<element-front,`<front>`>>
+#### Description
+
+The following, in order: <<element-toc-title-group,`<toc-title-group>`>> <<element-toc-title-group,Table of Contents Title Group>>, zero or one <<element-p,`<p>`>> <<element-p,Paragraph>>, zero or more <<element-toc,`<toc>`>> <<element-toc,Table of Contents>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  toc-group    %toc-group-model;                            >
+....
+#### Expanded Content Model
+
+(toc-title-group?, (p)*, (toc)+)
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table of Contents Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,110 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/inline-formula.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-inline-formula]
+=== `<inline-formula>` Formula, Inline
+
+Mathematical equation, expression, or formula that is to be displayed inline. The mathematics itself can be expressed as ASCII characters, as a graphic, or using TeX, LaTeX, or MathML mathematics expressions.
+
+#### Usage/Remarks
+Some print-oriented tag sets use a specific element to indicate “go into math mode or math font here”. While that was not the intended usage of this element, in nearly all cases the text inside such math-changes is a mathematical expression. It would not be incorrect to use this element to mark such material; however, some organizations may find this tagging undesirable as it proliferates “equations”.
+
+#### Related Elements
+
+For a mathematical equation, expression, or formula which is to displayed as a block (callout), use the <<element-disp-formula,`<disp-formula>`>> element.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-related-term,`<related-term>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  inline-formula
+                        %inline-formula-model;                       >
+....
+#### Expanded Content Model
+
+(#PCDATA | alt-text | long-desc | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | tex-math | mml:math | named-content | styled-content | sub | sup)*
+
+#### Tagged Samples
+
+#### Within the text of a list item
+
+[source,xml]
+....
+...
+<p>In Example 1 (one-sided paired test), the data were as 
+ follows: <italic>n</italic> = 30, <italic>x</italic> = 21, 
+ <italic>a</italic> = 0,05. From these data, the analyst 
+ calculates</p>
+<list list-type="bullet">
+ <list-item>
+  <label>&mdash;</label>
+  <p><italic>p</italic><sub>c</sub> = 
+   <italic>x</italic>/<italic>n</italic> = 21/30 = 0,7,</p>
+ </list-item>
+ <list-item>
+  <label>&mdash;</label>
+  <p><inline-formula
+   ><mml:math display="inline" id="mml_m1">
+     <mml:mrow>
+      <mml:msub>
+       <mml:mover accent="true">
+        <mml:mi>p</mml:mi>
+        <mml:mo>^</mml:mo>
+       </mml:mover>
+       <mml:mtext>d</mml:mtext>
+      </mml:msub>
+     </mml:mrow>
+    </mml:math></inline-formula> (proportion of distinguishers) ...</p>
+ </list-item>
+ ...
+</list>
+...
+....
+#### Alternative formulas in text
+
+[source,xml]
+....
+...
+<p><italic>Slow-front transient overvoltage (SFO)</italic>: 
+ Transient overvoltage, usually unidirectional, with time to 
+ peak 20 &#x3bc;s &lt; 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_p}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m1.eps"
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 5 000 &#x3bc;s, and 
+ time&#xa0;to&#xa0;half&#xa0;value&#xa0;of&#xa0;a&#xa0;
+ decreasing&#xa0;voltage 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_2}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m2.eps" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 20 ms.</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

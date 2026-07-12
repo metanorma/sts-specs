@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/std-meta-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-std-meta-type]
+=== `@std-meta-type` Type of Standard Metadata
+
+Identifies the type of standards body (international, national, SDO, consortia, etc.) that is creating or adopting this standard.
+
+#### Usage/Remarks
+This attribute identifies the type of standards body that created the <<element-std-meta,`<std-meta>`>> or <<element-std-doc-meta,`<std-doc-meta>`>> elements. The standard metadata type of “`international`” is implied by the use of <<element-iso-meta,`<iso-meta>`>>; the standard metadata type of “`regional`” is implied by the use of <<element-reg-meta,`<reg-meta>`>>; and the standard metadata type of “`national`” is implied by the use of <<element-nat-meta,`<nat-meta>`>>.
+
+#### OPTIONAL on elements:  <<element-std-doc-meta,`<std-doc-meta>`>>, 
+                  <<element-std-meta,`<std-meta>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of standards body producing or adopting this standard, for example, “`international`”, “`sdo`”, “`consortia`”, etc. There is no fixed list; standards organizations will self-identify.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

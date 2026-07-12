@@ -1,0 +1,107 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-tig.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-tig]
+=== `<tbx:tig>` Term Information Group (TIG) (TBX)
+
+The element `<tbx:tig>` stands for “Term Information Group”. It is a container element that encloses all the specific elements that describe a term.
+
+#### Usage/Remarks
+A `<tbx:tig>` element must include one and only one <<element-tbx-term,`<tbx:term>`>>. The remaining elements are optional, but can only occur once if used. The only exception is the usage note (<<element-tbx-usageNote,Usage Note (TBX)>>) element, which can be used as many times as needed.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-langSet,`<tbx:langSet>`>>
+#### Description
+
+The following, in order: <<element-tbx-term,`<tbx:term>`>> <<element-tbx-term,Term (TBX)>> <<element-tbx-partOfSpeech,`<tbx:partOfSpeech>`>> <<element-tbx-partOfSpeech,Part of Speech Flag (TBX)>>, zero or one <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>> <<element-tbx-geographicalUsage,Geographical Usage Flag (TBX)>>, zero or more <<element-tbx-grammaticalGender,`<tbx:grammaticalGender>`>> <<element-tbx-grammaticalGender,Grammatical Gender Flag (TBX)>>, zero or one <<element-tbx-grammaticalNumber,`<tbx:grammaticalNumber>`>> <<element-tbx-grammaticalNumber,Grammatical Number Flag (TBX)>>, zero or one <<element-tbx-normativeAuthorization,`<tbx:normativeAuthorization>`>> <<element-tbx-normativeAuthorization,Normative Authorization Flag>>, zero or one <<element-tbx-pronunciation,`<tbx:pronunciation>`>> <<element-tbx-pronunciation,Pronunciation (TBX)>>, zero or one <<element-tbx-termType,`<tbx:termType>`>> <<element-tbx-termType,Term Type Flag (TBX)>>, zero or one <<element-tbx-usageNote,`<tbx:usageNote>`>> <<element-tbx-usageNote,Usage Note (TBX)>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.tig;    (%TBX.term;, (%TBX.partOfSpeech;)?, 
+                         (%TBX.geographicalUsage;)*,
+                         (%TBX.grammaticalGender;)?,
+                         (%TBX.grammaticalNumber;)?,
+                         (%TBX.normativeAuthorization;)?,
+                         (%TBX.pronunciation;)?, (%TBX.termType;)?,
+                         (%TBX.usageNote;)* )                        >
+....
+#### Expanded Content Model
+
+(tbx:term, (tbx:partOfSpeech)?, (tbx:geographicalUsage)*, (tbx:grammaticalGender)?, (tbx:grammaticalNumber)?, (tbx:normativeAuthorization)?, (tbx:pronunciation)?, (tbx:termType)?, (tbx:usageNote)*)
+
+#### Tagged Samples
+
+#### Preferred and admitted versions of the same term
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### One term in multiple languages
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Term Information Group (TIG) (TBX)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

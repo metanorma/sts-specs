@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML D 32:2018</doc-identifier>
+      <std-title-group>
+        <title>Guide for the application of ISO/IEC 17065 to assessment of certification bodies in legal metrology</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2018-01-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2018 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2018</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>D</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States.</p>
+      <p>The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_657afc25-05d1-f984-795f-46259da22909">
+        <list-item>&#x2014;International Recommendations (OIML R), which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;International Documents (OIML D), which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;International Guides (OIML G), which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</list-item>
+        <list-item>&#x2014;International Basic Publications (OIML B), which define the operating rules of the various OIML structures and systems.</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Technical Committees or Subcommittees which comprise representatives from the Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of Vocabularies (OIML V) and periodically commissions legal metrology experts to write Expert Reports (OIML E). Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This Document&#x2009;&#x2014;&#x2009;reference OIML D 32, Edition 2018 (E)&#x2009;&#x2014;&#x2009;was developed by Project Group 5 in the OIML Technical Subcommittee TC 3/SC 5 Conformity assessment. It was approved for final publication by the International Committee of Legal Metrology at its 53rd meeting in 2018. It supersedes OIML D 29, Edition 2008 (E) Guide for the application of ISO/IEC Guide 65 to assessment of measuring instrument certification bodies in legal metrology.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <title>Preamble</title>
+      <p>This Document gives guidance and interpretations related to the application of ISO/IEC 17065:2012 Conformity assessment&#x2009;&#x2014;&#x2009;Requirements for bodies certifying products, processes and services to the assessment of conformity assessment bodies, hereafter called &#x201C;certification bodies&#x201D; in this Document, that are responsible for the national type evaluation and type approval of measuring instruments or the issuing of OIML Certificates under the OIML Certification System (OIML-CS) for types of measuring instruments.</p>
+      <p>The edition of ISO/IEC 17065 referred to in this Document is 2012.</p>
+      <p>Taking into account that national type evaluation and type approval of measuring instruments and the issuing of OIML Certificates may be considered as product certification, this Document may be used</p>
+      <list list-type="bullet" id="_6b4c338a-092e-9749-8408-6b58c8d52445">
+        <list-item>&#x2014;by peer assessment or accreditation assessors when interpreting ISO/IEC 17065 for legal metrology applications in connection with the OIML-CS,</list-item>
+        <list-item>&#x2014;for the assessment of national issuing authorities responsible for national type evaluation and type approval of measuring instruments conducted by an accreditation body in the field of legal metrology (e.g. by an IAF Full Member signatory to the IAF Multilateral Recognition Arrangement (MLA)), and</list-item>
+        <list-item>&#x2014;on a voluntary basis for the implementation of ISO/IEC 17065 by national issuing authorities responsible for the national type evaluation and type approval of measuring instruments.</list-item>
+      </list>
+      <p>ISO/IEC 17065 calls for the implementation of the applicable requirements of ISO/IEC 17025 General requirements for the competence of testing and calibration laboratories for testing activities associated with the product certification activity. A separate Document (OIML D 30) is available for the application of ISO/IEC 17025 to type testing of measuring instruments.</p>
+      <p>In view of the specific regulatory nature of the certification activity, certain guidance in this Document may be applicable either to the certification body that conducts the national type evaluation and type approval or issues the OIML Certificate, or to a regulatory designating authority. In particular, depending on the organization of legal metrology in a country, the regulatory designating authority (e.g. the government) may be responsible for suspending or withdrawing certification. The quality system of the certification body shall clearly identify the responsibilities and the way in which they are shared.</p>
+      <p>The issuing of OIML Certificates under the OIML-CS is classified as Scheme type 1a defined in ISO/IEC 17067 Conformity assessment&#x2009;&#x2014;&#x2009;Fundamentals of product certification and guidelines for product certification schemes.</p>
+      <p>In cases where ISO/IEC 17065 is deemed not to be the most appropriate Standard, national authorities may decide to implement other Standards (e.g. ISO/IEC 17020 General criteria for the operation of various types of bodies performing inspection).</p>
+      <p>This Document was developed in cooperation with the International Accreditation Forum (IAF), which is an Organization in Liaison with the OIML. Consequently, this Document should be used for accreditation assessments and any appropriate evaluation of certification bodies on the basis of the Memorandum of Understanding signed between ILAC, the IAF and the OIML in October 2018.</p>
+      <p>This Document does not include the text of ISO/IEC 17065. Numbers and titles of ISO/IEC 17065 clauses and subclauses are associated with the relevant OIML guidance which is identified with the letter &#x201C;G&#x201D; (for Guidance) followed by the relevant subclause number of ISO/IEC 17065. A chronological number is also given (e.g. G.1.1-1) which signifies &#x201C;OIML guidance number 1 to subclause 1.1 of ISO/IEC 17065&#x201D;. OIML guidance to the introduction of ISO/IEC 17065 is identified by &#x201C;G.0-x&#x201D;.</p>
+    </sec>
+    <sec>
+      <title>Explanatory notes</title>
+      <sec>
+        <title>Note 1 (Certification Bodies)</title>
+        <p>In the context of the OIML-CS, Certification Bodies are those OIML Issuing Authorities that have been approved by the OIML-CS Management Committee.</p>
+      </sec>
+      <sec>
+        <title>Note 2 (Applicability of requirements)</title>
+        <p>When used in conjunction with the OIML-CS, the guidance and interpretations in this Document are applicable to OIML Issuing Authorities which are responsible for issuing OIML Certificates and associated OIML type evaluation reports resulting from type evaluations of measuring instruments on the basis of the relevant OIML Recommendation(s).</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Guidance and Interpretation of Clauses and Subclauses of ISO/IEC 17065:2012 Conformity assessment&#x2009;&#x2014;&#x2009;Requirements for bodies certifying products, processes and services</title>
+      <sec>
+        <title>Introduction</title>
+        <sec>
+          <title>OIML guidance to the Introduction (G.0-1 to G.0-3)</title>
+          <p>[G.0-1] Issuing national type approval certificates or OIML Certificates are product certification activities. In these cases, certification is limited to compliance of types of instruments, families of types, and types of modules of instruments. These product certification activities do not cover the conformity of individual products, surveillance of production, or quality systems for production.</p>
+          <p>This Document does not cover the case where the certification is granted based on the quality system of the manufacturer for the design of the products. Nevertheless, this Document covers the case where results of tests performed by the manufacturer, including under the OIML-CS, are taken into account to demonstrate the conformity.</p>
+          <p>It should be remembered that national type approval certificates, and OIML Certificates and their associated OIML type evaluation reports, are issued on the basis of tests and examinations.</p>
+          <p>This Document is limited to legal metrology requirements and does not cover other requirements which may be applicable to measuring instruments such as health and safety requirements.</p>
+          <p>[G.0-2] This Document includes amplifications of ISO/IEC 17065 which are considered necessary for the specific applications mentioned in its preamble.</p>
+          <p>[G.0-3] The form of the assertion of conformity is defined:</p>
+          <list list-type="bullet" id="_7a002368-6170-5b24-3b6d-f629289db2d9">
+            <list-item>&#x2014;in the national legal metrology regulations for national type approvals;</list-item>
+            <list-item>&#x2014;in OIML Publication B18 for OIML Certificates under the OIML-CS;</list-item>
+            <list-item>&#x2014;in the relevant OIML Recommendations for OIML type evaluation reports.</list-item>
+          </list>
+          <p>The test results that are taken into account for the assertion of the conformity can be obtained from tests performed by the manufacturer, an external (outsourced) testing laboratory or an internal testing laboratory inside the certification body. Irrespective of the origin of the test results, national type approval and the issuing of OIML Certificates are both considered as third-party product certification.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 1&#x2009;&#x2014;&#x2009;Scope</title>
+        <sec>
+          <title>OIML guidance to clause 1 (G.1-1 to G.1-3)</title>
+          <p>[G.1-1] &#x201C;Certification bodies&#x201D; are national issuing authorities and OIML Issuing Authorities under the OIML-CS.</p>
+          <p>[G.1-2] &#x201C;Third-party conformity assessment&#x201D; is national type approval and issuing OIML Certificates.</p>
+          <p>[G.1-3] The word &#x201C;product&#x201D; shall be understood as meaning the measuring instrument type (including families of measuring instruments, modules, or families of modules) subject to national type approval or issuing OIML Certificates. Processes and services are not relevant to national type approval and issuing OIML Certificates.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 2&#x2009;&#x2014;&#x2009;Normative References</title>
+        <sec>
+          <title>OIML guidance to clause 2 (G.2-1)</title>
+          <p>[G.2-1] In addition:</p>
+          <list list-type="bullet" id="_034b1f1d-6509-3605-a24e-6a960f803696">
+            <list-item>&#x2014;OIML V 1:2013 International vocabulary of terms in legal metrology (VIML) (bilingual French-English)</list-item>
+            <list-item>&#x2014;OIML V 2-200:2012 International Vocabulary of Metrology&#x2009;&#x2014;&#x2009;Basic and General Concepts and Associated Terms (VIM)</list-item>
+            <list-item>&#x2014;OIML G 1-100:2008 Evaluation of measurement data&#x2009;&#x2014;&#x2009;Guide to the expression of uncertainty in measurement</list-item>
+            <list-item>&#x2014;OIML G 1-101:2008 Evaluation of measurement data&#x2009;&#x2014;&#x2009;Supplement 1 to the &#x201C;Guide to the expression of uncertainty in measurement&#x201D; Propagation of distributions using a Monte Carlo method</list-item>
+            <list-item>&#x2014;OIML G 1-102:2011 Evaluation of measurement data&#x2009;&#x2014;&#x2009;Supplement 2 to the &#x201C;Guide to the expression of uncertainty in measurement&#x201D; Extension to any number of output quantities</list-item>
+            <list-item>&#x2014;OIML G 1-104:2009 Evaluation of measurement data&#x2009;&#x2014;&#x2009;An introduction to the &#x201C;Guide to the expression of uncertainty in measurement&#x201D; and related documents</list-item>
+            <list-item>&#x2014;OIML G 1-106:2012 Evaluation of measurement data&#x2009;&#x2014;&#x2009;The role of measurement uncertainty in conformity assessment</list-item>
+            <list-item>&#x2014;OIML G 19:2017 The role of measurement uncertainty in conformity assessment decisions in legal metrology</list-item>
+            <list-item>&#x2014;OIML B 18:2018 Framework for the OIML Certification System (OIML-CS)</list-item>
+            <list-item>&#x2014;OIML D 14:2004 Training and qualification of legal metrology personnel</list-item>
+            <list-item>&#x2014;OIML D 19:1988 Pattern evaluation and pattern approval</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 3&#x2009;&#x2014;&#x2009;Terms and definitions</title>
+        <sec>
+          <title>OIML guidance to clause 3 (G.3-1 to G.3-3)</title>
+          <p>[G.3-1] For the purpose of this Document, the relevant definitions given in ISO/IEC 17000:2004 Conformity assessment&#x2009;&#x2014;&#x2009;Vocabulary and general principles, in the VIML and in the VIM apply. General definitions related to quality are given in ISO 9000:2015 Quality management systems&#x2009;&#x2014;&#x2009;Requirements. Where different definitions are given in ISO 9000:2015, the definitions in ISO/IEC 17000:2004, in the VIM, and in the VIML are preferred.</p>
+          <p>[G.3-2] In addition:</p>
+          <sec>
+            <title>national issuing authority (OIML B18)</title>
+            <p>certifying body or person in an OIML Member State or Corresponding Member that is responsible for national type approval and that issues national/regional Type Approval Certificates for specific categories of measuring instruments or modules on the basis of examination and testing under its own control</p>
+          </sec>
+          <sec>
+            <title>OIML Certificate (OIML B18)</title>
+            <p>Type Examination Certificate, issued by an OIML Issuing Authority, attesting the conformity of a type of a measuring instrument or module with the relevant requirements of an OIML Recommendation at the time of testing and evaluation</p>
+          </sec>
+          <sec>
+            <title>regulatory designating authority</title>
+            <p>governmental or public body that is tasked with designating a certification body or a national issuing authority</p>
+          </sec>
+          <sec>
+            <title>type (pattern) evaluation (VIML 2.04)</title>
+            <p>conformity assessment procedure on one or more specimens of an identified type (pattern) of measuring instruments which results in an evaluation report and / or an evaluation certificateNote1 Note13.4.1.4,Note1&#x201D;Pattern&#x201D; is used in legal metrology with the same meaning as &#x201C;type&#x201D;.Note2 Note23.4.1.4,Note2For the purposes of the OIML-CS, &#x201C;evaluation report&#x201D; should be read as &#x201C;OIML type evaluation report&#x201D;.</p>
+          </sec>
+          <sec>
+            <title>type approval (VIML 2.05)</title>
+            <p>decision of legal relevance, based on the review of type evaluation report, that the type of a measuring instrument complies with the relevant statutory requirements and results in the issuance of the type approval certificate</p>
+            <p>[G.3-2] For the purposes of the OIML-CS, &#x201C;type approval certificate&#x201D; should be read as &#x201C;OIML Certificate&#x201D;.</p>
+            <p>For legal metrology applications, &#x201C;client&#x201D; must be understood as the &#x201C;applicant&#x201D; for national type approval or for OIML certification. Although the instrument may be manufactured by another company, the applicant has to assume responsibility for compliance.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 4&#x2009;&#x2014;&#x2009;General requirements</title>
+        <sec>
+          <title>4.1 Legal and contractual matters</title>
+          <sec>
+            <title>4.1.1 Legal responsibility</title>
+            <p>[G.4.1.1-1] When a certification body is a service of a public administration, it may happen that the legal entity is the whole administrative body to which it belongs. In this case the administrative body shall comply with the requirements in subclause 5.1.3 of ISO/IEC 17065.</p>
+          </sec>
+          <sec>
+            <title>4.1.2 Certification agreement</title>
+            <p>4.1.2.1 No OIML guidance</p>
+            <p>4.1.2.2 No OIML guidance</p>
+            <p>[G.4.1.2.2-1] Provisions shall ensure that the client is informed of its responsibilities and that any modification to an approved type shall be notified to the certification body before being implemented.</p>
+          </sec>
+          <sec>
+            <title>4.1.3 Use of license, certificates and marks of conformity</title>
+            <p>4.1.3.1 No OIML guidance</p>
+            <p>[G.4.1.3.1-1] For OIML Certificates, see OIML Basic Publication B 18 Framework for the OIML Certification System (OIML-CS). For national type approvals, these elements are generally described in national regulations.</p>
+            <p>4.1.3.2 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>4.2 Management of impartiality</title>
+          <p>4.2.1 No OIML guidance</p>
+          <p>4.2.2 No OIML guidance</p>
+          <p>4.2.3 No OIML guidance</p>
+          <p>4.2.4 No OIML guidance</p>
+          <p>4.2.5 No OIML guidance</p>
+          <sec>
+            <title>4.2.6</title>
+            <p>[G.4.2.6-1] The certification body may be a service of a public administration or of a public institute. In this case, &#x201C;any part of the same legal entity&#x201D; may be interpreted as other services of public administrations, of the same public institute or of other public institutes. In all these cases, this requirement may be fulfilled by organizational procedures which guarantee impartiality.</p>
+            <p>4.2.7 No OIML guidance</p>
+            <p>4.2.8 No OIML guidance</p>
+            <p>4.2.9 No OIML guidance</p>
+            <p>4.2.10 No OIML guidance</p>
+            <p>4.2.11 No OIML guidance</p>
+            <p>4.2.12 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>4.3 Liability and financing</title>
+          <p>4.3.1 No OIML guidance</p>
+          <sec>
+            <title>4.3.2</title>
+            <p>[G.4.3.2-1] Although financial resources of public administrations and public bodies are generally decided by the annual budget of the State, public administrations and public bodies are deemed to fulfil this requirement.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>4.4 Non-discriminatory conditions</title>
+          <p>4.4.1 No OIML guidance</p>
+          <p>4.4.2 No OIML guidance</p>
+          <p>4.4.3 No OIML guidance</p>
+          <p>4.4.4 No OIML guidance</p>
+        </sec>
+        <sec>
+          <title>4.5 Confidentiality</title>
+          <p>4.5.1 No OIML guidance</p>
+          <p>4.5.2 No OIML guidance</p>
+          <p>4.5.3 No OIML guidance</p>
+        </sec>
+        <sec>
+          <title>4.6 Publicly available information</title>
+          <p>[G.4.6-1] When International Recommendations or standards are not strictly equivalent to national regulations, the certification body shall inform the client or make them aware of the fact that national type evaluation will be performed according to the International Recommendation or standard, or to the national requirements, or both. The certification body shall also inform the client or make them aware of any additional requirements that are necessary to obtain national type approval.</p>
+          <p>[G.4.6-2] The certification body shall provide to applicants a list of product documentation required for processing the certification.</p>
+          <p>[G.4.6-3] For a) some of these conditions result from laws, regulations or OIML Publications. The certification body shall clearly refer to these sources and, when necessary, summarize them in a document provided to clients.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 5&#x2009;&#x2014;&#x2009;Structural requirements</title>
+        <sec>
+          <title>5.1 Organisational structure and top management</title>
+          <sec>
+            <title>5.1.1</title>
+            <p>[G.5.1.1-1] Threats to impartiality may result from organizational provisions or from the status of the certification body.</p>
+          </sec>
+          <sec>
+            <title>5.1.2</title>
+            <p>[G.5.1.2-1] When a certification body is a service of a public administration, it may happen that the legal entity is the whole administrative body to which it belongs.</p>
+          </sec>
+          <sec>
+            <title>5.1.3</title>
+            <p>[G.5.1.3-1] Policy matters may be decided by regulatory designating authorities (e.g. laws, ministerial decisions). The policy should include a commitment to approve only types of measuring instruments that fulfil the full set of applicable requirements for national type approval.</p>
+            <p>[G.5.1.3-2] Supervision of the implementation of policies may be the responsibility of regulatory designating authorities. This is also applicable to supervision of the finances of the certification body.</p>
+            <p>5.1.4 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>5.2 Mechanism for safeguarding impartiality</title>
+          <sec>
+            <title>5.2.1</title>
+            <p>[G.5.2.1-1] The mechanism which safeguards impartiality may result from general provisions concerning the organization of public administrations.</p>
+            <p>5.2.2 No OIML guidance</p>
+            <p>5.2.3 No OIML guidance</p>
+            <p>5.2.4 No OIML guidance</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 6&#x2009;&#x2014;&#x2009;Resource requirements</title>
+        <sec>
+          <title>6.1 Certification body personnel</title>
+          <sec>
+            <title>6.1.1 General</title>
+            <p>6.1.1.1 No OIML guidance</p>
+            <p>6.1.1.2</p>
+            <p>[G.6.1.1.2-1] For the purposes of legal metrology, personnel shall have sufficient knowledge of national requirements and/or the OIML-CS and relevant OIML Recommendations for a product if part of an OIML Issuing Authority.</p>
+            <p>6.1.1.3 No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>6.1.2 Management of competence for personnel involved in the certification process</title>
+            <p>6.1.2.1</p>
+            <p>[G.6.1.2.1-1] The appropriate requirements of OIML D 14 Training of legal metrology personnel&#x2009;&#x2014;&#x2009;Qualification&#x2009;&#x2014;&#x2009;Training programs can be used to provide guidance.</p>
+            <p>[G.6.1.2.1-2] Participation in international work (regional and OIML) is an important element to build competence.</p>
+            <p>[G.6.1.2.1-3] Staff that are in the process of being qualified/trained shall only be in charge of simple or well described activities, or they shall work under the supervision of a competent person.</p>
+            <p>[G.6.1.2.1-4] Competence of personnel for tests and examinations is addressed in ISO/IEC 17025.</p>
+            <p>6.1.2.2</p>
+            <p>[G.6.1.2.2-1] Elements of experience could include participation in international work on legal metrology (regional and OIML). Participation in these activities shall be recorded.</p>
+            <p>[G.6.1.2.2-2] Records shall be kept of the qualifications of the personnel involved in evaluation, review and decision making.</p>
+            <p>6.1.3 Contract with the personnel</p>
+            <p>No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>6.2 Resources for evaluation</title>
+          <sec>
+            <title>6.2.1 Internal resources</title>
+            <p>[G.6.2.1-1] The results of type evaluation (tests and examinations) which are used to issue national type approvals and to issue OIML Certificates shall be carried out by testing laboratories which conform to ISO/IEC 17025. A separate OIML Document (OIML D 30) gives guidance on the application of ISO/IEC 17025 to testing laboratories involved in legal metrology testing. The applicable requirements of ISO/IEC 17025 shall be fulfilled by testing laboratories. For the issuing of OIML Certificates under Scheme A of the OIML-CS the scope of accreditation or peer assessment for the testing laboratory shall include the applicable OIML Recommendations. Where the testing laboratory is accredited, the Accreditation Body that carries out the assessment of the testing laboratory shall be a signatory of a mutual recognition arrangement among Accrediting Bodies (regional or international), for instance the ILAC MRA (International Laboratory Accreditation Cooperation Mutual Recognition Arrangement).</p>
+          </sec>
+          <sec>
+            <title>6.2.2 External resources (outsourcing)</title>
+            <p>6.2.2.1</p>
+            <p>[G.6.2.2.1-1] Subcontracted testing laboratories shall comply with the applicable requirements of ISO/IEC 17025. The certification body shall determine this either by assessing its subcontractors against the applicable requirements of this standard (in which case the certification body shall demonstrate its competence to carry out such an assessment) or by asking subcontracted testing laboratories to be accredited. Where accreditation is chosen, the Accreditation Body that carries out the assessment of the Test Laboratory shall be a signatory of a mutual recognition arrangement among Accrediting Bodies (regional or international), for instance the ILAC MRA (International Laboratory Accreditation Cooperation Mutual Recognition Arrangement). For the issuing of OIML Certificates under Scheme A of the OIML-CS, where accreditation is chosen, the scope of accreditation shall cover the relevant OIML Recommendations. Where peer assessment is chosen, the scope of the peer assessment shall cover the relevant OIML Recommendations.</p>
+            <p>6.2.2.2</p>
+            <p>[G.6.2.2.2-1] Where the laboratory that performed the tests is not fully independent of the manufacturer this shall be clearly indicated in the type evaluation report. The manufacturer must provide evidence that the equipment submitted to tests is the equipment submitted to type evaluation and that it has not been adjusted or modified in a non-authorized way.</p>
+            <p>[G.6.2.2.2-2] The certification body must have documented evidence that the equipment submitted to tests is the equipment submitted to type evaluation and that it has not been adjusted or modified in a non-authorized way.</p>
+            <p>6.2.2.3 No OIML guidance</p>
+            <p>6.2.2.4</p>
+            <p>[G.6.2.2.4-1] Only tasks that are clearly identified and described may be outsourced. Except for particular cases, this leads outsourcing to be limited to tests and examinations for which procedures are available and validated by the certification body.</p>
+            <p>[G.6.2.2.4-2] In the case of OIML certification, the OIML Issuing Authority is responsible for issuing the OIML type evaluation report which will include all the test reports issued by the subcontracting testing laboratory(ies).</p>
+            <p>[G.6.2.2.4-3] Subcontracting in series (i.e. subcontractors sub-contracting to other subcontractors) is prohibited and shall be detailed in the agreement with the subcontractor.</p>
+            <p>[G.6.2.2.4-4] When mutual agreements are signed for acceptance or recognition of test and examination results or evaluations, the requirements given in ISO/IEC 17065 6.2.2.4.a) and 6.2.2.4.b) still apply. This means that the certification body endorses responsibility for any accepted test and examination result or evaluation, and remains responsible for the decision of granting or refusing its own certification.</p>
+            <p>Acceptance of another country&#x2019;s national type approval or an OIML Certificate and/or OIML type evaluation report as fulfilling national requirements on type evaluation is a regulatory issue and is usually not a responsibility of certification bodies.</p>
+            <p>Under the OIML-CS, a Utilizer does not have to provide a reason if they choose not to accept test results from a Manufacturer Test Laboratory (see OIML B 18, 3.19, Note 2).</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 7&#x2009;&#x2014;&#x2009;Process requirements</title>
+        <sec>
+          <title>7.1 General</title>
+          <sec>
+            <title>7.1.1</title>
+            <p>[G.7.1.1-1] For legal metrology, the certification scheme relates to the national type approval of measuring instruments or the issuing of OIML Certificates in accordance with the OIML-CS.</p>
+            <p>[G.7.1.1-2] National type approval and OIML certification do not include testing or inspection of samples taken from the market. According to the national regulation or the OIML requirements, it may involve sampling from the manufacturer&#x2019;s stock.</p>
+            <p>[G.7.1.1-3] Type evaluation includes design evaluation, in particular for the following aspects:</p>
+            <list list-type="bullet" id="_e4fa3a5a-64c8-ce5a-7b42-d052729ce34c">
+              <list-item>&#x2014;suitability for use;</list-item>
+              <list-item>&#x2014;sealing;</list-item>
+              <list-item>&#x2014;marking;</list-item>
+              <list-item>&#x2014;checking facilities.</list-item>
+            </list>
+            <p>[G.7.1.1-5] For Note 1, the activities of surveillance of production, or with the assessment and surveillance of the client&#x2019;s management system, are related to other national/regional legal metrology procedures.</p>
+            <p>[G.7.1.1-6] Requirements pertaining to matters other than legal metrology (e.g. electrical safety) shall not be taken into account in national type approval or OIML certification.</p>
+          </sec>
+          <sec>
+            <title>7.1.2</title>
+            <p>[G.7.1.2-1] The requirements shall result from documents accessible to the public (laws, regulations, OIML publications, standards, etc.).</p>
+            <p>[G.7.1.2-2] The word &#x201C;standard&#x201D; shall be understood as follows:</p>
+            <list list-type="bullet" id="_1b7de20d-2317-d5fd-75d2-46f0d6343148">
+              <list-item>&#x2014;For national type approval&#x2009;&#x2014;&#x2009;a set of regulations establishing the legal requirements for the instrument and standards that may be referred to in these regulations;</list-item>
+              <list-item>&#x2014;For OIML certification&#x2009;&#x2014;&#x2009;the applicable OIML Recommendations and the standards that may be referred to in these Recommendations.</list-item>
+            </list>
+            <p>Other applicable general regulatory legal metrology texts and OIML publications (on legal units, traceability, etc.) are also part of the applicable standards.</p>
+          </sec>
+          <sec>
+            <title>7.1.3</title>
+            <p>[G.7.1.3-1] For OIML Certificates the provisions of OIML-CS Procedural Document PD-05 Processing an OIML Type Evaluation Report and OIML Certificate shall be applied.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.2 Application</title>
+          <p>[G.7.2-1] The client shall indicate the national regulation and/or the OIML Recommendation which it applies for certification.</p>
+          <p>[G.7.2-2] Minimum required information may be defined in the national regulation and/or the OIML Recommendation. Additional necessary information shall be defined by the certification body.</p>
+        </sec>
+        <sec>
+          <title>7.3 Application review</title>
+          <sec>
+            <title>7.3.1</title>
+            <p>[G.7.3.1-1] The review of the application includes:</p>
+            <list list-type="bullet" id="_b4a1887e-98b4-fa0d-8d91-8922f7b10d8c">
+              <list-item>&#x2014;eligibility of the type of measuring instrument for certification;</list-item>
+              <list-item>&#x2014;agreement on the reference standards (applicable sets of requirements) and/or OIML Recommendation (where applicable);</list-item>
+              <list-item>&#x2014;capability of the certification body and of its subcontractors;</list-item>
+              <list-item>&#x2014;acceptance of subcontractors by the applicant.</list-item>
+            </list>
+            <p>[G.7.3.1-2] National laws and regulations may require that the application be submitted in a specific language.</p>
+            <p>7.3.2 No OIML guidance</p>
+            <p>7.3.3 No OIML guidance</p>
+            <p>7.3.4 No OIML guidance</p>
+            <p>7.3.5 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.4 Evaluation</title>
+          <sec>
+            <title>7.4.1</title>
+            <p>[G.7.4.1-1] Certification bodies are responsible for:</p>
+            <list list-type="bullet" id="_ed66c7dc-0e8b-ca42-1492-d9ed1af474da">
+              <list-item>&#x2014;checking that the sample(s) to be examined and tested complies/comply with the description in the application;</list-item>
+              <list-item>&#x2014;the configuration control of the sample(s) to be examined and/or tested;</list-item>
+              <list-item>&#x2014;allowing the subcontracting laboratory(ies) to verify that the sample(s) to be examined and/or tested are those validated by the certification body.</list-item>
+            </list>
+            <p>7.4.2 No OIML guidance</p>
+            <p>7.4.3 No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>7.4.4</title>
+            <p>[G.7.4.4-1] Certification bodies that are OIML Issuing Authorities under the OIML-CS and which use test results from Manufacturer Test Laboratories shall have procedures in place to ensure controlled supervision. The requirements for MTLs are detailed in OIML-CS Procedural Document PD-04 Assessment and approval of Test Laboratories.</p>
+            <p>[G.7.4.4-2] When the certification body does not perform (or does not require) all the examinations and tests on each sample of measuring instruments (in particular in the case of families of instruments), or when adjustments and/or modifications are made in the course of type evaluation, the certification body shall conduct sufficient examinations and tests to demonstrate that the measuring instrument fulfils the whole set of requirements applicable to its category.</p>
+            <p>[G.7.4.4-3] Any adjustment or modification during the type evaluation process shall be authorized by the certification body. Such adjustment or modification may be performed by the manufacturer.</p>
+            <p>During the type evaluation process the manufacturer is not authorized to perform any adjustment and/or modification without authorization of the certification body.</p>
+            <p>After modification and/or adjustment, the certification body shall decide if additional tests are required. If a modification/adjustment has been accepted without performing additional tests, the reason for such a decision shall be recorded.</p>
+            <p>[G.7.4.4-4] In the case of the recognition of a test report issued before the type approval application, the certification body shall ensure that the instrument that was tested is identical to the instrument that is the subject of type approval.</p>
+          </sec>
+          <sec>
+            <title>7.4.5</title>
+            <p>[G.7.4.5-1] Under the OIML-CS, test results used for issuing an OIML Certificate shall comply with the requirements of OIML-CS Procedural Document PD-05 Processing an OIML Type Evaluation Report and OIML Certificate.</p>
+            <p>[G.7.4.5-2] National issuing authorities may use OIML Certificates and/or OIML type evaluation reports as the basis for a national type evaluation. Details on the use of OIML Certificates and/or OIML type evaluation reports are given in OIML-CS Procedural Document PD-06 Use of OIML Type Evaluation Reports and OIML Certificates.</p>
+            <p>7.4.6 No OIML guidance</p>
+            <p>7.4.7 No OIML guidance</p>
+            <p>7.4.8 No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>7.4.9</title>
+            <p>[G.7.4.9-1] When they exist, formats specified in the national regulations, OIML Recommendations and Documents, and standards, shall be used. This is the case for example, of OIML type evaluation report and test report formats for the OIML-CS.</p>
+            <p>[G.7.4.9-2] When the evaluation report includes two or more parts (examination report(s), test report(s), evaluation report) this shall be indicated.</p>
+            <p>[G.7.4.9-3] The evaluation report shall highlight any necessary justifications showing that the requirements have been met.</p>
+            <p>[G.7.4.9-4] The evaluation report shall allow clear identification of the certified instrument(s) and of the technical documentation on which the evaluation has been based.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.5 Review</title>
+          <p>7.5.1 No OIML guidance</p>
+          <p>7.5.2 No OIML guidance</p>
+        </sec>
+        <sec>
+          <title>7.6 Certification decision</title>
+          <p>[G.7.6.1-1] The certification body shall not delegate any power to subcontractors to draw conclusions on conformity from the test and examination results.</p>
+          <sec>
+            <title>7.6.2</title>
+            <p>[G.7.6.2-1] Only information related to the evaluation process is relevant.</p>
+            <p>[G.7.6.2-2] Special provisions shall be considered when some of these decisions belong to regulatory designating authorities (e.g. governmental).</p>
+            <p>7.6.3 No OIML guidance</p>
+            <p>7.6.4 No OIML guidance</p>
+            <p>7.6.5 No OIML guidance</p>
+            <p>7.6.6 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.7 Certification documentation</title>
+          <sec>
+            <title>7.7.1</title>
+            <p>[G.7.7.1-1] For OIML Certificates, the certification documents are described in OIML B 18 Framework for the OIML Certification System (OIML-CS) and OIML-CS Procedural Document PD-05 Processing an OIML Type Evaluation Report and OIML Certificate.</p>
+            <p>7.7.2 No OIML guidance</p>
+            <p>7.7.3 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.8 Directory of certified products</title>
+          <p>[G.7.8-1] The BIML maintains a database, accessible on the OIML website, of OIML Certificates that have been issued and registered. The OIML Certificates on the OIML website provide information on the scope of certification and their validity. This database may fulfil the requirement. Only registered certificates are valid.</p>
+        </sec>
+        <sec>
+          <title>7.9 Surveillance</title>
+          <sec>
+            <title>7.9.1</title>
+            <p>[G.7.9.1-1] Surveillance on products in use is not covered by the OIML-CS.</p>
+            <p>[G.7.9.1-2] In legal metrology, type approved instruments may be subject to metrological supervision, including surveillance, in accordance with national requirements. Information on metrological supervision is provided in OIML D 9:2004 Principles of metrological supervision.</p>
+          </sec>
+          <sec>
+            <title>7.9.2</title>
+            <p>[G.7.9.2-1] Not applicable</p>
+          </sec>
+          <sec>
+            <title>7.9.3</title>
+            <p>[G.7.9.3-1] Not applicable</p>
+          </sec>
+          <sec>
+            <title>7.9.4</title>
+            <p>[G.7.9.4-1] Not applicable</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.10 Changes affecting certification</title>
+          <sec>
+            <title>7.10.1</title>
+            <p>[G.7.10.1-1] Under the OIML-CS, examples of changes affecting certification are:</p>
+            <list list-type="bullet" id="_ab3ac4e2-dc3f-825e-5fb5-4c3f38e3c33a">
+              <list-item>&#x2014;revision of the OIML Recommendation;</list-item>
+              <list-item>&#x2014;inclusion of a new measuring instrument category;</list-item>
+              <list-item>&#x2014;a change to the proposed transition of a measuring instrument category from Scheme B to Scheme A;</list-item>
+              <list-item>&#x2014;moving an instrument category from Scheme A back to Scheme B.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>7.10.2</title>
+            <p>[G.7.10.2-1] The evaluation procedures shall be drawn up in such a way that their outcome, together with the already available evaluation reports, can demonstrate the compliance of each instrument with all the requirements.</p>
+            <p>[G.7.10.2-2] Changes affecting certification can include:</p>
+            <list list-type="bullet" id="_c386d551-36eb-9d93-d601-f5694cbfbafa">
+              <list-item>&#x2014;extension of the characteristics of a certified instrument;</list-item>
+              <list-item>&#x2014;extension to a family of instruments or extension of a family of instruments,Example1Example13.8.10.2,Example1the type evaluation certificate concerns for instance a turbine gas meter with a maximum flow rate of 160 m3hm^3/hm3hm^3/h. The applicant requests for an extension of this Certificate to include the complete family of turbine gas meters with maximum flow rate from 60 m3hm^3/hm3hm^3/h to 1000 m3hm^3/hm3hm^3/h;</list-item>
+              <list-item>&#x2014;where applicable, extension of an OIML Certificate to another manufacturer (under the responsibility of the same applicant);Example2Example23.8.10.2,Example2the applicant is company A and the manufacturer is company B. The applicant requests for an extension to add an additional manufacturer which is company C. The OIML Certificate shall be modified to include company C as an additional manufacturer;</list-item>
+              <list-item>&#x2014;transfer to a new applicant or evolution in the applicant&#x2019;s data.Example3Example33.8.10.2,Example3the applicant sells its activity to another company. The type evaluation certificate shall be modified to be transferred to the new company as the new applicant.</list-item>
+            </list>
+            <p>[G.7.10.2-3] Applying for complimentary certifications on a certified product is under the responsibility of the manufacturer.</p>
+            <p>7.10.3 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>7.11 Termination, reduction, suspension or withdrawal of certification</title>
+          <p>7.11.1 No OIML guidance</p>
+          <p>7.11.2 No OIML guidance</p>
+          <p>[G.7.11.3-1] For OIML Certificates, in the event that an OIML type evaluation report is issued on the basis of incorrect technical conclusions or procedures the OIML Certificate will be deregistered from the OIML website. The BIML will inform Utilizers and Associates under the OIML-CS of the deregistering of the OIML Certificate.</p>
+          <p>[G.7.11.3-2] In the case of regulatory certification, the procedures to terminate, suspend or withdraw certification shall be done in cooperation with the regulatory designating authority and in accordance with the rules defined by the regulatory designating authority.</p>
+          <p>7.11.4 No OIML guidance</p>
+          <p>[G.7.11.5-1] See applicable OIML guidance to subclauses 7.4 and 7.6.</p>
+          <p>[G.7.11.6-1] For OIML Certificates, in the event that an OIML Certificate is reinstated after suspension the OIML Issuing Authority shall notify the BIML so that the OIML Certificate can be registered on the OIML website.</p>
+        </sec>
+        <sec>
+          <title>7.12 Records</title>
+          <p>7.12.1 No OIML guidance</p>
+          <p>7.12.2 No OIML guidance</p>
+          <p>7.12.3</p>
+          <p>[G.7.12.3-1] For national type approval, &#x201C;cycle&#x201D; means &#x201C;the validity period of the national type approval certificate&#x201D;.</p>
+          <p>[G.7.12.3-2] Records related to OIML type evaluation reports and test reports shall be kept available by the OIML Issuing Authority as long as the OIML Certificate remains registered.</p>
+        </sec>
+        <sec>
+          <title>7.13 Complaints and appeals</title>
+          <sec>
+            <title>7.13.1</title>
+            <p>[G.7.13.1-1] In some cases, appeal procedures may be the responsibility of regulatory designating authorities. However, they must be described.</p>
+            <p>[G.7.13.1-2] Under the OIML-CS, the OIML Issuing Authority shall have an appeals procedure. The OIML-CS also incorporates a Board of Appeal.</p>
+            <p>7.13.2 No OIML guidance</p>
+            <p>7.13.3 No OIML guidance</p>
+            <p>7.13.4 No OIML guidance</p>
+            <p>7.13.5 No OIML guidance</p>
+            <p>7.13.6 No OIML guidance</p>
+            <p>7.13.7 No OIML guidance</p>
+            <p>7.13.8 No OIML guidance</p>
+            <p>7.13.9 No OIML guidance</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <title>Clause 8&#x2009;&#x2014;&#x2009;Management system requirements</title>
+        <sec>
+          <title>8.1 Options</title>
+          <sec>
+            <title>8.1.1 General</title>
+            <p>[G.8.1.1-1] Option A and Option B referred to in this subclause should not be confused with Scheme A and Scheme B of the OIML-CS.</p>
+          </sec>
+          <sec>
+            <title>8.1.2 Option A</title>
+            <p>No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>8.1.3 Option B</title>
+            <p>[G.8.1.3-1] If the certification body adopts Option B, the OIML guidance given below for Option A is relevant and applicable.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>8.2 General management system documentation (Option A)</title>
+          <sec>
+            <title>8.2.1</title>
+            <p>[G.8.2.1-1] In particular, the certification body shall keep updated documentation on:</p>
+            <list list-type="bullet" id="_fd80cbce-5149-ff2c-1871-028a2eabe79c">
+              <list-item>&#x2014;the legal and contractual requirements applicable to its activity as a national issuing authority and/or as an OIML Issuing Authority;</list-item>
+              <list-item>&#x2014;the requirements applicable to the measuring instruments by reference to which the certification is carried out (e.g. OIML Recommendation R XX, national regulation no. xx);</list-item>
+              <list-item>&#x2014;any relevant general or technical standard pertaining to its certification activity.</list-item>
+            </list>
+            <p>8.2.2 No OIML guidance</p>
+            <p>8.2.3 No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>8.2.4</title>
+            <p>[G.8.2.4-1] The certification body does not have to assess, record and monitor by itself the participants in a mutual acceptance or recognition agreement or arrangement, but:</p>
+            <list list-type="bullet" id="_9b808f53-c91e-6011-c247-735eb8c19116">
+              <list-item>&#x2014;procedures for the operation of such agreements shall be documented;</list-item>
+              <list-item>&#x2014;procedures for the participation of the certification body in the operation and supervision of such agreements shall be established;</list-item>
+              <list-item>&#x2014;lists of participants in such agreements and reports on the operation of these agreements shall be kept updated;</list-item>
+              <list-item>&#x2014;periodic reviews of the participation of the certification body in these agreements shall be conducted.</list-item>
+            </list>
+            <p>[G.8.2.4-2] Processes and systems include in particular:</p>
+            <list list-type="bullet" id="_0a225dc1-9787-1280-c53b-91fc22e6b25e">
+              <list-item>&#x2014;procedures for identification, storage of equipment submitted to certification and of associated documentation;</list-item>
+              <list-item>&#x2014;description of the test equipment and facilities, procedures for their maintenance and traceability;</list-item>
+              <list-item>&#x2014;procedures for defining and planning tests and examinations;</list-item>
+              <list-item>&#x2014;test procedures;</list-item>
+              <list-item>&#x2014;criteria and procedures for dealing with nonconformities of products submitted to certification, including procedures for any exception to the rule defined;</list-item>
+              <list-item>&#x2014;procedures for accepting and handling test reports and results received from applicants, from subcontractors or from signatories of a mutual arrangement/agreement.</list-item>
+            </list>
+            <p>[G.8.2.4-3] Processes and procedures shall conform to the requirements of the appropriate regulations, OIML Publications and standards.</p>
+            <p>8.2.5 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>8.3 Control of documents (Option A)</title>
+          <sec>
+            <title>8.3.1</title>
+            <p>[G.8.3.1-1] This applies in particular to the documentation on procedures mentioned in 8.2.4 which shall be appropriately updated and available.</p>
+            <p>8.3.2 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>8.4 Control of records (Option A)</title>
+          <p>8.4.1 No OIML guidance</p>
+          <p>8.4.2</p>
+          <p>[G.8.4.2-1] Records related to OIML type evaluation reports and test reports shall be kept available by the OIML Issuing Authority for as long as the OIML Certificate remains registered.</p>
+        </sec>
+        <sec>
+          <title>8.5 Management review (Option A)</title>
+          <sec>
+            <title>8.5.1 General</title>
+            <p>8.5.1.1 No OIML guidance</p>
+            <p>8.5.1.2 No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>8.5.2 Review inputs</title>
+            <p>No OIML guidance</p>
+          </sec>
+          <sec>
+            <title>8.5.3 Review outputs</title>
+            <p>No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>8.6 Internal audits (Option A)</title>
+          <p>8.6.1 No OIML guidance</p>
+          <sec>
+            <title>8.6.2</title>
+            <p>[G.8.6.2-1] For certification bodies that are OIML Issuing Authorities under the OIML-CS the internal audit programme shall take into consideration the requirements of OIML Basic Publication B 18 and OIML-CS Procedural Document PD-03 Application and approval of OIML Issuing Authorities, Utilizers and Associates.</p>
+          </sec>
+          <sec>
+            <title>8.6.3</title>
+            <p>[G.8.6.3-1] For certification bodies that are OIML Issuing Authorities under the OIML-CS the internal audit programme shall take into consideration the requirements of OIML Basic Publication B 18 and the requirement to report annually to the OIML-CS Management Committee.</p>
+            <p>8.6.4 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>8.7 Corrective actions (Option A)</title>
+          <sec>
+            <title>8.7.1</title>
+            <p>[G.8.7.1-1] This applies to nonconformities in the operation of the quality system and procedures (e.g. procedures in case of unexpected events during the tests), not to nonconformities of products submitted to certification.</p>
+            <p>8.7.2 No OIML guidance</p>
+            <p>8.7.3 No OIML guidance</p>
+            <p>8.7.4 No OIML guidance</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>8.8 Preventive actions (Option A)</title>
+          <p>8.8.1 No OIML guidance</p>
+          <p>8.8.2 No OIML guidance</p>
+          <p>8.8.3 No OIML guidance</p>
+        </sec>
+      </sec>
+    </sec>
+    <p>Guide for the application of ISO/IEC 17065 to assessment of certification bodies in legal metrology</p>
+  </body>
+</standard>

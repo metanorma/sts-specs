@@ -1,0 +1,16 @@
+== Introduction
+
+The NISO Standards Tag Suite (NISO STS) describes an XML model for normative
+standards documents produced by standards organizations (international,
+national, standards development organizations, consortia, and others). The
+intent of NISO STS is to provide a common format in which standards bodies,
+standards-producing organizations, publishers, commercial vendors, and
+archives can publish and exchange standards documents.
+
+The ANSI/NISO Z39.102-2022 Standards Tag Suite (NISO STS) V1.2 was approved
+on October 21, 2022.
+
+This document describes the changes between ANSI/NISO Z39.102-2017 (NISO STS
+V1.0) and this version. (Note: There was no V1.1; V1.2 is the next version
+after V1.0.) This document does not discuss Tag Library (user documentation)
+changes — only changes to the models.

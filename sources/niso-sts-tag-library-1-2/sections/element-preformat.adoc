@@ -1,0 +1,97 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/preformat.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-preformat]
+=== `<preformat>` Preformatted Text
+
+Text in which spaces, tabs, and line feeds must be preserved. Content is typically displayed in monofont to preserve character alignment.
+
+#### Usage/Remarks
+The `<preformat>` element is typically used for machine-related communication such as ASCII art and error message reports, in which whitespace such as tabs, line feeds, and spaces should be preserved.
+#### Position
+
+The <<attribute-position,`@position`>> attribute may be used to indicate whether this element must be anchored at its exact location within the text, or whether it may float, for example, to the top of the next page, next column, to the end of a logical file, or within a separate window. For the typical `<preformat>` element, the “float or anchor” decision will be governed by the size of the object. For example, short preformat fragments are typically anchored whereas longer preformatted material is typically placed elsewhere such as in a separate window or at the end of the document.
+#### Equations
+
+The MathML elements to describe equations are not permitted within `<preformat>`. If equations are encountered within computer code, they can be tagged using the element <<element-named-content,`<named-content>`>> to preserve the fact that they were equations or the element <<element-styled-content,`<styled-content>`>> to preserve the fact that they were set in a math font.
+##### When Content is a Form
+
+Two attributes are available to describe the preformatted object when it contains a form:
+* <<attribute-is-form,`@is-form`>> can indicate that the preformat contains a form.  What constitutes a “form” is not
+                     defined by NISO STS.
+* <<attribute-form-type,`@form-type`>> can identify the type of the form. If the form is not one of the listed types, <<attribute-custom-type,`@custom-type`>> may provide the type (see below).
+##### Custom Form Type (<<attribute-custom-type,`@custom-type`>>)
+
+<<attribute-form-type,`@form-type`>> has as its values a fixed list of form types. If your form is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the form type. Set the value of <<attribute-form-type,`@form-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any form type you require. For example:
+[source,xml]
+....
+<preformat is-form="form" form-type="custom" 
+    custom-type="template"...>...</preformat>
+....
+
+#### Related Elements
+
+*Best Practice:* Although it is possible to use `<preformat>` to tag any format-preserving object, some of these objects have semantic elements that should be used in preference, for example: Programming code, scripts, pseudo-code, DTDs and Schemas, and XML tagging examples should be tagged with either the the <<element-code,`<code>`>> element (for block code) or the <<element-inline-code,`<inline-code>`>> element (for tiny inline fragments), using the code-specific attributes to identify the type of code, language, version, and more. Poetry and verse (uncommon in standards documents) should usually be tagged with the <<element-verse-group,`<verse-group>`>> element, which may not preserve the exact indentation, but is more likely to be displayed in a proportional font. Equations and math are typically tagged with <<element-disp-formula,`<disp-formula>`>> or <<element-inline-formula,`<inline-formula>`>>.
+
+#### Attributes
+
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-form-type,`@form-type`>>
+* <<attribute-is-form,`@is-form`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-preformat-type,`@preformat-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Miscellaneous non-STS-specific Attributes
+
+* <<attribute-xml-space,`@xml:space`>> (fixed value = preserve)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  preformat    %preformat-model;                            >
+....
+#### Expanded Content Model
+
+(#PCDATA | alt-text | long-desc | email | ext-link | uri | citation-alternatives | element-citation | mixed-citation | std | attrib | permissions | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | tbx:entailedTerm | xref | sub | sup)*
+
+#### Tagged Sample
+
+##### ASCII representation of a diagram
+[source,xml]
+....
+...
+<fig id="fig1">
+ <caption>
+  <title>Security Gateway to Security Gateway Tunnel</title>
+ </caption>
+ <preformat><![CDATA[
+             +-+-+-+-+-+            +-+-+-+-+-+
+             |         | IPsec      |         |
+Protected    |Tunnel   | tunnel     |Tunnel   |     Protected
+Subnet   <-->|Endpoint |<---------->|Endpoint |<--> Subnet
+             |         |            |         |
+             +-+-+-+-+-+            +-+-+-+-+-+
+]]></preformat>
+</fig>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

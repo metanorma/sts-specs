@@ -1,0 +1,51 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/is-form.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-is-form]
+=== `@is-form` Is Object a Form
+
+Used on block-level structures such as figures and boxed-text to indicate that the content of the object is (semantically) a form.
+
+#### Usage/Remarks
+#### Form Semantics
+
+This version of NISO STS makes no attempt to tag forms semantically or describe behavior such as filling out a form interactively. There is one attribute to mark a structure as a form (`@is-form`) and another to indicate the type/style of form being displayed (`@form-type`). When a structure such as a figure or boxed-text is marked as a form, the <<attribute-specific-use,`@specific-use`>> attribute can be used to record some behavioral hint such as “`interactive`” or “`non-interactive`”.
+#### What is a Form
+
+NISO STS leaves it to individual standards organizations to define what constitutes a “form” in their environment.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-boxed-text,`<boxed-text>`>>, <<element-fig,`<fig>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-preformat,`<preformat>`>>, <<element-table-wrap,`<table-wrap>`>>
+|===
+| Value| Meaning
+
+| form| Yes, the object is a form. (The <<attribute-form-type,`@form-type`>> attribute can be used to describe the style or type of the form.)
+| noform| The object is not a form. This value only exists for completeness; if the item is
+                        not a form, the <<attribute-is-form,`@is-form`>> attribute should not be used.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Figure as form with form type
+[source,xml]
+....
+...
+<sec sec-type="inspection">
+ <title>Field Notes</title>
+ <p>Inspectors must record all variances at the time of observation. A form 
+  such as the one in <xref rid="nne-fe">Example F-2</xref> may be used.</p>
+ ...
+ <non-normative-example id="nne-fe">
+  <fig is-form="form" form-type="blank">
+   <graphic orientation="landscape" mimetype="pdf" xlink:href="FieldObs.pdf"/>
+  </fig>
+ </non-normative-example>
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

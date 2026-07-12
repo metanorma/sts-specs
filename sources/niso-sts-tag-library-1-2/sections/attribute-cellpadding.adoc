@@ -1,0 +1,26 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/cellpadding.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-cellpadding]
+=== `@cellpadding` Cell Padding (NISO JATS table model)
+
+Amount of space, measured in pixels, between the border of a cell and the contents of a table cell. (This attribute is based on and intended to be converted easily to the XHMTL `cellpadding` attribute.)
+
+#### Usage/Remarks
+##### Best Practice
+
+Although the Tag Set can enforce only that this attribute contain any text, numbers, or special characters, Best Practice is to constrain this value to a counting number (positive integer).
+
+#### OPTIONAL on element:  <<element-table,`<table>`>>
+
+|===
+| Value| Meaning
+
+| Counting number| Thickness, measured in pixels, of the cell padding.
+| Restriction| This is an optional 
+                        attribute; there is no XML default. The typical _browser_ default is “`1`” pixel.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

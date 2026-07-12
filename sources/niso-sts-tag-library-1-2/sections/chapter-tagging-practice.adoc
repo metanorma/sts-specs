@@ -1,0 +1,13 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tagging-practice.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tagging-practice]
+=== Tagging Documents
+
+These sections contain advice on how to distinguish between similar structures in NISO STS and concerning what is considered Best Practice for using these structures to tag key parts of standards documents.
+Subsidiary sections:
+#### Common Tagging Practice
+#### Accessibility
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

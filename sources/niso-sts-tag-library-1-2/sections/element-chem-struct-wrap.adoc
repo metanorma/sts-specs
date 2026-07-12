@@ -1,0 +1,81 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/chem-struct-wrap.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-chem-struct-wrap]
+=== `<chem-struct-wrap>` Chemical Structure Wrapper
+
+Wrapper element for a chemical expression, reaction, equation, etc. that is set apart from the text; this element includes any number, label, or caption that accompanies the chemical expression.
+
+#### Usage/Remarks
+A `<chem-struct-wrap>` may be numbered, programmatically by a formatting application or by preserving the number inside a <<element-label,`<label>`>> element.
+The chemical expressions inside this element may be formally tagged as <<element-chem-struct,`<chem-struct>`>> elements or merely expressed as one or more display objects.
+#### Position
+
+The <<attribute-position,`@position`>> attribute may be used to indicate whether this element must be anchored at its exact location within the text or whether it may float, for example, to the top of the next page, into the next column, to the end of a logical file, or within a separate window.
+
+#### Related Elements
+
+The expression of a chemical reaction or other chemical structure goes inside the <<element-chem-struct,`<chem-struct>`>> element. The element `<chem-struct-wrap>` is an outer wrapper that may hold, for example, both a chemical reaction and its caption or three related chemical expressions. In other words, this element does not contain a chemical expression; it contains other elements (such as <<element-chem-struct,`<chem-struct>`>>s) that contain such expressions.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> One or more of any of: <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-textual-form,`<textual-form>`>> <<element-textual-form,Textual Form>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> Any combination of: Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  chem-struct-wrap
+                        %chem-struct-wrap-model;                     >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, (object-id)*, label?, (caption)?, (legend)*, (kwd-group)*, (subj-group)*, (alt-text | long-desc | email | ext-link | uri)*, (alternatives | chem-struct | code | graphic | media | preformat | textual-form | non-normative-note | normative-note | non-normative-example | normative-example | notes-group)+, (attrib | permissions)*)
+
+#### Tagged Sample
+
+##### With `<caption>` and alternative structures
+[source,xml]
+....
+...
+<chem-struct-wrap>
+ <caption>
+  <title>Acesulfame K<break/>
+   6-Methyl-1,2,3-oxathiazine-4(3H)-one-2,2 
+   Dioxide Potassium Salt</title>
+  <p>...</p>
+ </caption>
+ <alternatives>
+  <graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+    xlink:href="mul1235456"/>
+  <chem-struct>C<sub>4</sub>H<sub>4</sub>KNO<sub>4</sub>S</chem-struct>
+  ...
+ </alternatives>
+</chem-struct-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Chemical Structure Wrapper
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

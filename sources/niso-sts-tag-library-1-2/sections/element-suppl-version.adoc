@@ -1,0 +1,63 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/suppl-version.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-suppl-version]
+=== `<suppl-version>` Supplement Version
+
+For documents which are supplements to a standard, gives the version number for the supplement.
+
+#### Usage/Remarks
+The value of this element, when present, is a sequence of decimal digits. For non-supplements it should be omitted.
+#### ISO Note
+
+If a supplement version (<<element-suppl-version,`<suppl-version>`>>) is present but empty, the content should be taken as “`1`”.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  suppl-version
+                        (#PCDATA %suppl-version-elements;)*          >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Supplement metadata in `<std-ident>`
+[source,xml]
+....
+...
+<std-ident>
+ <originator>CEN</originator>
+ <doc-type>EN</doc-type>
+ <doc-number>3951</doc-number>
+ <part-number>2</part-number>
+ <edition>1</edition>
+ <version>1</version>
+ <suppl-type>1</suppl-type>
+ <suppl-number>1</suppl-number>
+ <suppl-version>2</suppl-version>
+</std-ident>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

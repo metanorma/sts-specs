@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/fontchar.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-fontchar]
+=== `@fontchar` Glyph-Data Font Character Table Offset
+
+Offset of the character into a glyph table, such as a Unicode character.
+
+#### OPTIONAL on element:  <<element-glyph-data,`<glyph-data>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The offset of the character into a glyph table.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

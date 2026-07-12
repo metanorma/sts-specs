@@ -1,0 +1,126 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tfoot.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tfoot]
+=== `<tfoot>` Table Footer (NISO JATS table model)
+
+The footer rows and columns within a NISO JATS table. (This element is based on and intended to be converted easily to the XHMTL `tfoot` element.)
+
+#### Usage/Remarks
+Use W3C documentation for the XHTML 1.1 table model (https://www.w3.org/TR/xhtml-modularization/abstract_modules.html#s_tablemodule).
+The footer rows and columns for a table (element <<element-tfoot,`<tfoot>`>>) hold table metadata just as the table header rows do, for those tables that have metadata at both the head and the foot. The footer is defined separately from the body of a table so that table processing software can treat it differently, for example, making the table footer bold or repeating the footer when a table breaks across pages.
+#### ISO Legacy Note
+
+In some existing ISO STS usage, the element <<element-table-wrap-foot,`<table-wrap-foot>`>> (which holds material at the bottom of a table that is _not_ part of the rows and columns) has been used to hold content intended to be displayed as the last row of the table, content that should more correctly have been tagged with the element <<element-tfoot,`<tfoot>`>>. This usage stems from the coding instructions used to outsource the conversion of thousands of pre-2014 ISO standards to XML, which considered <<element-tfoot,`<tfoot>`>> and <<element-table-wrap-foot,`<table-wrap-foot>`>> as equivalent alternatives for housing table footnotes. That coding instruction has since been shared in similar effort by CEN and individual CEN members to convert CEN standards to ISO STS. Best Practice (going forward) is to distinguish between <<element-tfoot,`<tfoot>`>> (for repeating rows and columns) and <<element-table-wrap-foot,`<table-wrap-foot>`>> (for non-tabular notes) as the current NISO STS table models intend, but many legacy documents will contain the usage just described.
+
+#### Related Elements
+
+This container element for rows and columns should not be confused with the <<element-table-wrap-foot,`<table-wrap-foot>`>>, which is not more rows and columns, but a region of a full table (<<element-table-wrap,`<table-wrap>`>>) that contains footnotes, general notes to the table which are not explicitly called out in the table, or merely paragraphs of information about the table that appear after the last row.
+
+#### Attributes
+
+* <<attribute-align,`@align`>>
+* <<attribute-char,`@char`>>
+* <<attribute-charoff,`@charoff`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-style,`@style`>>
+* <<attribute-valign,`@valign`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-table,`<table>`>>
+#### Description
+
+<<element-tr,`<tr>`>> <<element-tr,Table Row>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %tfoot.qname;  %tfoot.content; >
+....
+#### Expanded Content Model
+
+(tr)+
+
+#### Tagged Sample
+
+##### Column headers (`<thead>`) and footers (`<tfoot>`)
+[source,xml]
+....
+...
+<table-wrap id="TN0.170">
+ <caption>
+  <p>Numbers of patients receiving institutional care at the
+   end of scheduled follow up and use of hospital beds among
+   those allocated to day hospital or alternative services</p>
+ </caption>
+ <table>
+  <thead>
+   <tr>
+    <th colspan="3" align="center"
+      rowspan="1">Institutional care</th>
+    <th></th>
+    <th colspan="2" align="center"
+      rowspan="1">&#x2003;Bed use (days)</th>
+   </tr>
+  </thead>
+
+  <tfoot>
+   <tr>
+    <td align="center">Patients</td>
+    <td align="center">Patients</td>
+    <td align="center">Odds ratio</td>
+    <td></td>
+    <td align="center">Patients</td>
+    <td align="center">Patients</td>
+   </tr>
+  </tfoot>
+
+  <tbody>
+   <tr>
+    <td colspan="3"><hr/></td>
+    <td colspan="2"><hr/></td>
+   </tr>
+   <tr>
+    <th>Control group</th>
+    <th align="center">Day hospital</th>
+    <th align="center">Control</th>
+    <th align="center">Odds ratio (95&#x0025; CI)</th>
+    <th></th>
+    <th align="center">Day hospital</th>
+    <th align="center">Control</th>
+   </tr>
+   <tr>
+    <td colspan="7"><hr/></td>
+   </tr>
+   <tr>
+    <td>Comprehensive care (5 trials)</td>
+    <td align="center">151/597<xref ref-type="table-fn"
+      rid="TF1-150"></xref></td>
+    <td align="center">159/584</td>
+    <td align="center">0.91 (0.70 to 1.19)</td>
+    <td></td>
+    <td align="center">20.5</td>
+    <td align="center">21.4</td>
+   </tr>
+   ...
+  </tbody>
+ </table>
+ <table-wrap-foot>...</table-wrap-foot>
+</table-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table (NISO JATS table model)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

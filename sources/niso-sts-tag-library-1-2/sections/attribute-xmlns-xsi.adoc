@@ -1,0 +1,26 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xmlns-xsi.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xmlns-xsi]
+=== `@xmlns:xsi` XML Schema Namespace Declaration
+
+This is not an attribute, but a namespace pseudo-attribute. The value provides a URI to use for the `@xsi:schemaLocation` pseudo-attribute. All namespace prefixes must be associated with a URL, and the prefix “`xsi`” has been set to the URL for the World Wide Web Consortium (W3C) XML Schema.
+
+#### FIXED (not settable) on elements:  <<element-adoption,`<adoption>`>>, 
+                  <<element-standard,`<standard>`>>
+
+|===
+| Value| Meaning
+
+| http://www.w3.org/2001/XMLSchema-instance| The prefix “`xsi`” has been 
+                        set to the URL for W3C XML Schema.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+#### Related Resource
+
+For a discussion on namespaces used in STS, see Namespacing NISO STS Elements.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,19 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/implementor.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-implementor]
+=== Notes for Implementors
+
+This chapter contains information of use to implementors of NISO STS, who may need to work with the NISO STS Tag Sets beyond merely tagging or receiving NISO-STS-tagged documents. For example, such power-users may need to: make a subset or superset of one of the tag sets, integrate NISO-STS-tagged documents with other tag sets in a database, understand the complex relationship between JATS and NISO STS, add RDF-a or another linked-data mechanism to a NISO STS document, namespace a NISO STS vocabulary, or perform other technical processing.
+Subsidiary sections:
+#### Modular DTD Design
+#### NISO STS Extends ISO STS
+#### JATS Compatibility
+#### NISO STS and Linked Data
+#### Modifying a NISO STS Tag Set
+#### Modules in NISO STS
+#### Namespacing NISO STS Elements
+#### Tag Suite Naming Conventions
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

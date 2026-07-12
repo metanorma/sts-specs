@@ -1,0 +1,131 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/def.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-def]
+=== `<def>` Definition
+
+This element can be used in several very different contexts, which determine its exact meaning and usage: As one of the semantic tags within a <<element-term-display,`<term-display>`>> element, the `<def>` element contains the definition for the term being described (<<element-term,`<term>`>>). As the second half of a definition list item (<<element-def-item,`<def-item>`>>), which is one item in a two-part list (<<element-def-list,`<def-list>`>>), the `<def>` element contains a definition, description, or other explanation of the word, phrase, or picture that is the first part of each list item (<<element-term,`<term>`>>). The `<def>` element can also be a definition or expansion of an abbreviation or acronym <<element-abbrev,`<abbrev>`>>.
+
+#### Attributes
+
+* <<attribute-rid,`@rid`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abbrev,`<abbrev>`>>, <<element-def-item,`<def-item>`>>, <<element-term-display,`<term-display>`>>
+#### Description
+
+Any one of: One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  def          %def-model;                                  >
+....
+#### Expanded Content Model
+
+((p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)+)
+
+#### Tagged Samples
+
+#### In “Terms and Definitions” section
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <term-sec id="sec_2.2.5">
+  <label>2.2.5</label>
+  <tbx:termEntry xmlns:tbx="urn:iso:std:iso:30042:ed-1" id="term_2.2.5">...</tbx:termEntry>
+  <term-display id="h2238-33">
+   <term>hoogwerker</term>
+   <part-of-speech norm-part-of-speech="noun">noun</part-of-speech>
+   <related-term related-term-type="acronym" rid="h2238-33.a">HW</related-term>
+   <def>
+    <p>hefplatform bestaande uit een werkplatform en 
+     een hydraulische hefinrichting gemonteerd op een zelfaangedreven 
+     chassis</p>
+   </def>
+   <non-normative-note>
+    <p>Zie <std><std-ref>EN 1777</std-ref></std>.</p>
+   </non-normative-note>
+  </term-display>
+ </term-sec>
+</body>
+...
+....
+#### In Glossary
+
+[source,xml]
+....
+...
+<sec sec-type="definitions">
+ <label>1.10</label>
+ <title>Glossary</title>
+ <glossary>
+  <def-list>
+   <def-item>
+    <term>bend qualification procedure</term>
+    <def><p>a document that specifies the
+     properties of the starting pipe; the equipment to be used;
+     the bending parameters; the qualification bend test
+     results; and the postbend, heat-treat equipment and
+     cycle used for the manufacture of the bends. If nondestructive
+     testing of the bend is required, procedures that
+     have not been approved previously shall be submitted.</p></def>
+   </def-item>
+   <def-item>
+    <term>cylinder</term>
+    <def><p>a joint of pipe produced by a rolling andwelding
+     plate, as opposed to a joint of pipe produced in accordance
+     with a recognized specification.</p></def>
+   </def-item>
+   <def-item>
+    <term>extrados</term>
+    <def><p>the outside arc of the bend.</p></def>
+   </def-item>
+   ...
+  </def-list>
+ </glossary>
+</sec>
+...
+....
+#### In Definition List
+
+[source,xml]
+....
+...
+<sec sec-type="abbreviations" id="s4">
+ <label>4</label>
+ <title>Abbreviations and acronyms</title>
+ <def-list>
+  <title>Abbreviations:</title>
+  <def-item>
+   <term>CCD</term>
+   <def><p>Charge Coupled Device.</p></def>
+  </def-item>
+  <def-item>
+   <term>CMOS</term>
+   <def><p>Complementary Metal Oxide Semiconductor.</p></def>
+  </def-item>
+  <def-item>
+   <term>LED</term>
+   <def><p>Light Emitting Diode.</p></def>
+  </def-item>
+ </def-list>
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

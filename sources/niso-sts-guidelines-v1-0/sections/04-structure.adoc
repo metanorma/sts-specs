@@ -1,0 +1,46 @@
+== Structure
+
+A NISO STS document is rooted at <<element-standard,`<standard>`>> (or
+<<element-adoption,`<adoption>`>> for adopted publications). The root
+contains three peer blocks plus an optional processing-metadata block:
+
+* <<element-processing-meta,`<processing-meta>`>> — file-level metadata
+  (NISO STS 1.2 onwards).
+* <<element-front,`<front>`>> — front matter (metadata, foreword,
+  introduction).
+* <<element-body,`<body>`>> — body of the standard (clauses, tables,
+  figures).
+* <<element-back,`<back>`>> — back matter (annexes, bibliography, index,
+  footnotes).
+
+=== Front matter
+
+The front matter holds the document's bibliographic metadata in an
+<<element-iso-meta,`<iso-meta>`>> block (or
+<<element-reg-meta,`<reg-meta>`>> for regional/national SDOs, or
+<<element-std-meta,`<std-meta>`>> for other SDOs). It also carries the
+foreword and introduction.
+
+For ASO's profile of these conventions, see
+link:../aso-1003-2026/[ASO 1003:2026, Clause 8].
+
+=== Body
+
+The body is built from nested <<element-sec,`<sec>`>> elements, each
+typically carrying a <<element-label,`<label>`>> and
+<<element-title,`<title>`>>. Sections contain paragraphs
+(<<element-p,`<p>`>>), lists (<<element-list,`<list>`>>), tables
+(<<element-table-wrap,`<table-wrap>`>>), figures (<<element-fig,`<fig>`>>),
+formulae (<<element-disp-formula,`<disp-formula>`>>), and other content.
+
+=== Back matter
+
+The back matter holds:
+
+* Annexes inside an <<element-app-group,`<app-group>`>> containing one or
+  more <<element-app,`<app>`>> elements.
+* The bibliography in a <<element-ref-list,`<ref-list>`>> element with
+  `@content-type="bibliography"`.
+* Indexes (<<element-index-div,`<index-div>`>>,
+  <<element-index-entry,`<index-entry>`>>).
+* Footnotes (<<element-fn-group,`<fn-group>`>>), if collected at the end.

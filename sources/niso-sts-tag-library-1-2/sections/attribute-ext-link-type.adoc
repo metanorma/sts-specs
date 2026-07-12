@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/ext-link-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-ext-link-type]
+=== `@ext-link-type` Type of External Link
+
+Type of external link; may include a specific source (for example, “`pdb`”, “`pir`”), identifier type (for example, “`doi`”), or access method (for example, “`ftp`”, “`uri`”).
+
+#### OPTIONAL on elements:  <<element-ext-link,`<ext-link>`>>, 
+                  <<element-related-article,`<related-article>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names the type of link (for example, “`doi`”  
+                        or “`uri`”) or the type of access (“`ftp`”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Identifying a link as a URI
+[source,xml]
+....
+...
+<list-item>
+ <label>7.</label>
+ <p>Comments, suggestions, or questions on this document 
+  should be addressed to the Defense Standardization Program 
+  Office (<abbrev>DSPO</abbrev>), 8725 John J. Kingman Road, 
+  Stop 5100, Fort Belvoir, VA 22060-6220 or emailed to 
+  <email>DSPO@dla.mil</email>. Since contact information 
+  can change, you may want to verify the currency of this 
+  address information using the ASSIST Online database at 
+  <ext-link ext-link-type="uri" xlink:href="https://assist.dla.mil"
+   >https://assist.dla.mil</ext-link>.</p>
+</list-item>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

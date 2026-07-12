@@ -1,0 +1,34 @@
+== TBX / `<term-display>`
+
+NISO STS provides two very different structures for tagging the terms and
+definitions inside a Term Section (<<element-term-sec,`<term-sec>`>>). One way
+is to tag terms using a TBX profile (a namespaced vocabulary based on ISO
+30042; TermBase eXchange). The second way is to use
+<<element-term-display,`<term-display>`>>, a simpler but less powerful
+alternative which provides a looser description of a term and its definition
+than TBX tagging allows, using natural language to describe terms. No major
+changes were made to either system, but there were a few minor enhancements.
+
+=== Modification to NISO STS TBX profile
+
+* <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>> changed from
+  optional to optional-repeatable inside <<element-tbx-tig,`<tbx:tig>`>>.
+
+* Added an <<attribute-absent,`@absent`>> {`yes` | `no`} attribute to
+  <<element-tbx-term,`<tbx:term>`>> to mark cases where the `<tbx:term>`
+  element, which is required, has been left empty deliberately.
+
+* The element <<element-tbx-grammaticalGender,`<tbx:grammaticalGender>`>> is
+  an empty element whose attribute <<attribute-value,`@value`>> is chosen
+  from a list of named values. STS added the combined value `masculine-feminine`
+  to this list.
+
+=== Modification to `<term-display>`
+
+* Added new element <<element-term-display-string,`<term-display-string>`>>.
+  The `<term-display-string>` is allowed inside `<term-display>` as a sibling
+  to <<element-term,`<term>`>> and is defined as a container element for
+  narrative material to appear inside `<term-display>` but outside, or
+  between, the element content of `<term-display>`.
+
+* Added new <<attribute-term-type,`@term-type`>> value `translation`.

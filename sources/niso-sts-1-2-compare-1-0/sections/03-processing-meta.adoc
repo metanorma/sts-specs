@@ -1,0 +1,50 @@
+== New metadata about the XML file (not the standard)
+
+Added <<element-processing-meta,`<processing-meta>`>> as a peer to
+<<element-front,`<front>`>>, <<element-body,`<body>`>>, and
+<<element-back,`<back>`>>.
+
+* Processing metadata is not considered to be part of the content of a
+  standard, nor metadata for citing the standard; it is metadata about how the
+  XML has been constructed, not about how the standard is structured. This
+  metadata is information at the "file level" and thus not part of
+  <<element-std-doc-meta,`<std-doc-meta>`>>.
+
+* The elements inside `<processing-meta>` name tag-set extensions (supersets,
+  <<element-extended-by,`<extended-by>`>>) and tag-set restrictions (subset,
+  secondary schema, etc., <<element-restricted-by,`<restricted-by>`>>) that
+  the XML document claims to follow. <<element-custom-meta,`<custom-meta>`>>
+  allows any additional name/value paired metadata.
+
+* The attributes on `<processing-meta>` describe the modeling choices made by
+  this document in terms of tag-set family, base tag set, table model, and
+  MathML.
+
+.Processing-metadata attributes
+|===
+| Attribute | Description
+
+| <<attribute-tagset-family,`@tagset-family`>>
+| Which of the JATS tag-set families is the basis for this document's tag set?
+  (e.g., `jats`, `bits`, or `sts`.)
+
+| <<attribute-base-tagset,`@base-tagset`>>
+| Which of the STS standard tag sets is the basis for this document (e.g.,
+  `interchange` or `extended`)?
+
+| <<attribute-table-model,`@table-model`>>
+| Which table model is used for this document? (e.g., `xhtml`, `oasis`, or
+  both.)
+
+| <<attribute-mathml,`@mathml`>>
+| Which version of MathML is used by this document? (e.g., MathML 2.0 or
+  MathML 3.0.)
+
+| <<attribute-math-representation,`@math-representation`>>
+| How many ways are mathematical expressions represented in this document?
+  (e.g., "TeX and images" or "MathML and plaintext".)
+
+| <<attribute-terminology-model,`@terminology-model`>>
+| Which version of terminology description is used for this document? (e.g.,
+  TBX or `<term-display>`.)
+|===

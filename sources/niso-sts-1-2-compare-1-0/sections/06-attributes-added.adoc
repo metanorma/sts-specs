@@ -1,0 +1,7 @@
+== Attributes added to STS
+
+* Created <<attribute-stage-code,`@stage-code`>>, added to
+  <<element-release-version,`<release-version>`>>. The definition and
+  illustrative code values come from the ISO document _International
+  Harmonized Stage Codes_. Documentation will note that some SDOs use other
+  coding systems.
