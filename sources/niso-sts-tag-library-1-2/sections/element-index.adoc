@@ -1,0 +1,157 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/index.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-index]
+=== `<index>` Index
+
+Structural, multi-level index, typically used for capturing a back-of-the-standard or similar index that is already present in a standard being converted to this Tag Set, although it may also be used for indexes generated from index terms set within the text of the standards document.
+
+#### Usage/Remarks
+This is a presentational model.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-index-type,`@index-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-back,`<back>`>>, <<element-index-group,`<index-group>`>>
+#### Description
+
+The following, in order: <<element-index-title-group,`<index-title-group>`>> <<element-index-title-group,Index Title Group>>, zero or one Any combination of: Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-p,`<p>`>> <<element-p,Paragraph>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> One or more of any of: <<element-index-entry,`<index-entry>`>> <<element-index-entry,Index Entry>> <<element-index-div,`<index-div>`>> <<element-index-div,Index Division>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  index        %index-model;                                >
+....
+#### Expanded Content Model
+
+(index-title-group?, (address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | editing-instruction | def-list | list | tex-math | mml:math | p | related-article | related-object | disp-quote | speech | statement | verse-group)*, (index-entry | index-div)+)
+
+#### Tagged Samples
+
+#### Index, with page numbers
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  <index-entry>
+   <term>Abbreviations</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx869"/>
+    <nav-pointer specific-use="page">7</nav-pointer></nav-pointer-group>
+  </index-entry>
+
+  <index-entry>
+   <term>Acquisition Management Systems Control (AMSC) number</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx284"/>
+    <nav-pointer specific-use="page">2</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx752"/>
+    <nav-pointer specific-use="page">6</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx1235"/>
+    <nav-pointer specific-use="page">19</nav-pointer></nav-pointer-group>
+  </index-entry>
+ </index>
+ ...
+</back>
+...
+....
+#### Index with alphabetical divisions
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  ...
+
+  <index-div>
+   <index-title-group>
+    <title>D</title>
+   </index-title-group>
+   <index-entry>
+    <term>degree of linear polarization</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.41"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>device efficiency</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.18"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>divergence angle</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.19.1"/>, 
+     <nav-pointer specific-use="section" rid="sec_3.19.2"/></nav-pointer-group>
+   </index-entry>
+  </index-div>
+  ...
+
+ </index>
+ ...
+</back>
+...
+....
+#### Another index with alphabetical divisions, where entry includes page range
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group><title>Index</title></index-title-group>
+  <index-div>
+   <index-title-group><title>A</title></index-title-group>
+   ...
+   <index-entry>
+    <term>access vocabularies</term>
+    <see-entry>entry terms</see-entry>
+   </index-entry>
+   ...
+   <index-entry>
+    <term>adjectives</term>
+    <nav-pointer-group
+     ><nav-pointer rid="idx320" nav-pointer-type="start-of-range"
+     >26</nav-pointer>&ndash;<nav-pointer rid="idx486" nav-pointer-type="end-of-range"
+     >27</nav-pointer></nav-pointer-group>    
+    <see-also-entry>modifiers in compound terms</see-also-entry>
+   </index-entry>
+   ...
+  </index-div>
+  ...
+ </index>
+</back>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Index
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

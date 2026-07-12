@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xlink-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xlink-type]
+=== `@xlink:type` Type of XLink Link
+
+The kind of XLink link used with an element. For all elements in this Tag Set that can take links (except the <<element-mml-math,`<mml:math>`>> element), this attribute may be either omitted; or it must be set to the word “`simple`”, which means that the link is a simple, one-ended link.
+
+#### Usage/Remarks
+For the <<element-mml-math,`<mml:math>`>> element (which is not controlled by the NISO STS Tag Set), this attribute may take any value that the XLink specification describes for the XLink link type, for example, a “`simple`” (one-ended) link, a “`locator`” link, a “`title`” link, an “`extended`” (multi-way) link, etc.
+
+#### FIXED (not settable) on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| simple| The link is an XML simple (one-ended) link.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

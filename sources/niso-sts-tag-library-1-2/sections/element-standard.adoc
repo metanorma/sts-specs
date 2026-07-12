@@ -1,0 +1,122 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/standard.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-standard]
+=== `<standard>` Standards Document
+
+The root element for the encoding of a standards document, such as a standard or an amendment.
+
+#### Usage/Remarks
+Although designed for normative standards as published, revised, amended, etc. (including errata and corrigenda), this top-level element can be used to tag Guides, Technical Reports, and other standard-related documents that are not explicitly “standards”. If the model for a standard fits the other document type, such use is not a misuse of this Tag Set.
+#### Parts of a Standards Document
+
+A standard <<element-standard,`<standard>`>> may be divided into several structural components: The front matter for the standards document (<<element-front,`<front>`>>), which may contain: document-level metadata (<<element-std-doc-meta,`<std-doc-meta>`>>) standards-organization metadata (in one or more of the elements <<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>) prose material such as notes and sections The body of the standard (<<element-body,`<body>`>>), which contains the textual and graphical content of the standards document Any back matter (<<element-back,`<back>`>>) such as annexes and reference lists
+#### Processing Metadata
+
+In addition to the logical and structural components of a standard described above, a `<standard>` may contain processing information concerning the XML file itself (rather then the standard that is encoded by that file).
+The element <<element-processing-meta,`<processing-meta>`>> describes:
+* Through its attributes, specifics about which version of the tag set is used in the
+                     file (which version of table model, which math model, which terminology model, etc.).
+* Through its content, the tag set extensions (superset) and restrictions (subset, secondary
+                     schema, etc.) that the XML document claims to follow. More than one restriction or
+                     extension may be claimed, and the restrictions on an `<adoption>` need not be the same as on the enclosed `<standard>`.
+#### Editing Instructions
+
+This Tag Set has been designed to make it possible to tag a revising document such as an amendment, which may contain only a sentence of explanatory text (“Replace the first paragraph in Section 2.3.1 with the paragraph below.”) followed by a paragraph of standards prose. The element <<element-editing-instruction,`<editing-instruction>`>> would hold the instructions, and the element <<element-p,`<p>`>> would hold the prose. Such a revising document could contain full standards metadata.
+
+#### Related Elements
+
+The NISO STS Tag Sets names two top-level elements that may be the document element (root element) for a standards document: *adoption:* A standard adoption document (`<adoption>`) is a wrapper for one or more standards being adopted (<<element-standard,`<standard>`>>) and some amount of adopting metadata, notes, and prose. *standard:* A standards document (<<element-standard,`<standard>`>>) contains a standard, amendment, corrigendum, errata, etc. as it is published.
+
+#### Attributes
+
+* <<attribute-dtd-version,`@dtd-version`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>> (default = en)
+#### Namespaces
+
+* <<attribute-xmlns-ali,`@xmlns:ali`>> (fixed value = http://www.niso.org/schemas/ali/1.0/)
+* <<attribute-xmlns-mml,`@xmlns:mml`>> (fixed value = http://www.w3.org/1998/Math/MathML)
+* <<attribute-xmlns-oasis,`@xmlns:oasis`>> (fixed value = http://www.niso.org/standards/z39-96/ns/oasis-exchange/table)
+* <<attribute-xmlns-tbx,`@xmlns:tbx`>> (fixed value = urn:iso:std:iso:30042:ed-1)
+* <<attribute-xmlns-xi,`@xmlns:xi`>> (fixed value = http://www.w3.org/2001/XInclude)
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+* <<attribute-xmlns-xsi,`@xmlns:xsi`>> (fixed value = http://www.w3.org/2001/XMLSchema-instance)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption,`<adoption>`>>
+#### Description
+
+The following, in order: <<element-processing-meta,`<processing-meta>`>> <<element-processing-meta,Processing Metadata>>, zero or one <<element-front,`<front>`>> <<element-front,Front Matter>> <<element-body,`<body>`>> <<element-body,Body of the Standards Document>> <<element-back,`<back>`>> <<element-back,Back Matter>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  standard     (processing-meta?, front, body, back*)       >
+....
+
+#### Tagged Sample
+
+##### Showing typical components
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <front>
+  <iso-meta>...</iso-meta>
+  <sec sec-type="foreword">
+   <title>Foreword</title>
+   ...
+  </sec>
+  ...
+ </front>
+ <body>
+  <sec sec-type="scope" id="s1">
+   <label>1</label>
+   <title>Scope</title>
+   <p>This International Standard defines the test equipment 
+    and procedures to be used ...</p>
+  </sec>
+  ...
+ </body>
+ <back>
+  <app-group>
+   <app content-type="norm-annex" id="annA">
+    <label>Annex A</label>
+    <annex-type>(normative)</annex-type>
+    <title>General operational requirements</title>
+    <sec id="annA.1">
+     <label>A.1</label>
+     <title>Installation, operation and maintenance 
+      &mdash; general</title>
+     <p>The manufacturer shall specify in documentation 
+      provided for ...</p>
+    </sec>
+    ...
+   </app>
+   ...
+  </app-group>
+  ...
+ </back>
+</standard>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Standards Document
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

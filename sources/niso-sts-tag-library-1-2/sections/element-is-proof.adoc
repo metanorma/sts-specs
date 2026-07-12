@@ -1,0 +1,67 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/is-proof.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-is-proof]
+=== `<is-proof>` Document in Proof Stage?
+
+A flag element, whose presence signals that a draft/*- document is being processed as proof.
+
+#### Usage/Remarks
+The `<is-proof>` element is always empty. If it appears in a document, it signals that the draft document is being processed as proof.
+#### ISO Note
+
+For ISO processing, no ballot is required for an is-proof document, and so a special cover page must be produced.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  is-proof     %is-proof-model;                             >
+....
+#### Expanded Content Model
+
+EMPTY
+
+#### Tagged Sample
+
+##### ISO-specific, inside `<iso-meta>`
+[source,xml]
+....
+...
+<iso-meta>
+ <title-wrap xml:lang="en">...</title-wrap>
+ <doc-ident>
+  <sdo>ISO</sdo>
+  <language>en</language>
+  <release-version>DIS</release-version>
+  <urn>urn:iso:std:iso:2560:ed-3:v1:en</urn>
+ </doc-ident>
+ ... 
+ <release-date>2011-07-15</release-date>
+ <comm-ref>ISO/TC 44/SC 3</comm-ref>
+ <secretariat>ANSI</secretariat>
+ <ics>25.160.20</ics>
+ <page-count count="29"/>
+ <is-proof/>
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

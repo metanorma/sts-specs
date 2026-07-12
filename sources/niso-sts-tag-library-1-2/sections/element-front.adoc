@@ -1,0 +1,182 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/front.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-front]
+=== `<front>` Front Matter
+
+Container element for the metadata of a standards document and any introductory notes and sections that occur before the body of the standard.
+
+#### Usage/Remarks
+Typically the front matter of a standard contains metadata such as the originating body, the document title(s), and the release date, but front matter may also contain introductory narrative material and notes concerning a standard.
+#### ISO Note
+
+For an ISO standard, everything needed to produce the front matter and back cover goes within <<element-front,`<front>`>>.
+
+#### Related Elements
+
+*Components of a Standards Document:* A standard <<element-standard,`<standard>`>> may be divided into several structural components: The front matter for the standards document (<<element-front,`<front>`>>), which may contain document-level metadata (<<element-std-doc-meta,`<std-doc-meta>`>>), standards-organization metadata (in one or more of the elements <<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>> <<element-reg-meta,`<reg-meta>`>> or <<element-nat-meta,`<nat-meta>`>>), and prose material such as notes and sections; The body of the standard (<<element-body,`<body>`>>), which contains the textual and graphical content of the standards document; and Any back matter (<<element-back,`<back>`>>) such as annexes and reference lists.
+*Adoption Documents* also contain front matter, but it is contained within an <<element-adoption-front,`<adoption-front>`>> element, which contains document-level and adoption-level metadata, possibly with notes and prose sections.
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-standard,`<standard>`>>
+#### Description
+
+The following, in order: <<element-std-doc-meta,`<std-doc-meta>`>> <<element-std-doc-meta,Standards Document Metadata>>, zero or one Any combination of: <<element-std-meta,`<std-meta>`>> <<element-std-meta,NISO STS Standard Metadata>> <<element-iso-meta,`<iso-meta>`>> <<element-iso-meta,ISO-specific Metadata>> <<element-reg-meta,`<reg-meta>`>> <<element-reg-meta,ISO-specific Regional Metadata>> <<element-nat-meta,`<nat-meta>`>> <<element-nat-meta,ISO-specific National-Body Metadata>> Any combination of: <<element-ack,`<ack>`>> <<element-ack,Acknowledgments>> <<element-notes,`<notes>`>> <<element-notes,Notes Section>> <<element-toc,`<toc>`>> <<element-toc,Table of Contents>> <<element-toc-group,`<toc-group>`>> <<element-toc-group,Table of Contents Group>> <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-xi-include,`<xi:include>`>> <<element-xi-include,XInclude>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  front        %front-model;                                >
+....
+#### Expanded Content Model
+
+(std-doc-meta?, (std-meta | iso-meta | reg-meta | nat-meta)*, (ack | notes | toc | toc-group | sec | xi:include)*)
+
+#### Tagged Samples
+
+#### Both metadata and Foreword as part of front matter
+
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <front>
+  <iso-meta>...</iso-meta>
+  <sec sec-type="foreword">
+   <title>Foreword</title>
+   ...
+  </sec>
+  ...
+ </front>
+ <body>
+  <sec sec-type="scope" id="s1">
+   <label>1</label>
+   <title>Scope</title>
+   <p>This International Standard defines the test equipment 
+    and procedures to be used ...</p>
+  </sec>
+  ...
+ </body>
+ <back>
+  <app-group>
+   <app content-type="norm-annex" id="annA">
+    <label>Annex A</label>
+    <annex-type>(normative)</annex-type>
+    <title>General operational requirements</title>
+    <sec id="annA.1">
+     <label>A.1</label>
+     <title>Installation, operation and maintenance 
+      &mdash; general</title>
+     <p>The manufacturer shall specify in documentation 
+      provided for ...</p>
+    </sec>
+    ...
+   </app>
+   ...
+  </app-group>
+  ...
+ </back>
+</standard>
+....
+#### Standards metadata and several committee list sections
+
+[source,xml]
+....
+...
+<front>
+ <std-meta>...</std-meta>
+ <sec sec-type="foreword" id="fwd1">
+  <title>Foreword</title>
+  <p><styled-content style="text-align: center; padding-left: 6em; 
+   padding-right:6em"><italic>(This foreword is not part of the proposed 
+   standard NISO Z39.96-201x, JATS: Journal Article Tag Suite. It is 
+   included for information only.)</italic></styled-content></p>
+  ...
+  <sec sec-type="roster">
+   <title>NISO Voting Members</title>
+   <p>At the time this standard was balloted, the following 
+    were members of the NISO Z39.96 voting pool:
+    <list list-type="simple">
+     <list-item>
+      <p><bold>American Geophysical Union (AGU)</bold><break/>
+       Carter Glass (Primary), Jon Sears (Alternate)</p>
+     </list-item>
+     <list-item>
+      <p><bold>American Institute of Physics (AIP)</bold><break/>
+       Terry Hulbert (Primary), Evan Owens (Alternate), 
+       James Wonder (Alternate)</p>
+     </list-item>
+     <list-item>
+      <p><bold>American Psychological Association</bold><break/>
+       Linda Beebe (Primary), Janice Fleming (Alternate)</p>
+     </list-item>
+     ...
+    </list>
+   </p>
+  </sec>
+  <sec sec-type="roster">
+   <title>Content and Collection Management Topic Committee</title>
+   <p>At the time this standard was approved, the following 
+    were members of the Content and Collection Management 
+    Topic Committee that had oversight for the project:
+    <list list-type="simple">
+     <list-item>
+      <p><bold>Julia Blixrud</bold>, Co-Chair<break/>
+       Association of Research Libraries</p>
+     </list-item>
+     <list-item>
+      <p><bold>Eva Bolkovac</bold><break/>
+       Yale University Library</p>
+     </list-item>
+     <list-item>
+      <p><bold>Lettie Contrad</bold><break/>
+       SAGE Publications</p>
+     </list-item>
+     ...
+    </list>
+   </p>
+  </sec>
+  <sec sec-type="roster">
+   <title>NISO Standardized Journal Article Markup Working 
+    Group Members</title>
+   <p>The following individuals served on the NISO Standardized 
+    Journal Article Markup Working Group, which developed and 
+    approved this standard:
+    <list list-type="simple">
+     <list-item>
+      <p><bold>Jeffrey Beck</bold>, Co-chair<break/>
+       National Center for Biotechnology Information (NCBI), 
+       U.S. National Library of Medicine</p>
+     </list-item>
+     <list-item>
+      <p><bold>Thomas Dowling</bold><break/>
+       OhioLINK</p>
+     </list-item>
+     <list-item>
+      <p><bold>Kathryn Henniss</bold><break/>
+       HighWire Press</p>
+     </list-item>
+     ...
+    </list>
+   </p>
+  </sec>
+ </sec>
+</front>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Front Matter
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

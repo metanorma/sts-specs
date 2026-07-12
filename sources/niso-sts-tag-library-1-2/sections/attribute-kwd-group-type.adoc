@@ -1,0 +1,77 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/kwd-group-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-kwd-group-type]
+=== `@kwd-group-type` Keyword Authority
+
+An authority, typically at different organizational level than a standards organization, that placed these keywords into the XML of this standards document, for example, “`working-group`”, “`committee`”, or “`inspec`”.
+
+#### Usage/Remarks
+##### Best Practice
+
+The use of this attribute has changed since ISO STS. New, more semantically specific attributes have taken over many former functions of this attribute. The <<attribute-vocab,`@vocab`>> attribute should now be used to name the ontology, thesaurus, term list, data base, index, or other term source where the keywords in this group are formally defined. The <<attribute-originator,`@originator`>> attribute should be used to name the standards organization responsible for placing this group of keywords in this standard (for example, “`IEEE`”, “`ISO`”, “`ASTM`”, “`ASME`”), particularly useful for jointly authored standards.
+
+#### OPTIONAL on element:  <<element-kwd-group,`<kwd-group>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The source of keywords. This may be a standards organization (such as
+                        “`IEEE`”); another type of organization (such as
+                        “`inspec`”); the name of a thesaurus, index, or ontology that has established keywords for
+                        a field; or the name of the standards producer that defined these keywords (such as
+                        “`RFC`”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### INSPEC keywords
+
+[source,xml]
+....
+...
+<kwd-group kwd-group-type="INSPEC" originator="IEEE">
+ <kwd>social networking (online)</kwd>
+ <kwd>buyer&#x0027;s guides</kwd>
+ <kwd>electronic commerce</kwd>
+</kwd-group> 
+
+<kwd-group kwd-group-type="InspecFree" originator="IEEE">
+ <kwd>whiz list</kwd>
+ <kwd>social networking sites</kwd>
+ <kwd>online purchase</kwd>
+ <kwd>e-commerce portals</kwd>
+ <kwd>Web site users</kwd>
+ <kwd>marketing strategy</kwd>
+</kwd-group>
+...
+....
+#### Working Group keywords
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <kwd-group kwd-group-type="working group" vocab="uncontrolled">
+  <kwd>adoption</kwd>
+  <kwd>assurance</kwd>
+  <kwd>assurance case</kwd>
+  <kwd>claim</kwd>
+  <kwd>IEEE 15026-1 &#x2122;</kwd>
+  <kwd>integrity level</kwd>
+  <kwd>life cycle processes</kwd>
+  <kwd>reliability</kwd>
+  <kwd>software assurance</kwd>
+  <kwd>software engineering</kwd>
+  <kwd>system assurance</kwd>
+  <kwd>systems engineering</kwd>
+ </kwd-group>
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

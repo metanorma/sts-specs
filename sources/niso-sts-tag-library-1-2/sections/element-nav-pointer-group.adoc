@@ -1,0 +1,147 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/nav-pointer-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-nav-pointer-group]
+=== `<nav-pointer-group>` Navigation Pointer Group
+
+More than one <<element-nav-pointer,`<nav-pointer>`>> element, in a group associated with a Table of Contents entry (<<element-toc-entry,`<toc-entry>`>>) or Index Entry (<<element-index-entry,`<index-entry>`>>).
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-index-entry,`<index-entry>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-entry,`<toc-entry>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-nav-pointer,`<nav-pointer>`>> <<element-nav-pointer,Navigation Pointer>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  nav-pointer-group
+                       (#PCDATA %nav-pointer-group-elements;)*       >
+....
+#### Expanded Content Model
+
+(#PCDATA | nav-pointer)*
+
+#### Tagged Samples
+
+#### In index, with page numbers
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  <index-entry>
+   <term>Abbreviations</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx869"/>
+    <nav-pointer specific-use="page">7</nav-pointer></nav-pointer-group>
+  </index-entry>
+
+  <index-entry>
+   <term>Acquisition Management Systems Control (AMSC) number</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx284"/>
+    <nav-pointer specific-use="page">2</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx752"/>
+    <nav-pointer specific-use="page">6</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx1235"/>
+    <nav-pointer specific-use="page">19</nav-pointer></nav-pointer-group>
+  </index-entry>
+ </index>
+ ...
+</back>
+...
+....
+#### In index with alphabetical divisions
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  ...
+
+  <index-div>
+   <index-title-group>
+    <title>D</title>
+   </index-title-group>
+   <index-entry>
+    <term>degree of linear polarization</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.41"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>device efficiency</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.18"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>divergence angle</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.19.1"/>, 
+     <nav-pointer specific-use="section" rid="sec_3.19.2"/></nav-pointer-group>
+   </index-entry>
+  </index-div>
+  ...
+
+ </index>
+ ...
+</back>
+...
+....
+#### In another index with alphabetical divisions, where entry includes page range
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group><title>Index</title></index-title-group>
+  <index-div>
+   <index-title-group><title>A</title></index-title-group>
+   ...
+   <index-entry>
+    <term>access vocabularies</term>
+    <see-entry>entry terms</see-entry>
+   </index-entry>
+   ...
+   <index-entry>
+    <term>adjectives</term>
+    <nav-pointer-group
+     ><nav-pointer rid="idx320" nav-pointer-type="start-of-range"
+     >26</nav-pointer>&ndash;<nav-pointer rid="idx486" nav-pointer-type="end-of-range"
+     >27</nav-pointer></nav-pointer-group>    
+    <see-also-entry>modifiers in compound terms</see-also-entry>
+   </index-entry>
+   ...
+  </index-div>
+  ...
+ </index>
+</back>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

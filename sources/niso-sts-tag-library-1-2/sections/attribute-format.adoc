@@ -1,0 +1,23 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/format.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-format]
+=== `@format` Glyph Data Image Format
+
+Name of the image format for the bitmap that is provided with a <<element-glyph-data,`<glyph-data>`>> element. This element is used to define a private use character when the <<element-private-char,`<private-char>`>> contains a bitmap.
+
+#### Usage/Remarks
+If a plain bitmap is included inline, the value of this attribute should be “`PBM`”, indicating that the plain text bitmap will be a human-readable matrix of zeros and ones.
+
+#### OPTIONAL on element:  <<element-glyph-data,`<glyph-data>`>>
+
+|===
+| Value| Meaning
+
+| A word| A word containing only letters, numbers, and a few special characters.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

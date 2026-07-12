@@ -1,0 +1,39 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/contrib-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-contrib-group]
+=== `<contrib-group>` Contributor Group
+
+Wrapper element for information concerning a grouping of contributors, such as the primary authors
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-collab,`<collab>`>>, <<element-supplement,`<supplement>`>>
+#### Description
+
+The following, in order: <<element-contrib,`<contrib>`>> <<element-contrib,Contributor>>, one or more Any combination of: <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-aff,`<aff>`>> <<element-aff,Affiliation>> <<element-aff-alternatives,`<aff-alternatives>`>> <<element-aff-alternatives,Affiliation Alternatives>> <<element-author-comment,`<author-comment>`>> <<element-author-comment,Author Comment>> <<element-bio,`<bio>`>> <<element-bio,Biography>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-on-behalf-of,`<on-behalf-of>`>> <<element-on-behalf-of,On Behalf of>> <<element-role,`<role>`>> <<element-role,Role or Function Title of Contributor>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  contrib-group
+             %contrib-group-model;                                   >
+....
+#### Expanded Content Model
+
+((contrib)+, (address | aff | aff-alternatives | author-comment | bio | email | ext-link | on-behalf-of | role | uri | xref)*)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,119 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/title-wrap.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-title-wrap]
+=== `<title-wrap>` Title Wrapper
+
+Container element to hold all the titles of a standards document: both components of the title such as introductory, main, or complementary titles as well as a full all-parts-present title.
+
+#### Usage/Remarks
+A given standards document may contain multiple `<title-wrap>` elements, for example, to provide the standard’s title in several languages, differentiating the `<title-wrap>` elements with different <<attribute-xml-lang,`@xml:lang`>> attributes.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+The following, in order: Any combination of: <<element-intro,`<intro>`>> <<element-intro,Introductory Title Part>> <<element-intro-title-wrap,`<intro-title-wrap>`>> <<element-intro-title-wrap,Introductory Title Wrapper>> Optionally any one of: <<element-main,`<main>`>> <<element-main,Main Title Part>> <<element-main-title-wrap,`<main-title-wrap>`>> <<element-main-title-wrap,Main Title Wrapper>> Any combination of: <<element-compl,`<compl>`>> <<element-compl,Complementary Title Part>> <<element-compl-title-wrap,`<compl-title-wrap>`>> <<element-compl-title-wrap,Complementary Title Wrapper>> <<element-full,`<full>`>> <<element-full,Full Title>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  title-wrap   %title-wrap-model;                           >
+....
+#### Expanded Content Model
+
+((intro | intro-title-wrap)*, (main | main-title-wrap)?, (compl | compl-title-wrap)*, full?)
+
+#### Tagged Samples
+
+#### Title showing levels of complementary titles
+
+[source,xml]
+....
+...
+<title-wrap>
+ <intro>2015 ASME Boiler Pressure Vessel Code</intro>
+ <main-title-wrap>
+  <label>III</label>
+  <main>Rules for Construction of Nuclear Facility Components</main> 
+ </main-title-wrap>
+ <compl level="1">Division 1</compl>
+ <compl-title-wrap level="2">
+  <compl>Subsection NH</compl> 
+  <subtitle>Class 1 Components in Elevated Temperature Service</subtitle>
+ </compl-title-wrap>
+ <full>2015 ASME Boiler Pressure Vessel Code, Section III: Rules 
+  for Construction of Nuclear Facility Components, Division 1, 
+  Subsection NH: Class 1 Components in Elevated Temperature Service</full>
+</title-wrap>
+...
+....
+#### Title of co-produced standard
+
+[source,xml]
+....
+...
+<title-wrap>
+ <intro>Information Technology</intro>
+ <main-title-wrap>
+  <main>Telecommunications and information exchange between 
+   systems</main>
+  <subtitle>Local and metropolitan area networks</subtitle>
+ </main-title-wrap>
+ <compl level="1">Technical reports and guidelines</compl>
+ <compl-title-wrap level="2">
+  <label>Part 5:</label>
+  <compl>Media Access Control (MAC) Bridging of Ethernet V2.0 in 
+   Local Area Networks</compl>
+ </compl-title-wrap>
+ <full>Information Technology — Telecommunications and information 
+  exchange between systems — Local and metropolitan area networks — 
+  Technical reports and guidelines — Part 5: Media Access Control 
+  (MAC) Bridging of Ethernet V2.0 in Local Area Networks</full>
+</title-wrap>
+...
+....
+#### Same title in two languages requires two `<title-wrap>` elements
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap xml:lang="de">
+  <intro>Sicherheit von Maschinen</intro>
+  <main>Sicherheitsbezogene Teile von Steuerungen</main>
+  <compl>Teil 1: Allgemeine Gestaltungsleitsätze</compl>
+  <full>Sicherheit von Maschinen — Sicherheitsbezogene Teile von 
+   Steuerungen — Teil 1: Allgemeine Gestaltungsleitsätze</full>
+ </title-wrap>
+ <title-wrap xml:lang="en">
+  <intro>Safety of machinery</intro>
+  <main>Safety-related parts of control systems</main>
+  <compl>Part 1: General principles for design</compl>
+  <full>Safety of machinery — Safety-related parts of control 
+   systems — Part 1: General principles for design</full>
+ </title-wrap>
+ ...
+</iso-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Title Wrapper
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

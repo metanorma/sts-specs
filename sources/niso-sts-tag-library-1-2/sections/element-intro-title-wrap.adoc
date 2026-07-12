@@ -1,0 +1,68 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/intro-title-wrap.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-intro-title-wrap]
+=== `<intro-title-wrap>` Introductory Title Wrapper
+
+Wrapper element to collect together the <<element-intro,`<intro>`>> title of the standard and its related component parts, such as a label or subtitle(s).
+
+#### Related Elements
+
+*Parts of an Introductory Title:* A simple introductory title should be tagged using the <<element-intro,`<intro>`>> element. If the introductory title has a label or subtitles, the `<intro-title-wrap>` element is used to hold all the introductory title components together.
+
+#### Attributes
+
+* <<attribute-level,`@level`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-title-wrap,`<title-wrap>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-intro,`<intro>`>> <<element-intro,Introductory Title Part>> <<element-subtitle,`<subtitle>`>> <<element-subtitle,Article Subtitle>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  intro-title-wrap
+                        %intro-title-wrap-model;                     >
+....
+#### Expanded Content Model
+
+(label?, intro, subtitle*)
+
+#### Tagged Sample
+
+##### Introductory title and subtitle are wrapped together in `<intro-title-wrap>`
+[source,xml]
+....
+...
+<title-wrap>
+ <intro-title-wrap>
+  <intro>2015 ASME Boiler Pressure Vessel Code</intro>
+  <subtitle>An International Code</subtitle>
+ </intro-title-wrap>
+ <main-title-wrap>
+  <label>I</label>
+  <main>Rules for Construction of Power Boilers</main> 
+ </main-title-wrap>
+ <full>2015 ASME Boiler Pressure Vessel Code, An International 
+  Code, Section I: Rules for Construction of Power Boilers</full>
+</title-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Title Wrapper
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

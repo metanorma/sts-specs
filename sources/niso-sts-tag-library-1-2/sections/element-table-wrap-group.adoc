@@ -1,0 +1,51 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/table-wrap-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-table-wrap-group]
+=== `<table-wrap-group>` Table Wrapper Group
+
+Container element for tables (<<element-table-wrap,`<table-wrap>`>> elements) that are to be displayed together.
+
+#### Usage/Remarks
+The <<attribute-position,`@position`>> attribute may be used to indicate whether a <<element-table-wrap-group,`<table-wrap-group>`>> must be anchored at its exact location within the text or whether it may float, for example, to the top of the next page, into the next column, to the end of a logical file, or within a separate window.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> One or more of any of: Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  table-wrap-group
+                        %table-wrap-group-model;                     >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, (caption)?, (legend)*, (kwd-group)*, (subj-group)*, (alt-text | long-desc | email | ext-link | uri)*, (non-normative-note | normative-note | non-normative-example | normative-example | notes-group | table-wrap)+)
+
+#### Related Resources
+
+* See: Tagging Tables
+* See: Hierarchy diagram - Table Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

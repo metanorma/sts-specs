@@ -1,0 +1,79 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/body.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-body]
+=== `<body>` Body of the Standards Document
+
+The main textual portion of the standards document.
+
+#### Related Elements
+
+*Parts of a Standards Document:* A standard <<element-standard,`<standard>`>> may be divided into several structural components: The front matter for the standards document (<<element-front,`<front>`>>), which may contain: document-level metadata (<<element-std-doc-meta,`<std-doc-meta>`>>) standards-organization metadata (in one or more of the elements <<element-std-meta,`<std-meta>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>) prose material such as notes and sections The body of the standard (<<element-body,`<body>`>>), which contains the textual and graphical content of the standards document Any back matter (<<element-back,`<back>`>>) such as annexes and reference lists
+*Components of an Adoption:* An adoption document (`<adoption>`) may contain several top-level components: A <<element-adoption-front,`<adoption-front>`>> element, which contains document-level and adoption-level metadata, possibly with notes and prose sections An optional adopting back matter element (<<element-back,`<back>`>>) provided by the adopting organization, which contains annexes in the local language or additional requirements or notes (Note: Some adopting organizations place all their adoption material, including adoption-specific back matter, _before_ the standard they are adopting; others place the adoption-specific back matter _after_ the standard being adopted. The NISO STS model for <<element-adoption,`<adoption>`>> allows either location to be used, though not both at once.) The contents of the <<element-adoption,`<adoption>`>> that contain or point to the standard being adopted. This may include one or more of the following: One or more full standards (<<element-standard,`<standard>`>>) One or more full adoptions (<<element-adoption,`<adoption>`>>) One or more <<element-xi-include,`<xi:include>`>> elements One or more <<element-std-xref,`<std-xref>`>> The <<element-std-xref,`<std-xref>`>> element may be particularly useful when a standards organization does not possess the XML version of the standard they are adopting, but only, for example, the PDF version. The <<element-std-xref,`<std-xref>`>> element can also be used in situations where the adopting organization does not have permission to distribute the standard being adopted. An optional adopting back matter element (<<element-back,`<back>`>>) provided by the adopting organization, which contains annexes in the local language or additional requirements or notes (Note: Some adopting organizations place all their adoption material, including adoption-specific back matter, _before_ the standard they are adopting; others place the adoption-specific back matter _after_ the standard being adopted. The NISO STS model for <<element-adoption,`<adoption>`>> allows either location to be used, though not both at once.)
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-standard,`<standard>`>>, <<element-sub-part,`<sub-part>`>>
+#### Description
+
+The following, in order: Any combination of: Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-p,`<p>`>> <<element-p,Paragraph>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Any combination of: <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-term-sec,`<term-sec>`>> <<element-term-sec,Terms and Definitions Container/Section>> <<element-sub-part,`<sub-part>`>> <<element-sub-part,Sub-Part of a Standard>> <<element-xi-include,`<xi:include>`>> <<element-xi-include,XInclude>> <<element-sig-block,`<sig-block>`>> <<element-sig-block,Signature Block>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  body         %body-model;                                 >
+....
+#### Expanded Content Model
+
+((address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | editing-instruction | def-list | list | tex-math | mml:math | p | related-article | related-object | disp-quote | speech | statement | verse-group | ref-list)*, (sec | term-sec | sub-part | xi:include)*, sig-block?)
+
+#### Tagged Sample
+
+##### Content of a standard
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <front>...</front>
+ <body>
+  <sec sec-type="scope" id="s1">
+   <label>1</label>
+   <title>Scope</title>
+   <p>This International Standard defines the test equipment 
+    and procedures to be used ...</p>
+  </sec>
+  <sec sec-type="norm-refs" id="s2">
+   <label>2</label>
+   <title>Normative references</title>
+   <p>The following referenced documents are indispensable 
+    for the application of ...</p>
+   ...
+  </sec>
+  ...
+ </body>
+ <back>...</back>
+</standard>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Body of the Standards Document
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

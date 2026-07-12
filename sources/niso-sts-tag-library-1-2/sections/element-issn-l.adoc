@@ -1,0 +1,38 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/issn-l.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-issn-l]
+=== `<issn-l>` ISSN-L (Linking ISSN) (in a citation)
+
+Within a citation (such as a <<element-mixed-citation,`<mixed-citation>`>> or an <<element-element-citation,`<element-citation>`>>), an ISSN designated by an ISSN Centre to group together the different media versions of a standards document. Since a single ISSN-L is assigned no matter how many media formats of a work there are, the ISSN-L can be used to link among the different media versions of the standards document or continuing resource, for example, both the printed and online versions of the same standards document.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-ident,`<std-ident>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  issn-l       (#PCDATA %issn-l-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

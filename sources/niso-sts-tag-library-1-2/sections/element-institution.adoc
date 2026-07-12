@@ -1,0 +1,115 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/institution.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-institution]
+=== `<institution>` Institution Name
+
+Name of an institution or organization such as a university or corporation used in an address or within a citation (such as a <<element-mixed-citation,`<mixed-citation>`>> or an <<element-element-citation,`<element-citation>`>>).
+
+#### Related Elements
+
+*Used with an Institutional Identifier:* A wrapper element named <<element-institution-wrap,`<institution-wrap>`>> holds both the name of an institution (<<element-institution,`<institution>`>>) and any identifiers for that institution (<<element-institution-id,`<institution-id>`>>), for example, an INSI or Ringgold ID.
+*Used in an Address:* An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as a company or organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-collab,`<collab>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-conf-sponsor,`<conf-sponsor>`>>, <<element-copyright-holder,`<copyright-holder>`>>, <<element-element-citation,`<element-citation>`>>, <<element-funding-source,`<funding-source>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-publisher-name,`<publisher-name>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-org-loc,`<std-org-loc>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-break,`<break>`>> <<element-break,Line Break>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  institution  (#PCDATA %institution-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA | break | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | sub | sup)*
+
+#### Tagged Samples
+
+#### In metadata as part of description of funding
+
+[source,xml]
+....
+...
+<funding-source><institution-wrap>
+  <institution content-type="laboratory">Massachusetts Green High Performance 
+   Computing Center</institution>
+ </institution-wrap>, operated by 
+  
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">1846</institution-id>
+  <institution-id institution-id-type="ISNI">0000 0001 2170 1429</institution-id>
+  <institution content-type="university">Boston University</institution>
+ </institution-wrap>, 
+      
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">1812</institution-id>
+  <institution content-type="university">Harvard University</institution>
+ </institution-wrap>, 
+      
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">2167</institution-id>
+  <institution content-type="university">MIT</institution>
+ </institution-wrap>, 
+      
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">1848</institution-id>
+  <institution content-type="university">Northeastern University</institution>
+ </institution-wrap>, and the 
+      
+ <institution-wrap>      
+  <institution-id institution-id-type="Ringgold">14707</institution-id>
+  <institution content-type="university">University of Massachusetts</institution>
+ </institution-wrap></funding-source>
+...
+....
+#### As part of address in text
+
+[source,xml]
+....
+...
+<p>... Written requests supported by a verifiable 
+ need-to-know shall be submitted to:
+ <address>
+  <addr-line>Commander</addr-line> 
+  <addr-line><institution>US Army TACOM-ARDEC</institution></addr-line>
+  <addr-line>Attn: AMSRD-AAR-AIC-S, Bldg 12</addr-line> 
+  <addr-line><city>Picatinny</city>, <state>NJ</state> 
+   <postal-code>07806-5000</postal-code></addr-line>
+  <email>ardec-stdzn@pica.army.mil</email>
+ </address>
+</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

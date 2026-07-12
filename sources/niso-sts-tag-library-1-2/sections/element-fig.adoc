@@ -1,0 +1,138 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/fig.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-fig]
+=== `<fig>` Figure
+
+Block of graphic or textual material that is identified as a figure, usually bearing a caption and a label such as “Figure 3.” or “Figure”.
+
+#### Usage/Remarks
+A <<element-fig,`<fig>`>> is defined as an element that would appear in the Table of Figures, if there were one.
+The content of a <<element-fig,`<fig>`>> need not be graphic in nature; the content of a figure may be a graphic, a list, several paragraphs, an equation, a display quote, a table, etc., or a mixture of several of these.
+The <<attribute-position,`@position`>> attribute may be used to indicate whether this element must be anchored at its exact location within the text or whether it may float, for example, to the top of the next page, into the next column, to the end of a logical file, or within a separate window.
+##### Best Practice
+
+Tag unlabeled graphic objects as <<element-graphic,`<graphic>`>>s rather than <<element-fig,`<fig>`>>s. A common test to determine if an object is a <<element-fig,`<fig>`>> versus a <<element-graphic,`<graphic>`>> is to ask, “If there were a “List of Figures” for this document, should this object appear in that list?”
+##### When Content is a Form
+
+Two attributes are available to describe the figure when it contains a form:
+* <<attribute-is-form,`@is-form`>> can indicate that the figure contains a form.  What constitutes a “form” is not defined
+                     by NISO STS.
+* <<attribute-form-type,`@form-type`>> can identify the type of the form. If the form is not one of the listed types, <<attribute-custom-type,`@custom-type`>> may provide the type (see below).
+##### Custom Form Type (<<attribute-custom-type,`@custom-type`>>)
+
+<<attribute-form-type,`@form-type`>> has as its values a fixed list of form types. If your form is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the form type. Set the value of <<attribute-form-type,`@form-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any form type you require. For example:
+[source,xml]
+....
+<fig is-form="form" form-type="custom" 
+    custom-type="template"...>...</fig>
+....
+
+#### Attributes
+
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-fig-type,`@fig-type`>>
+* <<attribute-form-type,`@form-type`>>
+* <<attribute-is-form,`@is-form`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig-group,`<fig-group>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Any combination of: <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> Any combination of: Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  fig          %fig-model;                                  >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, (object-id)*, label?, (caption)?, (legend)*, (kwd-group)*, (subj-group)*, (alt-text | long-desc | email | ext-link | uri)*, (disp-formula | disp-formula-group | chem-struct-wrap | fn-group | fn | disp-quote | speech | statement | table-wrap | p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group | def-list | list | alternatives | array | code | graphic | media | preformat)*, (attrib | permissions)*)
+
+#### Tagged Samples
+
+#### Typical figure
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### Figure whose caption includes table
+
+[source,xml]
+....
+...
+<sec id="annB.1.1">
+ <label>B.1.1</label>
+ <title>Scanners with single axis reading diagram</title>
+ <p>This category comprises all scanners with 
+  a single, fixed reading beam ...</p>
+ ...
+ <fig id="fB.1">
+  <label>Figure B.1</label>
+  <caption>
+   <title>Reading diagram for single-axis scanner</title>
+   <p><table-wrap>
+     <table>
+      <thead>
+       <tr><th align="center" colspan="2">Scanner with single 
+        axis reading diagram</th></tr>
+       <tr><th align="center">Parameter</th>
+        <th align="center">Term</th></tr>
+      </thead>
+      <tbody>
+       <tr><td align="center">A</td>
+        <td>minimum reading distance</td></tr>
+       <tr><td align="center">B</td>
+        <td>depth of field</td></tr>
+       <tr><td align="center">R</td>
+        <td>maximum reading distance</td></tr>
+      </tbody>
+     </table>
+    </table-wrap></p>
+  </caption>
+  <graphic position="anchor" xlink:href="f-b-1.png"/>
+ </fig>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Figures, Graphics, and Multimedia
+* See: Hierarchy diagram - Figure
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

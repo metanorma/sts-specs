@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/description.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-description]
+=== `@description` Private Character Description
+
+Human-readable description of a defined private character (for example, “`Arrow, normal weight, single line, two-headed, Northwest to Southeast`”).
+
+#### Usage/Remarks
+The <<attribute-name,`@name`>> attribute for a defined private character <<element-private-char,`<private-char>`>> provides a Unicode-style name (an all uppercase name) for the private character, for example, “`COMBINING CYRILLIC PALATALIZATION`”. In contrast, the <<attribute-description,`@description`>> attribute for a defined private character <<element-private-char,`<private-char>`>> provides a rough visual description, for example, “`combining vertical tilde`”.
+
+#### OPTIONAL on element:  <<element-private-char,`<private-char>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A rough visual description of the appearance of the <<element-private-char,`<private-char>`>> character, for example,
+                        “`Greek capital letter omega with tonos`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

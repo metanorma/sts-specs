@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/symbol.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-symbol]
+=== `@symbol` Symbol
+
+Stores the symbol (for example, an asterisk, numeral, section mark) that was displayed in the original document to identify a specific footnote, if this symbol is to be preserved.
+
+#### Usage/Remarks
+In NISO STS, this attribute is used only on footnotes and collaborations. This is expected to be uncommon in standards documents.
+
+#### OPTIONAL on elements:  <<element-collab,`<collab>`>>, 
+                  <<element-fn,`<fn>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The symbol, such as a dagger
+                        “†”, used to mark a footnote or inclusion in a collaboration.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

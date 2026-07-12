@@ -1,0 +1,15 @@
+[[_annex_b_coding_tables_in_niso_sts]]
+== Annex B (normative) — Coding tables in NISO STS
+
+This annex defines the table-coding conventions: default vertical and
+horizontal alignment, header alignment, merged cells, line breaks and
+lists inside cells, landscape tables, table lines, rules, frames, border
+styling, alignment, and text rotation.
+
+For the element-level reference for every table element, see the Tag
+Library entries starting with
+<<element-table-wrap,`<table-wrap>`>>.
+
+NOTE: The detailed coding tables from the source guidelines (Annex B) are
+available in the OCR transcript at
+`reference-docs/.glm-ocr-cache/niso-sts-guidelines-v1-0.md`.

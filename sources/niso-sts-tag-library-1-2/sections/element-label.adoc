@@ -1,0 +1,209 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/label.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-label]
+=== `<label>` Label of a Figure, Reference, Etc.
+
+Number and/or prefix word placed at the beginning of display elements (for example, equation, statement, figure).
+
+#### Usage/Remarks
+As an example, a label placed at the beginning of an equation (<<element-disp-formula,`<disp-formula>`>>) could be a number such as “`<label>Equation 3.</label>`”, “`<label>(3)</label>`”, or “`<label>3.</label>`”.
+Many objects can take explicit labels. For example, a `<label>` can contain the number or symbol used as a prefix character for a footnote that is placed at the point of the footnote reference. Similarly, the number and any prefix word associated with the title or the caption of a <<element-fig,`<fig>`>> can be marked as a `<label>`, for example, “`<label>Figure 3.</label>`”, “`<label>Exhibit 2.</label>`”, or “`<label>3.</label>`”.
+#### Accessibility
+
+Sometimes a `<label>` needs to be pronounced in a way that is not reflected in its content or its tagging. The <<attribute-alt,`@alt`>> attribute can be used to record the pronunciation for screen readers and other accessibility devices. For example, the element figure that follows might be pronounced as “Figure 3”.
+
+#### Attributes
+
+* <<attribute-alt,`@alt`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-aff,`<aff>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-compl-title-wrap,`<compl-title-wrap>`>>, <<element-def-list,`<def-list>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fn,`<fn>`>>, <<element-fn-group,`<fn-group>`>>, <<element-glossary,`<glossary>`>>, <<element-graphic,`<graphic>`>>, <<element-index-title-group,`<index-title-group>`>>, <<element-intro-title-wrap,`<intro-title-wrap>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-legend,`<legend>`>>, <<element-list,`<list>`>>, <<element-list-item,`<list-item>`>>, <<element-main-title-wrap,`<main-title-wrap>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-notes-group,`<notes-group>`>>, <<element-ref,`<ref>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-statement,`<statement>`>>, <<element-sub-part,`<sub-part>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-term-sec,`<term-sec>`>>, <<element-toc-entry,`<toc-entry>`>>, <<element-toc-title-group,`<toc-title-group>`>>, <<element-verse-group,`<verse-group>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  label        (#PCDATA %label-elements;)*                  >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | named-content | styled-content | fn | target | tbx:entailedTerm | xref | sub | sup)*
+
+#### Tagged Samples
+
+#### For bibliographic reference
+
+[source,xml]
+....
+...
+<ref id="bibr40">
+ <label>40</label>
+ <mixed-citation publication-type="book"
+  ><collab>World Health Organization</collab>, <collab>World 
+  Bank</collab>. (<year iso-8601-date="2011">2011</year>), 
+  <source>World Report on Disability</source>, 
+  <publisher-loc>Geneva</publisher-loc>, available at: 
+  <ext-link 
+    xlink:href="http://www.who.int/disabilities/world_report/2011/en/index.html"   
+  >http://www.who.int/disabilities/world_report/2011/en/index.html</ext-link
+  ></mixed-citation>
+ </ref>
+...
+....
+#### For figure
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### For section with subsections
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <sec id="s4">
+  <label>4</label>
+  <title>Accessibility in the standards development 
+   process</title>
+  <sec id="s4_1">
+   <label>4.1</label>
+   <title>General</title>
+   <p>This clause outlines how accessibility can be 
+    addressed in the standards development process:
+    <list list-type="bullet">
+     <list-item><p><xref ref-type="sec" rid="s4_2">4.2</xref> 
+      contains general considerations for standards bodies 
+      related to ...</p></list-item>
+     <list-item><p><xref ref-type="sec" rid="s4_3">4.3</xref> 
+      provides guidance for each of the respective stages of 
+      the standards development process to ensure ...</p></list-item>
+    </list>
+   </p>
+  </sec>
+  <sec id="s4_2">
+   <label>4.2</label>
+   <title>Considerations by standards bodies</title>
+   <p>Standards bodies should develop a process for ...</p>
+  </sec>
+  ...
+ </sec>
+ ...
+</body>
+...
+....
+#### For table
+
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+#### For equation
+
+[source,xml]
+....
+...
+<p>In the case of dollies of diameter 20 mm, the 
+ breaking strength, in megapascals, is given by
+ <xref ref-type="disp-formula" rid="formula_2">Formula
+ (2)</xref>
+ <disp-formula id="formula_2"
+  ><mml:math display="block" 
+     id="mml_m2"
+     xmlns:mml="http://www.w3.org/1998/Math/MathML" >
+   <mml:mrow>
+    <mml:mi>s</mml:mi><mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mrow>
+      <mml:mn>4</mml:mn><mml:mi>F</mml:mi></mml:mrow>
+     <mml:mrow>
+      <mml:mn>400</mml:mn><mml:mi>p</mml:mi></mml:mrow>
+    </mml:mfrac>
+    <mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mi>F</mml:mi>
+     <mml:mrow>
+      <mml:mn>314</mml:mn></mml:mrow>
+    </mml:mfrac>
+   </mml:mrow>
+  </mml:math>
+  <label>(2)</label>
+ </disp-formula>
+</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

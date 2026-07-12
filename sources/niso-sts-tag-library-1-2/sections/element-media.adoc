@@ -1,0 +1,92 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/media.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-media]
+=== `<media>` Media Object
+
+Description of and pointer to an external file that holds a media object (for example, an animation, an audio file, or a movie).
+
+#### Usage/Remarks
+##### Media Content
+
+The “content” of the <<element-media,`<media>`>> element is not the media object itself, but information concerning the object. The external file that contains the object is named by the <<attribute-xlink-href,`@xlink:href`>> attribute.
+##### Media Placement
+
+The <<attribute-position,`@position`>> attribute _may_ be used to indicate whether this element must be anchored at its exact location within the text or whether it may float, but Best Practice is to anchor graphics and media objects. The few media objects that occur within the narrative text should be anchored in place, and all the media objects inside figures, tables, etc., should be anchored as well, although the outer structure (figure, boxed text) may be allowed to float.
+##### Best Practice Usage
+
+Display component elements, such as <<element-caption,`<caption>`>>, should always be used at the highest possible level; in other words, if a <<element-media,`<media>`>> element is inside a <<element-fig,`<fig>`>>, the <<element-caption,`<caption>`>>, <<element-long-desc,`<long-desc>`>>, etc., should be part of the <<element-fig,`<fig>`>>, not part of the <<element-media,`<media>`>>. Use a <<element-caption,`<caption>`>> element on a <<element-media,`<media>`>> only when the media object is not enclosed in any other structure or when a figure contains multiple media objects, each of which must have its own <<element-caption,`<caption>`>>. For similar reasons, the <<attribute-position,`@position`>> attribute should be set to “anchor” for a <<element-media,`<media>`>> element that is inside a larger display container such as a <<element-fig,`<fig>`>>.
+##### When Content is a Form
+
+Two attributes are available to describe the media object when it is a form:
+* <<attribute-is-form,`@is-form`>> can indicate that the media object is a form.  What constitutes a “form” is not defined
+                     by NISO STS.
+* <<attribute-form-type,`@form-type`>> can identify the type of the form. If the form is not one of the listed types, <<attribute-custom-type,`@custom-type`>> may provide the type (see below).
+##### Custom Form Type (<<attribute-custom-type,`@custom-type`>>)
+
+<<attribute-form-type,`@form-type`>> has as its values a fixed list of form types. If your form is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the form type. Set the value of <<attribute-form-type,`@form-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any form type you require. For example:
+[source,xml]
+....
+<media is-form="form" form-type="custom" 
+    custom-type="template" xlink:href="..."/>
+....
+
+#### Related Elements
+
+This Suite contains several elements that describe and point to non-XML material: <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-media,`<media>`>>, and <<element-inline-media,`<inline-media>`>>. The elements <<element-graphic,`<graphic>`>> and <<element-inline-graphic,`<inline-graphic>`>> contain a pointer to a still image (such as a photograph, diagram, line drawing, etc.) that is part of the document. The elements <<element-media,`<media>`>> and <<element-inline-media,`<inline-media>`>> contain a pointer to a non-XML, frequently binary, object (such as a movie, audio clip, dataset, pronunciation file, or other non-XML format).
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-form-type,`@form-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-is-form,`@is-form`>>
+* <<attribute-mime-subtype,`@mime-subtype`>>
+* <<attribute-mimetype,`@mimetype`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>> (REQUIRED)
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>> <<element-legend,`<legend>`>> <<element-legend,Legend>> Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>> <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>> <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>> <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  media        %media-model;                                >
+....
+#### Expanded Content Model
+
+(alt-text | long-desc | abstract | email | ext-link | uri | caption | legend | attrib | permissions | object-id | label | kwd-group | subj-group)*
+
+#### Related Resources
+
+* See: Tagging Figures, Graphics, and Multimedia
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

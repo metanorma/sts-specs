@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 138</doc-identifier>
+      <std-title-group>
+        <title>Vessels for commercial transactions</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2007</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2007 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2007</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_657afc25-05d1-f984-795f-46259da22909">
+        <list-item>&#x2014;<bold>International Recommendations (OIML R)</bold>, which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;<bold>International Documents (OIML D)</bold>, which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;<bold>International Guides (OIML G)</bold>, which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</list-item>
+        <list-item>&#x2014;<bold>International Basic Publications (OIML B)</bold>, which define the operating rules of the various OIML structures and systems.</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Technical Committees or Subcommittees which comprise representatives from the Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of <bold>Vocabularies (OIML V)</bold> and periodically commissions legal metrology experts to write  <bold>Expert Reports (OIML E)</bold>. Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 138, Edition 2007 (E)&#x2009;&#x2014;&#x2009;was developed by the OIML Technical Subcommittee TC 8  <italic>Measurement of quantities of fluids</italic>. It was approved for final publication by the International Committee of Legal Metrology in 2007 and will be submitted to the International Conference of Legal Metrology in 2008 for formal sanction. This Edition replaces the previous editions of OIML R 4 <italic>Volumetric flasks (one mark) in glass</italic> (Edition 1972), R 29 <italic>Capacity serving measures</italic> (Edition 1979), R 45 <italic>Casks and barrels</italic> (Edition 1980) and R 96 <italic>Measuring container bottles</italic> (Edition 1990).</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <title>Scope and application</title>
+      <p>This Recommendation applies to volumetric containers or vessels used to measure, and when applicable to store and transport, liquids for commercial transactions.</p>
+    </sec>
+    <sec>
+      <title>Terminology and symbols</title>
+      <sec>
+        <title>General terms</title>
+        <p>The general terms and definitions are those of the International Vocabulary of Basic and General Terms in Metrology (VIM, 1993).</p>
+      </sec>
+      <sec>
+        <title>Capacity serving measures</title>
+        <p>Measures which are filled as required and used for the retail sale of drinks sold by volume. They are divided into two categories: transfer measures used solely for decanting specific volumes of beverages and drinking measures used also for the consumption of specific volumes of beverages.</p>
+      </sec>
+      <sec>
+        <title>Measuring container bottles</title>
+        <p>Bottles intended to be filled either at constant level or at constant ullage with sufficient accuracy without the need to use an independent measuring instrument.</p>
+      </sec>
+      <sec>
+        <title>Casks and barrels</title>
+        <p>Containers used for commercial transactions of liquids when they are filled to their nominal volume. To simplify the text, casks and barrels are referred to hereafter by the name &#x201C;casks&#x201D; only.</p>
+      </sec>
+      <sec>
+        <title>Nominal capacity, VnV_n</title>
+        <p>Volume indicated on the vessel.</p>
+      </sec>
+      <sec>
+        <title>Conventional true capacity</title>
+        <p>For measuring container bottles and casks: contained volume of water at a reference temperature with an uncertainty appropriate for the given purpose.</p>
+        <p>For capacity serving measures: delivered volume of water at a reference temperature with an uncertainty appropriate for the given purpose. This volume is measured after prior wetting of the interior of the vessel and draining for 30 seconds.</p>
+      </sec>
+      <sec>
+        <title>Brim capacity, VrV_r</title>
+        <p>Volume that the vessel is meant to contain when filled to the brim.</p>
+      </sec>
+      <sec>
+        <title>Ullage (or headspace)</title>
+        <p>Empty volume remaining in a container after it is filled.</p>
+      </sec>
+      <sec>
+        <title>Gauge mark</title>
+        <p>Mark, generally a line that indicates the nominal capacity VnV_nVnV_n.</p>
+      </sec>
+      <sec>
+        <title>Filling orifice</title>
+        <p>Opening in the cask wall defined by its section and the thickness of the cask walls.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Units of measurement</title>
+      <p>The units of measurement shall be the SI units.</p>
+    </sec>
+    <sec>
+      <title>Technical requirements</title>
+      <sec>
+        <title>Nominal capacities</title>
+        <sec>
+          <title>4.1.1</title>
+          <p>Capacity serving measures and measuring container bottles</p>
+          <p>Capacity serving measures and measuring container bottles shall have one of the nominal capacities given by the following formula:</p>
+          <disp-formula id="for_2"/>
+          <p>with nnnn = positive or negative integer, or zero 
+x=1,1.5,2,2.5,3,4x = 1, 1.5, 2, 2.5, 3, 4x=1,1,5,2,2,5,3,4x = 1, 1.5, 2, 2.5, 3, 4 and 5555</p>
+          <p>and comprised between the following values:</p>
+          <list list-type="bullet" id="_fad53302-c38b-3831-9474-07e74d3ce6d8">
+            <list-item>&#x2014;capacity serving measures [20 &#x2026;&#x200B; 5000] mL"unitsml(mL)"mL"unitsml(mL)"</list-item>
+            <list-item>&#x2014;measuring container bottles [50 &#x2026;&#x200B; 5000] mL"unitsml(mL)"mL"unitsml(mL)"</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Casks</title>
+          <p>Casks shall have a nominal capacity equal to:</p>
+          <list list-type="bullet" id="_42fb7d23-f4a7-3d25-463e-fa726bb36409">
+            <list-item>&#x2014;a multiple of 5&#x2062;L5 "unitsml(L)"5&#x2062;L5 "unitsml(L)" for Vn&#x2264;100&#x2062;LV_n &lt;= 100 "unitsml(L)"Vn&#x2264;100&#x2062;LV_n &lt;= 100 "unitsml(L)"</list-item>
+            <list-item>&#x2014;a multiple of 50&#x2062;L50 "unitsml(L)"50&#x2062;L50 "unitsml(L)" for Vn&gt;100&#x2062;LV_n &gt; 100 "unitsml(L)"Vn&gt;100&#x2062;LV_n &gt; 100 "unitsml(L)"</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Exceptions</title>
+          <p>When justified by local traditions or by special requirements, national regulations may allow
+additional values for nominal capacities or units (e.g. 0.33&#x2062;L0.33 "unitsml(L)"0,33&#x2062;L0.33 "unitsml(L)").</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Material</title>
+        <p>The vessels shall be sufficiently robust to withstand normal usage without distortions.</p>
+        <p>For capacity serving measures and measuring container bottles, the materials used in construction should be sufficiently tough, rigid, non porous and stable to maintain accuracy during use.</p>
+        <p>Casks may be manufactured in any material with strength, rigidity and toughness adequate for the intended use (e.g. solid wood, plywood, metal). National regulations may stipulate that the interior of certain casks must be covered with a protective permanent coating, compatible with the material used for construction and the liquids to be contained.</p>
+        <p>Vessels used only once, such as thin plastic or cardboard drinking capacities, must remain accurate during nominal filling, transportation and discharge functions.</p>
+      </sec>
+      <sec>
+        <title>Construction</title>
+        <p>The total volume of vessels intended to contain liquids under pressure shall not increase more than
+0.5 % when subjected to an internal pressure of 100&#x2062;kPa100 "unitsml(kPa)"100&#x2062;kPa100 "unitsml(kPa)" maintained for 48 hours.</p>
+        <p>The position of the filling orifice shall allow for complete filling of the casks.</p>
+      </sec>
+      <sec>
+        <title>Resolution if gauge mark</title>
+        <p>Vessels with gauge marks shall be so designed that at the nominal capacity, a variation in the contents
+equal to the maximum permissible error causes a change in the liquid level of at least 2&#x2062;mm2 "unitsml(mm)"2&#x2062;mm2 "unitsml(mm)".</p>
+      </sec>
+      <sec>
+        <title>Vertical position</title>
+        <p>Vessels with gauge marks and measuring container bottles shall have a base wide enough to allow a vertical, stable position when resting on a flat horizontal surface. If not, a holder must be provided with the vessel.</p>
+      </sec>
+      <sec>
+        <title>Filling requirements</title>
+        <sec>
+          <title>Vessels with gauge marks</title>
+          <p>&#x201C;Filled to the gauge mark&#x201D; is when the lowest part of the meniscus formed by the liquid is tangential to the upper edge of the gauge mark.</p>
+        </sec>
+        <sec>
+          <title>Measuring container bottles</title>
+          <p>Depending on the specifications of the manufacturer, the surface of the liquid shall either be at the specified distance from the brim or have the specified ullage at the top.</p>
+        </sec>
+        <sec>
+          <title>Casks</title>
+          <p>Casks shall be filled to the lower edge of the filling orifice.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Metrological requirements</title>
+      <sec>
+        <title>Maximum permissible errors</title>
+        <sec>
+          <title>Capacity serving measures</title>
+          <table-wrap id="tab_3">
+            <caption>Capacity serving measures</caption>
+            <table>
+              <tr>
+                <td>Transfer measures</td>
+                <td>&lt;100&#x2062;mL&lt; 100 "unitsml(mL)"&lt;100&#x2062;mL&lt; 100 "unitsml(mL)"</td>
+                <td>&#xB1;2&#x2062;mLpm 2 "unitsml(mL)"&#xB1;2&#x2062;mLpm 2 "unitsml(mL)"</td>
+                <td>-0-00-0</td>
+              </tr>
+              <tr>
+                <td>+4&#x2062;mL+ 4 "unitsml(mL)"+4&#x2062;mL+ 4 "unitsml(mL)"</td>
+              </tr>
+              <tr>
+                <td>&#x2265;100&#x2062;mL&gt;= 100 "unitsml(mL)"&#x2265;100&#x2062;mL&gt;= 100 "unitsml(mL)"</td>
+                <td>&#xB1;3%pm 3 %&#xB1;3%pm 3 % of VnV_nVnV_n</td>
+                <td>-0-00-0</td>
+              </tr>
+              <tr>
+                <td>+6%+ 6 %+6%+ 6 % of VrV_rVrV_r</td>
+              </tr>
+              <tr>
+                <td>Drinking measures</td>
+                <td>&lt;200&#x2062;mL&lt; 200 "unitsml(mL)"&lt;200&#x2062;mL&lt; 200 "unitsml(mL)"</td>
+                <td>&#xB1;5%pm 5 %&#xB1;5%pm 5 % of VnV_nVnV_n</td>
+                <td>-0-00-0</td>
+              </tr>
+              <tr>
+                <td>+10%+ 10 %+10%+ 10 % of VrV_rVrV_r</td>
+              </tr>
+              <tr>
+                <td>&#x2265;200&#x2062;mL&gt;= 200 "unitsml(mL)"&#x2265;200&#x2062;mL&gt;= 200 "unitsml(mL)"</td>
+                <td>&#xB1;(5&#x2062;mL+2.5%pm (5 "unitsml(mL)" + 2.5 %&#xB1;(5&#x2062;mL+2,5%pm (5 "unitsml(mL)" + 2.5 % of VnV_nVnV_n)</td>
+                <td>-0-00-0</td>
+              </tr>
+              <tr>
+                <td>+10&#x2062;mL+5%+ 10 "unitsml(mL)" + 5 %+10&#x2062;mL+5%+ 10 "unitsml(mL)" + 5 % of VrV_rVrV_r</td>
+              </tr>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>Measuring container bottles</title>
+          <table-wrap id="tab_4">
+            <caption>Measuring container bottles</caption>
+            <table>
+              <tr>
+                <td>from 50 to 100</td>
+                <td>-</td>
+                <td>&#xB1;3pm 3&#xB1;3pm 3</td>
+              </tr>
+              <tr>
+                <td>from 100 to 200</td>
+                <td>&#xB1;3pm 3&#xB1;3pm 3</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>from 200 to 300</td>
+                <td>-</td>
+                <td>&#xB1;6pm 6&#xB1;6pm 6</td>
+              </tr>
+              <tr>
+                <td>from 300 to 500</td>
+                <td>&#xB1;2pm 2&#xB1;2pm 2</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>from 500 to 1000</td>
+                <td>-</td>
+                <td>&#xB1;10pm 10&#xB1;10pm 10</td>
+              </tr>
+              <tr>
+                <td>from 1000 to 5000</td>
+                <td>&#xB1;1pm 1&#xB1;1pm 1</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>Casks</title>
+          <p>&#xB1;0.5%pm 0.5 %&#xB1;0,5%pm 0.5 % but not less than 0.10&#x2062;L0.10 "unitsml(L)"0,10&#x2062;L0.10 "unitsml(L)" for casks made of metal which shall be designated by the letter &#x201C;A&#x201D; affixed to the vessel.</p>
+          <p>&#xB1;1.0%pm 1.0 %&#xB1;1,0%pm 1.0 % but not less than 0.15&#x2062;L0.15 "unitsml(L)"0,15&#x2062;L0.15 "unitsml(L)" for casks made of other materials which shall be designated by the letter &#x201C;B&#x201D; affixed to the vessel.</p>
+        </sec>
+        <sec>
+          <title>General</title>
+          <p>Systematic exploitation of the maximum permissible errors is prohibited.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Markings</title>
+        <sec>
+          <title>Nominal capacity</title>
+          <p>Every vessel for commercial transactions shall bear a clearly visible, easily readable and permanent
+indication of the nominal capacity VnV_nVnV_n. Markings shall be in SI units.</p>
+        </sec>
+        <sec>
+          <title>Capacity serving measures</title>
+          <p>In addition to the requirements of <xref rid="cls-5.2.1" ref-type="other"/>5.2.1, capacity serving measures shall bear at least one filling mark.
+All filling marks shall be clearly visible and permanently marked. They must be at least 10&#x2062;mm10 "unitsml(mm)"10&#x2062;mm10 "unitsml(mm)" long and in a horizontal plane when the measure stands on a horizontal flat surface.</p>
+          <p>On drinking measures with a capacity of more than 50 mL, the filling mark is at least 10&#x2062;mm10 "unitsml(mm)"10&#x2062;mm10 "unitsml(mm)" from the brim.</p>
+          <p>For foam building liquids the distance between the upper gauge mark and the brim shall be sufficient
+to allow for a complete filling to the mark but not less than 20&#x2062;mm20 "unitsml(mm)"20&#x2062;mm20 "unitsml(mm)".</p>
+          <p>Exception: if the capacity of a serving or drinking measure is defined by its brim capacity, the requirement of  <xref rid="cls-5.2.2" ref-type="other"/>5.2.2 does not have to be fulfilled.</p>
+        </sec>
+        <sec>
+          <title>Measuring container bottles</title>
+          <p>In addition to the requirements of <xref rid="cls-5.2.1" ref-type="other"/>5.2.1, measuring container bottles shall be marked with one of the following marks, either on the lower rim or the bottom:</p>
+          <list list-type="bullet" id="_51604bfb-7619-b841-6b92-42273373d589">
+            <list-item>&#x2014;when filled to a constant level: the distance, expressed in mL"unitsml(mL)"mL"unitsml(mL)" followed by the symbol mm"unitsml(mm)"mm"unitsml(mm)" from the brim to the filling level corresponding to the nominal capacity; or</list-item>
+            <list-item>&#x2014;when filled to a constant ullage: the number, expressed in mL followed by the symbol mL"unitsml(mL)"mL"unitsml(mL)" that is equal to the brim capacity.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Compliance with the metrological specifications</title>
+          <p>Every vessel for commercial transactions shall bear a mark identifying the company responsible for compliance with the metrological specifications applicable to the vessel.</p>
+        </sec>
+        <sec>
+          <title>Reference temperature</title>
+          <p>If the National Metrology Authority decides on a reference temperature other than 20&#x2062;&#xB0;C20 "unitsml(degC)"20&#x2062;&#xB0;C20 "unitsml(degC)", this temperature must be indicated next to every volume indication affixed to the vessel.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Metrological controls</title>
+      <sec>
+        <title>Type approval</title>
+        <p>The vessels for commercial transactions are not subject to type approval.</p>
+      </sec>
+      <sec>
+        <title>Initial verification</title>
+        <p>The conformity of vessels used for commercial transactions to the prescribed specifications shall be controlled by the competent authority using a suitable statistical test. The controls shall preferably take place at the manufacturer&#x2019;s plant or at the importer&#x2019;s warehouse.</p>
+        <p>The competent authority shall use a suitable test to perform the controls. An example is given in <xref rid="annex-a" ref-type="other"/>AnnexA. In cases where a small number of vessels are concerned, the control may be replaced by individual initial verification.</p>
+        <p>Casks may be presented to the competent authority for legal metrology without an indication of the nominal capacity. In this case, the authority shall determine the conventional true capacity at a reference temperature when the container is filled according to the specifications and shall affix the value of the nominal capacity and the official mark of verification.</p>
+        <p>Capacity serving measures may be presented to the competent Legal Metrology Authority without marking. In this case, the authority shall affix the gauge mark, the value of the nominal capacity and the official verification mark.</p>
+      </sec>
+      <sec>
+        <title>Subsequent verification or control</title>
+        <p>Vessels made of glass are not subject to subsequent verification.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Measuring instruments used for official controls</title>
+      <p>Measuring instruments used for official controls of vessels for commercial transactions shall be traceable to internationally supported realizations of the SI Units and have an uncertainty not greater than one-third of the maximum permissible error.</p>
+    </sec>
+    <p>Vessels for commercial transactions</p>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <title>Statistical test</title>
+        <sec>
+          <title>Sampling</title>
+          <p>The method of control set out in <xref rid="annex-a" ref-type="other"/>AnnexA assumes that the distribution of actual capacities of the vessels in a batch submitted for inspection is near to a normal distribution.</p>
+          <p>The sampling procedure shall conform as much as possible to sampling theory and shall be adapted to the manufacturing procedures of the manufacturer or to the conditions in which batches are presented by the importer.</p>
+        </sec>
+        <sec>
+          <title>Computation example</title>
+          <p>A sample of 35 vessels of the same type and manufacture shall be taken at random in one or several batches so that the sample is as representative as possible of the production.</p>
+          <p>The following computational procedure is taken from the International Standard ISO 3951:1989, letter code J, AQL = 2.5, normal control, unknown standard deviation.</p>
+          <p>Compute the mean xxxx of the capacities xix_ixix_i of the vessels in the sample:</p>
+          <disp-formula id="for_5"/>
+          <p>with N=35N = 35N=35N = 35.</p>
+          <p>Compute the standard deviation ssss of the capacities xix_ixix_i of the vessels in the sample:</p>
+          <disp-formula id="for_6"/>
+          <p>with N=35N = 35N=35N = 35.</p>
+          <p>Compute the specified upper limit TsT_sTsT_s, the sum of the capacity to be verified and of the maximum permissible error for this capacity.</p>
+          <p>Compute the specified lower limit TiT_iTiT_i, the difference between the capacity to be verified and the maximum permissible error for this capacity.</p>
+        </sec>
+        <sec>
+          <title>Acceptance criteria</title>
+          <p>The batch shall be accepted if the values of xxxx and ssss satisfy simultaneously the following three inequalities:</p>
+          <disp-formula id="for_7"/>
+          <disp-formula id="for_8"/>
+          <disp-formula id="for_9"/>
+          <p>where k=1.57k = 1.57k=1,57k = 1.57 and F=0.266F = 0.266F=0,266F = 0.266.</p>
+        </sec>
+      </app>
+    </app-group>
+  </back>
+</standard>

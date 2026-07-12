@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/publisher-name.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-publisher-name]
+=== `<publisher-name>` Publisher's Name (in a citation)
+
+In a bibliographic citation (<<element-element-citation,`<element-citation>`>> or <<element-mixed-citation,`<mixed-citation>`>>) or a citation to a related object (<<element-related-object,`<related-object>`>>), this element names the publisher of the cited work.
+
+#### Usage/Remarks
+This element is not part of the metadata of a standards document. Use the element <<element-std-org-loc,`<std-org-loc>`>> to record the location of the publishing or adopting standard.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  publisher-name
+                        (#PCDATA %publisher-name-elements;)*         >
+....
+#### Expanded Content Model
+
+(#PCDATA | institution | institution-wrap)*
+
+#### Tagged Sample
+
+##### Part of book citation
+[source,xml]
+....
+...
+<ref id="ref_25">
+ <label>[25]</label>
+ <mixed-citation publication-type="book"
+  ><source>Retskrivningsordbogen</source>. 
+  <publisher-name>Dansk Sprogn&aelig;vn &amp; 
+   Aschehoug Dansk Forlag A/S</publisher-name>, 
+  <edition>Second Edition</edition>, 
+  <year iso-8601-date="1996">1996</year></mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

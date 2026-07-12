@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xmlns-tbx.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xmlns-tbx]
+=== `@xmlns:tbx` TBX Namespace Declaration
+
+This is not an attribute, but the namespace pseudo-attribute. The value provides a prefix and URI to use for the TBX elements. All namespace prefixes must be associated with a URL. This namespace is required on a top-level element if the TBX-namespaced elements are to be used.
+
+#### FIXED (not settable) on many elements; click for list and usage
+
+<<element-adoption,`<adoption>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-standard,`<standard>`>>, <<element-tbx-termEntry,`<tbx:termEntry>`>>
+|===
+| Value| Meaning
+
+| urn:iso:std:iso:30042:ed-1| The URI that goes with the “`tbx`” prefix.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

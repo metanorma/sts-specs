@@ -1,0 +1,118 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/ics.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-ics]
+=== `<ics>` ICS Code Number
+
+Identifies the subject matter of the standard using a decimal code from the _International Classification for Standards_. When more than one ICS code describes a standard, the element `<ics>` (or the element <<element-ics-wrap,`<ics-wrap>`>>) repeats.
+
+#### Usage/Remarks
+ICS codes always apply to the entire standard, not to a specific element within the standard.
+##### Content of an ICS Code
+
+An ICS code consists of a sequence of decimal digits and points (full stops/periods). An ICS code may denote a field (two decimal digits), a group (two digits, a point, and three digits), or a sub-group (two digits, a point, three digits, a point, and two digits).
+##### Code versus Code and Description
+
+When NISO STS was being designed, it became clear that some standards organizations felt that only numeric ICS codes should be stored in the XML, while other organizations wished to record both the decimal code and the natural language expansion (description/name/title) of that code. So NISO STS has been designed to be used either way: ICS decimal codes can be stored in the <<element-ics,`<ics>`>> element in the standard’s metadata. Alternatively, an <<element-ics-wrap,`<ics-wrap>`>> grouping element can be used to hold both an ICS decimal code (<<element-ics,`<ics>`>>) and the expansion of that code (<<element-ics-desc,`<ics-desc>`>>). The <<element-ics-desc,`<ics-desc>`>> element can take a language attribute (<<attribute-xml-lang,`@xml:lang`>>) to name the language of the description/name/title.
+
+#### Related Elements
+
+NISO STS standards metadata describe key concepts that are _not ICS terms_ as either keywords (inside the <<element-kwd-group,`<kwd-group>`>> element) or as subjects (inside <<element-subj-group,`<subj-group>`>>). ICS codes use their own ICS-specific elements: <<element-ics-wrap,`<ics-wrap>`>>, <<element-ics,`<ics>`>>, and <<element-ics-desc,`<ics-desc>`>>.
+
+#### Attributes
+
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ics-wrap,`<ics-wrap>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  ics          (#PCDATA %ics-elements;)*                    >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### Simple ICS code
+
+[source,xml]
+....
+...
+<reg-meta originator="CEN" id="profile.reg">
+ ...
+ <secretariat>...</secretariat>
+ <ics>13.110</ics>
+ <std-xref type="supersedes">
+  <std-ref>EN ISO 13849-1:2006</std-ref>
+ </std-xref>
+ <permissions>
+  <copyright-statement>All rights of exploitation in any form 
+   and by any means reserved worldwide for CEN national
+   Members.</copyright-statement>
+  <copyright-year>2008</copyright-year>
+  <copyright-holder>CEN</copyright-holder>
+ </permissions>
+</reg-meta>
+...
+....
+#### ICS code with two separate descriptions in Finnish and English
+
+[source,xml]
+....
+...
+<nat-meta originator="SFS">
+...
+<secretariat>...</secretariat>
+<ics-wrap>
+<ics>03.220.30</ics>
+<ics-desc xml:lang="fi">Rautatiekuljetus</ics-desc>
+</ics-wrap>
+<ics-wrap>
+<ics>03.220.30</ics>
+<ics-desc xml:lang="en">Transport by rail</ics-desc>
+</ics-wrap>
+</nat-meta>
+...
+....
+#### Nested ICS codes and descriptions identifying classifications and sub-classifications
+
+[source,xml]
+....
+...
+<nat-meta originator="SFS">
+...
+<secretariat>...</secretariat>
+<ics-wrap>
+<ics>11</ics>
+<ics-desc xml:lang="de">Medizintechnik</ics-desc>
+<ics-wrap>
+<ics>11.040</ics>
+<ics-desc>Medizinische Ger&auml;te</ics-desc>
+<ics-wrap>
+<ics>11.040.25</ics>
+<ics-desc>Injektionsger&auml;te. Kan&uuml;len. Katheter</ics-desc>
+</ics-wrap>
+</ics-wrap>
+</ics-wrap>
+</nat-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

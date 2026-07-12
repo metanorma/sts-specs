@@ -1,0 +1,69 @@
+== Content
+
+This clause covers the conventions for prose content inside the document
+body: whitespace, paragraph structure, character formatting, notes,
+examples, lists, quotations, graphics, boxed text, code, and preformatted
+text.
+
+=== Spaces, punctuation, and formatting
+
+Use Unicode for all characters. Non-breaking spaces use `U+00A0`.
+Soft hyphens use `U+00AD`. Avoid using ASCII hyphens where an en dash
+(`U+2013`) or em dash (`U+2014`) is meant.
+
+=== `<label>` and `<title>`
+
+Sections, tables, figures, and formulae carry a <<element-label,`<label>`>>
+(e.g., "7", "Table 1", "Figure 3") and a <<element-title,`<title>`>>.
+
+=== Paragraphs
+
+Use <<element-p,`<p>`>> for paragraphs. Do not embed block-level structures
+inside `<p>`.
+
+=== Symbols
+
+Inline symbols are tagged using <<element-named-content,`<named-content>`>>
+with `@content-type="symbol"` or as MathML via
+<<element-inline-formula,`<inline-formula>`>>.
+
+=== Notes and examples
+
+Normative notes use <<element-normative-note,`<normative-note>`>>;
+informative notes use <<element-non-normative-note,`<non-normative-note>`>>.
+The same pattern applies to examples
+(<<element-normative-example,`<normative-example>`>>,
+<<element-non-normative-example,`<non-normative-example>`>>).
+
+=== Lists
+
+Use <<element-list,`<list>`>> with `@list-type` of `bullet`, `order`,
+`alpha-lower`, `alpha-upper`, `roman-lower`, `roman-upper`, or `arabic`.
+Each <<element-list-item,`<list-item>`>> carries a <<element-label,`<label>`>>
+when applicable.
+
+=== Quotations
+
+Block quotations use <<element-disp-quote,`<disp-quote>`>>. Inline
+quotations are wrapped in typographic quotation marks; the
+<<element-attrib,`<attrib>`>> element holds the attribution.
+
+=== Graphics
+
+Inline graphics use <<element-inline-graphic,`<inline-graphic>`>>; block
+graphics live inside a <<element-fig,`<fig>`>> or
+<<element-supplementary-material,`<supplementary-material>`>> wrapper.
+
+=== Boxed text
+
+Use <<element-boxed-text,`<boxed-text>`>> for sidebar-like content.
+
+=== Code
+
+Use <<element-code,`<code>`>> for block code and
+<<element-inline-code,`<inline-code>`>> for inline code (NISO STS 1.2).
+
+=== Preformatted text
+
+Use <<element-preformat,`<preformat>`>> for verbatim text where
+whitespace must be preserved.

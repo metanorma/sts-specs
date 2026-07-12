@@ -1,0 +1,92 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-org-loc.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-org-loc]
+=== `<std-org-loc>` Standards Organization Location
+
+Physical location(s) of a standards organization.
+
+#### Related Elements
+
+Several elements inside the container element <<element-std-org,`<std-org>`>> provide the name and location of a publishing or adopting standards organization: <<element-std-org-name,`<std-org-name>`>> provides an official, typically longer, name of an organization (“International Business Machinery”). <<element-std-org-abbrev,`<std-org-abbrev>`>> provides a short name or acronym for the organization (“IBM”). <<element-std-org-loc,`<std-org-loc>`>> names one or more locations where the organization operates, which may be as small as a city name or may include a complete address.
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-org,`<std-org>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Address Elements <<element-addr-line,`<addr-line>`>> <<element-addr-line,Address Line>> <<element-city,`<city>`>> <<element-city,City (in an address)>> <<element-country,`<country>`>> <<element-country,Country (in an address)>> <<element-fax,`<fax>`>> <<element-fax,Fax Number (in address)>> <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-wrap,`<institution-wrap>`>> <<element-institution-wrap,Institution Wrapper>> <<element-phone,`<phone>`>> <<element-phone,Phone Number: in an Address>> <<element-postal-code,`<postal-code>`>> <<element-postal-code,Postal Code: in an Address>> <<element-state,`<state>`>> <<element-state,State or Province (in an address)>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-org-loc  (#PCDATA %std-org-loc-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA | addr-line | city | country | fax | institution | institution-wrap | phone | postal-code | state | email | ext-link | uri)*
+
+#### Tagged Samples
+
+#### Name and address of single standards organization
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>...</title-wrap>
+ <std-ident>...</std-ident>
+ <std-org-group>
+  ...
+  <std-org std-org-type="sdo" std-org-role="lead">
+   <std-org-name>American Petroleum Institute</std-org-name>
+   <std-org-abbrev>API</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>1220 L Street, N.W.</addr-line>
+    <city>Washington</city>
+    <state>D.C.</state>
+    <postal-code>20005</postal-code>
+    <uri>http://www.api.org/</uri></std-org-loc>
+  </std-org>
+ </std-org-group>
+ ...
+</std-meta>
+...
+....
+#### Two organizations named in `<std-org-group>`
+
+[source,xml]
+....
+...   
+<std-org-group>
+ <std-org std-org-level="1" std-org-role="co-producer" std-org-type="sdo">
+  <std-org-name>American Society of Mechanical Engineers</std-org-name>
+  <std-org-abbrev>ASME</std-org-abbrev>
+  <std-org-loc
+   ><addr-line>2 Park Ave.</addr-line>
+   <city>New York</city>
+   <state>NY</state>
+   <postal-code>10016</postal-code>
+   <uri>https://www.asme.org/</uri></std-org-loc>
+ </std-org>
+
+ <std-org std-org-level="2" std-org-role="co-producer" std-org-type="sdo">
+  <std-org-name>CSA Group</std-org-name>
+  <std-org-abbrev>CSA</std-org-abbrev>
+  <std-org-loc
+   ><addr-line>5060 Spectrum Way, Suite 100</addr-line>
+   <city>Mississauga</city>
+   <state>Ontario</state>
+   <country>Canada</country>
+   <postal-code>L4W 5N6</postal-code>
+   <uri>http://www.csagroup.org/</uri></std-org-loc>
+ </std-org>
+</std-org-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

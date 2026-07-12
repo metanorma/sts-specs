@@ -1,0 +1,69 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-xSource.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-xSource]
+=== `<tbx:xSource>` External Source (TBX)
+
+The `<tbx:xSource>` element is a hyperlinking element that points,through the <<attribute-xtarget,`@xtarget`>> attribute, to an external source of information.
+
+#### Usage/Remarks
+##### Content/Display
+
+Typically, this element will be rendered in the published text with the label “*See:*” before it. The element content should contain the desired display text of the link:
+[source,xml]
+....
+<tbx:xSource xtarget="http://www.example.com/source/dictionary.html">Dictionary definition</tbx:xSource>
+....
+##### Linking
+
+The required <<attribute-xtarget,`@xtarget`>> attribute will hold the URI for the actual link.
+
+#### Attributes
+
+* <<attribute-xtarget,`@xtarget`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-langSet,`<tbx:langSet>`>>, <<element-tbx-termEntry,`<tbx:termEntry>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.xSource; 
+                        (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### `<tbx:xSource>` provides a link to the `<tbx:source>`
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a210.14">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>any event or series of events that disrupt ecosystem, community, or population
+      structure and alters the physical environment</tbx:definition>
+    <tbx:source>U.S. ENVIRONMENTAL PROTECTION AGENCY. <italic>Terms of Environment: Glossary,
+      Abbreviations and Acronyms</italic> online, viewed 2010-07-29].</tbx:source>
+    <tbx:xSource xtarget="http://www.epa.gov/OCEPAterms/dterms.html">Available from:
+      http://www.epa.gov/OCEPAterms/dterms.html.</tbx:xSource>
+    <tbx:tig>
+      <tbx:term id="a210.14-1">disturbance</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:pronunciation>/dıˈstɜ:bəns/</tbx:pronunciation>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

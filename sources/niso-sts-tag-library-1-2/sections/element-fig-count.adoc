@@ -1,0 +1,70 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/fig-count.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-fig-count]
+=== `<fig-count>` Figure Count
+
+Number of <<element-fig,`<fig>`>> elements that appear in the standards document.
+
+#### Usage/Remarks
+##### Best Practice
+
+Although a NISO STS standards-producing organization could choose to record _all_ the counts of objects in a standard using the <<element-count,`<count>`>> element, Best Practice is to use the specific count elements (<<element-fig-count,`<fig-count>`>>, <<element-equation-count,`<equation-count>`>>, <<element-word-count,`<word-count>`>>, etc.) whenever possible, using the <<element-count,`<count>`>> element only for ad hoc counts, organization-specific counts, standard-specific counts, and similar.
+
+#### Related Elements
+
+Inside the <<element-counts,`<counts>`>> container element are the counts of various components of the document: the generic count element <<element-count,`<count>`>> (for which the <<attribute-count-type,`@count-type`>> names what is being counted) and the specifically-named counting elements: <<element-fig-count,`<fig-count>`>> is the number of labeled figures (see definition of <<element-fig,`<fig>`>>). Do not include unlabeled graphics such as images embedded in table cells in the count of figures. Also do not make this the count of images referenced inside a figure, e.g., if a <<element-fig,`<fig>`>> has four panels (a-d) and each is a separate image file, the <<element-fig-count,`<fig-count>`>> is “`1`”, not “`4`”. <<element-table-count,`<table-count>`>> is the number of tables. Do not include arrays or uncaptioned/untitled tables in this count. <<element-equation-count,`<equation-count>`>> is the number of display equations (<<element-disp-formula,`<disp-formula>`>>). Do not include inline equations in the count (<<element-inline-formula,`<inline-formula>`>>). If you have a display equation that consists of multiple MathML objects, this counts as one equation; the <<element-equation-count,`<equation-count>`>> is “`1`”. <<element-ref-count,`<ref-count>`>> is either the number of references or (more properly) the number of citation elements _ within the bibliographic reference list_. Do not include cases of <<element-std,`<std>`>>, <<element-mixed-citation,`<mixed-citation>`>>, or <<element-element-citation,`<element-citation>`>> elements that appear outside of <<element-ref-list,`<ref-list>`>>. <<element-page-count,`<page-count>`>> is the page count of the print or PDF item, including all Roman and Arabic number pages. <<element-word-count,`<word-count>`>> is the number of words in the document.
+When a count needs to be divided into sub-counts, e.g., color vs. black-and-white figures, use the specific count element <<element-fig-count,`<fig-count>`>> for the total number of figures and then use separate <<element-count,`<count>`>> elements for the subsets, e.g.:
+[source,xml]
+....
+<count count-type="fig-color" count="3"/>
+<count count-type="fig-bw" count="7"/>
+<fig-count count="10"/>
+....
+
+#### Attributes
+
+* <<attribute-count,`@count`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-counts,`<counts>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  fig-count    EMPTY                                        >
+....
+
+#### Tagged Sample
+
+##### Number of `<fig>`s
+Preferred predefined count elements
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <counts>
+  <fig-count count="1"/>
+  <table-count count="7"/>
+  <equation-count count="141"/>
+  <ref-count count="163"/>
+  <page-count count="151"/>
+ </counts>
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

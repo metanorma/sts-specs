@@ -1,0 +1,105 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/compound-subject.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-compound-subject]
+=== `<compound-subject>` Compound Subject Name
+
+Wrapper element to hold all the parts of a multi-part subject (for example, a subject term and the code representing that term).
+
+#### Usage/Remarks
+##### When to Use
+
+A `<compound-subject-part>` _may_ be used if a subject has multiple parts, but need not be used unless both parts need to be captured: If a subject is only a word or phrase (`Neuroscience`, `Physical Sciences`), the simple <<element-subject,`<subject>`>> element can be used to capture this information (“`<subject>Neuroscience</subject>`” or “`<subject>Physical Sciences</subject>`”). If a subject contains both a term and a code (`A11 Permeability`) but only _one_ of those objects needs to be captured, a <<element-subject,`<subject>`>> element may still be used, to record either the code (“`<subject>A11</subject>`”) or the subject (“`<subject>Permeability</subject>`”). If such a compound subject is considered to be a single subject, the <<element-subject,`<subject>`>> element may also be used: “`<subject>A11 Permeability</subject>`”. If a subject contains both a term and a code, and it is useful to record _both_ the code and the term separately, each can be captured as a `<compound-subject-part>` inside a <<element-compound-subject,`<compound-subject>`>>. (See tagged examples below.)
+#### Language in Subjects
+
+A standard may take multiple sets of subject codes, with the <<attribute-subj-group-type,`@subj-group-type`>>, <<attribute-specific-use,`@specific-use`>>, or <<attribute-xml-lang,`@xml:lang`>> attributes used to discriminate between them. The <<element-compound-subject,`<compound-subject>`>> element does not take the <<attribute-xml-lang,`@xml:lang`>> attribute; that is reserved for the `<subj-group>`. This means that subjects must be sorted by language and entered in language groups.
+#### Vocabulary Attributes
+
+For controlled vocabularies, two attributes on <<element-subj-group,`<subj-group>`>> name the source vocabulary: <<attribute-vocab,`@vocab`>> and <<attribute-vocab-identifier,`@vocab-identifier`>>. On the <<element-compound-subject,`<compound-subject>`>> element, two lower-attributes provide more information about the specific subject term: <<attribute-vocab-term,`@vocab-term`>> — This attribute holds the canonical form of the term. (Note: The content of the element to which this attribute is attached is the free prose version of the vocabulary or taxonomic term.) <<attribute-vocab-identifier,`@vocab-identifier`>> — This attribute holds a unique identifier and possibly a pointer to the named vocabulary term, for vocabularies that provide term-level access.
+###### Vocabulary Attributes Best Practice
+
+If the subject terms in a `<subj-group>` come from a controlled vocabulary, taxonomy, ontology, database, term list, or similar formally defined term source, the <<attribute-vocab,`@vocab`>> attribute (and if possible, the <<attribute-vocab-identifier,`@vocab-identifier`>> attribute) should be used on the `<subj-group>` element to name the source.
+If this source of terms uses a subject-term-specific identifier, then also record the specific term using the <<attribute-vocab-term,`@vocab-term`>> and <<attribute-vocab-term-identifier,`@vocab-term-identifier`>> attributes on the subject term (`<compound-subject>`). If the `<subj-group>` does not include the vocabulary identification attributes, those attributes (<<attribute-vocab,`@vocab`>> and <<attribute-vocab-identifier,`@vocab-identifier`>>) may also be used on the `<compound-subject>` element.
+If the subject terms come from, or are specific to, a field of study that can be named (particularly where different fields might define the same term differently), name the field of study in the <<attribute-subj-group-type,`@subj-group-type`>> attribute (“`structural engineering`”, “`mechanical engineering`”, “`bird watching`”). Such terms are typically, but not always, informally defined.
+Although subject terms may be from an uncontrolled vocabulary, this is less likely than for terms such as keywords, since subject codes such as IPC, UNSPSC, UNS, etc. are controlled by defined vocabularies. If the subject terms are uncontrolled, either omit the <<attribute-vocab,`@vocab`>> attribute on `<subj-group>` or use the value “`uncontrolled`”.
+
+#### Related Elements
+
+*Types of Subjects:* This Tag Set contains several differently-structured types of subjects: `<subject>` Used with simple subjects: words or phrases. <<element-compound-subject,`<compound-subject>`>> Used with multi-part subjects, such as a subjects that contains both a code and its expansion/description/name/title. <<element-ics,`<ics>`>> and <<element-ics-wrap,`<ics-wrap>`>> Used to hold ICS codes. The ICS elements were originally part of ISO STS, which did not use other subject groups, so the element <<element-ics,`<ics>`>> and <<element-ics-wrap,`<ics-wrap>`>> are not _inside_ <<element-subj-group,`<subj-group>`>>, but are at the same level as these groupings.
+*Keywords vs Subjects Terms:* Subject terms (collected within a <<element-subj-group,`<subj-group>`>> element) name broad classifications, categories, topics, or themes that describe or classify a standard. Keywords (collected within a <<element-kwd-group,`<kwd-group>`>> element) contain words from the narrative text or words (such as broader and narrower terms) related to that text.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-vocab,`@vocab`>>
+* <<attribute-vocab-identifier,`@vocab-identifier`>>
+* <<attribute-vocab-term,`@vocab-term`>>
+* <<attribute-vocab-term-identifier,`@vocab-term-identifier`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-subj-group,`<subj-group>`>>
+#### Description
+
+<<element-compound-subject-part,`<compound-subject-part>`>> <<element-compound-subject-part,Compound Subject Part Name>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  compound-subject
+                        %compound-subject-model;                     >
+....
+#### Expanded Content Model
+
+(compound-subject-part+)
+
+#### Tagged Samples
+
+#### IPC subject codes/descriptions
+
+[source,xml]
+....
+...
+<subj-group vocab="ipc">
+ <compound-subject>
+  <compound-subject-part content-type="code">B82B1/00</compound-subject-part>
+  <compound-subject-part content-type="value">Nano structures</compound-subject-part>
+ </compound-subject>
+
+ <compound-subject>
+  <compound-subject-part content-type="code">H01L21/02</compound-subject-part>
+  <compound-subject-part content-type="value">Manufacture or treatment of 
+   semiconductor devices or of parts thereof</compound-subject-part>
+ </compound-subject>
+</subj-group>
+...
+....
+#### UNSPSC codes with their descriptions given using `<compound-subject>`
+
+[source,xml]
+....
+...
+<subj-group vocab="UNSPSC">
+ <compound-subject>
+  <compound-subject-part content-type="code">30102204</compound-subject-part>
+  <compound-subject-part content-type="value">Steel Plate</compound-subject-part>
+ </compound-subject>
+</subj-group>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Subject Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

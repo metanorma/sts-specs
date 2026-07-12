@@ -1,0 +1,69 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/day.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-day]
+=== `<day>` Day (in a citation)
+
+Numeric, two-digit value of the day of the month, for example, “`03`”, “`25`”.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-date,`<date>`>>, <<element-date-in-citation,`<date-in-citation>`>>, <<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-string-date,`<string-date>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  day          (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### Publication date in citation
+[source,xml]
+....
+...
+<p>... This method for string collation was described 
+with tables in 
+ <mixed-citation publication-type="book"
+  ><source>R&egrave;gles du classement alphab&eacute;tique 
+   en langue fran&ccedil;aise et proc&eacute;dure 
+   informatis&eacute;e pour le tri</source>, 
+  <string-name><given-names>Alain</given-names> 
+   <surname>LaBont&eacute;</surname></string-name>, 
+  <collab>Minist&egrave;re des Communications du 
+   Qu&eacute;bec</collab>, <year iso-8601-date="1988-08-19"
+  >1988</year>-<month>08</month>-<day>19</day>, ISBN 
+  <isbn>2-550-19046-7</isbn></mixed-citation>. 
+A public-domain subkey reduction technique is described 
+(with several examples) in 
+ <mixed-citation publication-type="book"
+  ><source>Technique de r&eacute;duction &mdash; Tris 
+   informatiques &agrave; quatre cl&eacute;s</source>, 
+  <string-name><given-names>Alain</given-names> 
+   <surname>LaBont&eacute;</surname></string-name>, 
+  <collab>Minist&egrave;re des Communications du 
+   Qu&eacute;bec</collab>, 
+  <year iso-8601-date="1989-06">1989</year>-<month>06</month>, 
+  ISBN <isbn>2-550-19965-0</isbn></mixed-citation>. 
+See also ...</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

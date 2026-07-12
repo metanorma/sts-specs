@@ -1,0 +1,72 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/compound-kwd-part.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-compound-kwd-part]
+=== `<compound-kwd-part>` Compound Keyword Part
+
+Individual component of a multi-part keyword (for example, a code, the code’s meaning).
+
+#### Usage/Remarks
+##### Attribute Best Practice
+
+The <<attribute-content-type,`@content-type`>> attribute should be used to indicate the type of the various keyword parts, for example, “`text`”, “`value`”, “`description`”, “`code`”, etc.
+
+#### Related Elements
+
+One <<element-compound-kwd-part,`<compound-kwd-part>`>> element is used to mark each component of a complex keyword that is contained within a <<element-compound-kwd,`<compound-kwd>`>>.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-compound-kwd,`<compound-kwd>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  compound-kwd-part
+                        (#PCDATA %compound-kwd-part-elements;)*      >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | named-content | styled-content | fn | target | tbx:entailedTerm | xref | sub | sup)*
+
+#### Tagged Sample
+
+##### INSPEC keywords added by SDO
+[source,xml]
+....
+...
+<kwd-group id="KG1" originator="ASME" vocab="Inspec"
+  vocab-identifier="http://www.theiet.org/resources/inspec/about/records/ithesaurus.cfm"
+  xml:lang="en">
+ <compound-kwd id="KG1.1">
+  <compound-kwd-part content-type="code">A7865P</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of other 
+   inorganic semiconductors and insulators (thin films/low dimensional 
+   structures)</compound-kwd-part>
+ </compound-kwd>
+
+ <compound-kwd id="KG1.2">
+  <compound-kwd-part content-type="code">A7865T</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of organic
+   compounds and polymers (thin films/low dimensional structures)</compound-kwd-part>
+ </compound-kwd>
+</kwd-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

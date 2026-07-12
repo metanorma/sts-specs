@@ -1,0 +1,26 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/notation.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-notation]
+=== `@notation` Notation
+
+Indicates that the content of the associated element will be coded in one of the named notations.
+
+#### Usage/Remarks
+Because the use of characters such as “`<`” and “`&`” can cause problems when TeX (or LaTeX) is embedded within XML, it is Best Practice to surround all TeX and LaTeX by a `CDATA` section.
+
+#### OPTIONAL on element:  <<element-tex-math,`<tex-math>`>>
+
+|===
+| Value| Meaning
+
+| LaTeX| The content of the associated element will be in LaTeX.
+| TEX| The content of the associated element will be in TeX.
+| TeX| The content of the associated element will be in TeX.
+| tex| The content of the associated element will be in TeX.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

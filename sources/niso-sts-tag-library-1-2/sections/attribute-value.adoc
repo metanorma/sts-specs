@@ -1,0 +1,215 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/value.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-value]
+=== `@value` Value (TBX)
+
+The `@value` attribute is rewired with `EMPTY` elements (flags that have no content) to supply the semantic content for the element. The `@value` attributes for such elements allow a limited set of values, sometimes referred to as a fixed value list or as “picklist values”.
+
+#### Usage/Remarks
+The values of the `@value` attribute vary based on the element to which the `@value` attribute is assigned. For example, with the <<element-tbx-partOfSpeech,`<tbx:partOfSpeech>`>> element, a value might be: “`<tbx:partOfSpeech value='noun'/>`”. Whereas, for a <<element-tbx-grammaticalNumber,`<tbx:grammaticalNumber>`>> element, a value might be: “`<tbx:grammaticalNumber value='singular'/>`”
+
+#### REQUIRED on element:  <<element-tbx-grammaticalGender,`<tbx:grammaticalGender>`>>
+
+|===
+| Value| Meaning
+
+| feminine| Gender is feminine, such as the gender of “door” in French (_la porte_)
+| masculine| Gender is masculine, such as the gender of “world” in French (_le monde_)
+| neuter| Gender is neuter, such as the gender of “car” in German (_ein Auto_)
+| masculine-feminine| The value “`masculine/feminine`” is based on the decision taken by the Académie française on Thursday 28 February
+                        2019, in which it adopted a report about the _féminisation des noms de métiers et de fonctions_ (http://www.academie-francaise.fr/sites/academie-francaise.fr/files/rapport_feminisation_noms_de_metier_et_de_fonction.pdf)
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### REQUIRED on element:  <<element-tbx-grammaticalNumber,`<tbx:grammaticalNumber>`>>
+
+|===
+| Value| Meaning
+
+| plural| Term is used in the plural, typically as a plural noun.
+| singular| Term is used in the singular, typically as a singular noun.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### REQUIRED on element:  <<element-tbx-normativeAuthorization,`<tbx:normativeAuthorization>`>>
+
+|===
+| Value| Meaning
+
+| admittedTerm| An admitted term (or designation) is synonymous with the preferred term, but is considered
+                        by the standardizing committee to be a less desirable term than the preferred term.
+                        An admitted term is an acceptable term that has no negative connotations or other
+                        negative properties that would qualify it as a deprecated term. Admitted terms are
+                        often commonly-used synonyms of standardized (preferred) terms. If there are several
+                        admitted terms, include them in the entry in the order of preference. Admitted terms
+                        can occur in the body of the standard, but the preferred term should be used more
+                        frequently.
+| deprecatedTerm| A deprecated term (or designation) is synonymous with the preferred term, but is rated
+                        as undesired by the standards committee. Deprecated terms include obsolete terms,
+                        superseded terms, archaic terms, scientific-technical slang, ambiguous terms, terms
+                        with negative connotations, terms which are culturally-specific or used by a restricted
+                        user group within the target community, and any term that does not facilitate effective,
+                        clear communication. Deprecated terms and designations should not be used in the body
+                        of the standard.
+| preferredTerm| An indicator that the associated term (or other designation) is the primary designation
+                        for the concept described in the entry. If there is only one designation in the entry,
+                        it is automatically the preferred term and there is no need to mark it as such by
+                        using this element. It is recommended that the preferred term fulfills the criteria
+                        described in Clause 6.2.1 of _ISO 10241-1 - Terminological entries in standards -- Part 1: General requirements
+                           and examples of presentation_. If the selection of more than one preferred term is unavoidable, enter the preferred
+                        terms in the order of preference. Ideally, among all the terms in an entry, only the
+                        preferred term should be used in the body of the standard.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### REQUIRED on element:  <<element-tbx-partOfSpeech,`<tbx:partOfSpeech>`>>
+
+|===
+| Value| Meaning
+
+| adj| Part of speech of words that evoke properties of nouns, such as “big” and “glossy”.
+| adv| Part of speech of words that evoke the mode of action of the verb, for instance, “completely”
+                        and “normally”.
+| noun| Part of speech of words that designate a person, place, action, property, or thing
+                        etc.
+| verb| Part of speech of words that evoke an action, state, or occurrence, and forming the
+                        main part of the predicate of a sentence, such as “manage”, “perform”, and “assemble”.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### REQUIRED on element:  <<element-tbx-termType,`<tbx:termType>`>>
+
+|===
+| Value| Meaning
+
+| abbreviation| An abbreviated form of a term that is formed by omitting letters from the full form,
+                        for example: “vol” for “volume”.
+| acronym| An abbreviated form of a term that is made up of the initial letters of components
+                        of its full form, for example, “NDA” for “non-disclosure agreement”.
+| equation| An expression used to represent a concept based on a statement that two mathematical
+                        expressions are, for instance, equal as identified by the equal sign (=), or assigned
+                        to one another by a similar sign.
+| formula| Figures, symbols or the like used to express a concept briefly, such as a mathematical
+                        or chemical formula.
+| fullForm| The complete presentation of a term for which there is an abbreviated form or an acronym.
+                        If a term has no abbreviation or acronym documented in the entry, there is no need
+                        to indicate the full form.
+| symbol| A designation of a concept by letters, numerals, pictograms or any combination thereof.
+| variant| One of the alternate forms of a term, due to, differences in spelling, hyphenation,
+                        capitalization, spacing, and so forth.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+
+#### Tagged Samples
+
+#### Showing value types (such as “noun”, “verb”, “adj”) used with the `<tbx:partOfSpeech>` element
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a212.4134">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>to produce <tbx:entailedTerm>flame (4.133)</tbx:entailedTerm></tbx:definition>
+    <tbx:note>The term “flame” also represents the concept defined in 4.133.</tbx:note>
+    <tbx:tig>
+      <tbx:term id="a212.4134-1">flame</tbx:term>
+      <tbx:partOfSpeech value="verb"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### Showing value types for the `<tbx:partOfSpeech>` element and adding gender values (“feminine”, “masculine”, etc.) for the `<tbx:grammaticalGender>` element
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### Showing value types for the term status (“deprecatedTerm”, “preferredTerm”, etc.)
+                  for the `<tbx:normativeAuthorization>` element
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a222.1112">
+  <tbx:xGraphic xtarget="images/gantry-crane4.jpg"/>
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>crane with the bridge girders supported on the rail tracks by
+      legs</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a222.1112-1">gantry crane</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a222.1112-2">portal bridge crane</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+    </tbx:tig>
+  </tbx:langSet>
+  ...
+</tbx:termEntry>
+....
+#### Showing value types for the number (“singular”, “plural”, etc.) for the `<tbx:grammaticalNumber>` element
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a229.131">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>grain of <italic>Avena sativa</italic> L.</tbx:definition>
+    <tbx:source>ISO 11520-2:2001, 3.10.</tbx:source>
+    <tbx:tig>
+      <tbx:term id="a229.131-1">oats</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalNumber value="singular"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### Showing three sets of values: parts of speech (“noun”, “verb”, etc.) for `<tbx:partOfSpeech>`, status of the term (“preferredTerm”, “deprecatedTerm”, etc.) for `<tbx:normativeAuthorization>`, and type of the term (“acronym”, “formula”, etc.) for `<tbx:termType>`
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

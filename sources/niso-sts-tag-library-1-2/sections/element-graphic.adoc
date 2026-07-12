@@ -1,0 +1,150 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/graphic.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-graphic]
+=== `<graphic>` Graphic
+
+Description of and pointer to an external file containing a still image.
+
+#### Usage/Remarks
+The <<attribute-is-form,`@is-form`>> attribute can be used to indicate that the graphic contains a form. What constitutes a “form” is not defined by NISO STS.
+##### When Content is a Form
+
+Two attributes are available to describe the graphic when it contains a form:
+* <<attribute-is-form,`@is-form`>> can indicate that the graphic is a form.  What constitutes a “form” is not defined
+                     by NISO STS.
+* <<attribute-form-type,`@form-type`>> can identify the type of the form. If the form is not one of the listed types, <<attribute-custom-type,`@custom-type`>> may provide the type (see below).
+##### Custom Form Type (<<attribute-custom-type,`@custom-type`>>)
+
+<<attribute-form-type,`@form-type`>> has as its values a fixed list of form types. If your form is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the form type. Set the value of <<attribute-form-type,`@form-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any form type you require. For example:
+[source,xml]
+....
+<graphic is-form="form" form-type="custom" 
+    custom-type="template" xlink:href="..." .../>
+....
+
+#### Related Elements
+
+This Suite contains several elements that describe and point to non-XML material: <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-media,`<media>`>>, and <<element-inline-media,`<inline-media>`>>. The elements <<element-graphic,`<graphic>`>> and <<element-inline-graphic,`<inline-graphic>`>> contain a pointer to a still image (such as a photograph, diagram, line drawing, etc.) that is part of the document. The elements <<element-media,`<media>`>> and <<element-inline-media,`<inline-media>`>> contain a pointer to a non-XML, frequently binary, object (such as a movie, audio clip, dataset, pronunciation file, or other non-XML format).
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-form-type,`@form-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-is-form,`@is-form`>>
+* <<attribute-mime-subtype,`@mime-subtype`>>
+* <<attribute-mimetype,`@mimetype`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>> (REQUIRED)
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>> <<element-legend,`<legend>`>> <<element-legend,Legend>> Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>> <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>> <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>> <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  graphic      %graphic-model;                              >
+....
+#### Expanded Content Model
+
+(alt-text | long-desc | abstract | email | ext-link | uri | caption | legend | attrib | permissions | object-id | label | kwd-group | subj-group)*
+
+#### Tagged Samples
+
+#### As part of typical figure
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### Within figure whose caption includes table
+
+[source,xml]
+....
+...
+<sec id="annB.1.1">
+ <label>B.1.1</label>
+ <title>Scanners with single axis reading diagram</title>
+ <p>This category comprises all scanners with 
+  a single, fixed reading beam ...</p>
+ ...
+ <fig id="fB.1">
+  <label>Figure B.1</label>
+  <caption>
+   <title>Reading diagram for single-axis scanner</title>
+   <p><table-wrap>
+     <table>
+      <thead>
+       <tr><th align="center" colspan="2">Scanner with single 
+        axis reading diagram</th></tr>
+       <tr><th align="center">Parameter</th>
+        <th align="center">Term</th></tr>
+      </thead>
+      <tbody>
+       <tr><td align="center">A</td>
+        <td>minimum reading distance</td></tr>
+       <tr><td align="center">B</td>
+        <td>depth of field</td></tr>
+       <tr><td align="center">R</td>
+        <td>maximum reading distance</td></tr>
+      </tbody>
+     </table>
+    </table-wrap></p>
+  </caption>
+  <graphic position="anchor" xlink:href="f-b-1.png"/>
+ </fig>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Figures, Graphics, and Multimedia
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

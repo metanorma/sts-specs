@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/object-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-object-type]
+=== `@object-type` Object Type (in Related Object)
+
+Type of object (for example, “`table`”, “`figure`”, “`sidebar`”) that is the target of the <<element-related-object,`<related-object>`>> element.
+
+#### OPTIONAL on element:  <<element-related-object,`<related-object>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names the type of related object, such as “table”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

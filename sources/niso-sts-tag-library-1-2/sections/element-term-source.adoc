@@ -1,0 +1,67 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/term-source.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-term-source]
+=== `<term-source>` Term Source Elements
+
+Origin of the term described in a <<element-term-display,`<term-display>`>> element inside a terms and definitions section.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>> (default = en)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-term-display,`<term-display>`>>, <<element-term-display-string,`<term-display-string>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  term-source  (#PCDATA %term-source-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | sub | sup)*
+
+#### Tagged Sample
+
+##### With definition to qualify a term
+[source,xml]
+....
+...
+<term-sec>
+ <label>3.16</label>
+ <term-display>
+  <term>consensus</term>
+  <def>
+   <p>general agreement, characterized by the absence of sustained opposition 
+    to substantial issues by any important part of the concerned interests and 
+    by a process that involves seeking to take into account the views of all
+    parties concerned and to reconcile any conflicting arguments</p>
+  </def>
+  <non-normative-note>
+   <p>Consensus need not imply unanimity.</p>
+  </non-normative-note>
+  <term-source>ISO/IEC Guide 2:2004, definition 1.7</term-source>
+ </term-display>
+</term-sec>
+...
+....
+
+#### Related Resources
+
+* For a discussion on tagging terms and definitions in a Term Section (<<element-term-sec,`<term-sec>`>>), see Tagging Terms and Definitions.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

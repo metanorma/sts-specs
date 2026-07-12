@@ -1,0 +1,153 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/niso-sts-elem-sec-intro.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-niso-sts-elem-sec-intro]
+=== Introduction to Elements
+
+### Introduction to Elements
+This section describes each element in the NISO STS Tag Sets in alphabetical order of their tag names (i.e., element type names). The tag name is the shorter machine-readable name used in tagged documents, DTD fragments and schemas, and by software; for example, the tag name <<element-p,`<p>`>> is used for the element named <<element-p,Paragraph>>.
+#### Content of an Element Page
+
+Each element is described in a single page that displays: The element’s tag name followed by its longer descriptive name (all on one line), and Sections describing aspects of the element and its usage. Not all elements will show all sections.
+The sections within the page always appear in the following order (if present):
+|===
+| Description (untitled)| Provides a narrative description of the element, that is, it
+                              “defines” the element and may provide information on its usage. This is not intended
+                              to be a formal dictionary definition, but more to provide information about the rationale
+                              for an element and how the element may be used.
+
+| Usage/Remarks| Provides additional information about the element, explanations of similar or
+                              contrasting elements, or instructions for element usage. (See also _Related Elements_ described below.)
+                           
+                           Best Practice notes are identified with a heading such as “Best Practice” or “Common
+                              Practice” and have a colored background for emphasis.
+                           
+                           More complex “Usage/Remarks” sections may contain folded (collapsed) subsections.
+                              Instructions on navigating in this document, including opening and closing collapsed
+                              sections, appear in Navigation.
+                           
+                           Conversion Notes and Technical Notes are explicit _and sometimes 
+                                 very technical_ instructions to people who are mapping between documents
+                              tagged according to this Tag Set and those tagged according to other tag sets; building
+                              conversion software to convert between another tag set and one written
+                              from this Suite; or producing products based on this Suite. These notes may be more
+                              technical than a general reader will need.
+                           
+                           Implementor’s Notes are instructions written to persons creating or
+                              maintaining DTDs or schemas based on the Suite.
+| Related Elements| Contains information about elements associated with or confused with the current element.
+                              For some complex structures, such as two-part definition lists (<<element-def-list,`<def-list>`>>), this section describes all the elements that may make up such a list.
+| Attributes| All of the attributes, if any, available on an element are listed in the order:
+                              
+                              
+                                 First, the attributes that are not part of the other named attribute groups,
+                                 
+                                    “Base Attributes” (which are on virtually all STS elements),
+                                 
+                                 
+                                    “Linking Attributes” (which can be used to make an element a live link),
+                                 
+                                 
+                                    “Namespaces” (which are not technically attributes but which look like attributes),
+                                    and
+                                 
+                                 
+                                    “Miscellaneous non-STS-specific Attributes” (which are also not technically attributes
+                                    but which look like attributes, and are included for completeness).
+                                 
+                              
+                              
+                           
+                           Each line contains the attribute name as it appears in this Tag Set. If you hover
+                              over the name, a more descriptive name appears. If the attribute is required, has
+                              a default value, or has a fixed value, then that is noted after the name. Each attribute
+                              is linked to its description in the Attribute
+                              Section of the Tag Library.
+| Models and Context| The “Models and Context” section provides information on what is allowed inside this
+                              element and where the element may be used.
+                           
+                           
+                              
+                                 
+                                    
+                                       May be contained in
+                                    
+                                    
+                                       A list of the elements that can contain this element (as a direct child). This is
+                                          the inverse of the model description,
+                                          which lists what can be _inside_ this element.
+                                       
+                                    
+                                 
+                                 
+                                    
+                                       Description
+                                    
+                                    
+                                       The description is an English-language explanation of the
+                                          “content” of the element, that is, what is allowed to be inside the
+                                          element. This content description contains the same information in plain English
+                                          that the two Content Models provide in XML syntax.
+                                       
+                                    
+                                 
+                                 
+                                    
+                                       Content Model
+                                    
+                                    
+                                       Contains a copy of the element’s declaration in DTD  syntax, i.e., the
+                                          “content” of the element. This may contain parameters entities, of
+                                          the form “%name;”, which often stand in for commonly-used lists of
+                                          elements. Users not familiar with DTD syntax will likely prefer the
+                                          “Expanded Content Model” or the “Description”.
+                                       
+                                    
+                                 
+                                 
+                                    
+                                       Expanded Content Model
+                                    
+                                    
+                                       Contains a copy of the element’s declaration in DTD  syntax, i.e., the
+                                          “content” of the element with all parameter entities expanded to
+                                          their ultimate values. This shows directly all the elements that the described
+                                          element can contain, and in what combination.| May be contained in| A list of the elements that can contain this element (as a direct child). This is
+                                          the inverse of the model description,
+                                          which lists what can be _inside_ this element.| Description| The description is an English-language explanation of the
+                                          “content” of the element, that is, what is allowed to be inside the
+                                          element. This content description contains the same information in plain English
+                                          that the two Content Models provide in XML syntax.| Content Model| Contains a copy of the element’s declaration in DTD  syntax, i.e., the
+                                          “content” of the element. This may contain parameters entities, of
+                                          the form “%name;”, which often stand in for commonly-used lists of
+                                          elements. Users not familiar with DTD syntax will likely prefer the
+                                          “Expanded Content Model” or the “Description”.| Expanded Content Model| Contains a copy of the element’s declaration in DTD  syntax, i.e., the
+                                          “content” of the element with all parameter entities expanded to
+                                          their ultimate values. This shows directly all the elements that the described
+                                          element can contain, and in what combination.
+| May be contained in| A list of the elements that can contain this element (as a direct child). This is
+                                          the inverse of the model description,
+                                          which lists what can be _inside_ this element.
+| Description| The description is an English-language explanation of the
+                                          “content” of the element, that is, what is allowed to be inside the
+                                          element. This content description contains the same information in plain English
+                                          that the two Content Models provide in XML syntax.
+| Content Model| Contains a copy of the element’s declaration in DTD  syntax, i.e., the
+                                          “content” of the element. This may contain parameters entities, of
+                                          the form “%name;”, which often stand in for commonly-used lists of
+                                          elements. Users not familiar with DTD syntax will likely prefer the
+                                          “Expanded Content Model” or the “Description”.
+| Expanded Content Model| Contains a copy of the element’s declaration in DTD  syntax, i.e., the
+                                          “content” of the element with all parameter entities expanded to
+                                          their ultimate values. This shows directly all the elements that the described
+                                          element can contain, and in what combination.
+| Tagged Sample(s)| Provides excerpts of tagged XML documents, showing use of the current element. Usually
+                              an element is shown in context, with its surrounding elements, and
+                              the current element is highlighted in bold.
+| Related Resources| Provides pointers both to external information sources and to other parts of the Tag
+                              Library that contain information relevant to this structure.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/charoff.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-charoff]
+=== `@charoff` Table Character Offset (NISO JATS table model)
+
+Horizontal offset from the alignment character specified by the <<attribute-char,`@char`>> attribute; the percent of the current column width to the left of the (left edge of the) alignment character. (This attribute is based on and intended to be converted easily to the XHMTL `charoff` attribute.)
+
+#### Usage/Remarks
+Alignment on a particular character requires that three attributes be set in the document: The <<attribute-align,`@align`>> attribute value is set to the word “`char`”. The <<attribute-char,`@char`>> attribute value is set to the actual character to use for the aligning, for example, a decimal point, “`.`”. The <<attribute-charoff,`@charoff`>> attribute value is set to the percent of the current column width to the left of the (left edge of the) alignment character, for example, “`30`”.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-col,`<col>`>>, <<element-colgroup,`<colgroup>`>>, <<element-tbody,`<tbody>`>>, <<element-td,`<td>`>>, <<element-tfoot,`<tfoot>`>>, <<element-th,`<th>`>>, <<element-thead,`<thead>`>>, <<element-tr,`<tr>`>>
+|===
+| Value| Meaning
+
+| Number| Where to set the alignment. Although this Tag Set can enforce only that this
+                        attribute contain any characters, validation beyond the DTD (for example, schema
+                        validation or Schematron validation) can constrain this value to a counting number
+                        (positive integer).
+| Restriction| This is an optional  attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

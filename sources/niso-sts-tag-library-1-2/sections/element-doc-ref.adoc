@@ -1,0 +1,62 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/doc-ref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-doc-ref]
+=== `<doc-ref>` Document Reference Designation
+
+A pre-constructed, formatted reference to the standard that is used for display purposes (such as online display or assembling PDF), particularly when an editorial variant of the designation is needed for rendering.
+
+#### Usage/Remarks
+A typical <<element-doc-ref,`<doc-ref>`>> element includes the standard’s designator and other information such as the language of the standard, e.g., “`ISO 2560:2009(en)`”. While it would usually be possible to construct the <<element-doc-ref,`<doc-ref>`>> from the content of other metadata elements, the pre-combined <<element-doc-ref,`<doc-ref>`>> form provides a convenience for rendering, without resorting to a transform or hardcoding editorial rules.
+
+#### Related Elements
+
+Contrast this with the metadata element <<element-std-ref,`<std-ref>`>>, which gives a reference form of identifier for a standard, typically the designator. In some cases, a <<element-doc-ref,`<doc-ref>`>> will contain the same content as one of the <<element-std-ref,`<std-ref>`>>s; in other cases <<element-doc-ref,`<doc-ref>`>> may be a slight variant. (Note that there can be several <<element-std-ref,`<std-ref>`>>s, such as dated and undated forms, distinguished by the <<attribute-type,`@type`>> attribute.)
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  doc-ref      (#PCDATA %doc-ref-elements;)*                >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### In ISO standard, part of `<iso-meta>`
+[source,xml]
+....
+...
+<iso-meta>
+ ...
+ <content-language>en</content-language>
+ <std-ref type="undated">ISO 2560</std-ref>
+ <std-ref type="dated">ISO 2560:2009</std-ref>
+ <doc-ref>ISO 2560:2009(en)</doc-ref>
+ <release-date iso-8601-date="2009-05-30" 
+   date-type="published">2009-05-30</release-date>
+ ...  
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

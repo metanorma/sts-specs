@@ -1,0 +1,50 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/vocab-identifier.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-vocab-identifier]
+=== `@vocab-identifier` Vocabulary/Taxonomy Identifier
+
+Unique identifier of the controlled vocabulary, taxonomy, ontology, database, thesaurus, index, etc. that is the source of the terms in a group of terms such as a keywords group or subject group. The content is typically (but not limited to) a URI or DOI.
+
+#### Usage/Remarks
+Four attributes are used in this Tag Set to identify a term from a controlled or an uncontrolled vocabulary: vocab Name of the controlled or uncontrolled vocabulary, taxonomy, ontology, index, database, or similar that is the source of the term. For example, for a subject term, a value might be IPC Code (“`ipc`”) or UNS Code (“`uns`”). For an uncontrolled term, the value might be an area of study such as “`structural engineering`” or merely the word “`uncontrolled`”. vocab-identifier Unique identifier of the vocabulary, such as (but not limited to) a URI or DOI. For example, for Dublin Core (DCC), the identifier might be “`http://dublincore.org/documents/2012/06/14/dces/`”. vocab-term The content of the element is the free prose version of the vocabulary or taxonomic term. The <<attribute-vocab-term,`@vocab-term`>> attribute holds the canonical version of the same term, as it appears in the vocabulary. For example, if the attribute value was “`digitized-vor`”, the element might contain the display text “Digitized Version of Record”. vocab-term-identifier Unique identifier of the term within a specific vocabulary, such as (but not limited to) an item number, a URI, DOI, etc.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-compound-kwd,`<compound-kwd>`>>, <<element-compound-subject,`<compound-subject>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-extended-by,`<extended-by>`>>, <<element-ics-wrap,`<ics-wrap>`>>, <<element-index-term,`<index-term>`>>, <<element-inline-media,`<inline-media>`>>, <<element-institution-id,`<institution-id>`>>, <<element-kwd,`<kwd>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-named-content,`<named-content>`>>, <<element-nested-kwd,`<nested-kwd>`>>, <<element-release-version,`<release-version>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-role,`<role>`>>, <<element-see-also,`<see-also>`>>, <<element-subj-group,`<subj-group>`>>, <<element-subject,`<subject>`>>, <<element-term,`<term>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A unique identifier of the source of the term named in the element content. This is
+                        typically a URI or DOI, but it may be any identifier.
+| Restriction| This attribute may be specified if the element is used.
+|===
+
+#### Tagged Sample
+
+##### Inspec vocabulary (for keyword group)
+[source,xml]
+....
+...
+<kwd-group id="KG1" originator="ASME" vocab="Inspec"
+  vocab-identifier="http://www.theiet.org/resources/inspec/about/records/ithesaurus.cfm"
+  xml:lang="en">
+ <compound-kwd id="KG1.1">
+  <compound-kwd-part content-type="code">A7865P</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of other 
+   inorganic semiconductors and insulators (thin films/low dimensional 
+   structures)</compound-kwd-part>
+ </compound-kwd>
+
+ <compound-kwd id="KG1.2">
+  <compound-kwd-part content-type="code">A7865T</compound-kwd-part>
+  <compound-kwd-part content-type="text">Optical properties of organic
+   compounds and polymers (thin films/low dimensional structures)</compound-kwd-part>
+ </compound-kwd>
+</kwd-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

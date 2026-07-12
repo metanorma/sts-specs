@@ -1,0 +1,45 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/publication-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-publication-type]
+=== `@publication-type` Publication Type Identifier (in a citation)
+
+Type of publication identifier or the organization or system that defined the identifier for a non-standard citation, typically a reference to a technical report, book, journal article, etc.
+
+#### Usage/Remarks
+This attribute is _not_ used to name the type of cited standard for a <<element-std,`<std>`>>; the <<element-std,`<std>`>> element used the <<attribute-type,`@type`>> attribute.
+This attribute is used inside a bibliographic citation element such as <<element-mixed-citation,`<mixed-citation>`>> or <<element-element-citation,`<element-citation>`>> to identify what is being cited.
+
+#### OPTIONAL on elements:  <<element-element-citation,`<element-citation>`>>, 
+                  <<element-mixed-citation,`<mixed-citation>`>>, 
+                  <<element-nlm-citation,`<nlm-citation>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of identifier “`doi`” or name or type of
+                        organization that created the identifier
+                        “`aggregator`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### A cited report
+[source,xml]
+....
+...
+<mixed-citation publication-format="print" publication-type="report"
+ ><collab>FCC</collab> <gov>Bulletin No. 65</gov> 
+ (<month>August</month> <year>1997</year>), 
+ <source>Evaluating Compliance with FCC Guidelines for 
+  Human Exposure to Radiofrequency Electromagnetic 
+  Fields</source>. Available at 
+ <uri>http://www.fcc.gov/Bureaus/Engineering_Technology/Documents/bulletins/oet65/oet65.pdf</uri>. 
+ [Rule 420Q NOTE]</mixed-citation>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

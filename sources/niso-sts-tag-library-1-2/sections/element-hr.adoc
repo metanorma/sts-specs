@@ -1,0 +1,76 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/hr.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-hr]
+=== `<hr>` Horizontal Rule
+
+Defined to allow the standards producer to specify an explicit (non machine-generated) rule.
+
+#### Usage/Remarks
+##### Best Practice
+
+Many uses of this element can be replaced with a <<attribute-style,`@style`>> attribute on the containing structure.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-td,`<td>`>>, <<element-th,`<th>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  hr           EMPTY                                        >
+....
+
+#### Tagged Sample
+
+##### Spanning table columns
+[source,xml]
+....
+...
+<table frame="box" rules="all" cellpadding="5">
+ <thead>
+  <tr>
+   <th></th>
+   <th colspan="3" align="center" rowspan="1">Institutional care</th>
+   <th></th>
+   <th colspan="2" align="center" rowspan="1">&#x2003;Bed use (days)</th>
+  </tr>
+  <tr>
+   <th></th>
+   <th colspan="3"><hr/></th>
+   <th></th>
+   <th colspan="2"><hr/></th>
+  </tr>
+  <tr>
+   <th>Control group</th>
+   <th align="center">Day hospital</th>
+   <th align="center">Control</th>
+   <th align="center">Odds ratio (95&#x0025; CI)</th>
+   <th></th>
+   <th align="center">Day hospital</th>
+   <th align="center">Control</th>
+  </tr>
+  <tr>
+   <th colspan="7"><hr/></th>
+  </tr>
+ </thead>
+ <tbody>...</tbody>
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

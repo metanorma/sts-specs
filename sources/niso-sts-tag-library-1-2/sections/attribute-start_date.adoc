@@ -1,0 +1,48 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/start_date.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-start_date]
+=== `@start_date` Start Date
+
+Date on which the document starts being “free-to-read” or begins the given license, as defined in NISO RP-22-2015, _Access License and Indicators_.
+
+#### Usage/Remarks
+##### Best Practice
+
+NISO RP-22-2015 recommends that the start date be given in the ISO 8601 format “YYYY-MM-DD”, without inclusion of a time or a time zone.
+
+#### OPTIONAL on elements:  <<element-ali-free_to_read,`<ali:free_to_read>`>>, 
+                  <<element-ali-license_ref,`<ali:license_ref>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The ISO 8601 date on which the document starts being “free-to-read” or begins the
+                        given license.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Free to read starting date
+[source,xml]
+....
+...
+<permissions>
+ <ali:free_to_read start_date="2016-01-01"/>
+ <license>
+  <ali:license_ref start_date="2016-01-01"
+   >http://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref>
+  <license-p>For noncommercial purposes only, this publication may be 
+   reproduced or transmitted in any form or by any means without prior 
+   permission in writing from the publisher, provided it is reproduced 
+   accurately, the source of the material is identified, and you do not 
+   in any way that suggests the licensor endorses you or your use.</license-p>
+ </license>
+</permissions>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

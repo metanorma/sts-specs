@@ -1,0 +1,14 @@
+[[_annex_a_metadata_usage]]
+== Annex A (informative) — Metadata usage
+
+This annex documents how ISO, IEC, and national bodies populate the
+metadata block of a NISO STS document. It is informative; the normative
+metadata element list lives in the Tag Library.
+
+For ASO's metadata profile, see link:../aso-1003-2026/[ASO 1003:2026,
+Clause 8].
+
+NOTE: The full ISO/IEC metadata usage tables from the 1.0 edition of the
+coding guidelines are available in the OCR transcript at
+`reference-docs/.glm-ocr-cache/niso-sts-guidelines-v1-0.md` (search for
+"Annex A").

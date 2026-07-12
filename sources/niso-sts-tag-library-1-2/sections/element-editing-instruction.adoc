@@ -1,0 +1,167 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/editing-instruction.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-editing-instruction]
+=== `<editing-instruction>` Editing Instruction
+
+Container element to hold the text that describes how an alteration or addition should be made to the standards document. These instructions are typically placed _before_ the portion of the document to be modified.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-rid,`@rid`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-array,`<array>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-caption,`<caption>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-def-list,`<def-list>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-fn-group,`<fn-group>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-legend,`<legend>`>>, <<element-list,`<list>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-notes-group,`<notes-group>`>>, <<element-ref,`<ref>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-statement,`<statement>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one Any combination of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  editing-instruction
+                        %editing-instruction-model;                  >
+....
+#### Expanded Content Model
+
+(label?, title?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)*)
+
+#### Tagged Samples
+
+#### At the beginning of a `<sec>`
+
+[source,xml]
+....
+...
+<sec sec-type="list-change">
+ <title>IDENTIFICATION</title>
+ <editing-instruction>
+  <p><italic><bold>Change to read:</bold></italic>
+   <list list-type="bullet">
+    <list-item>
+     <label>A.</label>
+     <p><strike>The R<sub>F</sub> value of the principal spot of 
+      the <italic>Sample solution</italic> corresponds to that of 
+      <italic>Standard solution A</italic>, obtained as directed 
+      in the <italic>Procedure</italic> for <italic>Organic 
+      Impurities</italic>.</strike></p>
+     <p>The retention time of the major peak of the <italic>Sample 
+      solution</italic> corresponds to that of the <italic>Standard 
+      solution</italic>, as obtained in the <italic>Assay</italic>.</p>
+    </list-item>
+    ...
+   </list>
+  </p>
+ </editing-instruction>
+</sec>
+...
+....
+#### At the beginning of a `<term-sec>`
+
+[source,xml]
+....
+...
+<sec sec-type="list-change">
+ <title>Terms and definitions</title>
+
+ <term-sec>
+  <editing-instruction>
+   <p>Replace the definition of "sample definition 4.5.6" below:</p>
+  </editing-instruction>
+  <label>4.5.6</label>
+  <term-display>
+   <term>sample definition</term>
+   <def><p>old definition</p></def>
+  </term-display>
+ </term-sec>
+
+ <term-sec>
+  <editing-instruction>
+   <p>with the definition in this 4.5.6 replacement definition:</p>
+  </editing-instruction>
+  <label>4.5.6</label>
+  <term-display>
+   <term>sample definition</term>
+   <def><p>new definition</p></def>
+  </term-display>
+ </term-sec>
+</sec>
+...
+....
+#### Document that contains only Editing Instructions
+
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <front>
+  <std-meta>
+   <title-wrap>
+    <intro>MILITARY STANDARD</intro>
+    <main>SHIPBOARD GUIDED MISSILE LAUNCHING SYSTEM</main>
+    <compl>SAFETY REQUIREMENTS, MINIMUM</compl>
+    <full>SHIPBOARD GUIDED MISSILE LAUNCHING SYSTEM
+     SAFETY REQUIREMENTS, MINIMUM</full>
+   </title-wrap>
+   <std-ident>
+    <originator>Navy - OS</originator>
+    <doc-type>MILITARY STANDARD</doc-type>
+    <doc-number>MIL-STD-1658(OS) Notice-3</doc-number>
+   </std-ident>
+   <release-date iso-8601-date="1982-06-30">30 June 1982</release-date>
+  </std-meta>
+ </front>
+ <body>
+  <editing-instruction>
+   <p>To all holders of MIL-STD-1658(OS):
+    <list list-type="order">
+     <list-item>
+      <label>1.</label>
+      <p>Make the following pen and ink changes to MIL-S-1658(OS):
+       <list list-type="order">
+        <list-item>
+         <label>a.</label>
+         <p>Page ii, paragraph 2, line 3: Change "502" to "524".</p></list-item>
+        <list-item>
+         <label>b.</label>
+         <p>Page 2, Other Publications: Change "OR-11" and its title to "MIL-STD-648-Design
+          Criteria for specialized Shipping Containers".</p></list-item>
+        ...
+       </list>
+      </p>
+     </list-item>
+     <list-item>
+      <label>2.</label>
+      <p>Retain this notice and insert before table of contents.</p></list-item>
+     <list-item>
+      <label>3.</label>
+      <p>Holders of MIL-STD-1685(OS) will verify that pages have been changed as indicated
+       above. This notice will be retained as a checklist. ...</p></list-item>
+    </list>
+   </p>
+  </editing-instruction>
+ </body>
+</standard>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Editing Instruction
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

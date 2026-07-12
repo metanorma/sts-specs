@@ -1,0 +1,38 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/anonymous.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-anonymous]
+=== `<anonymous>` Anonymous
+
+Place holder for the name of a contributor whose name is unknown or not disclosed.
+
+#### Attributes
+
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-contrib,`<contrib>`>>, <<element-person-group,`<person-group>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  anonymous    %anonymous-model;                            >
+....
+#### Expanded Content Model
+
+EMPTY
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

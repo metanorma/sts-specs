@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/fn-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-fn-type]
+=== `@fn-type` Type of Footnote
+
+Type of information conveyed in the footnote (for example, financial disclosure).
+
+#### Usage/Remarks
+There are many reasons why the text or metadata of a standard might be footnoted. Where those reasons are known, this attribute can preserve that information. This could be a means of preserving, for example, that a member of the original Working Group or Committee is now deceased.
+Since the use of `@fn-type` in standards documents is currently uncommon, there is no list of suggested values, and standards organizations are free to use any value for this attribute.
+
+#### OPTIONAL on element:  <<element-fn,`<fn>`>>
+
+|===
+| Value| Meaning
+
+| Letter, numbers, of special characters| The reason for the footnote or type of footnote, such as 
+                        “`Conflict of interest`”, 
+                        “`deceased`”, or  
+                        “`financial-disclosure`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

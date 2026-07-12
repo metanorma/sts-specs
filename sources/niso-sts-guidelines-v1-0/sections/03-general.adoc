@@ -1,0 +1,12 @@
+== General
+
+This document describes how ISO and IEC encode standards documents in NISO
+STS 1.0. It covers document structure, content conventions, tables,
+formulae, figures, terms and definitions, references, and amendments.
+
+The guidelines apply to all stages of a publication — working draft,
+committee draft, draft for enquiry, final draft, and published edition —
+and to every ISO/IEC document type (International Standard, Technical
+Specification, Technical Report, Publicly Available Specification,
+International Workshop Agreement, Guide, amendment, corrigendum,
+interpretation sheet, and system amendment).

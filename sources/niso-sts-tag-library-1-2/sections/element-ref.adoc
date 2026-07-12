@@ -1,0 +1,133 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/ref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-ref]
+=== `<ref>` Reference Item
+
+One item in a bibliographic list, typically a citation describing a referenced work.
+
+#### Usage/Remarks
+This element usually contains a citation of some sort, such as a cited standard (<<element-std,`<std>`>>) or a cited book or journal article (<<element-mixed-citation,`<mixed-citation>`>> or <<element-element-citation,`<element-citation>`>>).
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ref-list,`<ref-list>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one One or more of any of: Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  ref          %ref-model;                                  >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, (citation-alternatives | element-citation | mixed-citation | std | non-normative-note | normative-note | non-normative-example | normative-example | notes-group)+)
+
+#### Tagged Samples
+
+#### Within “Normative references” section
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <sec sec-type="norm-refs" id="s2">
+  <label>2</label>
+  <title>Normative references</title>
+  <p>The following referenced documents are indispensable 
+   for the application of ...</p>
+  <ref-list>
+   <ref>
+    <std type="undated" std-id="iso:std:iso:9001"
+     ><std-ref>ISO 9001</std-ref>, 
+     <title>Quality management systems &mdash; 
+      Requirements</title></std>
+   </ref>
+   <ref>
+    <std type="undated" std-id="iso-iec:std:iso-iec:15415"
+     ><std-ref>ISO/IEC 15415</std-ref>, 
+     <title>Information technology &mdash; Automatic identification 
+      and data capture techniques &mdash; Bar code print quality 
+      test specification &mdash; Two-dimensional symbols</title></std>
+   </ref>
+   ...
+  </ref-list>
+ </sec>
+ ...
+</body>
+...
+....
+#### Within named Bibliography
+
+[source,xml]
+....
+...
+<back>
+ ...
+ <ref-list>
+  <title>Bibliography</title>
+  <ref id="bibr1">
+   <label>[1]</label>
+   <mixed-citation>ISO Guide 82, <source>Guidelines for 
+    addressing sustainability in standards</source></mixed-citation>
+  </ref>
+  <ref id="bibr2">
+   <label>2</label>
+   <std type="undated" std-id="iso:std:iso:9241-11"
+    ><std-ref>ISO 9241-11</std-ref>, 
+    <title>Ergonomic requirements for office work with visual 
+     display terminals (VDTs) &mdash; Part 11: Guidance on 
+     usability</title></std>
+  </ref>
+  ...
+ </ref-list>
+</back>
+...
+....
+#### Bibliographic reference for journal
+
+[source,xml]
+....
+...
+<ref-list>
+ <title>Bibliography</title>
+ ...
+ <ref id="ref_4">
+  <label>4</label>
+  <mixed-citation publication-type="journal"
+   ><person-group
+    ><string-name><surname>Hadorn</surname>,  
+     <given-names>H.</given-names></string-name>, 
+    <string-name><surname>Z&uuml;rchner</surname>,  
+     <given-names>K</given-names></string-name></person-group>. 
+   <source>Dtsch. Lebensmitt. Rundsch</source>. 
+   <year iso-8601-date="1974">1974</year>, 
+   <volume>70</volume> p. <fpage>57</fpage></mixed-citation>
+ </ref>
+ ...
+</ref-list>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Reference Item
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

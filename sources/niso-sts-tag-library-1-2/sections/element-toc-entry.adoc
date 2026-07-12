@@ -1,0 +1,168 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/toc-entry.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-toc-entry]
+=== `<toc-entry>` Table of Contents Entry
+
+One entry in a structural Table of Contents.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-toc,`<toc>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-entry,`<toc-entry>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or more <<element-subtitle,`<subtitle>`>> <<element-subtitle,Article Subtitle>>, zero or more Optionally any one of: <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-nav-pointer,`<nav-pointer>`>> <<element-nav-pointer,Navigation Pointer>> <<element-nav-pointer-group,`<nav-pointer-group>`>> <<element-nav-pointer-group,Navigation Pointer Group>> <<element-toc-entry,`<toc-entry>`>> <<element-toc-entry,Table of Contents Entry>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  toc-entry    %toc-entry-model;                            >
+....
+#### Expanded Content Model
+
+(label?, title*, subtitle*, (ext-link | nav-pointer | nav-pointer-group)?, (toc-entry)*)
+
+#### Tagged Samples
+
+#### Including navigation pointers as links
+
+[source,xml]
+....
+...
+<front>
+ ...
+ <toc>
+  <toc-title-group>
+   <title>Table of Contents</title>
+  </toc-title-group>
+  <toc-entry>
+   <title>Foreword</title>
+   <nav-pointer rid="fwd"/>
+  </toc-entry>
+  <toc-entry>
+   <label>1</label>
+   <title>Purpose</title>
+   <nav-pointer rid="s1"/>
+  </toc-entry>
+  <toc-entry>
+   <label>2</label>
+   <title>Scope</title>
+   <nav-pointer rid="s2"/>
+   <toc-entry>
+    <label>2.1</label>
+    <title>The Journal Archive and Interchange Tag Set</title>
+    <nav-pointer rid="s2.1"/>
+   </toc-entry>
+   <toc-entry>
+    <label>2.2</label>
+    <title>The Journal Publishing Tag Set</title>
+    <nav-pointer rid="s2.2"/>
+   </toc-entry>
+   <toc-entry>
+    <label>2.3</label>
+    <title>The Article Authoring Tag Set</title>
+    <nav-pointer rid="s2.3"/>
+   </toc-entry>
+  </toc-entry>
+  <toc-entry>
+   <label>3</label>
+   <title>Format of this Standard</title>
+   <nav-pointer rid="s3"/>
+   <toc-entry>
+    <label>3.1</label>
+    <title>Description of the Tag Suite</title>
+    <nav-pointer rid="s3.1"/>
+   </toc-entry>
+   <toc-entry>
+    <label>3.2</label>
+    <title>Description of each Tag Set</title>
+    <nav-pointer rid="s3.2"/>
+   </toc-entry>
+  </toc-entry>
+  ...
+ </toc>
+ ...
+</front>
+...
+....
+#### Including print page numbers
+
+[source,xml]
+....
+...
+<front>
+ ...
+ <toc>
+  <toc-title-group>
+   <title>Table of Contents</title>
+  </toc-title-group>
+  <toc-entry>
+   <title>Foreword</title>
+   <nav-pointer rid="fwd">iii</nav-pointer>
+  </toc-entry>
+  <toc-entry>
+   <label>1</label>
+   <title>Purpose</title>
+   <nav-pointer rid="s1">1</nav-pointer>
+  </toc-entry>
+  <toc-entry>
+   <label>2</label>
+   <title>Scope</title>
+   <nav-pointer rid="s2">1</nav-pointer>
+   <toc-entry>
+    <label>2.1</label>
+    <title>The Journal Archive and Interchange Tag Set</title>
+    <nav-pointer rid="s2.1">2</nav-pointer>
+   </toc-entry>
+   <toc-entry>
+    <label>2.2</label>
+    <title>The Journal Publishing Tag Set</title>
+    <nav-pointer rid="s2.2">2</nav-pointer>
+   </toc-entry>
+   <toc-entry>
+    <label>2.3</label>
+    <title>The Article Authoring Tag Set</title>
+    <nav-pointer rid="s2.3">2</nav-pointer>
+   </toc-entry>
+  </toc-entry>
+  <toc-entry>
+   <label>3</label>
+   <title>Format of this Standard</title>
+   <nav-pointer rid="s3">2</nav-pointer>
+   <toc-entry>
+    <label>3.1</label>
+    <title>Description of the Tag Suite</title>
+    <nav-pointer rid="s3.1">2</nav-pointer>
+   </toc-entry>
+   <toc-entry>
+    <label>3.2</label>
+    <title>Description of each Tag Set</title>
+    <nav-pointer rid="s3.2">3</nav-pointer>
+   </toc-entry>
+  </toc-entry>
+  ...
+ </toc>
+ ...
+</front>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table of Contents
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

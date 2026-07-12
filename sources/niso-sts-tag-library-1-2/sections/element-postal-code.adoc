@@ -1,0 +1,93 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/postal-code.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-postal-code]
+=== `<postal-code>` Postal Code: in an Address
+
+A postal number such as a zip-code or postal code used to address physical mail.
+
+#### Usage/Remarks
+This element is typically part of an address. NISO STS organizations may or may not choose to tag to this level of granularity.
+
+#### Related Elements
+
+An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as company or organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-collab,`<collab>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-std-org-loc,`<std-org-loc>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  postal-code  (#PCDATA %postal-code-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### As part of an address in a paragraph
+
+[source,xml]
+....
+...
+<p>... Written requests supported by a verifiable 
+ need-to-know shall be submitted to:
+ <address>
+  <addr-line>Commander</addr-line> 
+  <addr-line><institution>US Army TACOM-ARDEC</institution></addr-line>
+  <addr-line>Attn: AMSRD-AAR-AIC-S, Bldg 12</addr-line> 
+  <addr-line><city>Picatinny</city>, <state>NJ</state> 
+   <postal-code>07806-5000</postal-code></addr-line>
+  <email>ardec-stdzn@pica.army.mil</email>
+ </address>
+</p>
+...
+....
+#### As part of an address in `<std-org-loc>`
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>...</title-wrap>
+ <std-ident>...</std-ident>
+ <std-org-group>
+  ...
+  <std-org std-org-type="sdo" std-org-role="lead">
+   <std-org-name>American Petroleum Institute</std-org-name>
+   <std-org-abbrev>API</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>1220 L Street, N.W.</addr-line>
+    <city>Washington</city>
+    <state>D.C.</state>
+    <postal-code>20005</postal-code>
+    <uri>http://www.api.org/</uri></std-org-loc>
+  </std-org>
+ </std-org-group>
+ ...
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

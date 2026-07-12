@@ -1,0 +1,66 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/wi-number.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-wi-number]
+=== `<wi-number>` Work Item Number
+
+Gives the work item number for the work item within which this standard was developed.
+
+#### Usage/Remarks
+#### CEN Note
+
+The <<element-wi-number,`<wi-number>`>> element is currently used by CEN standards’ development. CEN’s WI number contains 8 alphanumeric chars; the first 5 represent the codes for the Technical Committee (TC) which is responsible for standard. So from WI number, it is easy to detect which TC is responsible. If during the development of a standard, the responsibility has been changed from one TC to another (a rare but possible occurrence), the WI number will be changed as well. Thus a standard development may have more than one WI number, although only one <<element-proj-id,`<proj-id>`>>.
+#### ISO Note
+
+This element is currently specific to ISO-related Regional standards processing and is provided for reasons of backwards compatibility. It has always been allowed inside <<element-reg-meta,`<reg-meta>`>>, and it is now allowed inside other elements to provide ISO Regional users with a migration path to using <<element-std-meta,`<std-meta>`>> without metadata loss.
+This element is used in ISO-related Regional standards processing. In ISO STS the element was only allowed inside <<element-reg-meta,`<reg-meta>`>>, and it is now (in NISO STS) allowed inside other elements to provide ISO Regional users with a migration path to using <<element-std-meta,`<std-meta>`>> without metadata loss.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-reg-meta,`<reg-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  wi-number    %wi-number-model;                            >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### ISO-specific, part of `<reg-meta>`
+[source,xml]
+....
+...
+<front>  
+ <reg-meta originator="CEN">
+  ...
+  <std-ref type="short">EN ISO 9902-6:2001</std-ref>
+  <std-ref type="dated">EN ISO 9902-6:2001/prA1</std-ref>
+  <wi-number>00189C04</wi-number>     
+  <comm-ref>CEN/TC 275</comm-ref>
+  <secretariat>AFNOR</secretariat>
+  <ics>67.180.10</ics>
+ </reg-meta>
+</front>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,36 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/name-style.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-name-style]
+=== `@name-style` Personal Name Style
+
+Style of processing requested for a structured personal name.
+
+#### Usage/Remarks
+Used to choose an inversion algorithm, for sorting names “correctly” or for other processing functions.
+
+#### OPTIONAL (defaults to western) on elements:  <<element-name,`<name>`>>, 
+                  <<element-string-name,`<string-name>`>>
+
+|===
+| Value| Meaning
+
+| eastern| The name will *both* be displayed and
+                        sorted/inverted with the family name preceding the given name.
+| given-only| The single name provided is a given name, not a family name/surname. 
+                        The single name will be both the sort and the display name.
+| islensk| The name will *both* be displayed and
+                        sorted/inverted with the given name preceding the family name.
+| western| The name will be displayed with the given name preceding the family name,
+                        *but* will be sorted/inverted with the family name
+                        preceding the given name.
+| Default value| western
+|===
+
+#### Related Resources
+
+* See: “Name Display Order” in Tagging Personal Names in Citations
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

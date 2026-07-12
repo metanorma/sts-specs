@@ -1,0 +1,72 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-id]
+=== `<std-id>` Standard ID
+
+One identifier (such as a DOI, URN, standard designator, or standards organization’s internal document ID) for a standard, using the <<attribute-std-relationship-type,`@std-relationship-type`>> attribute to name the type of identifier (such as dated or undated designations).
+
+#### Usage/Remarks
+Several <<element-std-id,`<std-id>`>> identifiers may be grouped into a container element <<element-std-id-group,`<std-id-group>`>> to indicate that they are alternative identifiers for the same standard. For example, such a group could contain: one <<element-std-id,`<std-id>`>> containing a DOI, a second <<element-std-id,`<std-id>`>> containing a URN, and a third containing a standards-producing organization’s internal-processing identifier. Thus each <<element-std-id,`<std-id>`>> (with its attributes) can be used inside the <<element-std-id-group,`<std-id-group>`>> element to support the coupling of identifiers, such as the designator and the URN, and to describe this relationship.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-std-id-link-type,`@std-id-link-type`>>
+* <<attribute-std-id-type,`@std-id-type`>>
+* <<attribute-std-relationship-type,`@std-relationship-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std,`<std>`>>, <<element-std-id-group,`<std-id-group>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-id       (#PCDATA %std-id-elements;)*                 >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### <<attribute-std-relationship-type,`@std-relationship-type`>> differentiates dated DOIs
+[source,xml]
+....
+...
+<std
+ ><std-ref>ISO 9001:2015</std-ref>
+ <std-id-group>
+  <std-id 
+    std-id-type="dated" 
+    std-id-link-type="doi" 
+    originator="ISO">10.9999/ISO-9001:2015</std-id>
+  <std-id 
+    std-id-type="dated" 
+    std-id-link-type="doi"
+    std-relationship-type="adopted-from" 
+    originator="EN">10.9998/EN-ISO-9001:2015</std-id>
+  <std-id 
+    std-id-type="dated" 
+    std-id-link-type="doi"
+    std-relationship-type="adopted-from"
+    originator="BSI" >10.9998/BS-EN-ISO-9001:2015</std-id>
+ </std-id-group></std>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

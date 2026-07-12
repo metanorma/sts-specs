@@ -1,0 +1,126 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/iso-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-iso-meta]
+=== `<iso-meta>` ISO-specific Metadata
+
+This is a container element for ISO-specific metadata for an ISO standards document. This element contains any ISO-specific overrides to the metadata described for the whole standards document (<<element-std-doc-meta,`<std-doc-meta>`>>) as well as any additional ISO-specific metadata.
+
+#### Usage/Remarks
+The element `<iso-meta>` cannot be used inside the front matter of an adoption (<<element-adoption-front,`<adoption-front>`>>); only `<std-meta>` may be used at the top level of an adoption. The element `<iso-meta>` can be used in the front matter of a standard (`<front>`).
+
+#### Related Elements
+
+The element `<iso-meta>` is the fourth of the organization-describing metadata elements with: <<element-std-meta,`<std-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, and <<element-reg-meta,`<reg-meta>`>>.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-front,`<front>`>>
+#### Description
+
+The following, in order: <<element-title-wrap,`<title-wrap>`>> <<element-title-wrap,Title Wrapper>>, zero or more <<element-doc-ident,`<doc-ident>`>> <<element-doc-ident,ISO-Specific Document Identification Section>>, zero or one <<element-std-ident,`<std-ident>`>> <<element-std-ident,Standard Identification Block>>, zero or one Any combination of: <<element-std-org,`<std-org>`>> <<element-std-org,Standards Organization Description>> <<element-std-org-group,`<std-org-group>`>> <<element-std-org-group,Standards Organization Group>> <<element-content-language,`<content-language>`>> <<element-content-language,Content Language>>, zero or more <<element-std-ref,`<std-ref>`>> <<element-std-ref,Standard Reference Designation>>, zero or more <<element-doc-ref,`<doc-ref>`>> <<element-doc-ref,Document Reference Designation>>, zero or one <<element-pub-date,`<pub-date>`>> <<element-pub-date,Publication Date>>, zero or one <<element-release-date,`<release-date>`>> <<element-release-date,Release-Date>>, zero or more <<element-meta-date,`<meta-date>`>> <<element-meta-date,Other Metadata Date>>, zero or more Any combination of: <<element-comm-ref,`<comm-ref>`>> <<element-comm-ref,Committee Reference>> <<element-comm-ref-group,`<comm-ref-group>`>> <<element-comm-ref-group,Committee Reference Group>> <<element-secretariat,`<secretariat>`>> <<element-secretariat,Secretariat>>, zero or more Any combination of: <<element-ics,`<ics>`>> <<element-ics,ICS Code Number>> <<element-ics-wrap,`<ics-wrap>`>> <<element-ics-wrap,ICS Code/Description Wrapper>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more <<element-page-count,`<page-count>`>> <<element-page-count,Page Count>>, zero or one <<element-counts,`<counts>`>> <<element-counts,Counts>>, zero or one <<element-is-proof,`<is-proof>`>> <<element-is-proof,Document in Proof Stage?>>, zero or one <<element-std-xref,`<std-xref>`>> <<element-std-xref,Cross-Reference to a Standard>>, zero or more <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>, zero or more <<element-self-uri,`<self-uri>`>> <<element-self-uri,Uri For This Same Article Online>>, zero or more <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-meta-note,`<meta-note>`>> <<element-meta-note,Metadata Note>>, zero or more <<element-custom-meta-group,`<custom-meta-group>`>> <<element-custom-meta-group,Custom Metadata Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  iso-meta     %iso-meta-model;                             >
+....
+#### Expanded Content Model
+
+(title-wrap*, doc-ident?, std-ident?, (std-org | std-org-group)*, content-language*, std-ref*, doc-ref?, pub-date?, release-date*, meta-date*, (comm-ref | comm-ref-group)*, secretariat*, (ics | ics-wrap)*, (subj-group)*, page-count?, counts?, is-proof?, std-xref*, permissions*, self-uri*, (abstract)*, (kwd-group)*, meta-note*, custom-meta-group*)
+
+#### Tagged Samples
+
+#### ISO standard metadata with `<title-wrap>` twice for two languages
+
+[source,xml]
+....
+...
+<front>
+ <iso-meta>
+  <title-wrap xml:lang="en">
+   <intro>Welding consumables</intro>
+   <main>Covered electrodes for manual metal arc welding of
+    non-alloy and fine grain steels</main>
+   <compl>Classification</compl>
+   <full>Welding consumables &mdash; Covered electrodes for
+    manual metal arc welding of non-alloy and fine grain steels
+    &mdash; Classification</full>
+  </title-wrap>
+  <title-wrap xml:lang="fr">
+   <intro>Produits consommables pour le soudage</intro>
+   <main>&Eacute;lectrodes enrob&eacute;es pour le soudage manuel
+    &agrave; l'arc des aciers non alli&eacute; et des aciers
+    &agrave; grains fins</main>
+   <compl>Classification</compl>
+   <full>Produits consommables pour le soudage &mdash;
+    &Eacute;lectrodes enrob&eacute;es pour le soudage manuel
+    &agrave; l'arc des aciers non alli&eacute; et des aciers
+    &agrave; grains fins &mdash; Classification</full>
+  </title-wrap>
+  <doc-ident>...</doc-ident>
+  <std-ident>...</std-ident>
+  <content-language>en</content-language>
+  <std-ref type="dated">ISO 2560:2009</std-ref>
+  <std-ref type="undated">ISO 2560</std-ref>
+  <doc-ref>ISO 2560:2009(E)</doc-ref>
+  ...
+  <comm-ref>ISO/TC 44/SC 3</comm-ref>
+  <secretariat>ANSI</secretariat>
+  ...
+ </iso-meta>
+</front>
+...
+....
+#### ISO standard metadata showing typical contents
+
+[source,xml]
+....
+...
+<front>
+ <iso-meta id="profile.int">
+  <title-wrap xml:lang="de">
+   <intro>Sicherheit von Maschinen</intro>
+   ...
+  </title-wrap>
+  <doc-ident>
+   <sdo>ISO</sdo>
+   ...
+  </doc-ident>
+  <std-ident>
+   <originator>ISO</originator>
+   ...
+  </std-ident>
+  <content-language>...</content-language>
+  <std-ref type="undated">ISO 13849-1</std-ref>
+  <doc-ref>ISO 13849-1</doc-ref>
+  <release-date iso-8601-date="2006-11" date-type="published" 
+    std-type="new-standard">2006-11</release-date>
+  <comm-ref>...</comm-ref>
+  <secretariat>...</secretariat>
+  <permissions>
+   <copyright-year>2006</copyright-year>
+   <copyright-holder>ISO</copyright-holder>
+  </permissions>
+ </iso-meta>
+ ...
+</front>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - ISO-specific Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

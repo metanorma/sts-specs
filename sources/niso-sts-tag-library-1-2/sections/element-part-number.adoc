@@ -1,0 +1,68 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/part-number.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-part-number]
+=== `<part-number>` Part Number of a Multipart Document
+
+Records the part-number of the part, for individual parts of multipart standards documents. For documents which are not parts of a larger document, this element should be omitted.
+
+#### Usage/Remarks
+##### ISO Note
+
+For ISO-related standards, the typical part number (<<element-part-number,`<part-number>`>>) contains one or more alphanumeric characters or hyphens. In a document reference, the part number is normally preceded by a hyphen (as in “ISO 8859-1, part 1 of ISO 8859”). But no leading hyphen is needed here, and none should be used.
+
+#### Related Elements
+
+The title of the document part is typically given in a <<element-compl,`<compl>`>> or <<element-compl-title-wrap,`<compl-title-wrap>`>> element.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  part-number  (#PCDATA %part-number-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Part of `<iso-meta>`
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>...</doc-type>
+  <doc-number>13849</doc-number>
+  <part-number>1</part-number>
+  <edition>...</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language> 
+ ...
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

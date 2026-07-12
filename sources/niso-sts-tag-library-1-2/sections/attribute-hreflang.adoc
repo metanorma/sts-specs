@@ -1,0 +1,30 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/hreflang.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-hreflang]
+=== `@hreflang` Language of the Link Target
+
+Language of the target to which a link is pointing. A processor following the link would expect to find a document in the language named.
+
+#### Usage/Remarks
+The `@hreflang` attribute _does not name_ the language of: the content of the link itself, the current article, or the structural object in which the link is embedded. The `@hreflang` attribute names the language of the document to which the link is pointing, the target of the link.
+#### Script and Language Codes
+
+The value of this attribute should conform to IETF RFC 5646 (https://tools.ietf.org/html/rfc5646). For most uses, a primary-language subtag such as “`fr`” (French), “`en`” (English), “`de`” (German), or “`zh`” (Chinese) is sufficient. These values are *NOT* case sensitive, but current best practice uses all lower case. In addition to the primary-language subtag, the value of this attribute may contain other subtags as well. Values for the various subtags (which can be used in certain combinations) can be obtained from the IANA Language Subtag Registry: https://www.iana.org/assignments/language-subtag-registry
+In some languages, script codes are also critically important; for example, in Japanese, there is the need to express whether a name is in Kanji as opposed to in Kana (Hiragana or Katakana) to determine sort keys. Best practice is to use the full language-code-plus-script-code as the value for `@hreflang`. In JATS use of both language and script tagging as values for `@hreflang`, JATS is following the IETF (Internet Engineering Task Force) best practice guideline _Network Working Group Request for Comments: 5646_ [Tags for Identifying Languages, A. Phillips and M. Davis, Editors, September 2009]. That document defines a language tag as composed of (in part): A language code Language (typically using the shortest ISO 639) Potentially followed by a hyphen and then a script code (Script using the ISO 15924 code) Potentially followed by a hyphen and a region code (Region using the ISO 15924 code)
+Some sample values of `@hreflang` for Chinese and Serbian illustrate this complexity: Language subtag plus Script subtag: `hreflang="zh-Hant"` (Chinese written using the Traditional Chinese script) Language subtag plus Script subtag: `hreflang="zh-Hans"` (Chinese written using the Simplified Chinese script) Language-Script-Region: `hreflang="zh-Hans-CN"` (Chinese written using the Simplified script as used in mainland China) Language-Script-Region: `hreflang="sr-Latn-RS"` (Serbian written using the Latin script as used in Serbia)
+Thus, for example, the following are among the expected values of `@hreflang` for Japanese, incorporating both a language (“`ja`”) and a script type: `hreflang="ja-Hira"` (Japanese written in Hiragana) `hreflang="ja-Hrkt"` (Japanese written in Hiragana + Katakana) `hreflang="ja-Jpan"` (Japanese written in Han + Hiragana + Katakana) `hreflang="ja-Hani"` (Japanese written in Kanji (Hanzi, Hanja, Han)) `hreflang="ja-Kana"` (Japanese written in Katakana)
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| An alphanumeric string, which may include hyphens| An abbreviation for a natural language (such as “`en`” for English or “`de`” for German) or for a language and a script (“`ja-Kana`”).
+| Restriction| `@hreflang` is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

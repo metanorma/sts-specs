@@ -1,0 +1,132 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/table-wrap.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-table-wrap]
+=== `<table-wrap>` Table Wrapper
+
+Wrapper element for a complete table, including the tabular material (rows and columns), caption (including title), footnotes, and alternative descriptions of the table for purposes of accessibility.
+
+#### Usage/Remarks
+This element has been designed to capture a construct named “table”, whether that structure contains non-tabular structures such as graphics, lists, or paragraphs; or an explicitly tagged table element (<<element-table,`<table>`>> in the Interchange Tag Sets or <<element-oasis-table,`<oasis:table>`>> element in the Extended Tag Set). Standards documents may associate table captions and table numbers with material that is not explicitly tabular. Within the <<element-table-wrap,`<table-wrap>`>> element, row and column tags that describe table cells should be defined by either the <<element-table,`<table>`>> element of the NISO JATS table model (based on and designed to be converted easily to the XHTML 1.1 table model) or by the OASIS XML Exchange (CALS) table model <<element-oasis-table,`<oasis:table>`>>.
+#### Footnotes
+
+Footnotes inside a <<element-table-wrap,`<table-wrap>`>> are assumed to be footnotes to the table and, as part of the table, are displayed at the bottom of the table, usually as part of the <<element-table-wrap-foot,`<table-wrap-foot>`>>, rather than at the bottom of the page or otherwise separated from the display of the table.
+#### Position
+
+The <<attribute-position,`@position`>> attribute may be used to indicate whether a <<element-table-wrap,`<table-wrap>`>> must be anchored at its exact location within the text or whether it may float, for example, to the top of the next page, into the next column, to the end of a logical file, or within a separate window.
+#### Modifications to the XHTML Table Model
+
+In the NISO JATS table model, the XHMTL™ table model has been modified to remove the <<element-caption,`<caption>`>> element from within the <<element-table,`<table>`>> element, because, in the NISO STS Tag Sets, the <<element-caption,`<caption>`>> element has been made part of the <<element-table-wrap,`<table-wrap>`>> element.
+#### OASIS Exchange CALS Table Note
+
+The OASIS modules for the OASIS XML Exchange table model (based on the CALS table model) have been included in the NISO STS Extended Tag Sets, so <<element-oasis-table,`<oasis:table>`>> may be used in addition to or in place of the XHTML <<element-table,`<table>`>> element. A separate Tag Library describing the OASIS table model elements, attributes, and parameter entities may be accessed at: https://jats.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html
+##### When Content is a Form
+
+Two attributes are available to describe the table when it contains a form:
+* <<attribute-is-form,`@is-form`>> can indicate that the table contains a form.  What constitutes a “form” is not defined
+                     by NISO STS.
+* <<attribute-form-type,`@form-type`>> can identify the type of the form. If the form is not one of the listed types, <<attribute-custom-type,`@custom-type`>> may provide the type (see below).
+##### Custom Form Type (<<attribute-custom-type,`@custom-type`>>)
+
+<<attribute-form-type,`@form-type`>> has as its values a fixed list of form types. If your form is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the form type. Set the value of <<attribute-form-type,`@form-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any form type you require. For example:
+[source,xml]
+....
+<table-wrap is-form="form" form-type="custom" 
+    custom-type="template"...>...</table-wrap>
+....
+
+#### Related Elements
+
+The <<element-table,`<table>`>> element is an element defined by the NISO JATS table model, which is based on and designed to be converted easily to the XHTML 1.1 table model. This element is not, in itself, a complete table, but only the rows and columns portions of a table. A complete table may have other features, such as a title, caption, table footnotes, etc. The <<element-table-wrap,`<table-wrap>`>> element contains the complete table, that is, both rows and columns as well as labels, captions, or footers. A (<<element-table-wrap,`<table-wrap>`>>) element may or may not include an actual table (<<element-table,`<table>`>> or <<element-oasis-table,`<oasis:table>`>>) element within it, since other constructions, such as 2-part lists, may also be given table labels, titles, captions, etc.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-form-type,`@form-type`>>
+* <<attribute-is-form,`@is-form`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-legend,`<legend>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Any combination of: <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-table,`<table>`>> <<element-table,Table (NISO JATS table model)>> <<element-oasis-table,`<oasis:table>`>> <<element-oasis-table,OASIS XML Exchange (CALS) Table>> (In STS Extended ONLY) Any combination of: <<element-table-wrap-foot,`<table-wrap-foot>`>> <<element-table-wrap-foot,Table Wrap Footer>> Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  table-wrap   %table-wrap-model;                           >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, (object-id)*, label?, (caption)?, (legend)*, (kwd-group)*, (subj-group)*, (alt-text | long-desc | email | ext-link | uri)*, (disp-quote | speech | statement | def-list | list | alternatives | chem-struct-wrap | code | disp-formula | graphic | media | preformat | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | table | oasis:table)*, (table-wrap-foot | attrib | permissions)*)
+
+#### Tagged Sample
+
+##### With label and caption
+[source,xml]
+....
+...
+<sec id="s6.7.1.5">
+ <label>6.7.1.5</label>
+ <title>Ambient illumination</title>
+ <p>This test is used to determine the ambient light 
+  levels under which the scanner will operate.</p>
+ <p>... Specific applications may not require the 
+  extended range noted in <xref ref-type="table" 
+  rid="t11">Table 11</xref>.</p>
+ <table-wrap id="t11">
+  <label>Table 11</label>
+  <caption><title>Ambient illumination levels</title></caption>
+  <table>
+   <thead>
+    <tr>
+     <th>Lighting Conditions</th>
+     <th>Illumination Level Lux</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Dark room</td>
+     <td>0</td>
+    </tr>
+    <tr>
+     <td>Desk top</td>
+     <td>100</td>
+    </tr>
+    <tr>
+     <td>Overcast daylight</td>
+     <td>1,000</td>
+    </tr>
+    <tr>
+     <td>Bright sunlight</td>
+     <td>100,000</td>
+    </tr>
+   </tbody>
+  </table>
+ </table-wrap>
+ ...
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Tables
+* See: Hierarchy diagram - Table Wrapper
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

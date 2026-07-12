@@ -1,0 +1,131 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-partOfSpeech.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-partOfSpeech]
+=== `<tbx:partOfSpeech>` Part of Speech Flag (TBX)
+
+The `<tbx:partOfSpeech>` is a category assigned to a word based on its grammatical and semantic properties, for example: noun, verb, or adjective. It is sometimes called “grammatical category” or “word class”.
+
+#### Usage/Remarks
+A Part of Speech Flag (TBX) must be specified for each term. Only one value is permitted for a term in a given entry.
+
+#### Attributes
+
+* <<attribute-value,`@value`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-tig,`<tbx:tig>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.partOfSpeech; 
+                        EMPTY                                        >
+....
+
+#### Tagged Samples
+
+#### A part-of-speech noun
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a210.14">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>any event or series of events that disrupt ecosystem, community, or population
+      structure and alters the physical environment</tbx:definition>
+    <tbx:source>U.S. ENVIRONMENTAL PROTECTION AGENCY. <italic>Terms of Environment: Glossary,
+      Abbreviations and Acronyms</italic> online, viewed 2010-07-29].</tbx:source>
+    <tbx:xSource xtarget="http://www.epa.gov/OCEPAterms/dterms.html">Available from:
+      http://www.epa.gov/OCEPAterms/dterms.html.</tbx:xSource>
+    <tbx:tig>
+      <tbx:term id="a210.14-1">disturbance</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:pronunciation>/dıˈstɜ:bəns/</tbx:pronunciation>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### Each term has been assigned a part of speech
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### A term needs a `<tbx:partOfSpeech>` in each language
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### A part-of-speech verb
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a212.4134">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>to produce <tbx:entailedTerm>flame (4.133)</tbx:entailedTerm></tbx:definition>
+    <tbx:note>The term “flame” also represents the concept defined in 4.133.</tbx:note>
+    <tbx:tig>
+      <tbx:term id="a212.4134-1">flame</tbx:term>
+      <tbx:partOfSpeech value="verb"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,176 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-meta.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-meta]
+=== `<std-meta>` NISO STS Standard Metadata
+
+This element is a container element for metadata specific to or produced by a standards-producing organization (such as ISO or an SDO) that is publishing or adopting a standard. This element contains any organization-specific overrides to the metadata described for the whole standards document (<<element-std-doc-meta,`<std-doc-meta>`>>) as well as the organization-specific metadata for one standards-producing organization.
+
+#### Usage/Remarks
+This element is new in NISO STS, not derived from ISO STS. This tag suite retains the three metadata containers to hold standards organization metadata that were used in ISO-STS: <<element-iso-meta,`<iso-meta>`>> (metadata concerning ISO itself), <<element-nat-meta,`<nat-meta>`>> (metadata concerning an ISO-related national standards body), and <<element-reg-meta,`<reg-meta>`>> (metadata concerning an ISO-related regional standards body). The new NISO STS element <<element-std-meta,`<std-meta>`>> may be used to describe: organizations such as SDOs that are not part of the ISO infrastructure and thus have never used any of the three ISO-related metadata elements, or any ISO-related standards organization, for which <<element-std-meta,`<std-meta>`>> can replace any of the three ISO-related STS metadata container elements.
+#### Design Concept
+
+One of the goals of the original NISO STS effort was to produce a metadata model for standards documents that was less ISO-specific than the ISO-related metadata models (<<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, and <<element-nat-meta,`<nat-meta>`>>). Design goals for this new metadata model (<<element-std-meta,`<std-meta>`>>) included the following: The model for <<element-std-meta,`<std-meta>`>> should be enabling not enforcing. This means that organizations desiring tighter control will need to create a more restrictive subset or restrict content in another processing layer, for example, using Schematron. The new metadata model must not interfere with current ISO STS processing; any document valid to ISO STS 1.1 should still be valid to current NISO STS.
+
+#### Related Elements
+
+The element <<element-std-meta,`<std-meta>`>> is the fourth of the organization-describing metadata elements with: <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, and <<element-nat-meta,`<nat-meta>`>>.
+
+#### Attributes
+
+* <<attribute-std-meta-type,`@std-meta-type`>>
+* <<attribute-std-org-type,`@std-org-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption-front,`<adoption-front>`>>, <<element-front,`<front>`>>, <<element-sub-part,`<sub-part>`>>
+#### Description
+
+The following, in order: <<element-title-wrap,`<title-wrap>`>> <<element-title-wrap,Title Wrapper>>, zero or more <<element-proj-id,`<proj-id>`>> <<element-proj-id,ISO-Specific Project Identifier>>, zero or one <<element-release-version,`<release-version>`>> <<element-release-version,Release-Version/Development Stage/Status>>, zero or one <<element-std-ident,`<std-ident>`>> <<element-std-ident,Standard Identification Block>>, zero or one Any combination of: <<element-std-org,`<std-org>`>> <<element-std-org,Standards Organization Description>> <<element-std-org-group,`<std-org-group>`>> <<element-std-org-group,Standards Organization Group>> <<element-content-language,`<content-language>`>> <<element-content-language,Content Language>>, zero or more <<element-std-ref,`<std-ref>`>> <<element-std-ref,Standard Reference Designation>>, zero or more <<element-doc-ref,`<doc-ref>`>> <<element-doc-ref,Document Reference Designation>>, zero or one <<element-pub-date,`<pub-date>`>> <<element-pub-date,Publication Date>>, zero or one <<element-release-date,`<release-date>`>> <<element-release-date,Release-Date>>, zero or more <<element-meta-date,`<meta-date>`>> <<element-meta-date,Other Metadata Date>>, zero or more <<element-wi-number,`<wi-number>`>> <<element-wi-number,Work Item Number>>, zero or one Any combination of: <<element-comm-ref,`<comm-ref>`>> <<element-comm-ref,Committee Reference>> <<element-comm-ref-group,`<comm-ref-group>`>> <<element-comm-ref-group,Committee Reference Group>> <<element-accrediting-organization,`<accrediting-organization>`>> <<element-accrediting-organization,Accrediting Organization>>, zero or one <<element-authorization,`<authorization>`>> <<element-authorization,Authorization>>, zero or one <<element-secretariat,`<secretariat>`>> <<element-secretariat,Secretariat>>, zero or more Any combination of: <<element-ics,`<ics>`>> <<element-ics,ICS Code Number>> <<element-ics-wrap,`<ics-wrap>`>> <<element-ics-wrap,ICS Code/Description Wrapper>> <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more <<element-page-count,`<page-count>`>> <<element-page-count,Page Count>>, zero or one <<element-counts,`<counts>`>> <<element-counts,Counts>>, zero or one <<element-is-proof,`<is-proof>`>> <<element-is-proof,Document in Proof Stage?>>, zero or one <<element-std-xref,`<std-xref>`>> <<element-std-xref,Cross-Reference to a Standard>>, zero or more <<element-release-version-id,`<release-version-id>`>> <<element-release-version-id,ISO-Specific Release Version ID>>, zero or one <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>, zero or more <<element-self-uri,`<self-uri>`>> <<element-self-uri,Uri For This Same Article Online>>, zero or more <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-meta-note,`<meta-note>`>> <<element-meta-note,Metadata Note>>, zero or more <<element-custom-meta-group,`<custom-meta-group>`>> <<element-custom-meta-group,Custom Metadata Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-meta     %std-meta-model;                             >
+....
+#### Expanded Content Model
+
+(title-wrap*, proj-id?, release-version?, std-ident?, (std-org | std-org-group)*, content-language*, std-ref*, doc-ref?, pub-date?, release-date*, meta-date*, wi-number?, (comm-ref | comm-ref-group)*, accrediting-organization?, authorization?, secretariat*, (ics | ics-wrap)*, (subj-group)*, page-count?, counts?, is-proof?, std-xref*, release-version-id?, permissions*, self-uri*, (abstract)*, (kwd-group)*, meta-note*, custom-meta-group*)
+
+#### Tagged Sample
+
+##### Showing typical contents
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>
+  <main-title-wrap>
+   <main>Safety Code for Elevators and Escalators</main>
+   <subtitle>Includes Requirements for Elevators, Escalators, Dumbwaiters, Moving 
+    Walks, Material Lifts, and Dumbwaiters With Automatic Transfer Devices</subtitle>
+  </main-title-wrap>
+  <full>Safety Code for Elevators and Escalators: Includes Requirements for 
+   Elevators,Escalators, Dumbwaiters, Moving Walks, Material Lifts, and 
+   Dumbwaiters With Automatic Transfer Devices</full>
+ </title-wrap>
+ <std-ident>
+  <std-id-group std-relationship-type="std-as-published">
+   <std-id std-id-type="dated">ASME A17.1-2013/CSA B44-13</std-id>
+   <std-id std-id-type="dated" std-id-link-type="doi">10.1115/ASME A17.1-2013/CSA B44-13</std-id>
+  </std-id-group>   
+  <std-id-group std-relationship-type="std-as-published">
+   <std-id std-id-type="undated">ASME A17.1/CSA B44</std-id>
+   <std-id std-id-type="undated" std-id-link-type="doi">10.1115/ASME A17.1/CSA B44</std-id>
+  </std-id-group>  
+  <std-id-group originator="ASME" std-relationship-type="std-series">
+   <std-id std-id-type="title">Elevators and Escalators</std-id>
+   <std-id std-id-type="short">A17</std-id>
+   <std-id std-id-type="short" std-id-link-type="doi">10.1115/ASME.A17</std-id>
+  </std-id-group>  
+  <std-id-group originator="CSA" std-relationship-type="std-alt-as-published">
+   <std-id std-id-type="dated">CSA B44-13</std-id>
+   <std-id std-id-type="dated" std-id-link-type="doi">10.XYZ/CSA.B44-13</std-id>
+  </std-id-group>
+  <isbn originator="ASME" publication-format="print">978-0-7918-6857-7</isbn>
+  <isbn originator="CSA" publication-format="print">978-1-77139-312-6</isbn>   
+ </std-ident>   
+ <std-org-group>
+  <std-org std-org-level="1" std-org-role="co-producer" std-org-type="sdo">
+   <std-org-name>American Society of Mechanical Engineers</std-org-name>
+   <std-org-abbrev>ASME</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>2 Park Ave.</addr-line>
+    <city>New York</city>
+    <state>NY</state>
+    <postal-code>10016</postal-code>
+    <uri>https://www.asme.org/</uri></std-org-loc>
+  </std-org>
+  <std-org std-org-level="2" std-org-role="co-producer" std-org-type="sdo">
+   <std-org-name>CSA Group</std-org-name>
+   <std-org-abbrev>CSA</std-org-abbrev>
+   <std-org-loc
+    ><addr-line>5060 Spectrum Way, Suite 100</addr-line>
+    <city>Mississauga</city>
+    <state>Ontario</state>
+    <country>Canada</country>
+    <postal-code>L4W 5N6</postal-code>
+    <uri>http://www.csagroup.org/</uri></std-org-loc>
+  </std-org>
+ </std-org-group>
+ <content-language>en</content-language>
+ <release-date date-type="published" std-type="revised" 
+   iso-8601-date="2013-10-21">October 21, 2013</release-date>
+ <meta-date type="date-of-issuance" iso-8601-date="2013-10-21">October 21, 2013</meta-date>
+ <comm-ref-group level="1">
+  <comm-ref>ASME A17 ELEVATOR AND ESCALATOR COMMITTEE</comm-ref>
+  <comm-ref-group level="2">
+   <comm-ref>STANDARDS COMMITTEE</comm-ref>
+   <comm-ref-group level="3">
+    <comm-ref>Honorary Members</comm-ref>
+    <comm-ref>Regulatory Advisory Council</comm-ref>
+   </comm-ref-group>
+  </comm-ref-group>
+ </comm-ref-group>
+ <secretariat>ANSI</secretariat>
+ <subj-group subj-group-type="ASME">
+  <subject>elevators</subject>
+  <subject>power driven stairways</subject>
+  <subject>hoisting and lowering mechanisms</subject>
+ </subj-group>
+ <subj-group subj-group-type="UNSPSC">
+  <compound-subject>
+   <compound-subject-part content-type="code">24101601</compound-subject-part>
+   <compound-subject-part content-type="value">Elevators</compound-subject-part>
+  </compound-subject>
+  <compound-subject>
+   <compound-subject-part content-type="code">73161516</compound-subject-part>
+   <compound-subject-part content-type="value">Lifting or hoisting or conveying 
+    equipment manufacture services</compound-subject-part>
+  </compound-subject>
+ </subj-group>
+ <counts>
+  <count count-type="form" count="4"/>
+  <fig-count count="18"/>
+  <table-count count="7"/>
+  <equation-count count="12"/>
+  <ref-count count="24"/>
+  <page-count count="660"/>
+ </counts>
+ <std-xref type="revision_of">
+  <std-id-group>
+   <std-id std-id-type="dated">ASME A17.1-2010/CSA B44-10</std-id>
+   <std-id std-id-type="dated" 
+     std-id-link-type="doi">10.1115/ASME A17.1-2010/CSA B44-10</std-id>
+  </std-id-group>
+ </std-xref>
+ <permissions>
+  <copyright-statement>ASME is the registered trademark of The American Society 
+   of Mechanical Engineers.</copyright-statement>
+  <copyright-year>2013</copyright-year>
+  <copyright-holder>THE AMERICAN SOCIETY OF MECHANICAL ENGINEERS</copyright-holder>
+ </permissions>
+ <self-uri 
+   xlink:href="https://www.asme.org/products/codes-standards/a171-2013-safety-code-elevators-escalators"/>
+ <abstract>
+  <p>Major changes for the 2013 edition include: Requirements for wind ...</p>
+ </abstract>
+ <custom-meta-group>...</custom-meta-group>
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - NISO STS Standard Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

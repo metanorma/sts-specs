@@ -1,0 +1,73 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-front-matter.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-front-matter]
+=== Front Matter
+
+image::images/front.png[front.png]
+#### Standards Document Metadata
+
+image::images/std-doc-meta.png[std-doc-meta.png]
+#### Title Wrapper
+
+image::images/title-wrap.png[title-wrap.png]
+#### Standard Identification Block
+
+image::images/std-ident.png[std-ident.png]
+#### Standards Organization Description
+
+image::images/std-org.png[std-org.png]
+#### ICS Code/Description Wrapper
+
+image::images/ics-wrap.png[ics-wrap.png]
+#### Subject Group
+
+image::images/subj-group.png[subj-group.png]
+#### Counts
+
+image::images/counts.png[counts.png]
+#### Cross-Reference to a Standard
+
+image::images/std-xref.png[std-xref.png]
+#### Permissions
+
+image::images/permissions.png[permissions.png]
+#### Abstract
+
+image::images/abstract.png[abstract.png]
+#### Keyword Group
+
+image::images/kwd-group.png[kwd-group.png]
+#### Metadata Note
+
+image::images/meta-note.png[meta-note.png]
+#### Custom Metadata Group
+
+image::images/custom-meta-group.png[custom-meta-group.png]
+#### NISO STS Standard Metadata
+
+image::images/std-meta.png[std-meta.png]
+#### ISO-specific Metadata
+
+image::images/iso-meta.png[iso-meta.png]
+#### ISO-Specific Document Identification Section
+
+image::images/doc-ident.png[doc-ident.png]
+#### ISO-specific Regional Metadata
+
+image::images/reg-meta.png[reg-meta.png]
+#### ISO-specific National-Body Metadata
+
+image::images/nat-meta.png[nat-meta.png]
+#### Acknowledgments
+
+image::images/ack.png[ack.png]
+#### Notes Section
+
+image::images/notes.png[notes.png]
+#### Table of Contents
+
+image::images/toc.png[toc.png]
+#### Table of Contents Group
+
+image::images/toc-group.png[toc-group.png]

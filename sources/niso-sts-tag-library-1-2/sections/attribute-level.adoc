@@ -1,0 +1,42 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/level.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-level]
+=== `@level` Hierarchical Level
+
+Used on elements that can name a nested hierarchy (for example, <<element-comm-ref-group,`<comm-ref-group>`>> or complementary or introductory titles) to indicate the level of nesting. Such groups start at “`1`”, with embedded groups taking higher numbers.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-comm-ref-group,`<comm-ref-group>`>>, <<element-compl,`<compl>`>>, <<element-compl-title-wrap,`<compl-title-wrap>`>>, <<element-intro,`<intro>`>>, <<element-intro-title-wrap,`<intro-title-wrap>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The level of this element in the hierarchy, typically a counting number such as “`2`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Levels of complementary title
+[source,xml]
+....
+...
+<title-wrap> 
+ <intro>2015 ASME Boiler Pressure Vessel Code</intro> 
+ <main-title-wrap> 
+  <label>III</label> 
+  <main>Rules for Construction of Nuclear Facility Components</main> 
+ </main-title-wrap>
+ <compl level="1">Division 1</compl>
+ <compl-title-wrap level="2"> 
+  <compl>Subsection NH</compl> 
+  <subtitle>Class 1 Components in Elevated Temperature Service</subtitle>
+ </compl-title-wrap>
+</title-wrap>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

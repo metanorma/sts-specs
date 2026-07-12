@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/continued-from.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-continued-from]
+=== `@continued-from` Continued From (list continuation)
+
+An `IDREF`-type attribute that points to the <<attribute-id,`@id`>> attribute of a list which the current list continues; used to connect discontiguous lists that constitute one logical list.
+
+#### Usage/Remarks
+This attribute was inherited from JATS and may be uncommon in standards.
+
+#### OPTIONAL on elements:  <<element-def-list,`<def-list>`>>, 
+                  <<element-list,`<list>`>>
+
+|===
+| Value| Meaning
+
+| A pointer (IDREF)| Points to the existing identifier (<<attribute-id,`@id`>>) of a  list element, to mark the current list as continued from the targeted (pointed
+                        to) list, which may be a list (<<element-list,`<list>`>>) or a definition list (<<element-def-list,`<def-list>`>>).
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

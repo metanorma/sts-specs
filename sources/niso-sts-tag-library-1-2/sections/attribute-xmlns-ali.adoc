@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xmlns-ali.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xmlns-ali]
+=== `@xmlns:ali` NISO ALI Namespace (NISO Access License and Indicators)
+
+This is not an attribute, but the namespace pseudo-attribute. The value provides a prefix and URI to use for the ALI (NISO _Access License and Indicators_) elements. All namespace prefixes must be associated with a URL, and the prefix “`ali`” has been set to the URL `http://www.niso.org/schemas/ali/1.0/` as per the NISO ALI Best Practices recommendation.
+
+#### FIXED (not settable) on many elements; click for list and usage
+
+<<element-adoption,`<adoption>`>>, <<element-ali-free_to_read,`<ali:free_to_read>`>>, <<element-ali-license_ref,`<ali:license_ref>`>>, <<element-standard,`<standard>`>>
+|===
+| Value| Meaning
+
+| http://www.niso.org/schemas/ali/1.0/| The URI named in the NISO _Access License and Indicators_ for the ALI elements.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

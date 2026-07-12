@@ -1,0 +1,94 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-id-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-id-group]
+=== `<std-id-group>` Standard ID Group
+
+A container element that holds one or more standard identifiers (<<element-std-id,`<std-id>`>>s) to indicate that they are alternative identifiers for the same standard, for example, one <<element-std-id,`<std-id>`>> for a DOI and one <<element-std-id,`<std-id>`>> for a URN.
+
+#### Usage/Remarks
+The <<attribute-std-relationship-type,`@std-relationship-type`>> attribute can be used to define how a specific identifier or group of identifiers is related to the current standard, for example, whether the identifiers are part of a standard set or are adoptions of the standard.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-std-relationship-type,`@std-relationship-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std,`<std>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-xref,`<std-xref>`>>
+#### Description
+
+<<element-std-id,`<std-id>`>> <<element-std-id,Standard ID>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-id-group %std-id-group-model;                         >
+....
+#### Expanded Content Model
+
+(std-id)+
+
+#### Tagged Sample
+
+##### Showing both dated and undated <<element-std-id,Standard ID>>s.
+[source,xml]
+....
+...
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="dated">ASME A17.1-2013/CSA B44-13</std-id>
+ <std-id 
+   std-id-type="dated" 
+   std-id-link-type="doi">10.1115/ASME A17.1-2013/CSA B44-13</std-id>
+</std-id-group>
+
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="undated">ASME A17.1/CSA B44</std-id>
+ <std-id 
+   std-id-type="undated" 
+   std-id-link-type="doi">10.1115/ASME A17.1/CSA B44</std-id>
+</std-id-group>
+
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="short" 
+   std-relationship-type="std-family">A17</std-id>
+ <std-id 
+   std-id-type="short" 
+   std-id-link-type="doi">10.1115/ASME.A17</std-id>
+</std-id-group>
+
+<std-id-group 
+  originator="CSA" 
+  std-relationship-type="std-alt-as-published">
+ <std-id 
+   std-id-type="dated">CSA B44-13</std-id>
+ <std-id 
+   std-id-type="dated" 
+   std-id-link-type="doi">10.XYZ/CSA.B44-13</std-id>
+</std-id-group>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Standard Identification Block
+* See: Hierarchy diagram - Cross-Reference to a Standard
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

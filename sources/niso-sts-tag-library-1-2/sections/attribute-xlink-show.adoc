@@ -1,0 +1,31 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xlink-show.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xlink-show]
+=== `@xlink:show` Showing the XLink Link
+
+The intended presentation behavior for an XLink link, specifically the manner in which the content of a link will be displayed, for example, as embedded material or in a separate window.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| embed| The link should be displayed as part of the initial document being viewed, i.e., the
+                        material will be “embedded” directly into the initial document.
+| new| The link should be displayed as a new, separate window, frame, pane, or
+                        other presentation context.
+| none| The presentation behavior is unconstrained, and no other markup is generally available
+                        in the link to assist an application in deducing the display mechanism.
+| other| The presentation behavior is unconstrained, but other markup is generally available
+                        in the link to assist an application in deducing the display mechanism.
+| replace| The link should be displayed in the same window, frame, pane, or other presentation
+                        context as the initial document, thereby “replacing” the document or other object
+                        being linked.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

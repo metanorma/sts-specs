@@ -1,0 +1,49 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/alt.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-alt]
+=== `@alt` Alternative Text
+
+Word or phrase that serves as a textual alternative for the element.
+
+#### Usage/Remarks
+Provides, for the elements on which it is allowed, the same type of service for pronouncing screen readers and other accessibility software as the element <<element-alt-text,`<alt-text>`>> provides for graphics and other objects. This attribute contains a word or phrase used to provide a very short textual alternative to a component such as an abbreviation or cross-reference. The content of the attribute can be used for special accessibility presentation, to differentiate, for example, as part of an <<element-abbrev,`<abbrev>`>>, that the WHO should not be pronounced as the “who”, but rather pronounced as the “W.H.O.” or as the “World Health Organization”.
+##### Accessibility Best Practice
+
+_Please_ reserve this attribute for accessibility uses such as pronouncing screen readers. For example, it could be used to provide a textual interpretation of an emoticon (for example, “`wink, frown`” for the emoticon “ ;-( ”).
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-label,`<label>`>>, <<element-named-content,`<named-content>`>>, <<element-styled-content,`<styled-content>`>>, <<element-xref,`<xref>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Simple textual words or phrases provided as a textual alternative to its
+                        element, for example, a phrase to be pronounced by screen readers.
+| Restriction| This is an optional  attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Alternative pronunciation for an acronym
+[source,xml]
+....
+...
+<list-item>
+ <label>f.</label>
+ <p>Replacement of the DoD Index of Specifications and 
+  Standards (<abbrev>DoDISS</abbrev>) with the Acquisition 
+  Streamlining and Standardization Information System 
+  (<abbrev alt="A.S.S.I.S.T.">ASSIST</abbrev>) database.</p>
+</list-item>
+...
+....
+
+#### Related Resources
+
+* For additional information concerning <<attribute-alt,`@alt`>>, see 
+                  Accessibility: Using `@alt` for Pronunciation.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

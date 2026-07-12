@@ -1,0 +1,119 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/def-list.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-def-list]
+=== `<def-list>` Definition List
+
+List in which each item consists of two parts: 1] a word, phrase, term, graphic, chemical structure, or equation, that is paired with 2] one or more descriptions, discussions, explanations, or definitions of it.
+
+#### Usage/Remarks
+The definition <<element-def,`<def>`>> part of an item in a two-part (definition) list need not be a “definition” in the strict dictionary sense of that word. Such a definition could be a discussion, explanation, expansion, or something that tells the reader about the <<element-term,`<term>`>>. When a <<element-def-list,`<def-list>`>> is within a <<element-glossary,`<glossary>`>> element, the definitions are assumed to be real definitions.
+
+#### Related Elements
+
+A <<element-def-list,`<def-list>`>> may take a <<element-label,`<label>`>> that provides it with a number, followed by an optional <<element-title,`<title>`>> naming the entire list, followed by optional headings for terms and their definitions. <<element-term-head,`<term-head>`>> contains the heading over the first (term) column, and <<element-def-head,`<def-head>`>> contains the heading for the second (definition) column; neither serves as a container element for terms or definitions. Individual <<element-term,`<term>`>>s and their <<element-def,`<def>`>>s are paired in <<element-def-item,`<def-item>`>>s. Definition lists are recursive, so following all the terms and definitions, there may be one or more embedded <<element-def-list,`<def-list>`>> elements.
+
+#### Attributes
+
+* <<attribute-continued-from,`@continued-from`>>
+* <<attribute-list-content,`@list-content`>>
+* <<attribute-list-type,`@list-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-prefix-word,`@prefix-word`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-def-list,`<def-list>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-legend,`<legend>`>>, <<element-license-p,`<license-p>`>>, <<element-list-item,`<list-item>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-term-head,`<term-head>`>> <<element-term-head,Definition List: Term Head>>, zero or one <<element-def-head,`<def-head>`>> <<element-def-head,Definition List: Definition Head>>, zero or one <<element-def-item,`<def-item>`>> <<element-def-item,Definition List: Definition Item>>, zero or more <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  def-list     %def-list-model;                             >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, term-head?, def-head?, (def-item)*, (def-list)*)
+
+#### Tagged Samples
+
+#### Abbreviations and expansions
+
+[source,xml]
+....
+...
+<sec sec-type="abbreviations" id="s4">
+ <label>4</label>
+ <title>Abbreviations and acronyms</title>
+ <def-list>
+  <title>Abbreviations:</title>
+  <def-item>
+   <term>CCD</term>
+   <def><p>Charge Coupled Device.</p></def>
+  </def-item>
+  <def-item>
+   <term>CMOS</term>
+   <def><p>Complementary Metal Oxide Semiconductor.</p></def>
+  </def-item>
+  <def-item>
+   <term>LED</term>
+   <def><p>Light Emitting Diode.</p></def>
+  </def-item>
+ </def-list>
+</sec>
+...
+....
+#### In Glossary
+
+[source,xml]
+....
+...
+<sec sec-type="definitions">
+ <label>1.10</label>
+ <title>Glossary</title>
+ <glossary>
+  <def-list>
+   <def-item>
+    <term>bend qualification procedure</term>
+    <def><p>a document that specifies the
+     properties of the starting pipe; the equipment to be used;
+     the bending parameters; the qualification bend test
+     results; and the postbend, heat-treat equipment and
+     cycle used for the manufacture of the bends. If nondestructive
+     testing of the bend is required, procedures that
+     have not been approved previously shall be submitted.</p></def>
+   </def-item>
+   <def-item>
+    <term>cylinder</term>
+    <def><p>a joint of pipe produced by a rolling andwelding
+     plate, as opposed to a joint of pipe produced in accordance
+     with a recognized specification.</p></def>
+   </def-item>
+   <def-item>
+    <term>extrados</term>
+    <def><p>the outside arc of the bend.</p></def>
+   </def-item>
+   ...
+  </def-list>
+ </glossary>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Definition List
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

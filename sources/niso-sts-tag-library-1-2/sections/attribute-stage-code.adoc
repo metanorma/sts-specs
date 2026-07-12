@@ -1,0 +1,55 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/stage-code.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-stage-code]
+=== `@stage-code` Stage Code for Standard Project Lifecycle
+
+The `@stage-code` attribute on <<element-release-version,`<release-version>`>> identifies the development stage of the project that is developing the standard, as the standard passes through the various lifecycle stages to publication.
+
+#### Usage/Remarks
+Suggested values for `@stage-code` should be taken from the _ISO document International Harmonized Stage Codes_ (https://www.iso.org/stage-codes.html). These values are 4 digit decimal numbers, two digits, the decimal, and two digits. The first two digits represent the main stage (for example, “`00`” for “`Preliminary Stage`”, “`20`” for “`Proposal Stage`”, “`30`” for “`Committee Stage`”, etc.) and the second two digits (following the decimal) contain the substage code for an appropriate lower-stage division of the main stage (for example. In the Preliminary Stage “`20`” for the “Project Proposal under review” and “`99`” for “Approval to ballot proposal for a new project”).
+While these codes represent the stages in the life of the project that develops a standard, not the stages of the standard itself, such codes are often tracked to judge the maturity-level of the standard.
+
+#### OPTIONAL on element:  <<element-release-version,`<release-version>`>>
+
+|===
+| Value| Meaning
+
+| 4 decimal digits (two digits, the decimal, and two digits): '90.60'| The first two digits(before the decimal) name the main stage and the second two digits
+                        (following the decimal) contain the substage code for an appropriate lower-stage division
+                        of the main stage.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* Although this attribute may take any text as values, the values should be taken from the ISO document _ISO document International Harmonized Stage Codes_ (https://www.iso.org/stage-codes.html).
+
+#### Tagged Sample
+
+##### Free to read starting date
+[source,xml]
+....
+...
+<iso-meta>
+ <title-wrap xml:lang="en">...</title-wrap>
+ <doc-ident>
+  <sdo>ISO</sdo>
+  <proj-id>...</proj-id>
+  <language>en</language>
+  <release-version stage-code="60.60">IS</release-version>
+  <urn>urn:iso:std:iso:2560:ed-3:v1:en</urn>
+ </doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <edition>3</edition>
+  <version>1</version>
+ </std-ident>
+ ...  
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

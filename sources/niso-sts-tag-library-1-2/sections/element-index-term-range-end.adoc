@@ -1,0 +1,69 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/index-term-range-end.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-index-term-range-end]
+=== `<index-term-range-end>` Index Term Range End
+
+The marker (an `EMPTY` element) for the end of a range when an index term embedded into the narrative of a document is the start of a range.
+
+#### Usage/Remarks
+When the <<element-index-term,`<index-term>`>> is the start of a range, the <<attribute-rid,`@rid`>> attribute of an <<element-index-term-range-end,`<index-term-range-end>`>> must point to the <<attribute-id,`@id`>> of the <<element-index-term,`<index-term>`>>.
+This is an `EMPTY` element, since all the information naming the index term is already present in the <<element-index-term,`<index-term>`>> element to which this element points.
+
+#### Attributes
+
+* <<attribute-rid,`@rid`>> (REQUIRED)
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-def-head,`<def-head>`>>, <<element-element-citation,`<element-citation>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-inline-code,`<inline-code>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-preformat,`<preformat>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-head,`<term-head>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT index-term-range-end
+                        %index-term-range-end-model;                 >
+....
+#### Expanded Content Model
+
+EMPTY
+
+#### Tagged Sample
+
+##### Start and end of range
+`@rid` of `<index-term-range-end>` must point to the `@id` of the structure that starts the range, in this case a section title
+[source,xml]
+....
+...
+<sec>
+ <title>Controlled Vocabularies &mdash; Purpose, Concepts, Principles, 
+  and Structure<index-term id="idx2313"><term>Controlled Vocabularies</term>
+  </index-term></title>
+ <sec><title>Purpose</title> ...</sec>
+ <sec><title>Concepts</title>
+  <sec><title>Terms</title> ...</sec>
+  <sec><title>Content Objects</title> ...
+   <p>... any new metadata elements sets or 
+    schema.<index-term-range-end rid="idx2313"/></p>
+  </sec>
+ </sec>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Index Term Range End
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

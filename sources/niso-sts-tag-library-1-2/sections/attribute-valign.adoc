@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/valign.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-valign]
+=== `@valign` Vertical Alignment (NISO JATS table model)
+
+Sets the vertical alignment inside a table cell. (This attribute is based on and intended to be converted easily to the XHMTL `valign` attribute.)
+
+#### Usage/Remarks
+Within a NISO JATS table (based on and designed to be converted easily to the XHTML 1.1 table model), this attribute specifies the vertical position of data within a table cell, for example, flush to the top of the cell.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-col,`<col>`>>, <<element-colgroup,`<colgroup>`>>, <<element-tbody,`<tbody>`>>, <<element-td,`<td>`>>, <<element-tfoot,`<tfoot>`>>, <<element-th,`<th>`>>, <<element-thead,`<thead>`>>, <<element-tr,`<tr>`>>
+|===
+| Value| Meaning
+
+| baseline| All cells in the same row as a cell whose <<attribute-valign,`@valign`>> attribute has this value should have their
+                        textual data positioned so that the first text line occurs on a baseline common to
+                        all cells in the row. This constraint does not apply to subsequent text lines in
+                        these cells.
+| bottom| Cell data is flush with the bottom of the cell.
+| middle| Cell data is centered vertically within the cell.
+| top| Cell data is flush with the top of the cell.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Middle alignment for the cells in a table head
+[source,xml]
+....
+...
+<table border="2" rules="groups" style="border-collapse: collapse; 
+ border-style: solid;" width="298">
+ <col width="41.86%"/>
+ <col width="58.14%"/>
+ <thead>
+  <tr>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Shore AO value</bold></th>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Value of spring force</bold>, 
+    <italic>F</italic>, <bold>in</bold> mN<break/>
+    (&Delta;<italic>F</italic>&equals; &plusmn; 37,5 mN)<xref 
+    ref-type="fn" rid="table-fn_23.1"><sup>a</sup></xref></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">0</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">550,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">10</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">1 300,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">20</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 
+    1px" valign="middle">2 050,0</td>
+  </tr>
+  ...
+ </tbody>
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

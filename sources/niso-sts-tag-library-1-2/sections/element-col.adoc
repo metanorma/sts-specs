@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/col.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-col]
+=== `<col>` Table Column (NISO JATS table model)
+
+The description of one column of a table, used to provide attributes relating to a specific column. If there is no <<element-col,`<col>`>> these attributes will be inherited from the associated <<element-colgroup,`<colgroup>`>>. (This element is based on and intended to be converted easily to the XHMTL `col` element.)
+
+#### Usage/Remarks
+Use W3C documentation for the XHTML 1.1 table model (https://www.w3.org/TR/xhtml-modularization/abstract_modules.html#s_tablemodule).
+
+#### Attributes
+
+* <<attribute-align,`@align`>>
+* <<attribute-char,`@char`>>
+* <<attribute-charoff,`@charoff`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-span,`@span`>> (default = 1)
+* <<attribute-style,`@style`>>
+* <<attribute-valign,`@valign`>>
+* <<attribute-width,`@width`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-colgroup,`<colgroup>`>>, <<element-table,`<table>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT %col.qname;  %col.content; >
+....
+#### Expanded Content Model
+
+EMPTY
+
+#### Tagged Sample
+
+##### As part of array
+[source,xml]
+....
+...
+<p>Visually inspect the fracture surfaces to establish 
+ the nature of the fracture, and assess the type of 
+ fracture as follows:
+ <array id="tab_g">
+  <table rules="groups">
+   <col width="9.23%"/>
+   <col width="90.77%"/>
+   <tbody>
+    <tr>
+     <td align="left" scope="row" valign="top">A</td>
+     <td align="left" valign="top">is cohesive failure of 
+      substrate;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">A/B</td>
+     <td align="left" valign="top">is adhesive failure 
+      between substrate and first coat;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">B</td>
+     <td align="left" valign="top">is cohesive failure 
+      of first coat;</td>
+    </tr>
+    ...
+   </tbody>
+  </table>
+ </array>
+</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

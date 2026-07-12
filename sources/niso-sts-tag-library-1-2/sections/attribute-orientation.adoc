@@ -1,0 +1,47 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/orientation.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-orientation]
+=== `@orientation` Orientation
+
+Indicates whether an object (for example, a figure or table) should be positioned in a tall manner with the long edge vertical (“`portrait`”) or in a wide manner with the long edge horizontal (“`landscape`”).
+
+#### Usage/Remarks
+The default value for this attribute is “`portrait`” and indicates that the graphic or other object should be displayed in its default orientation. Setting this attribute to “`landscape`” indicates that the object should instead be rotated by 90 degrees.
+
+#### OPTIONAL (defaults to portrait) on many elements; click for list and usage
+
+<<element-array,`<array>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-code,`<code>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-media,`<media>`>>, <<element-preformat,`<preformat>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>
+|===
+| Value| Meaning
+
+| landscape| The object should be rotated by 90 degrees, so that the display is wide rather than
+                        tall.
+| portrait| The object should not be rotated by 90 degrees; the display will be taller than it
+                        is wide.
+| Default value| portrait
+|===
+
+#### Tagged Sample
+
+##### Display a figure horizontally (landscape)
+[source,xml]
+....
+...
+<sec sec-type="inspection">
+ <title>Field Notes</title>
+ <p>Inspectors must record all variances at the time of observation. A form 
+  such as the one in <xref rid="nne-fe">Example F-2</xref> may be used.</p>
+ ...
+ <non-normative-example id="nne-fe">
+  <fig is-form="form" form-type="blank">
+   <graphic orientation="landscape" mimetype="pdf" xlink:href="FieldObs.pdf"/>
+  </fig>
+ </non-normative-example>
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,57 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/lpage.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-lpage]
+=== `<lpage>` Last Page (in a citation)
+
+Page number on which a document ends, typically used as part of citing a journal article or referencing a related journal article.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  lpage        (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### In a citation
+[source,xml]
+....
+...
+<ref id="ref_4">
+ <label>4</label>
+ <mixed-citation publication-type="paper"
+  ><person-group person-group-type="author"
+   ><string-name><surname>GAVARE</surname>, 
+    <given-names>R</given-names>.</string-name></person-group> 
+  <part-title>Alphabetic ordering in a 
+   lexicological perspective</part-title>. 
+  <source>Studies in Computer-Aided Lexicology</source>, 
+  <year iso-8601-date="1998">1988</year>, pp. 
+  <fpage>63</fpage>&ndash;<lpage>102</lpage>.</mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

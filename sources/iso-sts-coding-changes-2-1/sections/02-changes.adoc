@@ -1,0 +1,155 @@
+[[_changes]]
+== Changes between ed. 1.11 and ed. 2.1
+
+The table below lists every tagging change between Coding Guidelines ed. 1.11
+and ed. 2.1, with the affected clause number, the prior and current tagging,
+and the SDO(s) the change applies to.
+
+.Changes by clause
+|===
+| Section in ed. 2.1 | Tagging in ed. 1.11 | Tagging in ed. 2.1 | ISO | IEC
+
+| all
+| following NISO STS v.1.0
+| following NISO STS v.1.2
+| ✓
+| ✓
+
+| all
+| describing XML from traditional publication chains; differences between ISO and IEC colour-coded
+| describing XML from traditional and OSD publication chains; almost full harmonisation between ISO and IEC; legacy tagging moved to annex
+| ✓
+| ✓
+
+| 3.4
+| semantic IDs throughout
+| arbitrary IDs will increasingly replace semantic IDs
+| ✓
+| ✓
+
+| 4.3.2
+| —
+| new metadata to indicate which edition of the Coding Guidelines an XML file follows
+| ✓
+| ✓
+
+| 4.4.2
+| ISO uses punctuation between elements in `<ref-list>`; IEC does not
+| alignment — no more punctuation
+| ✓
+|
+
+| 4.5.1
+| `@content-type` in annexes uses different values at IEC and ISO; can be void or undefined at IEC
+| alignment — only values are now `informative` and `normative`
+| ✓
+| ✓
+
+| 5.1
+| various possible formatting options were described
+| formatting options are now limited
+| ✓
+| ✓
+
+| 5.5
+| `<named-content content-type="variable">` only used at IEC
+| alignment — now also used at ISO
+| ✓
+|
+
+| 5.7
+| `@list-type` can have various values
+| limiting options and order of `@list-type`; harmonisation between ISO and IEC
+| ✓
+| ✓
+
+| 5.9
+| `<disp-quote>` is used for quotations
+| `<disp-quote>` can now have a source and usage permissions attributed to it
+| ✓
+| ✓
+
+| 5.10
+| —
+| size of graphics can now be indicated in `@specific-use`
+| ✓
+| ✓
+
+| 5.13
+| IEC uses `<editing-instructions>`
+| still present in legacy content but not in new documents
+|
+| ✓
+
+| 6.1
+| —
+| new information for rendering: tables can now have size attributes
+| ✓
+| ✓
+
+| 6.2.2
+| IEC does not use `<bold>` in table headers — formatting was supposed to be added on rendering
+| alignment — `<bold>` is now used in table headers
+|
+| ✓
+
+| 6.3
+| different options to style tables
+| alignment — clear definition of table styling
+| ✓
+| ✓
+
+| 7.3
+| formula keys are coded differently at ISO and IEC
+| alignment and new element: `<legend>`
+| ✓
+| ✓
+
+| 8.2
+| —
+| specifying how multiple graphics and sub-figures are handled
+| ✓
+| ✓
+
+| 8.4
+| unit statements in figures are coded inside `<p>` in `<fig>` (in `<content-type="dimension">`)
+| the `<p>` containing the unit statement can now be placed inside the figure caption
+| ✓
+| ✓
+
+| 9.2
+| `<term-display>` is an option for tagging terminology content at IEC
+| still present in legacy content but not in new documents
+|
+| ✓
+
+| 9.2.7
+| `<tbx:see>` with `@target` is used for cross-references in the terminology section
+| `<xref>` will replace `<tbx:see>` for now
+| ✓
+| ✓
+
+| 10.1.1
+| for cross-references to terminological entries, abbreviations, notes, etc., `@ref-type="other"` was used
+| new cross-reference options possible with NISO STS 1.2 — `@ref-type` can now be `abbreviation`, or `custom` with `@custom-type` of various values (`note`, `term-entry`, `example`)
+| ✓
+| ✓
+
+| 10.1.8
+| footnote text is placed at the point of use for ISO, in the `<back>` for IEC
+| alignment — footnote text now always at the point of use
+|
+| ✓
+
+| Annex A
+| —
+| new section on dealing with contents and tagging across different languages
+| ✓
+| ✓
+
+| Annex B
+| —
+| all legacy tagging has been moved to Annex B
+| ✓
+| ✓
+|===

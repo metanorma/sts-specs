@@ -1,0 +1,37 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/journal-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-journal-id]
+=== `<journal-id>` Journal Identifier in a Related Article
+
+Within a related article (<<element-related-article,`<related-article>`>>) or similar element, this element is the short code or abbreviation that represents the journal; used as an alternative to or short form of the journal title; used for identification of the journal domain.
+
+#### Attributes
+
+* <<attribute-assigning-authority,`@assigning-authority`>>
+* <<attribute-journal-id-type,`@journal-id-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-related-article,`<related-article>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  journal-id   (#PCDATA)                                    >
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

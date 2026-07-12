@@ -1,0 +1,282 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/adoption-front.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-adoption-front]
+=== `<adoption-front>` Front Matter, Adoption
+
+When a standard is adopted, sometimes the adopting organization wraps their own metadata, front matter, and back matter around a standard, producing a combined, nested document. The <<element-adoption-front,`<adoption-front>`>> element contains the metadata, any beginning narrative material, and possible back matter that describes the adopting standard (<<element-adoption,`<adoption>`>>).
+
+#### Usage/Remarks
+The <<element-adoption-front,`<adoption-front>`>> element contains all the text and metadata needed to produce the cover, the front matter, and (potentially) the back cover and back matter for an adopted standard. For example, the adoption front matter could contain the document title(s) for the adopted standard, its release date, some adoption notes, etc. Note: the standard or adoption document enclosed in the <<element-adoption,`<adoption>`>> will contain its own front matter.
+#### Adoption Front Matter Restriction
+
+The elements `<iso-meta>`, `<reg-meta>`, and `<nat-meta>` cannot be used inside the front matter for an adoption (<<element-adoption-front,`<adoption-front>`>>). Only `<std-meta>` may be used at the top level of an adoption. The elements `<iso-meta>`, `<reg-meta>`, and `<nat-meta>` can be used in the front matter of a standard (`<front>`).
+
+#### Related Elements
+
+*Components of an Adoption:* An adoption (`<adoption>`) may contain several top-level components: An <<element-adoption-front,`<adoption-front>`>> element, which contains document-level and adoption-level metadata, possibly with notes and prose sections; An optional adopting back matter element (<<element-back,`<back>`>>) provided by the adopting organization, which contains annexes in the local language or additional requirements or notes (Note: Some adopting organizations place all their adoption material, including adoption-specific back matter, _before_ the standard they are adopting; others place the adoption-specific back matter _after_ the standard being adopted. The NISO STS model for <<element-adoption,`<adoption>`>> allows either location to be used, though not both at once.); The contents of the <<element-adoption,`<adoption>`>> that contain or point to the standard being adopted. This may include one or more of the following: One or more full standards (<<element-standard,`<standard>`>>) One or more full adoptions (<<element-adoption,`<adoption>`>>) One or more <<element-xi-include,`<xi:include>`>> elements One or more <<element-std-xref,`<std-xref>`>> elements The <<element-std-xref,`<std-xref>`>> element may be particularly useful when a standards organization does not possess the XML version of the standard they are adopting, but only, for example, the PDF version. The <<element-std-xref,`<std-xref>`>> element can also be used in situations where the adopting organization does not have permission to distribute the standard being adopted. An optional adopting back matter element (<<element-back,`<back>`>>) provided by the adopting organization, which contains annexes in the local language or additional requirements or notes. (Note: Some adopting organizations place all their adoption material, including adoption-specific back matter, _before_ the standard they are adopting; others place the adoption-specific back matter _after_ the standard being adopted. The NISO STS model for <<element-adoption,`<adoption>`>> allows either location to be used, though not both at once.)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption,`<adoption>`>>
+#### Description
+
+The following, in order: <<element-std-doc-meta,`<std-doc-meta>`>> <<element-std-doc-meta,Standards Document Metadata>>, zero or one <<element-std-meta,`<std-meta>`>> <<element-std-meta,NISO STS Standard Metadata>>, zero or one Any combination of: <<element-ack,`<ack>`>> <<element-ack,Acknowledgments>> <<element-notes,`<notes>`>> <<element-notes,Notes Section>> <<element-toc,`<toc>`>> <<element-toc,Table of Contents>> <<element-toc-group,`<toc-group>`>> <<element-toc-group,Table of Contents Group>> <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-xi-include,`<xi:include>`>> <<element-xi-include,XInclude>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  adoption-front
+                        %adoption-front-model;                       >
+....
+#### Expanded Content Model
+
+(std-doc-meta?, std-meta?, (ack | notes | toc | toc-group | sec | xi:include)*)
+
+#### Tagged Samples
+
+#### Outline of adoption showing adoption front and back matter added by adopting agency
+
+[source,xml]
+....
+<adoption>
+ <adoption-front>
+  <std-meta id="profile.reg">...</std-meta>
+  <notes>...</notes>
+  ...
+ </adoption-front>
+
+ <standard>
+  <front>...</front>
+  <body>...</body>
+  <back>...</back>
+ </standard>
+
+ <back>...</back>
+</adoption>
+....
+#### ISO standard that was adopted by CEN, that was then adopted by DIN
+
+[source,xml]
+....
+<adoption>
+ 
+<!-- DIN adoption of CEN standard -->
+ <adoption-front>
+
+<!-- Metadata that is the same for all of the organizations that developed or adopted
+ this standard -->
+  <std-doc-meta>
+   <title-wrap xml:lang="de">
+    <intro>Sicherheit von Maschinen</intro>
+    <main>Sicherheitsbezogene Teile von Steuerungen</main>
+    ...
+   </title-wrap>
+   <title-wrap xml:lang="en">
+    <intro>Safety of machinery</intro>
+    <main>Safety-related parts of control systems</main>
+    ...
+   </title-wrap>
+   <title-wrap xml:lang="fr">
+    <intro>Sécurité des machines</intro>
+    <main>Parties des systèmes de commande relatives à la sécurité</main>
+    ...
+   </title-wrap>
+   <std-ident>
+    <doc-type>st</doc-type>
+    <doc-number>13849</doc-number>
+    <part-number>1</part-number>
+    <version>n</version>
+   </std-ident>
+  </std-doc-meta>
+
+  <std-meta id="profile.nat">
+   <std-org>
+    <std-org-abbrev>DIN</std-org-abbrev>
+    <std-org-loc>Berlin</std-org-loc>
+   </std-org>
+   ...
+  </std-meta>
+  <notes>...</notes>
+  <sec sec-type="foreword" specific-use="foreword.nat">
+   <title>National foreword</title>
+   <p>This standard includes ...</p>
+   ...
+  </sec>
+ </adoption-front>
+
+ <!-- CEN adopted ISO standard -->
+ <adoption>
+  <adoption-front>
+   <std-meta id="profile.reg">
+    <std-org>
+     <std-org-abbrev>CEN</std-org-abbrev>
+    </std-org>
+    ...
+   </std-meta>
+   <notes>...</notes>
+   ...
+  </adoption-front>
+
+  <!-- The ISO standard that was adopted by CEN and then by DIN -->
+  <standard>
+   <front>
+    <iso-meta id="profile.int">
+     <std-org>
+      <std-org-abbrev>ISO</std-org-abbrev>
+     </std-org>
+     <content-language>en</content-language>
+     <std-ref type="undated">ISO 13849-1</std-ref>
+     <doc-ref>ISO 13849-1</doc-ref>
+     <release-date>2006-11</release-date>
+     <permissions>
+      <copyright-year>2006</copyright-year>
+      <copyright-holder>ISO</copyright-holder>
+     </permissions>
+    </iso-meta>
+    <sec sec-type="intro">
+     <title>Introduction</title>
+     <p>The structure of safety standards ... this part of ISO
+      13849.</p>
+    </sec>
+   </front>
+   <body>
+    <sec id="sec_1" sec-type="scope">
+     <label>1</label>
+     <title>Scope</title>
+     <p id="par_1_1">This part of ISO 13849 provides ...</p>
+     ...
+    </sec>
+   </body>
+   <back>
+    <app-group>
+     <app id="sec_A" content-type="inform-annex">
+      <label>Annex A</label>
+      <annex-type>(informative)</annex-type>
+      <title>Determination of required performance ...</title>
+      ...
+     </app>
+     ...
+    </app-group>
+    ...
+   </back>
+  </standard>
+
+  <!-- Back matter added by CEN -->
+  <back>
+   <app-group>
+    <app id="sec_ZA" content-type="inform-annex">
+     <label>Annex ZA</label>
+     <annex-type>(informative)</annex-type>
+     <title>Relationship between this European Standard and the Essential 
+      Requirements of EU Directive 98/37/EC, amended by Directive 98/79/EC</title>
+     <p id="par_ZA_1">This European Standard has been prepared ...</p>
+    </app>
+    ...
+   </app-group>
+  </back>
+ </adoption>
+
+ <!-- Back matter added by DIN -->
+ <back>
+  <app-group>
+   <app id="sec_NA" content-type="bibl">
+    <label>Annex NA</label>
+    <title>Bibliography</title>
+    <p><bold>Standards referred to in</bold> <xref ref-type="sec" rid="sec_2">Clause 2</xref>
+    </p>
+    <ref-list>
+     <ref>
+      <mixed-citation><std std-id="urn:iso:std:beuth:e2b8abae:::en" type="dated">IEV
+       191:2002</std>, International electrotechnical vocabulary — Chapter 191:
+       Dependability and quality of service; (IEC 60050-191 AMD 1:1999-03 and IEC
+       60050-191 AMD 2:2002-01)</mixed-citation>
+     </ref>
+     ...
+    </ref-list>
+   </app>
+  </app-group>
+ </back>
+</adoption>
+....
+#### An adoption of both a standard and an erratum to that standard
+
+[source,xml]
+....
+<adoption
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <adoption-front>
+  <std-meta>
+   <title-wrap>
+    <intro>South American National Standard</intro>
+    <main>IEEE guide for safety in a.c. substation grounding</main>
+   </title-wrap>
+   <std-ident>
+    <originator>SABS</originator>
+   </std-ident>
+   <std-ref type="dated">SANS 725:2010</std-ref>
+   <doc-ref>SANS 725:2010 (Edition 1 and IEEE Erata)</doc-ref>
+   <release-date std-type="standard" 
+     date-type="published"
+     iso-8601-date="2010-11">2010-11</release-date>
+   <meta-note content-type="adoption">
+    <p>This national standard is an adoption of IEEE Std 80-2000 
+     and IEEE errata, and is adopted with the permission of the 
+     Institute of Electrical and Electronics Engineers, Inc.</p>
+   </meta-note> 
+  </std-meta>    
+ </adoption-front>
+ <standard>
+  <front>
+   <std-meta>
+    <title-wrap>
+     <full>Errata to IEEE Guide for Safety in AC Substation Grounding</full>
+    </title-wrap>
+    <std-ident>
+     <originator>IEEE</originator>
+    </std-ident>
+    <std-ref type="undated">IEEE Std 80&trade;-2000</std-ref>
+    <doc-ref>IEEE Std 80&trade;-2000 (Revision of IEEE Std 80-1986)</doc-ref>
+    <release-date std-type="errata" 
+      date-type="published"
+      iso-8601-date="2007-02-21">21 February 2007</release-date>
+   </std-meta> 
+  </front>
+  <body>...</body>
+ </standard>
+ <standard>
+  <front>
+   <std-meta>
+    <title-wrap>
+     <full>IEEE Guide for Safety in AC Substation Grounding</full>
+    </title-wrap>
+    <std-ident>
+     <originator>IEEE</originator>
+    </std-ident>
+    <std-ref type="dated">IEEE Std 80-2000</std-ref>
+    <doc-ref>IEEE Std 80-2000 (Revision of IEEE Std 80-1986)</doc-ref>
+    <release-date std-type="standard" 
+      date-type="approved"
+      iso-8601-date="2000-01-30">30 January 2000</release-date>
+   </std-meta> 
+  </front>
+  <body>...</body>
+ </standard>
+ <back>...</back>
+</adoption>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Standard Adoption Document
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/fig-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-fig-group]
+=== `<fig-group>` Figure Group
+
+Container element for figures that are to be displayed together.
+
+#### Related Elements
+
+Both figures (<<element-fig,`<fig>`>>) and graphics (<<element-graphic,`<graphic>`>>) may appear either grouped within a <<element-fig-group,`<fig-group>`>> or singly within textual material.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more <<element-abstract,`<abstract>`>> <<element-abstract,Abstract>>, zero or more <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Any combination of: <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  fig-group    %fig-group-model;                            >
+....
+#### Expanded Content Model
+
+((label)?, (caption)?, (legend)*, (abstract)*, (kwd-group)*, (subj-group)*, (alt-text | long-desc | email | ext-link | uri)*, (fig | alternatives | graphic | media)*)
+
+#### Tagged Sample
+
+##### Note captions for both `<fig-group>` and `<fig>`
+[source,xml]
+....
+...
+<fig-group id="overview4">
+ <caption><title>Figures 12-14 Overview Diagrams</title>
+  <p>Diagrams of the mechanizm from three perspectives</p>
+ </caption>
+
+ <fig id="fg-12">
+  <label>a.</label>
+  <caption><p>View A: From the Front</p></caption>
+  <graphic xlink:href="frontView.png"/>
+ </fig>
+
+ <fig id="fg-13">
+  <label>b.</label>
+  <caption><p>View B: From the Side</p></caption>
+  <graphic xlink:href="sideView.png"/>
+ </fig>
+
+ <fig id="fg-14">
+  <label>c.</label>
+  <caption><p>View C: From Above</p></caption>
+  <graphic xlink:href="topView.png"/>
+ </fig>
+
+</fig-group>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Figures, Graphics, and Multimedia
+* See: Hierarchy diagram - Figure Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

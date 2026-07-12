@@ -1,0 +1,273 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/nav-pointer.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-nav-pointer]
+=== `<nav-pointer>` Navigation Pointer
+
+The cross-reference-like element used to point from a Table of Contents entry (<<element-toc-entry,`<toc-entry>`>>) or Index Entry (<<element-index-entry,`<index-entry>`>>) to the place in the text being referenced.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-nav-pointer-type,`@nav-pointer-type`>>
+* <<attribute-rid,`@rid`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-index-entry,`<index-entry>`>>, <<element-nav-pointer-group,`<nav-pointer-group>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-entry,`<toc-entry>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  nav-pointer  (#PCDATA %nav-pointer-elements;)*            >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | inline-graphic | private-char | inline-code | inline-media | named-content | styled-content | sub | sup)*
+
+#### Tagged Samples
+
+#### In index, with page numbers
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  <index-entry>
+   <term>Abbreviations</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx869"/>
+    <nav-pointer specific-use="page">7</nav-pointer></nav-pointer-group>
+  </index-entry>
+
+  <index-entry>
+   <term>Acquisition Management Systems Control (AMSC) number</term>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx284"/>
+    <nav-pointer specific-use="page">2</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx752"/>
+    <nav-pointer specific-use="page">6</nav-pointer></nav-pointer-group>
+   <nav-pointer-group
+    ><nav-pointer specific-use="paragraph" rid="idx1235"/>
+    <nav-pointer specific-use="page">19</nav-pointer></nav-pointer-group>
+  </index-entry>
+ </index>
+ ...
+</back>
+...
+....
+#### In index with alphabetical divisions
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group>
+   <title>INDEX</title>
+  </index-title-group>
+  ...
+
+  <index-div>
+   <index-title-group>
+    <title>D</title>
+   </index-title-group>
+   <index-entry>
+    <term>degree of linear polarization</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.41"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>device efficiency</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.18"/></nav-pointer-group>
+   </index-entry>
+
+   <index-entry>
+    <term>divergence angle</term>
+    <nav-pointer-group
+     ><nav-pointer specific-use="section" rid="sec_3.19.1"/>, 
+     <nav-pointer specific-use="section" rid="sec_3.19.2"/></nav-pointer-group>
+   </index-entry>
+  </index-div>
+  ...
+
+ </index>
+ ...
+</back>
+...
+....
+#### In another index with alphabetical divisions, where entry includes page range
+
+[source,xml]
+....
+...
+<back>
+ <index>
+  <index-title-group><title>Index</title></index-title-group>
+  <index-div>
+   <index-title-group><title>A</title></index-title-group>
+   ...
+   <index-entry>
+    <term>access vocabularies</term>
+    <see-entry>entry terms</see-entry>
+   </index-entry>
+   ...
+   <index-entry>
+    <term>adjectives</term>
+    <nav-pointer-group
+     ><nav-pointer rid="idx320" nav-pointer-type="start-of-range"
+     >26</nav-pointer>&ndash;<nav-pointer rid="idx486" nav-pointer-type="end-of-range"
+     >27</nav-pointer></nav-pointer-group>    
+    <see-also-entry>modifiers in compound terms</see-also-entry>
+   </index-entry>
+   ...
+  </index-div>
+  ...
+ </index>
+</back>
+...
+....
+#### In Table of Contents
+
+[source,xml]
+....
+...
+<front>
+ ...
+ <toc>
+  <toc-title-group>
+   <title>Table of Contents</title>
+  </toc-title-group>
+  <toc-entry>
+   <title>Foreword</title>
+   <nav-pointer rid="fwd"/>
+  </toc-entry>
+  <toc-entry>
+   <label>1</label>
+   <title>Purpose</title>
+   <nav-pointer rid="s1"/>
+  </toc-entry>
+  <toc-entry>
+   <label>2</label>
+   <title>Scope</title>
+   <nav-pointer rid="s2"/>
+   <toc-entry>
+    <label>2.1</label>
+    <title>The Journal Archive and Interchange Tag Set</title>
+    <nav-pointer rid="s2.1"/>
+   </toc-entry>
+   <toc-entry>
+    <label>2.2</label>
+    <title>The Journal Publishing Tag Set</title>
+    <nav-pointer rid="s2.2"/>
+   </toc-entry>
+   <toc-entry>
+    <label>2.3</label>
+    <title>The Article Authoring Tag Set</title>
+    <nav-pointer rid="s2.3"/>
+   </toc-entry>
+  </toc-entry>
+  <toc-entry>
+   <label>3</label>
+   <title>Format of this Standard</title>
+   <nav-pointer rid="s3"/>
+   <toc-entry>
+    <label>3.1</label>
+    <title>Description of the Tag Suite</title>
+    <nav-pointer rid="s3.1"/>
+   </toc-entry>
+   <toc-entry>
+    <label>3.2</label>
+    <title>Description of each Tag Set</title>
+    <nav-pointer rid="s3.2"/>
+   </toc-entry>
+  </toc-entry>
+  ...
+ </toc>
+ ...
+</front>
+...
+....
+#### In Table of Contents, including print page numbers
+
+[source,xml]
+....
+...
+<front>
+ ...
+ <toc>
+  <toc-title-group>
+   <title>Table of Contents</title>
+  </toc-title-group>
+  <toc-entry>
+   <title>Foreword</title>
+   <nav-pointer rid="fwd">iii</nav-pointer>
+  </toc-entry>
+  <toc-entry>
+   <label>1</label>
+   <title>Purpose</title>
+   <nav-pointer rid="s1">1</nav-pointer>
+  </toc-entry>
+  <toc-entry>
+   <label>2</label>
+   <title>Scope</title>
+   <nav-pointer rid="s2">1</nav-pointer>
+   <toc-entry>
+    <label>2.1</label>
+    <title>The Journal Archive and Interchange Tag Set</title>
+    <nav-pointer rid="s2.1">2</nav-pointer>
+   </toc-entry>
+   <toc-entry>
+    <label>2.2</label>
+    <title>The Journal Publishing Tag Set</title>
+    <nav-pointer rid="s2.2">2</nav-pointer>
+   </toc-entry>
+   <toc-entry>
+    <label>2.3</label>
+    <title>The Article Authoring Tag Set</title>
+    <nav-pointer rid="s2.3">2</nav-pointer>
+   </toc-entry>
+  </toc-entry>
+  <toc-entry>
+   <label>3</label>
+   <title>Format of this Standard</title>
+   <nav-pointer rid="s3">2</nav-pointer>
+   <toc-entry>
+    <label>3.1</label>
+    <title>Description of the Tag Suite</title>
+    <nav-pointer rid="s3.1">2</nav-pointer>
+   </toc-entry>
+   <toc-entry>
+    <label>3.2</label>
+    <title>Description of each Tag Set</title>
+    <nav-pointer rid="s3.2">3</nav-pointer>
+   </toc-entry>
+  </toc-entry>
+  ...
+ </toc>
+ ...
+</front>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

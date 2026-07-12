@@ -1,0 +1,92 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/originator.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-originator]
+=== `@originator` Originator
+
+The name of the standards organization that created this document or portion of a document. This name is typically the short form name, such as “`ASME`”.
+
+#### Usage/Remarks
+The “originator” of a standard is the current publisher of the standard or the organization that submits an original standard that is being adopted. In the ISO-STS Tag Set, <<attribute-originator,`@originator`>> attribute appeared on the elements <<element-nat-meta,`<nat-meta>`>> and <<element-reg-meta,`<reg-meta>`>>, and referred to the SDO. The semantics of this attribute have not changed, but the attribute is now allowed on additional elements.
+#### Implied Inheritance
+
+When this attribute is not specified on an element, the implication is that the content of the element originated with the standards body identified as responsible for the part of the standards document in which the element resides. *Standards:* Thus for a standards document (<<element-standard,`<standard>`>>), all elements would be assumed to be created by the producing standards organization, unless overridden by an <<attribute-originator,`@originator`>> attribute. *Adoptions:* For adoptions (<<element-adoption,`<adoption>`>>), the material specific to the adoption is assumed to originate with the adopting organization, with the understanding that there may be several levels of adoption, each “owning” its own front matter, back matter, etc. Material inside the standard being adopted is assumed to originate with the standards organization that produced that standard.
+#### Used with Term Lists
+
+When attached to a grouping of terms, such as a <<element-kwd-group,`<kwd-group>`>> or <<element-subj-group,`<subj-group>`>>, this attribute names the standards-producing organization that placed the group of terms into the standards document, which is particularly useful in jointly authored standards. This attribute does _not_ name the organization or group that created the taxonomy or vocabulary or the service that applied the vocabulary to the standards document.
+
+#### OPTIONAL on elements:  <<element-nat-meta,`<nat-meta>`>>, 
+                  <<element-reg-meta,`<reg-meta>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The name of the regional or national producing standards organization, such as “`CEN`”, “`NEN`”, “`DIN`”, or “`SFS`”.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abstract,`<abstract>`>>, <<element-address,`<address>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-array,`<array>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-comm-ref-group,`<comm-ref-group>`>>, <<element-custom-meta-group,`<custom-meta-group>`>>, <<element-def-list,`<def-list>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-fig-group,`<fig-group>`>>, <<element-fn-group,`<fn-group>`>>, <<element-glossary,`<glossary>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-isbn,`<isbn>`>>, <<element-issn,`<issn>`>>, <<element-issn-l,`<issn-l>`>>, <<element-kwd-group,`<kwd-group>`>>, <<element-list,`<list>`>>, <<element-media,`<media>`>>, <<element-meta-date,`<meta-date>`>>, <<element-meta-note,`<meta-note>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes-group,`<notes-group>`>>, <<element-p,`<p>`>>, <<element-preformat,`<preformat>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-release-date,`<release-date>`>>, <<element-release-version-id,`<release-version-id>`>>, <<element-sec,`<sec>`>>, <<element-secretariat,`<secretariat>`>>, <<element-self-uri,`<self-uri>`>>, <<element-speech,`<speech>`>>, <<element-statement,`<statement>`>>, <<element-std-id,`<std-id>`>>, <<element-std-id-group,`<std-id-group>`>>, <<element-sub-part,`<sub-part>`>>, <<element-subj-group,`<subj-group>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-term-sec,`<term-sec>`>>, <<element-title-wrap,`<title-wrap>`>>, <<element-verse-group,`<verse-group>`>>, <<element-wi-number,`<wi-number>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The name of the standards organization responsible for creating the content of this
+                        element, for example, “`IEEE`”, “`ASME`”, “`ASTM`”, or “`DIN`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Subjects from SDO-specific taxonomy showing vocabulary attributes
+
+[source,xml]
+....
+...
+<subj-group id="SG1.1" originator="ASME" vocab="ASME-Taxonomy"
+  xml:lang="en" subj-group-type="Industries"
+  vocab-identifier="http:/www.asme.org/ASME-Taxonomy/Industries/">
+ <subject id="SG1.1-1"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Industries/fossil-power"
+  >Fossil Power</subject>
+ <subject id="SG1.1-2"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Industries/power-plants"
+  >Power Plants</subject>
+</subj-group>
+
+<subj-group id="SG1.2" originator="ASME" vocab="ASME-Taxonomy"
+  xml:lang="en" subj-group-type="Materials-Product-Form"
+  vocab-identifier="http:/www.asme.org/ASME-Taxonomy/Materials-Product-Form/">
+ <subject id="SG1.2-1"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Materials-Product-Form/piping"
+  >Piping</subject>
+ <subject id="SG1.2-2"
+   vocab-term-identifier="http:/www.asme.org/ASME-Taxonomy/Materials-Product-Form/pressure-vessels"
+  >Pressure Vessels</subject>
+</subj-group>
+...
+....
+#### INSPEC keywords
+
+[source,xml]
+....
+...
+<kwd-group kwd-group-type="INSPEC" originator="IEEE">
+ <kwd>social networking (online)</kwd>
+ <kwd>buyer&#x0027;s guides</kwd>
+ <kwd>electronic commerce</kwd>
+</kwd-group> 
+
+<kwd-group kwd-group-type="InspecFree" originator="IEEE">
+ <kwd>whiz list</kwd>
+ <kwd>social networking sites</kwd>
+ <kwd>online purchase</kwd>
+ <kwd>e-commerce portals</kwd>
+ <kwd>Web site users</kwd>
+ <kwd>marketing strategy</kwd>
+</kwd-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

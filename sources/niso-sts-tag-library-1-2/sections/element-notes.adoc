@@ -1,0 +1,71 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/notes.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-notes]
+=== `<notes>` Notes Section
+
+A container element to hold the notes that may appear within the front matter (<<element-front,`<front>`>>) or in the rear matter (<<element-back,`<back>`>>) of a standards document or adoption document.
+
+#### Usage/Remarks
+The Notes Section (<<element-notes,`<notes>`>>) is a section-like grouping of material that can be used in the front or back matter of a standard to hold normative or non-normative notes, groups of such notes (<<element-notes-group,`<notes-group>`>>), normative or non-normative examples, or even paragraphs and sections of prose. Typical use is to hold normative and non-normative notes in the front matter (<<element-front,`<front>`>> or <<element-adoption-front,`<adoption-front>`>>) of a standards document.
+
+#### Related Elements
+
+This Tag Set contains several elements that are notes or may be used to group notes: <<element-normative-note,`<normative-note>`>> A note with normative content that can be part of the narrative text or inside one of the notes grouping elements in the body text, front matter, or back matter of a standard or adoption. <<element-non-normative-note,`<non-normative-note>`>> A note with non-normative content that can be part of the narrative text or inside one of the notes grouping elements in the body text, front matter, or back matter of a standard or adoption. <<element-notes,`<notes>`>> A section containing notes that may appear in the front or back matter of a standard or adoption. <<element-notes-group,`<notes-group>`>> A headed (titled) group of normative or non-normative notes and examples within the narrative body of a standard or adoption. <<element-meta-note,`<meta-note>`>> A note within the metadata of a standards or adoption document, as opposed to the other note types that occur within the front matter, body, or back matter of a document.
+
+#### Attributes
+
+* <<attribute-notes-type,`@notes-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption-front,`<adoption-front>`>>, <<element-back,`<back>`>>, <<element-front,`<front>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one Any combination of: Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-p,`<p>`>> <<element-p,Paragraph>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Optionally, the following sequence (in order): One or more of any of: <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-term-sec,`<term-sec>`>> <<element-term-sec,Terms and Definitions Container/Section>> Any combination of: Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  notes        %notes-model;                                >
+....
+#### Expanded Content Model
+
+(label?, title?, (address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | editing-instruction | def-list | list | tex-math | mml:math | p | related-article | related-object | disp-quote | speech | statement | verse-group | fn-group | glossary | ref-list)*, ((sec | term-sec)+, (fn-group | glossary | ref-list | non-normative-note | normative-note | non-normative-example | normative-example | notes-group)*)?)
+
+#### Tagged Sample
+
+##### Notes in the front matter
+[source,xml]
+....
+...
+<front>
+ <std-meta>...</std-meta>
+ <notes>
+  <p><bold>Notice and Disclaimer of Liability Concerning 
+   the Use of IEEE Documents:</bold> IEEE Standards 
+   documents are developed within the IEEE Societies and 
+   the Standards Coordinating Committees of the IEEE 
+   Standards Association (IEEE-SA) Standards Board. IEEE 
+   develops its standards ...</p>
+  ...
+ </notes>
+</front>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Notes Section
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,46 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/units.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-units]
+=== `@units` Units
+
+The units of measure in which the size or length of a cited work is expressed (for example, a <<attribute-units,`@units`>> value might record “`pages`”, “`minutes`”, “`seconds`”, or “`linear-feet`”).
+
+#### REQUIRED on element:  <<element-size,`<size>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names the units of measure in which the size is expressed, for 
+                        example, “`MB`”.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+
+#### Tagged Sample
+
+##### Pages for a cited government report
+[source,xml]
+....
+...
+<ref>
+ <mixed-citation publisher-type="gov"
+  ><person-group person-group-type="author"
+   ><string-name><surname>Norman</surname>, 
+    <given-names>John C</given-names></string-name>, 
+   <aff>Texas Heart Institute, Houston, TX</aff></person-group>. 
+  <gov>Report No.: NIH-N01-HV-5-3006-4-VI. Contract No. 
+   N01-HV-5-3006</gov>. <source>ALVAD: 1980. A comprehensive 
+   final report to NHLI</source>. Vol. <volume>1</volume>. 
+  <publisher-loc>Bethesda (MD)</publisher-loc>:
+  <publisher-name>National Institutes of Health, National Heart 
+   and Lung Institute, Devices and Services Branch</publisher-name>;
+  <month>01</month> <year iso-8601-date="1980-01">1980</year>.
+  <size units="pages">340</size> p. Available from: NTIS,
+  Springfield, VA; PB80-148810</mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,112 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/mml-math.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-mml-math]
+=== `<mml:math>` Math (MathML Tag Set)
+
+Use documentation for the Mathematical Markup Language (MathML) Tag Set (https://www.w3.org/TR/MathML3/ or https://www.w3.org/TR/MathML2/).
+
+#### Usage/Remarks
+##### <mml:math>
+
+The top-level element for math tagged according to the MathML Tag Set.
+##### MathML 2.0 or MathML 3.0
+
+While MathML 3.0 is the preferred MathML version for new material, NISO STS recognizes that many organizations have existing material in MathML 2.0, so MathML 2.0 will also be supported in this version of NISO STS. There are two NISO STS Tag Sets in four distinct variants: one each for Interchange and Extended in MathML 3.0 (preferred) and one each for Interchange and Extended in MathML 2.0.
+#### Changes to MathML
+
+With one exception, the various elements and attributes of MathML used inside `<mml:math>` are not documented here, and the reader should refer to online documentation from the W3C and Design Science. The one exception is the `<mml:annotation-xml>` element. The content model for the `<mml:annotation-xml>` has been limited to one or more paragraphs: `(p+)`.
+#### MathML Namespacing
+
+The majority of organizations using this Tag Set use the DTDs as their primary (or only) model, so this Tag Set is maintained to ensure that using DTDs and DTD-based tools will work well. Because DTDs do not “play well” with namespaces, and most DTD-based tools are not namespace aware, the MathML namespace has been hardcoded to the prefix “`mml`” in the DTDs. This means that the element name, in the DTDs, really is `<mml:math>`. While this was the usual prefix when this Tag Set was originally established, the more frequently seen MathML prefix is now “`m`”. Since XSD and RNG use “real” namespaces, this makes no difference to them, as to a namespace-aware processor a namespace prefix is only a placeholder. For DTD users, the element names in the MathML will need to be “`mml`” (for example, `<mml:mfrac>`), but tools can be set to provide that prefix and the essence of namespaces is that prefixes do not matter, so no harm is done.
+Some current MathML viewers cannot handle MathML elements that are prefixed (using the tag `<mml:msub>` rather than the tag `<msub>`) _unless_ the MathML namespace pseudo-attribute has been placed directly on the <<element-mml-math,`<mml:math>`>> element (`<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">`); the presence of the namespace on the top-level element is not good enough. By default in this Tag Set, the namespace has been established as a `#FIXED` attribute on the <<element-mml-math,`<mml:math>`>> element, but processors not using a DTD/schema cannot see defaulted or `#FIXED` attributes. For such processors, the MathML namespace attribute must be placed directly on all <<element-mml-math,`<mml:math>`>> elements in the instance document.
+#### Attributes
+
+The attributes for `<mml:math>` (with the exception of the namespace pseudo-attribute) are not listed below, because they are not defined by or under the control of NISO STS.
+
+#### Attribute
+
+#### Namespaces
+
+* <<attribute-xmlns-mml,`@xmlns:mml`>> (fixed value = http://www.w3.org/1998/Math/MathML)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-alt-title,`<alt-title>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-bold,`<bold>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-ref-list,`<ref-list>`>>, <<element-related-term,`<related-term>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-source,`<source>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-sec,`<term-sec>`>>, <<element-textual-form,`<textual-form>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>
+
+#### Tagged Samples
+
+#### In display formula
+
+[source,xml]
+....
+...
+<p>In the case of dollies of diameter 20 mm, the 
+ breaking strength, in megapascals, is given by
+ <xref ref-type="disp-formula" rid="formula_2">Formula
+ (2)</xref>
+ <disp-formula id="formula_2"
+  ><mml:math display="block" 
+     id="mml_m2"
+     xmlns:mml="http://www.w3.org/1998/Math/MathML" >
+   <mml:mrow>
+    <mml:mi>s</mml:mi><mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mrow>
+      <mml:mn>4</mml:mn><mml:mi>F</mml:mi></mml:mrow>
+     <mml:mrow>
+      <mml:mn>400</mml:mn><mml:mi>p</mml:mi></mml:mrow>
+    </mml:mfrac>
+    <mml:mo>=</mml:mo>
+    <mml:mfrac>
+     <mml:mi>F</mml:mi>
+     <mml:mrow>
+      <mml:mn>314</mml:mn></mml:mrow>
+    </mml:mfrac>
+   </mml:mrow>
+  </mml:math>
+  <label>(2)</label>
+ </disp-formula>
+</p>
+...
+....
+#### Inline
+
+[source,xml]
+....
+...
+<p>In Example 1 (one-sided paired test), the data were as 
+ follows: <italic>n</italic> = 30, <italic>x</italic> = 21, 
+ <italic>a</italic> = 0,05. From these data, the analyst 
+ calculates</p>
+<list list-type="bullet">
+ <list-item>
+  <label>&mdash;</label>
+  <p><italic>p</italic><sub>c</sub> = 
+   <italic>x</italic>/<italic>n</italic> = 21/30 = 0,7,</p>
+ </list-item>
+ <list-item>
+  <label>&mdash;</label>
+  <p><inline-formula
+   ><mml:math display="inline" id="mml_m1">
+     <mml:mrow>
+      <mml:msub>
+       <mml:mover accent="true">
+        <mml:mi>p</mml:mi>
+        <mml:mo>^</mml:mo>
+       </mml:mover>
+       <mml:mtext>d</mml:mtext>
+      </mml:msub>
+     </mml:mrow>
+    </mml:math></inline-formula> (proportion of distinguishers) ...</p>
+ </list-item>
+ ...
+</list>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

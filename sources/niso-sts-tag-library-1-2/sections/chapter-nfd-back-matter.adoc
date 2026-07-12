@@ -1,0 +1,49 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-back-matter.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-back-matter]
+=== Back Matter
+
+image::images/back.png[back.png]
+#### Appendix Group
+
+image::images/app-group.png[app-group.png]
+#### Appendix
+
+image::images/app.png[app.png]
+#### Biography
+
+image::images/bio.png[bio.png]
+#### Footnote Group
+
+image::images/fn-group-alt.png[fn-group-alt.png]
+#### Footnote
+
+image::images/fn-alt.png[fn-alt.png]
+#### Glossary Elements
+
+image::images/glossary.png[glossary.png]
+#### Reference List (Bibliographic Reference List)
+
+image::images/ref-list.png[ref-list.png]
+#### Reference Item
+
+image::images/ref.png[ref.png]
+#### NLM Citation Model (deprecated)
+
+image::images/nlm-citation.png[nlm-citation.png]
+#### Index
+
+image::images/index.png[index.png]
+#### Index Title Group
+
+image::images/index-title-group.png[index-title-group.png]
+#### Index Entry
+
+image::images/index-entry.png[index-entry.png]
+#### Index Division
+
+image::images/index-div.png[index-div.png]
+#### Index Group
+
+image::images/index-group.png[index-group.png]

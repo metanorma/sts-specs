@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/num.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-num]
+=== `<num>` ISO Numeric Emphasis
+
+A number appearing in running prose. The <<element-num,`<num>`>> element is provided to allow numbers to be tagged so that the decimal separators and group separators appearing in them can be identified explicitly; this is helpful when the document is to be rendered in a style which may require different decimal or group separators in different contexts or for different languages.
+
+#### Usage/Remarks
+It is _not_ required for all numbers that appear in the text to be tagged using <<element-num,`<num>`>>. This is a processing convenience. In some environments, the choice of decimal and group separators is fixed for all documents; in others, there is no requirement that the separators be explicitly identified. Even in environments where the <<element-num,`<num>`>> element is used, numerals which are rendered without either a decimal or a group separator may typically remain untagged.
+
+#### Attributes
+
+* <<attribute-dsep,`@dsep`>>
+* <<attribute-gsep,`@gsep`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-data-title,`<data-title>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-element-citation,`<element-citation>`>>, <<element-ext-link,`<ext-link>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-gov,`<gov>`>>, <<element-inline-code,`<inline-code>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-kwd,`<kwd>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-price,`<price>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-rb,`<rb>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-related-term,`<related-term>`>>, <<element-role,`<role>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-series,`<series>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-source,`<source>`>>, <<element-std,`<std>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-target,`<target>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-source,`<term-source>`>>, <<element-textual-form,`<textual-form>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>, <<element-xref,`<xref>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  num          (#PCDATA)                                    >
+....
+
+#### Tagged Samples
+
+#### Period decimal separators
+
+[source,xml]
+....
+... <num dsep=".">1.3</num> mg/mL of amoxicillin and 
+<num dsep=".">62.5</num> µL of clavulanic ...
+....
+#### Comma decimal separator
+
+[source,xml]
+....
+...
+<p>The method of measurement is the same as that described 
+in <xref ref-type="sec" rid="sec_5.2.3.1">5.2.3.1</xref>, 
+except that the range of indentation is from 0 mm to 
+<num dsep=",">1,8</num> mm.</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

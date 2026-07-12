@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/span.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-span]
+=== `@span` Span (NISO JATS table model)
+
+The number of columns that will share the <<element-col,`<col>`>> or <<element-colgroup,`<colgroup>`>> element’s attributes. (This attribute is based on and intended to be converted easily to the XHMTL `span` attribute.)
+
+#### OPTIONAL (defaults to 1) on elements:  <<element-col,`<col>`>>, 
+                  <<element-colgroup,`<colgroup>`>>
+
+|===
+| Value| Meaning
+
+| A counting number| How many columns will have the same attributes, for example,
+                        “`3`”.
+| Default value| 1 (The attributes are for this column only.)
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

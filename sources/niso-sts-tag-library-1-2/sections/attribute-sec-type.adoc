@@ -1,0 +1,67 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/sec-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-sec-type]
+=== `@sec-type` Type of Section
+
+Used to record the type of semantic content included in the section (for example, “`foreword`”, “`terms`”, or “`scope`”).
+
+#### OPTIONAL on elements:  <<element-sec,`<sec>`>>, 
+                  <<element-term-sec,`<term-sec>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names the main semantic type of the section content, such as 
+                        “`scope`”. This is not a restricted list; the attribute may take any value.
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* Although this attribute may take any text as values, this attribute is most useful for interchange and processing when a list of values is maintained and these values are used consistently to tag standards document sections. The following section type values are suggested to name the semantic content of a section (<<element-sec,`<sec>`>>): `abbreviations` Abbreviations (and acronyms) `app` Apparatus / Appareillage `applicable-documents` Applicable documents `bibl` Bibliography / Bibliographie `classif` Classification, designation and coding / Classification, désignation et codification `conditions` Conditions `correspondence` A section, typically inside front matter (<<element-front,`<front>`>>) regarding how to communicate with standards-writing committee `definitions` Definitions and terms / Définitions et Termes `endorsement` Endorsements `executive-summary` Executive summary `foreword` Foreword / Avant-propos `index` Index (used historically, but likely to be uncommon in NISO STS, as indexes will normally be generated automatically from the XML or tagged using the <<element-index,`<index>`>> element in the XML) `inform-annex` Informative annex / Annex informative / Non-normative annex `inspection` Inspection `interpretation-info` Information about how to request interpretation `intro` Introduction `legalese` Sections inside the front matter (<<element-front,`<front>`>>) that pertain to legal matters or rights, typically displayed as part of the copyright page or title page material. (See also <<element-meta-note,`<meta-note>`>>.) `list-change` Change List / List of Changes / Descriptive listing of changes (For a summary of changes, use “`sum-change`”.) `marking` Packaging and Marking `materials` Materials `methods` Methods `non-norm-refs` Non-normative references `norm-annex` Normative annex / Annexe normative `norm-refs` Normative references / Références normatives `packaging` Packaging `policy-statement` Policy statement `procedure` Procedure (proper sequence of performance) `properties` Properties `purpose` Purpose `reagents` Reagents and/or materials / Réactifs et/ou matériaux `reqs` Requirements / Exigences `roster` Committee member listings `sampling` Sampling / Échantillonnage `scope` Scope / Domaine d’application `significance` Significance and use (relevance, suitability, meaning, and assumptions behind a test) `sum-change` Summary of changes (For a detailed list of changes, use “`list-change`”.) `supp-reqs` Supplementary requirements `symbols` Symbols and abbreviated terms / Symboles et termes abrégés `terms` Terms and definitions / Termes et définitions `terms-and-symbols` Terms, definitions, symbols, units and abbreviated terms / Termes, définitions, symboles, unités et termes abrégés (Note: the exact section title may vary. This combined section type is non-preferred in favor of two uncombined section type values “`terms`” and “`symbols`”. This combined value has been retained because it has been used in extant standards documents.) `tests` Test methods / Méthodes d’essai `verification` Verification `warning` Hazards and warnings
+The value “Glossary” was considered for inclusion in the list above, but was not chosen. The combined value “Terms and Symbols” is on the list, but for Best Practice using two uncombined values (“Terms” and “Symbols”) are preferred.
+
+#### Tagged Sample
+
+##### Typical section types in a standard
+[source,xml]
+....
+...
+<sec sec-type="intro">
+ <label>1</label>
+ <title>Introduction</title>
+ <sec sec-type="purpose">
+  <label>1.1</label>
+  <title>Purpose</title>
+  <p>This standard establishes criteria for ...</p>
+  <p>By identifying the properties consistent with ...</p>
+ </sec>
+ <sec sec-type="scope">
+  <label>1.2</label>
+  <title>Scope</title>
+  <p>The standard applies to ...</p>
+ </sec>
+</sec>
+
+<sec sec-type="terms">
+ <label>2</label>
+ <title>Definitions</title>
+ ...
+</sec>
+
+<sec sec-type="norm-refs">
+ <label>3</label>
+ <title>Referenced Standards</title>
+ ...
+</sec>
+
+<sec sec-type="reqs">
+ <label>4</label>
+ <title>Minimum Requirements for ...</title>
+ ...
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

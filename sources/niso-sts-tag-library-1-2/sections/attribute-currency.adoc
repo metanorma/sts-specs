@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/currency.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-currency]
+=== `@currency` Currency
+
+Type of currency in which the price is presented.
+
+#### Usage/Remarks
+##### Best Practice
+
+Although this is an optional attribute, Best Practice is to include it for every price where it is known. The attribute can take any value, but Best Practice is to use the ISO 4217 “currency code” values. These are 3-letter, all upper case codes that are NOT the same as the ISO country codes. Examples include: USD United States Dollar in the US and US territories CAD Canadian Dollar EUR European Union Euro RUB Russian Ruble These codes are defined by ISO in ISO 4217 and listed at: http://www.currency-iso.org/en/home/tables/table-a1.html
+
+#### OPTIONAL on element:  <<element-price,`<price>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| An abbreviation for a currency, typically using the ISO 4217 three-letter
+                        alphabetic codes, for example, “`USD`” for the United
+                        States Dollar.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

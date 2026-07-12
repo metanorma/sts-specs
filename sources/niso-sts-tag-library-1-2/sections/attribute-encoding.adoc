@@ -1,0 +1,20 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/encoding.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-encoding]
+=== `@encoding` XInclude Encoding
+
+The encoding to use for the resource being included. The encoding attribute has no effect when the parse attribute value “`parse="xml"`” is set on the <<element-xi-include,`<xi:include>`>> element. See the W3C XInclude documentation (https://www.w3.org/TR/xinclude/).
+
+#### OPTIONAL on element:  <<element-xi-include,`<xi:include>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A valid encoding name.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

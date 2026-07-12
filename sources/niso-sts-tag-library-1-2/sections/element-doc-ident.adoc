@@ -1,0 +1,76 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/doc-ident.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-doc-ident]
+=== `<doc-ident>` ISO-Specific Document Identification Section
+
+The ISO-specific element <<element-doc-ident,`<doc-ident>`>> container element holds information which uniquely identifies this standards document for ISO purposes. Non-ISO organizations are advised to use elements directly within <<element-std-meta,`<std-meta>`>> and inside <<element-std-ident,`<std-ident>`>> instead.
+
+#### Usage/Remarks
+##### Best Practice
+
+This element has been retained for backwards compatibility with ISO STS. For non-ISO processing, the element <<element-doc-ident,`<doc-ident>`>> and all the elements within it have been replaced by elements within <<element-std-meta,`<std-meta>`>> and <<element-std-ident,`<std-ident>`>>. All the information currently inside <<element-doc-ident,`<doc-ident>`>> can be tagged outside of the <<element-doc-ident,`<doc-ident>`>> element: sdo Use the <<element-std-org,`<std-org>`>> container to record the name, short name, and location for an SDO, or use the <<element-originator,`<originator>`>> element within <<element-std-ident,`<std-ident>`>>. proj-id Use the <<element-proj-id,`<proj-id>`>> element within <<element-std-meta,`<std-meta>`>>. language Use the <<element-content-language,`<content-language>`>> element within <<element-std-meta,`<std-meta>`>>. release-version Use the <<element-release-version,`<release-version>`>> element within <<element-std-meta,`<std-meta>`>>. urn Use <<element-self-uri,`<self-uri>`>> element within <<element-std-meta,`<std-meta>`>>.
+#### ISO Note
+
+This element (and thus all the elements within it) may be used only within <<element-iso-meta,`<iso-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, or <<element-nat-meta,`<nat-meta>`>>, where they are retained for ISO use and for backwards-compatibility purposes. The sub-elements of <<element-doc-ident,`<doc-ident>`>> are closely related to the fields of ISO URNs as documented in RFC 5141 (from which some of the text describing them is borrowed).
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>
+#### Description
+
+The following, in order: <<element-sdo,`<sdo>`>> <<element-sdo,ISO-Specific Name For a Standards Development Organization>>, zero or one <<element-proj-id,`<proj-id>`>> <<element-proj-id,ISO-Specific Project Identifier>>, zero or one <<element-language,`<language>`>> <<element-language,ISO-specific Language Designation>>, zero or one <<element-release-version,`<release-version>`>> <<element-release-version,Release-Version/Development Stage/Status>>, zero or one <<element-urn,`<urn>`>> <<element-urn,ISO-Specific Uniform Resource Name>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  doc-ident    %doc-ident-model;                            >
+....
+#### Expanded Content Model
+
+(sdo?, proj-id?, language?, release-version?, urn?)
+
+#### Tagged Sample
+
+##### Identifies the standard as part of `<iso-meta>`
+[source,xml]
+....
+...
+<iso-meta>
+ <title-wrap xml:lang="en">...</title-wrap>
+ <doc-ident>
+  <sdo>ISO</sdo>
+  <proj-id>...</proj-id>
+  <language>en</language>
+  <release-version stage-code="60.60">IS</release-version>
+  <urn>urn:iso:std:iso:2560:ed-3:v1:en</urn>
+ </doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <edition>3</edition>
+  <version>1</version>
+ </std-ident>
+ ...  
+</iso-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - ISO-Specific Document Identification Section
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

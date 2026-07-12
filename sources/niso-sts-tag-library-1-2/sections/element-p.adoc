@@ -1,0 +1,62 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/p.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-p]
+=== `<p>` Paragraph
+
+The basic block-unit of textual information; a textual paragraph.
+
+#### Usage/Remarks
+This element does not have to be a well-formed paragraph as defined in high school language class, i.e., “a block of text representing a single idea, typographically differentiated from its neighbors”. Rather, the element <<element-p,`<p>`>> is a block (as opposed to inline) structural unit which may be only a few words or letters in length.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+* <<attribute-style-type,`@style-type`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-annotation,`<annotation>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-author-comment,`<author-comment>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-caption,`<caption>`>>, <<element-def,`<def>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-fig,`<fig>`>>, <<element-fn,`<fn>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-legend,`<legend>`>>, <<element-list-item,`<list-item>`>>, <<element-meta-note,`<meta-note>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-notes-group,`<notes-group>`>>, <<element-open-access,`<open-access>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-speech,`<speech>`>>, <<element-statement,`<statement>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>, <<element-toc,`<toc>`>>, <<element-toc-div,`<toc-div>`>>, <<element-toc-group,`<toc-group>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-award-id,`<award-id>`>> <<element-award-id,Award Identifier>> <<element-funding-source,`<funding-source>`>> <<element-funding-source,Funding Source>> <<element-open-access,`<open-access>`>> <<element-open-access,Open Access>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> <<element-break,`<break>`>> <<element-break,Line Break>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  p            (#PCDATA %p-elements;)*                      >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | citation-alternatives | element-citation | mixed-citation | std | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | award-id | funding-source | open-access | chem-struct | inline-formula | inline-code | inline-graphic | inline-media | private-char | def-list | list | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | ref-list | disp-quote | speech | statement | verse-group | fn | target | tbx:entailedTerm | xref | break | sub | sup)*
+
+#### Tagged Sample
+
+##### Inside sections
+[source,xml]
+....
+...
+<sec sec-type="foreword">
+ <title>Foreword</title>
+ <p>The text of <std type="dated" std-id="iso:std:iso:15423"
+  ><std-ref>ISO/IEC 15423:2004</std-ref></std> has been 
+  prepared by Technical Committee ISO/IEC/JTC 1 "Information 
+  technology" of the International Organization for 
+  Standardization (ISO) and is ...</p>
+ ...
+</sec>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

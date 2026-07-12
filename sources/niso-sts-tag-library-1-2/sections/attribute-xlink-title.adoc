@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xlink-title.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xlink-title]
+=== `@xlink:title` Title of the XLink Link
+
+Describes the function of an XLink link’s remote resource in human-readable fashion.
+
+#### Usage/Remarks
+This attribute’s value, i.e., “the link title”, may be displayed at the point in an online document where the link occurs. A user could read the title and determine whether to follow the link.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| A descriptive, human-readable title that acts as a brief description of the
+                        link.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

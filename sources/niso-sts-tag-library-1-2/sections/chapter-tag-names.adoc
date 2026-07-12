@@ -1,0 +1,425 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/tag-names.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-tag-names]
+=== Tagging Personal Names in Citations
+
+In bibliographic references (<<element-element-citation,`<element-citation>`>> and <<element-mixed-citation,`<mixed-citation>`>>) as well as in links to related material (<<element-related-article,`<related-article>`>> and <<element-related-object,`<related-object>`>>), the personal names of authors, editors, translators, and other contributors can be tagged using either the element <<element-name,`<name>`>> or the element <<element-string-name,`<string-name>`>>. Both <<element-name,`<name>`>> and <<element-string-name,`<string-name>`>> can identify the surname (family name or last name) and given names (first names and middle names) of a person. Because <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>> will not necessarily be in the same sequence, depending on whether <<element-name,`<name>`>> or <<element-string-name,`<string-name>`>> was used, processors should consider name processing that focuses on the presence of <<element-surname,`<surname>`>> or <<element-given-names,`<given-names>`>> and not their context (immediate parent).
+*Note:* In the 1.2 version of NISO STS, contributor names cannot be tagged as part of the metadata of a standards document. Such names are expected to be discussed, and most probably modeled, in the next release of the standard.
+#### Tagging with <<element-name,`<name>`>>
+
+Unlike nearly all elements in this Tag Set, the <<element-name,`<name>`>> element requires a specific sequence and may not contain spaces (more properly, any spaces in XML element content are, by definition, meaningless and XML processing may delete/disregard them). The required order for a personal name tagged with the <<element-name,`<name>`>> element is: First, one of the following: Just a <<element-surname,`<surname>`>>, A <<element-surname,`<surname>`>> followed by a <<element-given-names,`<given-names>`>>, or Just a <<element-given-names,`<given-names>`>> (for cultures that do not use a family name) Next (optionally), a <<element-prefix,`<prefix>`>> such as a formal title (“`Senator`”) Next (optionally), a <<element-suffix,`<suffix>`>> such as a lineage distinguisher (“`Jr.`”, “`Sr.`”, etc.) as illustrated here:
+[source,xml]
+....
+<name>
+  <surname>Jones-Smythe</surname>
+  <given-names>Johnathan Irving Browning</given-names>
+  <prefix>The Honorable</prefix>
+  <suffix>III</suffix>
+</name>
+....
+#### String Names
+
+The <<element-string-name,`<string-name>`>> element is a container for personal names in display sequence. The element contains all the spacing and punctuation expected in the display. A <<element-string-name,`<string-name>`>> is a very loose element, which may contain text, numbers, and special characters as well as any or all of the naming elements, such as <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>>. A <<element-string-name,`<string-name>`>> can be used to hold the name elements with punctuation and spacing between them, a sort version of the name, the full name in display order (for example, as a byline that does not require recombining the components), a name where family versus given cannot be determined, a patronymic name, etc.
+In the example below, notice that the <<element-string-name,`<string-name>`>> contains a “comma-space” as well as the <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>> elements:
+[source,xml]
+....
+<string-name>
+  <surname>Lincoln</surname>, <given-names>Abraham</given-names>
+</string-name>
+....
+String names may also be partially tagged, identifying only some of the name components:
+[source,xml]
+....
+<string-name>The Honorable Johnathan Irving 
+  Browning <surname>Jones-Smythe</surname>, III
+</string-name>
+....
+#### Spaces and Punctuation in Names
+
+The model for <<element-name,`<name>`>> does not allow spaces or punctuation between the surname, given names, prefixes, or suffixes components. Even if one or more spaces exist in the XML source file, XML processors remove any space that occurs _between elements_. In other words, in the following XML examples, there will be no space between the surname, the given names, and the suffix. The <<element-name,`<name>`>> element cannot preserve these spaces.
+[source,xml]
+....
+<name>
+  <surname>Petitti</surname>  <given-names>DB</given-names> <suffix>III</suffix>
+</name>
+
+<name>
+  <surname>Petitti</surname>  
+  <given-names>DB</given-names> 
+  <suffix>III</suffix>
+</name>
+
+<name>  <surname>Petitti</surname> <given-names>DB</given-names>   </name>
+....
+In contrast with <<element-name,`<name>`>>, the element <<element-string-name,`<string-name>`>> allows, but does not require, spacing and punctuation within the name:
+[source,xml]
+....
+<string-name>
+  <surname>Jefferson</surname>,   <given-names>T</given-names>.
+</string-name>
+
+<string-name>
+  <surname>Jefferson</surname><given-names>T</given-names>.
+</string-name>
+....
+#### Multipart Names
+
+Many names have multiple parts, and care should be taken with multipart names to divide the components into family names (<<element-surname,`<surname>`>>) and personal names (<<element-given-names,`<given-names>`>>) in a culturally appropriate fashion. The Tag Suite cannot give guidance on how to divide names, but it enables most cultural variations. For example:
+[source,xml]
+....
+<surname>Llanos De La Torre Quiralte</surname>
+<given-names>M</given-names>    
+
+<surname>Sánchez Mendoza</surname>   
+<given-names>Josquin</given-names>    
+
+<surname>Las Heras</surname>   
+<given-names>Juan Fernando</given-names>    
+
+<surname>Lapeyre</surname>   
+<given-names>Kenneth Pritchard Carnu</given-names> 
+
+<surname>Ben Gurion</surname>   
+<given-names>David</given-names>    
+
+<surname>de la Mare</surname>   
+<given-names>Walter John</given-names>
+
+<surname>Toulouse-Lautrec-Monfa, de</surname>   
+<given-names>Henri Marie Raymond</given-names>
+
+<name name-style="eastern">
+<surname>Zhou</surname>   
+<given-names>Xun-Ze</given-names>
+</name>    
+ 
+<name name-style="eastern">
+<surname>Chou</surname>   
+<given-names>Hsun-Tse</given-names>
+</name>    
+ 
+<name name-style="eastern">
+<surname>Si-Ma</surname>   
+<given-names>Mary-Sue</given-names>
+</name>    
+ 
+<name name-style="eastern">
+<surname>SI-MA</surname>   
+<given-names>Mary-Sue</given-names>
+</name>    
+ 
+<name>
+<given-names>Cai-Rang</given-names>
+</name>
+....
+#### Multiple Versions of a Name
+
+Anywhere a person’s name can be used, inside both related elements (element <<element-related-article,`<related-article>`>> and <<element-related-object,`<related-object>`>>) and in bibliographic citations (elements <<element-element-citation,`<element-citation>`>> and <<element-mixed-citation,`<mixed-citation>`>>), this Tag Set allows the possibility of providing more than one version of that name. The <<element-name-alternatives,`<name-alternatives>`>> element is intended to group multiple versions of a single name without appearing to multiply the number of names. (Three versions of one contributor’s name is not the same as three different contributors.) The element `<name-alternatives>` works similarly to the `<alternatives>` construction for object such as graphics, allowing multiple name variations to be linked together as processing alternatives for a single name. It will be up to an application how multiple versions of a single name are to be processed. The <<attribute-specific-use,`@specific-use`>>, <<attribute-content-type,`@content-type`>>, and <<attribute-xml-lang,`@xml:lang`>> attributes can be used to distinguish the cases for separate processing. For example, the following names are distinguished by language:
+[source,xml]
+....
+...
+<contrib contrib-type="author">
+<name-alternatives>
+<name name-style="eastern" xml:lang="ja-Jpan">
+<surname>中西</surname>
+<given-names>秀彦</given-names>
+</name>
+<name name-style="western" xml:lang="en">
+<surname>Nakanishi</surname>
+<given-names>Hidehiko</given-names>
+</name>
+<name name-style="eastern" xml:lang="ja-Kana">
+<surname>ナカニシ</surname>
+<given-names>ヒデヒコ</given-names>
+</name>
+</name-alternatives>
+<xref ref-type="aff" rid="aff2">&ast;&ast;</xref>
+</contrib>
+...
+....
+#### Using <<element-name-alternatives,`<name-alternatives>`>>
+
+The `<name-alternatives>` element can be used to record: A name in multiple languages (For example, a name in Korean or Chinese-Han characters and a transliterated version of the same name in the Latin alphabet); A name in multiple language/script combinations (For example, a name in Japanese [`xml:lang="ja-Jpan"` for Han + Hiragana + Katakana] and the same name written in Kanji [`xml:lang="ja-Hani"`]); An alternate name for sorting or searching (For example, a name in French with accented letters (such as an “é”) and a plain-letter lower-ASCII version of the same name with “é” replaced by “e” for sorting. The <<attribute-specific-use,`@specific-use`>> attribute can be used to indicate that the ASCII version is only for “sort”, not for display.); An alternate name for indexing (For example, a publisher may choose to record name variants for an individual, as examples: a nickname, author-pseudonym, maiden name, religious name, or tribal name. The attribute <<attribute-specific-use,`@specific-use`>> could be used to record the rationale for the name variant, such as “`primary`”, “`index`”, or “`table-of-contents`”. Alternatively, or in addition, the attribute <<attribute-content-type,`@content-type`>> could be used to record the type of name variant, such as “`nickname`”, “`maiden-name`”, or “`pseudonym`”, etc.); A version of the name in a different arrangement (For example, since the order of the <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>> is fixed in JATS, a publisher might also wish to record a byline-style version of the name in given-surname order and could use a <<element-string-name,`<string-name>`>> of `@content-type=byline` to accompany the name inside a <<element-name-alternatives,`<name-alternatives>`>> element.); or Both validated and known-to-be-incorrect names. (For example, in the PubMed DTD, there is an attribute called “`ValidYN`” [valid yes or no], that can be used to record the fact that one version of a name was received, found to be in error, and then corrected. An application might be set up to display only the corrected version, while both name variants might be retained for searching or quality control. In JATS, this information can be recorded as two <<element-name,`<name>`>> elements inside a <<element-name-alternatives,`<name-alternatives>`>> wrapper, with the <<attribute-content-type,`@content-type`>> attribute used to tell the correct from the incorrect.)
+#### Not Multiplying ID Attributes
+
+The names inside a <<element-name-alternatives,`<name-alternatives>`>> do not generally have a unique identifier because they are all the same name. This Tag Set assumes that any necessary unique identifier will be placed on the enclosing element (such as the <<element-contrib,`<contrib>`>> element) that contains the <<element-name-alternatives,`<name-alternatives>`>> wrapper.
+#### String Name with Alternatives
+
+Both <<element-name,`<name>`>> and <<element-string-name,`<string-name>`>> are allowed inside <<element-name-alternatives,`<name-alternatives>`>>. Within a <<element-name-alternatives,`<name-alternatives>`>> grouping, the element <<element-string-name,`<string-name>`>> can be used, for example, to hold an undifferentiated transliteration (that is, one not tagged with specific name elements such as <<element-surname,`<surname>`>>) or a search-specific name. In the following example, the <<element-string-name,`<string-name>`>> element is used for both a byline-style uninverted display and an abbreviated form of the name:
+[source,xml]
+....
+<name-alternatives>
+  <string-name specific-use="display">José del Pozo García</string-name>
+  <name specific-use="primary" name-style="western">
+    <surname>del Pozo García</surname>
+    <given-names>José</given-names>
+  </name>
+  <string-name specific-use="abbrev-form">Pozo Garcia J del</string-name>
+</name-alternatives>
+
+<name-alternatives>
+  <string-name specific-use="display">PM Sudha</string-name>
+  <name specific-use="primary">
+    <given-names initials="PM">Sudha</given-names>
+  </name>
+  <string-name specific-use="abbrev-form">Sudha PM</string-name>
+</name-alternatives>
+
+<name-alternatives>
+  <name content-type="formal-name" xml:lang="fr">
+    <surname>Giscard d'Estaing</surname>   
+    <given-names>Valéry Marie René Georges</given-names>
+  </name>
+  <name content-type="common-name" xml:lang="fr">
+    <surname>Giscard d'Estaing</surname>
+    <given-names>Valéry</given-names>
+  </name>
+  <string-name specific-use="abbrev-form">Giscard d'Estaing V</string-name>
+</name-alternatives>
+....
+#### Name Display Order
+
+When names are tagged using the <<element-name,`<name>`>> element, correct display sequence must be created by the display software. Information on the expected sequence of names, e.g., eastern versus western display of names (for example, Toshiro Mifune versus Mifune Toshiro) can be provided using the <<attribute-name-style,`@name-style`>> attribute. The <<attribute-name-style,`@name-style`>> attribute can record the preferred display order for the name, typically to make the distinction between eastern and western display order. Name ordering information can be used for choosing an inversion algorithm for sorting, for ordering the names for display, or for other processing functions. The values of the <<attribute-name-style,`@name-style`>> attribute and their approximate meanings are given below.
+* When the value is “`western`”: 
+                     
+                     
+                        The display order is: given (<<element-given-names,`<given-names>`>>) followed by family (<<element-surname,`<surname>`>>); and
+                        
+                        The Sort/inversion is family (<<element-surname,`<surname>`>>) then given (<<element-given-names,`<given-names>`>>).
+* When the value is “`eastern`”: 
+                     
+                     
+                        The display order is: family (<<element-surname,`<surname>`>>) followed by given (<<element-given-names,`<given-names>`>>); and
+                        
+                        The Sort/inversion is family (<<element-surname,`<surname>`>>) then given (<<element-given-names,`<given-names>`>>).
+* When the value is “`given-only`”:  
+                     
+                     
+                        The display order is: given (<<element-given-names,`<given-names>`>>); and
+                        
+                        The Sort order is given (<<element-given-names,`<given-names>`>>); there is no inversion with a single name.
+* When the value is “`islensk`”:  
+                     
+                     
+                        The display order is: given (<<element-given-names,`<given-names>`>>) followed by patronymic (<<element-surname,`<surname>`>>); and
+                        
+                        The Sort/inversion is given (<<element-given-names,`<given-names>`>>) then patronymic (<<element-surname,`<surname>`>>).
+On the whole, this Tag Set can encode many, perhaps most, of the name variations found in the world. Both given names and surnames can be multiple words; there is no need to separate given names into first and middle names. Articles can be kept at the front of a name, or relegated to the rear following a comma. The element <<element-string-name,`<string-name>`>> is available for those who choose not to name a surname or given name, to use name components in a different sequence than <<element-name,`<name>`>> allows, for the cases where this distinction does not exist or cannot be determined, and by users who prefer to encode the expected name sequence in the XML.
+There are some areas where this Tag Set cannot provide complete advice, and each Tag Set user must make business related rules. These include: How to recognize/differentiate surnames from given names; How to handle all single names (It is usually best practice to tag most westernized single names (“Pele”, “Cher”, and “Ice Cube”) as <<element-surname,`<surname>`>> elements. Tibetan, Burmese, and other Indian single names that are not surnames may be tagged as <<element-given-names,`<given-names>`>>.); and How to treat the article portions of both surnames and given names (such as “de”, “Del”, “Las”, “de la”, etc.). (For example, whether “Rudolpho Del Pozo Garcia” (who may also be known as “Rudolpho del Pozo García”) sorts as an initial “P” or as an initial “D” is a business, not a Tag Set, decision.) The finer points of personal names are probably best determined by native speakers of the language involved.
+#### Names and String Names in Citations
+
+The names of authors, editors, translators, and other contributors can also be tagged within <<element-element-citation,`<element-citation>`>> and <<element-mixed-citation,`<mixed-citation>`>> using <<element-name,`<name>`>>, <<element-string-name,`<string-name>`>>, or <<element-person-group,`<person-group>`>>. The elements <<element-name,`<name>`>> and <<element-string-name,`<string-name>`>> identify the surname (family name or last name) and given names (first names and middle names) of the person. The element <<element-person-group,`<person-group>`>> is a container for <<element-name,`<name>`>> elements, <<element-name-alternatives,`<name-alternatives>`>> elements, and <<element-string-name,`<string-name>`>> elements.
+Here is a typical citation tagged using <<element-name,`<name>`>>, tagged as an element citation:
+[source,xml]
+....
+<element-citation publication-type="journal" publication-format="print">
+  <name>
+    <surname>Leifer</surname><given-names>BP</given-names>
+  </name>
+  <article-title>Early diagnosis of Alzheimer&rsquor;s disease: clinical 
+  and economic benefits</article-title>
+  <source>J Am Geriatr Soc</source>
+  <year iso-8601-date="2003-05">2003</year><month>May</month>
+  <volume>51</volume>
+  <issue>5 Suppl</issue><issue-title>Dementia</issue-title>
+  <fpage>S281</fpage><lpage>S288</lpage>
+</element-citation>
+....
+and here is the same citation tagged as a mixed citation:
+[source,xml]
+....
+<mixed-citation publication-type="journal" 
+  publication-format="print"><string-name><surname>Leifer</surname>, 
+    <given-names>BP</given-names></string-name>.  <article-title>Early 
+  diagnosis of Alzheimer's disease: clinical and economic benefits</article-title>. 
+  <source>J Am Geriatr Soc</source>. 
+  <year iso-8601-date="2003-05">2003</year>
+  <month>May</month>;
+  <volume>51</volume>(<issue>5 Suppl</issue>  
+  <issue-title>Dementia</issue-title>):<fpage>S281
+  </fpage>-<lpage>S288</lpage>.
+</mixed-citation>
+....
+#### Spacing in Citation Names
+
+Note that _even when_ the <<element-name,`<name>`>> element is _inside_ a <<element-mixed-citation,`<mixed-citation>`>>, that <<element-name,`<name>`>> element cannot be used to preserve this space. In the tagged examples below, there will be no space between the surname and given names, no matter which type of citation contains the <<element-name,`<name>`>>:
+[source,xml]
+....
+<element-citation publication-type="journal">
+  <name>
+    <surname>Petitti</surname>  <given-names>DB</given-names>
+  </name>
+</element-citation>
+
+<mixed-citation publication-type="journal">
+  <name>
+    <surname>Petitti</surname>  
+    <given-names>DB</given-names>
+  </name>
+</mixed-citation>
+....
+Within both types of citations, the elements <<element-string-name,`<string-name>`>> and <<element-person-group,`<person-group>`>> can be used to preserve punctuation. These elements are typically used in mixed citations to preserve the punctuation and spacing.
+*String Name:* A <<element-string-name,`<string-name>`>> can preserve the punctuation that separates the surname from the initials or the given names, so <<element-string-name,`<string-name>`>> elements are frequently used inside <<element-mixed-citation,`<mixed-citation>`>>s:
+[source,xml]
+....
+<mixed-citation publication-type="journal">
+  <string-name>
+    <surname>Washington</surname>, <given-names>George</given-names>
+  </string-name>. ...
+</mixed-citation>
+....
+The element <<element-string-name,`<string-name>`>> can be used to hold name alternatives or unusual names that are not easily broken into <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>> components. For example:
+[source,xml]
+....
+<element-citation publication-type="journal">
+  <string-name>His Royal Highness The Prince Charles, 
+  Prince of Wales and Earl of Chester</string-name> ...
+</element-citation>
+....
+The element <<element-string-name,`<string-name>`>> can also be used to preserve the order of publication for a name. All of the following are legal string names:
+[source,xml]
+....
+<string-name>
+  <surname>Smith</surname>, <given-names>JH</given-names>
+</string-name>
+
+<string-name>
+  <given-names>JH</given-names> <surname>Smith</surname>
+</string-name>
+
+<string-name>J.H.  <surname>Smith</surname></string-name>
+....
+The first example above would not be a valid <<element-name,`<name>`>> because of the comma and space between <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>>. The second and third examples are not valid <<element-name,`<name>`>>s because of name component order. The <<element-name,`<name>`>> element specifies an order for the name component elements to help users regularize this data.
+#### Person Groups
+
+The <<element-name,`<name>`>> elements within citations may be grouped using the <<element-person-group,`<person-group>`>> element. <<element-person-group,`<person-group>`>> can contain <<element-name,`<name>`>>, <<element-collab,`<collab>`>>, or <<element-anonymous,`<anonymous>`>> elements. <<element-person-group,`<person-group>`>> takes an optional attribute <<attribute-person-group-type,`@person-group-type`>> that identifies the type of contributor (editor, illustrator) tagged within the group.
+Here is an editor tagged using <<element-person-group,`<person-group>`>> inside <<element-element-citation,`<element-citation>`>>:
+[source,xml]
+....
+<element-citation publication-type="journal" publication-format="print">
+<source>Folia Primatologica: International Journal of Primatology</source>
+<person-group person-group-type="editor">
+<name><surname>Crompton</surname><given-names>R.H.</given-names></name>
+</person-group>
+<publisher-loc>Basel (Switzerland)</publisher-loc>
+<publisher-name>S. Karger AG</publisher-name>
+<volume>1</volume><year iso-8601-date="1863">1863</year>
+<comment> -suspect date, may be 1864</comment>
+</element-citation>
+....
+And that same person group in a mixed citation:
+[source,xml]
+....
+<mixed-citation publication-type="journal" publication-format="print">
+<source>Folia Primatologica: International Journal of Primatology</source>. 
+<person-group person-group-type="editor">
+<name><surname>Crompton</surname><given-names>R.H.</given-names>
+</name></person-group>, editor. <publisher-loc>Basel (Switzerland)</publisher-loc>: 
+<publisher-name>S. Karger AG</publisher-name>. Vol. <volume>1</volume> 
+<year iso-8601-date="1863">1863</year> -suspect date, may be 1864.</mixed-citation>
+....
+Notice that, in the mixed-style example just given, the information that a person is an editor may be there twice, once as loose textual material with a comma and space, and once as a searchable attribute on the <<element-person-group,`<person-group>`>> element.
+Within both citation types, but more typically used within mixed citations, a <<element-person-group,`<person-group>`>> allows preservation of the punctuation between names or the punctuation between a name and its affiliation, such as the square brackets below:
+[source,xml]
+....
+<mixed-citation publisher-type="gov">
+<person-group person-group-type="author">
+<name><surname>Norman</surname>
+<given-names>John C</given-names>
+</name> [<aff>Texas Heart Institute, Houston, TX</aff>]
+</person-group>
+</mixed-citation>
+....
+The <<element-person-group,`<person-group>`>> element can also be used to tag a person’s name and affiliation or to collect a group of contributors, all of whom have a single affiliation. In the example below, two individuals share an affiliation, tagged in an element-style citation.
+[source,xml]
+....
+<element-citation publication-type="commun">
+  <person-group>
+    <name>
+      <surname>Hennen</surname><given-names>John</given-names>
+    </name>
+    <name>
+      <surname>McDougall</surname><given-names>Jenni</given-names>
+    </name>
+    <aff>Edinburgh, Scotland</aff>
+  </person-group>
+  <source>Letter to: Dr. Duncan</source><year>[date unknown]</year>
+  <size units="pages">9 p</size><comment>Located at: History of Medicine
+  Division, National Library of Medicine, Bethesda, MD; W6 P3 v.1575.
+  Observations on the cure of syphilis without mercury.</comment>
+</element-citation>
+....
+Another possible use of the <<element-person-group,`<person-group>`>> is to hold the element <<element-etal,`<etal>`>>, to designate unnamed individuals (typically indicated in print with the text “et al.”). Unlike many journal Tag Sets, this Tag Set allows <<element-etal,`<etal>`>> to contain text, so the user may choose between generating text based on the element or including the text inside the element.
+#### APA Ellipses Style for Multiple Authors
+
+The 6th edition of the APA Style Guide eliminates long lists of authors when citing a work with more than 7 or 8 authors. (Many genomics articles have hundreds of authors.) When there are more than 7 authors, the APA citation lists the first 6 authors, then an ellipsis or the words “et al.”, followed by the last author. Here is an example of such a citation, that has a large number of authors, as it would be shown in APA style for display or print:
+[source,xml]
+....
+Dodge, K. A., Berlin, L. J., Epstein, M., Spitz Roth, A., O'Donnell, K., 
+Kauffman, M., …, & Christopoulos, C. (2003). The Durham 
+Family Initiative: A preventive system of care. Child Welfare, 
+83(2), 109-128
+....
+Here is the example above tagged as a <<element-element-citation,`<element-citation>`>>, using the element <<element-etal,`<etal>`>> as a placeholder, from which the ellipses could be generated:
+[source,xml]
+....
+<ref id="r1">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dodge</surname>
+<given-names>K. A.</given-names></name>
+<name><surname>Berlin</surname>
+<given-names>L. J.</given-names></name>
+<name><surname>Epstein</surname>
+<given-names>M.</given-names></name>
+<name><surname>Spitz Roth</surname>
+<given-names>A.</given-names></name>
+<name><surname>O&#x2019;Donnell</surname>
+<given-names>K.</given-names></name>
+<name><surname>Kauffman</surname>
+<given-names>M.</given-names></name>
+<etal/>
+<name><surname>Christopoulos</surname>
+<given-names>C.</given-names></name>
+</person-group>
+<year iso-8601-date="2003">2003</year>
+<article-title>The Durham Family Initiative: A
+preventive system of care</article-title>
+<source>Child Welfare</source>
+<volume>83</volume><issue>2</issue>
+<fpage>109</fpage><lpage>128</lpage>
+</element-citation>
+</ref>
+....
+Here is the example above tagged as a <<element-mixed-citation,`<mixed-citation>`>>, using the element <<element-etal,`<etal>`>> to hold the entity reference for the ellipsis, the comma-space following each author (including et al.), and the ampersand before the name of the final author:
+[source,xml]
+....
+<ref id="r1">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dodge</surname>
+<given-names>K. A.</given-names></name>,
+<name><surname>Berlin</surname>
+<given-names>L. J.</given-names></name>,
+<name><surname>Epstein</surname>
+<given-names>M.</given-names></name>,
+<name><surname>Spitz Roth</surname>
+<given-names>A.</given-names></name>,
+<name><surname>O&#x2019;Donnell</surname>
+<given-names>K.</given-names></name>,
+<name><surname>Kauffman</surname>
+<given-names>M.</given-names></name>,
+<etal>&hellip;</etal>, &amp; <name>
+<surname>Christopoulos</surname>
+<given-names>C.</given-names></name>
+</person-group> (<year iso-8601-date="2003">2003</year>).
+<article-title>The Durham Family Initiative: A preventive
+system of care</article-title>. <source>Child Welfare</source>,
+<volume>83</volume>(<issue>2</issue>),
+<fpage>109</fpage>&#x2013;<lpage>128</lpage>.
+</mixed-citation>
+</ref>
+....
+Since this Tag Set allows <<element-etal,`<etal>`>> to contain text, the user may choose between generated or contained text. Both of the samples above could alternately have included `<etal>et al.</etal>` or `<etal>…</etal>` instead of the empty <<element-etal,`<etal>`>> element.
+Some publishers choose to use <<element-citation-alternatives,`<citation-alternatives>`>> element to enable them to encode the citation twice, once in APA ellipses style for display and once with all the (possibly hundreds) of contributors tagged explicitly.

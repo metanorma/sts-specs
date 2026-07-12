@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/seq.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-seq]
+=== `@seq` Sequence Number
+
+Sequence number of a document within the type of sequence named by the element to which this attribute is attached: on a <<element-volume,`<volume>`>> element, the sequence within the volume; on an <<element-issue,`<issue>`>> element, the sequence within the issue; on an <<element-fpage,`<fpage>`>> element, the sequence within a single page; and on an <<element-elocation-id,`<elocation-id>`>> element, the electronic sequence.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-elocation-id,`<elocation-id>`>>, <<element-fpage,`<fpage>`>>, <<element-issue,`<issue>`>>, <<element-volume,`<volume>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The number of the document in a sequence of documents within a volume, issue, electronic
+                        compilation, or even on the same page.
+| Restriction| This attribute is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

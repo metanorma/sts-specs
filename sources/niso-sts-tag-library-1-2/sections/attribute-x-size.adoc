@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/x-size.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-x-size]
+=== `@x-size` X Size of the Glyph
+
+The pixels per row in the bit-mapped glyph that has been declared with a <<element-glyph-data,`<glyph-data>`>> element as part of a <<element-private-char,`<private-char>`>> element.
+
+#### OPTIONAL on element:  <<element-glyph-data,`<glyph-data>`>>
+
+|===
+| Value| Meaning
+
+| A number| An integer number of pixels, for example, “`45`”,
+                        that is the number of pixels in each row of the bitmap of the <<element-glyph-data,`<glyph-data>`>> element.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,31 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/script.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-script]
+=== `@script` Script (TBX)
+
+The `@script` attribute specifies the language writing script of a of the content of the element with which it is associated, for example the value “Cyrl”.
+
+#### Usage/Remarks
+#### Purpose
+
+Like the <<attribute-xml-lang,`@xml:lang`>> attribute, the `@script` attribute is often associated with the <<element-tbx-langSet,`<tbx:langSet>`>> element, to specify the writing script of all the child elements in a language section. However, it can be associated with virtually any element to specify the writing script of the content of that element.
+#### Values
+
+Use values found for “script” in the link:https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry[IANA language subtag registry]. Do not use deprecated values.
+Note: Do not combine script and region values with the language value. Use the attribute <<attribute-xml-lang,`@xml:lang`>> to record the language. Use the `@script` attribute, and the <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>> element for script and region, respectively.
+You should omit the `@script` attribute when it makes no useful distinction (as for the primary or sole script of a language). In particular, you should omit the `@script` attribute if it matches the “Suppress-Script” field in the registry for the language you used.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-geographicalUsage,`<tbx:geographicalUsage>`>>, <<element-tbx-langSet,`<tbx:langSet>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-subjectField,`<tbx:subjectField>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The writing script of a language, such as “Cyrl”
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

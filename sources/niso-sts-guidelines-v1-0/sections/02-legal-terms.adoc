@@ -1,0 +1,12 @@
+== Legal terms
+
+Standards documents carry copyright, license, and provenance metadata in
+their front matter. In NISO STS, this information is encoded using the
+<<element-permissions,`<permissions>`>> element and its children
+(<<element-copyright-statement,`<copyright-statement>`>>,
+<<element-copyright-year,`<copyright-year>`>>,
+<<element-copyright-holder,`<copyright-holder>`>>,
+<<element-license,`<license>`>>).
+
+For the full list of legal-term elements, see the Tag Library chapter on
+front-matter metadata.

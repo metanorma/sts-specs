@@ -1,0 +1,74 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/notes-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-notes-group]
+=== `<notes-group>` Notes Group
+
+Container for a headed (titled) group of normative or non-normative notes and examples within the narrative body, front matter, or back matter of a standard or adoption.
+
+#### Usage/Remarks
+The <<element-notes-group,`<notes-group>`>> element holds one or more normative or non-normative notes (or normative and non-normative examples) as well as a title describing the grouping. The element may be used wherever a headed group of notes is needed in the text of the standard, inside the body and inside many other text structures such as sections.
+
+#### Related Elements
+
+This Tag Set contains several elements that are notes or may be used to group notes: <<element-normative-note,`<normative-note>`>> A note with normative content that can be part of the narrative text or inside one of the notes grouping elements in the body text, front matter, or back matter of a standard or adoption. <<element-non-normative-note,`<non-normative-note>`>> A note with non-normative content that can be part of the narrative text or inside one of the notes grouping elements in the body text, front matter, or back matter of a standard or adoption. <<element-notes,`<notes>`>> A section containing notes that may appear in the front or back matter of a standard or adoption. <<element-notes-group,`<notes-group>`>> A headed (titled) group of normative or non-normative notes and examples within the narrative body of a standard or adoption. <<element-meta-note,`<meta-note>`>> A note within the metadata of a standards or adoption document, as opposed to the other note types that occur within the front matter, body, or back matter of a document.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-annotation,`<annotation>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-author-comment,`<author-comment>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-caption,`<caption>`>>, <<element-chem-struct-wrap,`<chem-struct-wrap>`>>, <<element-def,`<def>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-formula-group,`<disp-formula-group>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-editing-instruction,`<editing-instruction>`>>, <<element-fig,`<fig>`>>, <<element-fn,`<fn>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-list-item,`<list-item>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-open-access,`<open-access>`>>, <<element-p,`<p>`>>, <<element-ref,`<ref>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-speech,`<speech>`>>, <<element-statement,`<statement>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-table-wrap-foot,`<table-wrap-foot>`>>, <<element-table-wrap-group,`<table-wrap-group>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more Any combination of: <<element-p,`<p>`>> <<element-p,Paragraph>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  notes-group  %notes-group-model;                          >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title, (editing-instruction)*, (p | non-normative-note | non-normative-example | normative-note | normative-example)*)
+
+#### Tagged Sample
+
+##### Titled group of normative and non-normative notes
+[source,xml]
+....
+...
+<notes-group>
+ <title>...</title>
+ <normative-note id="N1">
+  <label>1</label>
+  <p>A minimum slope of ...</p>
+ </normative-note>
+ <normative-note id="N2">
+  <label>2</label>
+  <p>A maximum slope of ...</p>
+ </normative-note>
+ <non-normative-note id="N3">
+  <label>3</label>
+  <p>It is not necessary to ...</p>
+ </non-normative-note>
+</notes-group>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Notes Group
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

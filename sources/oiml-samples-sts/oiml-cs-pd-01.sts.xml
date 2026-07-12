@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS PD-01 Edition 3</doc-identifier>
+      <std-title-group>
+        <title>Appeals, Resolution of Complaints and Disputes</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2024-08-26</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 3 of OIML-CS PD-01 by electronic ballot on 26 August 2024. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to the Framework for the OIML Certification System (OIML-CS) (OIML B 18 OIML&#xA0;B&#xA0;18:2022) which contains the framework for the operation of the OIML-CS.</p>
+      <p>The text of this publication is based on the following documents:</p>
+      <table-wrap id="tab_1">
+        <caption>Edition history</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>PD-01 Edition 1</td>
+            <td>PD-01 Edition 1</td>
+            <td>Published: July 2017</td>
+          </tr>
+          <tr>
+            <td>PD-01 Edition 2</td>
+            <td>PD-01 Edition 2</td>
+            <td>Published: 20 December 2018</td>
+          </tr>
+          <tr>
+            <td>PD-01 Edition 3 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N087</td>
+            <td>Draft for MG comment-20231213</td>
+          </tr>
+          <tr>
+            <td>PD-01 Edition 3 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N093</td>
+            <td>Draft for MG comment-20240227</td>
+          </tr>
+          <tr>
+            <td>PD-01 Edition 3 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N097</td>
+            <td>Draft for MG comment-20240605</td>
+          </tr>
+          <tr>
+            <td>PD-01 Edition 3 (draft)</td>
+            <td>OIML-CS_SC1_P4_N141</td>
+            <td>Draft for MC approval-20240724</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established:</p>
+        <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+          <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains information on appeals, resolution of complaints and disputes associated with the OIML-CS, along with the procedures relating to the operation of the Board of Appeal (BoA).</p>
+        <p>The information and procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-04, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06, OIML-CS&#xA0;PD-07 and OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Composition and appointment of members of the BoA</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Composition</title>
+        <p>The composition of the BoA is defined in OIML B 18, 13.1 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Appointment of BoA Chairperson and BoA members</title>
+        <sec>
+          <label>0</label>
+          <p>The CIML shall seek nominations for candidates for the roles of BoA Chairperson and members of the BoA. Management Committee Members and representatives cannot be appointed as the BoA Chairperson or as a BoA member. CIML Members shall be given at least one month to review all nominations ahead of a vote.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>For the BoA Chairperson the appointment process shall be as follows:</p>
+          <list list-type="order" id="_61698267-e4b9-d077-47f0-98f4b7569d3e">
+            <list-item>a)In the case that there is only one candidate, that candidate is appointed.</list-item>
+            <list-item>b)Where there is more than one candidate, CIML Members vote for one of the candidates and the candidate who obtained the highest number of votes is appointed.</list-item>
+            <list-item>c)If there is no candidate a member of the Presidential Council shall be appointed as BoA Chairperson (ex officio) until a new appointment process is conducted.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>For the members of the BoA the appointment process shall be as follows:</p>
+          <list list-type="order" id="_cce8794c-c60d-6e12-cc02-c6407788e0bd">
+            <list-item>a)In the case where there are four candidates, those candidates are appointed.</list-item>
+            <list-item>b)Where there are more than four candidates, CIML Members vote for four of the candidates and the four candidates who obtained the highest number of votes are appointed.</list-item>
+            <list-item>c)In case there are fewer than four candidates, those candidates are appointed and a member of the Presidential Council or, at the discretion of the CIML President, a CIML Member shall be appointed to each vacant position until a new appointment process is conducted.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The terms of office of the BoA Chairperson and the four members of the BoA shall be three years and they shall be immediately eligible for re-appointment for a further period of three years.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Neither the BoA Chairperson nor the other members shall serve in a case in which an OIML Issuing Authority or Test Laboratory of their country is involved. When necessary in such an event, a member of the Presidential Council or, at the discretion of the CIML President, a CIML Member from a country not involved in the case shall be appointed. The Executive Secretary shall act as the Secretary of the BoA and shall have no right to vote. == Appeals</p>
+          <p>Decisions made by the Management Committee may be appealed to the BoA. How to make an appeal and the operating rules for the BoA are detailed in clauses 8 and 9 respectively. == Complaints</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A complaint may relate to a range of topics including, but not limited to:</p>
+        <list list-type="order" id="_8a194df3-73b0-0ed7-faef-7f468984bf78">
+          <list-item>a)an OIML type evaluation report that has been issued by an OIML Issuing Authority on the basis of incorrect technical conclusions or procedures;</list-item>
+          <list-item>b)a decision of a Utilizer or Associate to not accept an OIML test report, OIML type evaluation report and/or OIML certificate;</list-item>
+          <list-item>c)any expression of dissatisfaction with the OIML-CS.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Incorrect technical conclusions or procedures</title>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A complaint may be submitted to the Executive Secretary with documented and substantiated evidence that an OIML type evaluation report was issued by an OIML Issuing Authority on the basis of incorrect technical conclusions or procedures. The Executive Secretary shall notify the owner of the report and the Management Committee of the complaint. The Executive Secretary shall investigate the complaint and will seek the advice of the Review Committee as to whether the complaint should be upheld. If the complaint is upheld then the corresponding OIML certificate will be deregistered from the OIML-CS website and the OIML Issuing Authority shall take appropriate action to correct the OIML type evaluation report. The OIML Issuing Authority has the right to appeal the decision to deregister the OIML certificate.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Non-acceptance of an OIML test report, OIML type evaluation report and/or OIML certificate</title>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A complaint may be submitted to the Executive Secretary with documented and substantiated evidence regarding a decision of a Utilizer or Associate to not accept an OIML test report, OIML type evaluation report and/or OIML certificate. The Executive Secretary shall notify the Utilizer or Associate and the Management Committee of the complaint. The Executive Secretary shall investigate the complaint. The Executive Secretary will report to the Management Committee with recommended actions as appropriate. Actions may include proposed amendments to the scope of a Utilizer or Associate and potential consequential amendments to the scope of OIML Issuing Authority(ies) from the same OIML Member State. The Utilizer or Associate has the right to appeal any decisions of the Management Committee in this regard.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Expressions of dissatisfaction</title>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>An expression of dissatisfaction regarding the OIML-CS may be brought to the attention of the Management Committee Chairperson, Management Committee Deputy Chairperson, a Management Committee Member or the Executive Secretary. In the case where an expression of dissatisfaction has been brought to the attention of a person other than the Executive Secretary, the person shall notify the Executive Secretary who will investigate the expression of dissatisfaction. Where the expression of dissatisfaction is upheld the Executive Secretary will report to the Management Committee with recommended actions as appropriate.Note Note0.11,NoteThe above-mentioned process can also be adopted when a suggestion for improvement is received. == Disputes</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary shall be contacted in the event of a dispute initiated by:</p>
+        <list list-type="order" id="_f390040b-9089-08f5-4a34-d8698962293b">
+          <list-item>a)an applicant for OIML type evaluation and certification regarding an OIML type evaluation report; or</list-item>
+          <list-item>b)an OIML Issuing Authority, Utilizer or Associate regarding the incorrect application of the operational rules and procedures of the OIML-CS.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The appropriate CIML Member may represent their respective OIML Issuing Authority, Utilizer or Associate involved in a dispute and shall attempt to resolve between the parties in dispute any issue that might arise. If the OIML Issuing Authorities, Utilizers or Associates affected are unable to resolve an issue, they shall provide a written explanation to the Executive Secretary who will then raise it with the BoA.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where a dispute involves an applicant for OIML type evaluation and certification (e.g. a manufacturer), the applicant shall attempt to resolve any issues that might arise with the relevant OIML Issuing Authority, Utilizer, Associate and/or their CIML Members. If the applicant is unable to resolve an issue, they may provide a written explanation to the Executive Secretary who will then raise it with the BoA. == Making an appeal to the BoA</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Applicants for OIML type evaluation and certification, OIML Issuing Authorities, Utilizers or Associates have the right to submit an appeal to the BoA.Note Note0.15,NoteOrganizations that have applied to become an OIML Issuing Authority, Utilizer or Associate also have the right to appeal.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Appeals by applicants for OIML type evaluation and certification</title>
+        <sec>
+          <label>0</label>
+          <p>When an applicant for OIML type evaluation and certification wishes to appeal against a decision taken by an OIML Issuing Authority about a matter with which the applicant is concerned, the applicant shall first appeal according to the appeal procedure of the OIML Issuing Authority concerned, when that procedure is applicable.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>If the applicant is not satisfied with the outcome of the appeal and the applicant is of the opinion that the decision goes against the operating rules and procedures of the OIML-CS, or if the OIML Issuing Authority appeal procedure is not applicable, the applicant may submit an appeal in writing to the Executive Secretary within one month after having been informed of the decision, setting out all reasons for the appeal.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Appeals by OIML Issuing Authorities, Utilizers or Associates</title>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When an OIML Issuing Authority, Utilizer or Associate wishes to submit an appeal against a decision of the Management Committee, it shall do so in writing to the Executive Secretary within one month after having concluded that it cannot reach an agreement, setting out its reasons in full. == BoA Procedure</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In order to consider a case, the BoA shall normally meet in-person. Alternatively, the case can be considered in an online meeting or via correspondence if all parties agree.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When the BoA meets to consider a case, either in-person, online or via correspondence, all relevant information shall be made available. The information shall be circulated at least one month before a meeting by the Executive Secretary to the BoA Chairperson and the four members of the BoA. Copies of all of the information shall be sent to the parties.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>It is the duty of the Executive Secretary to assist the members and the parties involved. When the BoA decision is taken by correspondence, notes or minutes relevant to the decision shall be written.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The BoA shall deal with the case confidentially.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The parties involved each have the right to use an expert to advise on matters relevant to the case. This is applicable both at a meeting of the BoA to adjudicate the case or where the case is adjudicated by correspondence.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>During the adjudication of the case, only the BoA Chairperson, the four members of the BoA and the Executive Secretary shall be present.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Decisions of the BoA shall be taken by a simple majority of the members. If the votes are divided equally, the BoA Chairperson shall decide upon the action to be taken.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The BoA shall give its decision in writing, within one month after the case has been considered, to the parties, and, if action with regard to rules and operating procedures is needed, to the Management Committee Chairperson.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where the appeal relates to a Management Committee decision, the BoA shall give its decision in writing, within one month after the case has been considered, to the party that raised the appeal and the Management Committee Chairperson. If the BoA upholds the appeal against a Management Committee decision, the BoA decision is binding upon the Management Committee and cannot be subsequently appealed.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The decisions of the BoA shall be presented to the Management Committee at its next meeting in such a way as not to reveal the identity of the parties, when that is requested by any party to the case. When an OIML Issuing Authority, Utilizer or Associate has not followed a decision from the BoA, the Management Committee shall decide on the appropriate steps to be taken.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Appeals, Resolution of Complaints and Disputes</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established:</p>
+      <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+        <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains information on appeals, resolution of complaints and disputes associated with the OIML-CS, along with the procedures relating to the operation of the Board of Appeal (BoA).</p>
+      <p>The information and procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-04, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06, OIML-CS&#xA0;PD-07 and OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Composition and appointment of members of the BoA</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Composition</title>
+      <p>The composition of the BoA is defined in OIML B 18, 13.1 OIML&#xA0;B&#xA0;18:2022.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Appointment of BoA Chairperson and BoA members</title>
+      <sec>
+        <label>0</label>
+        <p>The CIML shall seek nominations for candidates for the roles of BoA Chairperson and members of the BoA. Management Committee Members and representatives cannot be appointed as the BoA Chairperson or as a BoA member. CIML Members shall be given at least one month to review all nominations ahead of a vote.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>For the BoA Chairperson the appointment process shall be as follows:</p>
+        <list list-type="order" id="_61698267-e4b9-d077-47f0-98f4b7569d3e">
+          <list-item>a)In the case that there is only one candidate, that candidate is appointed.</list-item>
+          <list-item>b)Where there is more than one candidate, CIML Members vote for one of the candidates and the candidate who obtained the highest number of votes is appointed.</list-item>
+          <list-item>c)If there is no candidate a member of the Presidential Council shall be appointed as BoA Chairperson (ex officio) until a new appointment process is conducted.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>For the members of the BoA the appointment process shall be as follows:</p>
+        <list list-type="order" id="_cce8794c-c60d-6e12-cc02-c6407788e0bd">
+          <list-item>a)In the case where there are four candidates, those candidates are appointed.</list-item>
+          <list-item>b)Where there are more than four candidates, CIML Members vote for four of the candidates and the four candidates who obtained the highest number of votes are appointed.</list-item>
+          <list-item>c)In case there are fewer than four candidates, those candidates are appointed and a member of the Presidential Council or, at the discretion of the CIML President, a CIML Member shall be appointed to each vacant position until a new appointment process is conducted.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The terms of office of the BoA Chairperson and the four members of the BoA shall be three years and they shall be immediately eligible for re-appointment for a further period of three years.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Neither the BoA Chairperson nor the other members shall serve in a case in which an OIML Issuing Authority or Test Laboratory of their country is involved. When necessary in such an event, a member of the Presidential Council or, at the discretion of the CIML President, a CIML Member from a country not involved in the case shall be appointed. The Executive Secretary shall act as the Secretary of the BoA and shall have no right to vote. == Appeals</p>
+        <p>Decisions made by the Management Committee may be appealed to the BoA. How to make an appeal and the operating rules for the BoA are detailed in clauses 8 and 9 respectively. == Complaints</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A complaint may relate to a range of topics including, but not limited to:</p>
+      <list list-type="order" id="_8a194df3-73b0-0ed7-faef-7f468984bf78">
+        <list-item>a)an OIML type evaluation report that has been issued by an OIML Issuing Authority on the basis of incorrect technical conclusions or procedures;</list-item>
+        <list-item>b)a decision of a Utilizer or Associate to not accept an OIML test report, OIML type evaluation report and/or OIML certificate;</list-item>
+        <list-item>c)any expression of dissatisfaction with the OIML-CS.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Incorrect technical conclusions or procedures</title>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A complaint may be submitted to the Executive Secretary with documented and substantiated evidence that an OIML type evaluation report was issued by an OIML Issuing Authority on the basis of incorrect technical conclusions or procedures. The Executive Secretary shall notify the owner of the report and the Management Committee of the complaint. The Executive Secretary shall investigate the complaint and will seek the advice of the Review Committee as to whether the complaint should be upheld. If the complaint is upheld then the corresponding OIML certificate will be deregistered from the OIML-CS website and the OIML Issuing Authority shall take appropriate action to correct the OIML type evaluation report. The OIML Issuing Authority has the right to appeal the decision to deregister the OIML certificate.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Non-acceptance of an OIML test report, OIML type evaluation report and/or OIML certificate</title>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A complaint may be submitted to the Executive Secretary with documented and substantiated evidence regarding a decision of a Utilizer or Associate to not accept an OIML test report, OIML type evaluation report and/or OIML certificate. The Executive Secretary shall notify the Utilizer or Associate and the Management Committee of the complaint. The Executive Secretary shall investigate the complaint. The Executive Secretary will report to the Management Committee with recommended actions as appropriate. Actions may include proposed amendments to the scope of a Utilizer or Associate and potential consequential amendments to the scope of OIML Issuing Authority(ies) from the same OIML Member State. The Utilizer or Associate has the right to appeal any decisions of the Management Committee in this regard.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Expressions of dissatisfaction</title>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>An expression of dissatisfaction regarding the OIML-CS may be brought to the attention of the Management Committee Chairperson, Management Committee Deputy Chairperson, a Management Committee Member or the Executive Secretary. In the case where an expression of dissatisfaction has been brought to the attention of a person other than the Executive Secretary, the person shall notify the Executive Secretary who will investigate the expression of dissatisfaction. Where the expression of dissatisfaction is upheld the Executive Secretary will report to the Management Committee with recommended actions as appropriate.Note Note0.11,NoteThe above-mentioned process can also be adopted when a suggestion for improvement is received. == Disputes</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The Executive Secretary shall be contacted in the event of a dispute initiated by:</p>
+      <list list-type="order" id="_f390040b-9089-08f5-4a34-d8698962293b">
+        <list-item>a)an applicant for OIML type evaluation and certification regarding an OIML type evaluation report; or</list-item>
+        <list-item>b)an OIML Issuing Authority, Utilizer or Associate regarding the incorrect application of the operational rules and procedures of the OIML-CS.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The appropriate CIML Member may represent their respective OIML Issuing Authority, Utilizer or Associate involved in a dispute and shall attempt to resolve between the parties in dispute any issue that might arise. If the OIML Issuing Authorities, Utilizers or Associates affected are unable to resolve an issue, they shall provide a written explanation to the Executive Secretary who will then raise it with the BoA.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where a dispute involves an applicant for OIML type evaluation and certification (e.g. a manufacturer), the applicant shall attempt to resolve any issues that might arise with the relevant OIML Issuing Authority, Utilizer, Associate and/or their CIML Members. If the applicant is unable to resolve an issue, they may provide a written explanation to the Executive Secretary who will then raise it with the BoA. == Making an appeal to the BoA</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Applicants for OIML type evaluation and certification, OIML Issuing Authorities, Utilizers or Associates have the right to submit an appeal to the BoA.Note Note0.15,NoteOrganizations that have applied to become an OIML Issuing Authority, Utilizer or Associate also have the right to appeal.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Appeals by applicants for OIML type evaluation and certification</title>
+      <sec>
+        <label>0</label>
+        <p>When an applicant for OIML type evaluation and certification wishes to appeal against a decision taken by an OIML Issuing Authority about a matter with which the applicant is concerned, the applicant shall first appeal according to the appeal procedure of the OIML Issuing Authority concerned, when that procedure is applicable.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If the applicant is not satisfied with the outcome of the appeal and the applicant is of the opinion that the decision goes against the operating rules and procedures of the OIML-CS, or if the OIML Issuing Authority appeal procedure is not applicable, the applicant may submit an appeal in writing to the Executive Secretary within one month after having been informed of the decision, setting out all reasons for the appeal.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Appeals by OIML Issuing Authorities, Utilizers or Associates</title>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>When an OIML Issuing Authority, Utilizer or Associate wishes to submit an appeal against a decision of the Management Committee, it shall do so in writing to the Executive Secretary within one month after having concluded that it cannot reach an agreement, setting out its reasons in full. == BoA Procedure</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>In order to consider a case, the BoA shall normally meet in-person. Alternatively, the case can be considered in an online meeting or via correspondence if all parties agree.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>When the BoA meets to consider a case, either in-person, online or via correspondence, all relevant information shall be made available. The information shall be circulated at least one month before a meeting by the Executive Secretary to the BoA Chairperson and the four members of the BoA. Copies of all of the information shall be sent to the parties.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>It is the duty of the Executive Secretary to assist the members and the parties involved. When the BoA decision is taken by correspondence, notes or minutes relevant to the decision shall be written.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The BoA shall deal with the case confidentially.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The parties involved each have the right to use an expert to advise on matters relevant to the case. This is applicable both at a meeting of the BoA to adjudicate the case or where the case is adjudicated by correspondence.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>During the adjudication of the case, only the BoA Chairperson, the four members of the BoA and the Executive Secretary shall be present.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Decisions of the BoA shall be taken by a simple majority of the members. If the votes are divided equally, the BoA Chairperson shall decide upon the action to be taken.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The BoA shall give its decision in writing, within one month after the case has been considered, to the parties, and, if action with regard to rules and operating procedures is needed, to the Management Committee Chairperson.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where the appeal relates to a Management Committee decision, the BoA shall give its decision in writing, within one month after the case has been considered, to the party that raised the appeal and the Management Committee Chairperson. If the BoA upholds the appeal against a Management Committee decision, the BoA decision is binding upon the Management Committee and cannot be subsequently appealed.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The decisions of the BoA shall be presented to the Management Committee at its next meeting in such a way as not to reveal the identity of the parties, when that is requested by any party to the case. When an OIML Issuing Authority, Utilizer or Associate has not followed a decision from the BoA, the Management Committee shall decide on the appropriate steps to be taken.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-02</doc-identifier>
+            </std-ident>
+            <title>Procedures to approve Legal Metrology experts and QMS experts</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-03</doc-identifier>
+            </std-ident>
+            <title>Application and approval of OIML Issuing Authorities, Utilizers and Associates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-04</doc-identifier>
+            </std-ident>
+            <title>Assessment of Test Laboratories</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-05</doc-identifier>
+            </std-ident>
+            <title>Processing an application for an OIML Type Evaluation Report and OIML Certificate</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-06</doc-identifier>
+            </std-ident>
+            <title>Use of OIML Type Evaluation Reports and OIML Certificates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-07</doc-identifier>
+            </std-ident>
+            <title>Transition Arrangements under the OIML-CS</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-08</doc-identifier>
+            </std-ident>
+            <title>Signing the OIML-CS Declaration</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2022</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

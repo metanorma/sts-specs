@@ -1,0 +1,72 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/originator.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-originator]
+=== `<originator>` Originator
+
+Indicates the short form of the name of the standards-development organization from which the standard emanates (for example, “`ISO`”, “`IEC`”, “`ASTM`”, “`DIN`”, “`CEN`” “`ASME`”, “`IEEE`”, and similar).
+
+#### Usage/Remarks
+The <<element-originator,`<originator>`>> is only _one_ of the ways to name an organization responsible for a standard or adoption. A standards organizations could choose to name the organization more completely using the <<element-std-org,`<std-org>`>> or <<element-std-org-group,`<std-org-group>`>> elements. Inside these two elements, the element <<element-std-org-abbrev,`<std-org-abbrev>`>> holds the short form of the name of the standards-development organization. The older <<element-originator,`<originator>`>> element has been retained for backwards compatibility.
+#### Relationship to <std-ref>
+
+This short name is usually also the first part of the standard designation (<<element-std-ref,`<std-ref>`>>) for this standards document, thus “`<originator>ISO</originator>`” would match “`<std-ref>ISO 2560:2009</std-ref>`”.
+#### ISO Note
+
+For ISO documents, expected content for this element includes the following: “`iso`”, “`iec`”, “`iso/iec`”, “`iso/cie`”, “`iso/astm`”, and “`iso/ieee`”.
+
+#### Related Elements
+
+*ISO Note:* The <<element-originator,`<originator>`>> element appears as a child of <<element-std-ident,`<std-ident>`>>. For ISO-related standards, the <<element-originator,`<originator>`>> will have the same content as the <<element-sdo,`<sdo>`>> child of the <<element-doc-ident,`<doc-ident>`>> element.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  originator   (#PCDATA %originator-elements;)*             >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Inside `<std-ident>` as part of `<iso-meta>`
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <part-number></part-number>
+  <edition>3</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language>
+ ...
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,15 @@
+= List of changes between IEC/ISO Coding Guidelines ed. 1.11 and ed. 2.1
+:docidentifier: ISO/IEC STS Coding Changes ed 2.1
+:docnumber: STS Coding Changes
+:edition: 2.1
+:publisher: ISO / IEC
+:language: en
+:doctype: report
+:mn-document-class: generic
+:publisher: ISO / IEC
+:toclevels-pdf: 2
+:local-cache-only:
+
+include::sections/01-introduction.adoc[]
+
+include::sections/02-changes.adoc[]

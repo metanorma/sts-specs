@@ -1,0 +1,91 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/name.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-name]
+=== `<name>` Name of Person (Structured)
+
+Container element for the component elements of personal names, such as a <<element-surname,`<surname>`>>.
+
+#### Usage/Remarks
+The STS model for `<name>` is a series of elements in a particular order with no punctuation or spacing between elements. For situations where a different element order is desired or punctuation between name parts is wanted, use the <<element-string-name,`<string-name>`>>, which is a very loose element, which may contain text, numbers, special characters, generated text, and any or all of the naming elements, such as <<element-surname,`<surname>`>>.
+##### Best Practice
+
+If the name parts are unknown or untagged, the whole name can be placed: Within the <<element-string-name,`<string-name>`>> element in contexts where <<element-string-name,`<string-name>`>> is allowed, for example, “`<string-name>Ice Cube</string-name>`”; or Within the element <<element-surname,`<surname>`>> in contexts where only <<element-name,`<name>`>> is allowed, for example, “`<surname>Ice Cube</surname>`”. Use of a <<element-string-name,`<string-name>`>> or <<element-surname,`<surname>`>> element is more likely to lead to better search results than merely leaving the person’s name untagged.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-name-style,`@name-style`>> (default = western)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-contrib,`<contrib>`>>, <<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-name-alternatives,`<name-alternatives>`>>, <<element-person-group,`<person-group>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+The following, in order: Any one of: The following, in order: <<element-surname,`<surname>`>> <<element-surname,Surname>> <<element-given-names,`<given-names>`>> <<element-given-names,Given (First) Names>>, zero or one <<element-given-names,`<given-names>`>> <<element-given-names,Given (First) Names>> <<element-prefix,`<prefix>`>> <<element-prefix,Prefix (in a name)>>, zero or one <<element-suffix,`<suffix>`>> <<element-suffix,Suffix (in a name)>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  name         ( ( (surname, given-names?) | given-names),
+                          prefix?, suffix?)                          >
+....
+#### Expanded Content Model
+
+(((surname, given-names?) | given-names), prefix?, suffix?)
+
+#### Tagged Sample
+
+##### Authors named in a citation
+[source,xml]
+....
+...
+<ref>
+ <label>...</label>
+ <element-citation publication-type="journal">
+  <person-group><name>
+    <surname>Chandler</surname>
+    <given-names>Adam</given-names>
+   </name>
+   <name>
+    <surname>Wiley</surname>
+    <given-names>Glen</given-names>
+   </name>
+   <name>
+    <surname>LeBlanc</surname>
+    <given-names>Jim</given-names>
+   </name></person-group> 
+  <article-title>Towards Transparent and Scalable 
+   OpenURL Quality Metrics</article-title> 
+  <source>D-Lib Magazine</source> 
+  <date iso-8601-date="2011-03">
+   <month>March/April</month>
+   <year>2011</year>
+  </date>
+  <volume>17</volume>
+  <issue>3/4</issue> 
+  <pub-id pub-id-type="doi" xlink:href="http://dx.doi.org/10.1045/march2011-chandler"
+   >http://dx.doi.org/10.1045/march2011-chandler</pub-id> 
+  <comment>Available at: </comment>
+  <ext-link xlink:href="http://dlib.org/dlib/march11/chandler/03chandler.html"
+   >http://dlib.org/dlib/march11/chandler/03chandler.html</ext-link>
+ </element-citation>
+</ref>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Personal Names in Citations
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,61 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/issn.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-issn]
+=== `<issn>` ISSN (in a citation)
+
+Within a citation (such as a <<element-mixed-citation,`<mixed-citation>`>> or an <<element-element-citation,`<element-citation>`>>), the International Standard Serial Number, the international code that uniquely identifies a serial publication title.
+
+#### Usage/Remarks
+The format/medium type of a particular <<element-issn,`<issn>`>> can be captured using the <<attribute-publication-format,`@publication-format`>> attribute.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-pub-type,`@pub-type`>>
+* <<attribute-publication-format,`@publication-format`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-ident,`<std-ident>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  issn         (#PCDATA %issn-elements;)*                   >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Part of `<std-ident>`
+[source,xml]
+....
+...
+<std-ident>
+ <originator>NISO</originator>
+ ...
+ <isbn publication-format="HTML">978-1-937522-68-1</isbn>
+ <isbn publication-format="PDF">978-1-937522-69-8</isbn>
+ <issn specific-use="National Information standards series">1041-5653</issn>
+ <year iso-8601-date="2015">2015</year>
+</std-ident>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

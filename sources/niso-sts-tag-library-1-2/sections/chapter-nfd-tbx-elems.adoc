@@ -1,0 +1,15 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/nfd-tbx-elems.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-nfd-tbx-elems]
+=== TBX Tag Set Components
+
+#### Term Entry (Concept Entry) TBX
+
+image::images/termEntry.png[termEntry.png]
+#### Language Set (TBX)
+
+image::images/langSet.png[langSet.png]
+#### Term Information Group (TIG) (TBX)
+
+image::images/tig.png[tig.png]

@@ -1,0 +1,1153 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML G 21</doc-identifier>
+      <std-title-group>
+        <title>Guidance for defining the requirements for a certification system for prepackages</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2017-10-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2017 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2017</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>G</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States. The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_657afc25-05d1-f984-795f-46259da22909">
+        <list-item>&#x2014;<bold>International Recommendations (OIML R)</bold>, which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;<bold>International Documents (OIML D)</bold>, which are informative in nature and which are intended to harmonize and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;<bold>International Guides (OIML G)</bold>, which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</list-item>
+        <list-item>&#x2014;<bold>International Basic Publications (OIML B)</bold>, which define the operating rules of the various OIML structures and systems.</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from the Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of <bold>Vocabularies (OIML V)</bold> and periodically commissions legal metrology experts to write  <bold>Expert Reports (OIML E)</bold>. Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML G 21, Edition 2017 (E)&#x2009;&#x2014;&#x2009;was developed by Project Group 5 of OIML Technical Committee TC 6  <italic>Prepackaged products</italic>. It was approved for final publication by the President of the International Committee of Legal Metrology (CIML) in October 2017.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+    <introduction>
+      <p>Prepackages can give rise to concerns on the part of consumers regarding the quantity of product they contain. These concerns are usually addressed by specifying product requirements in a normative document such as an OIML Recommendation. The packer of the prepackage should then demonstrate that the quantity of product in the prepackage complies with the prescriptions in the OIML Recommendation. In certain cases it might be sufficient for the packer to assess and declare conformity, but in other cases a national authority might require that conformity be assessed by a competent and impartial third party.</p>
+    </introduction>
+  </front>
+  <body>
+    <sec>
+      <title>Scope</title>
+      <p>This OIML Guide provides guidance to national authorities on the establishment and maintenance of certification schemes for the control of quantity of product in prepackages and labelling related to the identity of the product, to the declaration of responsibility for a prepackage, to the quantity declaration and to the certification mark associated with the product.</p>
+    </sec>
+    <sec>
+      <title>Terminology</title>
+      <p>In addition to the following terminology, the terminology given in OIML&#xA0;R&#xA0;79:2015andOIML&#xA0;R&#xA0;87:2016
+
+also applies.Note NoteClause2,NoteTerminology pertaining to conformity assessment is given in ISO/IEC&#xA0;17000:2004<xref rid="fn_1" ref-type="fn">1</xref> and may be
+included in a certification scheme agreement as required.</p>
+      <sec>
+        <title>Acronyms and symbols</title>
+      </sec>
+    </sec>
+    <sec>
+      <title>General guidance for the certification of prepackages</title>
+      <sec>
+        <title>Objectives of certification for prepackages</title>
+        <p>The objectives of certification include</p>
+        <list list-type="bullet" id="_7ef3ccef-c905-eaa4-c754-e88295f851ab">
+          <list-item>&#x2014;establishing rules and procedures for fostering confidence that the labelling and quantity of prepackages comply with all the relevant legal requirements,</list-item>
+          <list-item>&#x2014;promoting the efficiency of the control of prepackages whilst maintaining confidence in and facilitating trade of prepackaged products, and</list-item>
+          <list-item>&#x2014;promoting the harmonization, uniform interpretation and implementation of legal metrology requirements for the quantity of product in prepackages including labelling requirements and of production system requirements.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>General principles of a certification system</title>
+        <sec>
+          <title>3.2.1</title>
+          <p>A certification system may include one or more certification schemes (see <xref rid="cls-4.4" ref-type="other"/>3.4).</p>
+        </sec>
+        <sec>
+          <title>3.2.2</title>
+          <p>Generally, a government authority acts as the scheme owner and is the designating authority.</p>
+        </sec>
+        <sec>
+          <title>3.2.3</title>
+          <p>Depending on national legislation, one or more public or private bodies may be designated under a certification scheme.</p>
+        </sec>
+        <sec>
+          <title>3.2.4</title>
+          <p>Conformity assessment bodies wishing to be designated under a scheme should</p>
+          <list list-type="bullet" id="_40ed6887-1da1-24b6-20d7-16a4d96ae8f3">
+            <list-item>&#x2014;apply to become designated according to publicly available procedures, and</list-item>
+            <list-item>&#x2014;have their competence evaluated by or on behalf of the designating authority, taking into account, where applicable, any appropriate accreditation or peer review.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>3.2.5</title>
+          <p>Depending on national legislation, participation of a packer in a certification scheme is voluntary or mandatory.</p>
+        </sec>
+        <sec>
+          <title>3.2.6</title>
+          <p>A mark of conformity may be established to identify prepackages conforming to the stated requirements.</p>
+        </sec>
+        <sec>
+          <title>3.2.7</title>
+          <p>Designating authorities and designated bodies should have procedures for dealing with and resolving complaints (see  <xref rid="annex-f" ref-type="other"/>AnnexF).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Content of a certification scheme for prepackages</title>
+        <non-normative-note>Note1 Note13.3,Note1General fundamentals for product certification and guidelines for product certification schemes are given in  ISO/IEC&#xA0;17067:2013.</non-normative-note>
+        <p>A certification scheme for prepackages should specify, as appropriate, the following elements:</p>
+        <list list-type="order" id="_8e4ea202-b710-6689-b85f-156bfe2858b3">
+          <list-item>a)the scope of the scheme, including the type of prepackages covered;</list-item>
+          <list-item>b)the requirements against which the prepackages are evaluated;Note2 Note23.3,Note2These requirements are usually included in legislation and should be based on OIML&#xA0;R&#xA0;79:2015andOIML&#xA0;R&#xA0;87:2016
+.Note3 Note33.3,Note3These requirements may also be based on the specific needs of a country or regional economy, for example a minimum system, a maximum system, or any combination of systems for which an OIML Recommendation currently does not exist. In this case the requirements against which the prepackages must be evaluated should be adequately documented so as not to create any misunderstanding that the stated requirements are those based on  OIML&#xA0;R&#xA0;79:2015 and  OIML&#xA0;R&#xA0;87:2016 (see <xref rid="cls-D.2.8.1" ref-type="other"/>D.2.8.1).</list-item>
+          <list-item>c)the conformity assessment activities appropriate to the purpose and the scope of the scheme (see  <xref rid="cls-4.4" ref-type="other"/>3.4);</list-item>
+          <list-item>d)other requirements that the packer must comply with (see <xref rid="annex-a" ref-type="other"/>AnnexA);</list-item>
+          <list-item>e)the requirements for designated bodies and others involved in the certification process (see <xref rid="annex-c" ref-type="other"/>AnnexC);</list-item>
+          <list-item>f)whether designated bodies involved in the scheme are to be accredited, participate in peer assessment or qualified in another manner;</list-item>
+          <list-item>g)the methods and procedures to be used by the designated bodies and other organizations involved in the certification process, so as to ensure the integrity and consistency of the outcome of the conformity assessment process;</list-item>
+          <list-item>h)the information to be supplied to the designated body by an applicant for certification;</list-item>
+          <list-item>i)the content of the certificate of conformity (see <xref rid="annex-d" ref-type="other"/>AnnexD);</list-item>
+          <list-item>j)the conditions under which the packer may use the certificate of conformity or marks of conformity where applicable;</list-item>
+          <list-item>k)where marks of conformity may be used, the ownership, use and control of the marks (see
+<xref rid="annex-e" ref-type="other"/>AnnexE);Note4 Note43.3,Note4ISO/IEC&#xA0;17030:2003<xref rid="fn_2" ref-type="fn">1</xref> provides detailed guidance on these requirements.</list-item>
+          <list-item>l)the resources required for the operation of the scheme, including impartiality and competence of the personnel (internal and external), the evaluation resources, and the use of subcontractors;</list-item>
+          <list-item>m)how the results of the assessments and surveillance procedures shall be reported and used by the designated body and the scheme owner;</list-item>
+          <list-item>n)how non-conformities with the requirements shall be dealt with and resolved;</list-item>
+          <list-item>o)surveillance procedures, where surveillance is part of the scheme;</list-item>
+          <list-item>p)the criteria for access of packers and designated bodies to the scheme;</list-item>
+          <list-item>q)content, conditions and responsibility for publication of the register of certificates;</list-item>
+          <list-item>r)the need for, and content of, contracts where required between parties involved in the
+scheme;Note5 Note53.3,Note5BISO/IEC&#xA0;Guide&#xA0;28:2004,  Annex B<xref rid="fn_3" ref-type="fn">1</xref> gives guidance on these contract requirements.</list-item>
+          <list-item>s)general conditions for granting, maintaining, continuing, extending the scope of, reducing the scope of, suspending and withdrawing certification: this includes requirements for discontinuation of advertising and return of certification documents and any other action if the certification is suspended, withdrawn or terminated;</list-item>
+          <list-item>t)the way in which complaints and appeals are dealt with (see <xref rid="annex-f" ref-type="other"/>AnnexF);</list-item>
+          <list-item>u)the way in which the packers make reference to the scheme in their publicity material;</list-item>
+          <list-item>v)retention of records by the scheme owner and designated bodies.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>Elements for a certification scheme for prepackages</title>
+        <p>Certification schemes are developed by defining specific scheme activities for each of the scheme elements as described in  <xref rid="cls-4.4.1" ref-type="other"/>3.4.1to3.4.4. <xref rid="tab-1" ref-type="other"/>Table1 shows how to build a certification scheme by using these scheme elements. The different types of certification schemes are further practically described in <xref rid="annex-b" ref-type="other"/>AnnexB.</p>
+        <table-wrap id="tab_8">
+          <caption>Elements for a certification scheme for prepackages</caption>
+          <table>
+            <tr>
+              <td>
+                <bold>4.4.1</bold>
+              </td>
+              <td>
+                <bold>Production system assessment</bold>
+              </td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>4.4.1.1</td>
+              <td>Statement of requirements</td>
+            </tr>
+            <tr>
+              <td>4.4.1.2</td>
+              <td>Application for certification</td>
+            </tr>
+            <tr>
+              <td>4.4.1.3</td>
+              <td>Initial assessment of the production system</td>
+            </tr>
+            <tr>
+              <td>4.4.1.4</td>
+              <td>Review of the evidence of compliance</td>
+            </tr>
+            <tr>
+              <td>
+                <bold>4.4.2</bold>
+              </td>
+              <td>
+                <bold>Certification of the production system</bold>
+              </td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>4.4.2.1</td>
+              <td>Decision on certification</td>
+            </tr>
+            <tr>
+              <td>4.4.2.2</td>
+              <td>Issuing of a certificate</td>
+            </tr>
+            <tr>
+              <td>4.4.2.3</td>
+              <td>Registration of certificates</td>
+            </tr>
+            <tr>
+              <td>
+                <bold>4.4.3</bold>
+              </td>
+              <td>
+                <bold>Licensing</bold>
+              </td>
+              <td/>
+              <td/>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>4.4.3.1</td>
+              <td>Granting the right to use certificates</td>
+            </tr>
+            <tr>
+              <td>4.4.3.2</td>
+              <td>Granting the right to use marks of conformity</td>
+            </tr>
+            <tr>
+              <td>
+                <bold>4.4.4</bold>
+              </td>
+              <td>
+                <bold>Post certification conformity assessment activities</bold>
+              </td>
+            </tr>
+            <tr>
+              <td>4.4.4.1</td>
+              <td>Inspection at point of production</td>
+              <td/>
+              <td/>
+              <td>X</td>
+              <td/>
+              <td>X</td>
+              <td>X</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>4.4.4.2</td>
+              <td>Inspection in market place</td>
+              <td/>
+              <td/>
+              <td/>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>4.4.4.3</td>
+              <td>Batch licensing</td>
+              <td/>
+              <td>X</td>
+              <td/>
+              <td/>
+              <td/>
+              <td>X</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>4.4.4.4</td>
+              <td>Surveillance of the production system</td>
+              <td/>
+              <td/>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td/>
+            </tr>
+          </table>
+        </table-wrap>
+        <sec>
+          <title>Production system assessment</title>
+          <sec>
+            <title>Statement of requirements</title>
+            <p>The scheme owner should state the requirements that the packer must comply with. These requirements are generally stated in national legislation and should cover the quantity of product in prepackages, the associated labelling and sampling methods.  OIML&#xA0;R&#xA0;79:2015andOIML&#xA0;R&#xA0;87:2016
+ should be the basis for this national legislation.  <xref rid="annex-a" ref-type="other"/>AnnexA provides detailed guidance on minimum production system requirements.</p>
+          </sec>
+          <sec>
+            <title>Application for certification</title>
+            <p>An application for the certification of a production system should be lodged for each production site
+with a designated body (<xref rid="annex-c" ref-type="other"/>AnnexC provides guidance on the appointment of designated bodies). The
+packer should provide information regarding his production system including information regarding
+type of product, pack sizes, and related quantity control system and other information as required by
+the designated body. <xref rid="annex-a" ref-type="other"/>AnnexA provides detailed guidance on the minimum production system
+information.Note Note3.4.1.2,NoteA packer should not lodge an application for the same site with two designated bodies.</p>
+          </sec>
+          <sec>
+            <title>Initial assessment of the production system</title>
+            <p>The designated body should carry out conformity assessment activities to ensure that the production system of the packer meets the minimum production system requirements and issue an assessment report.  <xref rid="annex-c" ref-type="other"/>AnnexC gives detailed guidance on the minimum requirements for designated bodies.</p>
+          </sec>
+          <sec>
+            <title>Review the evidence of compliance</title>
+            <p>The designated body should review the assessment report and identify any non-compliances. The packer should be given reasonable time to correct any non-compliances after which the designated body should re-assess the production system as necessary.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Certification of the production system</title>
+          <sec>
+            <title>Decision on certification</title>
+            <p>The designated body should decide on granting certification on the basis of the evidence contained in the assessment report. All non-compliances should be resolved before a designated body may grant certification.</p>
+          </sec>
+          <sec>
+            <title>Issuing of a certificate</title>
+            <p>The designated body should issue a certificate to the packer which attests the compliance of the production system with the stated requirements and which specifies the production site(s), type(s) of prepackage and pack size(s).  <xref rid="annex-d" ref-type="other"/>AnnexD provides detailed guidance on information to be contained in the certificate.</p>
+          </sec>
+          <sec>
+            <title>Registration of certificates</title>
+            <p>The designated body should maintain a register of certificates. From the register it should be possible to determine whether a prepackage is covered by a valid certificate. A registration should be withdrawn if the certificate is no longer valid.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Licensing</title>
+          <sec>
+            <title>Granting the right to use certificates</title>
+            <p>The designated body may grant to the packer the right to use the certificate as a basis for the packer to declare that subsequent production items conform to the specified requirements.</p>
+          </sec>
+          <sec>
+            <title>Granting the right to use marks of conformity</title>
+            <p>The designated body may grant to the packer the right to apply a mark of conformity to subsequent production items declaring conformity to specified requirements. Guidance on the design and application of marks of conformity is provided in  <xref rid="annex-e" ref-type="other"/>AnnexE.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Post certification conformity assessment activities</title>
+          <p>Post certification conformity assessment activities are generally carried out by the designated body that has issued the certification to monitor ongoing compliance. These activities often overlap with activities carried out by authorities such as market surveillance activities.</p>
+          <sec>
+            <title>Inspection at point of production (reference test)</title>
+            <p>This activity involves periodically taking samples of produced prepackages at the point of production and subjecting them to tests to establish ongoing compliance.</p>
+          </sec>
+          <sec>
+            <title>Inspection in the market place (market control)</title>
+            <p>This activity involves taking samples of prepackages from the market and subjecting them to tests to establish ongoing compliance.</p>
+          </sec>
+          <sec>
+            <title>Batch licensing</title>
+            <p>This activity involves the certification of a whole batch of prepackages against product specifications, following selection and determination as specified in the scheme.</p>
+          </sec>
+          <sec>
+            <title>Surveillance of the production system</title>
+            <p>This activity involves periodic assessment of the production system to establish ongoing compliance
+with the requirements of the scheme.Note Note3.4.4.4,NoteThe scheme owner will decide on the frequency of the surveillance of the production system to ensure ongoing compliance.</p>
+          </sec>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Detailed guidance</title>
+      <p>The following annexes give detailed guidance:</p>
+    </sec>
+    <p>Guidance for defining the requirements for a certification system for prepackages</p>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <title>Minimum requirements for the production system of a packer</title>
+        <sec>
+          <title>System documentation</title>
+          <sec>
+            <title>A.1.1</title>
+            <p>Production system documentation should include a description of the organizational structure, authorities and responsibilities of key personnel, procedures, work instructions, controls, records, forms and maintenance practices to permit consistent interpretation of the production system.</p>
+          </sec>
+          <sec>
+            <title>A.1.2</title>
+            <p>Applicable documentation such as procedures and work instructions should be available as controlled documents at the location where used, e.g. where prepackage control measurements are carried out.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Implementation, maintenance and review of the system</title>
+          <sec>
+            <title>A.2.1</title>
+            <p>A packer should designate a person or persons to have the authority and responsibility for the implementation and maintenance of the production system.</p>
+          </sec>
+          <sec>
+            <title>A.2.2</title>
+            <p>The production system should be audited and reviewed annually and updated as appropriate under the responsibility of the designated person.</p>
+          </sec>
+          <sec>
+            <title>A.2.3</title>
+            <p>Documented procedures should be established for</p>
+            <list list-type="order" id="_152d6782-ca4f-5dca-e428-ab48f1047013">
+              <list-item>a)recording non-conformances raised,</list-item>
+              <list-item>b)recording corrective action taken to eliminate a recurrence,</list-item>
+              <list-item>c)evaluating and recording the effectiveness of corrective actions taken,</list-item>
+              <list-item>d)closing out of non-conformances, and</list-item>
+              <list-item>e)disposal of non-conforming prepackages.</list-item>
+            </list>
+          </sec>
+        </sec>
+        <sec>
+          <title>Competent personnel</title>
+          <p>A packer should ensure the competence of its personnel through relevant training or instruction to a level that will ensure the effective and efficient manufacture and control of prepackages.</p>
+        </sec>
+        <sec>
+          <title>Inspection of packaging material</title>
+          <p>A procedure should be established for inspecting, accepting and rejecting packing materials. These checks should include assessing conformance to the marking requirements in  OIML&#xA0;R&#xA0;79:2015.</p>
+        </sec>
+        <sec>
+          <title>Retention of records</title>
+          <sec>
+            <title>A.5.1</title>
+            <p>Records should be maintained for a sufficient period decided on by the packer. Records that
+are produced while controlling prepackages should be traceable to the prepackages concerned and to
+the person responsible for the control and also the measuring instruments used, and should be kept for
+at least 2 years.Note NoteA.5.1,NoteNotice should be taken of other national legal requirements pertaining to the retention of records.</p>
+          </sec>
+          <sec>
+            <title>A.5.2</title>
+            <p>The records may be kept electronically.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Identification of prepackages</title>
+          <p>The packer should establish documented procedures to clearly identify batches of prepackages and relate them to their production control records. Identification may include, but not be limited to, production location or plant, production time and date, and production line.</p>
+        </sec>
+        <sec>
+          <title>Identification of packing lines</title>
+          <sec>
+            <title>A.7.1</title>
+            <p>The production system documentation should contain at least the information regarding each
+packing line as required in <xref rid="cls-A.7.2" ref-type="other"/>A.7.2toA.7.7.Note NoteA.7.1,NoteA packing line could be made up of several filling machines, if they pack the same prepackages and are brought together for storage and distribution.</p>
+          </sec>
+          <sec>
+            <title>A.7.2</title>
+            <p>Packer&#x2019;s name for the filling line</p>
+          </sec>
+          <sec>
+            <title>A.7.3</title>
+            <p>Details of the prepackaged product</p>
+            <list list-type="order" id="_67ccbfb4-4c3f-20be-6ba0-2a55fd8de5bd">
+              <list-item>a)name (generic name);</list-item>
+              <list-item>b)main components of the product (e.g. fruit, yoghurt, nuts, etc.);</list-item>
+              <list-item>c)physical properties (e.g. liquid, deep frozen, etc.).</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>A.7.4</title>
+            <p>Packaging materials</p>
+            <list list-type="order" id="_8cde7304-bcff-c9de-92fd-7bd58b8af30b">
+              <list-item>a)type of packaging material (glass, can, cardboard, Polyethylene film, aluminium foil, etc.);</list-item>
+              <list-item>b)indication of the weight deviation of the packaging material in order to establish whether an average tare weight may be used.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>A.7.5</title>
+            <p>Quantities and target values for each product and pack size</p>
+            <list list-type="order" id="_c662bdaa-e148-d10b-54f7-5dd02792b973">
+              <list-item>a)nominal quantity;</list-item>
+              <list-item>b)target quantity;</list-item>
+              <list-item>c)action control limits;</list-item>
+              <list-item>d)warning control limits or other control rules, where used.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>A.7.6</title>
+            <p>Filling process</p>
+            <list list-type="order" id="_d9df5aaa-cf73-c09d-43c8-ec27d608140f">
+              <list-item>a)type of filling machine;</list-item>
+              <list-item>b)filling principle (e.g. weighing, volume, time, number, etc.);</list-item>
+              <list-item>c)rate of filling and number of prepackages per hour;</list-item>
+              <list-item>d)number of filler heads;</list-item>
+              <list-item>e)smallest adjustment that is possible to be made to the quantity.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>A.7.7</title>
+            <p>Indication of the process standard deviation per product and pack size</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Measuring instruments</title>
+          <sec>
+            <title>A.8.1</title>
+            <p>The measurements of the quantity of product in prepackages, the density of liquid products, the weight of packaging materials and other relevant measurements should be carried out by means of measuring instruments that are at least as accurate as the requirements prescribed in  OIML&#xA0;R&#xA0;87:2016 for instruments used to control prepackages by legal metrology officials (inspector&#x2019;s reference test). The minimum requirements in  <xref rid="cls-A.8.1" ref-type="other"/>A.8.1toA.8.4 are applicable.</p>
+          </sec>
+          <sec>
+            <title>A.8.2</title>
+            <p>Measurement results should be traceable to the SI.Note1 Note1A.8.2,Note1Traceability to the SI can be obtained via the national measurement standards of the country in which the packer is located or via the national measurement standards of another country.Note2 Note2A.8.2,Note2This requirement is considered to be fulfilled if the instrument has been subjected to national legal metrology control and duly verified with stated errors or it has been calibrated with stated errors and uncertainty of measurement by a calibration laboratory accredited by an accreditation body recognized by an international organization such as ILAC.</p>
+          </sec>
+          <sec>
+            <title>A.8.3</title>
+            <p>Calibration frequencies for instruments that have the possibility of becoming inaccurate due to
+wear and tear should be calibrated at intervals that will ensure their required accuracy at all times but
+calibration should take place at least every 12 months for measuring instruments excluding glass
+measures and simple fixed length measures (e.g. tape measures).Note1 Note1A.8.3,Note1The frequency of calibration can be determined by considering the maintenance of accuracy of a certain instrument over time. For glass measuring instruments usually one calibration is sufficient.Note2 Note2A.8.3,Note2Records of calibration should always state &#x2018;as found&#x2019; errors to demonstrate the instrument was maintained to the required accuracy.Note3 Note3A.8.3,Note3When an instrument is found to be outside the required accuracy the non-conforming products procedure must be implemented.</p>
+          </sec>
+          <sec>
+            <title>A.8.4</title>
+            <p>In-service validation should be carried out by the packer as deemed necessary to ensure
+continued accuracy between calibrations.Note1 Note1A.8.4,Note1A daily pre-use check on weighing instruments for level, zero and span (and for automatic instruments standard deviation &amp; rejection mechanism set points) is recommended to demonstrate the instrument is working correctly.Note2 Note2A.8.4,Note2A daily pre-use check with distilled water can demonstrate that density measuring instruments are operating correctly.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Sampling and measuring methods</title>
+          <sec>
+            <title>A.9.1</title>
+            <p>To ensure compliance of the prepackages with the stated requirements at all times, the
+packer should conduct sufficient sampling of the running production to obtain data that enable the
+packer to decide whether the production process is in control. Records of the sampling and the results
+of measurement should be kept for a sufficient period to be evaluated by the designated body.Note1 Note1A.9.1,Note1The metrological requirements for prepackages are given in 3OIML&#xA0;R&#xA0;87:2016,  Clause 3.Note2 Note2A.9.1,Note2The requirements for sampling plans and procedures for use by legal metrology officials to verify the quantity of product in prepackages given in  OIML&#xA0;R&#xA0;87:2016 are not recommended for quantity control purposes during the production process and packers should have a system implemented that is suited to their own production process.</p>
+          </sec>
+          <sec>
+            <title>A.9.2</title>
+            <p>When determining the sampling criteria, consideration should be taken of the standard
+deviation and filling rate of the filling process. A sample should be taken after each manual adjustment
+to correct a filling process.Note NoteA.9.2,NoteA low sampling rate will require the target quantity to be higher than the nominal quantity to ensure that the metrological requirements in  OIML&#xA0;R&#xA0;87:2016 are met.</p>
+          </sec>
+          <sec>
+            <title>A.9.3</title>
+            <p>Where products are measured together with the packaging material (i.e. complete prepackage), the weight of the packaging material should be determined on a regular basis to determine whether it is sufficiently consistent to allow an average tare weight to be used. The requirements given in  OIML&#xA0;R&#xA0;87:2016 for determining the average tare weight and acceptability for use should be used as a minimum. Where the use of the average tare weight is not suitable because of a large deviation in the weight of individual packaging materials, the mass of each individual packing material should be taken into consideration.</p>
+          </sec>
+          <sec>
+            <title>A.9.4</title>
+            <p>When the quantity of liquid is determined by gravimetric means, the density of every batch
+of liquid product should be determined by a method that is suitably accurate to ensure that the overall
+uncertainty of measurement of the test method is not exceeded.Note NoteA.9.4,NoteOIML&#xA0;G&#xA0;14:2011 gives detailed guidance on density measurement procedures.</p>
+          </sec>
+          <sec>
+            <title>A.9.5</title>
+            <p>When calculating the volume from the mass of a liquid using the determined density, the requirements for air buoyancy and density corrections in  OIML&#xA0;R&#xA0;87:2016 should be used.</p>
+          </sec>
+          <sec>
+            <title>A.9.6</title>
+            <p>Product quantity control charts that are manually completed, automated systems connected to weighing and measuring instruments and network connected automated systems are accepted. Software in automated systems must be validated (see  <xref rid="cls-A.9.7" ref-type="other"/>A.9.7).</p>
+          </sec>
+          <sec>
+            <title>A.9.7</title>
+            <p>Software and systems used in production control should be secured and validated to ensure
+that they fulfil their intended purpose, and that they are accessible to, and may be modified by,
+designated personnel only.Note NoteA.9.7,NoteSoftware may be validated by comparing the readouts with manually calculated results.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Non-conforming products</title>
+          <sec>
+            <title>A.10.1</title>
+            <p>Where a production run is found to have deficiencies that could result in non-compliance with the stated requirements, all prepackages produced since the previous acceptable sample should be segregated and prevented from being released for sale.</p>
+          </sec>
+          <sec>
+            <title>A.10.2</title>
+            <p>Where markings on prepackages are found not to conform to the stated requirements, such prepackages should be segregated and prevented from being released for sale.</p>
+          </sec>
+          <sec>
+            <title>A.10.3</title>
+            <p>When prepackages are found not to comply, notes relating to the cause and actions undertaken including how the rejected prepackages have been disposed of, should be kept with production control records in accordance with the packer&#x2019;s procedures (see  <xref rid="cls-A.5.2" ref-type="other"/>A.5.2).</p>
+          </sec>
+          <sec>
+            <title>A.10.4</title>
+            <p>It should left up to the packer to decide on the method of rectification of non-conforming prepackages to ensure compliance to the stated requirements in accordance with the packer&#x2019;s procedures.</p>
+          </sec>
+          <sec>
+            <title>A.10.5</title>
+            <p>Where quality control checks or the verification/calibration of measuring instruments indicate that they are outside the required accuracy levels, the impact thereof on the quantity of product in prepackages should be assessed and  <xref rid="cls-A.10.1" ref-type="other"/>A.10.1 implemented when necessary.</p>
+          </sec>
+        </sec>
+      </app>
+      <app>
+        <title>Practical examples of different certification schemes</title>
+        <p>With reference to <xref rid="tab-1" ref-type="other"/>Table1, examples of different certification schemes are as follows.</p>
+        <sec>
+          <title>Example of scheme A</title>
+          <p>A farmer has a small production of preserves which he sells prepacked in glass jars on the local market. The jars are labelled with the name of the product, the name of the farmer, the place where the farmer is located and the nominal quantity. The farmer&#x2019;s production process ensures that all jars are overfilled. The designated body assesses the farmer&#x2019;s production system and issues a certificate. The certificate mentions that if the farmer changes his production process, he has to inform the designated body. In this case it would not be necessary for the designated body to perform surveillance on the production system.</p>
+        </sec>
+        <sec>
+          <title>Example of scheme B</title>
+          <p>A packer in country A receives a &#x201C;one off&#x201D; order for a batch of prepackages from a customer in country B. The authorities in country B will accept the shipment on the basis of a certificate from a designated body in country A that attests that the packer&#x2019;s production system is able to produce complying prepackages and evidence that the batch has been subjected to sample tests and complies with stated requirements. The packer sends the certificate for his production system, together with the attestation by the designated body that the batch (identified by a batch number or otherwise) has been sample tested and found to comply to the authorities in country B.</p>
+        </sec>
+        <sec>
+          <title>Example of scheme C</title>
+          <p>The packer&#x2019;s production system has been certified by a designated body. This allows him to produce prepackages as specified in the certificate and to place them on the market. Depending on national legislation, these prepackages may be marked with a mark of conformity. The packer is subjected to periodic surveillance of his production system by the designated body. The designated body also performs sample tests on prepackages produced by the packer at the point of production. Surveillance in the market place may be performed by a market surveillance authority, but is not part of the certification scheme.</p>
+        </sec>
+        <sec>
+          <title>Example of scheme D</title>
+          <p>The designated body is the national regulator and market surveillance authority, responsible for legal metrology, including prepackages. National legislation provides for surveillance in the market place and the mandatory use of a mark of conformity on prepackages. The designated body assesses the packer&#x2019;s production system and issues a certificate. This gives the packer the right to apply the mark of conformity to the prepackages he produces, as specified in the certificate. The packer is subjected to periodic surveillance by the designated body of his production system. The designated body carries out checks in the market place.</p>
+        </sec>
+        <sec>
+          <title>Example 1 of scheme E</title>
+          <p>The national regulator for legal metrology (including prepackages) is the designating authority. The regulator has designated one or more private certification body(ies) to perform the assessment of the packer&#x2019;s production system, to issue certificates, to perform surveillance of the packer&#x2019;s production system and to check the prepackages produced at the point of production. Surveillance in the market place is part of the scheme and is performed by the regulator.</p>
+        </sec>
+        <sec>
+          <title>Example 2 of scheme E</title>
+          <p>An international group of private certification bodies offers certification of packers&#x2019; production
+systems on the basis of the requirements of OIML&#xA0;R&#xA0;79:2015 and OIML&#xA0;R&#xA0;87:2016 (product requirements)
+as well as ISO&#xA0;9001:2008<xref rid="fn_4" ref-type="fn">1</xref>, extended with specific requirements concerning the quantity control as part
+of the production system, as specified in the description of the scheme published by the certification
+bodies. The group of certification bodies is identified as a legal entity and acts as the scheme owner.
+The certification bodies are accredited for their scheme on the basis of ISO/IEC&#xA0;17065:2012.</p>
+          <p>The packer uses the certificate and (if applicable) the mark of conformity as licensed to him as evidence that the prepackages he produces comply with the stated requirements.</p>
+          <p>Such a scheme may be beneficial to packers who export to countries that have limited resources to control prepackages at the border, but will accept certification under the scheme.</p>
+        </sec>
+        <sec>
+          <title>Example of scheme F</title>
+          <p>Scheme E with an extension to licensing batches, for instance in the case where a packer produces &#x201C;one off&#x201D; batches of prepackages that are not covered by a valid certificate.</p>
+        </sec>
+      </app>
+      <app>
+        <title>Minimum requirements for designated bodies</title>
+        <sec>
+          <title>Legal responsibility</title>
+          <p>The designated body should be a legal entity, or a defined part of a legal entity, such that the legal
+entity can be held legally responsible for all its certification activities. Where a designated body is part
+of another legal entity it should clearly identify which legal entity has responsibility for each
+certification.Note1 Note1ClauseC.1,Note1A governmental designated body is deemed to be a legal entity on the basis of its governmental status.Note2 Note2ClauseC.1,Note2A designated body, along with other designated bodies, can be owned by (or be under another contractual relationship with) a larger legal entity wherein all bodies work under a common management structure and management system. In such a situation each certification can only be the responsibility of one designated body/legal entity.</p>
+        </sec>
+        <sec>
+          <title>Impartiality and non-discriminatory conditions</title>
+          <sec>
+            <title>Management of impartiality</title>
+            <sec>
+              <title>C.2.1.1</title>
+              <p>The designated body should have top management commitment to impartiality.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.2</title>
+              <p>The designated body should have, and make available on request, a statement that it understands the importance of impartiality in carrying out its certification activities, manages conflicts of interest, and ensures the objectivity of its certification activities.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.3</title>
+              <p>The designated body should identify risks to its impartiality on an ongoing basis. This should
+include those risks that arise from its activities, or from its relationships, or from the relationships of
+its personnel. However, such relationships do not necessarily present a designated body with a risk to
+impartiality.Note NoteC.2.1.3,NoteA relationship that threatens the impartiality of the designated body can be based on ownership, governance, management, personnel, shared resources, finances, contracts, marketing and payment of a sales commission or other inducement for the referral of new clients, etc.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.4</title>
+              <p>If a risk to impartiality is identified, the designated body should be able to demonstrate how it eliminates or minimizes such risk.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.5</title>
+              <p>When a relationship poses an unacceptable threat to impartiality (such as a wholly owned subsidiary of the designated body requesting product certification from its parent, or when the designated body belongs to a corporation or holding company, or manufacturer, etc. which requests product certification from its related designated body), then certification should not be provided.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.6</title>
+              <p>Designated bodies should document how they manage their certification business and any other activities so as to eliminate actual conflicts of interest and minimize any identified risk to impartiality. The documentation should cover all potential sources of conflicts of interest that are identified, whether they arise from within the designated body or from the activities of other persons, bodies or organizations.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.7</title>
+              <p>The designated body and any group within its organizational control or personnel, employed or contracted in an organization within its organizational control, should not offer or provide consultancy on the product that it certifies. This also applies to that part of government identified as the designated body.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.8</title>
+              <p>The designated body should not give prescriptive advice or consultancy as part of an
+evaluation.Note NoteC.2.1.8,NoteThis does not preclude normal exchange of information (including explaining its findings and/or clarifying the requirements) with packers and other interested parties.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.9</title>
+              <p>The designated body (and any group within its organizational control or personnel, employed
+or contracted, in an organization within its organizational control) should not offer or provide internal
+management system audits to the packer (or other legal entities involved in the certification process),
+in those schemes that require the packer (or other legal entities involved in the certification process),
+to perform internal management system audits. This also applies to that part of government identified
+as the designated body.Note NoteC.2.1.9,NoteSee <xref rid="note-C.2.1.3" ref-type="other"/>C.2.1.3,Note.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.10</title>
+              <p>The designated body should not certify a product on which a packer has received
+consultancy or internal evaluations, where the relationship between the consultancy organization and
+the designated body poses an unacceptable threat to the impartiality of the designated body.Note NoteC.2.1.10,NoteAllowing a minimum period of two years to elapse following the end of the product consultancy is one way of reducing the threat to impartiality to an acceptable level.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.11</title>
+              <p>The designated body&#x2019;s activities should not be marketed or offered as being linked with the activities of an organization that provides product consultancy. The designated body should take action to correct inappropriate claims by any consultancy organization stating or implying that certification would be simpler, easier, faster or less expensive if the designated body were used. A designated body should not state or imply that certification would be simpler, easier, faster or less expensive if a specified consultancy organization were used.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.12</title>
+              <p>To ensure that there are no conflicts of interest, personnel who have provided consultancy
+for, or been employed by a packer, including those acting in a managerial capacity, should not be used
+by the designated body to make a certification decision, nor to resolve a complaint or appeal for that
+packer within two years following the end of the consultancy or employment.Note NoteC.2.1.12,NoteThis requirement does not apply to an individual participating in a group/committee.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.13</title>
+              <p>The designated body should take action to respond to any threats to its impartiality arising from the actions of other persons, bodies or organizations.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.14</title>
+              <p>All designated body personnel, either internal or external, or committees, who could influence the certification activities, should act impartially and should not allow commercial, financial or other pressures to compromise impartiality.</p>
+            </sec>
+            <sec>
+              <title>C.2.1.15</title>
+              <p>The designated body should manage the risk to impartiality arising from over-familiarity between its personnel and the packer.</p>
+            </sec>
+          </sec>
+          <sec>
+            <title>Management of non-discriminatory conditions</title>
+            <sec>
+              <title>C.2.2.1</title>
+              <p>The policies and procedures under which the designated body operates and their administration should be non-discriminatory and should be administered in a non-discriminatory manner. Procedures should not be used to impede or inhibit access by applicants.</p>
+            </sec>
+            <sec>
+              <title>C.2.2.2</title>
+              <p>Designated bodies should not practice any form of discrimination such as hidden discrimination by speeding up or delaying the processing of applications.</p>
+            </sec>
+            <sec>
+              <title>C.2.2.3</title>
+              <p>The designated body should make its services accessible to all applicants whose activities fall within its declared field of operation. There should not be undue financial or other conditions.</p>
+            </sec>
+            <sec>
+              <title>C.2.2.4</title>
+              <p>Access to the certification process should not be conditional upon the size of the packer or
+membership of any association or group, nor should certification be conditional upon the number of
+certifications already issued.Note NoteC.2.2.4,NoteA designated body may deny certification to a packer when fundamental/demonstrated reasons exist, such as illegal activities, history of repeated non compliances with the certification/product requirements and similar issues.</p>
+            </sec>
+            <sec>
+              <title>C.2.2.5</title>
+              <p>The designated body should confine its requirements, evaluation (if the designated body is responsible for evaluation), review, decision, and surveillance (if any) to those matters specifically related to the scope of the certification.</p>
+            </sec>
+          </sec>
+        </sec>
+        <sec>
+          <title>Competency</title>
+          <p>Designated bodies should demonstrate their competency for the certification of a packer&#x2019;s production system in accordance with the provisions of this Guide and for the inspection of prepackages for compliance with stated requirements, either</p>
+          <list list-type="order" id="_239de0d5-e8df-57c5-775f-190373ed3098">
+            <list-item>a)by being accredited by a recognized accreditation body that has signed the IAF MLA or applicable ILAC MRA. Ongoing competency should be ensured by the applicable accreditation body according to its rules. The designated body should submit to the authority which designated the body all assessment reports received from the accreditation body, or</list-item>
+            <list-item>b)by having an entrenched management system and by being peer assessed by an assessment team, nominated by the designating authority, consisting of members independent of the designating authority. Ongoing competency should be ensured by submitting copies of an annual internal audit and management review done on its own management system and being subjected to peer assessments arranged by the designating authority at least every five years or more often at its discretion, should doubt exist concerning the competency.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Assessment of compliance</title>
+          <p>Designated bodies should ensure that packers that they have certified fulfil the requirements by carrying out inspections of packers as required and issuing assessment reports after each visit. The following specific requirements for assessing compliance should be applied:</p>
+          <sec>
+            <title>C.4.1</title>
+            <p>In the case of initial assessment by a designated body, packers should be subjected to at least the following:</p>
+            <list list-type="order" id="_f991225f-fe5c-2a1b-d823-538821e4310f">
+              <list-item>a)determination that the packer complies with the requirements of <xref rid="annex-a" ref-type="other"/>AnnexA and has the necessary qualified personnel, facilities, measuring and test equipment, and control procedures to provide capability for ensuring compliance of prepackages to the stated requirements;</list-item>
+              <list-item>b)determination of the suitability of the packer&#x2019;s production system; and</list-item>
+              <list-item>c)determination of the conformity of prepackages produced by the packer by means of reference testing.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>C.4.2</title>
+            <p>In order to maintain certification the packer should, depending on the applicable scheme, be subject to:</p>
+            <list list-type="order" id="_7d750cd0-9b45-f29a-5e3d-f402fccd1de6">
+              <list-item>a)an assessment of the continued suitability and effectiveness of the packer&#x2019;s production system at specified intervals not exceeding twelve months through inspection (including review of required process control records), testing of prepackages and, where applicable, witnessing the procedures required by the production system; and</list-item>
+              <list-item>b)unannounced inspections, surveillance, and testing if necessary; or</list-item>
+              <list-item>c)the implementation of more frequent or detailed inspections, surveillance, and testing when a need is indicated.</list-item>
+            </list>
+          </sec>
+        </sec>
+        <sec>
+          <title>Certification of packers</title>
+          <p>Designated bodies should issue a certificate, as detailed in <xref rid="annex-d" ref-type="other"/>AnnexD, to each prepacking plant that conforms to all the applicable requirements.</p>
+        </sec>
+        <sec>
+          <title>Suspension or withdrawal of a certificate</title>
+          <p>The certificate should be suspended or withdrawn in the following cases according to the rules of the designated body:</p>
+          <list list-type="order" id="_53e2ede4-a2b5-2ca1-42f1-1d8f939e5c97">
+            <list-item>a)non-resolution of non-compliance with the stated requirements;</list-item>
+            <list-item>b)two or more non-compliances with the same element of the scheme or stated requirements for prepackages; or</list-item>
+            <list-item>c)any non-compliance that the designated body considers necessary.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Information on packers and certificates</title>
+          <p>Designated bodies should maintain an up to date register of all the certificates that they have issued,
+including information about their validity. Such records should be publicly available on their website.Note NoteClauseC.7,NoteNational legislation may require a designated body to notify the national authority responsible for the control of prepackages about any change in the status of a packer&#x2019;s certificate.</p>
+        </sec>
+        <sec>
+          <title>Procedures for certification</title>
+          <p>Designated bodies should have documented procedures for certification as follows:</p>
+          <list list-type="order" id="_485c2161-935c-9508-8cb0-ea69783b4cfb">
+            <list-item>a)application to apply the quantity mark and period of validity of registration;</list-item>
+            <list-item>b)the means by which a packer may request permission to withdraw from participation in the scheme;</list-item>
+            <list-item>c)the procedure to withdraw certification if a packer fails to meet the requirements of the scheme;</list-item>
+            <list-item>d)the establishment of a fair and equitable appeals mechanism by which a packer may request resolution of any disputes that arise in an assessment of the implementation and maintenance of its production system and applying a mark of conformity if applicable; and</list-item>
+            <list-item>e)rules for investigating complaints received from third parties concerning the correctness of prepackages packed by a certified packer.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <title>Notification of change in designation status</title>
+          <p>A designated body should without delay inform all packers that it has certified the suspension or withdrawal of its designation, and provide them with adequate instructions to seek certification with another designated body or to cease forthwith the application of the mark of conformity to prepackages if applicable.</p>
+        </sec>
+        <sec>
+          <title>Collaboration with other designated bodies</title>
+          <p>Designated bodies should collaborate, as applicable, in the following efforts:</p>
+          <list list-type="order" id="_7d318a90-fe8c-d38d-baf2-73343fa6ab89">
+            <list-item>a)to monitor the capability and competence of their packers; and</list-item>
+            <list-item>b)to achieve and maintain competence for determining conformity to requirements.</list-item>
+          </list>
+        </sec>
+      </app>
+      <app>
+        <title>Information to be contained in the certificate issued by designated bodies</title>
+        <sec>
+          <title>General</title>
+          <p>Certificates issued to packers by designated bodies should contain at least the information mentioned in  <xref rid="cls-D.2" ref-type="other"/>Clauses D.2andD.3. Any changes to the scope of certification should be indicated by means of a revised certificate.</p>
+        </sec>
+        <sec>
+          <title>Certificates where the packer is identified on the certificate</title>
+          <sec>
+            <title>D.2.1</title>
+            <p>Full registered name of packer.</p>
+          </sec>
+          <sec>
+            <title>D.2.2</title>
+            <p>Full trading name(s) of packer, if applicable.</p>
+          </sec>
+          <sec>
+            <title>D.2.3</title>
+            <p>In the case of contract packers, the names and addresses of companies for which goods are
+packed and which will appear on prepackages as taking responsibility for the prepackages (see also
+relevant provisions in OIML&#xA0;R&#xA0;79:2015).Note NoteD.2.3,NoteThe names and addresses of companies for which goods are packed may, for confidentiality purposes, not be included on the certificate but must be made available at all times on request of the government authority or designated body.</p>
+          </sec>
+          <sec>
+            <title>D.2.4</title>
+            <p>Full postal address of the packer.</p>
+          </sec>
+          <sec>
+            <title>D.2.5</title>
+            <p>Full physical address of the packing plant.Note NoteD.2.5,NoteIn the case of more than one packing plant owned by the same packer, each packing plant should be registered separately on an individual certificate.</p>
+          </sec>
+          <sec>
+            <title>D.2.6</title>
+            <p>Date of certification.</p>
+          </sec>
+          <sec>
+            <title>D.2.7</title>
+            <p>If applicable, specification of the mark of conformity to be applied to prepackages (see <xref rid="annex-e" ref-type="other"/>AnnexE).</p>
+          </sec>
+          <sec>
+            <title>D.2.8</title>
+            <p>Scope of certification.</p>
+            <sec>
+              <title>D.2.8.1</title>
+              <p>The scope should include a brief description of the products in such a way that it allows a
+prepackage to be identified as covered by the certificate. This should include a reference to which
+packaging system is used, i.e. average system in the case of OIML&#xA0;R&#xA0;87:2016.Note NoteD.2.8.1,NoteThe certificate may make provision for other packing systems, when required by an economy, such as a minimum system, a catch-weight system, a maximum system or any combination of systems (see  <xref rid="cls-4.3.b" ref-type="other"/>3.3b)).</p>
+            </sec>
+            <sec>
+              <title>D.2.8.2</title>
+              <p>To give a clear description of the product, the following guidelines may be used in the description of the products:</p>
+              <list list-type="order" id="_ae9949ac-1e20-5c77-cd48-e712306ecd35">
+                <list-item>a)brand name or generic name describing the product in such a way that the products for which the packer is certified are covered. This description should be sufficiently complete to distinguish products that are included from those that are not included in the scope of certification;</list-item>
+                <list-item>b)product description if necessary to distinguish from other products, e.g. liquid, powder, granules, paste, gel, semi-solid, etc.;</list-item>
+                <list-item>c)unit of measurement in which marked;</list-item>
+                <list-item>d)measuring range (smallest to largest quantity);</list-item>
+                <list-item>e)type of packaging material if only certain packing materials are included in the scope of certification, e.g. sachets, tins, packets, glass/ plastic bottles, flexible bags, boxes, etc.; and</list-item>
+                <list-item>f)other limitations if the scope of certification is restricted, e.g. only high viscosity liquids, un-carbonated soft drinks.</list-item>
+              </list>
+            </sec>
+            <sec>
+              <title>D.2.8.3</title>
+              <p>If all products packed by the packer are covered by the certificate, then it is only necessary to include a brief description, e.g.:</p>
+              <list list-type="order" id="_03739e3f-8b1b-ab15-81ad-060f883faeed">
+                <list-item>a)powdered milk products between 250&#x2062;g250 "unitsml(g)"250&#x2062;g250 "unitsml(g)" and 10&#x2062;kg10 "unitsml(kg)"10&#x2062;kg10 "unitsml(kg)";</list-item>
+                <list-item>b)foodstuffs by mass from 5&#x2062;g5 "unitsml(g)"5&#x2062;g5 "unitsml(g)" to 1&#x2062;kg1 "unitsml(kg)"1&#x2062;kg1 "unitsml(kg)";</list-item>
+                <list-item>c)cosmetics by mass and volume ranging from 5&#x2062;g5 "unitsml(g)"5&#x2062;g5 "unitsml(g)" to 500&#x2062;g500 "unitsml(g)"500&#x2062;g500 "unitsml(g)" and 9&#x2062;ml9 "unitsml(ml)"9&#x2062;ml9 "unitsml(ml)" to 350&#x2062;ml350 "unitsml(ml)"350&#x2062;ml350 "unitsml(ml)";</list-item>
+                <list-item>d)aerosols by mass and volume up to 250&#x2062;g250 "unitsml(g)"250&#x2062;g250 "unitsml(g)" or 250&#x2062;ml250 "unitsml(ml)"250&#x2062;ml250 "unitsml(ml)";</list-item>
+                <list-item>e)toilet paper by length and pieces (count by number); or</list-item>
+                <list-item>f)carbonated and un-carbonated soft drinks and beer in nominal quantities between
+500&#x2062;ml500 "unitsml(ml)"500&#x2062;ml500 "unitsml(ml)" and 1.5&#x2062;L1.5 "unitsml(L)"1,5&#x2062;L1.5 "unitsml(L)".</list-item>
+              </list>
+            </sec>
+            <sec>
+              <title>D.2.8.4</title>
+              <p>If only some of the products packed by the packer are covered by the certificate, then it would be necessary to have a more specific description, e.g.:</p>
+              <list list-type="order" id="_a348b697-2e71-2d48-ddca-4cd74c6e9afc">
+                <list-item>a)powdered milk products in flexible bags between 250&#x2062;g250 "unitsml(g)"250&#x2062;g250 "unitsml(g)" and 1&#x2062;kg1 "unitsml(kg)"1&#x2062;kg1 "unitsml(kg)" bearing XYZ brand name;</list-item>
+                <list-item>b)fruit preserves in glass bottles between 250&#x2062;g250 "unitsml(g)"250&#x2062;g250 "unitsml(g)" and 10&#x2062;kg10 "unitsml(kg)"10&#x2062;kg10 "unitsml(kg)" when packed for XYZ company; or</list-item>
+                <list-item>c)aerosol perfumes in glass bottles between 15&#x2062;ml15 "unitsml(ml)"15&#x2062;ml15 "unitsml(ml)" and 30&#x2062;ml30 "unitsml(ml)"30&#x2062;ml30 "unitsml(ml)".</list-item>
+              </list>
+            </sec>
+          </sec>
+        </sec>
+        <sec>
+          <title>Certificates where the packer is not identified on the certificate</title>
+          <sec>
+            <title>D.3.1</title>
+            <p>Where a packer does not want to be identified on the certificate, such as a contract packer who packs on behalf of a third party whose name appears on the prepackages, the certificate may use a code to identify the packer, provided that all of the information required by  <xref rid="cls-D.2.1" ref-type="other"/>D.2.1toD.2.5 should be kept by the designated body and made available, on request, to a national body responsible for the regulation of prepackages or the responsible designating authority. The following minimum information will then be required on the certificate.</p>
+          </sec>
+          <sec>
+            <title>D.3.2</title>
+            <p>Unique code to identify the packer.</p>
+          </sec>
+          <sec>
+            <title>D.3.3</title>
+            <p>Date of certification.</p>
+          </sec>
+          <sec>
+            <title>D.3.4</title>
+            <p>If applicable, specification of the mark as in <xref rid="cls-D.2.7" ref-type="other"/>D.2.7.</p>
+          </sec>
+          <sec>
+            <title>D.3.5</title>
+            <p>Scope of certification as in <xref rid="cls-D.2.8" ref-type="other"/>D.2.8.</p>
+          </sec>
+        </sec>
+      </app>
+      <app>
+        <title>Design and application of marks of conformity</title>
+        <sec>
+          <title>Application of the mark of conformity</title>
+          <sec>
+            <title>E.1.1</title>
+            <p>Once a packer is certified by a designated body it may apply the applicable mark of conformity, together with the unique identification number or code allocated to the designated body.</p>
+          </sec>
+          <sec>
+            <title>E.1.2</title>
+            <p>Should any of the following occur, a packer should immediately cease to apply the mark to prepackages:</p>
+            <list list-type="order" id="_57c1aa0a-8f8b-c0e1-de09-b95f7b089f00">
+              <list-item>a)the certificate of the packer is withdrawn by the designated body; or</list-item>
+              <list-item>b)the designation of the certification body is suspended or withdrawn; or</list-item>
+              <list-item>c)the packer no longer produces prepackages or a specific range of prepackages according to the stated requirements.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>E.1.3</title>
+            <p>Identification of packer</p>
+            <p>A prepackage that carries the mark of conformity should carry an identification of the packer, either:</p>
+            <list list-type="order" id="_0006f05a-c6b4-c2d8-5c48-3e2669576594">
+              <list-item>a)the packer&#x2019;s full name and physical address; or</list-item>
+              <list-item>b)an anonymous code assigned by the certification body (see also <xref rid="cls-D.3" ref-type="other"/>ClauseD.3 for codes assigned on certificates).</list-item>
+            </list>
+          </sec>
+        </sec>
+        <sec>
+          <title>Design of the mark of conformity (example)</title>
+          <sec>
+            <title>E.2.1</title>
+            <p>The mark of conformity may consist of:</p>
+            <list list-type="order" id="_7e00949f-5958-04d8-524e-29312b90a7fe">
+              <list-item>a)either a logo of the designated body or a logo defined by the designating body;</list-item>
+              <list-item>b)a unique identification of the designated body; and</list-item>
+              <list-item>c)where the name and address of the packer does not appear on the prepackage, the unique identification code (see  <xref rid="cls-E.1" ref-type="other"/>ClauseE.1) should also appear within the mark.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <title>E.2.2</title>
+            <p>The format of the marks may be as defined in drawings <xref rid="fig-E.2.2.1" ref-type="other"/>Figures E.1andE.2.</p>
+            <fig id="fig_83">
+              <caption>Mark where packer&#x2019;s name and address appear on the prepackage</caption>
+              <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/png;base64,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"/>
+            </fig>
+            <fig id="fig_84">
+              <caption>Mark where a code is used to identify the packer</caption>
+              <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/png;base64,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"/>
+            </fig>
+          </sec>
+          <sec>
+            <title>E.2.3</title>
+            <p>The minimum height of figures and characters in the mark should be 3&#x2062;mm3 "unitsml(mm)"3&#x2062;mm3 "unitsml(mm)".</p>
+          </sec>
+        </sec>
+      </app>
+      <app>
+        <title>Resolution of complaints and disputes</title>
+        <sec>
+          <title>F.1</title>
+          <p>Complaints and disputes concerning the operation of the appropriate certification system should be lodged with the appropriate designated body.</p>
+        </sec>
+        <sec>
+          <title>F.2</title>
+          <p>The designating authority concerned should, upon request, assist in resolving a dispute in  <xref rid="cls-F.1" ref-type="other"/>ClauseF.1.</p>
+        </sec>
+        <sec>
+          <title>F.3</title>
+          <p>Complaints concerning prepackages should be forwarded with documented and substantiated
+evidence to the responsible designated body for resolution in terms of its own procedures. Should
+complaints not be satisfactorily resolved, the matter may be brought to the attention of the relevant
+designating authority.Note NoteClauseF.3,NoteThis does not imply that the designating authority should be involved in legal proceedings.</p>
+        </sec>
+        <sec>
+          <title>F.4</title>
+          <p>Complaints concerning designated bodies should be forwarded to the designating authority concerned.</p>
+        </sec>
+      </app>
+    </app-group>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;9001:2008</doc-identifier>
+            </std-ident>
+            <title>Quality management systems</title>
+            <pub-date>
+              <year>2008-11-13</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO&#xA0;15189:2012</doc-identifier>
+            </std-ident>
+            <title>Medical laboratories</title>
+            <pub-date>
+              <year>2012-11-05</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;Guide&#xA0;28:2004</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2004-09-11</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17000:2004</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2004-11-03</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17020:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2012-02-27</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2005</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories</title>
+            <pub-date>
+              <year>2005-05-12</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17030:2003</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2003-10-09</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17065:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2012-09-10</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17067:2013</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2013-07-31</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;G&#xA0;14:2011</doc-identifier>
+            </std-ident>
+            <title>Density measurement</title>
+            <pub-date>
+              <year>2011</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;R&#xA0;79:2015</doc-identifier>
+            </std-ident>
+            <title>Labelling requirements for prepackages</title>
+            <pub-date>
+              <year>2015</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;R&#xA0;87:2016</doc-identifier>
+            </std-ident>
+            <title>Quantity of product in prepackages</title>
+            <pub-date>
+              <year>2016</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

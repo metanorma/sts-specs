@@ -1,0 +1,48 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/target.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-target]
+=== `@target` Target (TBX)
+
+The `@target` attribute acts as a pointer to another element in the same document, typically within the TBX-namespaced elements. For the link to be established, the value of the `@target` attribute on a source element must be the same as the value of a unique identifier (<<attribute-id,`@id`>> attribute) on the element to which the target points.
+
+#### Usage/Remarks
+The content of elements that take this attribute is typically the display value of the target element, such as the target term. The elements that take this attribute cannot be empty; display content is mandatory.
+When this attribute is used on elements such as <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> or <<element-tbx-crossReference,`<tbx:crossReference>`>>, the `@target` attribute often points to another term in the glossary section.
+
+#### OPTIONAL on elements:  <<element-tbx-crossReference,`<tbx:crossReference>`>>, 
+                  <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, 
+                  <<element-tbx-see,`<tbx:see>`>>
+
+|===
+| Value| Meaning
+
+| An internal identifier (IDREF) for use as a pointer.| This pointer must be the same as an existing identifier (<<attribute-id,`@id`>>) within the standards document.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Using `IDREF`-type attribute to point to the `ID` (`@id`) of another element in the document
+[source,xml]
+....
+...
+    <tbx:termEntry id="iso_9000_2005_en_term_3.9.9">
+      <tbx:langSet xml:lang="en">
+        <tbx:definition>person with the demonstrated personal attributes and <tbx:entailedTerm
+          target="iso_9000_2005_en_term_3.1.6">competence (3.1.6 and 3.9.14)</tbx:entailedTerm> to
+          conduct an <tbx:entailedTerm>audit (3.9.1)</tbx:entailedTerm></tbx:definition>
+        <tbx:note>The relevant personal attributes for an auditor are described in ISO
+          19011.</tbx:note>
+        <tbx:tig>
+          <tbx:term>auditor</tbx:term>
+          <tbx:partOfSpeech value="noun"/>
+        </tbx:tig>
+      </tbx:langSet>
+    </tbx:termEntry>
+    ...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

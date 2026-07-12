@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/deceased.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-deceased]
+=== `@deceased` Deceased
+
+Indicates whether or not the contributor described in the element was deceased when the document or document component was published.
+
+#### OPTIONAL on element:  <<element-contrib,`<contrib>`>>
+
+|===
+| Value| Meaning
+
+| no| The contributor was living when the document was published.
+| yes| The contributor had died by the time the document was published.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

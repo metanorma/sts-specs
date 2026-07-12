@@ -1,0 +1,110 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/std-ident.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-std-ident]
+=== `<std-ident>` Standard Identification Block
+
+The <<element-std-ident,`<std-ident>`>> is a container element for the basic identification information concerning this standard, such as its originator, designation, part number (if applicable), and year of publication. This element contains sufficient information to build the standard designation for this document (<<element-std-ref,`<std-ref>`>>) from its constituent parts.
+
+#### Usage/Remarks
+The child elements of <<element-std-ident,`<std-ident>`>> identify the various pieces of the reference designation for this standard (for ISO-related standards, additional information may need to be obtained from <<element-doc-ref,`<doc-ref>`>> children). A precombined form of the reference designation is given in the <<element-std-ref,`<std-ref>`>> element, which is a sibling (not a child) of <<element-std-ident,`<std-ident>`>>.
+When identifiers are simple, the reference designation can be constructed by putting together the pieces of <<element-std-ident,`<std-ident>`>> in a prescribed way, but it is usually simpler to create a pre-combined form of the reference designation by hand than to try to make software understand all the rules for constructing such an identifier.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>, <<element-std-xref,`<std-xref>`>>
+#### Description
+
+The following, in order: <<element-originator,`<originator>`>> <<element-originator,Originator>>, zero or one <<element-doc-type,`<doc-type>`>> <<element-doc-type,Document Type>>, zero or one <<element-doc-number,`<doc-number>`>> <<element-doc-number,Document Number>>, zero or one <<element-part-number,`<part-number>`>> <<element-part-number,Part Number of a Multipart Document>>, zero or one <<element-sub-part-number,`<sub-part-number>`>> <<element-sub-part-number,Document Sub-part Number>>, zero or more <<element-edition,`<edition>`>> <<element-edition,Edition Number>>, zero or one <<element-version,`<version>`>> <<element-version,Version Indicator>>, zero or one <<element-std-id-group,`<std-id-group>`>> <<element-std-id-group,Standard ID Group>>, zero or more <<element-isbn,`<isbn>`>> <<element-isbn,ISBN>>, zero or more <<element-issn,`<issn>`>> <<element-issn,ISSN (in a citation)>>, zero or more <<element-issn-l,`<issn-l>`>> <<element-issn-l,ISSN-L (Linking ISSN) (in a citation)>>, zero or more <<element-suppl-type,`<suppl-type>`>> <<element-suppl-type,Supplement Type>>, zero or one <<element-suppl-number,`<suppl-number>`>> <<element-suppl-number,Supplement Number>>, zero or one <<element-suppl-version,`<suppl-version>`>> <<element-suppl-version,Supplement Version>>, zero or one <<element-year,`<year>`>> <<element-year,Year>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  std-ident    %std-ident-model;                            >
+....
+#### Expanded Content Model
+
+(originator?, doc-type?, doc-number?, part-number?, sub-part-number*, edition?, version?, std-id-group*, isbn*, issn*, issn-l*, suppl-type?, suppl-number?, suppl-version?, year?)
+
+#### Tagged Samples
+
+#### `<std-ident>` for single originator standard
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <part-number></part-number>
+  <edition>3</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language>
+ ...
+</iso-meta>
+...
+....
+#### `<std-ident>` for co-produced standard
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap>
+  <main-title-wrap>
+   <main>Safety Code for Elevators and Escalators</main>
+   <subtitle>Includes Requirements for Elevators, Escalators, Dumbwaiters, Moving 
+    Walks, Material Lifts, and Dumbwaiters With Automatic Transfer Devices</subtitle>
+  </main-title-wrap>
+  <full>Safety Code for Elevators and Escalators: Includes Requirements for 
+   Elevators,Escalators, Dumbwaiters, Moving Walks, Material Lifts, and 
+   Dumbwaiters With Automatic Transfer Devices</full>
+ </title-wrap>
+ <std-ident>
+  <std-id-group std-relationship-type="std-as-published">
+   <std-id std-id-type="dated">ASME A17.1-2013/CSA B44-13</std-id>
+   <std-id std-id-type="dated" std-id-link-type="doi">10.1115/ASME A17.1-2013/CSA B44-13</std-id>
+  </std-id-group>   
+  <std-id-group std-relationship-type="std-as-published">
+   <std-id std-id-type="undated">ASME A17.1/CSA B44</std-id>
+   <std-id std-id-type="undated" std-id-link-type="doi">10.1115/ASME A17.1/CSA B44</std-id>
+  </std-id-group>  
+  <std-id-group originator="ASME" std-relationship-type="std-series">
+   <std-id std-id-type="title">Elevators and Escalators</std-id>
+   <std-id std-id-type="short">A17</std-id>
+   <std-id std-id-type="short" std-id-link-type="doi">10.1115/ASME.A17</std-id>
+  </std-id-group>  
+  <std-id-group originator="CSA" std-relationship-type="std-alt-as-published">
+   <std-id std-id-type="dated">CSA B44-13</std-id>
+   <std-id std-id-type="dated" std-id-link-type="doi">10.XYZ/CSA.B44-13</std-id>
+  </std-id-group>
+  <isbn originator="ASME" publication-format="print">978-0-7918-6857-7</isbn>
+  <isbn originator="CSA" publication-format="print">978-1-77139-312-6</isbn>   
+ </std-ident>   
+ ...
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Standard Identification Block
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

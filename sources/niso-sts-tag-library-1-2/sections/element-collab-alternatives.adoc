@@ -1,0 +1,37 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/collab-alternatives.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-collab-alternatives]
+=== `<collab-alternatives>` Collaboration Alternatives
+
+Wrapper element for more than one version of a collaboration, for example, the name of a laboratory in more than one language such as the lab name in Japanese kana characters and a transliterated form of the lab name in Latin alphabet.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-contrib,`<contrib>`>>, <<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-person-group,`<person-group>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+<<element-collab,`<collab>`>> <<element-collab,Collaborative (Group) Author>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  collab-alternatives
+                        %collab-alternatives-model;                  >
+....
+#### Expanded Content Model
+
+(collab)+
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,186 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/sec.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-sec]
+=== `<sec>` Section
+
+Headed group of material; the basic structural unit of the body of a standards document.
+
+#### Usage/Remarks
+##### Recursive Sections
+
+Standards documents are almost invariably divided into sections, each with a title that describes the content of the section, such as “Introduction”, “Scope”, “Normative References”, or “Terms and definitions”. In the NISO STS Tag Sets, sections are recursive, that is, various levels of sections are indicated by containment, not by different names for the subsections. A <<element-sec,`<sec>`>> element may contain lower level sections that are also tagged using the <<element-sec,`<sec>`>> element, not tagged explicitly as <sec2>, <sec3>, or <subsec1>, etc.
+##### Section Types
+
+Best Practice is to use the <<attribute-sec-type,`@sec-type`>> attribute to provide semantic classing of many sections. See the <<attribute-sec-type,`@sec-type`>> page for suggested values.
+#### Placement of Sections
+
+NISO STS standards documents are written in sections, not only within the narrative <<element-body,`<body>`>> of the standards document, but also: At the end of the front matter (<<element-front,`<front>`>>), following the standard’s metadata, to hold material that is logically part of the front matter, not part of the body of a standards document; and Within the back matter (<<element-back,`<back>`>>) to tag material that has not been explicitly named as one of the other back matter components, that is, it is not named as an annex (<<element-app,`<app>`>>), an acknowledgment (<<element-ack,`<ack>`>>), a bibliography (<<element-ref-list,`<ref-list>`>>), etc.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+* <<attribute-sec-type,`@sec-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-abstract,`<abstract>`>>, <<element-ack,`<ack>`>>, <<element-adoption-front,`<adoption-front>`>>, <<element-app,`<app>`>>, <<element-back,`<back>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-front,`<front>`>>, <<element-notes,`<notes>`>>, <<element-sec,`<sec>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-sec-meta,`<sec-meta>`>> <<element-sec-meta,Section Metadata>>, zero or one Any one of: The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>> <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-title,`<title>`>> <<element-title,Title>> Any combination of: Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-p,`<p>`>> <<element-p,Paragraph>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Optionally, the following sequence (in order): One or more of any of: <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-term-sec,`<term-sec>`>> <<element-term-sec,Terms and Definitions Container/Section>> Any combination of: Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  sec          %sec-model;                                  >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, sec-meta?, ((label, title?) | title), (address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | editing-instruction | def-list | list | tex-math | mml:math | p | related-article | related-object | disp-quote | speech | statement | verse-group | fn-group | glossary | ref-list)*, ((sec | term-sec)+, (fn-group | glossary | ref-list | non-normative-note | normative-note | non-normative-example | normative-example | notes-group)*)?)
+
+#### Tagged Samples
+
+#### Simple section
+
+[source,xml]
+....
+...
+<sec sec-type="foreword">
+ <title>Foreword</title>
+ <p>The text of <std type="dated" std-id="iso:std:iso:15423"
+  ><std-ref>ISO/IEC 15423:2004</std-ref></std> has been 
+  prepared by Technical Committee ISO/IEC/JTC 1 "Information 
+  technology" of the International Organization for 
+  Standardization (ISO) and is ...</p>
+ ...
+</sec>
+...
+....
+#### Recursive section
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <sec id="s4">
+  <label>4</label>
+  <title>Accessibility in the standards development 
+   process</title>
+  <sec id="s4_1">
+   <label>4.1</label>
+   <title>General</title>
+   <p>This clause outlines how accessibility can be 
+    addressed in the standards development process:
+    <list list-type="bullet">
+     <list-item><p><xref ref-type="sec" rid="s4_2">4.2</xref> 
+      contains general considerations for standards bodies 
+      related to ...</p></list-item>
+     <list-item><p><xref ref-type="sec" rid="s4_3">4.3</xref> 
+      provides guidance for each of the respective stages of 
+      the standards development process to ensure ...</p></list-item>
+    </list>
+   </p>
+  </sec>
+  <sec id="s4_2">
+   <label>4.2</label>
+   <title>Considerations by standards bodies</title>
+   <p>Standards bodies should develop a process for ...</p>
+  </sec>
+  ...
+ </sec>
+ ...
+</body>
+...
+....
+#### Section with multi-level subsections (four levels)
+
+[source,xml]
+....
+...
+<sec id="s6">
+ <label>6</label>
+ <title>Test requirements</title>
+ ...
+ <sec id="s6.4">
+  <label>6.4</label>
+  <title>Test Charts</title>
+  <p>Test charts should be produced on dimensionally 
+   stable materials with image characteristics which 
+   are consistent within ...</p>
+  ...
+  <sec id="s6.4.1">
+   <label>6.4.1</label>
+   <title>Test Charts for linear symbologies</title>
+   <p>A set of bar code test charts is defined, which 
+    shall be used for the tests indicated ...</p>
+   ...
+  </sec>
+  <sec id="s6.4.2">
+   <label>6.4.2</label>
+   <title>Test charts for multi-row and composite symbols</title>
+   <sec id="s6.4.2.1">
+    <label>6.4.2.1</label>
+    <title>PDF417</title>
+    <p>A set of PDF417 test charts defined in 
+     <xref ref-type="table" rid="t4">Table 4</xref> 
+     shall be used.</p>
+    ...
+   </sec>
+   ...
+  </sec>
+  ...
+ </sec>
+ ...
+</sec>
+...
+....
+#### “Normative references” section
+
+[source,xml]
+....
+...
+<body>
+ ...
+ <sec sec-type="norm-refs" id="s2">
+  <label>2</label>
+  <title>Normative references</title>
+  <p>The following referenced documents are indispensable 
+   for the application of ...</p>
+  <ref-list>
+   <ref>
+    <std type="undated" std-id="iso:std:iso:9001"
+     ><std-ref>ISO 9001</std-ref>, 
+     <title>Quality management systems &mdash; 
+      Requirements</title></std>
+   </ref>
+   <ref>
+    <std type="undated" std-id="iso-iec:std:iso-iec:15415"
+     ><std-ref>ISO/IEC 15415</std-ref>, 
+     <title>Information technology &mdash; Automatic identification 
+      and data capture techniques &mdash; Bar code print quality 
+      test specification &mdash; Two-dimensional symbols</title></std>
+   </ref>
+   ...
+  </ref-list>
+ </sec>
+ ...
+</body>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Section
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

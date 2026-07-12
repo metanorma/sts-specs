@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/release-version-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-release-version-id]
+=== `<release-version-id>` ISO-Specific Release Version ID
+
+Typically used for CEN and CENELEC, this element contains the technical key (unique identifier) in the CEN PROJEXDATA (a service that allows CEN NSBs to download essential project data in XML format) that identifies a standard release version. The CEN standard release version is the version of a standard which corresponds to a major stage of progress of the standard development process (milestone).
+
+#### Usage/Remarks
+The <<element-release-version-id,`<release-version-id>`>> can be useful for linking to other metadata sources (i.e. PROJEXDATA).
+#### ISO Note
+
+This element is currently specific to ISO-related Regional standards processing and is provided for reasons of backwards compatibility. It has always been allowed inside <<element-reg-meta,`<reg-meta>`>>, and it is now allowed inside other elements to provide ISO Regional users with a migration path to using <<element-std-meta,`<std-meta>`>> without metadata loss.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-reg-meta,`<reg-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  release-version-id    %release-version-id-model;          >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

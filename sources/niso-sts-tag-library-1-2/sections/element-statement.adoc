@@ -1,0 +1,44 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/statement.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-statement]
+=== `<statement>` Statement, Formal
+
+A Theorem, Lemma, Proof, Postulate, Hypothesis, Proposition, Corollary, or other formal statement, identified as such with a label, usually made typographically distinct from the surrounding text.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-statement,`<statement>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one <<element-kwd-group,`<kwd-group>`>> <<element-kwd-group,Keyword Group>>, zero or more <<element-subj-group,`<subj-group>`>> <<element-subj-group,Subject Group>>, zero or more One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> Any combination of: Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  statement    %statement-model;                            >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, (kwd-group)*, (subj-group)*, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group | statement)+, (attrib | permissions)*)
+
+#### Related Resources
+
+* See: Hierarchy diagram - Statement, Formal
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

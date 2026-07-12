@@ -1,0 +1,125 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/array.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-array]
+=== `<array>` Array (Simple Tabular Array)
+
+Used to define a _brief_ tabular arrangement of text in the narrative flow of the document. An array should not be a full table, and does not typically contain a title, caption, or table headings (column heads). Tabular material which does use a label, title, caption, or table headings should be tagged using a table wrapper (<<element-table-wrap,`<table-wrap>`>>) element.
+
+#### Usage/Remarks
+##### Best Practice Content of an Array
+
+A NISO STS array (<<element-array,`<array>`>>), unlike the JATS model from which it was derived, may contain either an XHTML Table Body element (<<element-tbody,`<tbody>`>>) or an XHTML Table element (<<element-table,`<table>`>>) to express the rows and columns of the table. NISO STS Best Practice is to prefer <<element-tbody,`<tbody>`>> over <<element-table,`<table>`>> for compatibility with JATS articles, so it is easier to combine standards and articles in a single XML database.
+##### Best Practice OASIS Tables
+
+In the NISO STS Extended model, the OASIS XML Exchange (CALS) table model may be used instead of or in addition to the default NISO JATS XHTML-based table model. Best Practice for NISO STS OASIS table users is to use the <<element-oasis-tbody,`<oasis:tbody>`>> element, within their arrays instead of using a full OASIS table element (<<element-oasis-table,`<oasis:table>`>>). A separate Tag Library describing the OASIS table model elements, attributes, and parameter entities may be accessed at: https://jats.nlm.nih.gov/options/OASIS/tag-library/19990315/index.html
+#### Display/Formatting Note
+
+An <<element-array,`<array>`>> element is not allowed to float; it is tied to its position in the text. True tables are allowed to float in text or be anchored, as determined by the value of their <<attribute-position,`@position`>> attribute.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-alternatives,`<alternatives>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-legend,`<legend>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>> External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> Any combination of: <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-table,`<table>`>> <<element-table,Table (NISO JATS table model)>> <<element-oasis-table,`<oasis:table>`>> <<element-oasis-table,OASIS XML Exchange (CALS) Table>> (In STS Extended ONLY) <<element-tbody,`<tbody>`>> <<element-tbody,Table Body for an XHTML Table>> <<element-oasis-tbody,`<oasis:tbody>`>> <<element-oasis-tbody,Table Body for an OASIS XML Exchange (CALS) Table>> (In STS Extended ONLY) Any combination of: Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  array        %array-model;                                >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, (alt-text | long-desc | email | ext-link | uri)*, (alternatives | graphic | media | table | oasis:table | tbody | oasis:tbody)*, (attrib | permissions)*)
+
+#### Tagged Samples
+
+#### Array using `<tbody>` element
+
+[source,xml]
+....
+...
+<p>Visually inspect the fracture surfaces to establish 
+ the nature of the fracture, and assess the type of 
+ fracture as follows:
+ <array id="tab_g">
+  <tbody>
+   <tr>
+    <td align="left" scope="row" valign="top">A</td>
+    <td align="left" valign="top">is cohesive failure of 
+     substrate;</td>
+   </tr>
+   <tr>
+    <td align="left" scope="row" valign="top">A/B</td>
+    <td align="left" valign="top">is adhesive failure 
+     between substrate and first coat;</td>
+   </tr>
+   <tr>
+    <td align="left" scope="row" valign="top">B</td>
+    <td align="left" valign="top">is cohesive failure 
+     of first coat;</td>
+   </tr>
+   ...
+  </tbody>
+ </array>
+</p>
+...
+....
+#### Same array tagged with `<table>` element. (Note: This tagging is retained for historical reasons, but using `<tbody>` inside `<array>` is best practice.)
+
+[source,xml]
+....
+...
+<p>Visually inspect the fracture surfaces to establish 
+ the nature of the fracture, and assess the type of 
+ fracture as follows:
+ <array id="tab_g">
+  <table rules="groups">
+   <col width="9.23%"/>
+   <col width="90.77%"/>
+   <tbody>
+    <tr>
+     <td align="left" scope="row" valign="top">A</td>
+     <td align="left" valign="top">is cohesive failure of 
+      substrate;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">A/B</td>
+     <td align="left" valign="top">is adhesive failure 
+      between substrate and first coat;</td>
+    </tr>
+    <tr>
+     <td align="left" scope="row" valign="top">B</td>
+     <td align="left" valign="top">is cohesive failure 
+      of first coat;</td>
+    </tr>
+    ...
+   </tbody>
+  </table>
+ </array>
+</p>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Array (Simple Tabular Array)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

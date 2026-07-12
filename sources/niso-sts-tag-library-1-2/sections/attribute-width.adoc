@@ -1,0 +1,82 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/width.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-width]
+=== `@width` Width (NISO JATS table model)
+
+This attribute can be used within a NISO JATS table (based on and designed to be converted easily to the XHTML 1.1 table model) to specify component width (as defined in the XHTML 1.1 table model to take advantage of existing software for table handling).
+
+#### Usage/Remarks
+As specified in the NISO JATS table model (based on and easily converted to the XHTML 1.1 table model), this attribute should specify the desired width of the entire table. The attribute is intended for visual applications. When the value is a percentage value, the value is relative to the available horizontal space. In the absence of any width specification, table width is determined by the application. The width value can be either an integer number of pixels or a percentage of the width of the display window.
+
+#### OPTIONAL on elements:  <<element-col,`<col>`>>, 
+                  <<element-colgroup,`<colgroup>`>>, 
+                  <<element-table,`<table>`>>
+
+|===
+| Value| Meaning
+
+| Number| Within the NISO JATS Table model (<<element-table,`<table>`>>), the width of the table. By default, the JATS table model
+                        (based on and designed to be converted easily to the XHTML 1.1 table model) should
+                        be used as defined in the XHTML 1.1 table model, to take advantage of existing
+                        software for table handling.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Specific widths and percentage widths in a table
+[source,xml]
+....
+...
+<table border="2" rules="groups" style="border-collapse: collapse; 
+ border-style: solid;" width="298">
+ <col width="41.86%"/>
+ <col width="58.14%"/>
+ <thead>
+  <tr>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Shore AO value</bold></th>
+   <th align="center" scope="col" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 2px" valign="middle"><bold>Value of spring force</bold>, 
+    <italic>F</italic>, <bold>in</bold> mN<break/>
+    (&Delta;<italic>F</italic>&equals; &plusmn; 37,5 mN)<xref 
+    ref-type="fn" rid="table-fn_23.1"><sup>a</sup></xref></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">0</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">550,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">10</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 1px" 
+    valign="middle">1 300,0</td>
+  </tr>
+  <tr>
+   <td align="center" scope="row" style="border-left: solid 1px; 
+    border-top: solid 1px; border-right: solid 1px; border-bottom: 
+    solid 1px" valign="middle">20</td>
+   <td align="center" style="border-left: solid 1px; border-top: 
+    solid 1px; border-right: solid 1px; border-bottom: solid 
+    1px" valign="middle">2 050,0</td>
+  </tr>
+  ...
+ </tbody>
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

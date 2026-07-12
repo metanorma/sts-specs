@@ -1,0 +1,73 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/xi-include.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-xi-include]
+=== `<xi:include>` XInclude
+
+Adds the XInclude mechanism to the NISO STS Tag Set, so that standards and adoption documents can be managed as separate files and “included” as needed into a final document.
+
+#### Usage/Remarks
+For details concerning the use of XInclude, see https://www.w3.org/TR/xinclude/.
+The optional <<element-xi-fallback,`<xi:fallback>`>> child can be used to specify alternative content when the resource to be included was not found.
+
+#### Attributes
+
+* <<attribute-accept,`@accept`>>
+* <<attribute-accept-language,`@accept-language`>>
+* <<attribute-encoding,`@encoding`>>
+* <<attribute-href,`@href`>>
+* <<attribute-parse,`@parse`>> (default = xml)
+* <<attribute-xpointer,`@xpointer`>>
+#### Namespaces
+
+* <<attribute-xmlns-xi,`@xmlns:xi`>> (fixed value = http://www.w3.org/2001/XInclude)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-adoption,`<adoption>`>>, <<element-adoption-front,`<adoption-front>`>>, <<element-app-group,`<app-group>`>>, <<element-back,`<back>`>>, <<element-body,`<body>`>>, <<element-front,`<front>`>>
+#### Description
+
+<<element-xi-fallback,`<xi:fallback>`>> <<element-xi-fallback,XInclude Fallback>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  xi:include   %include-model;                              >
+....
+#### Expanded Content Model
+
+(xi:fallback?)
+
+#### Tagged Sample
+
+##### Structural components of a standard as included documents, not inline
+[source,xml]
+....
+<standard  
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">  
+ <front>...</front>
+ <body>
+  <!-- Introduction is in file S-2295-Intro.xml -->
+  <xi:include href="S-2295-Intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude" parse="xml"/>
+
+  <!-- Scope is in file S-2295-Scope.xml -->
+  <xi:include href="S-2295-Scope.xml" xmlns:xi="http://www.w3.org/2001/XInclude" parse="xml"/>
+
+  <!-- Terms and Defs section is in file S-2295-T-D.xml -->
+  <xi:include href="S-2295-T-D.xml" xmlns:xi="http://www.w3.org/2001/XInclude" parse="xml"/>
+
+  ... 
+ </body>
+</standard>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

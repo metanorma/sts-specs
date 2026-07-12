@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/contrib-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-contrib-type]
+=== `@contrib-type` Type of Contribution
+
+Type of contribution made by the individual (for example, “`author`”, “`editor`”, “`illustrator`”, “`translator`”, “`research-assistant`”).
+
+#### OPTIONAL on element:  <<element-contrib,`<contrib>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Word or phrase naming or describing the contribution, such as
+                        “`editor`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

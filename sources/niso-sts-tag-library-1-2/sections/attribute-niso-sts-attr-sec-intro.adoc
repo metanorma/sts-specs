@@ -1,0 +1,96 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/niso-sts-attr-sec-intro.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-niso-sts-attr-sec-intro]
+=== Introduction to Attributes
+
+### Introduction to Attributes
+This section describes each attribute used in the Tag Sets in alphabetical order of their tag names (i.e., attribute type names). The tag name is the shorter machine-readable name used in tagged documents, XML vocabularies, and by software; for example, the tag name “<<attribute-dsep,`@dsep`>>” is used for the attribute named “<<attribute-dsep,Decimal Separator>>”.
+#### Content of an Attribute Page
+
+Each attribute is described by a single page, which displays: The attribute’s name followed by a longer descriptive name (all on one line), and Sections describing aspects of the attribute its usage, and the elements to which it can be attached. Not all attributes will show all sections.
+The sections within the page always appear in the following order (if present):
+|===
+| Description (untitled)| Contains a narrative description of the attribute. This is not a formal
+                              dictionary definition, but more an explanation of what the attribute means, what
+                              type of information it provides, or how it can be used.
+
+| Usage/Remarks| Discusses expected uses for the attribute, such as when or why it might be used
+                              or how to determine its value. Also provides additional information about the attribute,
+                              such as similar or
+                              contrasting attributes, processing information, or material about the base element.
+                           
+                           Best Practice notes are identified with a heading such as “Best Practice” or “Common
+                              Practice” and have a colored background for emphasis.
+                           
+                           Conversion Notes are usage instructions aimed at persons converting from another
+                              journal article tag set to this one, for example, information concerning the
+                              problems associated with embedding TeX or LaTeX in XML and the need, therefore, to
+                              surround TeX or LaTeX with a `CDATA` section. 
+                           
+                           Implementor’s Notes are instructions written to persons creating or
+                              maintaining tag sets based on the Suite.
+| OPTIONAL on/REQUIRED on| These two sections list the elements that take this attribute as optional and those
+                              that require this attribute. These sections perform three functions: 
+                              
+                                 Naming the elements which can take the attribute;
+                                 Describing the exact values and defaults for the attribute when used on specific elements;
+                                    and
+                                 
+                                 Optionally, under the heading _Suggested Usage_,
+                                    providing a list of suggested values for those attributes
+                                    whose value is any character data (i.e., not a specific list of values).
+                                 
+                              
+                              
+                           
+                           If the attribute can be used in more than one way, or with several slightly different
+                              meanings on different elements, there will be more than one “OPTIONAL on” or  “REQUIRED
+                              on” section.
+                           
+                           
+                              _Value and Meaning_ — Inside each “OPTIONAL on” or  “REQUIRED on” section is an Attribute Value Table
+                              that lists the possible values of the attribute in that element context and explains
+                              selected values. 
+                              
+                              When the attribute originates in the NISO STS
+                              Tag Suite, NISO JATS, or BITS; the Attribute Value Table also explains the _meaning_ of each value.
+                              Attributes defined in PUBLIC tag sets that have been incorporated into one of the
+                              NISO STS Tag Sets or base Suite (such as the MathML Tag Set) do not have their values
+                              explained, since those values are not controlled by NISO STS and may change without
+                              notice.
+                           
+                           This table typically contains two columns. Each row in the table describes one
+                              value, where:
+                              
+                              
+                                 The entry in the “Value” column  names or describes the attribute value,
+                                 The entry in the “Meaning” column titled “Meaning” explains the meaning
+                                    of the attribute value or describes potential content for the value, and
+                                 
+                                 On rare occasions, a third column may be present. Where present, the entry in the
+                                    “Behavior” column  describes what an XML application might do with the attribute value.
+                                 
+                              
+                              
+                           
+                           
+                              _Restriction_ — The last row of the table contains either with the word “Restriction” or the words
+                              “Default value”.
+                              “Restriction” indicates whether the attribute _must_ be
+                              supplied when the relevant element is used or is optional and _may_ be given on the element. “Default value” indicates the value of the attribute that
+                              will be used (by systems that read the schema) when the document does not supply a
+                              value.
+                           
+                           
+                              _Suggested usage_ — For those attributes whose
+                              value is defined as text (letters, numbers, or special characters), this Tag Set does
+                              not enforce any particular value(s), but a list of suggested values may be provided.
+| Example| Provides an excerpt of a tagged XML document, showing use of the current attribute.
+                              An attribute is shown in the context of one of its elements, with the current
+                              attribute highlighted in bold.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/glyph-data.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-glyph-data]
+=== `@glyph-data` Glyph Data Character Being Referenced
+
+An `IDREF`-type attribute that points to the <<attribute-id,`@id`>> attribute of the <<element-glyph-data,`<glyph-data>`>> character inside a <<element-private-char,`<private-char>`>> element. The idea is to use the full <<element-glyph-data,`<glyph-data>`>> with its name and bitmap once, then point to an existing character instead of defining the entire <<element-glyph-data,`<glyph-data>`>> element repeatedly.
+
+#### Usage/Remarks
+Once a private character has been declared using a <<element-glyph-data,`<glyph-data>`>> element, the character can be reused by using this attribute on a <<element-glyph-ref,`<glyph-ref>`>> element to point to the existing full <<element-glyph-data,`<glyph-data>`>> element (bitmap included).
+
+#### OPTIONAL on element:  <<element-glyph-ref,`<glyph-ref>`>>
+
+|===
+| Value| Meaning
+
+| An identifier (IDREF)| The pointing uses the `ID/IDREF` mechanism, using the
+                        <<attribute-glyph-data,`@glyph-data`>> attribute of the
+                        <<element-glyph-ref,`<glyph-ref>`>> element to point to the
+                        <<attribute-id,`@id`>> attribute of an existing
+                        <<element-glyph-data,`<glyph-data>`>> element.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

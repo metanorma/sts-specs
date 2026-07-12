@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>Amendment (2009) to OIML R 138:2007</doc-identifier>
+      <std-title-group>
+        <title>Vessels for commercial transactions Amendment (2009)</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2009</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2009 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2009</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Introduction</title>
+      <p>OIML R 138:2007 was approved by the CIML during its 42nd Meeting held in Shanghai. In the meantime it was decided to amend OIML R 138 to take into consideration late comments.</p>
+    </sec>
+    <sec>
+      <title>Amendment (2009) to OIML R 138:2007 (E)</title>
+      <sec>
+        <title>Section 2.6</title>
+      </sec>
+      <sec>
+        <title>Section 5.2.3</title>
+      </sec>
+      <sec>
+        <title>Annex A</title>
+      </sec>
+    </sec>
+    <p>Vessels for commercial transactions Amendment (2009)</p>
+  </body>
+</standard>

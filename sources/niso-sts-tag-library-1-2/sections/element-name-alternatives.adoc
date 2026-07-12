@@ -1,0 +1,50 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/name-alternatives.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-name-alternatives]
+=== `<name-alternatives>` Name Alternatives
+
+Container element for more than one version of a personal name (<<element-name,`<name>`>> or <<element-string-name,`<string-name>`>>), for example, one name written in both Japanese Kana characters and in the Latin alphabet.
+
+#### Usage/Remarks
+The <<element-name-alternatives,`<name-alternatives>`>> element is intended to collect multiple versions of a single name without appearing to multiply the number of names. (Three versions of a author name is not the same as three different contributors.) Like the element <<element-alternatives,`<alternatives>`>>, which is a similar construction for objects such as graphics, an _application_ must determine how multiple versions of a single name are to be processed. The <<attribute-specific-use,`@specific-use`>>, <<attribute-content-type,`@content-type`>>, and <<attribute-xml-lang,`@xml:lang`>> attributes can be used to distinguish the cases for separate processing.
+#### Usage Examples
+
+The `<name-alternatives>` element can be used to record: A name in multiple languages (for example, a name in Korean or Chinese-Han characters and a transliterated version of the same name in the Latin alphabet); A name in multiple language/script combinations (for example, a name in Japanese [`xml:lang="ja-Jpan"` for Han + Hiragana + Katakana] and the same name written in Kanji [`xml:lang="ja-Hani"`]); An alternate name for sorting or searching (for example, a name in French with accented letters, such as an “é”, or a plain-letter lower-ASCII version of the same name with “é” replaced by “e” for sorting). The <<attribute-specific-use,`@specific-use`>> attribute can be used to indicate that the ASCII version is only for sort, not for display.); An alternate name for indexing (For example, a publisher may choose to record several name variants for an individual: a nickname, author-pseudonym, maiden name, religious name, or tribal name. The attribute <<attribute-specific-use,`@specific-use`>> could be used to record the rationale for the name variant, such as “`primary`”, “`index`”, or “`table-of-contents`”. Alternatively, or in addition, the attribute <<attribute-content-type,`@content-type`>> could be used to record the type of name variant, such as “`nickname`”, “`maiden-name`”, “`pseudonym`”, etc.); A version of the name in a different arrangement. (For example, since the order of the <<element-surname,`<surname>`>> and <<element-given-names,`<given-names>`>> is fixed in NISO STS.)
+#### ID Attribute
+
+The names inside a <<element-name-alternatives,`<name-alternatives>`>> do not generally have a unique identifier because they are all the same name. This Tag Set assumes that any necessary unique identifier will be placed on the enclosing element that contains the <<element-name-alternatives,`<name-alternatives>`>> wrapper.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-contrib,`<contrib>`>>, <<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-person-group,`<person-group>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Any one of: One or more of any of: <<element-name,`<name>`>> <<element-name,Name of Person (Structured)>> <<element-string-name,`<string-name>`>> <<element-string-name,Name of Person (Unstructured)>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  name-alternatives
+                        %name-alternatives-model;                    >
+....
+#### Expanded Content Model
+
+((name | string-name)+)
+
+#### Related Resources
+
+* See: “Multiple Versions of a Name” in Tagging Personal Names in Citations
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/source-id-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-source-id-type]
+=== `@source-id-type` Source Identifier Type (in Related Object)
+
+Type of source identifier (for example, a DOI, ISSN, ISBN, or publisher’s identifier) for a <<element-related-object,`<related-object>`>>.
+
+#### OPTIONAL on element:  <<element-related-object,`<related-object>`>>
+
+|===
+| Value| Meaning
+
+| The type of identifier that names the source of the related object, for example, a
+                        DOI| The type of document identifier named in the <<attribute-source-id,`@source-id`>> attribute for a (<<element-related-object,`<related-object>`>>) element. This attribute qualifies the <<attribute-source-id,`@source-id`>> attribute.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

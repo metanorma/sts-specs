@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/count.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-count]
+=== `@count` Count
+
+Number of specific objects that appear in the document.
+
+#### Usage/Remarks
+This attribute holds the number of objects being counted. The _type_ of objects being counted is indicated in one of two different ways, depending on what is being counted. For the precombined count elements (e.g., <<element-fig-count,`<fig-count>`>>, <<element-word-count,`<word-count>`>>, etc.) the element name on which this attribute occurs indicates what is being counted (figures, words, etc.). For non-precombined counted objects, for example, the number of related standards or non-normative references, the <<attribute-count-type,`@count-type`>> attribute names what is being counted.
+
+#### REQUIRED on many elements; click for list and usage
+
+<<element-count,`<count>`>>, <<element-equation-count,`<equation-count>`>>, <<element-fig-count,`<fig-count>`>>, <<element-page-count,`<page-count>`>>, <<element-ref-count,`<ref-count>`>>, <<element-table-count,`<table-count>`>>, <<element-word-count,`<word-count>`>>
+|===
+| Value| Meaning
+
+| Counting number| The number of objects being counted, for example, “`5`” for five tables or five figures.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+
+#### Tagged Samples
+
+#### How many of each element for precombined counting elements
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <counts>
+  <fig-count count="1"/>
+  <table-count count="7"/>
+  <equation-count count="141"/>
+  <ref-count count="163"/>
+  <page-count count="151"/>
+ </counts>
+</std-meta>
+...
+....
+#### How many of each element for both precombined and bespoke (`<count>`) counting elements
+
+[source,xml]
+....
+...
+<counts>
+ <count count-type="norm-ref" count="61"/>
+ <count count-type="biblio-ref" count="102"/>
+ <fig-count count="3"/>
+ <table-count count="2"/>
+ <equation-count count="0"/>
+ <ref-count count="163"/>
+ <page-count count="67"/>
+</counts>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

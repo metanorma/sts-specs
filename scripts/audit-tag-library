@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Audit the generated Tag Library sections under
+# sources/niso-sts-tag-library-1-2/sections/ for issues:
+#   - orphan cross-references (<<anchor,label>> pointing nowhere)
+#
+# Exits 0 with a summary; non-zero if any orphans found.
+
+require "pathname"
+
+$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+require "sts_specs"
+
+REPO_ROOT = Pathname.new(File.expand_path("..", __dir__))
+SECTIONS = REPO_ROOT.join("sources", "niso-sts-tag-library-1-2", "sections")
+
+abort "#{SECTIONS} not found. Run scripts/extract-tag-library first." unless SECTIONS.exist?
+
+auditor = StsSpecs::TagLibrary::Auditor.new(sections_dir: SECTIONS)
+orphans = auditor.orphan_cross_refs
+
+puts "Sections audited: #{SECTIONS.children.size}"
+puts "Defined anchors:  #{auditor.defined_anchors.size}"
+puts "Orphan cross-refs: #{orphans.size}"
+
+if orphans.any?
+  puts
+  puts "By section:"
+  orphans.group_by(&:section).sort.each do |path, findings|
+    puts "  #{path.basename}:"
+    findings.map(&:anchor).uniq.sort.first(10).each { |a| puts "    #{a}" }
+    extra = findings.map(&:anchor).uniq.size - 10
+    puts "    ... and #{extra} more" if extra.positive?
+  end
+  exit 1
+end

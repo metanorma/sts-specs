@@ -1,0 +1,26 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/journal-id-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-journal-id-type]
+=== `@journal-id-type` Type of Journal Identifier
+
+Type of journal identifier or the authority that created a particular journal identifier.
+
+#### OPTIONAL on elements:  <<element-journal-id,`<journal-id>`>>, 
+                  <<element-related-article,`<related-article>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Word or phrase that identifies the organization or service who assigned the
+                        identifier (for example, “`index`” to indicate an
+                        abstracting or indexing service) or names the type of identifier (for example,
+                        “`doi`”).
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+Although designed to accept any text as its value, the following are suggested journal identifier types for this attribute: archive Identifier assigned by an archive or other repository aggregator Identifier assigned by a data aggregator doaj Directory of Open Access Journals doi Digital Object Identifier for the entire journal, not just for the article (rare) index Identifier assigned by an abstracting or indexing service issn International Standard Serial Number for a journal (This value is generally used when referring to related articles.) nlm-ta Title abbreviation assigned as an identifier by PubMed, for example, “`Mol Biol Cell`”, “`Nucleic Acids Res`”, etc. This value is typically an abbreviation for the journal title. pmc Identifier assigned by PubMed Central, for example, a PubMed Central journal abbreviation such as “`pnas`”, “`mbc`”, “`nar`”, “`molcellb`”, etc. This value is typically an abbreviation for the journal title. publisher-id Identifier assigned by the content publisher, for example, “`MOLEC`” or “`MOLCEL`”
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

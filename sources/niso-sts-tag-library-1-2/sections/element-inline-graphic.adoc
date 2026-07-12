@@ -1,0 +1,115 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/inline-graphic.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-inline-graphic]
+=== `<inline-graphic>` Inline Graphic
+
+Description of and pointer to an external graphic that is displayed or set in the same line as the text.
+
+#### Usage/Remarks
+An inline graphic is typically a small graphic, such as an icon or a small picture symbol, that is displayed or set in the same line as the text.
+##### Best Practice
+
+Although the Tag Set cannot enforce it, this element should *not* be used to create ordinary *special characters* such as diacritics and copyright symbols; these characters should be expressed in Unicode. The element <<element-inline-graphic,`<inline-graphic>`>> should also not be used for custom-built or private characters such as those in the Unicode private use areas; for such characters, use the <<element-private-char,`<private-char>`>> element.
+
+#### Related Elements
+
+This Suite contains several elements that describe and point to non-XML material: <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-media,`<media>`>>, and <<element-inline-media,`<inline-media>`>>. The elements <<element-graphic,`<graphic>`>> and <<element-inline-graphic,`<inline-graphic>`>> contain a pointer to a still image (such as a photograph, diagram, line drawing, etc.) that is part of the document. The elements <<element-media,`<media>`>> and <<element-inline-media,`<inline-media>`>> contain a pointer to a non-XML, frequently binary, object (such as a movie, audio clip, dataset, pronunciation file, or other non-XML format).
+
+#### Attributes
+
+* <<attribute-baseline-shift,`@baseline-shift`>>
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-mime-subtype,`@mime-subtype`>>
+* <<attribute-mimetype,`@mimetype`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>> (REQUIRED)
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-alternatives,`<alternatives>`>>, <<element-alt-title,`<alt-title>`>>, <<element-article-title,`<article-title>`>>, <<element-attrib,`<attrib>`>>, <<element-award-id,`<award-id>`>>, <<element-bold,`<bold>`>>, <<element-chapter-title,`<chapter-title>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-code,`<code>`>>, <<element-collab,`<collab>`>>, <<element-comment,`<comment>`>>, <<element-compl,`<compl>`>>, <<element-compound-kwd-part,`<compound-kwd-part>`>>, <<element-compound-subject-part,`<compound-subject-part>`>>, <<element-copyright-statement,`<copyright-statement>`>>, <<element-data-title,`<data-title>`>>, <<element-def-head,`<def-head>`>>, <<element-disp-formula,`<disp-formula>`>>, <<element-element-citation,`<element-citation>`>>, <<element-ext-link,`<ext-link>`>>, <<element-fixed-case,`<fixed-case>`>>, <<element-full,`<full>`>>, <<element-funding-source,`<funding-source>`>>, <<element-inline-code,`<inline-code>`>>, <<element-inline-formula,`<inline-formula>`>>, <<element-institution,`<institution>`>>, <<element-intro,`<intro>`>>, <<element-italic,`<italic>`>>, <<element-kwd,`<kwd>`>>, <<element-label,`<label>`>>, <<element-license-p,`<license-p>`>>, <<element-main,`<main>`>>, <<element-meta-value,`<meta-value>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-monospace,`<monospace>`>>, <<element-named-content,`<named-content>`>>, <<element-nav-pointer,`<nav-pointer>`>>, <<element-overline,`<overline>`>>, <<element-p,`<p>`>>, <<element-part-title,`<part-title>`>>, <<element-preformat,`<preformat>`>>, <<element-private-char,`<private-char>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-related-term,`<related-term>`>>, <<element-roman,`<roman>`>>, <<element-sans-serif,`<sans-serif>`>>, <<element-sc,`<sc>`>>, <<element-see,`<see>`>>, <<element-see-also,`<see-also>`>>, <<element-see-also-entry,`<see-also-entry>`>>, <<element-see-entry,`<see-entry>`>>, <<element-sig,`<sig>`>>, <<element-sig-block,`<sig-block>`>>, <<element-source,`<source>`>>, <<element-std,`<std>`>>, <<element-strike,`<strike>`>>, <<element-styled-content,`<styled-content>`>>, <<element-sub,`<sub>`>>, <<element-subject,`<subject>`>>, <<element-subtitle,`<subtitle>`>>, <<element-sup,`<sup>`>>, <<element-supplement,`<supplement>`>>, <<element-target,`<target>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-td,`<td>`>>, <<element-term,`<term>`>>, <<element-term-display-string,`<term-display-string>`>>, <<element-term-head,`<term-head>`>>, <<element-term-source,`<term-source>`>>, <<element-textual-form,`<textual-form>`>>, <<element-th,`<th>`>>, <<element-title,`<title>`>>, <<element-trans-source,`<trans-source>`>>, <<element-trans-subtitle,`<trans-subtitle>`>>, <<element-trans-title,`<trans-title>`>>, <<element-underline,`<underline>`>>, <<element-verse-line,`<verse-line>`>>, <<element-xref,`<xref>`>>
+#### Description
+
+Any one of: Any combination of: Accessibility Elements <<element-alt-text,`<alt-text>`>> <<element-alt-text,Alternate Title Text For a Figure, Etc.>> <<element-long-desc,`<long-desc>`>> <<element-long-desc,Long Description>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  inline-graphic
+                        %inline-graphic-model;                       >
+....
+#### Expanded Content Model
+
+((alt-text | long-desc)*)
+
+#### Tagged Samples
+
+#### Alternative to an inline formula
+
+[source,xml]
+....
+...
+<p><italic>Slow-front transient overvoltage (SFO)</italic>: 
+ Transient overvoltage, usually unidirectional, with time to 
+ peak 20 &#x3bc;s &lt; 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_p}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m1.eps"
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 5 000 &#x3bc;s, and 
+ time&#xa0;to&#xa0;half&#xa0;value&#xa0;of&#xa0;a&#xa0;
+ decreasing&#xa0;voltage 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_2}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m2.eps" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 20 ms.</p>
+...
+....
+#### Inside a `<private-char>`
+
+[source,xml]
+....
+... 
+<sec>
+ <label>79.1</label>
+ <p>Elongate ... in the form of a 
+  <private-char description="dogleg">
+   <inline-graphic  
+     xlink:href="http://www1.astm.org/HTTP/IMAGESxHTML/images/glyphs/ASTM_SpecChar/dogleg_12">
+    <alt-text content-type="special character">dogleg character</alt-text>
+   </inline-graphic>
+  </private-char>. During the ...</p>
+</sec>
+...
+....
+
+#### Related Resources
+
+* See: Tagging Figures, Graphics, and Multimedia
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

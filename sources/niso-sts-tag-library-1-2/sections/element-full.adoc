@@ -1,0 +1,121 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/full.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-full]
+=== `<full>` Full Title
+
+Contains the full title of the standard. Normally, this contains all the introductory, main, and complementary titles and subtitles in a precombined form, possibly with punctuation and spacing added between title components. The full title is a good interchange option, to communicate the title of a standard.
+
+#### Usage/Remarks
+When there is no additional text beyond what is contained in the various component titles (<<element-intro,`<intro>`>>, <<element-main,`<main>`>>, and <<element-compl,`<compl>`>>), this element may seem slightly redundant. But it is Best Practice always to provide a full title for searching, display convenience, and to handle special cases, even when the full title could _in principle_ be constructed from the various component titles.
+#### ISO Note
+
+For an ISO standard, the current full title is currently constructed from all of the introductory, main, and complementary titles, in that order, with each title separated from the others by a space, an em-dash and a space, a semicolon, or similar separator.
+
+#### Related Elements
+
+*Tagging the Title of a Standard:* The title of a standard may be tagged as a whole (<<element-full,`<full>`>>) or divided into introductory, main, and complementary components: *Introductory:* The optional introductory title(s) are the initial part(s) of a standard’s title, which typically indicate the broad context of the standard or of a sponsoring group or provide a stock phrase such as “Standard Specification for”. Each introductory title may contain only text or include its own label and subtitles. *Main:* The optional main portion of the standard’s title, which typically indicates the principal subject of the standard. A main title may contain only text or include its own label and subtitles. *Complementary:* The optional complementary title(s) are the final part(s) of a standard’s title. Complementary titles follow the <<element-main,`<main>`>> title and typically provide details concerning which particular aspect of the general topic is treated by the standards document. Each complementary title may contain only text or include its own label and subtitles.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-title-wrap,`<title-wrap>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters External Linking Elements <<element-email,`<email>`>> <<element-email,Email Address>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-inline-supplementary-material,`<inline-supplementary-material>`>> <<element-inline-supplementary-material,Inline Supplementary Material>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> Other Inline Elements <<element-abbrev,`<abbrev>`>> <<element-abbrev,Abbreviation or Acronym>> <<element-index-term,`<index-term>`>> <<element-index-term,Index Term>> <<element-index-term-range-end,`<index-term-range-end>`>> <<element-index-term-range-end,Index Term Range End>> <<element-milestone-end,`<milestone-end>`>> <<element-milestone-end,Milestone End>> <<element-milestone-start,`<milestone-start>`>> <<element-milestone-start,Milestone Start>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>> <<element-tbx-entailedTerm,Entailed Term (TBX)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> <<element-break,`<break>`>> <<element-break,Line Break>> Citation Elements <<element-citation-alternatives,`<citation-alternatives>`>> <<element-citation-alternatives,Citation Alternatives>> <<element-element-citation,`<element-citation>`>> <<element-element-citation,Element Citation>> <<element-mixed-citation,`<mixed-citation>`>> <<element-mixed-citation,Mixed Citation>> <<element-std,`<std>`>> <<element-std,Citation to a Standard>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  full         %full-model;                                 >
+....
+#### Expanded Content Model
+
+(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | alternatives | inline-code | inline-graphic | inline-media | private-char | chem-struct | inline-formula | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | tbx:entailedTerm | xref | sub | sup | break | citation-alternatives | element-citation | mixed-citation | std)*
+
+#### Tagged Samples
+
+#### Full title of a standard
+
+[source,xml]
+....
+...
+<title-wrap>
+ <intro>2015 ASME Boiler Pressure Vessel Code</intro>
+ <main-title-wrap>
+  <label>III</label>
+  <main>Rules for Construction of Nuclear Facility Components</main> 
+ </main-title-wrap>
+ <compl level="1">Division 1</compl>
+ <compl-title-wrap level="2">
+  <compl>Subsection NH</compl> 
+  <subtitle>Class 1 Components in Elevated Temperature Service</subtitle>
+ </compl-title-wrap>
+ <full>2015 ASME Boiler Pressure Vessel Code, Section III: Rules 
+  for Construction of Nuclear Facility Components, Division 1, 
+  Subsection NH: Class 1 Components in Elevated Temperature Service</full>
+</title-wrap>
+...
+....
+#### Standard title for co-produced standard
+
+[source,xml]
+....
+...
+<title-wrap>
+ <intro>Information Technology</intro>
+ <main-title-wrap>
+  <main>Telecommunications and information exchange between 
+   systems</main>
+  <subtitle>Local and metropolitan area networks</subtitle>
+ </main-title-wrap>
+ <compl level="1">Technical reports and guidelines</compl>
+ <compl-title-wrap level="2">
+  <label>Part 5:</label>
+  <compl>Media Access Control (MAC) Bridging of Ethernet V2.0 in 
+   Local Area Networks</compl>
+ </compl-title-wrap>
+ <full>Information Technology — Telecommunications and information 
+  exchange between systems — Local and metropolitan area networks — 
+  Technical reports and guidelines — Part 5: Media Access Control 
+  (MAC) Bridging of Ethernet V2.0 in Local Area Networks</full>
+</title-wrap>
+...
+....
+#### Full title (twice) for standard metadata in two languages
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap xml:lang="de">
+  <intro>Sicherheit von Maschinen</intro>
+  <main>Sicherheitsbezogene Teile von Steuerungen</main>
+  <compl>Teil 1: Allgemeine Gestaltungsleitsätze</compl>
+  <full>Sicherheit von Maschinen — Sicherheitsbezogene Teile von 
+   Steuerungen — Teil 1: Allgemeine Gestaltungsleitsätze</full>
+ </title-wrap>
+ <title-wrap xml:lang="en">
+  <intro>Safety of machinery</intro>
+  <main>Safety-related parts of control systems</main>
+  <compl>Part 1: General principles for design</compl>
+  <full>Safety of machinery — Safety-related parts of control 
+   systems — Part 1: General principles for design</full>
+ </title-wrap>
+ ...
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,80 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/colspan.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-colspan]
+=== `@colspan` Column Span (NISO JATS table model)
+
+Table attribute used to request horizontal spanning of more than one column. (This attribute is based on and intended to be converted easily to the XHMTL `colspan` attribute.)
+
+#### Usage/Remarks
+To specify horizontal spanning, this attribute contains the number of columns that a table cell will span. (The table cell will be tagged with a <<element-td,`<td>`>> or <<element-th,`<th>`>> element.)
+
+#### OPTIONAL (defaults to 1) on elements:  <<element-td,`<td>`>>, 
+                  <<element-th,`<th>`>>
+
+|===
+| Value| Meaning
+
+| Counting number| How many column widths this cell will span, for example,
+                        “`3`”.
+| Default value| 1 (Spans 1 column)
+|===
+
+#### Tagged Sample
+
+##### Non-normative notes spanning all columns
+[source,xml]
+....
+...
+<table rules="all" frame="box" cellpadding="5">
+ <colgroup>
+  <col/>
+  <col/>
+  <col/>
+  <col/>
+  <col/>
+  <col/>
+ </colgroup>
+ <thead>
+  <tr>
+   <th>Representation</th>
+   <th>Primitives</th>
+   <th><inline-formula><tex-math notation="LaTeX">$PC$</tex-math></inline-formula></th>
+   <th><inline-formula><tex-math notation="LaTeX">$X$</tex-math></inline-formula></th>
+   <th><inline-formula><tex-math notation="LaTeX">$\mathbf{Y}$</tex-math></inline-formula></th>
+   <th>Finite fields</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Uncompressed</td>
+   <td>EC2OSPXY<break/>OS2ECPXY</td>
+   <td>0000 0100</td>
+   <td><inline-formula><tex-math notation="LaTeX">$x_{P}$</tex-math></inline-formula></td>
+   <td><inline-formula><tex-math notation="LaTeX">$y_{P}$</tex-math></inline-formula></td>
+   <td>All</td>
+  </tr>
+  <tr>...</tr>
+  <tr>
+   <td colspan="6">
+    <non-normative-note>
+     <label>NOTE 1&#x2014;</label>
+     <p>The first four bits of the first octet <inline-formula
+      ><tex-math notation="LaTeX">$PC$</tex-math></inline-formula>
+      ... but these formats would not conform with the ones defined 
+      in this subclause.</p>
+    </non-normative-note>
+    <non-normative-note>
+     <label>NOTE 2&#x2014;</label>
+     <p>The various representations ... that handles all representations.</p>
+    </non-normative-note>
+   </td>
+  </tr>
+ </tbody>
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

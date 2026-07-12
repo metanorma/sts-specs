@@ -1,0 +1,12 @@
+== Maintenance
+
+This document is maintained jointly by ISO and IEC under the NISO STS 1.0
+tag-set umbrella. The authoritative reference for element- and
+attribute-level definitions is the
+link:../niso-sts-tag-library-1-2/[NISO STS 1.2 Tag Library]; this document
+provides the SDO-specific conventions that ISO and IEC apply on top of the
+base tag set.
+
+NOTE: This document is the _1.0_ edition of the coding guidelines. The
+_2.1_ edition (see link:../iso-sts-coding-changes-2-1/[the coding-changes
+summary]) supersedes it for new publications.

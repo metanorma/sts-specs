@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML B 22</doc-identifier>
+      <std-title-group>
+        <title>Policy and rules for the reimbursement of travel expenses incurred by the CIML President in attending legal metrology related events</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2023-10-01</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2023 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2023</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>B</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organisation whose primary aim is to harmonise the regulations and metrological controls applied by the national metrological services, or related organisations, of its Member States. The main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_4f820a64-f515-3c5e-cf17-f88f7689f579">
+        <list-item>&#x2014;<bold>International Recommendations (OIML R)</bold>, which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity. OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;<bold>International Documents (OIML D)</bold>, which are informative in nature and which are intended to harmonise and improve work in the field of legal metrology;</list-item>
+        <list-item>&#x2014;<bold>International Guides (OIML G)</bold>, which are also informative in nature and which are intended to give guidelines for the application of certain requirements to legal metrology; and</list-item>
+        <list-item>&#x2014;<bold>International Basic Publications (OIML B)</bold>, which define the operating rules of the various OIML structures and systems.</list-item>
+      </list>
+      <p>OIML Draft Recommendations, Documents and Guides are developed by Project Groups linked to Technical Committees or Subcommittees which comprise representatives from OIML Member States. Certain international and regional institutions also participate on a consultation basis. Cooperative agreements have been established between the OIML and certain institutions, such as ISO and the IEC, with the objective of avoiding contradictory requirements. Consequently, manufacturers and users of measuring instruments, test laboratories, etc. may simultaneously apply OIML publications and those of other institutions.</p>
+      <p>International Recommendations, Documents, Guides and Basic Publications are published in English (E) and translated into French (F) and are subject to periodic revision.</p>
+      <p>Additionally, the OIML publishes or participates in the publication of <bold>Vocabularies (OIML V)</bold> and periodically commissions legal metrology experts to write  <bold>Expert Reports (OIML E)</bold>. Expert Reports are intended to provide information and advice, and are written solely from the viewpoint of their author, without the involvement of a Technical Committee or Subcommittee, nor that of the CIML. Thus, they do not necessarily represent the views of the OIML.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML B 22:2023 (E)&#x2009;&#x2014;&#x2009;was developed by the BIML. It was approved for final publication by the International Committee of Legal Metrology at its 58th meeting in October 2023.</p>
+      <p>OIML Publications may be downloaded from the OIML web site in the form of PDF files. Additional information on OIML Publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <label>1</label>
+      <title>Scope</title>
+      <p>This Basic Publication lays down the policy and rules for the reimbursement of travel expenses incurred by the CIML President attending legal metrology related events.</p>
+    </sec>
+    <sec>
+      <label>2</label>
+      <title>Policy</title>
+      <p>Travel expenses incurred by the CIML President in attending legal metrology related events to which they have been invited to represent the OIML may be paid or reimbursed by the BIML. Attendance at a legal metrology related event includes meetings of regional metrology organisations, legal metrology organisations, and international organisations (in liaison with the OIML), normally with the intention of providing a report / presentation (e.g. about current activities of the OIML).</p>
+      <p>Where the CIML President is unable to attend a legal metrology related event to which they have been invited, this policy will apply to the person nominated by the CIML President to attend on their behalf.</p>
+      <p>Travel by the CIML President will follow the guidelines listed below.Note NoteClause2,NoteThis policy does not cover travel undertaken by the CIML President when attending an International Conference on Legal Metrology, a CIML meeting, or a Presidential Council meeting.</p>
+    </sec>
+    <sec>
+      <label>3</label>
+      <title>Rules</title>
+      <sec>
+        <label>3</label>
+        <title>Travel</title>
+        <p>As soon as the CIML President is informed of the planned travel, the CIML President shall submit to the BIML Director the following information:</p>
+        <list list-type="order" id="_316e8be0-4d83-3c12-4b82-6cbde13fa024">
+          <list-item>a)the foreseen dates of the travel (outward and return journeys);</list-item>
+          <list-item>b)the means of travel (air, train, car);</list-item>
+          <list-item>c)any need to purchase a modifiable ticket and the motivation for such a request;</list-item>
+          <list-item>d)the reduced fares, if any, to which the CIML President is entitled on a personal basis;</list-item>
+          <list-item>e)the accommodation already identified or suggested to him by the welcoming body and the rate per night (specifying if partial-board is included).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>3</label>
+        <title>Validation</title>
+        <p>The BIML Director shall validate the travel.</p>
+        <p>When validating, the BIML Director, or their representative, may modify the parameters of the travel, in agreement with the person travelling.</p>
+      </sec>
+      <sec>
+        <label>3</label>
+        <title>Conditions</title>
+        <p>The CIML President shall propose the transportation mode, accommodation, timetable, and fares following the principles below:</p>
+        <list list-type="order" id="_d728ef3b-03e6-54d0-9f39-692bad69f384">
+          <list-item>a)the most economical journey is preferred, taking into account all modes of travel, travelling time and modifiable tickets;</list-item>
+          <list-item>b)the journey shall include no stops between the stations or airports servicing the CIML President&#x2019;s departure point and the destination&#x2019;s nearest airport or station other than those required by the trip connections, unless justified by professional motives or they allow a reduction of the expenses incurred and the journey&#x2019;s length is not substantially modified;</list-item>
+          <list-item>c)the journey may be extended, if this results in a reduction in overall costs which may include additional accommodation and transportation;</list-item>
+          <list-item>d)the journey, by rail when the connection exists, may be in first class;</list-item>
+          <list-item>e)the journey by airplane shall be in economy class, except when any one section airtime of the journey&#x2019;s duration is over seven hours. In this case, economy plus, when available, may be authorised;</list-item>
+          <list-item>f)a modifiable ticket may be granted where there is an actual uncertainty about the dates and/or duration of the mission. Incurred taxes shall be paid by the BIML;</list-item>
+          <list-item>g)luggage in excess of allowances shall be paid by the CIML President;</list-item>
+          <list-item>h)the air and rail companies are selected in accordance with the above-mentioned principles and after due consideration of the list of airlines banned within the European Union;</list-item>
+          <list-item>i)the accommodation shall take into account the accommodations already identified or suggested by the welcoming body and the nightly rate;</list-item>
+          <list-item>j)a journey for personal motives may be combined with a mission. In this case, any extra fare for the journey for personal motives shall not be paid or reimbursed by the BIML to the CIML President;</list-item>
+          <list-item>k)in the case that the CIML President is accompanied by other persons (spouse, parent, children, etc., on a personal basis only), the costs incurred on the journey directly attributable to the companion(s) will not be paid or reimbursed to the CIML President by the BIML. No liability for the companion of the CIML President on travel during any journey is incurred by the BIML.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>3</label>
+        <title>Cancelled journeys</title>
+        <p>The BIML shall pay for cancelled tickets and may pay for new tickets in the following cases:</p>
+        <list list-type="order" id="_39d7ca49-472a-b619-2bad-2fa8e6c9e1d1">
+          <list-item>a)if the cancellation of the travel is decided by the Director or by the welcoming body and new travel is required;</list-item>
+          <list-item>b)if a force majeure event has occurred, i.e. unpredictable and beyond the control of the CIML President, having prevented them from travelling and new travel is required;</list-item>
+          <list-item>c)if the CIML President is unable to obtain a visa and new travel is required;</list-item>
+          <list-item>d)if the flight or journey is cancelled by the airline or the rail company;</list-item>
+          <list-item>e)if the planned connecting flights were rendered impossible by airline or rail company delays.</list-item>
+        </list>
+        <p>However, if the need to purchase new tickets originates solely as a result of the decision of the CIML President, the BIML reserves the right to claim reimbursement from the CIML President of such tickets.</p>
+      </sec>
+      <sec>
+        <label>3</label>
+        <title>Per diem and reimbursable fees</title>
+        <p>According to the BIML Travel Policy, per diem may be provided to the CIML President when on travel to a legal metrology related event.</p>
+        <p>The following fees shall be reimbursed, subject to the submission of receipts within thirty working days following the day on which the CIML President returns from travel:</p>
+        <list list-type="order" id="_a2f7bc05-63dd-3b3a-5452-fbf34bdd67d6">
+          <list-item>a)the fees related to receptions and dinners organised in the attended event, if not included in the general fees paid by the BIML before the travel;</list-item>
+          <list-item>b)registration fees to attend the event to which the CIML President is invited;</list-item>
+          <list-item>c)accommodation fees (including breakfast);</list-item>
+          <list-item>d)local transportation fees.</list-item>
+        </list>
+        <p>Expenses incurred in a currency other than the Euro are reimbursed at the exchange rate on the date of payment of the actual expense. Refer to  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.xe.com/ucc/"/> . If paid with a credit card belonging to the CIML President, an adjustment may be made, if necessary, between the justified expenditures and the actual bank debit, upon submission of the debit memo of the bank holding the account.</p>
+      </sec>
+    </sec>
+    <p>Policy and rules for the reimbursement of travel expenses incurred by the CIML President in attending legal metrology related events</p>
+  </body>
+</standard>

@@ -1,0 +1,56 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-subjectField.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-subjectField]
+=== `<tbx:subjectField>` Subject Field (TBX)
+
+A field of special knowledge, such as _information technology_ or _leather industry_. Specifying a subject field can help to clarify the field in which a particular term or concept is used.
+
+#### Usage/Remarks
+The subject field is specified at the <<element-tbx-langSet,`<tbx:langSet>`>> level.
+
+#### Attributes
+
+* <<attribute-script,`@script`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-langSet,`<tbx:langSet>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.subjectField; 
+                        (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### Clarifying the definition
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a213.313">
+  <tbx:langSet xml:lang="en">
+    <tbx:subjectField>linear actuator</tbx:subjectField>
+    <tbx:definition>condition where the valve drifts from the set position</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a213.313-1">backdriving</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

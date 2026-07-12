@@ -1,0 +1,27 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/pub-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-pub-type]
+=== `@pub-type` Type of Publication
+
+Combined form of both the type and format of publication, combined. This attribute comes from an older version of JATS; Deprecated in NISO STS.
+
+#### Usage/Remarks
+##### Best Practice
+
+This attribute, which is used only on the elements <<element-issn,`<issn>`>> and <<element-pub-date,`<pub-date>`>>, reflects an older version of JATS, which used specific precombined values. For NISO STS, Best Practice is: Use the <<element-release-date,`<release-date>`>> element instead of <<element-pub-date,`<pub-date>`>> to hold the date on which a standards document is published. The element <<element-pub-date,`<pub-date>`>> is being phased out. For <<element-issn,`<issn>`>>, the attributes <<attribute-publication-format,`@publication-format`>> and <<attribute-pub-type,`@pub-type`>> or <<attribute-specific-use,`@specific-use`>> can replace, in different attributes, the precombined values of the JATS <<attribute-pub-type,`@pub-type`>> attribute.
+
+#### OPTIONAL on elements:  <<element-issn,`<issn>`>>, 
+                  <<element-pub-date,`<pub-date>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Precombined type and format of the document. Best Practice is not to use this attribute.
+                        See Remarks above.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

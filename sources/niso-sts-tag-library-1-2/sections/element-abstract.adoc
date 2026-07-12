@@ -1,0 +1,133 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/abstract.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-abstract]
+=== `<abstract>` Abstract
+
+Summarized description of the content of a standards document.
+
+#### Usage/Remarks
+Although it is a relatively new phenomenon to give abstracts to standards, the online marketplace has been pushing the standards community in that direction.
+#### Length of Abstracts
+
+It is possible to write an abstract that is a very short summary of the major purpose or scope of a standard and limit this abstract to a paragraph or two. It is also possible to produce “long” or “summary” abstracts in which each section of the standard is summarized in a separate abstract section that has the same title as the standards section being summarized. Such abstracts may be extensive, incorporating figures and tables. The model for the element <<element-abstract,`<abstract>`>> has been made flexible enough to allow for both types of abstract.
+#### Multiple Abstracts
+
+A single standards document may contain many abstracts, each aimed at a different use, such as display at the beginning of the standard, ePub promotional abstract, RSS/Atom feed, or pronouncing abstract. Two attributes may be used to describe the type or usage for a particular abstract: The <<attribute-specific-use,`@specific-use`>> attribute may be used to identify a processing purpose, such as RSS feed or pronunciation. The optional <<attribute-abstract-type,`@abstract-type`>> attribute may be used to identify special types of abstracts, for example, graphical abstracts, stereochemical abstracts, ASCII abstracts for sending to small devices, and Table-of-Contents abstracts that are so short they are inserted as annotations into a Table of Contents. See the attribute page for <<attribute-abstract-type,`@abstract-type`>> for a list of suggested types.
+#### Accessibility
+
+For accessibility purposes, it is useful to provide a very short synopsis abstract (much like a Table of Contents blurb or a dek in some journals) whose purpose is to tell a non-sighted reader what the standard is about. This abstract can be given the <<attribute-abstract-type,`@abstract-type`>> such as “meta-description”, “description”, or “dc:description” to indicate that, when making web pages from this XML, the abstract should be used to create the XHTML metadata description.
+The <<element-abstract,`<abstract>`>> element should not be used to take the place of the regular accessibility elements <<element-alt-text,`<alt-text>`>> or <<element-long-desc,`<long-desc>`>>, which are, respectively, shorter and longer descriptions of a component of a document, such as a table or figure.
+
+#### Attributes
+
+* <<attribute-abstract-type,`@abstract-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-app-group,`<app-group>`>>, <<element-fig-group,`<fig-group>`>>, <<element-graphic,`<graphic>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-media,`<media>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+The following, in order: <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>>, zero or more <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>>, zero or one Any combination of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> Any combination of: <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-term-sec,`<term-sec>`>> <<element-term-sec,Terms and Definitions Container/Section>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  abstract     %abstract-model;                             >
+....
+#### Expanded Content Model
+
+((editing-instruction)*, label?, title?, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)*, (sec | term-sec)*)
+
+#### Tagged Samples
+
+#### Typical short abstract
+
+[source,xml]
+....
+...
+<abstract>
+ <p>This document describes version 2 of the Internet Key Exchange
+  (IKE) protocol. IKE is a component of IPsec used for performing mutual
+  authentication and establishing and maintaining Security Associations
+  (SAs). This document obsoletes RFC 5996, and includes all of the
+  errata for it. It advances IKEv2 to be an Internet Standard.</p>
+</abstract>
+...
+....
+#### Three abstracts for one document — regular one-paragraph abstract, 
+                  extended abstract with several sections, and short abstract for 
+                  use on Twitter
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap xml:lang="en" originator="ISO">
+  <full>NISO STS (Standard Tag Suite) NISO Z39.102 201x</full>
+ </title-wrap>
+ ...
+ <abstract>
+  <p>The Standards Tag Suite (STS) provides a common XML format that developers, publishers,
+   and distributors of standards, including National Standards Bodies, Regional and
+   International Standards Bodies, and Standards Development Organizations, can use to
+   publish and exchange full-text content and metadata of standards. STS is based on
+   ANSI/NISO Z39-96 (JATS). Structures are provided to encode both the normative and
+   non-normative content of: standards, adoptions of standards, and standards-like documents
+   that are produced by standards organizations.</p>
+ </abstract>
+
+ <abstract abstract-type="extended">
+  <p>The Standards Tag Suite (STS) provides a common XML format that developers, publishers,
+   and distributors of standards, including National Standards Bodies, Regional and
+   International Standards Bodies, and Standards Development Organizations, can use to
+   publish and exchange full-text content and metadata of standards. STS is based on
+   ANSI/NISO Z39-96 (JATS). Structures are provided to encode both the normative and
+   non-normative content of: standards, adoptions of standards, and standards-like documents
+   that are produced by standards organizations.</p>
+  <sec>
+   <title>Purpose</title>
+   <p>To define a suite of XML elements and attributes that describes the full-text content
+    and metadata of standards, including co-produced standards adoptions. A common format
+    for publishing and exchanging standards content. To preserve the intellectual content of
+    standards independent of the form in which that content was originally delivered ...</p>
+  </sec>
+  <sec>
+   <title>Scope</title>
+   <p>The elements and attributes that describe both the metadata and the full content of
+    published normative standards documents ...</p>
+  </sec>
+  <sec>
+   <title>Two Tag Sets</title>
+   <p>The Interchange Tag Set provides a format in which standards organizations and
+    publishers can deliver content to a range of other standards bodies and disseminators.
+    The Extended Tag Set allows both the XHTML and CALS table models to account for legacy
+    publishing of intensive table information.</p>
+  </sec>
+ </abstract>
+
+ <abstract abstract-type="twitter">
+  <p>NISO STS (Standards Tag Suite) is a standard for tagging and interchanging standards
+   documents in XML.</p>
+ </abstract>
+ ...
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Abstract
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

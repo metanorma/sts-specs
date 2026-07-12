@@ -1,0 +1,7 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/alpha-nfd-table-wrap-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-alpha-nfd-table-wrap-group]
+=== Table Group
+
+image::images/table-wrap-group.png[table-wrap-group.png]

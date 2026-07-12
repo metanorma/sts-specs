@@ -1,0 +1,73 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/main-title-wrap.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-main-title-wrap]
+=== `<main-title-wrap>` Main Title Wrapper
+
+Wrapper element to collect together the <<element-main,`<main>`>> title of the standard and its related component parts, such as a label or subtitle(s).
+
+#### Related Elements
+
+*Parts of a Main Title:* A simple main title should be tagged using the <<element-main,`<main>`>> element. If the main title has a label or subtitles, the `<main-title-wrap>` element is used to hold all the main title components together.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-title-wrap,`<title-wrap>`>>
+#### Description
+
+The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-main,`<main>`>> <<element-main,Main Title Part>> <<element-subtitle,`<subtitle>`>> <<element-subtitle,Article Subtitle>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  main-title-wrap
+                        %main-title-wrap-model;                      >
+....
+#### Expanded Content Model
+
+(label?, main, subtitle*)
+
+#### Tagged Sample
+
+##### Main title and subtitle are wrapped together in `<main-title-wrap>`
+[source,xml]
+....
+...
+<title-wrap>
+ <intro>Information Technology</intro>
+ <main-title-wrap>
+  <main>Telecommunications and information exchange between 
+   systems</main>
+  <subtitle>Local and metropolitan area networks</subtitle>
+ </main-title-wrap>
+ <compl level="1">Technical reports and guidelines</compl>
+ <compl-title-wrap level="2">
+  <label>Part 5:</label>
+  <compl>Media Access Control (MAC) Bridging of Ethernet V2.0 in 
+   Local Area Networks</compl>
+ </compl-title-wrap>
+ <full>Information Technology — Telecommunications and information 
+  exchange between systems — Local and metropolitan area networks — 
+  Technical reports and guidelines — Part 5: Media Access Control 
+  (MAC) Bridging of Ethernet V2.0 in Local Area Networks</full>
+</title-wrap>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Title Wrapper
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

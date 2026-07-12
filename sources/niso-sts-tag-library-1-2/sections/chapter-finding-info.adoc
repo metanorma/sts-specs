@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/finding-info.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-finding-info]
+=== Finding Information in Tag Library
+
+Subsidiary section:
+#### Theme Index
+#### Index
+
+A cross-reference listing that links to all the tag names, element names, attribute short and long names, section titles, and other nouns in this Tag Library. In addition to all the Tag Library terms, the list includes synonyms (terms _not_ used in this Tag Set to direct the reader to NISO STS, NISO JATS, or BITS components used in this Tag Library. For example, if a user looked up the word “bibliography”, they would be directed to use the term <<element-ref-list,`<ref-list>`>> (<<element-ref-list,Reference List (Bibliographic Reference List)>>) and directed to related information for the attribute <<attribute-sec-type,`@sec-type`>>.
+#### Element Context Table
+
+Provides a listing of where each element may be used, that is, all the contexts in which this element may occur.
+*Format of the Table:* The Context Table is formatted in two columns: The first column (“This Element”) names an element. The second column (“May Be Contained In”) contains an alphabetical list of all the elements in which the element named in the first column element may occur.
+The letters of the alphabet in the Navbar and at the top of each page, are links to take you directly to the elements which start with that letter.
+*How to use the Table:* For example, if the first column contains the element <<element-app-group,`<app-group>`>>, then the second column contains only the element <<element-back,`<back>`>>. This means that the <<element-app-group,`<app-group>`>> element may only be used directly inside an <<element-back,`<back>`>>, as one of its children.
+Most elements may be used inside more than one other element. For example, the element <<element-def,`<def>`>> (a definition) may be used inside the <<element-abbrev,`<abbrev>`>> <<element-def-item,`<def-item>`>>, and the <<element-term-display,`<term-display>`>> elements.
+The Context Table contains the same information that is found on each Element page under the heading “May be contained in:” in the section “Models and Context”.
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

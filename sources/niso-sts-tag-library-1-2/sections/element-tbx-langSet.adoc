@@ -1,0 +1,110 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/tbx-langSet.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-tbx-langSet]
+=== `<tbx:langSet>` Language Set (TBX)
+
+The `<tbx:langSet>` is a container element that holds all the information in a terminological entry pertaining to one language, including all the TIG elements (terms and associated information) for that language.
+
+#### Usage/Remarks
+The <<attribute-xml-lang,`@xml:lang`>> attribute is mandatory, to indicate the language being described.
+
+#### Attributes
+
+* <<attribute-script,`@script`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>> (REQUIRED)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-tbx-termEntry,`<tbx:termEntry>`>>
+#### Description
+
+The following, in order: Any combination of: <<element-tbx-crossReference,`<tbx:crossReference>`>> <<element-tbx-crossReference,Cross Reference (TBX)>> <<element-tbx-definition,`<tbx:definition>`>> <<element-tbx-definition,Definition (TBX)>> <<element-tbx-example,`<tbx:example>`>> <<element-tbx-example,Example (TBX)>> <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>> <<element-tbx-externalCrossReference,External Cross Reference (TBX)>> <<element-tbx-note,`<tbx:note>`>> <<element-tbx-note,Note (TBX)>> <<element-tbx-see,`<tbx:see>`>> <<element-tbx-see,See (TBX)>> <<element-tbx-source,`<tbx:source>`>> <<element-tbx-source,Source (TBX)>> <<element-tbx-subjectField,`<tbx:subjectField>`>> <<element-tbx-subjectField,Subject Field (TBX)>> <<element-tbx-xGraphic,`<tbx:xGraphic>`>> <<element-tbx-xGraphic,External Graphic (TBX)>> <<element-tbx-xMathML,`<tbx:xMathML>`>> <<element-tbx-xMathML,External MathML (TBX)>> <<element-tbx-xSource,`<tbx:xSource>`>> <<element-tbx-xSource,External Source (TBX)>> <<element-tbx-tig,`<tbx:tig>`>> <<element-tbx-tig,Term Information Group (TIG) (TBX)>>, one or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  %TBX.langSet; 
+                        ((%TBX.crossReference; | %TBX.definition; |
+                          %TBX.example; | 
+                          %TBX.externalCrossReference; | %TBX.note; |
+                          %TBX.see; | %TBX.source; | 
+                          %TBX.subjectField; | %TBX.xGraphic; |
+                          %TBX.xMathML; | %TBX.xSource;)*, 
+                        (%TBX.tig;)+ )                               >
+....
+#### Expanded Content Model
+
+((tbx:crossReference | tbx:definition | tbx:example | tbx:externalCrossReference | tbx:note | tbx:see | tbx:source | tbx:subjectField | tbx:xGraphic | tbx:xMathML | tbx:xSource)*, (tbx:tig)+)
+
+#### Tagged Samples
+
+#### Single `<tbx:langSet>` for English
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a22.32">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>reference level for soundings in navigation charts</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a22.32-1">chart datum</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="preferredTerm"/>
+      <tbx:termType value="fullForm"/>
+    </tbx:tig>
+    <tbx:tig>
+      <tbx:term id="a22.32-2">CD</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:normativeAuthorization value="admittedTerm"/>
+      <tbx:termType value="acronym"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+#### Three `<tbx:langSet>`s: one for English, one for French, and one for German
+
+[source,xml]
+....
+<tbx:termEntry id="ISO10241-1.a23.311">
+  <tbx:langSet xml:lang="en">
+    <tbx:definition>numerical reference that indicates whether the flow will be laminar or turbulent
+      for a given set of conditions</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-1">critical Reynolds number</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="fr">
+    <tbx:definition>référence numérique indiquant si un écoulement est soit laminaire soit turbulent
+      pour un ensemble de conditions données</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-2">nombre de Reynolds critique</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="masculine"/>
+    </tbx:tig>
+  </tbx:langSet>
+  <tbx:langSet xml:lang="de">
+    <tbx:definition>numerische Bezugsgröße, die anzeigt, ob die Strömung unter definierten
+      Bedingungen laminar oder turbulent ist</tbx:definition>
+    <tbx:tig>
+      <tbx:term id="a23.311-3">kritische Reynoldszahl</tbx:term>
+      <tbx:partOfSpeech value="noun"/>
+      <tbx:grammaticalGender value="feminine"/>
+    </tbx:tig>
+  </tbx:langSet>
+</tbx:termEntry>
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Language Set (TBX)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

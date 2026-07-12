@@ -1,0 +1,62 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/term-display-string.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-term-display-string]
+=== `<term-display-string>` Term-display String
+
+Container element for narrative material to appear inside <<element-term-display,`<term-display>`>> but outside, or between, the element content of <<element-term-display,`<term-display>`>>.
+
+#### Usage/Remarks
+The element <<element-term-display,`<term-display>`>> is a container element for other elements such as <<element-part-of-speech,`<part-of-speech>`>> and <<element-pronunciation,`<pronunciation>`>>. When there is text for <<element-term-display,`<term-display>`>> that does not fit into one of the included elements, <<element-term-display-string,`<term-display-string>`>>, should be used to hold that text.
+A <<element-term-display-string,`<term-display-string>`>> element is a bucket of text, in which other Term Display elements (such as Part of Speech) can be embedded. The idea is to use <<element-term-display-string,`<term-display-string>`>> to hold additional editorial text or other content that might have been generated, but has been placed explicitly in the XML instead. This allows a way to use, but constrain, text placed inside a <<element-term-display,`<term-display>`>> element.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-rendering-hint,`@rendering-hint`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>> (default = en)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-term-display,`<term-display>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-break,`<break>`>> <<element-break,Line Break>> Emphasis Elements <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-fixed-case,`<fixed-case>`>> <<element-fixed-case,Fixed Case>> <<element-italic,`<italic>`>> <<element-italic,Italic>> <<element-monospace,`<monospace>`>> <<element-monospace,Monospace Text (Typewriter Text)>> <<element-num,`<num>`>> <<element-num,ISO Numeric Emphasis>> <<element-overline,`<overline>`>> <<element-overline,Overline>> <<element-roman,`<roman>`>> <<element-roman,Roman>> <<element-ruby,`<ruby>`>> <<element-ruby,Ruby Wrapper>> <<element-sans-serif,`<sans-serif>`>> <<element-sans-serif,Sans Serif>> <<element-sc,`<sc>`>> <<element-sc,Small Caps>> <<element-strike,`<strike>`>> <<element-strike,Strike Through>> <<element-underline,`<underline>`>> <<element-underline,Underline>> Inline Math Elements <<element-chem-struct,`<chem-struct>`>> <<element-chem-struct,Chemical Structure (Display)>> <<element-inline-formula,`<inline-formula>`>> <<element-inline-formula,Formula, Inline>> Inline Display Elements <<element-inline-code,`<inline-code>`>> <<element-inline-code,Inline Code>> <<element-inline-graphic,`<inline-graphic>`>> <<element-inline-graphic,Inline Graphic>> <<element-inline-media,`<inline-media>`>> <<element-inline-media,Inline Media Object>> <<element-private-char,`<private-char>`>> <<element-private-char,Private Character (Custom or Unicode)>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-named-content,`<named-content>`>> <<element-named-content,Named Special (Subject) Content>> <<element-styled-content,`<styled-content>`>> <<element-styled-content,Styled Special (Subject) Content>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>> <<element-part-of-speech,`<part-of-speech>`>> <<element-part-of-speech,Part of Speech>> <<element-pronunciation,`<pronunciation>`>> <<element-pronunciation,Pronunciation>> <<element-related-term,`<related-term>`>> <<element-related-term,Related Terms>> <<element-term,`<term>`>> <<element-term,Term>> <<element-term-source,`<term-source>`>> <<element-term-source,Term Source Elements>> <<element-fn,`<fn>`>> <<element-fn,Footnote>> <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-target,`<target>`>> <<element-target,Target of an Internal Link>> <<element-uri,`<uri>`>> <<element-uri,Uniform Resource Identifier (URI)>> <<element-xref,`<xref>`>> <<element-xref,X(cross) Reference>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  term-display-string
+                        (#PCDATA %term-display-string-elements;)*    >
+....
+#### Expanded Content Model
+
+(#PCDATA | break | bold | fixed-case | italic | monospace | num | overline | roman | sans-serif | sc | strike | underline | ruby | chem-struct | inline-formula | inline-graphic | private-char | inline-code | inline-media | tex-math | mml:math | named-content | styled-content | sub | sup | part-of-speech | pronunciation | related-term | term | term-source | fn | ext-link | target | uri | xref)*
+
+#### Tagged Sample
+
+##### Using a <<element-term-display-string,`<term-display-string>`>>
+[source,xml]
+....
+...
+<term-display>
+ <term term-status="preferred">Kapselung</term>
+ <term-display-string>(en: <term xml:lang="en" 
+   term-type="translation">enclosure</term>)</term-display-string>
+ <def>
+  <p>Teil einer gasisolierten, metallgekapselten Schaltanlage, ...</p>
+ </def>
+</term-display>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

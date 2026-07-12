@@ -1,0 +1,35 @@
+== Terms and definitions
+
+For the purposes of this document, the following terms and definitions apply.
+
+=== General
+
+NISO STS:: Standards Tag Suite — the XML vocabulary defined by
+ANSI/NISO Z39.102-2022 for encoding standards documents.
+
+OIML:: International Organization of Legal Metrology — the publisher of this
+document.
+
+profile:: a set of conventions and constraints that a publisher adopts on top
+of a base vocabulary.
+
+presentation XML:: the canonical rendered XML form of an OIML publication, as
+produced by Metanorma from AsciiDoc sources; the input to the OIML STS
+conversion pipeline described in <<_conversion_from_metanorma>>.
+
+=== OIML document types
+
+International Recommendation:: a OIML normative document published with the
+identifier form `OIML R <num>:<year>`.
+
+International Basic Publication:: an OIML informative document published with
+the identifier form `OIML B <num>:<year>`.
+
+International Document:: an OIML informative document published with the
+identifier form `OIML D <num>:<year>`.
+
+International Guide:: an OIML informative document published with the
+identifier form `OIML G <num>:<year>`.
+
+Expert Report:: an OIML informative document published with the identifier
+form `OIML E <num>:<year>`.

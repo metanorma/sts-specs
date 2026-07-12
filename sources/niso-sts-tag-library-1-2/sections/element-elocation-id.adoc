@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/elocation-id.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-elocation-id]
+=== `<elocation-id>` Electronic Location Identifier (in a citation)
+
+Bibliographic identifier for a document that does not have traditional printed page numbers.
+
+#### Usage/Remarks
+This element acts in the same way as a page identifier for a document that does not have traditional page numbers; the value could be an organization’s document identifier, for example, “`E700-30`”.
+#### Identifiers
+
+This element holds an _externally defined_ identifier (assigned to a standards document by an organization, archive, library, or similar) that is used to help cite a document that is born digital and cannot be cited by page numbers. The contents of this element should not be confused with the <<attribute-id,`@id`>> attribute, which holds an _internally defined_ document identifier that can be used by software to perform a simple link.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-seq,`@seq`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Text, numbers, or special characters
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  elocation-id (#PCDATA)                                    >
+....
+
+#### Tagged Sample
+
+##### RNA sequence in citation
+[source,xml]
+....
+...
+<ref>
+ <mixed-citation publication-type="data">Xu, J. <etal/> 
+  <data-title>Cross-platform ultradeep transcriptomic profiling 
+   of human reference RNA samples by RNA-Seq</data-title>. 
+  <source>Sci. Data</source> 
+  <volume>1</volume>:<elocation-id>140020</elocation-id> 
+  doi: <pub-id pub-id-type="doi">10.1038/sdata.2014.20</pub-id> 
+  (<year iso-8601-date="2014">2014</year>).</mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

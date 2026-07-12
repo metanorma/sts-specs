@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Convert the NISO STS Tag Library HTML tree under
+# reference-docs/NISO-STS-TL-1-2-html/ into Metanorma AsciiDoc under
+# sources/niso-sts-tag-library-1-2/.
+#
+# Usage:
+#   ./scripts/extract-tag-library             # convert and write
+#   ./scripts/extract-tag-library --dry-run   # list what would be written
+
+require "pathname"
+
+$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+require "sts_specs"
+
+REPO_ROOT = Pathname.new(File.expand_path("..", __dir__))
+SOURCE = REPO_ROOT.join("reference-docs", "NISO-STS-TL-1-2-html")
+DESTINATION = REPO_ROOT.join("sources", "niso-sts-tag-library-1-2")
+
+converter = StsSpecs::TagLibrary::Converter.new(
+  source_root: SOURCE,
+  destination_root: DESTINATION
+)
+
+if ARGV.delete("--dry-run")
+  puts "Would convert #{File.fnmatch?("*.html", SOURCE.to_s) ? 0 : '?'} pages:"
+  puts converter.dry_run
+  exit 0
+end
+
+warn converter.call

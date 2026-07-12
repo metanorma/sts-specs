@@ -1,0 +1,40 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/speech.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-speech]
+=== `<speech>` Speech
+
+One exchange in a real or imaginary conversation between two or more entities, for example, between an interviewer and the person being interviewed, between a nurse or doctor and a patient, between a person and a computer, etc. Each time a new speaker takes over, a new `<speech>` starts, which names the speaker (<<element-speaker,`<speaker>`>>) and then contains one or more paragraphs (<<element-p,`<p>`>>) that hold what speaker said.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-fig,`<fig>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-table-wrap,`<table-wrap>`>>, <<element-td,`<td>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>, <<element-th,`<th>`>>
+#### Description
+
+The following, in order: <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more <<element-speaker,`<speaker>`>> <<element-speaker,Speaker>> One or more of any of: <<element-p,`<p>`>> <<element-p,Paragraph>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  speech       %speech-model;                               >
+....
+#### Expanded Content Model
+
+((object-id)*, speaker, (p | normative-note | non-normative-note | normative-example | non-normative-example | notes-group)+)
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

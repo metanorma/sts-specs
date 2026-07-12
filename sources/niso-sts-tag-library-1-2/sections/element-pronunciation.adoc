@@ -1,0 +1,84 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/pronunciation.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-pronunciation]
+=== `<pronunciation>` Pronunciation
+
+One way to pronounce the term (<<element-term,`<term>`>>) that is being defined in a display term (<<element-term-display,`<term-display>`>>).
+
+#### Usage/Remarks
+Pronunciation elements typically have very simple content:
+[source,xml]
+....
+   <pronunciation>trænskrɪpʃən</pronunciation>
+<pronunciation>'äb-`ərs</pronunciation>
+<pronunciation>//dıˈstɜ:bəns/</pronunciation>
+....
+This element may take the XLink attributes, so a pronunciation element can link to a sound file that pronounces the term.
+
+#### Attributes
+
+* <<attribute-hreflang,`@hreflang`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>> (default = en)
+#### Linking Attributes
+
+* <<attribute-xlink-actuate,`@xlink:actuate`>>
+* <<attribute-xlink-href,`@xlink:href`>>
+* <<attribute-xlink-role,`@xlink:role`>>
+* <<attribute-xlink-show,`@xlink:show`>>
+* <<attribute-xlink-title,`@xlink:title`>>
+* <<attribute-xlink-type,`@xlink:type`>> (fixed value = simple)
+#### Namespaces
+
+* <<attribute-xmlns-xlink,`@xmlns:xlink`>> (fixed value = http://www.w3.org/1999/xlink)
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-term-display,`<term-display>`>>, <<element-term-display-string,`<term-display-string>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters <<element-bold,`<bold>`>> <<element-bold,Bold>> <<element-italic,`<italic>`>> <<element-italic,Italic>> Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  pronunciation
+                        (#PCDATA %pronunciation-elements; )*        >
+....
+#### Expanded Content Model
+
+(#PCDATA | bold | italic | sub | sup)*
+
+#### Tagged Sample
+
+##### In `<term-display>`
+[source,xml]
+....
+...
+<term-sec>
+ <label>3.31</label>
+ <term-display>
+  <term>disturbance</term>
+  <pronunciation>dɪˈstɜː.bəns</pronunciation>
+  <def>
+   <p>the interruption of a stable condition</p>
+  </def>
+ </term-display>
+</term-sec>
+...
+....
+
+#### Related Resources
+
+* For a discussion on tagging terms and definitions in a Term Section (<<element-term-sec,`<term-sec>`>>), see Tagging Terms and Definitions.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

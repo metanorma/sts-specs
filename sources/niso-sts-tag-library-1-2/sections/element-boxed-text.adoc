@@ -1,0 +1,88 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/boxed-text.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-boxed-text]
+=== `<boxed-text>` Boxed Text
+
+Textual material that is part of the body of a standards document but is outside the flow of the narrative text (for example, a sidebar).
+
+#### Usage/Remarks
+The <<element-boxed-text,`<boxed-text>`>> element can be used for any text insert whether enclosed in a box or not (for example, marginalia, sidebars, cautions, tips, warnings, note boxes).
+##### When Content is a Form
+
+Two attributes are available to describe the boxed-text when it contains a form:
+* <<attribute-is-form,`@is-form`>> can indicate that the text box contains a form.  What constitutes a “form” is not
+                     defined by NISO STS.
+* <<attribute-form-type,`@form-type`>> can identify the type of the form. If the form is not one of the listed types, <<attribute-custom-type,`@custom-type`>> may provide the type (see below).
+##### Custom Form Type (<<attribute-custom-type,`@custom-type`>>)
+
+<<attribute-form-type,`@form-type`>> has as its values a fixed list of form types. If your form is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the form type. Set the value of <<attribute-form-type,`@form-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any form type you require. For example:
+[source,xml]
+....
+<boxed-text is-form="form" form-type="custom" 
+    custom-type="template">...</boxed-text>
+....
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-form-type,`@form-type`>>
+* <<attribute-is-form,`@is-form`>>
+* <<attribute-orientation,`@orientation`>> (default = portrait)
+* <<attribute-originator,`@originator`>>
+* <<attribute-position,`@position`>> (default = float)
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-ack,`<ack>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-bio,`<bio>`>>, <<element-body,`<body>`>>, <<element-boxed-text,`<boxed-text>`>>, <<element-disp-quote,`<disp-quote>`>>, <<element-glossary,`<glossary>`>>, <<element-index,`<index>`>>, <<element-index-div,`<index-div>`>>, <<element-index-group,`<index-group>`>>, <<element-license-p,`<license-p>`>>, <<element-named-content,`<named-content>`>>, <<element-non-normative-example,`<non-normative-example>`>>, <<element-non-normative-note,`<non-normative-note>`>>, <<element-normative-example,`<normative-example>`>>, <<element-normative-note,`<normative-note>`>>, <<element-notes,`<notes>`>>, <<element-p,`<p>`>>, <<element-ref-list,`<ref-list>`>>, <<element-sec,`<sec>`>>, <<element-styled-content,`<styled-content>`>>, <<element-tbx-crossReference,`<tbx:crossReference>`>>, <<element-tbx-definition,`<tbx:definition>`>>, <<element-tbx-entailedTerm,`<tbx:entailedTerm>`>>, <<element-tbx-example,`<tbx:example>`>>, <<element-tbx-externalCrossReference,`<tbx:externalCrossReference>`>>, <<element-tbx-note,`<tbx:note>`>>, <<element-tbx-pronunciation,`<tbx:pronunciation>`>>, <<element-tbx-see,`<tbx:see>`>>, <<element-tbx-source,`<tbx:source>`>>, <<element-tbx-term,`<tbx:term>`>>, <<element-tbx-usageNote,`<tbx:usageNote>`>>, <<element-term-display,`<term-display>`>>, <<element-term-sec,`<term-sec>`>>
+#### Description
+
+The following, in order: <<element-object-id,`<object-id>`>> <<element-object-id,Object Identifier>>, zero or more <<element-sec-meta,`<sec-meta>`>> <<element-sec-meta,Section Metadata>>, zero or one <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-caption,`<caption>`>> <<element-caption,Caption of a Figure, Table, Etc.>>, zero or one <<element-legend,`<legend>`>> <<element-legend,Legend>>, zero or more Any combination of: Paragraph-level Display Elements <<element-address,`<address>`>> <<element-address,Address/Contact Information>> <<element-array,`<array>`>> <<element-array,Array (Simple Tabular Array)>> <<element-boxed-text,`<boxed-text>`>> <<element-boxed-text,Boxed Text>> <<element-chem-struct-wrap,`<chem-struct-wrap>`>> <<element-chem-struct-wrap,Chemical Structure Wrapper>> <<element-code,`<code>`>> <<element-code,Code Block>> <<element-fig,`<fig>`>> <<element-fig,Figure>> <<element-fig-group,`<fig-group>`>> <<element-fig-group,Figure Group>> <<element-graphic,`<graphic>`>> <<element-graphic,Graphic>> <<element-media,`<media>`>> <<element-media,Media Object>> <<element-preformat,`<preformat>`>> <<element-preformat,Preformatted Text>> <<element-supplementary-material,`<supplementary-material>`>> <<element-supplementary-material,Supplementary Material>> <<element-table-wrap,`<table-wrap>`>> <<element-table-wrap,Table Wrapper>> <<element-table-wrap-group,`<table-wrap-group>`>> <<element-table-wrap-group,Table Wrapper Group>> <<element-alternatives,`<alternatives>`>> <<element-alternatives,Alternatives For Processing>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> <<element-disp-formula,`<disp-formula>`>> <<element-disp-formula,Formula, Display>> <<element-disp-formula-group,`<disp-formula-group>`>> <<element-disp-formula-group,Formula, Display Group>> <<element-editing-instruction,`<editing-instruction>`>> <<element-editing-instruction,Editing Instruction>> Lists <<element-def-list,`<def-list>`>> <<element-def-list,Definition List>> <<element-list,`<list>`>> <<element-list,List>> Math Elements <<element-tex-math,`<tex-math>`>> <<element-tex-math,TeX Math Equation>> <<element-mml-math,`<mml:math>`>> <<element-mml-math,Math (MathML Tag Set)>> <<element-p,`<p>`>> <<element-p,Paragraph>> Related Material Elements <<element-related-article,`<related-article>`>> <<element-related-article,Related Journal Article Information>> <<element-related-object,`<related-object>`>> <<element-related-object,Related Non-standards Object Information>> <<element-disp-quote,`<disp-quote>`>> <<element-disp-quote,Quote, Displayed>> <<element-speech,`<speech>`>> <<element-speech,Speech>> <<element-statement,`<statement>`>> <<element-statement,Statement, Formal>> <<element-verse-group,`<verse-group>`>> <<element-verse-group,Verse Form For Poetry>> Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Optionally, the following sequence (in order): One or more of any of: <<element-sec,`<sec>`>> <<element-sec,Section>> <<element-term-sec,`<term-sec>`>> <<element-term-sec,Terms and Definitions Container/Section>> Any combination of: Section Back Matter Elements <<element-fn-group,`<fn-group>`>> <<element-fn-group,Footnote Group>> <<element-glossary,`<glossary>`>> <<element-glossary,Glossary Elements>> <<element-ref-list,`<ref-list>`>> <<element-ref-list,Reference List (Bibliographic Reference List)>> Standards Note and Example Elements <<element-non-normative-example,`<non-normative-example>`>> <<element-non-normative-example,Non-Normative-Example>> <<element-non-normative-note,`<non-normative-note>`>> <<element-non-normative-note,Non-Normative-Note>> <<element-normative-example,`<normative-example>`>> <<element-normative-example,Normative-Example>> <<element-normative-note,`<normative-note>`>> <<element-normative-note,Normative-Note>> <<element-notes-group,`<notes-group>`>> <<element-notes-group,Notes Group>> Any combination of: Ownership Elements <<element-attrib,`<attrib>`>> <<element-attrib,Attribution>> <<element-permissions,`<permissions>`>> <<element-permissions,Permissions>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  boxed-text   %boxed-text-model;                           >
+....
+#### Expanded Content Model
+
+((object-id)*, sec-meta?, label?, (caption)?, (legend)*, (address | alternatives | array | boxed-text | chem-struct-wrap | code | fig | fig-group | graphic | media | non-normative-note | normative-note | non-normative-example | normative-example | notes-group | preformat | supplementary-material | table-wrap | table-wrap-group | disp-formula | disp-formula-group | editing-instruction | def-list | list | tex-math | mml:math | p | related-article | related-object | disp-quote | speech | statement | verse-group | fn-group | glossary | ref-list)*, ((sec | term-sec)+, (fn-group | glossary | ref-list | non-normative-note | normative-note | non-normative-example | normative-example | notes-group)*)?, (attrib | permissions)*)
+
+#### Tagged Sample
+
+##### Excerpt of MIL-STD-967 showing use of boxed text to illustrate two alternative notes
+image::images/boxed-text-from-MIL-STD-967.png[boxed-text-from-MIL-STD-967.png]
+[source,xml]
+....
+...
+<p>... without updating the existing inactive for new design 
+ notice.  When an inactive for new design document is revised 
+ or a change issued, one of the following notes shall appear 
+ in a box beneath the document title, as applicable:
+ <boxed-text>
+  <p>This document is inactive for new design.</p>
+ </boxed-text>
+ <boxed-text>
+  <p>This document is inactive for new design. Refer to 
+   (fill in document identifier) for new designs.</p>
+ </boxed-text>
+</p>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Boxed Text
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

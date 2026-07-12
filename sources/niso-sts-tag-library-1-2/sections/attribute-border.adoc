@@ -1,0 +1,55 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/border.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-border]
+=== `@border` Border (Frame) around a Table (NISO JATS table model)
+
+Thickness, in pixels, of the border to draw around the table. A value of “`0`” indicates that the table has no border. (This attribute is based on and intended to be converted easily to the XHMTL `border` attribute.)
+
+#### Usage/Remarks
+Supplying the <<attribute-border,`@border`>> attribute without specifying a value indicates that the table has a border of the application’s default thickness.
+##### Best Practice
+
+Although the Tag Set can enforce only that this attribute contain any text, numbers, or special characters, Best Practice is to constrain this value to a counting number (positive integer).
+
+#### OPTIONAL on element:  <<element-table,`<table>`>>
+
+|===
+| Value| Meaning
+
+| Counting number| Thickness, measured in pixels, of the border around the table.
+| Restriction| This is an optional  attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Setting table border off
+[source,xml]
+....
+...
+<table border="0" width="1800">
+ <colgroup>
+  <col width="4*"/>
+  <col width="89*"/>
+  <col align="center" width="6*"/>
+ </colgroup>
+ <tbody>
+  <tr>
+   <td></td>
+   <td></td>
+   <td>(ft)</td>
+  </tr>
+  <tr>
+   <td align="center">(a)</td>
+   <td>Insulated supply service drops limited to 300 V to ground</td>
+   <td>10.5</td>
+  </tr>
+  ...
+ </tbody>
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

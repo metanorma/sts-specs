@@ -1,0 +1,22 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/set-intro.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-set-intro]
+=== Introduction to NISO STS Tag Sets
+
+#### Purpose
+
+The NISO Standards Tag Suite (NISO STS) describes an XML model for normative standards documents produced by standards organizations (international, national, standards development organizations, consortia, and others). The intent of NISO STS is to provide a common format in which standards bodies, standards producing organizations, publishers, commercial vendors, and archives can publish and exchange standards documents.
+#### Scope
+
+NISO STS defines elements and attributes that describe both the metadata and the full content of published normative standards documents. The Suite (while not specifically designed to describe handbooks, guidelines, and other non-normative materials, or to emulate any particular publishing formats) may be usable for XML publication of some of these document types if an individual standards organization reviews their structures and determines that they can properly be tagged with NISO STS. While some structures in these non-standards documents may be similar to structures in standards (and journal articles, since STS is based on JATS), other structures may be distinctly different and may not be handled by existing elements and attributes defined in the Tag Suite.
+#### Basis
+
+NISO STS is based on the International Organization for Standardization (ISO) Standard Tag Set (ISO STS, version 1.1). Using ISO STS as the foundation significantly reduced the amount of work needed to develop a functioning tag suite for standards, improved the quality of the standard, and provided a sound, tested head start that had been implemented by more than a dozen organizations and used successfully for more than four years. There is a substantial community that is experienced with ISO STS, in addition to its use in document production within ISO, and many of those users have contributed their expertise to improving on ISO STS.
+ISO STS was, in turn, based on the Journal Article Tag Set (JATS: ANSI/NISO Z39-96). JATS, a NISO standard for encoding journal articles, is the most widely used tag set for current Scientific, Technical, and Medical (STM) periodical literature in the world. It has been adopted, either for internal production, or for export to libraries and archives, by virtually all STM publishers. Since many standards development organizations are also STM publishers, some on a very large scale, it is attractive to them to use similar specifications for encoding their journals, books, conference proceedings, and standards. Using related tag sets (JATS, BITS, STS) enables these publishers to use their existing production systems, databases, print and electronic distribution tools, web hosting services, and archives for all of these documents.
+#### Proper Superset of ISO STS
+
+NISO STS 1.2 is a fully backwards-compatible superset of ISO STS 1.1. That means that any document that is valid to ISO STS 1.1 will be valid to NISO STS 1.2, by changing only the document type declaration (or other schema identification mechanism). (Note: This assumes the use of one of the DTDs, XSDs, or RNGs that use the 2.0 version of MathML, since MathML 2.0 and MathML 3.0 are not fully backward compatible.)
+#### Four Tag Sets
+
+NISO STS includes four implementations of the suite, called “Tag Sets” — the Interchange Tag Sets (one Tag Set for MathML 2.0 and one for MathML 3.0) and the Extended Tag Sets (one Tag Set for MathML 2.0 and one for MathML 3.0). These tag sets are built from the elements and attributes defined in the Suite and are intended to provide models for standards publishing and interoperability. The Extended Tag Sets differ from the Interchange Tag Sets in allowing OASIS Exchange (CALS) tables in addition to XHTML tables.

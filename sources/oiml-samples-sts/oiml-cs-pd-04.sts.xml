@@ -1,0 +1,813 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS PD-04 Edition 5</doc-identifier>
+      <std-title-group>
+        <title>Assessment and approval of Test Laboratories</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2025-12-24</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2025 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2025</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 5 of OIML-CS PD-04 by electronic ballot on 01 October 2025 and it was published on 24 December 2025. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2025 which contains the framework for the operation of the OIML-CS.</p>
+      <p>The text of this publication is based on the following documents:</p>
+      <table-wrap id="tab_1">
+        <caption>Edition history</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 1</td>
+            <td>PD-04 Edition 1</td>
+            <td>Published: July 2017</td>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 2</td>
+            <td>PD-04 Edition 2</td>
+            <td>Published: November 2018</td>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 3</td>
+            <td>PD-04 Edition 3</td>
+            <td>Approved and published: 20221114</td>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 4</td>
+            <td>PD-04 Edition 4</td>
+            <td>Approved and published: 20240116</td>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 5 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N101</td>
+            <td>Draft for MG: 20250117</td>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 5 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N105</td>
+            <td>Draft for MC: 20250319</td>
+          </tr>
+          <tr>
+            <td>PD-04 Edition 5 (Draft)</td>
+            <td>OIML-CS_SC1_P4_N164</td>
+            <td>Draft for MC approval: 20250901</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_82e6bca3-8bc9-24bb-9caa-b4d27250c9cf">
+          <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2025 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2025 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the requirements and the associated procedures for including a Test Laboratory in the OIML-CS, including the processes relating to the assessment of a Test Laboratory, the Review Committee review and Management Committee approval. This publication should be used in conjunction with the associated procedures for OIML Issuing Authorities as detailed in OIML-CS&#xA0;PD-03.</p>
+        <p>These procedures apply to the following Test Laboratories:</p>
+        <list list-type="order" id="_e0da21fb-3885-96cd-db38-94d718568972">
+          <list-item>a)An internal Test Laboratory of an OIML Issuing Authority;</list-item>
+          <list-item>b)A third-party Test Laboratory; and</list-item>
+          <list-item>c)A Manufacturer Test Laboratory.</list-item>
+        </list>
+        <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2025, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-01, OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06, OIML-CS&#xA0;PD-07, OIML-CS&#xA0;PD-08 and OIML-CS&#xA0;PD-09. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2025 apply. == General</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Application</title>
+        <p>A certification body in an OIML Member State may apply to be an OIML Issuing Authority. Any application to be an OIML Issuing Authority (see OIML-CS&#xA0;PD-03) shall be accompanied by a corresponding application to include one or more Test Laboratories as detailed in this document. An existing OIML Issuing Authority may also apply to add a Test Laboratory using the procedures detailed in this document.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Role of the Management Committee and the Review Committee</title>
+        <p>The Management Committee is responsible for the approval or rejection of OIML Issuing Authorities applications (see OIML-CS&#xA0;PD-03) and their associated Test Laboratories, including extensions to scope, under Scheme A and Scheme B. The Review Committee is used to provide a recommendation to the Management Committee on the approval or rejection of applications for OIML Issuing Authorities (see OIML-CS&#xA0;PD-03) and their Test Laboratories including extensions to scope.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Requirements for Test Laboratories to demonstrate competence</title>
+        <sec>
+          <label>0</label>
+          <p>Test Laboratories shall demonstrate their competence through compliance with ISO/IEC 17025 ISO/IEC&#xA0;17025:2017.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>OIML publication D 30 OIML&#xA0;D&#xA0;30:2020 provides guidance and interpretations regarding the application of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017. == Application for a Test Laboratory under Scheme A</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Application and accompanying information</title>
+        <sec>
+          <label>0</label>
+          <p>An application to be a Test Laboratory in the OIML-CS under Scheme A shall be made using the Test Laboratory Application Form (hereafter referred to as the &#x201C;Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website. The application form must be endorsed (signed) by a representative of an OIML Issuing Authority, and the Test Laboratory application shall be made in conjunction with a corresponding application by the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) to include the Test Laboratory in its scope.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The following information shall be provided on the Application Form or in accompanying documents:</p>
+          <list list-type="order" id="_0f9b76b2-a847-7ffa-b699-9b16597841b4">
+            <list-item>a)information about the assessment of competency (peer assessment and/or accreditation as detailed in 5.2);</list-item>
+            <list-item>b)designation and contact details of the Test Laboratory and whether it is an internal Test Laboratory, a third-party Test Laboratory or an Manufacturer Test Laboratory;</list-item>
+            <list-item>c)a list of the tests and examinations of the relevant OIML Recommendation it performs;</list-item>
+            <list-item>d)information about its type testing capabilities, including capabilities at sites outside its permanent control;</list-item>
+            <list-item>e)in the case of a Manufacturer Test Laboratory: the procedures between the OIML Issuing Authority and the Manufacturer Test Laboratory to manage the controlled supervision<xref rid="fn_1" ref-type="fn">1</xref>;</list-item>
+            <list-item>f)in the case of accreditation, a copy of the certificate of accreditation and the scope of accreditation of the Test Laboratory and a copy of the most recent accreditation assessment report which includes the relevant scope of its Declaration and enough information that an assessment of the legal metrology aspects of the accreditation can be determined, if accreditation applies;</list-item>
+            <list-item>g)in the case of peer assessment, a copy of the peer assessment report covering the relevant scope of the Test Laboratory;</list-item>
+            <list-item>h)a copy of the most recent internal audit of the Test Laboratory (whether it is accredited or not) conducted on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020 for the relevant scope;</list-item>
+            <list-item>i)the results of intercomparisons conducted in the relevant field, if any;</list-item>
+            <list-item>j)a copy of the most recent OIML test report issued<xref rid="fn_2" ref-type="fn">2</xref> for each of the considered categories.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Application Form and accompanying information shall be sent to the Executive Secretary either by a representative of the OIML Issuing Authority which endorsed the application, or by a representative of the Test Laboratory.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Assessment requirements for Test Laboratories</title>
+        <sec>
+          <label>0</label>
+          <title>General</title>
+          <sec>
+            <label>0</label>
+            <p>All Test Laboratories under Scheme A shall be assessed by accreditation and/or peer assessment using requirements that comply with ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020 for the scope of the measuring instrument category(ies). In either case, the assessment process must comply with the requirements detailed below. An accreditation assessment report and/or peer assessment report that will be used to support an application shall include the name(s) of the OIML expert(s), where applicable (see 5.2.2.3), that participated in the respective assessment.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>OIML Test Laboratories may seek accreditation or peer assessment to perform testing at sites or facilities outside its permanent control as per clause 6.3.5 of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017. This may include testing measuring instruments at a field site and/or at the site of its installation and use. Under the OIML-CS such testing may be necessary when the measuring instrument is not able to be tested in a controlled laboratory environment due to its size or operational capacity (e.g. continuous totalizing automatic weighing instruments (belt weighers) or automatic rail-weighbridges). Where the scope of the OIML Test Laboratory (supported by their ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 accreditation or peer assessment) allows for such testing to be performed, the test results may be used as part of an OIML test report in accordance with OIML-CS OIML-CS&#xA0;PD-05.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>A combination of accreditation and peer assessment processes (and the associated accreditation assessment reports and/or peer assessment reports) may be used to support the demonstration of competency as part of an application to be an OIML Test Laboratory.</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Accreditation</title>
+          <sec>
+            <label>0</label>
+            <p>Where accreditation is chosen, the Accreditation Body that carries out the assessment of a Test Laboratory under the OIML-CS shall participate in a mutual recognition arrangement among Accrediting Bodies (regional or international), for instance the ILAC MRA (International Laboratory Accreditation Cooperation Mutual Recognition Arrangement)<xref rid="fn_3" ref-type="fn">3</xref>.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The assessment team shall include a Legal Metrology Expert, approved by the Management Committee, for each category of measuring instrument in the intended scope of the new Test Laboratory in the most recent accreditation assessment. It is possible to use Legal Metrology Experts that have not yet been approved by the Management Committee on the condition that the requirements of OIML-CS&#xA0;PD-02, 8.3 are followed.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The use of an Accreditation Body expert, in place of a Legal Metrology Expert, may be permitted by the Executive Secretary in accordance with the following conditions:</p>
+            <list list-type="order" id="_b7707240-fec0-5793-77e2-21c585f94067">
+              <list-item>a)The use of an Accreditation Body expert shall only be permitted for an accreditation assessment of an existing OIML Test Laboratories to support an application to extend its scope or to maintain an existing accreditation. Accreditation assessments intended to support applications for new OIML Test Laboratories shall always include at least one Legal Metrology Expert.</list-item>
+              <list-item>b)The OIML Issuing Authority that has, or is seeking to have, the Test Laboratory on their scope shall make a written request to the Executive Secretary to use an Accreditation Body Expert in place of a Legal Metrology Expert, prior to the assessment taking place. The request shall include a justification for the use of the Accreditation Body expert and information regarding the relevant competences and experience of the Accreditation Body expert.</list-item>
+              <list-item>c)The Executive Secretary shall consult with the Management Committee Chairperson and Review Committee Chairperson prior to permitting the use of the Accreditation Body expert.</list-item>
+              <list-item>d)The Review Committee shall be informed when an Accreditation Body expert has been used in place of a Legal Metrology Expert for an accreditation assessment. This should be documented in the accreditation assessment report and as part of the application process.</list-item>
+              <list-item>e)A Legal Metrology Expert shall be used at the next available opportunity, e.g. at the next routine surveillance or re-assessment visit.</list-item>
+            </list>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The accreditation body shall ensure that all members of the assessment team are impartial and independent and not directly associated with the OIML Issuing Authority and Test Laboratory.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>Subject to the rules of the Accreditation Body and the discretion of the team leader, remote assessment techniques may be used to support and supplement on-site accreditation assessments. The use of such techniques shall not compromise the integrity or the findings of the accreditation assessment.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>Further information can be found in the Joint ILAC-OIML Assessment Procedure Joint&#xA0;OIML-ILAC.</p>
+          </sec>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Peer assessment</title>
+          <sec>
+            <label>0</label>
+            <p>Where peer assessment is chosen, the peer assessment shall be carried out by a team of experts that will include a Management System Expert (team leader), approved by the Management Committee, knowledgeable in assessing quality management systems of Test Laboratories on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017, and one Legal Metrology Expert, approved by the Management Committee, per category of measuring instrument.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The assessment team shall include all the necessary competencies required to complete the assessment of the Test Laboratory. The assessment team may comprise any number of people (as agreed to between the applicant and the team leader), however it shall contain a team leader, Experts with suitable assessment experience and Experts with suitable legal metrology knowledge.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The OIML Issuing Authority is responsible for arranging the peer assessment of the Test Laboratory. The OIML Issuing Authority shall make the necessary arrangements for an assessment team to be formed from the list of approved experts and will inform the Executive Secretary. It is possible to use experts that have not yet been approved by the Management Committee on the condition that the requirements of OIML-CS&#xA0;PD-02, 8.3 are followed. The team leader and Legal Metrology Expert(s) shall be impartial and independent and shall not be directly associated with the OIML Issuing Authority and Test Laboratory. The team leader and Legal Metrology Expert(s) shall declare their impartiality and independence prior to the assessment. The OIML Issuing Authority or the Test Laboratory is responsible for bearing the cost of the assessment team. The Executive Secretary shall forward the Application Form and all relevant information to the members of the assessment team to enable them to commence their assessment. The assessment team shall review the Application Form and the submitted documentation. If necessary the team leader may request additional information from the OIML Issuing Authority. The initial planning is carried out for the number of days and the number of assessors on site. The date for the assessment is agreed between the Test Laboratory, OIML Issuing Authority and the assessment team.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>The assessment visit shall be undertaken in accordance with ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020. The findings will be discussed with the Test Laboratory and OIML Issuing Authority at the end of the assessment. The assessment team will complete a Test Laboratory Peer Assessment Report form. A copy will be given to the Test Laboratory and OIML Issuing Authority and a copy will be sent by the team leader to the Executive Secretary.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>Any issues or non-compliances identified during the assessment process must be resolved by the Test Laboratory to the satisfaction of the assessment team. In some cases, it may be necessary for a follow-up visit by one or more members of the assessment team. The final peer assessment reports are sent by the team leader for submission to the Executive Secretary. Where non-conformities identified during the site visit require rectification or corrective action by the Test Laboratory, the team leader shall review the corrective actions and determine whether the item(s) raised have been sufficiently addressed in order to close the issue. Where non-compliances, identified during the site visit, remain unresolved more than 12 months beyond the site visit, the Executive Secretary shall manage the difficulties in consultation with the team leader.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>Subject to the discretion of the team leader, remote assessment techniques may be used to support and supplement on-site peer assessments. The use of such techniques shall not compromise the integrity or the findings of the peer assessment.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Approval process</title>
+        <sec>
+          <label>0</label>
+          <p>The Executive Secretary will review the Application Form and the accompanying information and will complete the Executive Secretary Review section of the Application Form. The Executive Secretary may request further information to be supplied by the OIML Issuing Authority and/or the Test Laboratory.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Documentation review and approval</title>
+          <sec>
+            <label>0</label>
+            <p>Once the Executive Secretary has reviewed the Application Form and the accompanying information, including the relevant accreditation assessment report and/or peer assessment report, and is satisfied that all information is present the Executive Secretary will distribute the Application Form and all of the accompanying information to the Review Committee for review. Where the Review Committee review raises questions and/or dissatisfaction the Executive Secretary will refer the matter to the OIML Issuing Authority/Test Laboratory, or to the team leader in the case of questions/concerns being raised regarding the peer assessment report, to seek additional information. Any additional information supplied will be circulated to the Review Committee members.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>When the members of the Review Committee have completed their review of the Application Form and accompanying information the Review Committee will provide a recommendation to the Management Committee on the approval or rejection of the Test Laboratory. The recommendation is recorded in the Review Committee Recommendation section of the Application Form and is sent to the Executive Secretary. In the event that the Review Committee makes a recommendation to approve the Test Laboratory the Executive Secretary shall forward the Application Form (including, where relevant, the corresponding application from the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) to the Management Committee for approval. In the event that the Review Committee does not make a recommendation to approve the Test Laboratory the Executive Secretary shall notify the OIML Issuing Authority and the Test Laboratory of the decision and the reason(s) for rejection.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>Where the Review Committee has made a positive recommendation, the Management Committee shall vote on the approval of the Test Laboratory. If the Management Committee rejects the application then the Management Committee shall specify the reason(s) for the rejection. The Executive Secretary shall notify the OIML Issuing Authority and the Test Laboratory of the rejection and the associated reasons and further action will be discussed at the next Management Committee meeting or by correspondence. If the application is approved the Executive Secretary shall notify the OIML Issuing Authority of the approval.</p>
+          </sec>
+          <sec>
+            <label>0</label>
+            <p>When the Declaration of the OIML Issuing Authority has been updated to include the Test Laboratory the Executive Secretary will also update the list of Test Laboratories on the OIML-CS pages of the OIML website. == Application for a Test Laboratory under Scheme B</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Application and accompanying information</title>
+        <sec>
+          <label>0</label>
+          <p>An application to be a Test Laboratory in the OIML-CS under Scheme B shall be made using the Test Laboratory Application Form (hereafter referred to as the &#x201C;Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website. The application form must be endorsed (signed) by a representative of an OIML Issuing Authority, and the Test Laboratory application shall be made in conjunction with a corresponding application by the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) to include the Test Laboratory in its scope.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The following information shall be provided on the Application Form or in accompanying documents:</p>
+          <list list-type="order" id="_49e57bab-77c2-efc0-55b9-d0a15a4be3c9">
+            <list-item>a)information about the assessment of competency (on the basis of a self-declaration);</list-item>
+            <list-item>b)designation and contact details of the Test Laboratory and whether it is an internal Test Laboratory, a third-party Test Laboratory or a Manufacturer Test Laboratory;</list-item>
+            <list-item>c)a definition of the capability of the Test Laboratory in terms of the tests and examinations of the relevant OIML Recommendation(s) and of additional national requirements included in its Declaration, if applicable, it performs;</list-item>
+            <list-item>d)information about its type testing capabilities, e.g. flow range, temperature range, etc.;</list-item>
+            <list-item>e)evidence to support the self-declaration, e.g. internal assessment reports on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020 for the relevant scope.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Application Form and accompanying information shall be sent to the Executive Secretary either by a representative of the OIML Issuing Authority which endorsed the application, or a representative of the Test Laboratory.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Application review and approval</title>
+        <sec>
+          <label>0</label>
+          <p>Once the Executive Secretary has reviewed the Application Form and accompanying information, including the relevant self-declaration, and is satisfied that all information is present the Executive Secretary will complete the Executive Secretary Review section of the Application Form. The Executive Secretary may request further information to be supplied by the OIML Issuing Authority and/or the Test Laboratory.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The procedure in 5.3.2 shall be followed. == Additional requirements for Manufacturer Test Laboratories</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In order to address potential conflicts of interest the Manufacturer Test Laboratory shall operate under the controlled supervision of at least one OIML Issuing Authority that is identified in its Declaration. In the case where two or more OIML Issuing Authorities want to make use of the same Manufacturer Test Laboratory, this must be clearly stated in its Declaration and the OIML Issuing Authority responsible for the supervision of the Manufacturer Test Laboratory must also be identified. The controlled supervision includes at least the following safeguards:</p>
+        <list list-type="order" id="_97bd656f-a257-5664-f5b4-3f07ca30a97b">
+          <list-item>a)the OIML Issuing Authority has clear and documented instructions (quality system procedures) for the Manufacturer Test Laboratory concerning the test program and the equipment under test (EUT);</list-item>
+          <list-item>b)the OIML Issuing Authority has clear and documented instructions (quality system procedures) for the Manufacturer Test Laboratory in the case that the EUT fails before the test program is finished;</list-item>
+          <list-item>c)the OIML Issuing Authority is informed when the Manufacturer Test Laboratory starts and finishes the agreed tests;</list-item>
+          <list-item>d)the OIML Issuing Authority or an authorised representative is allowed to make short-notice visits to the manufacturer&#x2019;s site to witness tests performed at the Manufacturer Test Laboratory as considered necessary by the OIML Issuing Authority;</list-item>
+          <list-item>e)after finishing the tests, the OIML Issuing Authority may request that the EUT tested by the Manufacturer Test Laboratory be submitted to its internal and/or subcontracting laboratory for re-tests (spot checks) that the OIML Issuing Authority considers necessary; for these re-tests the OIML Issuing Authority may&#x2009;&#x2014;&#x2009;with the applicant&#x2019;s consent&#x2009;&#x2014;&#x2009;use another OIML Issuing Authority&#x2019;s registered laboratory;</list-item>
+          <list-item>f)a Manufacturer Test Laboratory shall not subcontract testing.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The OIML Issuing Authority shall exercise a controlled supervision as defined in 7.1. The safeguards and actions to be taken in the case of EUT failure have to be documented by written procedures in the quality management systems of both the Manufacturer Test Laboratory and the OIML Issuing Authority. Their effectiveness is subject to regular surveillance audits as part of the accreditation assessment or peer assessment under Scheme A, or the internal audits in the case of Scheme B.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In order to ensure sufficient independence and impartiality of the Manufacturer Test Laboratory as part of a larger organisation (company) the quality manual and other supporting documents of the organisation shall demonstrate that there are suitable provisions that ensure that the Manufacturer Test Laboratory&#x2019;s personnel are free from any undue commercial, financial or other pressures which might influence their technical judgement. In particular, the following is mandatory:</p>
+        <list list-type="order" id="_50c28340-9d5a-817f-7154-2a8b5da37004">
+          <list-item>a)the Manufacturer Test Laboratory is a clearly defined Organisational Unit (OU) within the company, or part of such an OU, where procedures exist that define the specific responsibilities of the Manufacturer Test Laboratory and the interactions between the Manufacturer Test Laboratory and other OUs of the company;</list-item>
+          <list-item>b)there is an organisational chart that shows the existence of the Manufacturer Test Laboratory and its position in the organisational structure;</list-item>
+          <list-item>c)the Manufacturer Test Laboratory staff members, including the head of the Manufacturer Test Laboratory, are identified and their competencies and responsibilities are described;</list-item>
+          <list-item>d)there is evidence that the head of the Manufacturer Test Laboratory is free of any responsibilities or other pressures which may influence his/her technical judgement, and that he/she is responsible to a member of the top management in all technical conclusions.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Under Scheme A, the suitability and effectiveness of the procedures described above are evaluated as part of the ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 accreditation or included in the scope of the peer assessment of the corresponding OIML Issuing Authority. Under Scheme B, the suitability and effectiveness of the procedures described above are evaluated as part of the internal audit of the corresponding OIML Issuing Authority.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Several OIML Issuing Authorities may designate the same Manufacturer Test Laboratory<xref rid="fn_4" ref-type="fn">4</xref>. In this case, upon agreement among the OIML Issuing Authorities, one of them may be identified in its Declaration as the principal OIML Issuing Authority that is responsible for the procedures and information required according to 7.1 through 7.4. Nevertheless, the remaining OIML Issuing Authorities that include the Manufacturer Test Laboratory on their Declarations still retain responsibility for confirming that the procedures and information required according to 7.1 through 7.4 are satisfied prior to utilising the Manufacturer Test Laboratory.
+== Extension or reduction of scope of a Test Laboratory</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where a Test Laboratory wishes to reduce its scope the relevant OIML Issuing Authority shall inform the Executive Secretary. The Executive Secretary shall amend the scope of the Test Laboratory on the OIML-CS pages of the OIML website. Approval of the Management Committee is not required in this situation, although the Executive Secretary will notify the Management Committee of the change.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A Test Laboratory may apply to extend its scope by completing the Application Form and selecting the option for Modification/extension to scope in section 4. The Application Form must be endorsed by an OIML Issuing Authority. The Application Form and relevant accompanying information shall be sent to the Executive Secretary, either by a representative of the OIML Issuing Authority which endorsed the application, or a representative of the Test Laboratory. The Executive Secretary will process the application in accordance with the relevant and appropriate procedures detailed above.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where the Test Laboratory already has an edition of an OIML Recommendation in its scope, and it wishes to add a new edition of the OIML Recommendation to its scope following an update of the OIML Recommendation, it is sufficient for the Test Laboratory to provide a gap analysis as evidence of its competence. An accreditation assessment and/or peer assessment, according to the new edition of the OIML Recommendation, is not required in this instance.Note Note0.18,NoteThis process for an extension of scope does not apply in the case where an OIML Recommendation has been revised. See OIML B 6-1 OIML&#xA0;B&#xA0;6-1:2023 for information regarding the review process for OIML publications. == Withdrawal of a Test Laboratory from the OIML-CS</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A Test Laboratory may decide, for operational, business or commercial reasons, to withdraw as a Test Laboratory from the OIML-CS, or to reduce their scope. In the event that a Test Laboratory wishes to withdraw from the OIML-CS or to reduce their scope, the Test Laboratory shall give notice, via the relevant OIML Issuing Authority, to the Executive Secretary of its intention, but shall meet all current obligations to customers before actual withdrawal or reduction of scope.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If the Test Laboratory is withdrawn from the OIML-CS at the proposal of the Management Committee, any ongoing applications shall be completed under the conditions defined by the Management Committee. These conditions should take into account the fact that tests and examinations may already have started.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Assessment and approval of Test Laboratories</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_82e6bca3-8bc9-24bb-9caa-b4d27250c9cf">
+        <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2025 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2025 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the requirements and the associated procedures for including a Test Laboratory in the OIML-CS, including the processes relating to the assessment of a Test Laboratory, the Review Committee review and Management Committee approval. This publication should be used in conjunction with the associated procedures for OIML Issuing Authorities as detailed in OIML-CS&#xA0;PD-03.</p>
+      <p>These procedures apply to the following Test Laboratories:</p>
+      <list list-type="order" id="_e0da21fb-3885-96cd-db38-94d718568972">
+        <list-item>a)An internal Test Laboratory of an OIML Issuing Authority;</list-item>
+        <list-item>b)A third-party Test Laboratory; and</list-item>
+        <list-item>c)A Manufacturer Test Laboratory.</list-item>
+      </list>
+      <p>These procedures relate to the framework for the OIML-CS as given in OIML B 18 OIML&#xA0;B&#xA0;18:2025, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-01, OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06, OIML-CS&#xA0;PD-07, OIML-CS&#xA0;PD-08 and OIML-CS&#xA0;PD-09. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2025 apply. == General</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Application</title>
+      <p>A certification body in an OIML Member State may apply to be an OIML Issuing Authority. Any application to be an OIML Issuing Authority (see OIML-CS&#xA0;PD-03) shall be accompanied by a corresponding application to include one or more Test Laboratories as detailed in this document. An existing OIML Issuing Authority may also apply to add a Test Laboratory using the procedures detailed in this document.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Role of the Management Committee and the Review Committee</title>
+      <p>The Management Committee is responsible for the approval or rejection of OIML Issuing Authorities applications (see OIML-CS&#xA0;PD-03) and their associated Test Laboratories, including extensions to scope, under Scheme A and Scheme B. The Review Committee is used to provide a recommendation to the Management Committee on the approval or rejection of applications for OIML Issuing Authorities (see OIML-CS&#xA0;PD-03) and their Test Laboratories including extensions to scope.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Requirements for Test Laboratories to demonstrate competence</title>
+      <sec>
+        <label>0</label>
+        <p>Test Laboratories shall demonstrate their competence through compliance with ISO/IEC 17025 ISO/IEC&#xA0;17025:2017.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML publication D 30 OIML&#xA0;D&#xA0;30:2020 provides guidance and interpretations regarding the application of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017. == Application for a Test Laboratory under Scheme A</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Application and accompanying information</title>
+      <sec>
+        <label>0</label>
+        <p>An application to be a Test Laboratory in the OIML-CS under Scheme A shall be made using the Test Laboratory Application Form (hereafter referred to as the &#x201C;Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website. The application form must be endorsed (signed) by a representative of an OIML Issuing Authority, and the Test Laboratory application shall be made in conjunction with a corresponding application by the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) to include the Test Laboratory in its scope.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The following information shall be provided on the Application Form or in accompanying documents:</p>
+        <list list-type="order" id="_0f9b76b2-a847-7ffa-b699-9b16597841b4">
+          <list-item>a)information about the assessment of competency (peer assessment and/or accreditation as detailed in 5.2);</list-item>
+          <list-item>b)designation and contact details of the Test Laboratory and whether it is an internal Test Laboratory, a third-party Test Laboratory or an Manufacturer Test Laboratory;</list-item>
+          <list-item>c)a list of the tests and examinations of the relevant OIML Recommendation it performs;</list-item>
+          <list-item>d)information about its type testing capabilities, including capabilities at sites outside its permanent control;</list-item>
+          <list-item>e)in the case of a Manufacturer Test Laboratory: the procedures between the OIML Issuing Authority and the Manufacturer Test Laboratory to manage the controlled supervision<xref rid="fn_1" ref-type="fn">1</xref>;</list-item>
+          <list-item>f)in the case of accreditation, a copy of the certificate of accreditation and the scope of accreditation of the Test Laboratory and a copy of the most recent accreditation assessment report which includes the relevant scope of its Declaration and enough information that an assessment of the legal metrology aspects of the accreditation can be determined, if accreditation applies;</list-item>
+          <list-item>g)in the case of peer assessment, a copy of the peer assessment report covering the relevant scope of the Test Laboratory;</list-item>
+          <list-item>h)a copy of the most recent internal audit of the Test Laboratory (whether it is accredited or not) conducted on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020 for the relevant scope;</list-item>
+          <list-item>i)the results of intercomparisons conducted in the relevant field, if any;</list-item>
+          <list-item>j)a copy of the most recent OIML test report issued<xref rid="fn_2" ref-type="fn">2</xref> for each of the considered categories.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Application Form and accompanying information shall be sent to the Executive Secretary either by a representative of the OIML Issuing Authority which endorsed the application, or by a representative of the Test Laboratory.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Assessment requirements for Test Laboratories</title>
+      <sec>
+        <label>0</label>
+        <title>General</title>
+        <sec>
+          <label>0</label>
+          <p>All Test Laboratories under Scheme A shall be assessed by accreditation and/or peer assessment using requirements that comply with ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020 for the scope of the measuring instrument category(ies). In either case, the assessment process must comply with the requirements detailed below. An accreditation assessment report and/or peer assessment report that will be used to support an application shall include the name(s) of the OIML expert(s), where applicable (see 5.2.2.3), that participated in the respective assessment.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>OIML Test Laboratories may seek accreditation or peer assessment to perform testing at sites or facilities outside its permanent control as per clause 6.3.5 of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017. This may include testing measuring instruments at a field site and/or at the site of its installation and use. Under the OIML-CS such testing may be necessary when the measuring instrument is not able to be tested in a controlled laboratory environment due to its size or operational capacity (e.g. continuous totalizing automatic weighing instruments (belt weighers) or automatic rail-weighbridges). Where the scope of the OIML Test Laboratory (supported by their ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 accreditation or peer assessment) allows for such testing to be performed, the test results may be used as part of an OIML test report in accordance with OIML-CS OIML-CS&#xA0;PD-05.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>A combination of accreditation and peer assessment processes (and the associated accreditation assessment reports and/or peer assessment reports) may be used to support the demonstration of competency as part of an application to be an OIML Test Laboratory.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Accreditation</title>
+        <sec>
+          <label>0</label>
+          <p>Where accreditation is chosen, the Accreditation Body that carries out the assessment of a Test Laboratory under the OIML-CS shall participate in a mutual recognition arrangement among Accrediting Bodies (regional or international), for instance the ILAC MRA (International Laboratory Accreditation Cooperation Mutual Recognition Arrangement)<xref rid="fn_3" ref-type="fn">3</xref>.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The assessment team shall include a Legal Metrology Expert, approved by the Management Committee, for each category of measuring instrument in the intended scope of the new Test Laboratory in the most recent accreditation assessment. It is possible to use Legal Metrology Experts that have not yet been approved by the Management Committee on the condition that the requirements of OIML-CS&#xA0;PD-02, 8.3 are followed.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The use of an Accreditation Body expert, in place of a Legal Metrology Expert, may be permitted by the Executive Secretary in accordance with the following conditions:</p>
+          <list list-type="order" id="_b7707240-fec0-5793-77e2-21c585f94067">
+            <list-item>a)The use of an Accreditation Body expert shall only be permitted for an accreditation assessment of an existing OIML Test Laboratories to support an application to extend its scope or to maintain an existing accreditation. Accreditation assessments intended to support applications for new OIML Test Laboratories shall always include at least one Legal Metrology Expert.</list-item>
+            <list-item>b)The OIML Issuing Authority that has, or is seeking to have, the Test Laboratory on their scope shall make a written request to the Executive Secretary to use an Accreditation Body Expert in place of a Legal Metrology Expert, prior to the assessment taking place. The request shall include a justification for the use of the Accreditation Body expert and information regarding the relevant competences and experience of the Accreditation Body expert.</list-item>
+            <list-item>c)The Executive Secretary shall consult with the Management Committee Chairperson and Review Committee Chairperson prior to permitting the use of the Accreditation Body expert.</list-item>
+            <list-item>d)The Review Committee shall be informed when an Accreditation Body expert has been used in place of a Legal Metrology Expert for an accreditation assessment. This should be documented in the accreditation assessment report and as part of the application process.</list-item>
+            <list-item>e)A Legal Metrology Expert shall be used at the next available opportunity, e.g. at the next routine surveillance or re-assessment visit.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The accreditation body shall ensure that all members of the assessment team are impartial and independent and not directly associated with the OIML Issuing Authority and Test Laboratory.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Subject to the rules of the Accreditation Body and the discretion of the team leader, remote assessment techniques may be used to support and supplement on-site accreditation assessments. The use of such techniques shall not compromise the integrity or the findings of the accreditation assessment.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Further information can be found in the Joint ILAC-OIML Assessment Procedure Joint&#xA0;OIML-ILAC.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Peer assessment</title>
+        <sec>
+          <label>0</label>
+          <p>Where peer assessment is chosen, the peer assessment shall be carried out by a team of experts that will include a Management System Expert (team leader), approved by the Management Committee, knowledgeable in assessing quality management systems of Test Laboratories on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017, and one Legal Metrology Expert, approved by the Management Committee, per category of measuring instrument.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The assessment team shall include all the necessary competencies required to complete the assessment of the Test Laboratory. The assessment team may comprise any number of people (as agreed to between the applicant and the team leader), however it shall contain a team leader, Experts with suitable assessment experience and Experts with suitable legal metrology knowledge.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The OIML Issuing Authority is responsible for arranging the peer assessment of the Test Laboratory. The OIML Issuing Authority shall make the necessary arrangements for an assessment team to be formed from the list of approved experts and will inform the Executive Secretary. It is possible to use experts that have not yet been approved by the Management Committee on the condition that the requirements of OIML-CS&#xA0;PD-02, 8.3 are followed. The team leader and Legal Metrology Expert(s) shall be impartial and independent and shall not be directly associated with the OIML Issuing Authority and Test Laboratory. The team leader and Legal Metrology Expert(s) shall declare their impartiality and independence prior to the assessment. The OIML Issuing Authority or the Test Laboratory is responsible for bearing the cost of the assessment team. The Executive Secretary shall forward the Application Form and all relevant information to the members of the assessment team to enable them to commence their assessment. The assessment team shall review the Application Form and the submitted documentation. If necessary the team leader may request additional information from the OIML Issuing Authority. The initial planning is carried out for the number of days and the number of assessors on site. The date for the assessment is agreed between the Test Laboratory, OIML Issuing Authority and the assessment team.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The assessment visit shall be undertaken in accordance with ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020. The findings will be discussed with the Test Laboratory and OIML Issuing Authority at the end of the assessment. The assessment team will complete a Test Laboratory Peer Assessment Report form. A copy will be given to the Test Laboratory and OIML Issuing Authority and a copy will be sent by the team leader to the Executive Secretary.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Any issues or non-compliances identified during the assessment process must be resolved by the Test Laboratory to the satisfaction of the assessment team. In some cases, it may be necessary for a follow-up visit by one or more members of the assessment team. The final peer assessment reports are sent by the team leader for submission to the Executive Secretary. Where non-conformities identified during the site visit require rectification or corrective action by the Test Laboratory, the team leader shall review the corrective actions and determine whether the item(s) raised have been sufficiently addressed in order to close the issue. Where non-compliances, identified during the site visit, remain unresolved more than 12 months beyond the site visit, the Executive Secretary shall manage the difficulties in consultation with the team leader.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Subject to the discretion of the team leader, remote assessment techniques may be used to support and supplement on-site peer assessments. The use of such techniques shall not compromise the integrity or the findings of the peer assessment.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Approval process</title>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary will review the Application Form and the accompanying information and will complete the Executive Secretary Review section of the Application Form. The Executive Secretary may request further information to be supplied by the OIML Issuing Authority and/or the Test Laboratory.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Documentation review and approval</title>
+        <sec>
+          <label>0</label>
+          <p>Once the Executive Secretary has reviewed the Application Form and the accompanying information, including the relevant accreditation assessment report and/or peer assessment report, and is satisfied that all information is present the Executive Secretary will distribute the Application Form and all of the accompanying information to the Review Committee for review. Where the Review Committee review raises questions and/or dissatisfaction the Executive Secretary will refer the matter to the OIML Issuing Authority/Test Laboratory, or to the team leader in the case of questions/concerns being raised regarding the peer assessment report, to seek additional information. Any additional information supplied will be circulated to the Review Committee members.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>When the members of the Review Committee have completed their review of the Application Form and accompanying information the Review Committee will provide a recommendation to the Management Committee on the approval or rejection of the Test Laboratory. The recommendation is recorded in the Review Committee Recommendation section of the Application Form and is sent to the Executive Secretary. In the event that the Review Committee makes a recommendation to approve the Test Laboratory the Executive Secretary shall forward the Application Form (including, where relevant, the corresponding application from the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) to the Management Committee for approval. In the event that the Review Committee does not make a recommendation to approve the Test Laboratory the Executive Secretary shall notify the OIML Issuing Authority and the Test Laboratory of the decision and the reason(s) for rejection.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where the Review Committee has made a positive recommendation, the Management Committee shall vote on the approval of the Test Laboratory. If the Management Committee rejects the application then the Management Committee shall specify the reason(s) for the rejection. The Executive Secretary shall notify the OIML Issuing Authority and the Test Laboratory of the rejection and the associated reasons and further action will be discussed at the next Management Committee meeting or by correspondence. If the application is approved the Executive Secretary shall notify the OIML Issuing Authority of the approval.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>When the Declaration of the OIML Issuing Authority has been updated to include the Test Laboratory the Executive Secretary will also update the list of Test Laboratories on the OIML-CS pages of the OIML website. == Application for a Test Laboratory under Scheme B</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Application and accompanying information</title>
+      <sec>
+        <label>0</label>
+        <p>An application to be a Test Laboratory in the OIML-CS under Scheme B shall be made using the Test Laboratory Application Form (hereafter referred to as the &#x201C;Application Form&#x201D;) which can be found on the OIML-CS pages of the OIML website. The application form must be endorsed (signed) by a representative of an OIML Issuing Authority, and the Test Laboratory application shall be made in conjunction with a corresponding application by the OIML Issuing Authority (see OIML-CS&#xA0;PD-03) to include the Test Laboratory in its scope.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The following information shall be provided on the Application Form or in accompanying documents:</p>
+        <list list-type="order" id="_49e57bab-77c2-efc0-55b9-d0a15a4be3c9">
+          <list-item>a)information about the assessment of competency (on the basis of a self-declaration);</list-item>
+          <list-item>b)designation and contact details of the Test Laboratory and whether it is an internal Test Laboratory, a third-party Test Laboratory or a Manufacturer Test Laboratory;</list-item>
+          <list-item>c)a definition of the capability of the Test Laboratory in terms of the tests and examinations of the relevant OIML Recommendation(s) and of additional national requirements included in its Declaration, if applicable, it performs;</list-item>
+          <list-item>d)information about its type testing capabilities, e.g. flow range, temperature range, etc.;</list-item>
+          <list-item>e)evidence to support the self-declaration, e.g. internal assessment reports on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 and OIML D 30 OIML&#xA0;D&#xA0;30:2020 for the relevant scope.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Application Form and accompanying information shall be sent to the Executive Secretary either by a representative of the OIML Issuing Authority which endorsed the application, or a representative of the Test Laboratory.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Application review and approval</title>
+      <sec>
+        <label>0</label>
+        <p>Once the Executive Secretary has reviewed the Application Form and accompanying information, including the relevant self-declaration, and is satisfied that all information is present the Executive Secretary will complete the Executive Secretary Review section of the Application Form. The Executive Secretary may request further information to be supplied by the OIML Issuing Authority and/or the Test Laboratory.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The procedure in 5.3.2 shall be followed. == Additional requirements for Manufacturer Test Laboratories</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>In order to address potential conflicts of interest the Manufacturer Test Laboratory shall operate under the controlled supervision of at least one OIML Issuing Authority that is identified in its Declaration. In the case where two or more OIML Issuing Authorities want to make use of the same Manufacturer Test Laboratory, this must be clearly stated in its Declaration and the OIML Issuing Authority responsible for the supervision of the Manufacturer Test Laboratory must also be identified. The controlled supervision includes at least the following safeguards:</p>
+      <list list-type="order" id="_97bd656f-a257-5664-f5b4-3f07ca30a97b">
+        <list-item>a)the OIML Issuing Authority has clear and documented instructions (quality system procedures) for the Manufacturer Test Laboratory concerning the test program and the equipment under test (EUT);</list-item>
+        <list-item>b)the OIML Issuing Authority has clear and documented instructions (quality system procedures) for the Manufacturer Test Laboratory in the case that the EUT fails before the test program is finished;</list-item>
+        <list-item>c)the OIML Issuing Authority is informed when the Manufacturer Test Laboratory starts and finishes the agreed tests;</list-item>
+        <list-item>d)the OIML Issuing Authority or an authorised representative is allowed to make short-notice visits to the manufacturer&#x2019;s site to witness tests performed at the Manufacturer Test Laboratory as considered necessary by the OIML Issuing Authority;</list-item>
+        <list-item>e)after finishing the tests, the OIML Issuing Authority may request that the EUT tested by the Manufacturer Test Laboratory be submitted to its internal and/or subcontracting laboratory for re-tests (spot checks) that the OIML Issuing Authority considers necessary; for these re-tests the OIML Issuing Authority may&#x2009;&#x2014;&#x2009;with the applicant&#x2019;s consent&#x2009;&#x2014;&#x2009;use another OIML Issuing Authority&#x2019;s registered laboratory;</list-item>
+        <list-item>f)a Manufacturer Test Laboratory shall not subcontract testing.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The OIML Issuing Authority shall exercise a controlled supervision as defined in 7.1. The safeguards and actions to be taken in the case of EUT failure have to be documented by written procedures in the quality management systems of both the Manufacturer Test Laboratory and the OIML Issuing Authority. Their effectiveness is subject to regular surveillance audits as part of the accreditation assessment or peer assessment under Scheme A, or the internal audits in the case of Scheme B.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>In order to ensure sufficient independence and impartiality of the Manufacturer Test Laboratory as part of a larger organisation (company) the quality manual and other supporting documents of the organisation shall demonstrate that there are suitable provisions that ensure that the Manufacturer Test Laboratory&#x2019;s personnel are free from any undue commercial, financial or other pressures which might influence their technical judgement. In particular, the following is mandatory:</p>
+      <list list-type="order" id="_50c28340-9d5a-817f-7154-2a8b5da37004">
+        <list-item>a)the Manufacturer Test Laboratory is a clearly defined Organisational Unit (OU) within the company, or part of such an OU, where procedures exist that define the specific responsibilities of the Manufacturer Test Laboratory and the interactions between the Manufacturer Test Laboratory and other OUs of the company;</list-item>
+        <list-item>b)there is an organisational chart that shows the existence of the Manufacturer Test Laboratory and its position in the organisational structure;</list-item>
+        <list-item>c)the Manufacturer Test Laboratory staff members, including the head of the Manufacturer Test Laboratory, are identified and their competencies and responsibilities are described;</list-item>
+        <list-item>d)there is evidence that the head of the Manufacturer Test Laboratory is free of any responsibilities or other pressures which may influence his/her technical judgement, and that he/she is responsible to a member of the top management in all technical conclusions.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Under Scheme A, the suitability and effectiveness of the procedures described above are evaluated as part of the ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 accreditation or included in the scope of the peer assessment of the corresponding OIML Issuing Authority. Under Scheme B, the suitability and effectiveness of the procedures described above are evaluated as part of the internal audit of the corresponding OIML Issuing Authority.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Several OIML Issuing Authorities may designate the same Manufacturer Test Laboratory<xref rid="fn_4" ref-type="fn">4</xref>. In this case, upon agreement among the OIML Issuing Authorities, one of them may be identified in its Declaration as the principal OIML Issuing Authority that is responsible for the procedures and information required according to 7.1 through 7.4. Nevertheless, the remaining OIML Issuing Authorities that include the Manufacturer Test Laboratory on their Declarations still retain responsibility for confirming that the procedures and information required according to 7.1 through 7.4 are satisfied prior to utilising the Manufacturer Test Laboratory.
+== Extension or reduction of scope of a Test Laboratory</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where a Test Laboratory wishes to reduce its scope the relevant OIML Issuing Authority shall inform the Executive Secretary. The Executive Secretary shall amend the scope of the Test Laboratory on the OIML-CS pages of the OIML website. Approval of the Management Committee is not required in this situation, although the Executive Secretary will notify the Management Committee of the change.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A Test Laboratory may apply to extend its scope by completing the Application Form and selecting the option for Modification/extension to scope in section 4. The Application Form must be endorsed by an OIML Issuing Authority. The Application Form and relevant accompanying information shall be sent to the Executive Secretary, either by a representative of the OIML Issuing Authority which endorsed the application, or a representative of the Test Laboratory. The Executive Secretary will process the application in accordance with the relevant and appropriate procedures detailed above.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where the Test Laboratory already has an edition of an OIML Recommendation in its scope, and it wishes to add a new edition of the OIML Recommendation to its scope following an update of the OIML Recommendation, it is sufficient for the Test Laboratory to provide a gap analysis as evidence of its competence. An accreditation assessment and/or peer assessment, according to the new edition of the OIML Recommendation, is not required in this instance.Note Note0.18,NoteThis process for an extension of scope does not apply in the case where an OIML Recommendation has been revised. See OIML B 6-1 OIML&#xA0;B&#xA0;6-1:2023 for information regarding the review process for OIML publications. == Withdrawal of a Test Laboratory from the OIML-CS</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A Test Laboratory may decide, for operational, business or commercial reasons, to withdraw as a Test Laboratory from the OIML-CS, or to reduce their scope. In the event that a Test Laboratory wishes to withdraw from the OIML-CS or to reduce their scope, the Test Laboratory shall give notice, via the relevant OIML Issuing Authority, to the Executive Secretary of its intention, but shall meet all current obligations to customers before actual withdrawal or reduction of scope.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>If the Test Laboratory is withdrawn from the OIML-CS at the proposal of the Management Committee, any ongoing applications shall be completed under the conditions defined by the Management Committee. These conditions should take into account the fact that tests and examinations may already have started.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2017</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories</title>
+            <pub-date>
+              <year>2017-11-29</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>Joint&#xA0;OIML-ILAC</doc-identifier>
+            </std-ident>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-01</doc-identifier>
+            </std-ident>
+            <title>Appeals, Resolution of Complaints and Disputes</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-02</doc-identifier>
+            </std-ident>
+            <title>Procedures to approve Legal Metrology experts and QMS experts</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-03</doc-identifier>
+            </std-ident>
+            <title>Application and approval of OIML Issuing Authorities</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-05</doc-identifier>
+            </std-ident>
+            <title>Processing an application for an OIML Type Evaluation Report and OIML Certificate</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-06</doc-identifier>
+            </std-ident>
+            <title>Use of OIML Type Evaluation Reports and OIML Certificates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;6-1:2023</doc-identifier>
+            </std-ident>
+            <title>Directives for OIML technical work. Part 1: Structures and procedures for the development of OIML publications</title>
+            <pub-date>
+              <year>2023</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-07</doc-identifier>
+            </std-ident>
+            <title>Transition Arrangements under the OIML-CS</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-08</doc-identifier>
+            </std-ident>
+            <title>Signing the OIML-CS Declaration</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-09</doc-identifier>
+            </std-ident>
+            <title>Admission of Utilizers and Associates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2025</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2025</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;30:2020</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17025 to assessment of Testing Laboratories involved in legal metrology testing</title>
+            <pub-date>
+              <year>2020</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

@@ -1,0 +1,53 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xmlns-xlink.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xmlns-xlink]
+=== `@xmlns:xlink` XLink Namespace Declaration
+
+This is not an attribute, but the namespace pseudo-attribute. The value provides a URI to use for the XLink linking attributes (which has been set to a prefix of “`xlink`”). All namespace prefixes must be associated with a URL, and the prefix “`xlink`” has been set to the URL for the World Wide Web Consortium (W3C) XLink Recommendation.
+
+#### FIXED (not settable) on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-adoption,`<adoption>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-standard,`<standard>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| http://www.w3.org/1999/xlink| The prefix “`xlink`” has been set to the URL for the W3C XLink Recommendation.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+#### Tagged Sample
+
+##### Inline graphic as a live link
+[source,xml]
+....
+...
+<p><italic>Slow-front transient overvoltage (SFO)</italic>: 
+ Transient overvoltage, usually unidirectional, with time to 
+ peak 20 &#x3bc;s &lt; 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_p}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m1.eps"
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 5 000 &#x3bc;s, and 
+ time&#xa0;to&#xa0;half&#xa0;value&#xa0;of&#xa0;a&#xa0;
+ decreasing&#xa0;voltage 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_2}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m2.eps" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 20 ms.</p>
+...
+....
+
+#### Related Resource
+
+For a discussion on namespaces used in STS, see Namespacing NISO STS Elements.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

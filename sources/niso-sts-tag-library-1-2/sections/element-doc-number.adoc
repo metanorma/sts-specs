@@ -1,0 +1,62 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/doc-number.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-doc-number]
+=== `<doc-number>` Document Number
+
+Gives the document-number part of the document’s standard designator; for example, for the designation “`ISO 9100`”, the `<doc-number>` would be the digits “`9100`”.
+
+#### Usage/Remarks
+This is the standard number for the document. Its typical content is a sequence of digits. The document number _does not_ include any part number or the year of publication.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  doc-number   (#PCDATA %doc-number-elements;)*             >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Part of `<std-ident>`
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <part-number></part-number>
+  <edition>3</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language>
+ ...
+</iso-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

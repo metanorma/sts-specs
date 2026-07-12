@@ -1,0 +1,33 @@
+== Formulae and equations
+
+=== Elements and attributes
+
+Inline mathematics use <<element-inline-formula,`<inline-formula>`>>;
+display (block) mathematics use
+<<element-disp-formula,`<disp-formula>`>>. A
+<<element-disp-formula-group,`<disp-formula-group>`>> wraps multiple
+display formulae that share a single number.
+
+=== Numbered formulae
+
+A numbered display formula carries a <<element-label,`<label>`>> (e.g.,
+"(1)") inside the `<disp-formula>`.
+
+=== Unnumbered formulae
+
+Omit `<label>`.
+
+=== Groups of formulae
+
+Use `<disp-formula-group>` when several formulae share a single number.
+
+=== Formula keys
+
+Use <<element-legend,`<legend>`>> (NISO STS 1.2) to hold the key
+explaining the symbols used in the formula.
+
+=== MathML
+
+Inline MathML is carried inside `<inline-formula>` or `<disp-formula>`
+as <<element-mml-math,`<mml:math>`>>. The MathML version is declared on
+`<processing-meta>` via `@mathml`.

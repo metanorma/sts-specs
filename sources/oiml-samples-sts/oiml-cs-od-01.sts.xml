@@ -1,0 +1,1544 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS OD-01 Edition 4</doc-identifier>
+      <std-title-group>
+        <title>Management Committee</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2024-03-11</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee.</p>
+      <p>The Management Committee approved this Edition 4 of OIML-CS OD-01 by electronic ballot on 09 September 2022 and it was published on 14 November 2022. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to the Framework for the OIML Certification System (OIML-CS) (OIML B 18 OIML&#xA0;B&#xA0;18:2022) which contains the framework for the operation of the OIML-CS.</p>
+      <table-wrap id="tab_1">
+        <caption>Edition history</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 1</td>
+            <td>OD-01 Edition 1</td>
+            <td>Published: July 2017</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 2</td>
+            <td>OD-01 Edition 2</td>
+            <td>Published: 20 December 2018</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 3</td>
+            <td>OD-01 Edition 3</td>
+            <td>Published: 10 June 2021</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 4 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG2_N017</td>
+            <td>Draft for MG comments: 20220111</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 4 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG2_N021</td>
+            <td>Draft for MG comments: 20220301</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 4 (draft)</td>
+            <td>OIML-CS_SC1_P1_N308</td>
+            <td>Draft for MC approval: 20220310</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 4 (draft)</td>
+            <td>OIML-CS_SC3_P1_SG2_N023</td>
+            <td>Draft for MG comments: 20220512</td>
+          </tr>
+          <tr>
+            <td>OD-01 Edition 4 (draft)</td>
+            <td>OIML-CS_SC1_P4_N093</td>
+            <td>Draft for MC approval: 20220715</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_c3c92259-ef6b-7e21-0ec3-3f36454c5db2">
+          <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to the metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the Operational Rules of the Management Committee which specify how the Management Committee shall perform its duties and responsibilities. These Operational Rules relate to the framework for the OIML-CS, as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Composition and appointment of members of the Management Committee</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Composition</title>
+        <p>The composition of the Management Committee is defined in OIML B 18, 11.1 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Appointment of Management Committee Members and representatives</title>
+        <sec>
+          <label>0</label>
+          <title>Members from OIML Member States</title>
+          <p>The International Committee of Legal Metrology (CIML) Member of an OIML Member State that has at least one OIML Issuing Authority or Utilizer, may designate up to four representatives to participate in the Management Committee. One of the representatives shall be designated by the CIML Member as the &#x201C;Management Committee Member&#x201D; for the purposes of voting. Preferably the representatives will be from the OIML Issuing Authorities and/or Utilizers in that country. However, it is possible to designate representatives that are not from an OIML Issuing Authority or Utilizer.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Members from OIML Corresponding Members</title>
+          <p>The Representative of an OIML Corresponding Member that has at least one Associate in their country or economy may designate up to four representatives to participate in the Management Committee. Preferably the representatives will be from the Associates in that country or economy. However, it is possible to designate representatives that are not from an Associate.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Chairperson</title>
+          <p>The Chairperson is nominated from amongst the representatives of the Management Committee from OIML Member States and shall be appointed for a term of three years by the CIML.</p>
+          <p>The Chairperson is eligible for re-appointment for one further term of three years. If at the end of a second, or a subsequent, term there are no new candidates nominated for appointment to the position of Chairperson, the Management Committee may propose to the CIML that the incumbent Chairperson be appointed for a further term of three years.</p>
+          <p>In the event that the Chairperson is unable to fulfil his/her duties, the Deputy Chairperson shall substitute for him/her.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Deputy Chairperson</title>
+          <p>The Deputy Chairperson is nominated from amongst the representatives of the Management Committee from OIML Member States and shall be appointed for a term of three years by the CIML.</p>
+          <p>The Deputy Chairperson is eligible for re-appointment for one further term of three years. If at the end of a second, or a subsequent, term there are no new candidates nominated for appointment to the position of Deputy Chairperson, the Management Committee may propose to the CIML that the incumbent Deputy Chairperson be appointed for a further term of three years.</p>
+          <p>The Deputy Chairperson may at the same time act as a representative of his/her country at a Management Committee meeting, except when he/she takes on the role of Chairperson at the meeting.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Procedure for nominating Chairperson and Deputy</title>
+          <p>During a Management Committee meeting, the candidates will give a short presentation of their candidacy. The selection is then processed, by secret ballots, as follows:</p>
+          <list list-type="order" id="_48eebd6c-fdb1-2d95-25db-c40b9827b67d">
+            <list-item>a)As long as there are two candidates or more:1)Management Committee Members from OIML Member States vote for one of the candidates, and the candidate who obtained the smallest number of votes is eliminated;2)in the case where two candidates share the lowest number of votes, the candidate who was most recently appointed as a Management Committee representative is eliminated;</list-item>
+          </list>
+          <list list-type="order" id="_d9bc6435-1a86-cb5d-32f3-3e94ddaad318">
+            <list-item>a)If there is only one candidate or when only one candidate remains, Management Committee Members from OIML Member States vote &#x201C;yes&#x201D; or &#x201C;abstention&#x201D; and the candidate is selected for nomination if he/she obtains a number of &#x201C;yes&#x201D; votes greater or equal to 50 % of the number of Management Committee Members from OIML Member States.</list-item>
+            <list-item>b)In the case where the remaining candidate has not obtained the required 50 % majority:1)for the selection of the Chairperson, the Deputy Chairperson becomes Acting Chairperson until the next Management Committee meeting, at which time a new selection is organised;2)for the selection of a Deputy Chairperson, the position shall remain vacant until the next Management Committee meeting, at which time a new selection is organised.</list-item>
+            <list-item>c)The selected candidate (nominee) is then proposed to the CIML for appointment. CIML Members vote &#x201C;yes&#x201D; or &#x201C;abstention&#x201D; and the nominee is appointed if he/she obtains a number of &#x201C;yes&#x201D; votes greater or equal to 50 % of the number of OIML Member States. The conditions specified in 4.2.5 c) apply where the nominee does not receive the required 50% majority.</list-item>
+            <list-item>d)Where the positions of Chairperson and Deputy Chairperson are both vacant, should both candidates (nominees) fail to receive the required 50% majority the CIML First Vice-President shall assume the role of Chairperson (ex officio) until such time as a candidate (nominee) achieves the required 50% majority.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Executive Secretary</title>
+          <p>As a BIML staff member the Executive Secretary shall act independently of any OIML Issuing Authority, Utilizer or Associate and shall not act as a representative of an OIML Member State or an OIML Corresponding Member. The Executive Secretary shall be present at all Management Committee meetings.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Secretaries of OIML TCs/SCs</title>
+          <p>The Secretaries of the OIML TCs/SCs responsible for the OIML Recommendations that are included in the OIML-CS (see OIML B 18, 4.2 OIML&#xA0;B&#xA0;18:2022) may attend Management Committee meetings as observers and participate in other Management Committee activities. Secretariats may designate representatives to participate on behalf of their TC/SC.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Representatives from Organisations in Liaison</title>
+          <p>Representatives from Organisations in Liaison may, with the agreement of the Chairperson, attend Management Committee meetings as observers and participate in other Management Committee activities.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Representatives from countries that have expressed a clear intention to participate in the OIML-CS</title>
+          <p>OIML Member States or Corresponding Members that have expressed a clear intention to participate in the OIML-CS as an OIML Issuing Authority, Utilizer or Associate, as appropriate, but are not yet in a position to be able to participate, e.g. capability is being developed or legislation is being developed, may, with the agreement of the Chairperson, designate representatives to participate in the Management Committee and to attend Management Committee meetings as observers. The status of these representatives shall be reviewed annually. == Review Committee</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Composition</title>
+        <p>The composition of the Review Committee is defined in OIML B 18, 11.6.1 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Tasks</title>
+        <p>The tasks of the Review Committee are defined in OIML B 18, 11.6.2 OIML&#xA0;B&#xA0;18:2022.</p>
+        <p>In addition, the Review Committee is also available to provide advice to the Executive Secretary regarding enquiries from OIML Issuing Authorities on the use of previous test data (OIML-CS PD-07, subclauses 6.2 and 7.2).</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee operating rules and procedures</title>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee is responsible for developing, maintaining and approving the operating rules and procedures regarding</p>
+          <list list-type="order" id="_47dc7555-a78a-a39a-5105-439b84f7e732">
+            <list-item>a)the roles and duties of the Review Committee,</list-item>
+            <list-item>b)the appointment of the Review Committee Chairperson,</list-item>
+            <list-item>c)the selection of Review Committee members,</list-item>
+            <list-item>d)the conduct of Review Committee work, and</list-item>
+            <list-item>e)the responsibilities of the Executive Secretary in connection with the activities of the Review Committee.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>In accordance with 11.2.1, any proposed changes to the composition and tasks of the Review Committee will require a revision of OIML B 18 OIML&#xA0;B&#xA0;18:2022.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Membership of the Review Committee</title>
+        <p>The Management Committee shall identify and select from amongst its members (either Management Committee Members or representatives) at least six people, having the requisite knowledge and experience, to become members of the Review Committee. Representatives from OIML Corresponding Members and Organisations in Liaison (observers) cannot be members of the Review Committee.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee Chairperson</title>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee shall appoint one of its members (either a Management Committee member or a representative) from an OIML Member State to be the Review Committee Chairperson.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The principal duties of the Review Committee Chairperson are to</p>
+          <list list-type="order" id="_c89655d8-248b-90c4-f138-e304502c232d">
+            <list-item>a)convene and preside over meetings of the Review Committee,</list-item>
+            <list-item>b)determine the agenda for Review Committee meetings,</list-item>
+            <list-item>c)report to the Management Committee the advice (in the form of recommendations) from the Review Committee in an appropriate and timely manner, and</list-item>
+            <list-item>d)provide an annual report of its activities to the Management Committee.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee Recommendations</title>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee will seek, through the Executive Secretary, recommendations from the Review Committee on</p>
+          <list list-type="order" id="_3c2f47bb-62f6-de15-3a1d-3367a3fcf5a7">
+            <list-item>a)the approval or rejection of potential OIML Issuing Authorities and their Test Laboratories including changes to scope,</list-item>
+            <list-item>b)the periodic review of OIML Issuing Authorities and their Test Laboratories, and</list-item>
+            <list-item>c)the approval or rejection of Legal Metrology Experts and Management System Experts.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>It is the responsibility of the Review Committee Chairperson to ensure that recommendations on the above are provided to the Management Committee.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Members of the Review Committee shall not contribute (by comment or opinion) to recommendations concerning potential and existing OIML Issuing Authorities or Test Laboratories where they have participated in the peer assessment or accreditation assessment of that OIML Issuing Authority or Test Laboratory.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Members of the Review Committee may contribute (by comment or opinion) to recommendations concerning potential and existing OIML Issuing Authorities or Test Laboratories from their own country and organisation, subject to the exception specified in 5.6.3.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee Confidentiality</title>
+        <sec>
+          <label>0</label>
+          <p>Members of the Review Committee shall sign a non-disclosure agreement which guarantees that all information received in relation to the work of the Review Committee is held in strict confidence. This agreement is signed with the BIML.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Executive Secretary will provide Review Committee members with the information regarding applications from OIML Issuing Authorities, Test Laboratories, Legal Metrology Experts and Management System Experts. Review Committee members shall destroy all documents associated with these applications once a recommendation has been made. == Management Committee Working Groups</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In addition to the Review Committee the Management Committee may establish Working Groups, with clearly defined terms of reference, to advise it on matters related to the management of the OIML-CS or to enhance the efficiency of its operation.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Working Groups may be established for the purpose of dealing with matters relating, for example, to developing new or revising Operational Documents or Procedural Documents (see 6.5 below), developing the layout and content of peer assessment report forms for the initial assessment of OIML Issuing Authorities and Testing Laboratories, and developing the layout and content of OIML Certificates.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>All representatives of the Management Committee, as well as the representatives of OIML Issuing Authorities, Utilizers, Associates and Organisations in Liaison are entitled to participate in the activities of a Working Group. The composition of a Working Group shall be decided by the Management Committee.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A member of the Working Group will be appointed by the Management Committee to be the convener. The Secretariat duties of any Working Group shall be under the responsibility of the Executive Secretary.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A permanent Working Group, referred to as the &#x201C;Maintenance Group&#x201D;, with a Convener appointed by the Management Committee, has been established to propose amendments and improvements to OIML B 18 OIML&#xA0;B&#xA0;18:2022 and to develop new, or revise existing, Operational Documents and Procedural Documents.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Guests may attend Maintenance Group meetings at the invitation of the Chairperson. == Principles of operation of the Management Committee, Review Committee and Working Groups</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Obligations of Management Committee Members</title>
+        <sec>
+          <label>0</label>
+          <p>To ensure the effective and efficient operation of the Management Committee, all Management Committee Members are obliged to attend Management Committee meetings and participate in the work of the Management Committee.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>To avoid delays in decision making and approval processes, Management Committee Members are obliged to vote on all proposals developed by the Management Committee whenever asked to do so by the Chairperson or Executive Secretary. If their vote is not in favour of a proposal they are obliged to give reasons for their position.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Executive Secretary shall inform the Chairperson if a Management Committee Member does not a) vote in two successive votes organised by the Chairperson or Executive Secretary, or b) make a contribution to two consecutive Management Committee meetings (by attendance or by correspondence&#x2009;&#x2014;&#x2009;preferably electronically).</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>At the same time, the Chairperson or Executive Secretary shall try to resolve the reasons for non-participation directly with their contact in the country which has not participated. If these attempts fail, the Chairperson shall contact the appropriate CIML Member.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>If these attempts do not resolve the situation, the country will lose its vote within the Management Committee and will be classified as an Observer. The Executive Secretary will inform the CIML Member that this has been done. The CIML Member may designate another Management Committee Member for their country. Full membership and voting rights will be granted when the Management Committee Member attends the next meeting.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>A CIML Member can appeal against the decision for their country to lose its voting rights and being given Observer status.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Obligations of Review Committee Members</title>
+        <sec>
+          <label>0</label>
+          <p>To ensure the effective and efficient operation of the Review Committee, all Review Committee Members are obliged to attend Review Committee meetings and participate in the work of the Review Committee.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Review Committee Members are obliged to give their opinions on recommendations to the Management Committee as detailed in 5.6.1 whenever asked to do so by the Review Committee Chairperson. If their opinion is not in favour, they are obliged to give reasons for their position.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Review Committee Chairperson shall inform the Executive Secretary when a Review Committee Member does not a) give their opinion on five successive recommendations organised by the Review Committee Chairperson, or b) make a contribution to two consecutive Review Committee meetings (by attendance or by correspondence&#x2009;&#x2014;&#x2009;preferably electronically).</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Review Committee Chairperson or Executive Secretary shall try to resolve the reasons for non-participation directly with the Review Committee Member, with the Review Committee Member being given the opportunity to explain the reason(s) for non-participation. If these attempts fail, the Executive Secretary shall contact the appropriate Management Committee Member.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>If these attempts do not resolve the situation, the Review Committee Member will lose their right to give opinions within the Review Committee and will be classified as an Observer. The Executive Secretary will inform the Management Committee Member that this has been done. The Management Committee will be notified of the situation at its next meeting, and the Management Committee will decide what action to take, i.e. either reinstate the Review Committee Member or remove the Review Committee Member, in which case the appropriate Management Committee Member will be given the opportunity to designate another Review Committee Member.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Conduct of work</title>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee, the Review Committee and its Working Groups, shall perform their activities primarily by correspondence.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee will identify which documents, minutes of meetings, etc. can be made public. Accreditation and Peer Assessment reports shall never be made public.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>A Management Committee Workspace is provided on the OIML-CS website for use by the Management Committee. Management Committee Members and observers will be provided with a username and password to access the Management Committee Workspace.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Confidentiality</title>
+        <p>There may be instances where matters of confidentiality associated with decisions to be taken on</p>
+        <list list-type="order" id="_fec808b8-4de4-f9cf-00e5-d68ffe613fa5">
+          <list-item>a)approving, rejecting or suspending OIML Issuing Authorities,</list-item>
+          <list-item>b)extending (reducing) the scope of an OIML Issuing Authority,</list-item>
+          <list-item>c)the periodic review on the continued participation</list-item>
+        </list>
+        <p>need to be addressed. In such cases, the circulation of documents may be restricted to the Management Committee Members by the Chairperson. When such matters are dealt with at a meeting of the Management Committee, the Chairperson may restrict the right for observers to be present. Notification of such action shall be provided in advance of the meeting or, at the discretion of the Chairperson, such discussion can take place without notice. When necessary, these matters may be recorded in separate confidential minutes with restricted circulation.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Communication</title>
+        <p>The Executive Secretary shall keep all Management Committee Members and observers informed of all developments within the Management Committee and its Working Groups. Such communication should as far as possible be electronic and additionally make full use of the Management Committee Workspace on the OIML website. However, the Executive Secretary shall take account of any problems which the Management Committee Members and observers may have with electronic communication, so as not to exclude people from its work.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Management Committee meetings</title>
+        <sec>
+          <label>0</label>
+          <p>Management Committee meetings shall be held at least annually. Additional Management Committee meetings may be convened either if decided upon by the Chairperson or if requested by a Management Committee Member in writing to the Executive Secretary.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Notice of the meetings shall be circulated by the Executive Secretary at least three months prior to the meeting. The agenda and proposal documents shall be circulated at least two months prior to the meeting. Shorter time periods are permitted with the prior agreement of Management Committee Members.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>In preparing the agenda, the Executive Secretary shall, as far as possible, list and identify all the documents related to the various items for discussion.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee may refuse to consider matters set before it if the relevant documents have not been circulated in accordance with the above.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Minutes of the Management Committee meetings shall be circulated by the Executive Secretary to all Management Committee Members within one month of the meeting.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Attendance at Management Committee meetings</title>
+          <p>The following people may attend Management Committee meetings</p>
+          <list list-type="bullet" id="_cbfa8e3e-ed6f-cc2f-cecf-14c1e6750594">
+            <list-item>&#x2014;Chairperson;</list-item>
+            <list-item>&#x2014;Deputy Chairperson;</list-item>
+            <list-item>&#x2014;Executive Secretary;</list-item>
+            <list-item>&#x2014;a delegation of up to three people, one of whom is the Management Committee Member, from each OIML Member State and Corresponding Member participating in the OIML-CS;</list-item>
+            <list-item>&#x2014;Secretaries, or their representatives, of OIML TCs/SCs of measuring instrument categories within the scope of the OIML-CS as observers;</list-item>
+            <list-item>&#x2014;Representatives of Organisations in Liaison as observers;</list-item>
+            <list-item>&#x2014;Representatives from countries that have expressed a clear intention to participate in the OIML-CS, at the invitation of the Management Committee Chairperson, as observers; and</list-item>
+            <list-item>&#x2014;Guests, e.g. guest speakers, at the invitation of the Chairperson.</list-item>
+          </list>
+          <p>All those attending a meeting shall have the right to express their views during the meeting.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee and Working Group Meetings</title>
+        <sec>
+          <label>0</label>
+          <p>Although it is the intention that the work of the Review Committee and Working Groups will primarily be by correspondence, where a meeting of the Review Committee or a Working Group is required notice of the meeting shall be circulated by the Executive Secretary at least three months prior to the meeting. The agenda and proposal documents shall be circulated at least two months prior to the meeting. Shorter time periods are permitted with the prior agreement of Review Committee Members or Working Group Members as appropriate.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>In preparing the agenda, the Executive Secretary shall, as far as possible, list and identify all the documents related to the various items for discussion.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Review Committee or Working Group may refuse to consider matters set before it if the relevant documents have not been circulated in accordance with the above.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Management Committee Voting</title>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee voting rules are defined in OIML B 18, 11.4 OIML&#xA0;B&#xA0;18:2022.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>For voting at Management Committee meetings, in exceptional cases a Management Committee Member from an OIML Member State who is unable to be present at a Management Committee meeting, may give a proxy to either another representative from their own country, or to another Management Committee Member from an OIML Member State, under the following conditions:</p>
+          <list list-type="order" id="_e309968d-f4c6-b225-51e1-5a94e658b5a3">
+            <list-item>a)the Management Committee Member from an OIML Member State who is unable to be present informs their CIML Member, who officially asks the Management Committee Chairperson or Executive Secretary to accept a proxy, by designating another representative; and</list-item>
+            <list-item>b)the Management Committee Chairperson agrees and accepts the reasons given, as well as the proposed other representative; and</list-item>
+            <list-item>c)no Management Committee Member from an OIML Member State holds more than two votes in addition to their own.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee is required to seek a recommendation from the Review Committee prior to voting on the following matters:</p>
+          <list list-type="order" id="_d4f1b9a4-ddc7-9b78-ce6b-1c36af5e16f1">
+            <list-item>a)the approval, rejection or suspension of an OIML Issuing Authority or a Test Laboratory; and</list-item>
+            <list-item>b)the validation of a Legal Metrology Expert or a Management System Expert.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee Recommendations</title>
+        <sec>
+          <label>0</label>
+          <p>There is no formal voting in the Review Committee, but the Review Committee shall provide a report to the Management Committee on its recommendations, including information on the level of consensus reached.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Recommendations to the Management Committee on</p>
+          <list list-type="order" id="_07171caa-2750-b6dd-49e5-be8aac978f2d">
+            <list-item>a)the approval, rejection or suspension of an OIML Issuing Authority or a Test Laboratory, and</list-item>
+            <list-item>b)the approval or rejection of a Legal Metrology Expert or Management System Expert</list-item>
+          </list>
+          <p>shall be valid when two-thirds of the opinions given are in favour. However, a lower level of support can be used as the basis for making a recommendation to the Management Committee, in which case the actual level of support obtained will be included in the report to the Management Committee. It will be for the Management Committee to vote on the basis of the Review Committee recommendation.</p>
+          <p>Other recommendations shall be valid when at least half of the opinions of the Review Committee members are in favour.</p>
+          <p>In exceptional cases, a member of the Review Committee who is unable to be present at a Review Committee meeting may give a proxy to another member of the Review Committee. Members of the Review Committee shall not hold more than one proxy (in addition to their own opinion) at a Review Committee meeting unless additional proxies are needed at the meeting in order to reach a quorum, in which case two proxies shall be permitted.</p>
+          <p>Abstentions will not be considered as contributing to a recommendation. Review Committee members giving an opinion against a proposal or abstaining shall provide their reasons for doing so.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>If the Review Committee Chairperson or Executive Secretary so decides, developing a recommendation to the Management Committee can take place by correspondence.</p>
+          <p>All recommendations to the Management Committee, including those relating to</p>
+          <list list-type="order" id="_f536c37c-38c1-b39a-d20e-3fbd2ef365c8">
+            <list-item>a)the approval, rejection or suspension of an OIML Issuing Authority or a Test Laboratory, and</list-item>
+            <list-item>b)the approval or rejection of a Legal Metrology Expert or Management System Expert</list-item>
+          </list>
+          <p>shall be valid when two-thirds of the opinions of the Review Committee members are in favour. However, a lower level of support can be used as the basis for making a recommendation to the Management Committee, in which case the actual level of support obtained will be included in the report to the Management Committee. It will be for the Management Committee to vote on the basis of the Review Committee recommendation.</p>
+          <p>Abstentions and failures to reply are not considered as contributing to a decision. Members giving an opinion against a proposal shall provide their reasons for doing so.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Working Group Recommendations</title>
+        <p>There is no voting in Working Groups, but the Working Group shall provide a report to the Management Committee on its recommendations, including information on the level of consensus reached.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Timelines</title>
+        <sec>
+          <label>0</label>
+          <title>Management Committee</title>
+          <sec>
+            <label>0</label>
+            <p>For decisions to be taken outside of a Management Committee meeting, the following timelines apply:</p>
+            <list list-type="order" id="_888318f4-6272-29b8-1f93-9cda7a6c9ecf">
+              <list-item>a)one month for decisions relating to approval, renewal or suspension of OIML Issuing Authorities;</list-item>
+              <list-item>b)one month for decisions relating to the approval of Legal Metrology Experts and Management System Experts; and</list-item>
+              <list-item>c)two months for decisions relating to the approval of new or revised Operational Documents and Procedural Documents.</list-item>
+            </list>
+          </sec>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Review Committee</title>
+          <sec>
+            <label>0</label>
+            <p>For recommendations made outside of a Review Committee meeting, the following timelines apply:</p>
+            <list list-type="order" id="_b2a04b71-6776-49fd-479e-e52712eee617">
+              <list-item>a)Six weeks for recommendations relating to approval, renewal or suspension of OIML Issuing Authorities and Test Laboratories; and</list-item>
+              <list-item>b)One month for recommendations relating to the approval of Legal Metrology Experts and Management System Experts.</list-item>
+            </list>
+          </sec>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Maintenance Group</title>
+          <p>Unless otherwise indicated in their Terms of Reference, the Maintenance Group should try to keep to the following suggested timelines when developing new or revising Operational Documents or Procedural Documents:</p>
+          <list list-type="order" id="_b8116709-77d5-fce7-3892-61e4b1085428">
+            <list-item>a)the Maintenance Group convener or the Executive Secretary should distribute the first Working Draft to the Maintenance Group members within three months of starting work on the project;</list-item>
+            <list-item>b)the Maintenance Group convener or the Executive Secretary should allow at least two months for the Maintenance Group members to provide comments on each Working Draft;</list-item>
+            <list-item>c)the MG convener or the Executive Secretary should distribute all comments received on a Working Draft (but not necessarily the responses to those comments) within two months after the deadline for comments;</list-item>
+            <list-item>d)the period between distributing successive Working Drafts, together with comments received on the previous Working Draft and the Maintenance Group convener&#x2019;s response to these comments, should not exceed three months; and</list-item>
+            <list-item>e)the Maintenance Group should send a final Working Draft to the Management Committee for approval within eighteen months of starting work on the project. == Management Committee interaction with the CIML</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>General</title>
+        <p>In accordance with the requirements of OIML B 18, 11.5 a) OIML&#xA0;B&#xA0;18:2022 the Management Committee will report annually to the CIML. The report will provide information on the activities of the Management Committee, the results of the monitoring of the operation and effectiveness of the OIML-CS and will specify any proposals and/or recommendations that require approval by the CIML. The Executive Secretary shall prepare the annual report and the Chairperson shall present the report to the CIML at its annual meeting. The Management Committee shall be provided with the opportunity to review and comment on the report before it is submitted to the CIML.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Content of the annual report</title>
+        <p>The annual report shall contain information relating, but not limited, to</p>
+        <list list-type="order" id="_ac7bb202-ef00-8362-9684-ecce0b8f1ac2">
+          <list-item>a)activities of the Management Committee and its Working Groups, including changes to Operational Documents and Procedural Documents, guidance, forms and templates,</list-item>
+          <list-item>b)categories of measuring instruments in the system and the respective Scheme,</list-item>
+          <list-item>c)functioning of the system, e.g. number of OIML Certificates issued, the number of OIML Certificates (OIML type evaluation/test reports) that have not been accepted including the reasons for non-acceptance,</list-item>
+          <list-item>d)appointment, rejection and suspension of OIML Issuing Authorities and Test Laboratories,</list-item>
+          <list-item>e)the number of OIML Issuing Authorities and Utilizers and their scopes,</list-item>
+          <list-item>f)continuing compliance of OIML Issuing Authorities and Test Laboratories with the rules of the system,</list-item>
+          <list-item>g)appointment of Legal Metrology Experts and Management System Experts,</list-item>
+          <list-item>h)a summary of appeals, including the content, nature and resolution to the greatest extent possible giving consideration to the privacy of the parties involved,</list-item>
+          <list-item>i)promotional activities,</list-item>
+          <list-item>j)finances (income and expenditure) of the OIML-CS, and</list-item>
+          <list-item>k)outlook for the next year with a focus on planned activities.</list-item>
+        </list>
+        <p>A template for the annual report is provided on the OIML-CS pages of the OIML website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Proposals and Recommendations for CIML approval</title>
+        <p>The annual report will contain proposals and recommendations of the Management Committee that require approval by the CIML regarding</p>
+        <p>[[8-3a]] . changes to OIML B 18 OIML&#xA0;B&#xA0;18:2022,</p>
+        <list list-type="order" id="_625f966a-4395-f3f7-c065-8c18e1a19047">
+          <list-item>a)appointment of the Management Committee Chairperson and Deputy Chairperson, as appropriate,</list-item>
+          <list-item>b)including a new category of measuring instrument in the OIML-CS,</list-item>
+          <list-item>c)proposals to the CIML to extend or reduce the transition period from Scheme B to Scheme A for a measuring instrument category in the OIML-CS,</list-item>
+          <list-item>d)proposals on the transition of measuring instrument categories from Scheme A back to Scheme B,</list-item>
+          <list-item>e)maintaining an earlier version of an OIML Recommendation in the OIML-CS when an OIML Recommendation is revised, and</list-item>
+          <list-item>f)proposals for changes to strategy and/or policy (see <xref rid="section-9-strategy" ref-type="other"/>[section-9-strategy] below). == Role of the Management Committee in defining strategy and policy</list-item>
+        </list>
+        <p>The Management Committee shall</p>
+        <list list-type="order" id="_c84722ea-1573-7fd2-bf2f-7dbb8f7d1b1e">
+          <list-item>a)consult with all stakeholders, interested parties and users of the system,</list-item>
+          <list-item>b)review feedback, and</list-item>
+          <list-item>c)use the output from OIML-CS monitoring activities</list-item>
+        </list>
+        <p>to inform the development of proposals to the CIML that support the delivery of Objective 2 of the OIML strategy defined in OIML B 15 OIML&#xA0;B&#xA0;15:2011. The Management Committee is responsible for the implementation of initiatives relating to the OIML-CS that support the OIML strategy. These initiatives may result in the need to revise OIML B 18 OIML&#xA0;B&#xA0;18:2022, which will require CIML approval (see <xref rid="_-3a" ref-type="other"/>[_-3a]), the Operational Documents and Procedural Documents and/or to make amendments to other OIML-CS publications and the OIML-CS website.Note Note0.31,NoteThere is no separate Strategy or Policy document relating to the OIML-CS. == Role of the Management Committee in promotion and awareness raising</p>
+        <p>One of the duties of the Management Committee is to promote and raise awareness of the OIML-CS amongst stakeholders, interested parties and potential users. The Management Committee will make use of the publications and the OIML-CS website as detailed in 11.4 and 11.5 for this purpose. == Role of the Management Committee in the development, maintenance, approval and publishing of OIML-CS documents</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>General</title>
+        <p>During the conduct of its activities, the Management Committee may determine that new or revised Operational Documents, Procedural Documents, guidance, forms or templates may be required to ensure that the OIML-CS continues to develop and to operate effectively and efficiently. The need to develop new or to revise existing documents may be identified through the monitoring of the effectiveness of the OIML-CS, periodic reviews and/or through feedback obtained from users of the OIML-CS (see 12).</p>
+        <p>The Maintenance Group will undertake the work to develop or revise a document, guidance, form or template.</p>
+        <p>Procedures, guidance, forms and templates associated with the OIML-CS are published, and are publicly available, on the OIML-CS website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Documents requiring CIML approval</title>
+        <sec>
+          <label>0</label>
+          <p>As an OIML Basic Publication, any revision to OIML B 18 OIML&#xA0;B&#xA0;18:2022 will require CIML approval.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>When the Management Committee determines that a revision of OIML B 18 OIML&#xA0;B&#xA0;18:2022 is required, the Maintenance Group will develop a draft revision. When the draft revision has been created it will be submitted by the Executive Secretary to the Management Committee Members for voting. The voting rules defined in OIML B 18, 11.4 OIML&#xA0;B&#xA0;18:2022 will apply to Management Committee approval of the draft revision.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>If the Management Committee approves the draft revision the document will then be forwarded by the Executive Secretary to the BIML so that it can be submitted to the CIML for approval.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Documents requiring Management Committee approval</title>
+        <sec>
+          <label>0</label>
+          <p>The Management Committee is responsible for developing, maintaining and approving the Operational Documents, Procedural Documents, guidance, templates and forms that support the successful operation of the OIML-CS. The CIML will be informed of any new or revised document, guidance, form or template as part of the annual reporting process (see 8.2).</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The Maintenance Group will develop the draft of a new or revised Operational Document or Procedural Document, guidance, template or form. When a draft of the new or revised Operational Document or Procedural Document, guidance, template or form has been developed it will be submitted by the Executive Secretary to the Management Committee Members for voting. The voting rules defined in OIML B 18, 11.4 OIML&#xA0;B&#xA0;18:2022 will apply to Management Committee approval of the new or revised document.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>If the Management Committee approves the draft document then the Executive Secretary will arrange for the new or revised document to be published on the OIML-CS pages of the OIML website.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>For any proposed change to an Operational Document or Procedural Document that the Management Committee considers could be contentious, or where it would present a significant change in policy, the Management Committee shall consult with the CIML prior to making the change.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Other publications and information</title>
+        <p>The Management Committee is responsible for developing literature, including guidance and training materials, and other publicity materials which support the development and promotion of the OIML-CS to existing and potential new users and other stakeholders. The OIML Bulletin may be used to publicise developments within the OIML-CS including information regarding, but not limited to, new OIML Issuing Authorities or Test Laboratories, new instrument categories being included, matters relating to relevant International Standards and changes to the Rules.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Website</title>
+        <p>The Management Committee is responsible for developing proposals for the content and functionality of the OIML-CS pages on the OIML website in relation to the OIML-CS. The decisions taken by the Management Committee regarding the OIML-CS pages on the OIML website shall be reported by the Executive Secretary to the BIML for implementation. == Monitoring of Operation and Effectiveness</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>General</title>
+        <p>To ensure that the OIML-CS continues to develop and to operate in an effective and efficient manner the Management Committee shall establish mechanisms for measuring key activities and outcomes. The Management Committee shall also seek feedback from stakeholders and users of the OIML-CS in order to identify possible improvements. The monitoring of the operation and effectiveness of the OIML-CS will be reported to the CIML as part of the annual report detailed in 8.2.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Measurement of Activities</title>
+        <p>The activities that may be measured by the Management Committee are detailed in 8.2.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Benchmarking</title>
+        <p>The Management Committee may choose to undertake benchmarking to gather information to support the monitoring of the operation and effectiveness of the OIML-CS and to compare the performance of the OIML-CS with other well-established certification systems. The outputs from benchmarking exercises will be incorporated into the monitoring and reporting process. == Legal Metrology Experts and Management System Experts</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>General</title>
+        <p>The Management Committee is responsible for approving and maintaining the lists of OIML Legal Metrology Experts and Management System Experts (team leaders) that will participate in the Accreditation Assessments or Peer Assessments of OIML Issuing Authorities and Test Laboratories, including the specification of the criteria that the experts have to fulfil. The Review Committee is used to provide advice in the form of a recommendation to the Management Committee on the approval of the Legal Metrology Experts and Management System Experts.Note Note0.40,NoteManagement System Experts participate in Peer Assessments as the team leader (lead assessor) for the assessment. For Accreditation Assessments, the team leader (lead assessor) from the accreditation body fulfills that role.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Specification of competence criteria for experts</title>
+        <sec>
+          <label>0</label>
+          <title>Legal Metrology Experts</title>
+          <p>Legal Metrology Experts shall be independent and impartial, and shall not be an employee of a manufacturer of measuring instruments.</p>
+          <p>Legal Metrology Experts shall demonstrate the following knowledge and skills:</p>
+          <list list-type="order" id="_e8bef28f-5c14-168e-018c-96473f0cd71e">
+            <list-item>a)knowledge of type evaluation procedures and/or testing procedures of the relevant category(ies) of instrument(s) or module(s), as specified in the relevant OIML Recommendation(s),</list-item>
+            <list-item>b)knowledge of the rules and processes of the OIML-CS,</list-item>
+            <list-item>c)communication skills appropriate to interact with all levels within an OIML IA or TL, and</list-item>
+            <list-item>d)note-taking and report-writing skills.</list-item>
+          </list>
+          <p>Legal Metrology Experts may demonstrate their competency through:</p>
+          <list list-type="order" id="_19df7b1b-c63e-f179-cfcf-19558e6c3dca">
+            <list-item>a)relevant experience and/or qualifications concerning the type evaluation of relevant categories of measuring instruments;</list-item>
+            <list-item>b)relevant experience and/or qualifications concerning the testing of relevant categories of measuring instruments;</list-item>
+            <list-item>c)participation in training organised by the BIML or equivalent training organised by an accreditation body;</list-item>
+            <list-item>d)being a qualified assessor from an accreditation body; and/or, if applicable,</list-item>
+            <list-item>e)participation in additional training required by the Management Committee.</list-item>
+          </list>
+          <p>The approved scope of the LME will be based upon their demonstrated skills, knowledge and competency with respect to type evaluation, test procedures and instrument category.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <title>Management System Experts</title>
+          <p>Management System Experts shall be independent and impartial, and shall not be an employee of a manufacturer of measuring instruments.</p>
+          <p>Management System Experts shall be knowledgeable in assessing quality management systems of OIML Issuing Authorities on the basis of ISO/IEC 17065 ISO/IEC&#xA0;17065:2012 and/or ISO/IEC 17020 ISO/IEC&#xA0;17020:2012<xref rid="fn_1" ref-type="fn">1</xref>, and/or Test Laboratories on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017. They shall also demonstrate the following knowledge and skills:</p>
+          <list list-type="order" id="_87c15e8a-ad6c-6df0-a343-aa15377a41f1">
+            <list-item>a)knowledge of assessment principles, practices and techniques, and general management system principles and tools,</list-item>
+            <list-item>b)knowledge of the rules and processes of the OIML-CS,</list-item>
+            <list-item>c)communication skills appropriate to interact with all levels within an OIML Issuing Authority or Test Laboratory,</list-item>
+            <list-item>d)assessment-management skills;</list-item>
+            <list-item>e)opening and closing meeting skills</list-item>
+            <list-item>f)interviewing skills, and</list-item>
+            <list-item>g)note-taking and report-writing skills.</list-item>
+          </list>
+          <p>Management System Experts may demonstrate their competency through:</p>
+          <list list-type="order" id="_63342dba-6d7e-8b23-106b-f0b059fb7673">
+            <list-item>a)relevant experience and/or qualifications, e.g. an IRCA (International Register of Certified Auditors) registered team leader;</list-item>
+            <list-item>b)participation in training organised by the BIML or equivalent training organised by an accreditation body;</list-item>
+            <list-item>c)being a recognised team leader from an Accreditation Body footnote:*; and/or, if applicable,</list-item>
+            <list-item>d)participation in additional training required by the Management Committee.</list-item>
+          </list>
+          <p>footnote:*[A team leader of an Accreditation Body, as defined in the Joint IAF-OIML Assessment Procedure Joint&#xA0;OIML-IAF or the Joint ILAC-OIML Assessment Procedure Joint&#xA0;OIML-ILAC automatically fulfils the competence requirements.]</p>
+          <p>For assessing OIML Issuing Authorities, Management System Experts must also be able demonstrate that they are familiar with the requirements of the OIML-CS, OIML D 32 OIML&#xA0;D&#xA0;32:2018, OIML D 37 OIML&#xA0;D&#xA0;37:2022 and the Joint OIML-IAF Assessment Procedure Joint&#xA0;OIML-IAF.</p>
+          <p>For assessing Test Laboratories, Management System experts must also be able demonstrate that they are familiar with the requirements of the OIML-CS, OIML D 30 OIML&#xA0;D&#xA0;30 and the Joint OIML-ILAC Assessment Procedure Joint&#xA0;OIML-ILAC.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Approval of experts</title>
+        <p>The procedure for applying to be a Legal Metrology Expert or a Management System Expert, and the subsequent Management Committee approval of experts, is detailed in PD-02 OIML-CS&#xA0;PD-02.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Maintenance and publication of expert list</title>
+        <p>A list of Legal Metrology Experts and Management System Experts approved to serve as assessors for the relevant category of measuring instruments is maintained by the Executive Secretary and shall be available on the OIML-CS pages of the OIML website.</p>
+        <p>In the case of an accreditation assessment the Executive Secretary may, with prior consent of the expert, provide to the relevant Accreditation Body the expert&#x2019;s curriculum vitae and other relevant information.</p>
+        <p>The list of experts will be reviewed on a 3-yearly basis by the Management Committee to ensure that the status, scope and suitability of the experts is correct. Prior to the review the Executive Secretary shall contact each expert to determine if there has been any change to their status or if they request a change of scope.</p>
+        <p>The review will confirm</p>
+        <list list-type="order" id="_d3ced2cc-3bad-cad1-6bea-494ec0f34b38">
+          <list-item>a)if the expert wishes to remain on the list,</list-item>
+          <list-item>b)whether the expert wishes to change their scope, i.e. add or remove instrument categories from their scope of expertise, and</list-item>
+          <list-item>c)whether the expert continues to fulfil the criteria specified in 13.2.1 or 13.2.2, as appropriate, including participation in relevant activities.</list-item>
+        </list>
+        <p>In accordance with PD-02, 10.2 OIML-CS&#xA0;PD-02, advice from the Review Committee on the continued suitability of the experts will be sought by the Executive Secretary. This advice will be incorporated into the review conducted by the Management Committee. == Management Committee interaction with the Test Laboratories Forum</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Developing, maintaining and approving the operating rules and procedures for the Test Laboratories Forum</title>
+        <p>The Management Committee is responsible for developing, maintaining and approving the operating rules and procedures regarding</p>
+        <list list-type="order" id="_2ab7f2e5-c3e1-c0a1-e501-89bbea88001b">
+          <list-item>a)the roles and duties of the Test Laboratories Forum,</list-item>
+          <list-item>b)the criteria for membership of the Test Laboratories Forum,</list-item>
+          <list-item>c)the conduct of Test Laboratories Forum work, and</list-item>
+          <list-item>d)the responsibilities of the Executive Secretary in connection with the activities of the Test Laboratories Forum.</list-item>
+        </list>
+        <p>The operating rules of the Test Laboratories Forum are specified in document OD-02 OIML-CS&#xA0;OD-02. In accordance with 11.2.1 above, any proposed changes to the roles and duties of the Test Laboratories Forum will require a revision of OIML B 18 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Interface with the Test Laboratories Forum</title>
+        <p>The Management Committee may seek the advice of the Test Laboratories Forum on issues associated with the application of testing requirements specified in OIML Recommendations, interpretations, interlab comparison programs, etc. The Executive Secretary shall raise issues for consideration by the Test Laboratories Forum in accordance with document OD-02 OIML-CS&#xA0;OD-02.</p>
+        <p>The Test Laboratories Forum may identify issues or provide feedback to the Executive Secretary on items that are considered to be of relevance to the successful operation of the OIML-CS. The Executive Secretary will review the feedback/output from the Test Laboratories Forum and will raise the topic with the Management Committee for their consideration and action, as appropriate.</p>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Management Committee</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_c3c92259-ef6b-7e21-0ec3-3f36454c5db2">
+        <list-item>a)to promote the global harmonisation, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to the metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the Operational Rules of the Management Committee which specify how the Management Committee shall perform its duties and responsibilities. These Operational Rules relate to the framework for the OIML-CS, as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. == Composition and appointment of members of the Management Committee</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Composition</title>
+      <p>The composition of the Management Committee is defined in OIML B 18, 11.1 OIML&#xA0;B&#xA0;18:2022.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Appointment of Management Committee Members and representatives</title>
+      <sec>
+        <label>0</label>
+        <title>Members from OIML Member States</title>
+        <p>The International Committee of Legal Metrology (CIML) Member of an OIML Member State that has at least one OIML Issuing Authority or Utilizer, may designate up to four representatives to participate in the Management Committee. One of the representatives shall be designated by the CIML Member as the &#x201C;Management Committee Member&#x201D; for the purposes of voting. Preferably the representatives will be from the OIML Issuing Authorities and/or Utilizers in that country. However, it is possible to designate representatives that are not from an OIML Issuing Authority or Utilizer.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Members from OIML Corresponding Members</title>
+        <p>The Representative of an OIML Corresponding Member that has at least one Associate in their country or economy may designate up to four representatives to participate in the Management Committee. Preferably the representatives will be from the Associates in that country or economy. However, it is possible to designate representatives that are not from an Associate.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Chairperson</title>
+        <p>The Chairperson is nominated from amongst the representatives of the Management Committee from OIML Member States and shall be appointed for a term of three years by the CIML.</p>
+        <p>The Chairperson is eligible for re-appointment for one further term of three years. If at the end of a second, or a subsequent, term there are no new candidates nominated for appointment to the position of Chairperson, the Management Committee may propose to the CIML that the incumbent Chairperson be appointed for a further term of three years.</p>
+        <p>In the event that the Chairperson is unable to fulfil his/her duties, the Deputy Chairperson shall substitute for him/her.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Deputy Chairperson</title>
+        <p>The Deputy Chairperson is nominated from amongst the representatives of the Management Committee from OIML Member States and shall be appointed for a term of three years by the CIML.</p>
+        <p>The Deputy Chairperson is eligible for re-appointment for one further term of three years. If at the end of a second, or a subsequent, term there are no new candidates nominated for appointment to the position of Deputy Chairperson, the Management Committee may propose to the CIML that the incumbent Deputy Chairperson be appointed for a further term of three years.</p>
+        <p>The Deputy Chairperson may at the same time act as a representative of his/her country at a Management Committee meeting, except when he/she takes on the role of Chairperson at the meeting.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Procedure for nominating Chairperson and Deputy</title>
+        <p>During a Management Committee meeting, the candidates will give a short presentation of their candidacy. The selection is then processed, by secret ballots, as follows:</p>
+        <list list-type="order" id="_48eebd6c-fdb1-2d95-25db-c40b9827b67d">
+          <list-item>a)As long as there are two candidates or more:1)Management Committee Members from OIML Member States vote for one of the candidates, and the candidate who obtained the smallest number of votes is eliminated;2)in the case where two candidates share the lowest number of votes, the candidate who was most recently appointed as a Management Committee representative is eliminated;</list-item>
+        </list>
+        <list list-type="order" id="_d9bc6435-1a86-cb5d-32f3-3e94ddaad318">
+          <list-item>a)If there is only one candidate or when only one candidate remains, Management Committee Members from OIML Member States vote &#x201C;yes&#x201D; or &#x201C;abstention&#x201D; and the candidate is selected for nomination if he/she obtains a number of &#x201C;yes&#x201D; votes greater or equal to 50 % of the number of Management Committee Members from OIML Member States.</list-item>
+          <list-item>b)In the case where the remaining candidate has not obtained the required 50 % majority:1)for the selection of the Chairperson, the Deputy Chairperson becomes Acting Chairperson until the next Management Committee meeting, at which time a new selection is organised;2)for the selection of a Deputy Chairperson, the position shall remain vacant until the next Management Committee meeting, at which time a new selection is organised.</list-item>
+          <list-item>c)The selected candidate (nominee) is then proposed to the CIML for appointment. CIML Members vote &#x201C;yes&#x201D; or &#x201C;abstention&#x201D; and the nominee is appointed if he/she obtains a number of &#x201C;yes&#x201D; votes greater or equal to 50 % of the number of OIML Member States. The conditions specified in 4.2.5 c) apply where the nominee does not receive the required 50% majority.</list-item>
+          <list-item>d)Where the positions of Chairperson and Deputy Chairperson are both vacant, should both candidates (nominees) fail to receive the required 50% majority the CIML First Vice-President shall assume the role of Chairperson (ex officio) until such time as a candidate (nominee) achieves the required 50% majority.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Executive Secretary</title>
+        <p>As a BIML staff member the Executive Secretary shall act independently of any OIML Issuing Authority, Utilizer or Associate and shall not act as a representative of an OIML Member State or an OIML Corresponding Member. The Executive Secretary shall be present at all Management Committee meetings.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Secretaries of OIML TCs/SCs</title>
+        <p>The Secretaries of the OIML TCs/SCs responsible for the OIML Recommendations that are included in the OIML-CS (see OIML B 18, 4.2 OIML&#xA0;B&#xA0;18:2022) may attend Management Committee meetings as observers and participate in other Management Committee activities. Secretariats may designate representatives to participate on behalf of their TC/SC.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Representatives from Organisations in Liaison</title>
+        <p>Representatives from Organisations in Liaison may, with the agreement of the Chairperson, attend Management Committee meetings as observers and participate in other Management Committee activities.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Representatives from countries that have expressed a clear intention to participate in the OIML-CS</title>
+        <p>OIML Member States or Corresponding Members that have expressed a clear intention to participate in the OIML-CS as an OIML Issuing Authority, Utilizer or Associate, as appropriate, but are not yet in a position to be able to participate, e.g. capability is being developed or legislation is being developed, may, with the agreement of the Chairperson, designate representatives to participate in the Management Committee and to attend Management Committee meetings as observers. The status of these representatives shall be reviewed annually. == Review Committee</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Composition</title>
+      <p>The composition of the Review Committee is defined in OIML B 18, 11.6.1 OIML&#xA0;B&#xA0;18:2022.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Tasks</title>
+      <p>The tasks of the Review Committee are defined in OIML B 18, 11.6.2 OIML&#xA0;B&#xA0;18:2022.</p>
+      <p>In addition, the Review Committee is also available to provide advice to the Executive Secretary regarding enquiries from OIML Issuing Authorities on the use of previous test data (OIML-CS PD-07, subclauses 6.2 and 7.2).</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Review Committee operating rules and procedures</title>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee is responsible for developing, maintaining and approving the operating rules and procedures regarding</p>
+        <list list-type="order" id="_47dc7555-a78a-a39a-5105-439b84f7e732">
+          <list-item>a)the roles and duties of the Review Committee,</list-item>
+          <list-item>b)the appointment of the Review Committee Chairperson,</list-item>
+          <list-item>c)the selection of Review Committee members,</list-item>
+          <list-item>d)the conduct of Review Committee work, and</list-item>
+          <list-item>e)the responsibilities of the Executive Secretary in connection with the activities of the Review Committee.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In accordance with 11.2.1, any proposed changes to the composition and tasks of the Review Committee will require a revision of OIML B 18 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Membership of the Review Committee</title>
+      <p>The Management Committee shall identify and select from amongst its members (either Management Committee Members or representatives) at least six people, having the requisite knowledge and experience, to become members of the Review Committee. Representatives from OIML Corresponding Members and Organisations in Liaison (observers) cannot be members of the Review Committee.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Review Committee Chairperson</title>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee shall appoint one of its members (either a Management Committee member or a representative) from an OIML Member State to be the Review Committee Chairperson.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The principal duties of the Review Committee Chairperson are to</p>
+        <list list-type="order" id="_c89655d8-248b-90c4-f138-e304502c232d">
+          <list-item>a)convene and preside over meetings of the Review Committee,</list-item>
+          <list-item>b)determine the agenda for Review Committee meetings,</list-item>
+          <list-item>c)report to the Management Committee the advice (in the form of recommendations) from the Review Committee in an appropriate and timely manner, and</list-item>
+          <list-item>d)provide an annual report of its activities to the Management Committee.</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Review Committee Recommendations</title>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee will seek, through the Executive Secretary, recommendations from the Review Committee on</p>
+        <list list-type="order" id="_3c2f47bb-62f6-de15-3a1d-3367a3fcf5a7">
+          <list-item>a)the approval or rejection of potential OIML Issuing Authorities and their Test Laboratories including changes to scope,</list-item>
+          <list-item>b)the periodic review of OIML Issuing Authorities and their Test Laboratories, and</list-item>
+          <list-item>c)the approval or rejection of Legal Metrology Experts and Management System Experts.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>It is the responsibility of the Review Committee Chairperson to ensure that recommendations on the above are provided to the Management Committee.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Members of the Review Committee shall not contribute (by comment or opinion) to recommendations concerning potential and existing OIML Issuing Authorities or Test Laboratories where they have participated in the peer assessment or accreditation assessment of that OIML Issuing Authority or Test Laboratory.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Members of the Review Committee may contribute (by comment or opinion) to recommendations concerning potential and existing OIML Issuing Authorities or Test Laboratories from their own country and organisation, subject to the exception specified in 5.6.3.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Review Committee Confidentiality</title>
+      <sec>
+        <label>0</label>
+        <p>Members of the Review Committee shall sign a non-disclosure agreement which guarantees that all information received in relation to the work of the Review Committee is held in strict confidence. This agreement is signed with the BIML.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary will provide Review Committee members with the information regarding applications from OIML Issuing Authorities, Test Laboratories, Legal Metrology Experts and Management System Experts. Review Committee members shall destroy all documents associated with these applications once a recommendation has been made. == Management Committee Working Groups</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>In addition to the Review Committee the Management Committee may establish Working Groups, with clearly defined terms of reference, to advise it on matters related to the management of the OIML-CS or to enhance the efficiency of its operation.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Working Groups may be established for the purpose of dealing with matters relating, for example, to developing new or revising Operational Documents or Procedural Documents (see 6.5 below), developing the layout and content of peer assessment report forms for the initial assessment of OIML Issuing Authorities and Testing Laboratories, and developing the layout and content of OIML Certificates.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>All representatives of the Management Committee, as well as the representatives of OIML Issuing Authorities, Utilizers, Associates and Organisations in Liaison are entitled to participate in the activities of a Working Group. The composition of a Working Group shall be decided by the Management Committee.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A member of the Working Group will be appointed by the Management Committee to be the convener. The Secretariat duties of any Working Group shall be under the responsibility of the Executive Secretary.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>A permanent Working Group, referred to as the &#x201C;Maintenance Group&#x201D;, with a Convener appointed by the Management Committee, has been established to propose amendments and improvements to OIML B 18 OIML&#xA0;B&#xA0;18:2022 and to develop new, or revise existing, Operational Documents and Procedural Documents.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Guests may attend Maintenance Group meetings at the invitation of the Chairperson. == Principles of operation of the Management Committee, Review Committee and Working Groups</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Obligations of Management Committee Members</title>
+      <sec>
+        <label>0</label>
+        <p>To ensure the effective and efficient operation of the Management Committee, all Management Committee Members are obliged to attend Management Committee meetings and participate in the work of the Management Committee.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>To avoid delays in decision making and approval processes, Management Committee Members are obliged to vote on all proposals developed by the Management Committee whenever asked to do so by the Chairperson or Executive Secretary. If their vote is not in favour of a proposal they are obliged to give reasons for their position.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Executive Secretary shall inform the Chairperson if a Management Committee Member does not a) vote in two successive votes organised by the Chairperson or Executive Secretary, or b) make a contribution to two consecutive Management Committee meetings (by attendance or by correspondence&#x2009;&#x2014;&#x2009;preferably electronically).</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>At the same time, the Chairperson or Executive Secretary shall try to resolve the reasons for non-participation directly with their contact in the country which has not participated. If these attempts fail, the Chairperson shall contact the appropriate CIML Member.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If these attempts do not resolve the situation, the country will lose its vote within the Management Committee and will be classified as an Observer. The Executive Secretary will inform the CIML Member that this has been done. The CIML Member may designate another Management Committee Member for their country. Full membership and voting rights will be granted when the Management Committee Member attends the next meeting.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A CIML Member can appeal against the decision for their country to lose its voting rights and being given Observer status.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Obligations of Review Committee Members</title>
+      <sec>
+        <label>0</label>
+        <p>To ensure the effective and efficient operation of the Review Committee, all Review Committee Members are obliged to attend Review Committee meetings and participate in the work of the Review Committee.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Review Committee Members are obliged to give their opinions on recommendations to the Management Committee as detailed in 5.6.1 whenever asked to do so by the Review Committee Chairperson. If their opinion is not in favour, they are obliged to give reasons for their position.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Review Committee Chairperson shall inform the Executive Secretary when a Review Committee Member does not a) give their opinion on five successive recommendations organised by the Review Committee Chairperson, or b) make a contribution to two consecutive Review Committee meetings (by attendance or by correspondence&#x2009;&#x2014;&#x2009;preferably electronically).</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Review Committee Chairperson or Executive Secretary shall try to resolve the reasons for non-participation directly with the Review Committee Member, with the Review Committee Member being given the opportunity to explain the reason(s) for non-participation. If these attempts fail, the Executive Secretary shall contact the appropriate Management Committee Member.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If these attempts do not resolve the situation, the Review Committee Member will lose their right to give opinions within the Review Committee and will be classified as an Observer. The Executive Secretary will inform the Management Committee Member that this has been done. The Management Committee will be notified of the situation at its next meeting, and the Management Committee will decide what action to take, i.e. either reinstate the Review Committee Member or remove the Review Committee Member, in which case the appropriate Management Committee Member will be given the opportunity to designate another Review Committee Member.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Conduct of work</title>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee, the Review Committee and its Working Groups, shall perform their activities primarily by correspondence.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee will identify which documents, minutes of meetings, etc. can be made public. Accreditation and Peer Assessment reports shall never be made public.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>A Management Committee Workspace is provided on the OIML-CS website for use by the Management Committee. Management Committee Members and observers will be provided with a username and password to access the Management Committee Workspace.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Confidentiality</title>
+      <p>There may be instances where matters of confidentiality associated with decisions to be taken on</p>
+      <list list-type="order" id="_fec808b8-4de4-f9cf-00e5-d68ffe613fa5">
+        <list-item>a)approving, rejecting or suspending OIML Issuing Authorities,</list-item>
+        <list-item>b)extending (reducing) the scope of an OIML Issuing Authority,</list-item>
+        <list-item>c)the periodic review on the continued participation</list-item>
+      </list>
+      <p>need to be addressed. In such cases, the circulation of documents may be restricted to the Management Committee Members by the Chairperson. When such matters are dealt with at a meeting of the Management Committee, the Chairperson may restrict the right for observers to be present. Notification of such action shall be provided in advance of the meeting or, at the discretion of the Chairperson, such discussion can take place without notice. When necessary, these matters may be recorded in separate confidential minutes with restricted circulation.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Communication</title>
+      <p>The Executive Secretary shall keep all Management Committee Members and observers informed of all developments within the Management Committee and its Working Groups. Such communication should as far as possible be electronic and additionally make full use of the Management Committee Workspace on the OIML website. However, the Executive Secretary shall take account of any problems which the Management Committee Members and observers may have with electronic communication, so as not to exclude people from its work.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Management Committee meetings</title>
+      <sec>
+        <label>0</label>
+        <p>Management Committee meetings shall be held at least annually. Additional Management Committee meetings may be convened either if decided upon by the Chairperson or if requested by a Management Committee Member in writing to the Executive Secretary.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Notice of the meetings shall be circulated by the Executive Secretary at least three months prior to the meeting. The agenda and proposal documents shall be circulated at least two months prior to the meeting. Shorter time periods are permitted with the prior agreement of Management Committee Members.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In preparing the agenda, the Executive Secretary shall, as far as possible, list and identify all the documents related to the various items for discussion.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee may refuse to consider matters set before it if the relevant documents have not been circulated in accordance with the above.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Minutes of the Management Committee meetings shall be circulated by the Executive Secretary to all Management Committee Members within one month of the meeting.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Attendance at Management Committee meetings</title>
+        <p>The following people may attend Management Committee meetings</p>
+        <list list-type="bullet" id="_cbfa8e3e-ed6f-cc2f-cecf-14c1e6750594">
+          <list-item>&#x2014;Chairperson;</list-item>
+          <list-item>&#x2014;Deputy Chairperson;</list-item>
+          <list-item>&#x2014;Executive Secretary;</list-item>
+          <list-item>&#x2014;a delegation of up to three people, one of whom is the Management Committee Member, from each OIML Member State and Corresponding Member participating in the OIML-CS;</list-item>
+          <list-item>&#x2014;Secretaries, or their representatives, of OIML TCs/SCs of measuring instrument categories within the scope of the OIML-CS as observers;</list-item>
+          <list-item>&#x2014;Representatives of Organisations in Liaison as observers;</list-item>
+          <list-item>&#x2014;Representatives from countries that have expressed a clear intention to participate in the OIML-CS, at the invitation of the Management Committee Chairperson, as observers; and</list-item>
+          <list-item>&#x2014;Guests, e.g. guest speakers, at the invitation of the Chairperson.</list-item>
+        </list>
+        <p>All those attending a meeting shall have the right to express their views during the meeting.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Review Committee and Working Group Meetings</title>
+      <sec>
+        <label>0</label>
+        <p>Although it is the intention that the work of the Review Committee and Working Groups will primarily be by correspondence, where a meeting of the Review Committee or a Working Group is required notice of the meeting shall be circulated by the Executive Secretary at least three months prior to the meeting. The agenda and proposal documents shall be circulated at least two months prior to the meeting. Shorter time periods are permitted with the prior agreement of Review Committee Members or Working Group Members as appropriate.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>In preparing the agenda, the Executive Secretary shall, as far as possible, list and identify all the documents related to the various items for discussion.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Review Committee or Working Group may refuse to consider matters set before it if the relevant documents have not been circulated in accordance with the above.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Management Committee Voting</title>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee voting rules are defined in OIML B 18, 11.4 OIML&#xA0;B&#xA0;18:2022.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>For voting at Management Committee meetings, in exceptional cases a Management Committee Member from an OIML Member State who is unable to be present at a Management Committee meeting, may give a proxy to either another representative from their own country, or to another Management Committee Member from an OIML Member State, under the following conditions:</p>
+        <list list-type="order" id="_e309968d-f4c6-b225-51e1-5a94e658b5a3">
+          <list-item>a)the Management Committee Member from an OIML Member State who is unable to be present informs their CIML Member, who officially asks the Management Committee Chairperson or Executive Secretary to accept a proxy, by designating another representative; and</list-item>
+          <list-item>b)the Management Committee Chairperson agrees and accepts the reasons given, as well as the proposed other representative; and</list-item>
+          <list-item>c)no Management Committee Member from an OIML Member State holds more than two votes in addition to their own.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee is required to seek a recommendation from the Review Committee prior to voting on the following matters:</p>
+        <list list-type="order" id="_d4f1b9a4-ddc7-9b78-ce6b-1c36af5e16f1">
+          <list-item>a)the approval, rejection or suspension of an OIML Issuing Authority or a Test Laboratory; and</list-item>
+          <list-item>b)the validation of a Legal Metrology Expert or a Management System Expert.</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Review Committee Recommendations</title>
+      <sec>
+        <label>0</label>
+        <p>There is no formal voting in the Review Committee, but the Review Committee shall provide a report to the Management Committee on its recommendations, including information on the level of consensus reached.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Recommendations to the Management Committee on</p>
+        <list list-type="order" id="_07171caa-2750-b6dd-49e5-be8aac978f2d">
+          <list-item>a)the approval, rejection or suspension of an OIML Issuing Authority or a Test Laboratory, and</list-item>
+          <list-item>b)the approval or rejection of a Legal Metrology Expert or Management System Expert</list-item>
+        </list>
+        <p>shall be valid when two-thirds of the opinions given are in favour. However, a lower level of support can be used as the basis for making a recommendation to the Management Committee, in which case the actual level of support obtained will be included in the report to the Management Committee. It will be for the Management Committee to vote on the basis of the Review Committee recommendation.</p>
+        <p>Other recommendations shall be valid when at least half of the opinions of the Review Committee members are in favour.</p>
+        <p>In exceptional cases, a member of the Review Committee who is unable to be present at a Review Committee meeting may give a proxy to another member of the Review Committee. Members of the Review Committee shall not hold more than one proxy (in addition to their own opinion) at a Review Committee meeting unless additional proxies are needed at the meeting in order to reach a quorum, in which case two proxies shall be permitted.</p>
+        <p>Abstentions will not be considered as contributing to a recommendation. Review Committee members giving an opinion against a proposal or abstaining shall provide their reasons for doing so.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If the Review Committee Chairperson or Executive Secretary so decides, developing a recommendation to the Management Committee can take place by correspondence.</p>
+        <p>All recommendations to the Management Committee, including those relating to</p>
+        <list list-type="order" id="_f536c37c-38c1-b39a-d20e-3fbd2ef365c8">
+          <list-item>a)the approval, rejection or suspension of an OIML Issuing Authority or a Test Laboratory, and</list-item>
+          <list-item>b)the approval or rejection of a Legal Metrology Expert or Management System Expert</list-item>
+        </list>
+        <p>shall be valid when two-thirds of the opinions of the Review Committee members are in favour. However, a lower level of support can be used as the basis for making a recommendation to the Management Committee, in which case the actual level of support obtained will be included in the report to the Management Committee. It will be for the Management Committee to vote on the basis of the Review Committee recommendation.</p>
+        <p>Abstentions and failures to reply are not considered as contributing to a decision. Members giving an opinion against a proposal shall provide their reasons for doing so.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Working Group Recommendations</title>
+      <p>There is no voting in Working Groups, but the Working Group shall provide a report to the Management Committee on its recommendations, including information on the level of consensus reached.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Timelines</title>
+      <sec>
+        <label>0</label>
+        <title>Management Committee</title>
+        <sec>
+          <label>0</label>
+          <p>For decisions to be taken outside of a Management Committee meeting, the following timelines apply:</p>
+          <list list-type="order" id="_888318f4-6272-29b8-1f93-9cda7a6c9ecf">
+            <list-item>a)one month for decisions relating to approval, renewal or suspension of OIML Issuing Authorities;</list-item>
+            <list-item>b)one month for decisions relating to the approval of Legal Metrology Experts and Management System Experts; and</list-item>
+            <list-item>c)two months for decisions relating to the approval of new or revised Operational Documents and Procedural Documents.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Review Committee</title>
+        <sec>
+          <label>0</label>
+          <p>For recommendations made outside of a Review Committee meeting, the following timelines apply:</p>
+          <list list-type="order" id="_b2a04b71-6776-49fd-479e-e52712eee617">
+            <list-item>a)Six weeks for recommendations relating to approval, renewal or suspension of OIML Issuing Authorities and Test Laboratories; and</list-item>
+            <list-item>b)One month for recommendations relating to the approval of Legal Metrology Experts and Management System Experts.</list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Maintenance Group</title>
+        <p>Unless otherwise indicated in their Terms of Reference, the Maintenance Group should try to keep to the following suggested timelines when developing new or revising Operational Documents or Procedural Documents:</p>
+        <list list-type="order" id="_b8116709-77d5-fce7-3892-61e4b1085428">
+          <list-item>a)the Maintenance Group convener or the Executive Secretary should distribute the first Working Draft to the Maintenance Group members within three months of starting work on the project;</list-item>
+          <list-item>b)the Maintenance Group convener or the Executive Secretary should allow at least two months for the Maintenance Group members to provide comments on each Working Draft;</list-item>
+          <list-item>c)the MG convener or the Executive Secretary should distribute all comments received on a Working Draft (but not necessarily the responses to those comments) within two months after the deadline for comments;</list-item>
+          <list-item>d)the period between distributing successive Working Drafts, together with comments received on the previous Working Draft and the Maintenance Group convener&#x2019;s response to these comments, should not exceed three months; and</list-item>
+          <list-item>e)the Maintenance Group should send a final Working Draft to the Management Committee for approval within eighteen months of starting work on the project. == Management Committee interaction with the CIML</list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>General</title>
+      <p>In accordance with the requirements of OIML B 18, 11.5 a) OIML&#xA0;B&#xA0;18:2022 the Management Committee will report annually to the CIML. The report will provide information on the activities of the Management Committee, the results of the monitoring of the operation and effectiveness of the OIML-CS and will specify any proposals and/or recommendations that require approval by the CIML. The Executive Secretary shall prepare the annual report and the Chairperson shall present the report to the CIML at its annual meeting. The Management Committee shall be provided with the opportunity to review and comment on the report before it is submitted to the CIML.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Content of the annual report</title>
+      <p>The annual report shall contain information relating, but not limited, to</p>
+      <list list-type="order" id="_ac7bb202-ef00-8362-9684-ecce0b8f1ac2">
+        <list-item>a)activities of the Management Committee and its Working Groups, including changes to Operational Documents and Procedural Documents, guidance, forms and templates,</list-item>
+        <list-item>b)categories of measuring instruments in the system and the respective Scheme,</list-item>
+        <list-item>c)functioning of the system, e.g. number of OIML Certificates issued, the number of OIML Certificates (OIML type evaluation/test reports) that have not been accepted including the reasons for non-acceptance,</list-item>
+        <list-item>d)appointment, rejection and suspension of OIML Issuing Authorities and Test Laboratories,</list-item>
+        <list-item>e)the number of OIML Issuing Authorities and Utilizers and their scopes,</list-item>
+        <list-item>f)continuing compliance of OIML Issuing Authorities and Test Laboratories with the rules of the system,</list-item>
+        <list-item>g)appointment of Legal Metrology Experts and Management System Experts,</list-item>
+        <list-item>h)a summary of appeals, including the content, nature and resolution to the greatest extent possible giving consideration to the privacy of the parties involved,</list-item>
+        <list-item>i)promotional activities,</list-item>
+        <list-item>j)finances (income and expenditure) of the OIML-CS, and</list-item>
+        <list-item>k)outlook for the next year with a focus on planned activities.</list-item>
+      </list>
+      <p>A template for the annual report is provided on the OIML-CS pages of the OIML website.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Proposals and Recommendations for CIML approval</title>
+      <p>The annual report will contain proposals and recommendations of the Management Committee that require approval by the CIML regarding</p>
+      <p>[[8-3a]] . changes to OIML B 18 OIML&#xA0;B&#xA0;18:2022,</p>
+      <list list-type="order" id="_625f966a-4395-f3f7-c065-8c18e1a19047">
+        <list-item>a)appointment of the Management Committee Chairperson and Deputy Chairperson, as appropriate,</list-item>
+        <list-item>b)including a new category of measuring instrument in the OIML-CS,</list-item>
+        <list-item>c)proposals to the CIML to extend or reduce the transition period from Scheme B to Scheme A for a measuring instrument category in the OIML-CS,</list-item>
+        <list-item>d)proposals on the transition of measuring instrument categories from Scheme A back to Scheme B,</list-item>
+        <list-item>e)maintaining an earlier version of an OIML Recommendation in the OIML-CS when an OIML Recommendation is revised, and</list-item>
+        <list-item>f)proposals for changes to strategy and/or policy (see <xref rid="section-9-strategy" ref-type="other"/>[section-9-strategy] below). == Role of the Management Committee in defining strategy and policy</list-item>
+      </list>
+      <p>The Management Committee shall</p>
+      <list list-type="order" id="_c84722ea-1573-7fd2-bf2f-7dbb8f7d1b1e">
+        <list-item>a)consult with all stakeholders, interested parties and users of the system,</list-item>
+        <list-item>b)review feedback, and</list-item>
+        <list-item>c)use the output from OIML-CS monitoring activities</list-item>
+      </list>
+      <p>to inform the development of proposals to the CIML that support the delivery of Objective 2 of the OIML strategy defined in OIML B 15 OIML&#xA0;B&#xA0;15:2011. The Management Committee is responsible for the implementation of initiatives relating to the OIML-CS that support the OIML strategy. These initiatives may result in the need to revise OIML B 18 OIML&#xA0;B&#xA0;18:2022, which will require CIML approval (see <xref rid="_-3a" ref-type="other"/>[_-3a]), the Operational Documents and Procedural Documents and/or to make amendments to other OIML-CS publications and the OIML-CS website.Note Note0.31,NoteThere is no separate Strategy or Policy document relating to the OIML-CS. == Role of the Management Committee in promotion and awareness raising</p>
+      <p>One of the duties of the Management Committee is to promote and raise awareness of the OIML-CS amongst stakeholders, interested parties and potential users. The Management Committee will make use of the publications and the OIML-CS website as detailed in 11.4 and 11.5 for this purpose. == Role of the Management Committee in the development, maintenance, approval and publishing of OIML-CS documents</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>General</title>
+      <p>During the conduct of its activities, the Management Committee may determine that new or revised Operational Documents, Procedural Documents, guidance, forms or templates may be required to ensure that the OIML-CS continues to develop and to operate effectively and efficiently. The need to develop new or to revise existing documents may be identified through the monitoring of the effectiveness of the OIML-CS, periodic reviews and/or through feedback obtained from users of the OIML-CS (see 12).</p>
+      <p>The Maintenance Group will undertake the work to develop or revise a document, guidance, form or template.</p>
+      <p>Procedures, guidance, forms and templates associated with the OIML-CS are published, and are publicly available, on the OIML-CS website.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Documents requiring CIML approval</title>
+      <sec>
+        <label>0</label>
+        <p>As an OIML Basic Publication, any revision to OIML B 18 OIML&#xA0;B&#xA0;18:2022 will require CIML approval.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When the Management Committee determines that a revision of OIML B 18 OIML&#xA0;B&#xA0;18:2022 is required, the Maintenance Group will develop a draft revision. When the draft revision has been created it will be submitted by the Executive Secretary to the Management Committee Members for voting. The voting rules defined in OIML B 18, 11.4 OIML&#xA0;B&#xA0;18:2022 will apply to Management Committee approval of the draft revision.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If the Management Committee approves the draft revision the document will then be forwarded by the Executive Secretary to the BIML so that it can be submitted to the CIML for approval.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Documents requiring Management Committee approval</title>
+      <sec>
+        <label>0</label>
+        <p>The Management Committee is responsible for developing, maintaining and approving the Operational Documents, Procedural Documents, guidance, templates and forms that support the successful operation of the OIML-CS. The CIML will be informed of any new or revised document, guidance, form or template as part of the annual reporting process (see 8.2).</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The Maintenance Group will develop the draft of a new or revised Operational Document or Procedural Document, guidance, template or form. When a draft of the new or revised Operational Document or Procedural Document, guidance, template or form has been developed it will be submitted by the Executive Secretary to the Management Committee Members for voting. The voting rules defined in OIML B 18, 11.4 OIML&#xA0;B&#xA0;18:2022 will apply to Management Committee approval of the new or revised document.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>If the Management Committee approves the draft document then the Executive Secretary will arrange for the new or revised document to be published on the OIML-CS pages of the OIML website.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>For any proposed change to an Operational Document or Procedural Document that the Management Committee considers could be contentious, or where it would present a significant change in policy, the Management Committee shall consult with the CIML prior to making the change.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Other publications and information</title>
+      <p>The Management Committee is responsible for developing literature, including guidance and training materials, and other publicity materials which support the development and promotion of the OIML-CS to existing and potential new users and other stakeholders. The OIML Bulletin may be used to publicise developments within the OIML-CS including information regarding, but not limited to, new OIML Issuing Authorities or Test Laboratories, new instrument categories being included, matters relating to relevant International Standards and changes to the Rules.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Website</title>
+      <p>The Management Committee is responsible for developing proposals for the content and functionality of the OIML-CS pages on the OIML website in relation to the OIML-CS. The decisions taken by the Management Committee regarding the OIML-CS pages on the OIML website shall be reported by the Executive Secretary to the BIML for implementation. == Monitoring of Operation and Effectiveness</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>General</title>
+      <p>To ensure that the OIML-CS continues to develop and to operate in an effective and efficient manner the Management Committee shall establish mechanisms for measuring key activities and outcomes. The Management Committee shall also seek feedback from stakeholders and users of the OIML-CS in order to identify possible improvements. The monitoring of the operation and effectiveness of the OIML-CS will be reported to the CIML as part of the annual report detailed in 8.2.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Measurement of Activities</title>
+      <p>The activities that may be measured by the Management Committee are detailed in 8.2.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Benchmarking</title>
+      <p>The Management Committee may choose to undertake benchmarking to gather information to support the monitoring of the operation and effectiveness of the OIML-CS and to compare the performance of the OIML-CS with other well-established certification systems. The outputs from benchmarking exercises will be incorporated into the monitoring and reporting process. == Legal Metrology Experts and Management System Experts</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>General</title>
+      <p>The Management Committee is responsible for approving and maintaining the lists of OIML Legal Metrology Experts and Management System Experts (team leaders) that will participate in the Accreditation Assessments or Peer Assessments of OIML Issuing Authorities and Test Laboratories, including the specification of the criteria that the experts have to fulfil. The Review Committee is used to provide advice in the form of a recommendation to the Management Committee on the approval of the Legal Metrology Experts and Management System Experts.Note Note0.40,NoteManagement System Experts participate in Peer Assessments as the team leader (lead assessor) for the assessment. For Accreditation Assessments, the team leader (lead assessor) from the accreditation body fulfills that role.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Specification of competence criteria for experts</title>
+      <sec>
+        <label>0</label>
+        <title>Legal Metrology Experts</title>
+        <p>Legal Metrology Experts shall be independent and impartial, and shall not be an employee of a manufacturer of measuring instruments.</p>
+        <p>Legal Metrology Experts shall demonstrate the following knowledge and skills:</p>
+        <list list-type="order" id="_e8bef28f-5c14-168e-018c-96473f0cd71e">
+          <list-item>a)knowledge of type evaluation procedures and/or testing procedures of the relevant category(ies) of instrument(s) or module(s), as specified in the relevant OIML Recommendation(s),</list-item>
+          <list-item>b)knowledge of the rules and processes of the OIML-CS,</list-item>
+          <list-item>c)communication skills appropriate to interact with all levels within an OIML IA or TL, and</list-item>
+          <list-item>d)note-taking and report-writing skills.</list-item>
+        </list>
+        <p>Legal Metrology Experts may demonstrate their competency through:</p>
+        <list list-type="order" id="_19df7b1b-c63e-f179-cfcf-19558e6c3dca">
+          <list-item>a)relevant experience and/or qualifications concerning the type evaluation of relevant categories of measuring instruments;</list-item>
+          <list-item>b)relevant experience and/or qualifications concerning the testing of relevant categories of measuring instruments;</list-item>
+          <list-item>c)participation in training organised by the BIML or equivalent training organised by an accreditation body;</list-item>
+          <list-item>d)being a qualified assessor from an accreditation body; and/or, if applicable,</list-item>
+          <list-item>e)participation in additional training required by the Management Committee.</list-item>
+        </list>
+        <p>The approved scope of the LME will be based upon their demonstrated skills, knowledge and competency with respect to type evaluation, test procedures and instrument category.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Management System Experts</title>
+        <p>Management System Experts shall be independent and impartial, and shall not be an employee of a manufacturer of measuring instruments.</p>
+        <p>Management System Experts shall be knowledgeable in assessing quality management systems of OIML Issuing Authorities on the basis of ISO/IEC 17065 ISO/IEC&#xA0;17065:2012 and/or ISO/IEC 17020 ISO/IEC&#xA0;17020:2012<xref rid="fn_1" ref-type="fn">1</xref>, and/or Test Laboratories on the basis of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017. They shall also demonstrate the following knowledge and skills:</p>
+        <list list-type="order" id="_87c15e8a-ad6c-6df0-a343-aa15377a41f1">
+          <list-item>a)knowledge of assessment principles, practices and techniques, and general management system principles and tools,</list-item>
+          <list-item>b)knowledge of the rules and processes of the OIML-CS,</list-item>
+          <list-item>c)communication skills appropriate to interact with all levels within an OIML Issuing Authority or Test Laboratory,</list-item>
+          <list-item>d)assessment-management skills;</list-item>
+          <list-item>e)opening and closing meeting skills</list-item>
+          <list-item>f)interviewing skills, and</list-item>
+          <list-item>g)note-taking and report-writing skills.</list-item>
+        </list>
+        <p>Management System Experts may demonstrate their competency through:</p>
+        <list list-type="order" id="_63342dba-6d7e-8b23-106b-f0b059fb7673">
+          <list-item>a)relevant experience and/or qualifications, e.g. an IRCA (International Register of Certified Auditors) registered team leader;</list-item>
+          <list-item>b)participation in training organised by the BIML or equivalent training organised by an accreditation body;</list-item>
+          <list-item>c)being a recognised team leader from an Accreditation Body footnote:*; and/or, if applicable,</list-item>
+          <list-item>d)participation in additional training required by the Management Committee.</list-item>
+        </list>
+        <p>footnote:*[A team leader of an Accreditation Body, as defined in the Joint IAF-OIML Assessment Procedure Joint&#xA0;OIML-IAF or the Joint ILAC-OIML Assessment Procedure Joint&#xA0;OIML-ILAC automatically fulfils the competence requirements.]</p>
+        <p>For assessing OIML Issuing Authorities, Management System Experts must also be able demonstrate that they are familiar with the requirements of the OIML-CS, OIML D 32 OIML&#xA0;D&#xA0;32:2018, OIML D 37 OIML&#xA0;D&#xA0;37:2022 and the Joint OIML-IAF Assessment Procedure Joint&#xA0;OIML-IAF.</p>
+        <p>For assessing Test Laboratories, Management System experts must also be able demonstrate that they are familiar with the requirements of the OIML-CS, OIML D 30 OIML&#xA0;D&#xA0;30 and the Joint OIML-ILAC Assessment Procedure Joint&#xA0;OIML-ILAC.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Approval of experts</title>
+      <p>The procedure for applying to be a Legal Metrology Expert or a Management System Expert, and the subsequent Management Committee approval of experts, is detailed in PD-02 OIML-CS&#xA0;PD-02.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Maintenance and publication of expert list</title>
+      <p>A list of Legal Metrology Experts and Management System Experts approved to serve as assessors for the relevant category of measuring instruments is maintained by the Executive Secretary and shall be available on the OIML-CS pages of the OIML website.</p>
+      <p>In the case of an accreditation assessment the Executive Secretary may, with prior consent of the expert, provide to the relevant Accreditation Body the expert&#x2019;s curriculum vitae and other relevant information.</p>
+      <p>The list of experts will be reviewed on a 3-yearly basis by the Management Committee to ensure that the status, scope and suitability of the experts is correct. Prior to the review the Executive Secretary shall contact each expert to determine if there has been any change to their status or if they request a change of scope.</p>
+      <p>The review will confirm</p>
+      <list list-type="order" id="_d3ced2cc-3bad-cad1-6bea-494ec0f34b38">
+        <list-item>a)if the expert wishes to remain on the list,</list-item>
+        <list-item>b)whether the expert wishes to change their scope, i.e. add or remove instrument categories from their scope of expertise, and</list-item>
+        <list-item>c)whether the expert continues to fulfil the criteria specified in 13.2.1 or 13.2.2, as appropriate, including participation in relevant activities.</list-item>
+      </list>
+      <p>In accordance with PD-02, 10.2 OIML-CS&#xA0;PD-02, advice from the Review Committee on the continued suitability of the experts will be sought by the Executive Secretary. This advice will be incorporated into the review conducted by the Management Committee. == Management Committee interaction with the Test Laboratories Forum</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Developing, maintaining and approving the operating rules and procedures for the Test Laboratories Forum</title>
+      <p>The Management Committee is responsible for developing, maintaining and approving the operating rules and procedures regarding</p>
+      <list list-type="order" id="_2ab7f2e5-c3e1-c0a1-e501-89bbea88001b">
+        <list-item>a)the roles and duties of the Test Laboratories Forum,</list-item>
+        <list-item>b)the criteria for membership of the Test Laboratories Forum,</list-item>
+        <list-item>c)the conduct of Test Laboratories Forum work, and</list-item>
+        <list-item>d)the responsibilities of the Executive Secretary in connection with the activities of the Test Laboratories Forum.</list-item>
+      </list>
+      <p>The operating rules of the Test Laboratories Forum are specified in document OD-02 OIML-CS&#xA0;OD-02. In accordance with 11.2.1 above, any proposed changes to the roles and duties of the Test Laboratories Forum will require a revision of OIML B 18 OIML&#xA0;B&#xA0;18:2022.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Interface with the Test Laboratories Forum</title>
+      <p>The Management Committee may seek the advice of the Test Laboratories Forum on issues associated with the application of testing requirements specified in OIML Recommendations, interpretations, interlab comparison programs, etc. The Executive Secretary shall raise issues for consideration by the Test Laboratories Forum in accordance with document OD-02 OIML-CS&#xA0;OD-02.</p>
+      <p>The Test Laboratories Forum may identify issues or provide feedback to the Executive Secretary on items that are considered to be of relevance to the successful operation of the OIML-CS. The Executive Secretary will review the feedback/output from the Test Laboratories Forum and will raise the topic with the Management Committee for their consideration and action, as appropriate.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17020:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2012-02-27</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2017</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories</title>
+            <pub-date>
+              <year>2017-11-29</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17065:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2012-09-10</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>Joint&#xA0;OIML-IAF</doc-identifier>
+            </std-ident>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>Joint&#xA0;OIML-ILAC</doc-identifier>
+            </std-ident>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>Joint&#xA0;OIML-ILAC</doc-identifier>
+            </std-ident>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-02</doc-identifier>
+            </std-ident>
+            <title>Procedures to approve Legal Metrology Experts and Management System Experts</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;15:2011</doc-identifier>
+            </std-ident>
+            <title>OIML Strategy</title>
+            <pub-date>
+              <year>2011</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2022</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;30</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17025 to the assessment of Testing Laboratories involved in legal metrology</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;32:2018</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17065 to assessment of measuring instrument certification bodies in legal metrology</title>
+            <pub-date>
+              <year>2018</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;D&#xA0;37:2022</doc-identifier>
+            </std-ident>
+            <title>Guide for the application of ISO/IEC 17020 to the assessment of OIML Issuing Authorities under the OIML Certification System</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

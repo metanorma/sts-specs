@@ -1,0 +1,53 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/terminology-model.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-terminology-model]
+=== `@terminology-model` Terminology Model Used
+
+How are the terms within term sections described in this document?
+
+#### Usage/Remarks
+#### Related Attributes
+
+Several attributes on the <<element-processing-meta,`<processing-meta>`>> element describe the tag set version choices more fully than the <<attribute-dtd-version,`@dtd-version`>> attribute alone: <<attribute-tagset-family,`@tagset-family`>> Which of the JATS tag set families is the basis for this document’s tag set? (e.g., “`sts`” or “`jats`”) <<attribute-base-tagset,`@base-tagset`>> Which of the STS standard tag sets is the basis for this document? (e.g., “`interchange`” or “`extended`”) <<attribute-table-model,`@table-model`>> Which table model is used by the tag set for this document? (e.g., “`xhtml`” or “`oasis`”) <<attribute-mathml-version,`@mathml-version`>> Which version of MathML is used by the tag set for this document? (e.g., “`3.0`” or “`2.0`”) <<attribute-terminology-model,`@terminology-model`>> Are the terms for this standard described by TBX or by <<element-term-display,`<term-display>`>>? <<attribute-math-representation,`@math-representation`>> A list of the (possibly many) ways mathematical expressions may be represented in this document (e.g., both MathML and TeX [“`mathml tex`”])
+
+#### OPTIONAL on element:  <<element-processing-meta,`<processing-meta>`>>
+
+|===
+| Value| Meaning
+
+| tbx| Terms within term sections are defined using the namespaced TBX vocabulary.
+| term-display| Terms within term sections are defined using the <<element-term-display,`<term-display>`>> element.
+| both| Some terms or portions of term descriptions are defined using the <<element-term-display,`<term-display>`>> element and some using the TBX vocabulary.
+| none| Terms and term sections are not defined using either the TBX vocabulary or the <<element-term-display,`<term-display>`>> element. Terminology sections are tagged as ordinary text paragraphs and sections.
+| Restriction| `@terminology-model` is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### Term display is used rather than TBX
+[source,xml]
+....
+<standard
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">
+ <processing-meta
+   base-tagset="interchange"
+   mathml-version="3.0"
+   table-model="xhtml"
+   terminology-model="term-display"
+   math-representation="mathml png"
+   tagset-family="sts" />  
+ <front>...</front>
+ <body>...</body>
+ <back>...</back>
+</standard>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,25 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xmlns-mml.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xmlns-mml]
+=== `@xmlns:mml` MathML Namespace Declaration
+
+This is not an attribute, but the namespace pseudo-attribute. The value provides a prefix and URI to use for the MathML elements. All namespace prefixes must be associated with a URL, and the prefix “`mml`” has been set to the URL for the World Wide Web Consortium (W3C) MathML Tag Set.
+
+#### FIXED (not settable) on many elements; click for list and usage
+
+<<element-adoption,`<adoption>`>>, <<element-app,`<app>`>>, <<element-app-group,`<app-group>`>>, <<element-mml-math,`<mml:math>`>>, <<element-standard,`<standard>`>>
+|===
+| Value| Meaning
+
+| http://www.w3.org/1998/Math/MathML| The prefix “`mml`” has been set to the URL for the W3C MathML Tag Set.
+| Restriction| This attribute has a fixed value which may not be changed in the XML document.
+|===
+
+#### Related Resource
+
+For a discussion on namespaces used in STS, see Namespacing NISO STS Elements.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

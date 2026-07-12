@@ -1,0 +1,88 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/edition.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-edition]
+=== `<edition>` Edition Number
+
+Within standards-specific elements such as <<element-std-ident,`<std-ident>`>>, an `<edition>` element contains the edition number for the standard. Edition number updates typically correlate with major revisions to a standard.
+
+#### Usage/Remarks
+For example, for ISO and the family of ISO-related national and regional standards bodies, an `<edition>` is the number of times a standard has been revised (meaning a major voted revision, typically with an updated year). For example, if ISO 9001:2015 is the fifth major revision of ISO 9001 it would be tagged as `<edition>5</edition>`.
+The content of may be a simple edition number (such as “`<edition>3</edition>`” or “`<edition>A</edition>`”). More complex edition statements may contain a textual statement (“`Third print edition revised`”), the edition number as an ordinal (“`3rd`” or “`3rd edition`”), or superscripted ordinals (“`4<sup>th</sup>`” or “`4<sup>th</sup> digital edition`”).
+Whether or not the `<edition>` content is more than a simple number, the <<attribute-designator,`@designator`>> attribute of this element (unrelated to standards designations) can be used to hold the simple numerical or alphabetic edition number (`<edition designator="3">3rd French Edition reprinted</edition>`).
+#### Different Usage in JATS Citations
+
+The `<edition>` element is defined and used differently in NISO STS than it is in JATS: Within standards-specific elements (such as <<element-std-ident,`<std-ident>`>>), an `<edition>` element gives the edition number for this standards document. (Note: Although permitted, use of `<edition>` inside <<element-std-ref,`<std-ref>`>> is discouraged.) Within citation-related elements (such as <<element-mixed-citation,`<mixed-citation>`>> and <<element-related-object,`<related-object>`>>), an <<element-edition,`<edition>`>> element contains the full edition statement for the document being cited or described.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-designator,`@designator`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Baseline Change Elements <<element-sub,`<sub>`>> <<element-sub,Subscript>> <<element-sup,`<sup>`>> <<element-sup,Superscript>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  edition      (#PCDATA %edition-elements;)*                >
+....
+#### Expanded Content Model
+
+(#PCDATA | sub | sup)*
+
+#### Tagged Samples
+
+#### Edition number of ISO standard
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <part-number></part-number>
+  <edition>3</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language>
+ ...
+</iso-meta>
+...
+....
+#### Edition number in citation
+
+[source,xml]
+....
+...
+<ref id="ref_25">
+ <label>[25]</label>
+ <mixed-citation publication-type="book"
+  ><source>Retskrivningsordbogen</source>. 
+  <publisher-name>Dansk Sprogn&aelig;vn &amp; 
+   Aschehoug Dansk Forlag A/S</publisher-name>, 
+  <edition>Second Edition</edition>, 
+  <year iso-8601-date="1996">1996</year></mixed-citation>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

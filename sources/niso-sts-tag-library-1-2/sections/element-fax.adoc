@@ -1,0 +1,80 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/fax.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-fax]
+=== `<fax>` Fax Number (in address)
+
+Portion of an address that contains a fax number.
+
+#### Related Elements
+
+An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as a company or an organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-collab,`<collab>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-std-org-loc,`<std-org-loc>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  fax          (#PCDATA %fax-elements;)*                    >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### In `<address>`
+[source,xml]
+....
+...
+<license>
+ <license-p>...</license-p>
+ <license-p>COPYRIGHT PROTECTED DOCUMENT</license-p>
+ <license-p>&#x00A9; ISO/IEC 2013</license-p>
+ <license-p>All rights reserved. Unless otherwise specified, no 
+  part of this publication may be reproduced or utilized otherwide 
+  in any form or by any means, electronic or mechanical, including 
+  photocopying, or posting on the internet or an intranet, without 
+  prior written permission. Permission can be requested from either 
+  ISO at the address below or ISO&#x0027;s member body in the 
+  country of the requester:
+  <list list-type="simple">
+   <list-item>
+    <p><address>
+      <addr-line>ISO copyright office</addr-line>
+      <addr-line>Case postage 56 &#x2022;</addr-line>
+      <postal-code>CH-1211</postal-code>
+      <city>Geneva 20</city>
+      <addr-line>Tel. <phone>+ 41 22 749 01 11</phone></addr-line>
+      <addr-line>Fax <fax>+ 41 22 749 09 47</fax></addr-line>
+     </address></p>
+    <p>E-mail <email>copyright@iso.org</email></p>
+    <p>Web <uri>www.iso.org</uri></p>
+    <p>Published in Switzerland</p>
+   </list-item>
+  </list>
+ </license-p>
+</license>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

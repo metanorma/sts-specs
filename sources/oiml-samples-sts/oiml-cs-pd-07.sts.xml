@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML-CS PD-07 Edition 4</doc-identifier>
+      <std-title-group>
+        <title>Transition Arrangements under the OIML-CS</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>2024-01-16</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+    </iso-meta>
+    <foreword>
+      <p>This publication has been prepared by the Maintenance Group of the OIML Certification System (OIML-CS) Management Committee (MC).</p>
+      <p>The Management Committee approved this Edition 4 of OIML-CS PD-07 by electronic ballot on 15 January 2024 and it was published on 16 January 2024. This edition takes effect immediately upon publication.</p>
+      <p>This publication is directly related to the Framework for the OIML Certification System (OIML-CS) (OIML B 18 OIML&#xA0;B&#xA0;18:2022) which contains the framework for the operation of the OIML-CS.</p>
+      <p>The text of this publication is based on the following documents:</p>
+      <table-wrap id="tab_1">
+        <caption>Edition history</caption>
+        <table>
+          <tr>
+            <th>Edition</th>
+            <th>Document</th>
+            <th>Report on Voting/Acceptance</th>
+          </tr>
+          <tr>
+            <td>PD-07 Edition 1</td>
+            <td>PD-07 Edition 1</td>
+            <td>Published July 2017</td>
+          </tr>
+          <tr>
+            <td>PD-07 Edition 2</td>
+            <td>PD-07 Edition 2</td>
+            <td>Published 20 December 2018</td>
+          </tr>
+          <tr>
+            <td>PD-07 Edition 3</td>
+            <td>PD-07 Edition 3</td>
+            <td>Published 10 June 2021</td>
+          </tr>
+          <tr>
+            <td>PD-07 Edition 4 (Draft)</td>
+            <td>OIML-CS_SC3_P1_SG3_N077</td>
+            <td>Draft for MG comment: 20230921</td>
+          </tr>
+          <tr>
+            <td>PD-07 Edition 4 (Draft)</td>
+            <td>OIML-CS_SC1_P4_N126</td>
+            <td>Draft for MC approval: 20231213</td>
+          </tr>
+        </table>
+      </table-wrap>
+    </foreword>
+    <introduction>
+      <sec>
+        <label>0</label>
+        <p>The OIML Certification System (OIML-CS) has been established</p>
+        <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+          <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+          <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+          <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+        <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+        <p>This publication contains the procedures covering the transition of the OIML Basic Certificate System and the OIML Mutual Acceptance Arrangement (MAA) to the OIML-CS, including the use of existing OIML Basic and MAA certificates and their associated OIML type evaluation reports and previous test data to issue OIML certificates under the OIML-CS. It also covers the transition arrangements when a category of measuring instrument moves from Scheme B to Scheme A under the OIML-CS.</p>
+        <p>These procedures relate to the framework for the OIML-CS, as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-01, OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-04, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06 and OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+        <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. In addition, the following definition applies:</p>
+      </sec>
+      <sec>
+        <label>0</label>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>previous test data</title>
+        <p>test results and test reports that have been used to support the issuing of an OIML Basic or MAA type evaluation report or an OIML Basic or MAA certificate under the OIML Basic Certificate System or OIML Mutual Acceptance Arrangement == Status, acceptance and revision of existing OIML Basic and MAA certificates</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>As specified in OIML B 18, 15.10 and 15.11 OIML&#xA0;B&#xA0;18:2022, OIML Basic and OIML MAA certificates that were issued under the OIML Basic Certificate System and the OIML MAA respectively are considered to remain valid.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Utilizers and Associates may specify their acceptance of OIML MAA certificates and/or OIML MAA type evaluation reports in their OIML-CS Declaration, and any associated conditions, as defined in OIML-CS&#xA0;PD-08. Acceptance of OIML Basic certificates will be on a voluntary basis; this will not be specified in the OIML-CS Declaration of a Utilizer or Associate.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>From 1 January 2018, no new OIML Basic certificates or OIML MAA certificates may be issued and revisions to existing OIML Basic certificates or existing OIML MAA certificates are no longer permitted. However, an &#x201C;Annex&#x201D; to the OIML Basic certificate or OIML MAA certificate may be issued by the original Issuing Authority (under the OIML Basic Certificate System) or by the original Issuing Participant (under the OIML MAA) respectively in the following instances:</p>
+        <list list-type="order" id="_e99c9d05-f7a8-87e5-0c4e-942c21517f32">
+          <list-item>a)to correct an error by the applicant or the Issuing Authority/Participant; or</list-item>
+          <list-item>b)when the ownership of an OIML Basic or MAA certificate is transferred to a new applicant.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>An &#x201C;Annex&#x201D; to an OIML Basic certificate or OIML MAA certificate cannot be issued to change the technical or metrological characteristics of the measuring instrument/module. In this instance, a new OIML certificate shall be issued under Scheme A or Scheme B as appropriate. Existing OIML Basic and/or OIML MAA type evaluation reports may be used to support the issuing of the new OIML certificate according to the conditions specified in clauses 5 and 6 below.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Applications for OIML certification under either Scheme A or Scheme B may be made based on existing OIML MAA certificates or OIML Basic certificates, and their corresponding OIML MAA or Basic type evaluation reports and previous test data.</p>
+        <p>In this case the application shall be made to the &#x2018;original&#x2019; OIML Issuing Authority as the organization that issued the OIML MAA certificate (as an Issuing Participant under the OIML MAA) or the OIML Basic certificate (as an Issuing Authority under the OIML Basic Certificate System). The following exceptions apply to this requirement:</p>
+        <list list-type="order" id="_6028a0a5-ee19-4bac-7013-0ed709266b4f">
+          <list-item>a)Where the original Issuing Participant or Issuing Authority is not an OIML Issuing Authority under the OIML-CS for that category of measuring instrument, the application may be made to another OIML Issuing Authority for that category of measuring instrument.</list-item>
+          <list-item>b)Where the original OIML Issuing Authority is not able to fulfil the certification process required by the application (for whatever reason), a new application may be made to another OIML Issuing Authority for that category of measuring instrument subject to, and accompanied by, written permission from either:1)the original OIML Issuing Authority; or2)the Executive Secretary of the OIML-CS.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The &#x201C;Annex&#x201D; shall bear the applicable logo (the MAA logo for MAA certificates or the OIML logo for Basic certificates) and shall be provided with a unique number. Requirements regarding the use of the OIML and OIML-CS logos are specified in OIML B 20 OIML&#xA0;B&#xA0;20:2019. == Issuing an OIML certificate under Scheme B</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>An applicant may apply to an OIML Issuing Authority to use an existing OIML MAA certificate or OIML Basic certificate, its corresponding OIML MAA or Basic type evaluation report and previous test data to issue a Scheme B OIML certificate and OIML type evaluation report under the OIML-CS. The requirements of 4.5 apply.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where previous test data is used to issue a Scheme B OIML certificate and OIML type evaluation report, the OIML Issuing Authority shall ensure that:</p>
+        <list list-type="order" id="_b3a8f3e5-9fdf-eef0-7fe8-9ed898206524">
+          <list-item>a)at the time that the original testing took place the test facility satisfied the requirements of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005<xref rid="fn_1" ref-type="fn">1</xref>, either through self-declaration, peer assessment or accreditation with a scope covering the relevant OIML Recommendation (see 5.3 for a conditional exception);</list-item>
+          <list-item>b)the testing was performed on a sample that is representative of the current type; and</list-item>
+          <list-item>c)the testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where testing was performed in a test facility (either a test laboratory or field site), that did not satisfy the requirements of 5.2 a) at the time of testing, the OIML Issuing Authority shall include a documented appraisal of the testing and the use of any previous test data in the OIML type evaluation report. The documented appraisal shall include an explanation as to why the previous test data is considered acceptable under the OIML-CS.</p>
+        <p>The requirements of 5.2 b) and c) still apply.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The procedures specified in clause 4 of OIML-CS&#xA0;PD-05 shall be applied. Previous test data that satisfies the requirements of 5.2 above is deemed to fulfil the requirement specified in OIML-CS&#xA0;PD-05, 4.3. In addition, the OIML type evaluation report shall clearly identify:</p>
+        <list list-type="order" id="_84b7cd71-7e4d-408f-f67f-19663daffdd2">
+          <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+          <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme B OIML certificates may only be issued for editions of OIML Recommendations that are included in the OIML-CS at the time of issue.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>To issue a Scheme B OIML certificate for a revised edition of the OIML Recommendation, the OIML MAA or Basic type evaluation report issued in support of the existing OIML MAA certificate or OIML Basic certificate may be used to support the assessment of requirements, where those requirements and tests are unchanged in the revised edition of the Recommendation.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where additional tests are required, or the test requirements have changed in the revised edition of a Recommendation (e.g. different severity level), testing shall be conducted by a Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme B OIML type evaluation reports shall clearly specify whether or not they have been issued on the basis of previous test data from an existing OIML Basic certificate and its corresponding OIML type evaluation report.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme B OIML certificates and OIML type evaluation reports issued on the basis of previous test data from an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report may be accepted by Utilizers and Associates in their OIML-CS Declaration on a voluntary basis.Note Note0.19,NoteUtilizers and Associates may inform the Executive Secretary of their rejection of an OIML certificate and/or OIML type evaluation report, and the reasons for the rejection. == Issuing an OIML certificate under Scheme A</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>OIML MAA certificates, OIML MAA type evaluation reports and previous test data</title>
+        <sec>
+          <label>0</label>
+          <p>An applicant may apply to an OIML Issuing Authority under the OIML-CS to use an existing OIML MAA certificate, its corresponding OIML MAA type evaluation report and previous test data to issue a Scheme A OIML certificate and OIML type evaluation report under the OIML-CS. The requirements of 4.5 apply.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where previous test data is used to issue a Scheme A OIML certificate and OIML type evaluation report, the OIML Issuing Authority shall ensure that:</p>
+          <list list-type="order" id="_da521f15-5261-e023-9b43-5e31deddc3ae">
+            <list-item>a)the testing was performed on a sample that is representative of the current type; and</list-item>
+            <list-item>b)the testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The procedures specified in clause 5 of OIML-CS&#xA0;PD-05 shall be applied to the processing of a Scheme A OIML certificate. Previous test data that satisfies the requirements of 6.1.2 above is deemed to fulfil the requirement specified in OIML-CS&#xA0;PD-05, 5.3. In addition, the OIML type evaluation report shall clearly identify:</p>
+          <list list-type="order" id="_53811d86-ddb8-0772-2e9b-4f2af37ee560">
+            <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+            <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Scheme A OIML certificates may only be issued for editions of OIML Recommendations that are included in the OIML-CS at the time of issue.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>To issue a Scheme A OIML certificate for a revised edition of the OIML Recommendation, the OIML MAA type evaluation report issued in support of the existing OIML MAA certificate may be used to support the assessment of requirements where those requirements and tests are unchanged in the revised edition of the Recommendation.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where additional tests are required or the test requirements have changed in the revised edition of a Recommendation (e.g. different severity level), all new testing shall be conducted by an approved Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>OIML Basic certificates, OIML Basic type evaluation reports and previous test data</title>
+        <sec>
+          <label>0</label>
+          <p>An applicant may apply to an OIML Issuing Authority to use an existing Basic certificate, its corresponding OIML Basic type evaluation report and previous test data to issue a Scheme A OIML certificate for any OIML Recommendation included in the OIML-CS. The requirements of 4.5 apply.</p>
+          <p>While an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report cannot be used directly to issue a Scheme A OIML certificate, the associated previous test data may be used to issue a Scheme A OIML certificate and OIML type evaluation report under the conditions specified in 6.2.2 to 6.2.9 below.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where previous test data is used to issue a Scheme A OIML certificate and OIML type evaluation report, the OIML Issuing Authority shall ensure that:</p>
+          <list list-type="order" id="_777ff6f3-7417-301d-74c3-a00847b10818">
+            <list-item>a)at the time that the original testing took place the test facility was accredited or peer assessed to ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, with the scope of accreditation or peer assessment covering the relevant OIML Recommendation (see 6.2.3 for a conditional exception);</list-item>
+            <list-item>b)the testing was performed on a sample that is representative of the current type; and</list-item>
+            <list-item>c)the testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where previous testing was performed in a facility (either a test laboratory or field site) that did not satisfy the requirements of 6.2.2 a) at the time of testing, the OIML Issuing Authority shall include a documented appraisal of the previous testing and shall accurately record the use of any previous test data in the OIML type evaluation report.</p>
+          <p>The requirements of 6.2.2 b) and c) still apply.</p>
+          <p>The documented appraisal of the previous testing shall include at least the following:</p>
+          <list list-type="order" id="_67d3c5dd-730c-7f5c-1aa2-5a6d70583500">
+            <list-item>a)an assessment of the test facility and test methodology used at the time of testing, with consideration of the requirements of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, including:1)Traceability and calibration of reference standards;2)Documented procedures and test methods;3)Estimation of the uncertainty of the results associated with the test methods;4)Staff competency and training; and5)History of similar testing and comparisons with other results.</list-item>
+            <list-item>b)a review of the previous test data that evaluates both the data itself and its acceptability to the Issuing Authority at the time of testing; and</list-item>
+            <list-item>c)a statement that the previous test data continues to be acceptable under the OIML-CS.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The procedures specified in clause 5 of OIML-CS&#xA0;PD-05 shall be applied to the processing of a Scheme A OIML certificate. In addition, the OIML type evaluation report shall clearly identify:</p>
+          <list list-type="order" id="_7b05f9d9-fa9a-85d7-fc83-2071e39ce544">
+            <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+            <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Scheme A OIML certificates may only be issued for editions of OIML Recommendations that are included in the OIML-CS at the time of issue.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>To issue a Scheme A OIML certificate for a revised edition of the OIML Recommendation, the previous test data may be used to support the assessment of requirements where those requirements and tests are unchanged in the revised edition of the Recommendation.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where additional tests are required or the test requirements have changed in the revised edition of a Recommendation (e.g. different severity level), all new testing shall be conducted by an approved Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Scheme A OIML type evaluation reports shall clearly specify whether or not they have been issued on the basis of previous test data from an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Scheme A OIML certificates and OIML type evaluation reports that contain previous test data from an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report may be accepted by Utilizers and Associates in their OIML-CS Declaration on a voluntary basis.Note Note0.21.9,NoteUtilizers and Associates may inform the Executive Secretary of their rejection of an OIML certificate and/or OIML type evaluation report, and the reasons for the rejection. == Transition from Scheme B to Scheme A</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Issuing OIML certificates</title>
+        <sec>
+          <label>0</label>
+          <p>When a category of measuring instrument and the relevant OIML Recommendation transitions from Scheme B to Scheme A (see OIML B 18, 16.2 OIML&#xA0;B&#xA0;18:2022), no new OIML certificates under Scheme B may be issued for that category of measuring instrument on the basis of the relevant Recommendation except under the conditions defined in 7.1.2.</p>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>When the relevant category of measuring instrument and OIML Recommendation has transitioned to Scheme A, in the event that an applicant requests a revision of an existing OIML certificate issued under Scheme B based on the same edition of the OIML Recommendation, the revised OIML certificate under Scheme B may be issued by the original OIML Issuing Authority. The requirements of 4.5 apply.</p>
+        </sec>
+      </sec>
+      <sec>
+        <label>0</label>
+        <title>Using Scheme B certificates to issue Scheme A certificates</title>
+        <sec>
+          <label>0</label>
+          <p>Where a category of measuring instrument and the relevant OIML Recommendation is in Scheme A under the OIML-CS, an applicant may apply to an OIML Issuing Authority to use an existing OIML certificate under Scheme B to issue a Scheme A certificate. The requirements of 4.5 and the following conditions apply:</p>
+          <list list-type="order" id="_0d5e31ea-b081-5f30-6be9-2035811c5202">
+            <list-item>a)The Test Laboratory that conducted the testing is a Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority for the applicable category of measuring instrument;</list-item>
+            <list-item>b)At the time that the original OIML type evaluation took place the Test Laboratory was accredited/peer assessed to ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, with the scope of accreditation/peer assessment in both cases covering the category of measuring instrument and the relevant OIML Recommendation (see 7.2.2 and Notes under 5.2);</list-item>
+            <list-item>c)The testing was conducted on a sample that is representative of the current type; and</list-item>
+            <list-item>d)The testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where previous testing was performed in a facility (either a test laboratory or field site) that did not satisfy the requirements of 7.2.1 a) and b) at the time of testing, the OIML Issuing Authority shall include a documented appraisal of the previous testing and shall accurately record the use of any previous test data in the OIML type evaluation report.</p>
+          <p>The requirements of 7.2.1 c) and d) still apply.</p>
+          <p>The documented appraisal of the previous testing shall include at least the following:</p>
+          <list list-type="order" id="_548c16ee-27c0-d732-2cb0-2153c9360a6a">
+            <list-item>a)an assessment of the test facility and test methodology used at the time of testing, with consideration of the requirements of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, including:1)Traceability and calibration of reference standards;2)Documented procedures and test methods;3)Estimation of the uncertainty of the results associated with the test methods;4)Staff competency and training; and5)History of similar testing and comparisons with other results.</list-item>
+            <list-item>b)a review of the previous test data that evaluates both the data itself and its acceptability to the Issuing Authority at the time of testing; and</list-item>
+            <list-item>c)a statement that the previous test data continues to be acceptable under the OIML-CS.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>The procedures specified in clause 5 of OIML-CS&#xA0;PD-05 shall be applied, with the OIML type evaluation report issued for the OIML Basic certificate deemed to fulfil the requirement specified in OIML-CS&#xA0;PD-05, 5.3.3. In addition, the OIML type evaluation report shall clearly identify:</p>
+          <list list-type="order" id="_82fd742a-07fd-add5-378c-18410b08db46">
+            <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+            <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+          </list>
+        </sec>
+        <sec>
+          <label>0</label>
+          <p>Where an OIML Recommendation has been revised since the original OIML certificate under Scheme B was issued, an OIML certificate under Scheme A can be issued for the original edition of the OIML Recommendation where it has been retained in the OIML-CS under Scheme A. To issue a Scheme A OIML certificate under the OIML-CS for the revised edition of the OIML Recommendation the OIML type evaluation report issued in support of the existing OIML certificate under Scheme B may only be applied to tests where the requirements for the tests haven&#x2019;t changed in the revised edition of the Recommendation. Where there are additional tests or the test requirements have changed (e.g. different severity level) in the revised edition, all new testing shall be conducted by a Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+        </sec>
+      </sec>
+    </introduction>
+  </front>
+  <body>
+    <p>Transition Arrangements under the OIML-CS</p>
+    <sec>
+      <label>0</label>
+      <p>The OIML Certification System (OIML-CS) has been established</p>
+      <list list-type="order" id="_b232c17d-33e1-1070-45f7-6296ae5da946">
+        <list-item>a)to promote the global harmonization, uniform interpretation and implementation of legal metrological requirements for measuring instruments and/or modules,</list-item>
+        <list-item>b)to avoid unnecessary re-testing when obtaining national type evaluations and approvals, and to support the recognition of measuring instruments and/or modules under legal metrological control, while achieving and maintaining confidence in the results in support of facilitating the global trade of individual instruments, and</list-item>
+        <list-item>c)to establish rules and procedures for fostering mutual confidence among participating OIML Member States and Corresponding Members in the results of type evaluations that indicate conformity of measuring instruments and/or modules, under legal metrological control, to metrological and technical requirements established in the applicable OIML Recommendation(s).</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>OIML B 18 Framework for the OIML Certification System (OIML-CS) OIML&#xA0;B&#xA0;18:2022 establishes the rules for a framework for the OIML-CS. OIML B 18 OIML&#xA0;B&#xA0;18:2022 is supplemented by a range of Operational Documents and Procedural Documents which are developed, maintained and approved by the OIML-CS Management Committee. == Scope</p>
+      <p>This document is one of a series of Operational Documents and Procedural Documents that define the rules for the operation of the OIML-CS.</p>
+      <p>This publication contains the procedures covering the transition of the OIML Basic Certificate System and the OIML Mutual Acceptance Arrangement (MAA) to the OIML-CS, including the use of existing OIML Basic and MAA certificates and their associated OIML type evaluation reports and previous test data to issue OIML certificates under the OIML-CS. It also covers the transition arrangements when a category of measuring instrument moves from Scheme B to Scheme A under the OIML-CS.</p>
+      <p>These procedures relate to the framework for the OIML-CS, as given in OIML B 18 OIML&#xA0;B&#xA0;18:2022, the Operational Rules as given in OIML-CS&#xA0;OD-01 and OIML-CS&#xA0;OD-02, and the Procedures as given in OIML-CS&#xA0;PD-01, OIML-CS&#xA0;PD-02, OIML-CS&#xA0;PD-03, OIML-CS&#xA0;PD-04, OIML-CS&#xA0;PD-05, OIML-CS&#xA0;PD-06 and OIML-CS&#xA0;PD-08. == Terminology and abbreviations</p>
+      <p>The terminology and abbreviations defined in clause 3 of OIML B 18 OIML&#xA0;B&#xA0;18:2022 apply. In addition, the following definition applies:</p>
+    </sec>
+    <sec>
+      <label>0</label>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>previous test data</title>
+      <p>test results and test reports that have been used to support the issuing of an OIML Basic or MAA type evaluation report or an OIML Basic or MAA certificate under the OIML Basic Certificate System or OIML Mutual Acceptance Arrangement == Status, acceptance and revision of existing OIML Basic and MAA certificates</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>As specified in OIML B 18, 15.10 and 15.11 OIML&#xA0;B&#xA0;18:2022, OIML Basic and OIML MAA certificates that were issued under the OIML Basic Certificate System and the OIML MAA respectively are considered to remain valid.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Utilizers and Associates may specify their acceptance of OIML MAA certificates and/or OIML MAA type evaluation reports in their OIML-CS Declaration, and any associated conditions, as defined in OIML-CS&#xA0;PD-08. Acceptance of OIML Basic certificates will be on a voluntary basis; this will not be specified in the OIML-CS Declaration of a Utilizer or Associate.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>From 1 January 2018, no new OIML Basic certificates or OIML MAA certificates may be issued and revisions to existing OIML Basic certificates or existing OIML MAA certificates are no longer permitted. However, an &#x201C;Annex&#x201D; to the OIML Basic certificate or OIML MAA certificate may be issued by the original Issuing Authority (under the OIML Basic Certificate System) or by the original Issuing Participant (under the OIML MAA) respectively in the following instances:</p>
+      <list list-type="order" id="_e99c9d05-f7a8-87e5-0c4e-942c21517f32">
+        <list-item>a)to correct an error by the applicant or the Issuing Authority/Participant; or</list-item>
+        <list-item>b)when the ownership of an OIML Basic or MAA certificate is transferred to a new applicant.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>An &#x201C;Annex&#x201D; to an OIML Basic certificate or OIML MAA certificate cannot be issued to change the technical or metrological characteristics of the measuring instrument/module. In this instance, a new OIML certificate shall be issued under Scheme A or Scheme B as appropriate. Existing OIML Basic and/or OIML MAA type evaluation reports may be used to support the issuing of the new OIML certificate according to the conditions specified in clauses 5 and 6 below.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Applications for OIML certification under either Scheme A or Scheme B may be made based on existing OIML MAA certificates or OIML Basic certificates, and their corresponding OIML MAA or Basic type evaluation reports and previous test data.</p>
+      <p>In this case the application shall be made to the &#x2018;original&#x2019; OIML Issuing Authority as the organization that issued the OIML MAA certificate (as an Issuing Participant under the OIML MAA) or the OIML Basic certificate (as an Issuing Authority under the OIML Basic Certificate System). The following exceptions apply to this requirement:</p>
+      <list list-type="order" id="_6028a0a5-ee19-4bac-7013-0ed709266b4f">
+        <list-item>a)Where the original Issuing Participant or Issuing Authority is not an OIML Issuing Authority under the OIML-CS for that category of measuring instrument, the application may be made to another OIML Issuing Authority for that category of measuring instrument.</list-item>
+        <list-item>b)Where the original OIML Issuing Authority is not able to fulfil the certification process required by the application (for whatever reason), a new application may be made to another OIML Issuing Authority for that category of measuring instrument subject to, and accompanied by, written permission from either:1)the original OIML Issuing Authority; or2)the Executive Secretary of the OIML-CS.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The &#x201C;Annex&#x201D; shall bear the applicable logo (the MAA logo for MAA certificates or the OIML logo for Basic certificates) and shall be provided with a unique number. Requirements regarding the use of the OIML and OIML-CS logos are specified in OIML B 20 OIML&#xA0;B&#xA0;20:2019. == Issuing an OIML certificate under Scheme B</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>An applicant may apply to an OIML Issuing Authority to use an existing OIML MAA certificate or OIML Basic certificate, its corresponding OIML MAA or Basic type evaluation report and previous test data to issue a Scheme B OIML certificate and OIML type evaluation report under the OIML-CS. The requirements of 4.5 apply.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where previous test data is used to issue a Scheme B OIML certificate and OIML type evaluation report, the OIML Issuing Authority shall ensure that:</p>
+      <list list-type="order" id="_b3a8f3e5-9fdf-eef0-7fe8-9ed898206524">
+        <list-item>a)at the time that the original testing took place the test facility satisfied the requirements of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005<xref rid="fn_1" ref-type="fn">1</xref>, either through self-declaration, peer assessment or accreditation with a scope covering the relevant OIML Recommendation (see 5.3 for a conditional exception);</list-item>
+        <list-item>b)the testing was performed on a sample that is representative of the current type; and</list-item>
+        <list-item>c)the testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where testing was performed in a test facility (either a test laboratory or field site), that did not satisfy the requirements of 5.2 a) at the time of testing, the OIML Issuing Authority shall include a documented appraisal of the testing and the use of any previous test data in the OIML type evaluation report. The documented appraisal shall include an explanation as to why the previous test data is considered acceptable under the OIML-CS.</p>
+      <p>The requirements of 5.2 b) and c) still apply.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>The procedures specified in clause 4 of OIML-CS&#xA0;PD-05 shall be applied. Previous test data that satisfies the requirements of 5.2 above is deemed to fulfil the requirement specified in OIML-CS&#xA0;PD-05, 4.3. In addition, the OIML type evaluation report shall clearly identify:</p>
+      <list list-type="order" id="_84b7cd71-7e4d-408f-f67f-19663daffdd2">
+        <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+        <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+      </list>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Scheme B OIML certificates may only be issued for editions of OIML Recommendations that are included in the OIML-CS at the time of issue.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>To issue a Scheme B OIML certificate for a revised edition of the OIML Recommendation, the OIML MAA or Basic type evaluation report issued in support of the existing OIML MAA certificate or OIML Basic certificate may be used to support the assessment of requirements, where those requirements and tests are unchanged in the revised edition of the Recommendation.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Where additional tests are required, or the test requirements have changed in the revised edition of a Recommendation (e.g. different severity level), testing shall be conducted by a Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Scheme B OIML type evaluation reports shall clearly specify whether or not they have been issued on the basis of previous test data from an existing OIML Basic certificate and its corresponding OIML type evaluation report.</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <p>Scheme B OIML certificates and OIML type evaluation reports issued on the basis of previous test data from an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report may be accepted by Utilizers and Associates in their OIML-CS Declaration on a voluntary basis.Note Note0.19,NoteUtilizers and Associates may inform the Executive Secretary of their rejection of an OIML certificate and/or OIML type evaluation report, and the reasons for the rejection. == Issuing an OIML certificate under Scheme A</p>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>OIML MAA certificates, OIML MAA type evaluation reports and previous test data</title>
+      <sec>
+        <label>0</label>
+        <p>An applicant may apply to an OIML Issuing Authority under the OIML-CS to use an existing OIML MAA certificate, its corresponding OIML MAA type evaluation report and previous test data to issue a Scheme A OIML certificate and OIML type evaluation report under the OIML-CS. The requirements of 4.5 apply.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where previous test data is used to issue a Scheme A OIML certificate and OIML type evaluation report, the OIML Issuing Authority shall ensure that:</p>
+        <list list-type="order" id="_da521f15-5261-e023-9b43-5e31deddc3ae">
+          <list-item>a)the testing was performed on a sample that is representative of the current type; and</list-item>
+          <list-item>b)the testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The procedures specified in clause 5 of OIML-CS&#xA0;PD-05 shall be applied to the processing of a Scheme A OIML certificate. Previous test data that satisfies the requirements of 6.1.2 above is deemed to fulfil the requirement specified in OIML-CS&#xA0;PD-05, 5.3. In addition, the OIML type evaluation report shall clearly identify:</p>
+        <list list-type="order" id="_53811d86-ddb8-0772-2e9b-4f2af37ee560">
+          <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+          <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme A OIML certificates may only be issued for editions of OIML Recommendations that are included in the OIML-CS at the time of issue.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>To issue a Scheme A OIML certificate for a revised edition of the OIML Recommendation, the OIML MAA type evaluation report issued in support of the existing OIML MAA certificate may be used to support the assessment of requirements where those requirements and tests are unchanged in the revised edition of the Recommendation.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where additional tests are required or the test requirements have changed in the revised edition of a Recommendation (e.g. different severity level), all new testing shall be conducted by an approved Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>OIML Basic certificates, OIML Basic type evaluation reports and previous test data</title>
+      <sec>
+        <label>0</label>
+        <p>An applicant may apply to an OIML Issuing Authority to use an existing Basic certificate, its corresponding OIML Basic type evaluation report and previous test data to issue a Scheme A OIML certificate for any OIML Recommendation included in the OIML-CS. The requirements of 4.5 apply.</p>
+        <p>While an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report cannot be used directly to issue a Scheme A OIML certificate, the associated previous test data may be used to issue a Scheme A OIML certificate and OIML type evaluation report under the conditions specified in 6.2.2 to 6.2.9 below.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where previous test data is used to issue a Scheme A OIML certificate and OIML type evaluation report, the OIML Issuing Authority shall ensure that:</p>
+        <list list-type="order" id="_777ff6f3-7417-301d-74c3-a00847b10818">
+          <list-item>a)at the time that the original testing took place the test facility was accredited or peer assessed to ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, with the scope of accreditation or peer assessment covering the relevant OIML Recommendation (see 6.2.3 for a conditional exception);</list-item>
+          <list-item>b)the testing was performed on a sample that is representative of the current type; and</list-item>
+          <list-item>c)the testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where previous testing was performed in a facility (either a test laboratory or field site) that did not satisfy the requirements of 6.2.2 a) at the time of testing, the OIML Issuing Authority shall include a documented appraisal of the previous testing and shall accurately record the use of any previous test data in the OIML type evaluation report.</p>
+        <p>The requirements of 6.2.2 b) and c) still apply.</p>
+        <p>The documented appraisal of the previous testing shall include at least the following:</p>
+        <list list-type="order" id="_67d3c5dd-730c-7f5c-1aa2-5a6d70583500">
+          <list-item>a)an assessment of the test facility and test methodology used at the time of testing, with consideration of the requirements of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, including:1)Traceability and calibration of reference standards;2)Documented procedures and test methods;3)Estimation of the uncertainty of the results associated with the test methods;4)Staff competency and training; and5)History of similar testing and comparisons with other results.</list-item>
+          <list-item>b)a review of the previous test data that evaluates both the data itself and its acceptability to the Issuing Authority at the time of testing; and</list-item>
+          <list-item>c)a statement that the previous test data continues to be acceptable under the OIML-CS.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The procedures specified in clause 5 of OIML-CS&#xA0;PD-05 shall be applied to the processing of a Scheme A OIML certificate. In addition, the OIML type evaluation report shall clearly identify:</p>
+        <list list-type="order" id="_7b05f9d9-fa9a-85d7-fc83-2071e39ce544">
+          <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+          <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme A OIML certificates may only be issued for editions of OIML Recommendations that are included in the OIML-CS at the time of issue.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>To issue a Scheme A OIML certificate for a revised edition of the OIML Recommendation, the previous test data may be used to support the assessment of requirements where those requirements and tests are unchanged in the revised edition of the Recommendation.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where additional tests are required or the test requirements have changed in the revised edition of a Recommendation (e.g. different severity level), all new testing shall be conducted by an approved Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme A OIML type evaluation reports shall clearly specify whether or not they have been issued on the basis of previous test data from an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Scheme A OIML certificates and OIML type evaluation reports that contain previous test data from an existing OIML Basic certificate and its corresponding OIML Basic type evaluation report may be accepted by Utilizers and Associates in their OIML-CS Declaration on a voluntary basis.Note Note0.21.9,NoteUtilizers and Associates may inform the Executive Secretary of their rejection of an OIML certificate and/or OIML type evaluation report, and the reasons for the rejection. == Transition from Scheme B to Scheme A</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Issuing OIML certificates</title>
+      <sec>
+        <label>0</label>
+        <p>When a category of measuring instrument and the relevant OIML Recommendation transitions from Scheme B to Scheme A (see OIML B 18, 16.2 OIML&#xA0;B&#xA0;18:2022), no new OIML certificates under Scheme B may be issued for that category of measuring instrument on the basis of the relevant Recommendation except under the conditions defined in 7.1.2.</p>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>When the relevant category of measuring instrument and OIML Recommendation has transitioned to Scheme A, in the event that an applicant requests a revision of an existing OIML certificate issued under Scheme B based on the same edition of the OIML Recommendation, the revised OIML certificate under Scheme B may be issued by the original OIML Issuing Authority. The requirements of 4.5 apply.</p>
+      </sec>
+    </sec>
+    <sec>
+      <label>0</label>
+      <title>Using Scheme B certificates to issue Scheme A certificates</title>
+      <sec>
+        <label>0</label>
+        <p>Where a category of measuring instrument and the relevant OIML Recommendation is in Scheme A under the OIML-CS, an applicant may apply to an OIML Issuing Authority to use an existing OIML certificate under Scheme B to issue a Scheme A certificate. The requirements of 4.5 and the following conditions apply:</p>
+        <list list-type="order" id="_0d5e31ea-b081-5f30-6be9-2035811c5202">
+          <list-item>a)The Test Laboratory that conducted the testing is a Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority for the applicable category of measuring instrument;</list-item>
+          <list-item>b)At the time that the original OIML type evaluation took place the Test Laboratory was accredited/peer assessed to ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, with the scope of accreditation/peer assessment in both cases covering the category of measuring instrument and the relevant OIML Recommendation (see 7.2.2 and Notes under 5.2);</list-item>
+          <list-item>c)The testing was conducted on a sample that is representative of the current type; and</list-item>
+          <list-item>d)The testing that was performed is equivalent to the requirements specified in the edition of the OIML Recommendation for which the OIML certificate is being issued.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where previous testing was performed in a facility (either a test laboratory or field site) that did not satisfy the requirements of 7.2.1 a) and b) at the time of testing, the OIML Issuing Authority shall include a documented appraisal of the previous testing and shall accurately record the use of any previous test data in the OIML type evaluation report.</p>
+        <p>The requirements of 7.2.1 c) and d) still apply.</p>
+        <p>The documented appraisal of the previous testing shall include at least the following:</p>
+        <list list-type="order" id="_548c16ee-27c0-d732-2cb0-2153c9360a6a">
+          <list-item>a)an assessment of the test facility and test methodology used at the time of testing, with consideration of the requirements of ISO/IEC 17025 ISO/IEC&#xA0;17025:2017 ISO/IEC&#xA0;17025:2005, including:1)Traceability and calibration of reference standards;2)Documented procedures and test methods;3)Estimation of the uncertainty of the results associated with the test methods;4)Staff competency and training; and5)History of similar testing and comparisons with other results.</list-item>
+          <list-item>b)a review of the previous test data that evaluates both the data itself and its acceptability to the Issuing Authority at the time of testing; and</list-item>
+          <list-item>c)a statement that the previous test data continues to be acceptable under the OIML-CS.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>The procedures specified in clause 5 of OIML-CS&#xA0;PD-05 shall be applied, with the OIML type evaluation report issued for the OIML Basic certificate deemed to fulfil the requirement specified in OIML-CS&#xA0;PD-05, 5.3.3. In addition, the OIML type evaluation report shall clearly identify:</p>
+        <list list-type="order" id="_82fd742a-07fd-add5-378c-18410b08db46">
+          <list-item>a)all test facilities that performed testing and issued the test data and/or test reports; and</list-item>
+          <list-item>b)all OIML test reports, other test reports, and previous test data (regardless of dates of testing) with all relevant information and explanations provided.</list-item>
+        </list>
+      </sec>
+      <sec>
+        <label>0</label>
+        <p>Where an OIML Recommendation has been revised since the original OIML certificate under Scheme B was issued, an OIML certificate under Scheme A can be issued for the original edition of the OIML Recommendation where it has been retained in the OIML-CS under Scheme A. To issue a Scheme A OIML certificate under the OIML-CS for the revised edition of the OIML Recommendation the OIML type evaluation report issued in support of the existing OIML certificate under Scheme B may only be applied to tests where the requirements for the tests haven&#x2019;t changed in the revised edition of the Recommendation. Where there are additional tests or the test requirements have changed (e.g. different severity level) in the revised edition, all new testing shall be conducted by a Test Laboratory listed in the OIML-CS Declaration of any OIML Issuing Authority.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ref-list content-type="bibliography">
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2005</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories</title>
+            <pub-date>
+              <year>2005-05-12</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17025:2017</doc-identifier>
+            </std-ident>
+            <title>General requirements for the competence of testing and calibration laboratories</title>
+            <pub-date>
+              <year>2017-11-29</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>ISO</std-org>
+              <doc-identifier>ISO/IEC&#xA0;17065:2012</doc-identifier>
+            </std-ident>
+            <title>Conformity assessment</title>
+            <pub-date>
+              <year>2012-09-10</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-01</doc-identifier>
+            </std-ident>
+            <title>Management Committee</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-01</doc-identifier>
+            </std-ident>
+            <title>Appeals, Resolution of Complaints and Disputes</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;OD-02</doc-identifier>
+            </std-ident>
+            <title>Test Laboratories Forum</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-02</doc-identifier>
+            </std-ident>
+            <title>Procedures to approve Legal Metrology experts and QMS experts</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-03</doc-identifier>
+            </std-ident>
+            <title>Application and approval of OIML Issuing Authorities, Utilizers and Associates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-04</doc-identifier>
+            </std-ident>
+            <title>Assessment of Test Laboratories</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-05</doc-identifier>
+            </std-ident>
+            <title>Processing an application for an OIML Type Evaluation Report and OIML Certificate</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-06</doc-identifier>
+            </std-ident>
+            <title>Use of OIML Type Evaluation Reports and OIML Certificates</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML-CS&#xA0;PD-08</doc-identifier>
+            </std-ident>
+            <title>Signing the OIML-CS Declaration</title>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;18:2022</doc-identifier>
+            </std-ident>
+            <title>Framework for the OIML Certification System (OIML-CS)</title>
+            <pub-date>
+              <year>2022</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+      <ref>
+        <element-citation>
+          <std>
+            <std-ident>
+              <std-org>OIML</std-org>
+              <doc-identifier>OIML&#xA0;B&#xA0;20:2019</doc-identifier>
+            </std-ident>
+            <title>Rules for the use of OIML logos</title>
+            <pub-date>
+              <year>2019</year>
+            </pub-date>
+          </std>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</standard>

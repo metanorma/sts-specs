@@ -1,0 +1,30 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/chapter/which-dtd.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[chapter-which-dtd]
+=== Selecting a Model & Schema
+
+After deciding to use NISO STS, an organization is faced with several decisions: Which tag set? Which expression (constraint) language?
+#### Which Tag Set
+
+Two decisions determine which of the NISO STS Tag Sets an organization chooses to use: choice of Interchange versus Extended Model and MathML 2.0 versus MathML 3.0.
+#### Interchange versus Extended Model
+
+NISO STS is designed to facilitate interchange of standards documents among national and international standards organizations, standards development organizations, standards publishers, and users of standards. In support of that goal, the NISO STS Steering Committee decided that the Tag Sets should be designed to encourage consistent tagging of standards structures. They further decided that since most standards are, or will soon be, published in HTML, it was appropriate that tables in standards documents be interchanged using the XHTML table model.
+However, many standards publishers have existing XML workflows that depend on the OASIS Exchange (CALS) table model. As a convenience to these users, an Extended NISO STS Tag Set is provided that includes *both* the XHTML table model and the OASIS Exchange (CALS) table model.
+The first decision to be made in choosing a NISO STS model is whether to use the Interchange or Extended model:
+* *Interchange* if you are creating standards in XML and
+                        have no legacy tools that require the OASIS table model, or
+* *Extended* if you have systems that use/require the
+                        OASIS Exchange (CALS) table model.
+#### Math
+
+NISO STS also provides two options for math modeling. Each Tag Set is available with either: MathML version 2.0, or MathML version 3.0. NISO STS provides versions of the Tag Sets with MathML 2.0 for backwards compatibility. Some users of MathML 2.0 find that their MathML 2.0 is also valid MathML 3.0, and they can move effortlessly into MathML 3.0. However, MathML 3.0 enforces rules that were not enforced in the version of the MathML 2.0 DTD inherited from ISO STS and used in NISO STS. The rules were stated in the textual documentation for MathML 2.0 but not in all versions of the MathML 2.0 DTD, so some users may find that their existing documents are not forwards-compatible with MathML 3.0. Users of the XSD version of the MathML specification may not have a problem.
+*Note:* MathML 2.0 that is not valid against MathML 3.0 may render incorrectly on display.
+We recommend: *MathML 3.0* for any user who does not have legacy systems that depend on MathML 2.0. MathML 3.0 is more complete and less buggy than MathML 2.0. Note: Users who do not intend to use MathML at all are encouraged to select a MathML 3.0 version of the Tag Set. If you never use any MathML, it won't matter; and if at some point your users do move to MathML, you will be in a stronger position than if you had chosen MathML 2.0. *MathML 2.0* models are provided for users who have an investment in MathML 2.0. (Moving existing documents from MathML 2.0 to MathML 3.0 can be a significant investment.)
+#### Four NISO STS Tag Set Options
+
+Armed with the table model and mathematics decisions, the choice of Tag Set is automatic. There are four NISO STS Tag Set variants: NISO STS Interchange (with XHTML tables and MathML 2.0) NISO STS Interchange (with XHTML tables and MathML 3.0) NISO STS Extended (with XHTML and OASIS/CALS tables and MathML 2.0) NISO STS Extended (with XHTML and OASIS/CALS tables and MathML 3.0) In consultation with the partners with which you want to interchange, co-publish, or adopt standards documents, you should select the model that best meets your needs.
+#### Expression Language (Constraint Language)
+
+XML Tag Sets may be expressed as schema languages (also called “modeling languages” or “constraint languages”). These schemas are used by XML software to enforce the rules of the language and to guide authoring applications. The formal rules of NISO STS are expressed in the prose of ANSI/NISO Z39.102-2022, STS: Standards Tag Suite (Version 1.2). In addition, for the convenience of users, schemas for each of the four Tag Set variants will be provided in three schema languages. DTD, or Document Type Definition, is the oldest of XML modeling languages. DTDs are used in many environments that work primarily with textual documents. DTDs are defined in the XML Specification. XSD, or W3C XML Schema, is a modeling language specified by the W3C. Among the strengths of XSD are strong datatyping, context-based models, and the fact that XSD documents are in XML document syntax. RNG, or Relax NG Schema, is a modeling language for XML documents that enables strong datatyping, a wide variety of modeling types, and both a compact and an XML document syntax. Users typically choose the modeling language that best suits the tools they are using. It is not unusual for an organization to use one version of the modeling language in authoring and/or receipt of documents from partners and another version, or even a different language, in their database environment.

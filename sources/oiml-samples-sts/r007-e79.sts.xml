@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<standard xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2">
+  <processing-meta tagset-family="sts" base-tagset="interchange" table-model="xhtml" mathml="MathML 3.0" terminology-model="tbx"/>
+  <front>
+    <iso-meta xml:lang="en">
+      <doc-identifier>OIML R 7</doc-identifier>
+      <std-title-group>
+        <title>Clinical thermometers (mercury-in-glass, with maximum device)</title>
+      </std-title-group>
+      <pub-date date-type="published">
+        <year>1979</year>
+      </pub-date>
+      <release-version stage-code="60">Published</release-version>
+      <permissions>
+        <copyright-statement>&#xA9; 1979 International Organization of Legal Metrology</copyright-statement>
+        <copyright-year>1979</copyright-year>
+        <copyright-holder>International Organization of Legal Metrology</copyright-holder>
+      </permissions>
+      <contrib-group>
+        <contrib>
+          <role type="publisher"/>
+          <organization>
+            <name>International Organization of Legal Metrology</name>
+          </organization>
+        </contrib>
+      </contrib-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>oiml-doc-series</meta-name>
+          <meta-value>R</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </iso-meta>
+    <foreword>
+      <p>The International Organization of Legal Metrology (OIML) is a worldwide, intergovernmental organization whose primary aim is to harmonize the regulations and metrological controls applied by the national metrological services, or related organizations, of its Member States.</p>
+      <p>The two main categories of OIML publications are:</p>
+      <list list-type="bullet" id="_76eefbfe-2d84-147d-b5f7-7d014fca74a1">
+        <list-item>&#x2014;<bold>International Recommendations (OIML R)</bold>, which are model regulations that establish the metrological characteristics required of certain measuring instruments and which specify methods and equipment for checking their conformity; the OIML Member States shall implement these Recommendations to the greatest possible extent;</list-item>
+        <list-item>&#x2014;<bold>International Documents (OIML D)</bold>, which are informative in nature and intended to improve the work of the metrological services.</list-item>
+      </list>
+      <p>OIML Draft Recommendations and Documents are developed by technical committees or subcommittees which are formed by the Member States. Certain international and regional institutions also participate on a consultation basis.</p>
+      <p>Cooperative agreements are established between OIML and certain institutions, such as ISO and IEC, with the objective of avoiding contradictory requirements; consequently, manufacturers and users of measuring instruments, test laboratories, etc. may apply simultaneously OIML publications and those of other institutions.</p>
+      <p>International Recommendations and International Documents are published in French (F) and English (E) and are subject to periodic revision.</p>
+      <p>This publication&#x2009;&#x2014;&#x2009;reference OIML R 7 (E), edition 1979&#x2009;&#x2014;&#x2009;which is under the responsibility of Technical Committee TC 18/SC 2  <italic>Medical thermometers</italic>, was sanctioned by the Fifth International Conference of Legal Metrology in 1976.</p>
+      <p>OIML publications may be obtained from the Organization&#x2019;s headquarters:</p>
+      <p>Bureau International de M&#xE9;trologie L&#xE9;gale  11, rue Turgot&#x2009;&#x2014;&#x2009;75009 Paris&#x2009;&#x2014;&#x2009;France  Telephone: 33 (0)1 48 78 12 82 and 42 85 27 11  Fax: 33 (0)1 42 82 17 27  E-mail:  <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:biml@oiml.org"/>  Internet: www.oiml.org</p>
+    </foreword>
+  </front>
+  <body>
+    <sec>
+      <title>Field of application</title>
+      <p>The provisions of this Recommendation apply to those thermometers called &#x201C;clinical thermometers&#x201D;, of the mercury-in-glass type, with a maximum device, intended for measurement of the internal human body temperature.</p>
+      <p>This Recommendation does not apply to special purpose thermometers (thermometers for premature babies, ovulation thermometers), which owing to their measurement range, scale interval or maximum permissible error, do not meet the following requirements.</p>
+      <p>These special purpose thermometers, as well as thermometers for veterinary applications, could subsequently be made the subject of additions to this Recommendation.</p>
+    </sec>
+    <sec>
+      <title>Unit of temperature and scale graduation</title>
+      <sec>
+        <title>2.1</title>
+        <p>The unit of temperature is the degree Celsius, symbol &#xB0;C"unitsml(degC)"&#xB0;C"unitsml(degC)".</p>
+      </sec>
+      <sec>
+        <title>2.2</title>
+        <p>The scale must extend at least from 35.5&#x2062;&#xB0;C35.5 "unitsml(degC)"35,5&#x2062;&#xB0;C35.5 "unitsml(degC)" to 42.0&#x2062;&#xB0;C42.0 "unitsml(degC)"42,0&#x2062;&#xB0;C42.0 "unitsml(degC)" with a scale interval of 0.1&#x2062;&#xB0;C0.1 "unitsml(degC)"0,1&#x2062;&#xB0;C0.1 "unitsml(degC)".</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Types</title>
+      <sec>
+        <title>3.1</title>
+        <p>The clinical thermometers (mercury-in-glass, with maximum device) covered by this Recommendation may be either of the solid-stem type or the enclosed-scale type.</p>
+        <sec>
+          <title>3.1.1</title>
+          <p>In the case of a solid-stem thermometer, the scale is marked directly on the stem.</p>
+        </sec>
+        <sec>
+          <title>3.1.2</title>
+          <p>In the case of an enclosed-scale thermometer, the scale is marked on a &#x201C;scalebearing strip&#x201D; fixed longitudinally behind the capillary tube. The capillary tube and the scale-bearing strip are enclosed in a transparent, sealed tube fused to the bulb and forming a protective sheath.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>3.2</title>
+        <p>The thermometers must include a maximum device which prevents the mercury column from receding solely because of the cooling of the thermometer.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Materials</title>
+      <sec>
+        <title>4.1</title>
+        <p>The thermometer bulb must be made from a type of glass which assures that the depression of zero, determined in accordance with the specifications given in  <xref rid="appendix-b" ref-type="other"/>AnnexB, does not
+exceed 0.07&#x2062;&#xB0;C0.07 "unitsml(degC)"0,07&#x2062;&#xB0;C0.07 "unitsml(degC)". The glass must be identified visibly and indelibly:</p>
+        <list list-type="bullet" id="_955f2e19-3a04-624b-4016-dff2b3c64ffe">
+          <list-item>&#x2014;either by the glass manufacturer</list-item>
+          <list-item>&#x2014;or by the manufacturer of the thermometer (see <xref rid="cls-7.1.3" ref-type="other"/>7.1.3)</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>4.2</title>
+        <p>The types of glass used for the maximum device, capillary tube, and bulb must meet the following requirements:</p>
+        <p>When the glass is analyzed according to the requirements of ISO Recommendation
+R 719-1968 (Determination of the hydrolytic resistance of glass grains at 98&#x2062;&#xB0;C98 "unitsml(degC)"98&#x2062;&#xB0;C98 "unitsml(degC)"), the quantity of
+alkali passed into solution for 1&#x2062;g1 "unitsml(g)"1&#x2062;g1 "unitsml(g)" of glass must correspond to no more than 263.5&#x2062;&#xB5;g263.5 "unitsml(ug)"263,5&#x2062;&#xB5;g263.5 "unitsml(ug)" of Na<sub>2</sub>O.</p>
+      </sec>
+      <sec>
+        <title>4.3</title>
+        <p>The scale-bearing strip of an enclosed-scale thermometer must be made of opaline glass, metal, or a material having an equivalent dimensional stability.</p>
+      </sec>
+      <sec>
+        <title>4.4</title>
+        <p>The protective sheath of an enclosed-scale thermometer must be made of glass.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Construction</title>
+      <sec>
+        <title>5.1</title>
+        <p>The thermometer must be free from any defects which might prevent it from operating normally, or which might lead to errors by the users.</p>
+      </sec>
+      <sec>
+        <title>5.2</title>
+        <p>The capillary tube must allow the mercury column to be seen clearly throughout its length, and the position of the top of the meniscus to be defined (preferably, it should be of the prismatic magnifying type).</p>
+        <p>The mercury column and scale must be clearly visible simultaneously.</p>
+      </sec>
+      <sec>
+        <title>5.3</title>
+        <p>The mercury must be sufficiently pure and dry</p>
+        <p>The bulb, capillary tube, and mercury must be sufficiently free from entrapped gas, debris and foreign bodies in order to ensure the correct functioning of the thermometer.</p>
+      </sec>
+      <sec>
+        <title>5.4</title>
+        <p>When the thermometer is heated slowly the mercury column must rise with an even
+movement, without appreciable jerks. After the thermometer has been heated to at least
+37&#x2062;&#xB0;C37 "unitsml(degC)"37&#x2062;&#xB0;C37 "unitsml(degC)" and then cooled to a temperature below minimum scale value, the mercury column
+must fall below the lowest numbered line when the mercury at the base of the bulb is
+subjected to an acceleration of 600&#x2062;m&#x2062;s&#x2212;2600 "unitsml(m/s^2)"600&#x2062;m&#x2062;s&#x2212;2600 "unitsml(m/s^2)".</p>
+      </sec>
+      <sec>
+        <title>5.5</title>
+        <p>The scale-bearing strip in an enclosed-scale thermometer must be fixed tightly against the capillary tube, an the method of fixing must prevent any displacement of one part with respect to the other.</p>
+        <p>The position of the strip with respect to the capillary tube must be clearly marked, so that
+any possible accidental relative displacement of the two parts can be easily detected<xref rid="fn_1" ref-type="fn">1</xref>.</p>
+      </sec>
+      <sec>
+        <title>5.6</title>
+        <p>The protective sheath of an enclosed-scale thermometer must be free from moisture, mercury, debris or any foreign bodies.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Graduation and numbering</title>
+      <sec>
+        <title>6.1</title>
+        <p>The scale spacing must be at least 0.5&#x2062;mm0.5 "unitsml(mm)"0,5&#x2062;mm0.5 "unitsml(mm)" for solid-stem thermometers and at least 0.6&#x2062;mm0.6 "unitsml(mm)"0,6&#x2062;mm0.6 "unitsml(mm)" for enclosed-scale thermometers.</p>
+      </sec>
+      <sec>
+        <title>6.2</title>
+        <p>Graduation lines must be uniform and clear, and must be engraved or printed clearly and indelibly.</p>
+        <p>The graduation lines must be perpendicular to the axis of the thermometer. Their thickness must not be more than one-fifth of the length of a scale division for enclosed-scale thermometers, or one quarter of the length of a scale division for solid-stem thermometers. The half-degree and degree lines must be longer than the other lines.</p>
+      </sec>
+      <sec>
+        <title>6.3</title>
+        <p>The lines corresponding to degrees must be numbered ; these numbers must be engraved or indelibly printed.</p>
+        <p>For solid-stem thermometers, the numbering of the line corresponding to 37&#x2062;&#xB0;C37 "unitsml(degC)"37&#x2062;&#xB0;C37 "unitsml(degC)" is optional and may be replaced by the special form of marking specified in  <xref rid="cls-6.4" ref-type="other"/>6.4.</p>
+      </sec>
+      <sec>
+        <title>6.4</title>
+        <p>Only the line corresponding to the temperature of 37&#x2062;&#xB0;C37 "unitsml(degC)"37&#x2062;&#xB0;C37 "unitsml(degC)" may be indicated specially, using a different color from that of the numbers and/or by additional marking such as a dot, asterisk or arrow.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Inscriptions</title>
+      <sec>
+        <title>7.1</title>
+        <p>The following inscriptions must be engraved or indelibly printed on the scalebearing strip of enclosed-scale thermometers and on the stem of solid-stem thermometers:</p>
+        <sec>
+          <title>7.1.1</title>
+          <p>The symbol &#x201C;&#xB0;C"unitsml(degC)"&#xB0;C"unitsml(degC)"&#x201D; near the scale.</p>
+        </sec>
+        <sec>
+          <title>7.1.2</title>
+          <p>The manufacturer&#x2019;s name or trademark.</p>
+        </sec>
+        <sec>
+          <title>7.1.3</title>
+          <p>An indication identifying the glass used for the bulb, if the glass is not already identified by its maker.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>7.2</title>
+        <p>Other inscriptions may be added, but only if there is no risk of misleading the user.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Maximum permissible errors</title>
+      <p>The maximum permissible errors are:
++0.1&#x2062;&#xB0;C+ 0.1 "unitsml(degC)"+0,1&#x2062;&#xB0;C+ 0.1 "unitsml(degC)", &#x2212;0.15&#x2062;&#xB0;C- 0.15 "unitsml(degC)"&#x2212;0,15&#x2062;&#xB0;C- 0.15 "unitsml(degC)".</p>
+      <p>These values are valid for thermometer readings after cooling to an ambient temperature
+between 15151515 and 30&#x2062;&#xB0;C30 "unitsml(degC)"30&#x2062;&#xB0;C30 "unitsml(degC)".</p>
+    </sec>
+    <sec>
+      <title>Influence of immersion timeRequirements relating to thermometer characteristics are given in ; a free choice of test method is permitted, provided the law of the variation of the indication of the thermometer as a function of immersion time is known.</title>
+      <p>If a thermometer at temperature t1t_1t1t_1 (15&#x2062;&#xB0;C&#x2264;t1&#x2264;30&#x2062;&#xB0;C15 "unitsml(degC)" &lt;= t_1 &lt;= 30 "unitsml(degC)"15&#x2062;&#xB0;C&#x2264;t1&#x2264;30&#x2062;&#xB0;C15 "unitsml(degC)" &lt;= t_1 &lt;= 30 "unitsml(degC)") is suddenly immersed in a wellstirred
+water bath having a constant temperature t2(35.5&#x2062;&#xB0;C&#x2264;t2&#x2264;42&#x2062;&#xB0;Ct_2 (35.5 "unitsml(degC)" &lt;= t_2 &lt;= 42 "unitsml(degC)"t2(35,5&#x2062;&#xB0;C&#x2264;t2&#x2264;42&#x2062;&#xB0;Ct_2 (35.5 "unitsml(degC)" &lt;= t_2 &lt;= 42 "unitsml(degC)") and is withdrawn after
+20 seconds, the thermometer reading, after cooling to ambient temperature (15&#x2062;&#xB0;C15 "unitsml(degC)"15&#x2062;&#xB0;C15 "unitsml(degC)" to 30&#x2062;&#xB0;C30 "unitsml(degC)"30&#x2062;&#xB0;C30 "unitsml(degC)"),</p>
+      <list list-type="bullet" id="_2d226498-dc4e-51c6-21b3-a2c73420f10e">
+        <list-item>&#x2014;must comply with maximum permissible error requirements (<xref rid="cls-8" ref-type="other"/>Clause8), and</list-item>
+        <list-item>&#x2014;must not deviate from its stabilized reading for temperature t2t_2t2t_2 by more than
+0.0050.0050,0050.005 (t2&#x2212;t1t_2 - t_1t2&#x2212;t1t_2 - t_1).</list-item>
+      </list>
+      <p>This stabilized reading is the thermometer reading obtained when the thermometer has
+been cooled to ambient temperature, after reaching complete thermal equilibrium with the water
+bath at temperature t2t_2t2t_2. This reading must also meet the maximum permissible error requirements stipulated in  <xref rid="cls-8" ref-type="other"/>Clause8.</p>
+    </sec>
+    <sec>
+      <title>Space for stamping</title>
+      <p>Space for stamping must be provided on the stem of solid-stem thermometers and on the sheath of enclosed-scale thermometers.</p>
+    </sec>
+    <sec>
+      <title>Metrological controls</title>
+      <sec>
+        <title>11.1</title>
+        <p>When clinical thermometers are subject to the governmental metrological controls of a particular country, all or some of the following controls must be included, depending on the internal legislation of the country involved:</p>
+        <list list-type="order" id="_6e1aa24f-cd9c-a545-0691-24a1b2fea6e3">
+          <list-item>a)Pattern approvalEach pattern of thermometer from each manufacturer is submitted to the pattern approval procedure.No modification of an approved pattern may be made without special authorization.</list-item>
+          <list-item>b)Initial verification</list-item>
+          <list-item>c)Periodic verifications</list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>Certificates</title>
+        <p>The verifying authorities may issue certificates indicating the results of the metrological examination.</p>
+      </sec>
+    </sec>
+    <p>Clinical thermometers (mercury-in-glass, with maximum device)</p>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <title>Verification Method</title>
+        <p>Verification methods based on this Recommendation are given in <xref rid="appendix-a" ref-type="other"/>AnnexA. Other verification methods may be selected depending on the number and quality of the thermometers to be verified and the resources of the verifying authorities (personnel, equipment, etc.). The method recommended below can be applied without difficulty for verifying up to 1 million thermometers a year.</p>
+        <sec>
+          <title>Laboratory equipment</title>
+          <sec>
+            <title>Laboratory</title>
+            <sec>
+              <title>Protection from the dangers of mercury</title>
+              <p>The floor and tables on which the testing is carried out must be smooth and impervious. The tables must have raised edges. Adequate floor-level ventilation must be provided.</p>
+            </sec>
+            <sec>
+              <title>Lighting</title>
+              <p>Special lighting is required for examining and reading the thermometer.</p>
+            </sec>
+            <sec>
+              <title>Safety devices for stamping machines</title>
+              <p>The stamping machines must be equipped with safety devices.</p>
+            </sec>
+          </sec>
+          <sec>
+            <title>Measuring equipment</title>
+            <sec>
+              <title>A.1.2.1</title>
+              <p>Instruments and auxiliary devices for the external examination:</p>
+              <list list-type="bullet" id="_296765e4-f380-132e-f180-d095885edccf">
+                <list-item>&#x2014;magnifying glasses with at least &#xD7;4xx 4&#xD7;4xx 4 magnification ;</list-item>
+                <list-item>&#x2014;graduated scales or gauges for checking dimensions.</list-item>
+              </list>
+            </sec>
+            <sec>
+              <title>A.1.2.2</title>
+              <p>Instruments and auxiliary devices for determining the errors of indication.</p>
+              <sec>
+                <title>A.1.2.2.1</title>
+                <p>Well-stirred water baths with interchangeable thermometer-holders. The thermometers under examination must be immersed in the bath to the lowest numbered line on the scale.</p>
+                <p>During measurement, the temperature of the water baths must be constant to within
+0.02&#x2062;&#xB0;C0.02 "unitsml(degC)"0,02&#x2062;&#xB0;C0.02 "unitsml(degC)" and uniform to within better than 0.01&#x2062;&#xB0;C0.01 "unitsml(degC)"0,01&#x2062;&#xB0;C0.01 "unitsml(degC)".</p>
+                <p>The use of baths with automatic temperature control is recommended.</p>
+                <p>There must be enough water to ensure that immersion of the thermometers in the bath
+will not cause a temperature drop greater than 0.05&#x2062;&#xB0;C0.05 "unitsml(degC)"0,05&#x2062;&#xB0;C0.05 "unitsml(degC)". Time can be saved when testing by preheating the thermometers in a special bath to a few tenths of a degree Celsius below the test temperature.</p>
+              </sec>
+              <sec>
+                <title>A.1.2.2.2</title>
+                <p>Standard thermometers, e.g., total immersion mercury-in-glass thermometers
+with scale intervals of 0.02&#x2062;&#xB0;C0.02 "unitsml(degC)"0,02&#x2062;&#xB0;C0.02 "unitsml(degC)" or 0.05&#x2062;&#xB0;C0.05 "unitsml(degC)"0,05&#x2062;&#xB0;C0.05 "unitsml(degC)" and an auxiliary scale for 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)", or platinum resistance thermometers.</p>
+                <p>Preferably two standards thermometers are used to measure the temperature of the baths (<xref rid="cls-A.3.1" ref-type="other"/>A.3.1) and a third standard thermometer to check the first two.</p>
+                <p>The corrections for standard thermometers, including the correction at 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)" must be
+determined to within an uncertainty of measurement of preferably &#xB1;0.01&#x2062;&#xB0;Cpm 0.01 "unitsml(degC)"&#xB1;0,01&#x2062;&#xB0;Cpm 0.01 "unitsml(degC)" or a maximum
+&#xB1;0.02&#x2062;&#xB0;Cpm 0.02 "unitsml(degC)"&#xB1;0,02&#x2062;&#xB0;Cpm 0.02 "unitsml(degC)".</p>
+              </sec>
+              <sec>
+                <title>A.1.2.2.3</title>
+                <p>Magnifying glasses with at least &#xD7;4xx 4&#xD7;4xx 4 magnification for reading standard enclosedscale mercury-in-glass thermometers.</p>
+                <p>Monocular or binocular viewers with approximately &#xD7;10xx 10&#xD7;10xx 10 magnification for reading standard solid-stem mercury-in-glass thermometers.</p>
+              </sec>
+              <sec>
+                <title>A.1.2.2.4</title>
+                <p>A centrifuge with a container for thermometers to drive down the mercury column in
+thermometers under test. The centrifuge must be capable of exerting an acceleration of
+600&#x2062;m&#x2062;s&#x2212;2600 "unitsml(m/s^2)"600&#x2062;m&#x2062;s&#x2212;2600 "unitsml(m/s^2)" on the mercury at the level of the base of the thermometer bulbs (see <xref rid="cls-5.4" ref-type="other"/>5.4).</p>
+              </sec>
+              <sec>
+                <title>A.1.2.2.5</title>
+                <p>A zero point (0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)") ice bath for testing standard thermometers<xref rid="fn_2" ref-type="fn">3</xref>. The device consists
+of a Dewar flask filled with finely crushed ice covered over with water. The water used to
+make the ice and the water in which the ice is submerged must be pure. Its electrical
+conductivity must not exceed 10&#x2212;3&#x2062;S&#x2062;m&#x2212;110^-3 "unitsml(S*m^-1)"10&#x2212;3&#x2062;S&#x2062;m&#x2212;110^-3 "unitsml(S*m^-1)" at 20&#x2062;&#xB0;C20 "unitsml(degC)"20&#x2062;&#xB0;C20 "unitsml(degC)". The ice must be carefully tamped so that
+there are no air bubbles in the ice-water mixture. It must be compacted as much as possible
+both prior to measurement and periodically during measurement.</p>
+                <p>It is recommended that a water purifier, a refrigerator with ice trays, and an ice crusher be obtained for preparing the ice-water mixture.</p>
+              </sec>
+            </sec>
+          </sec>
+        </sec>
+        <sec>
+          <title>A.2</title>
+          <p>External examination<xref rid="fn_3" ref-type="fn">4</xref></p>
+          <sec>
+            <title>A.2.1</title>
+            <p>After ascertaining that there are no visible defects or signs of deterioration, the thermometer must be examined for compliance with the following provisions of this Recommendation:</p>
+            <sec>
+              <title>A.2.1.1</title>
+              <p>Types (<xref rid="cls-3" ref-type="other"/>Clause3)</p>
+            </sec>
+            <sec>
+              <title>A.2.1.2</title>
+              <p>Scale and numbering (<xref rid="cls-2.2" ref-type="other"/>2.2andClause6)</p>
+            </sec>
+            <sec>
+              <title>A.2.1.3</title>
+              <p>Materials (<xref rid="cls-4" ref-type="other"/>Clause4)</p>
+            </sec>
+            <sec>
+              <title>A.2.1.4</title>
+              <p>Construction (<xref rid="cls-5" ref-type="other"/>Clause5, except <xref rid="cls-5.4" ref-type="other"/>5.4)</p>
+            </sec>
+            <sec>
+              <title>A.2.1.5</title>
+              <p>Inscriptions (<xref rid="cls-7" ref-type="other"/>Clause7)</p>
+            </sec>
+          </sec>
+        </sec>
+        <sec>
+          <title>Determination of errors of indication</title>
+          <sec>
+            <title>A.3.1</title>
+            <p>The thermometers must be examined for compliance with the provisions of <xref rid="cls-8" ref-type="other"/>Clause8 with regard to maximum permissible errors. This examination is performed by comparing the test thermometers with standard thermometers (<xref rid="cls-A.1.2.2.2" ref-type="other"/>A.1.2.2.2) in well-stirred water baths (<xref rid="cls-A.1.2.2.1" ref-type="other"/>A.1.2.2.1).</p>
+          </sec>
+          <sec>
+            <title>A.3.2</title>
+            <p>The thermometers must be checked at a minimum of two temperatures spaced 4&#x2062;&#xB0;C4 "unitsml(degC)"4&#x2062;&#xB0;C4 "unitsml(degC)" apart
+(test temperatures) in the 35.5&#x2062;&#xB0;C35.5 "unitsml(degC)"35,5&#x2062;&#xB0;C35.5 "unitsml(degC)" to 42&#x2062;&#xB0;C42 "unitsml(degC)"42&#x2062;&#xB0;C42 "unitsml(degC)" range.</p>
+          </sec>
+          <sec>
+            <title>A.3.3</title>
+            <p>Control at a given temperature.</p>
+            <sec>
+              <title>A.3.3.1</title>
+              <p>Using, if necessary, the centrifuge (<xref rid="cls-A.1.2.2.4" ref-type="other"/>A.1.2.2.4), the mercury column in the
+thermometers under examination is driven down to at least 0.5&#x2062;&#xB0;C0.5 "unitsml(degC)"0,5&#x2062;&#xB0;C0.5 "unitsml(degC)" below the test temperature.</p>
+            </sec>
+            <sec>
+              <title>A.3.3.2</title>
+              <p>The thermometers are placed in the water bath once the bath has been brought to the test temperature.</p>
+            </sec>
+            <sec>
+              <title>A.3.3.3</title>
+              <p>When the temperature of the water bath is again sufficiently constant (see <xref rid="cls-A.1.2.2.1" ref-type="other"/>A.1.2.2.1) and at least 20 seconds have elapsed, the bath temperature (tttt) is measured with the standard thermometers, whereupon the thermometers under examination are removed from the bath.</p>
+              <p>When measuring temperature, the corrections to the standard thermometer indications must be taken into account (<xref rid="cls-A.1.2.2.2" ref-type="other"/>A.1.2.2.2).</p>
+            </sec>
+            <sec>
+              <title>A.3.3.4</title>
+              <p>The thermometer indications are observed when they have reached ambient
+temperature (15&#x2062;&#xB0;C15 "unitsml(degC)"15&#x2062;&#xB0;C15 "unitsml(degC)" to 30&#x2062;&#xB0;C30 "unitsml(degC)"30&#x2062;&#xB0;C30 "unitsml(degC)"). The differences between the indications and tttt are the thermometer errors at the test temperature.</p>
+            </sec>
+          </sec>
+        </sec>
+        <sec>
+          <title>Testing the maximum device</title>
+          <sec>
+            <title>A.4.1</title>
+            <p>The maximum device is tested for compliance with the requirements of <xref rid="cls-5.4" ref-type="other"/>5.4.</p>
+          </sec>
+          <sec>
+            <title>A.4.2</title>
+            <p>Immediately after the test at the maximum test temperature, all of the thermometers under examination are placed, blub outwards, in a centrifuge (<xref rid="cls-A.1.2.2.4" ref-type="other"/>A.1.2.2.4) and their mercury columns are made to recede.</p>
+            <p>In accordance with <xref rid="cls-5.4" ref-type="other"/>5.4, the speed of the centrifuge is regulated so that the mercury
+at the bottom of the bulbs is subjected to an acceleration of 600&#x2062;m&#x2062;s&#x2212;2600 "unitsml(m/s^2)"600&#x2062;m&#x2062;s&#x2212;2600 "unitsml(m/s^2)". Once this acceleration is reached, the centrifuge is switched off.</p>
+            <p>All thermometers in which the mercury column has not dropped below the lowest numbered line must be rejected.</p>
+            <p>During this test, the ambient temperature must be lower than the minimum scale value of the thermometers.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Testing the solid-stem thermometer coloration</title>
+          <p>The scale, numbering and inscriptions will be examined to assure that they have been engraved or indelibly printed in compliance with  <xref rid="cls-6" ref-type="other"/>Clauses 6and7.</p>
+          <p>The thermometers are immersed for one hour in a 5 % aqueous solution of phenol, the
+temperature of which must be between 20&#x2062;&#xB0;C20 "unitsml(degC)"20&#x2062;&#xB0;C20 "unitsml(degC)" and 30&#x2062;&#xB0;C30 "unitsml(degC)"30&#x2062;&#xB0;C30 "unitsml(degC)", or are subjected to the action of 96 % alcohol. The thermometers are then wiped with a. piece of lightcolored cloth which should not pick up any stains.</p>
+        </sec>
+        <sec>
+          <title>Testing the materials</title>
+          <p>Because the examination which pertains to compliance with the provisions of <xref rid="cls-4" ref-type="other"/>Clause4 (Materials) cannot be conducted on the thermometers themselves, the manufacturer of clinical thermometers (mercury-in-glass, with maximum device) must prove to the verifying authorities that the materials used meet the requirements of  <xref rid="cls-4" ref-type="other"/>Clause4.</p>
+          <p>When considering the test methods to be used in case of doubt, the following provisions should be taken into account:</p>
+          <sec>
+            <title>A.6.1</title>
+            <p>Because the value of the depression of zero depends strongly on the conditions under which the test is performed, the method outlined in  <xref rid="appendix-b" ref-type="other"/>AnnexB should be used to determine the depression of zero (<xref rid="cls-4.1" ref-type="other"/>4.1).</p>
+          </sec>
+          <sec>
+            <title>A.6.2</title>
+            <p>The provisions concerning the analysis of the glass in accordance with ISO Recommendation R 719-1968 (<xref rid="cls-4.2" ref-type="other"/>4.2) must be taken from that Recommendation.</p>
+          </sec>
+          <sec>
+            <title>A.6.3</title>
+            <p>Method for testing the dimensional stability of scale-bearing strips made from materials other than either opaline or metal (<xref rid="cls-4.3" ref-type="other"/>4.3)</p>
+            <sec>
+              <title>A.6.3.1</title>
+              <p>The aforementioned tests are carried out on at least 5 scale-bearing strips marked with graduation lines and numbering (<xref rid="cls-2.2" ref-type="other"/>2.2) and manufactured from the material being tested.</p>
+            </sec>
+            <sec>
+              <title>A.6.3.2</title>
+              <p>The distance between the graduation lines which correspond to 36.0&#x2062;&#xB0;C36.0 "unitsml(degC)"36,0&#x2062;&#xB0;C36.0 "unitsml(degC)" and 42.0&#x2062;&#xB0;C42.0 "unitsml(degC)"42,0&#x2062;&#xB0;C42.0 "unitsml(degC)"
+must be measured with a maximum uncertainty of measurement of &#xB1;0.01&#x2062;mmpm 0.01 "unitsml(mm)"&#xB1;0,01&#x2062;mmpm 0.01 "unitsml(mm)" (measured
+value l1l_1l1l_1).</p>
+            </sec>
+            <sec>
+              <title>A.6.3.3</title>
+              <p>The scale-bearing strips are then kept at a temperature of 50&#x2062;&#xB0;C&#xB1;1&#x2062;&#xB0;C50 "unitsml(degC)" pm 1 "unitsml(degC)"50&#x2062;&#xB0;C&#xB1;1&#x2062;&#xB0;C50 "unitsml(degC)" pm 1 "unitsml(degC)" for 7 days.</p>
+            </sec>
+            <sec>
+              <title>A.6.3.4</title>
+              <p>After they have been cooled to ambient temperature (15&#x2062;&#xB0;C15 "unitsml(degC)"15&#x2062;&#xB0;C15 "unitsml(degC)" to 30&#x2062;&#xB0;C30 "unitsml(degC)"30&#x2062;&#xB0;C30 "unitsml(degC)"), the distance
+between the graduation lines which correspond to 36.0&#x2062;&#xB0;C36.0 "unitsml(degC)"36,0&#x2062;&#xB0;C36.0 "unitsml(degC)" and 42.0&#x2062;&#xB0;C42.0 "unitsml(degC)"42,0&#x2062;&#xB0;C42.0 "unitsml(degC)" is measured once
+more (measured value l2l_2l2l_2).</p>
+            </sec>
+            <sec>
+              <title>A.6.3.5</title>
+              <p>The scale-bearing strip material tested is considered equivalent to opaline or metal with respect to its dimensional stability if:</p>
+              <disp-formula id="for_58"/>
+            </sec>
+          </sec>
+        </sec>
+      </app>
+      <app>
+        <title>Determination of the Mean Depression of Zero of Thermometers</title>
+        <sec>
+          <title>B.1</title>
+          <p>It is not possible to determine the depression of zero of clinical thermometers (mercury-inglass, with maximum device) covered by this Recommendation. Therefore, special test thermometers (<xref rid="cls-B.2" ref-type="other"/>ClauseB.2) must be manufactured from the glass being examined in order to conduct the necessary measurements. The following provisions must be observed in manufacturing the test thermometers and conducting the measurements.</p>
+        </sec>
+        <sec>
+          <title>B.2</title>
+          <p>The test thermometers must meet the following requirements</p>
+          <sec>
+            <title>B.2.1</title>
+            <p>Scale range: at least from &#x2212;3.0&#x2062;&#xB0;C-3.0 "unitsml(degC)"&#x2212;3,0&#x2062;&#xB0;C-3.0 "unitsml(degC)" to +3.0&#x2062;&#xB0;C+ 3.0 "unitsml(degC)"+3,0&#x2062;&#xB0;C+ 3.0 "unitsml(degC)".</p>
+          </sec>
+          <sec>
+            <title>B.2.2</title>
+            <p>Scale interval: 0.02&#x2062;&#xB0;C0.02 "unitsml(degC)"0,02&#x2062;&#xB0;C0.02 "unitsml(degC)", 0.05&#x2062;&#xB0;C0.05 "unitsml(degC)"0,05&#x2062;&#xB0;C0.05 "unitsml(degC)" or 0.1&#x2062;&#xB0;C0.1 "unitsml(degC)"0,1&#x2062;&#xB0;C0.1 "unitsml(degC)".</p>
+          </sec>
+          <sec>
+            <title>B.2.3</title>
+            <p>The scale spacing must be a least 0.7&#x2062;mm0.7 "unitsml(mm)"0,7&#x2062;mm0.7 "unitsml(mm)" for enclosed-scale thermometers and at least
+1.0&#x2062;mm1.0 "unitsml(mm)"1,0&#x2062;mm1.0 "unitsml(mm)" for solid-stem thermometers.</p>
+          </sec>
+          <sec>
+            <title>B.2.4</title>
+            <p>The expansion chamber must be large enough to allow the thermometers to be heated to
+400&#x2062;&#xB0;C400 "unitsml(degC)"400&#x2062;&#xB0;C400 "unitsml(degC)" without damage.</p>
+          </sec>
+          <sec>
+            <title>B.2.5</title>
+            <p>The thermometers must be properly stabilized by the manufacturer and must meet the requirements of the stabilization test (<xref rid="cls-B.3" ref-type="other"/>ClauseB.3).</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>B.3</title>
+          <p>The proper stabilization of each test thermometer must be tested in accordance with the following provisions:</p>
+          <sec>
+            <title>B.3.1</title>
+            <p>The thermometer is heated in a test bath (liquid bath or metal block type oven) from
+ambient temperature up to 350&#x2062;&#xB0;C&#xB1;10&#x2062;&#xB0;C350 "unitsml(degC)" pm 10 "unitsml(degC)"350&#x2062;&#xB0;C&#xB1;10&#x2062;&#xB0;C350 "unitsml(degC)" pm 10 "unitsml(degC)" and kept at this temperature for at least five
+minutes. It is then cooled to 50&#x2062;&#xB0;C50 "unitsml(degC)"50&#x2062;&#xB0;C50 "unitsml(degC)" in the test bath, which decreases in temperature by 10101010 to
+15&#x2062;&#xB0;C&#x2062;h&#x2212;115 "unitsml(degC/h)"15&#x2062;&#xB0;C&#x2062;h&#x2212;115 "unitsml(degC/h)".</p>
+          </sec>
+          <sec>
+            <title>B.3.2</title>
+            <p>When the thermometer has reached a temperature of 50&#x2062;&#xB0;C50 "unitsml(degC)"50&#x2062;&#xB0;C50 "unitsml(degC)", it is removed from the test
+bath and its 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)" correction (value K1K_1K1K_1) is determined (<xref rid="cls-A.1.2.2.5" ref-type="other"/>A.1.2.2.5).</p>
+          </sec>
+          <sec>
+            <title>B.3.3</title>
+            <p>The thermometer is then heated a second time to 350&#x2062;&#xB0;C&#xB1;10&#x2062;&#xB0;C350 "unitsml(degC)" pm 10 "unitsml(degC)"350&#x2062;&#xB0;C&#xB1;10&#x2062;&#xB0;C350 "unitsml(degC)" pm 10 "unitsml(degC)" in the test bath and kept
+at this temperature for 24 hours. It is then cooled to 50&#x2062;&#xB0;C50 "unitsml(degC)"50&#x2062;&#xB0;C50 "unitsml(degC)", as before (<xref rid="cls-B.3.1" ref-type="other"/>B.3.1).</p>
+          </sec>
+          <sec>
+            <title>B.3.4</title>
+            <p>When the thermometer has reached a temperature of 50&#x2062;&#xB0;C50 "unitsml(degC)"50&#x2062;&#xB0;C50 "unitsml(degC)", it is removed from the test
+bath and its 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)" correction (value K2K_2K2K_2) is determined once more.</p>
+          </sec>
+          <sec>
+            <title>B.3.5</title>
+            <p>K2K_2K2K_2 must not differ from K1K_1K1K_1, by more than 0.15&#x2062;&#xB0;C0.15 "unitsml(degC)"0,15&#x2062;&#xB0;C0.15 "unitsml(degC)". Thermometers which do not meet this requirement must not be used to determine the depression of zero.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>B.4</title>
+          <p>The mean depression of zero is determined in accordance with the following provisions:</p>
+          <sec>
+            <title>B.4.1</title>
+            <p>At least three test thermometers must be used. They must be manufactured from the glass being tested, have met the requirements of the stabilization test (<xref rid="cls-B.3" ref-type="other"/>ClauseB.3), and not have
+been heated above the ambient temperature once value K2K_2K2K_2 has been determined (<xref rid="cls-B.3.4" ref-type="other"/>B.3.4).</p>
+          </sec>
+          <sec>
+            <title>B.4.2</title>
+            <p>Each of these thermometers must be tested at least three times in accordance with the provisions of  <xref rid="cls-B.4.2.1" ref-type="other"/>B.4.2.1, <xref rid="cls-B.4.2.2" ref-type="other"/>B.4.2.2 and <xref rid="cls-B.4.2.3" ref-type="other"/>B.4.2.3 below.</p>
+            <sec>
+              <title>B.4.2.1</title>
+              <p>The thermometer is kept in a test bath at 100&#x2062;&#xB0;C&#xB1;1.0&#x2062;&#xB0;C100 "unitsml(degC)" pm 1.0 "unitsml(degC)"100&#x2062;&#xB0;C&#xB1;1,0&#x2062;&#xB0;C100 "unitsml(degC)" pm 1.0 "unitsml(degC)" for 30 minutes. It is then removed from the bath and allowed to cool in air. While it is cooling to ambient temperature, its bulb must not come into contact with other objects.</p>
+            </sec>
+            <sec>
+              <title>B.4.2.2</title>
+              <p>The 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)" correction of the thermometer is determined not later than 15 minutes after
+the thermometer has been removed from the test bath. The correction value obtained is
+designated by the symbol K3K_3K3K_3.</p>
+            </sec>
+            <sec>
+              <title>B.4.2.3</title>
+              <p>The thermometer is then kept for one week at a temperature between 20&#x2062;&#xB0;C20 "unitsml(degC)"20&#x2062;&#xB0;C20 "unitsml(degC)" and 25&#x2062;&#xB0;C25 "unitsml(degC)"25&#x2062;&#xB0;C25 "unitsml(degC)".
+At the end of the week the 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)" correction is determined. This correction value is designated
+K4K_4K4K_4. The procedures described in <xref rid="cls-B.4.2.1" ref-type="other"/>B.4.2.1 and <xref rid="cls-B.4.2.2" ref-type="other"/>B.4.2.2 are then repeated, and a 0&#x2062;&#xB0;C0 "unitsml(degC)"0&#x2062;&#xB0;C0 "unitsml(degC)"
+correction value, designated K5K_5K5K_5, is obtained.</p>
+            </sec>
+            <sec>
+              <title>B.4.2.4</title>
+              <p>The procedures described in <xref rid="cls-B.4.2.3" ref-type="other"/>B.4.2.3 are repeated to obtain a series of nnnn
+differences K2&#x2212;K3K_2 - K_3K2&#x2212;K3K_2 - K_3, K4&#x2212;K5K_4 - K_5K4&#x2212;K5K_4 - K_5, K2n&#x2212;K2n+1K_(2n) - K_(2n+1)K2n&#x2212;K2n+1K_(2n) - K_(2n+1). These are the values of the thermometer&#x2019;s
+depression of zero from the first, second and nnnn-th series of measurements, respectively.</p>
+            </sec>
+            <sec>
+              <title>B.4.2.5</title>
+              <p>When nnnn series of measurements have been made with mmmm test thermometers, the following expression is obtained for the mean depression of zero of these thermometers:</p>
+              <disp-formula id="for_80"/>
+              <p>which must not exceed 0.07&#x2062;&#xB0;C0.07 "unitsml(degC)"0,07&#x2062;&#xB0;C0.07 "unitsml(degC)" (<xref rid="cls-4.1" ref-type="other"/>4.1).</p>
+              <p>In accordance with the provisions of <xref rid="cls-B.4.1" ref-type="other"/>B.4.1andB.4.2, the conditions</p>
+              <disp-formula id="for_81"/>
+              <p>must be met for mmmm and nnnn, and the standard deviation of the mean depression of zero
+determined in accordance with the aforementioned provisions, must not exceed &#xB1;0.01&#x2062;&#xB0;Cpm 0.01 "unitsml(degC)"&#xB1;0,01&#x2062;&#xB0;Cpm 0.01 "unitsml(degC)".</p>
+            </sec>
+            <sec>
+              <title>B.4.2.6</title>
+              <p>If a more accurate value for the mean depression of zero is required, at least five series of measurements on at least five test thermometers must be carried out.</p>
+            </sec>
+          </sec>
+        </sec>
+      </app>
+    </app-group>
+  </back>
+</standard>

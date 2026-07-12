@@ -1,0 +1,29 @@
+== References
+
+=== Internal (cross) references
+
+Internal cross-references use <<element-xref,`<xref>`>> with a
+`@ref-type` attribute identifying the kind of target
+(`sec`, `table`, `fig`, `fn`, `bibr`, `other`, `abbreviation`, etc.) and
+a `@rid` attribute giving the target element's `@id`.
+
+In NISO STS 1.2, the closed list of `@ref-type` values was extended via
+`@custom-type` for cases where none of the named values fits.
+
+=== External references
+
+External references are listed in a
+<<element-ref-list,`<ref-list>`>> with `@content-type="bibliography"`.
+Each reference is held in a <<element-ref,`<ref>`>> element wrapping an
+<<element-element-citation,`<element-citation>`>> or
+<<element-mixed-citation,`<mixed-citation>`>>.
+
+References to other standards use the <<element-std,`<std>`>> element
+inside the citation. ASO additionally requires
+<<element-title,`<title>`>> and <<element-pub-date,`<pub-date>`>> on
+every `<std>` (see link:../aso-1003-2026/[ASO 1003:2026, Clause 6]).
+
+=== URLs
+
+URLs are tagged with <<element-uri,`<uri>`>> or
+<<element-ext-link,`<ext-link>`>> with `@ext-link-type="uri"`.

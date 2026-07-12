@@ -1,0 +1,63 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/suppl-number.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-suppl-number]
+=== `<suppl-number>` Supplement Number
+
+For documents which are supplements to a standard, gives the document number of the supplement.
+
+#### Usage/Remarks
+The content of this element is typically a sequence of digits.
+For documents which are not supplements, the element may be omitted, or it may be present but empty.
+#### ISO Note
+
+For ISO standards documents that are not supplements, the ISO STS Tag Set required this element, so the element needed to be present, but empty. If the element is empty for a document which _is_ a supplement, the <<element-suppl-number,`<suppl-number>`>> element will be treated as having the number “`1`”.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  suppl-number (#PCDATA %suppl-number-elements;)*           >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### Supplement metadata in `<std-ident>`
+[source,xml]
+....
+...
+<std-ident>
+ <originator>CEN</originator>
+ <doc-type>EN</doc-type>
+ <doc-number>3951</doc-number>
+ <part-number>2</part-number>
+ <edition>1</edition>
+ <version>1</version>
+ <suppl-type>1</suppl-type>
+ <suppl-number>1</suppl-number>
+ <suppl-version>2</suppl-version>
+</std-ident>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

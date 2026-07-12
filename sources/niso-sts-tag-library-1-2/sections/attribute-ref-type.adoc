@@ -1,0 +1,126 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/ref-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-ref-type]
+=== `@ref-type` Type of Cross-Reference
+
+Type of element that is the target of the cross-reference (for example, a figure (“`fig`”), a table (“`table`”), or a footnote (“`fn`”). The values may be used for type-specific processing or validation.
+
+#### Usage/Remarks
+The <<element-xref,`<xref>`>> element may be used to reference any element in the standard document that has an <<attribute-id,`@id`>> attribute. This single element takes the place of the many named types of references (such as figure references, table references, and footnote references) that are common in many tag sets. This attribute states the element to which the cross-reference is pointing.
+
+#### OPTIONAL on element:  <<element-xref,`<xref>`>>
+
+|===
+| Value| Meaning
+
+| abbreviation| Abbreviation or acronym.
+| aff| Affiliation.
+| app| Appendix.
+| author-notes| Author notes.
+| award| Points to the description of or identifier for a grant or 
+                        award (<<element-award-id,`<award-id>`>>).
+| bibr| Bibliographic reference (typically to a <<element-ref,`<ref>`>> element, but it may point to a <<element-element-citation,`<element-citation>`>> or an <<element-mixed-citation,`<mixed-citation>`>> if there are multiple citations
+                        inside the <<element-ref,`<ref>`>> element).
+| bio| Biography
+| boxed-text| Textbox or sidebar.
+| chem| Chemical structure (to a <<element-chem-struct,`<chem-struct>`>> or <<element-chem-struct-wrap,`<chem-struct-wrap>`>> element).
+| contrib| Contributor.
+| collab| Collaboration.
+| corresp| Corresponding author.
+| custom| Not one of the meanings named in this list. The type can be found as the value of
+                        the attribute <<attribute-custom-type,`@custom-type`>>.
+| disp-formula| Display formula.
+| fig| Figure or group of figures (to a <<element-fig,`<fig>`>> or <<element-fig-group,`<fig-group>`>>
+                        element).
+| fn| Footnote.
+| kwd| Keyword.
+| list| List or list item (to a <<element-list,`<list>`>>
+                        or <<element-list-item,`<list-item>`>> element; also,
+                        possibly to a <<element-def-list,`<def-list>`>> or
+                        <<element-def-item,`<def-item>`>> element).
+| other| None of the items listed.
+| plate| Plate.
+| scheme| Scheme.
+| sec| Section.
+| statement| Statement.
+| supplementary-material| Supplementary information.
+| table| Table or group of tables (to a <<element-table-wrap,`<table-wrap>`>> or <<element-table-wrap-group,`<table-wrap-group>`>> element).
+| table-fn| Table footnote.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Cross-reference to figure
+
+[source,xml]
+....
+...
+<sec id="s5_1">
+ <label>5.1</label>
+ <title>Two approaches to addressing accessibility in 
+  standards</title>
+ ...
+ <p><xref ref-type="fig" rid="f1">Figure 1</xref> provides 
+  a graphical summary of how this Guide can be used.</p>
+ <fig id="f1" orientation="portrait" position="anchor">
+  <label>Figure 1</label>
+  <caption>
+   <title>Two approaches to address accessibility in 
+    standards</title>
+  </caption>
+  <graphic xlink:href="g3658.jpg"/>
+ </fig>
+ ...
+</sec>
+...
+....
+#### Cross-reference to bibliographic citation
+
+[source,xml]
+....
+...
+<back>
+ <app-group>
+  <app content-type="inform-annex" id="annA">
+   <label>Annex A</label>
+   <annex-type>(informative)</annex-type>
+   <title>Global trends supporting accessibility</title>
+   ...
+   <sec id="A1">
+    <label>A.1</label>
+    <title>Trends in global demographics and market diversity</title>
+    <p>According to the <italic>World Report on Disability</italic> 
+     (published by the World Health Organization and the World Bank 
+     in June 2011,<sup><xref ref-type="bibr" rid="bibr40">[40]</xref></sup> 
+     approximately 15 % of the world population (over one billion 
+     people) has ...</p>
+   </sec>
+   ...
+  </app>
+ </app-group>
+ <ref-list>
+  <title>Bibliography</title>
+  ...
+  <ref id="bibr40">
+   <label>[40]</label>
+   <mixed-citation
+    ><person-group><collab>World Health Organization</collab>, 
+     <collab>World Bank</collab></person-group>. 
+    <year iso-8601-date="2011">2011</year>), 
+    <source>World Report on Disability</source>, 
+    <publisher-loc>Geneva</publisher-loc>, available at: 
+    <ext-link 
+      xlink:href="http://www.who.int/disabilities/world_report/2011/en/index.html"
+     >http://www.who.int/disabilities/world_report/2011/en/index.html</ext-link
+   ></mixed-citation>
+  </ref>
+ </ref-list>
+</back>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

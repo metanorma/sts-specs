@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/calendar.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-calendar]
+=== `@calendar` calendar
+
+Name of the calendar used in naming a date such as a publication date, for example, “`Gregorian`”, “`Japanese`” (Emperor years), or “`Thai Buddha`”.
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-access-date,`<access-date>`>>, <<element-conf-date,`<conf-date>`>>, <<element-date,`<date>`>>, <<element-date-in-citation,`<date-in-citation>`>>, <<element-pub-date,`<pub-date>`>>, <<element-string-date,`<string-date>`>>, <<element-year,`<year>`>>
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Name of the calendar used in the date, for example,
+                        “`Gregorian`”, 
+                        “`Japanese`”, or 
+                        “`Chinese`”.
+| Restriction| This is an optional  attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

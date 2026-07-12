@@ -1,0 +1,91 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/comm-ref-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-comm-ref-group]
+=== `<comm-ref-group>` Committee Reference Group
+
+A grouping element to hold the names of multiple standards-producing groups (such as Committees and Subcommittees) that are responsible for the standards document (tagged as <<element-comm-ref,`<comm-ref>`>>s). A hierarchy of groups is possible as this element may contain a <<element-comm-ref,`<comm-ref>`>> element to name the top-level group as well as lower-level <<element-comm-ref-group,`<comm-ref-group>`>> elements to name subgroups.
+
+#### Attributes
+
+* <<attribute-comm-ref-group-type,`@comm-ref-group-type`>>
+* <<attribute-level,`@level`>>
+* <<attribute-originator,`@originator`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-comm-ref-group,`<comm-ref-group>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+The following, in order: <<element-comm-ref,`<comm-ref>`>> <<element-comm-ref,Committee Reference>>, one or more <<element-comm-ref-group,`<comm-ref-group>`>> <<element-comm-ref-group,Committee Reference Group>>, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  comm-ref-group
+                        %comm-ref-group-model;                       >
+....
+#### Expanded Content Model
+
+(comm-ref+, comm-ref-group*)
+
+#### Tagged Samples
+
+#### Committee with several subgroups
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <comm-ref-group level="1">
+  <comm-ref>Committee on Power Boilers (BPVC I)</comm-ref>
+  <comm-ref-group level="2">
+   <comm-ref>Subgroup on Design (BPVC I)</comm-ref> 
+   <comm-ref>Subgroup Locomotive Boilers (BPVC I)</comm-ref> 
+   <comm-ref>Subgroup on Materials (BPVC I)</comm-ref>   
+  </comm-ref-group>
+ </comm-ref-group>
+ ...
+</std-meta>
+...
+....
+#### Three levels of responsible groups
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <comm-ref-group level="1">
+  <comm-ref>ASME A17 ELEVATOR AND ESCALATOR COMMITTEE</comm-ref>
+  <comm-ref-group level="2">
+   <comm-ref>STANDARDS COMMITTEE</comm-ref>
+   <comm-ref-group level="3">
+    <comm-ref>Honorary Members</comm-ref>
+    <comm-ref>Regulatory Advisory Council</comm-ref>
+   </comm-ref-group>
+  </comm-ref-group>
+ </comm-ref-group>
+ ...
+</std-meta>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - ISO-specific Metadata
+* See: Hierarchy diagram - ISO-specific National-Body Metadata
+* See: Hierarchy diagram - ISO-specific Regional Metadata
+* See: Hierarchy diagram - Standards Document Metadata
+* See: Hierarchy diagram - NISO STS Standard Metadata
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

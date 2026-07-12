@@ -1,0 +1,28 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xlink-actuate.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xlink-actuate]
+=== `@xlink:actuate` Actuating the XLink Link
+
+The intended behavior for an XLink link when activated by an application, specifically, the timing for obtaining or retrieving the content of a link (for example, by a user clicking on the link to request the material, or by the material being automatically loaded with a document when the document or document component is loaded).
+
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-media,`<media>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning
+
+| none| The behavior is unconstrained, and no other markup is generally available in
+                        the link to assist an application in deducing the retrieval mechanism.
+| onLoad| An application should retrieve the link at the same time a user obtains the initial
+                        document load.
+| onRequest| An application should only retrieve the link after a user has physically
+                        triggered the retrieval, for example, clicked on the link.
+| other| The behavior is unconstrained, but other markup is generally available in the
+                        link to assist an application in deducing the retrieval mechanism.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

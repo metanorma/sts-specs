@@ -1,0 +1,40 @@
+= NISO STS 1.0 IEC/ISO Coding Guidelines
+:docidentifier: NISO STS 1.0 IEC/ISO Coding Guidelines
+:docnumber: NISO STS Guidelines
+:edition: 1.0
+:publisher: NISO
+:language: en
+:doctype: report
+:mn-document-class: generic
+:publisher: NISO
+:toclevels-pdf: 3
+:local-cache-only:
+:imagesdir: images
+
+// Source: reference-docs/NISOSTS-guidelines-v1.0.pdf (2.5 MB). OCR transcript at
+// reference-docs/.glm-ocr-cache/niso-sts-guidelines-v1-0.md (6500 lines).
+// Sections below are summaries with Tag Library cross-references; consult the
+// OCR transcript for the full verbatim source.
+
+include::sections/01-maintenance.adoc[]
+include::sections/02-legal-terms.adoc[]
+include::sections/03-general.adoc[]
+include::sections/04-structure.adoc[]
+include::sections/05-content.adoc[]
+include::sections/06-tables.adoc[]
+include::sections/07-formulae-and-equations.adoc[]
+include::sections/08-figures.adoc[]
+include::sections/09-terms-and-definitions.adoc[]
+include::sections/10-references.adoc[]
+
+[appendix]
+include::sections/annex-a-metadata-usage.adoc[]
+
+[appendix]
+include::sections/annex-b-coding-tables.adoc[]
+
+[appendix]
+include::sections/annex-c-amendments.adoc[]
+
+[appendix]
+include::sections/annex-d-corrigenda.adoc[]

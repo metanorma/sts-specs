@@ -1,0 +1,53 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/href.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-href]
+=== `@href` XInclude Href Linking Mechanism
+
+A URI reference (or an IRI reference) that specifies the location of the resource to include. See W3C XInclude documentation (https://www.w3.org/TR/xinclude/).
+
+#### Usage/Remarks
+This attribute is only used for the <<element-xi-include,`<xi:include>`>> element; most elements in this Tag Set use the XLink href attribute (<<attribute-xlink-href,`@xlink:href`>>).
+According to the W3C documentation:
+The `@href` attribute is optional; the absence of this attribute is the same as specifying “`href=''`”, that is, the reference is to the same document. If the `@href` attribute is absent when “`parse="xml"`”, the <<attribute-xpointer,`@xpointer`>> attribute must be present. Fragment identifiers must not be used; their appearance is a fatal error.
+
+#### OPTIONAL on element:  <<element-xi-include,`<xi:include>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The URI of a resource to be included.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Sample
+
+##### URI for file being incorporated into standard
+[source,xml]
+....
+<standard  
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  dtd-version="1.2"
+  xml:lang="en">  
+ <front>...</front>
+ <body>
+  <!-- Introduction is in file S-2295-Intro.xml -->
+  <xi:include href="S-2295-Intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude" parse="xml"/>
+
+  <!-- Scope is in file S-2295-Scope.xml -->
+  <xi:include href="S-2295-Scope.xml" xmlns:xi="http://www.w3.org/2001/XInclude" parse="xml"/>
+
+  <!-- Terms and Defs section is in file S-2295-T-D.xml -->
+  <xi:include href="S-2295-T-D.xml" xmlns:xi="http://www.w3.org/2001/XInclude" parse="xml"/>
+
+  ... 
+ </body>
+</standard>
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,63 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/rowspan.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-rowspan]
+=== `@rowspan` Row Span (NISO JATS table model)
+
+Table attribute used to request vertical spanning by naming the number of rows a cell spans in a vertical span. (This attribute is based on and intended to be converted easily to the XHMTL `rowspan` attribute.)
+
+#### Usage/Remarks
+To specify vertical spanning, this attribute contains the number of rows that a table cell will span. (The table cell will be tagged with a <<element-td,`<td>`>> or <<element-th,`<th>`>> element.)
+
+#### OPTIONAL (defaults to 1) on elements:  <<element-td,`<td>`>>, 
+                  <<element-th,`<th>`>>
+
+|===
+| Value| Meaning
+
+| A counting number| How many rows this cell will span vertically, for example,
+                        “`3`”.
+| Default value| 1 (Spans 1 row)
+|===
+
+#### Tagged Sample
+
+##### Table header cells spanning a single row
+[source,xml]
+....
+...
+<table frame="box" rules="all" cellpadding="5">
+ <thead>
+  <tr>
+   <th></th>
+   <th colspan="3" align="center" rowspan="1">Institutional care</th>
+   <th></th>
+   <th colspan="2" align="center" rowspan="1">&#x2003;Bed use (days)</th>
+  </tr>
+  <tr>
+   <th></th>
+   <th colspan="3"><hr/></th>
+   <th></th>
+   <th colspan="2"><hr/></th>
+  </tr>
+  <tr>
+   <th>Control group</th>
+   <th align="center">Day hospital</th>
+   <th align="center">Control</th>
+   <th align="center">Odds ratio (95&#x0025; CI)</th>
+   <th></th>
+   <th align="center">Day hospital</th>
+   <th align="center">Control</th>
+  </tr>
+  <tr>
+   <th colspan="7"><hr/></th>
+  </tr>
+ </thead>
+ <tbody>...</tbody>
+</table>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

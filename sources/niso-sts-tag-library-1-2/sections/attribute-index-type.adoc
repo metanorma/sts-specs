@@ -1,0 +1,28 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/index-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-index-type]
+=== `@index-type` Type of Index
+
+Names the specific indexes in which an index term (<<element-index-term,`<index-term>`>>) should be used, for example, “`materials`”, “`subject`”, “`chemical`”, “`regulations and code`”.
+
+#### OPTIONAL on element:  <<element-index,`<index>`>>
+
+|===
+| Value| Meaning
+
+| A word or phrase| The name of the index, for example, “`species`”, “`chemical`”, “`subject`”, etc.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on element:  <<element-index-term,`<index-term>`>>
+
+|===
+| Value| Meaning
+
+| One or more words| A word naming the index, or a series of words each representing a specific index.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

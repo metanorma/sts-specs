@@ -1,0 +1,81 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/xlink-href.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-xlink-href]
+=== `@xlink:href` Href (XLink Linking Mechanism)
+
+An address or identifier that permits an XLink application to find a remote resource, for example, a URI (such as a URL or filename) that links to an online site associated with the author or the online definition of a term. As specified in XML Linking Language (XLink) Version 1.0, the value of an `@xlink:href` _must_ be a valid URI. (See https://www.w3.org/TR/xlink/.)
+
+#### Usage/Remarks
+Of the many linking attributes that may be used, <<attribute-xlink-href,`@xlink:href`>> is the most important, since it provides the link. The attribute is required for those elements which must link, and it is optional on other elements only in the sense that an element need not link. If an element links, this attribute is required.
+
+#### REQUIRED on many elements; click for list and usage
+
+<<element-graphic,`<graphic>`>>, <<element-inline-graphic,`<inline-graphic>`>>, <<element-inline-media,`<inline-media>`>>, <<element-media,`<media>`>>
+|===
+| Value| Meaning| Behavior
+
+| Text, numbers, or special characters| A pointer (which may be a URL) to a resource.| Can be used to make this element a live link to a related site.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+#### OPTIONAL on many elements; click for list and usage
+
+<<element-abbrev,`<abbrev>`>>, <<element-app,`<app>`>>, <<element-award-id,`<award-id>`>>, <<element-bio,`<bio>`>>, <<element-chem-struct,`<chem-struct>`>>, <<element-collab,`<collab>`>>, <<element-contrib,`<contrib>`>>, <<element-custom-meta,`<custom-meta>`>>, <<element-element-citation,`<element-citation>`>>, <<element-email,`<email>`>>, <<element-ext-link,`<ext-link>`>>, <<element-extended-by,`<extended-by>`>>, <<element-funding-source,`<funding-source>`>>, <<element-inline-supplementary-material,`<inline-supplementary-material>`>>, <<element-institution,`<institution>`>>, <<element-issue-id,`<issue-id>`>>, <<element-license,`<license>`>>, <<element-long-desc,`<long-desc>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-named-content,`<named-content>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-pronunciation,`<pronunciation>`>>, <<element-pub-id,`<pub-id>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-restricted-by,`<restricted-by>`>>, <<element-self-uri,`<self-uri>`>>, <<element-std,`<std>`>>, <<element-supplementary-material,`<supplementary-material>`>>, <<element-uri,`<uri>`>>, <<element-volume-id,`<volume-id>`>>
+|===
+| Value| Meaning| Behavior
+
+| Text, numbers, or special characters| A pointer (which may be a URL) to a resource.| Can be used to make this element a live link to a related site.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### To link to book included as bibliographic reference
+
+[source,xml]
+....
+...
+<ref id="bibr40">
+ <label>40</label>
+ <mixed-citation publication-type="book"
+  ><collab>World Health Organization</collab>, <collab>World 
+  Bank</collab>. (<year iso-8601-date="2011">2011</year>), 
+  <source>World Report on Disability</source>, 
+  <publisher-loc>Geneva</publisher-loc>, available at: 
+  <ext-link 
+    xlink:href="http://www.who.int/disabilities/world_report/2011/en/index.html"   
+  >http://www.who.int/disabilities/world_report/2011/en/index.html</ext-link
+  ></mixed-citation>
+ </ref>
+...
+....
+#### To link to graphic image
+
+[source,xml]
+....
+...
+<p><italic>Slow-front transient overvoltage (SFO)</italic>: 
+ Transient overvoltage, usually unidirectional, with time to 
+ peak 20 &#x3bc;s &lt; 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_p}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m1.eps"
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 5 000 &#x3bc;s, and 
+ time&#xa0;to&#xa0;half&#xa0;value&#xa0;of&#xa0;a&#xa0;
+ decreasing&#xa0;voltage 
+ <inline-formula>
+  <alternatives>
+   <tex-math notation="LaTeX">${T_2}$</tex-math>
+   <inline-graphic xlink:href="1894_2015_mml_m2.eps" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </alternatives>
+ </inline-formula> &#x2264; 20 ms.</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

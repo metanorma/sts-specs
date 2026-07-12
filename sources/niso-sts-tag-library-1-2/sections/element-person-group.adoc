@@ -1,0 +1,82 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/person-group.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-person-group]
+=== `<person-group>` Person Group (in a citation)
+
+Wrapper element for one or more authors, editors, translators, etc. named in a cited reference.
+
+#### Usage/Remarks
+This element is used only in citations and similar elements and cannot be used to record the committee, working group, or other participation for a standards document.
+The `<person-group>` element can be used to group all the contributors of a particular type (for example, authors, editors, directors, translators) that are named in a reference.
+This element may also include any punctuation and spacing that is between the names, _even when_ this element is used within an <<element-element-citation,`<element-citation>`>>. Therefore, within the context of an element-only <<element-element-citation,`<element-citation>`>>, care should be taken not to accidentally allow punctuation and spaces, since an XML parser will not view this as an error.
+##### Custom Person Group Type (<<attribute-person-group-type,`@person-group-type`>>)
+
+The <<attribute-person-group-type,`@person-group-type`>> attribute can be used to preserve information concerning the type of contributors being cited (for example, “`author`”s, “`curator`”s, or “`editor`”s). <<attribute-person-group-type,`@person-group-type`>> has as its values a fixed list of types. If your contributor type is not one of the listed types, you can use <<attribute-custom-type,`@custom-type`>> to describe the actual type. Set the value of <<attribute-person-group-type,`@person-group-type`>> to “`custom`” and also use <<attribute-custom-type,`@custom-type`>> to hold any role you require. For example:
+[source,xml]
+....
+<person-group person-group-type="custom" custom-type="model-maker"...>...</person-group>
+....
+
+#### Attributes
+
+* <<attribute-custom-type,`@custom-type`>>
+* <<attribute-person-group-type,`@person-group-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Any combination of: Text, numbers, or special characters Contributor Naming Elements <<element-anonymous,`<anonymous>`>> <<element-anonymous,Anonymous>> <<element-collab,`<collab>`>> <<element-collab,Collaborative (Group) Author>> <<element-collab-alternatives,`<collab-alternatives>`>> <<element-collab-alternatives,Collaboration Alternatives>> <<element-name,`<name>`>> <<element-name,Name of Person (Structured)>> <<element-name-alternatives,`<name-alternatives>`>> <<element-name-alternatives,Name Alternatives>> <<element-string-name,`<string-name>`>> <<element-string-name,Name of Person (Unstructured)>> <<element-aff,`<aff>`>> <<element-aff,Affiliation>> <<element-aff-alternatives,`<aff-alternatives>`>> <<element-aff-alternatives,Affiliation Alternatives>> <<element-etal,`<etal>`>> <<element-etal,Et Al. (in a citation)>> <<element-role,`<role>`>> <<element-role,Role or Function Title of Contributor>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  person-group %person-group-model;                         >
+....
+#### Expanded Content Model
+
+(#PCDATA | anonymous | collab | collab-alternatives | name | name-alternatives | string-name | aff | aff-alternatives | etal | role)*
+
+#### Tagged Sample
+
+##### As part of bibliographic reference for journal
+[source,xml]
+....
+...
+<ref-list>
+ <title>Bibliography</title>
+ ...
+ <ref id="ref_4">
+  <label>4</label>
+  <mixed-citation publication-type="journal"
+   ><person-group
+    ><string-name><surname>Hadorn</surname>,  
+     <given-names>H.</given-names></string-name>, 
+    <string-name><surname>Z&uuml;rchner</surname>,  
+     <given-names>K</given-names></string-name></person-group>. 
+   <source>Dtsch. Lebensmitt. Rundsch</source>. 
+   <year iso-8601-date="1974">1974</year>, 
+   <volume>70</volume> p. <fpage>57</fpage></mixed-citation>
+ </ref>
+ ...
+</ref-list>
+...
+....
+
+#### Related Resources
+
+* For a discussion on the use of `<person-group>`, see “Names and String Names in Citations” in Tagging Personal Names in Citations.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

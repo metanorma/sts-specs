@@ -1,0 +1,60 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/issue.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-issue]
+=== `<issue>` Issue Number (in a citation)
+
+Within a citation (such as a <<element-mixed-citation,`<mixed-citation>`>> or an <<element-element-citation,`<element-citation>`>>), the issue number, issue name, or other identifier of an issue of a journal.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-seq,`@seq`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-nlm-citation,`<nlm-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  issue        (#PCDATA %issue-elements;)*                  >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Sample
+
+##### In a citation
+[source,xml]
+....
+...
+<mixed-citation publication-format="print" publication-type="report"
+ ><person-group person-group-type="author"
+  ><string-name><surname>Doan</surname>, 
+   <given-names>D. R.</given-names></string-name></person-group>, 
+ <article-title>&#x201c;Arc Flash Calculations for Exposures 
+  to DC Systems&#x201d;</article-title>,
+ <source>IEEE Transactions on Industry Applications</source>, 
+ <volume>vol: 46</volume>, issue: <issue>6</issue>, 
+ pp. <fpage>2299</fpage>&#x2013;<lpage>2302</lpage>, 
+ <month>August</month> <year>2010</year>. 
+ [Rule 410A3a EXCEPTION]</mixed-citation>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

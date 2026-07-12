@@ -1,0 +1,21 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/related-article-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-related-article-type]
+=== `@related-article-type` Type of Related Article
+
+Type of article being described by the <<element-related-article,`<related-article>`>> element.
+
+#### REQUIRED on element:  <<element-related-article,`<related-article>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The article type for the related article, for example,
+                        “`announcement`”.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

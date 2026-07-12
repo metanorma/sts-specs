@@ -1,0 +1,92 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/doc-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-doc-type]
+=== `<doc-type>` Document Type
+
+The NISO STS document model may be used to describe many kinds of standards documents, not just standards and adoptions of standards. It is a guiding principle of this Tag Set that any standards document that can use the modeling rules for a “standard” may be tagged according to this Tag Set. This `<doc-type>` element names the type of document, for example, a standard (“`standard`”), a specification (“`spec`”), or a technical report (“`tr`”).
+
+#### Usage/Remarks
+#### English-language Content
+
+The `<doc-type>` element may contain any description of the document type. Typical content in English includes text such as: standard (Standard from a standards-producing organization or adoption of a standard. This is expected to be the most common value.) adv (Advisory) guide (Guide to a Standard) hb (Handbook) is (International Standard) isp (International Standardized Profile) iwa (International Workshop Agreement) mp (Miscellaneous Publication) pas (Publicly Available Specification) r (Recommendation. ISO Note: Obsolete for ISO-related standards documents.) rec (Rec) safety guide (Safety Guide) sp (Specific Publication) spec (Specification) ssg (Specific Safety Guide) stp (Standard Test Procedure) tes method (Test Method) tir (Technical Information Request) tn (Technical Note) tr (Technical Report) trf (TEST REPORT FORM) ts (Technical Specification) tta (Technology Trends Assessment) wa (Workshop Agreement)
+#### Non-English Document Type Content
+
+The text content of <<element-doc-type,`<doc-type>`>> will typically be in the base language of the standard. For example, here are some document types that might be used for a German standard, taken from DIN standards documents: dc,b Bekanntmachung st,ne Entwurf einer Norm st,n Norm td,tr Technische Regel (Technical Rule, for example, for DIN SPEC documents: http://www.din.de/en/about-standards/din-spec-en) st,vn Vornorm
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  doc-type     (#PCDATA %doc-type-elements;)*               >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### As part of ISO-related `<std-ident>`
+
+[source,xml]
+....
+...
+<iso-meta id="profile.int">
+ <title-wrap>...</title-wrap>
+ <doc-ident>...</doc-ident>
+ <std-ident>
+  <originator>ISO</originator>
+  <doc-type>is</doc-type>
+  <doc-number>2560</doc-number>
+  <part-number></part-number>
+  <edition>3</edition>
+  <version>...</version>
+ </std-ident>
+ <content-language>en</content-language>
+ ...
+</iso-meta>
+...
+....
+#### As part of ISO-related `<std-ident>` (in Finnish)
+
+[source,xml]
+....
+...
+<std-ident xml:lang="fi">
+<originator>SFS</originator>
+<doc-type>TEKNINEN RAPORTTI</doc-type>
+...
+</std-ident>
+...
+....
+#### As part of ISO-related `<std-ident>` using German abbreviations
+
+[source,xml]
+....
+...
+<std-ident>
+<originator>DIN</originator>
+<doc-type>st,n-e</doc-type>
+...
+</std-ident>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

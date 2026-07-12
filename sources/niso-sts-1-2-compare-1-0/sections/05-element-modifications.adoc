@@ -1,0 +1,67 @@
+== Element modifications
+
+* Added <<element-award-name,`<award-name>`>> and
+  <<element-award-desc,`<award-desc>`>> to
+  <<element-award-group,`<award-group>`>>.
+
+* Added <<element-caption,`<caption>`>> as a child of
+  <<element-disp-formula,`<disp-formula>`>>.
+
+* <<element-chapter-title,`<chapter-title>`>> is now the same in JATS and STS,
+  which added elements to `<chapter-title>`. However, `<chapter-title>` is now
+  deprecated in favour of <<element-part-title,`<part-title>`>> and will be
+  removed at the next backwards-incompatible release.
+
+* Added <<element-data-title,`<data-title>`>> to
+  <<element-std,`<std>`>>.
+
+* Allowed <<element-editing-instruction,`<editing-instruction>`>> between
+  sections (directly inside <<element-front,`<front>`>>,
+  <<element-body,`<body>`>>, <<element-back,`<back>`>>) and anywhere in the
+  order of elements, repeatedly.
+
+* Added <<element-inline-graphic,`<inline-graphic>`>> and
+  <<element-private-char,`<private-char>`>> to `<data-title>`. (JATS and STS
+  now use the same model for `<data-title>`.)
+
+* Allowed `<disp-formula>` in <<element-table-wrap,`<table-wrap>`>>.
+
+* Added accessibility elements <<element-alt-text,`<alt-text>`>> and
+  <<element-long-desc,`<long-desc>`>> to
+  <<element-inline-formula,`<inline-formula>`>>.
+
+* Added at least the following elements to <<element-source,`<source>`>>,
+  which should have the same model as in JATS:
+  <<element-abbrev,`<abbrev>`>>, <<element-alternatives,`<alternatives>`>>,
+  `<inline-graphic>`, `<private-char>`,
+  <<element-chem-struct,`<chem-struct>`>>, `<inline-formula>`,
+  <<element-mml-math,`<mml:math>`>>, <<element-tex-math,`<tex-math>`>>,
+  <<element-named-content,`<named-content>`>>,
+  <<element-styled-content,`<styled-content>`>>, <<element-fn,`<fn>`>>,
+  <<element-target,`<target>`>>, <<element-xref,`<xref>`>>.
+
+* Allowed <<element-string-name,`<string-name>`>> anywhere
+  <<element-name,`<name>`>> could be displayed to the end user, adding
+  `<string-name>` to: <<element-contrib,`<contrib>`>>,
+  <<element-person-group,`<person-group>`>>,
+  <<element-name-alternatives,`<name-alternatives>`>>,
+  <<element-related-article,`<related-article>`>>,
+  <<element-related-object,`<related-object>`>>,
+  <<element-mixed-citation,`<mixed-citation>`>>,
+  <<element-element-citation,`<element-citation>`>>.
+
+* Both subjects and keywords should be allowed in the same locations in the
+  vocabulary. Therefore <<element-subj-group,`<subj-group>`>> and
+  <<element-kwd-group,`<kwd-group>`>> were added to:
+  <<element-app,`<app>`>>, `<boxed-text>`, <<element-sec,`<sec>`>>,
+  <<element-app-group,`<app-group>`>>, `<chem-struct-wrap>`,
+  `<disp-formula>`, `<disp-formula-group>`,
+  `<fig>`, `<fig-group>`, `<graphic>`, `<media>`,
+  <<element-statement,`<statement>`>>, `<supplementary-material>`,
+  `<table-wrap>`, `<table-wrap-group>`.
+
+* Added the following elements to XHTML table cells (<<element-td,`<td>`>>)
+  and to OASIS CALS table cells (<<element-oasis-entry,`<oasis:entry>`>>):
+  <<element-disp-quote,`<disp-quote>`>>, <<element-speech,`<speech>`>>,
+  `<statement>` — which added them to <<element-table,`<table>`>>,
+  <<element-oasis-table,`<oasis:table>`>>, and <<element-array,`<array>`>>.

@@ -1,0 +1,86 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-type]
+=== `@type` Type (class, kind)
+
+Provides type or kind classing for the content of its element. The values for this attribute vary depending on the element to which the attribute is attached.
+
+#### Usage/Remarks
+#### <<attribute-type,Type (class, kind)>> in MathML
+
+The <<attribute-type,`@type`>> attribute can be used in MathML. When used with MathML, use the documentation for the MathML 2.0 Tag Set: https://www.w3.org/TR/MathML2/ or for MathML 3.0 Tag Set: https://www.w3.org/TR/MathML3/ rather than the documentation on this page.
+
+#### OPTIONAL on element:  <<element-meta-date,`<meta-date>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Names, for example, a lifecycle stage that should *not* be expressed with  <<element-release-date,`<release-date>`>> or a circumstance that is unique to a particular standards organization, for example,
+                        “`Date of Issuance`” for ASME or “`Date of ratification`” for CEN-CENELEC. There are no suggested  values for this attribute. The attribute
+                        <<attribute-type,`@type`>> is retained for backwards compatibility with ISO STS. Best Practice for new documents
+                        is to use the <<attribute-date-type,`@date-type`>> attribute instead of the <<attribute-type,`@type`>> attribute to record this information.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on element:  <<element-std,`<std>`>>
+
+|===
+| Value| Meaning
+
+| dated| The standard being cited is a specific dated version of a standard.
+| multipart| The standard being cited is a multipart standard.
+| undated| The standard being cited is a standard without a specifying date.
+| custom| Not one of the meanings named in this list. The type can be found as the value of
+                        the attribute <<attribute-custom-type,`@custom-type`>>.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### OPTIONAL on element:  <<element-std-ref,`<std-ref>`>>
+
+|===
+| Value| Meaning
+
+| dated| The standard designator is a dated version of a standard.
+| short| The standard designator is a short form of the standard designator.
+| undated| The standard designator does not include a specifying date.
+| custom| Not one of the meanings named in this list. The type can be found as the value of
+                        the attribute <<attribute-custom-type,`@custom-type`>>.
+| Restriction| This is an optional attribute; there is no default.
+|===
+#### REQUIRED on element:  <<element-std-xref,`<std-xref>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The type of standard to which this cross-reference is pointing, for example,  a value
+                        of “`supersedes`” would indicate that this cross-reference points to the standard that the current
+                        standard supersedes.
+| Restriction| This attribute is required; it must be provided if the element is used.
+|===
+###### Suggested usage
+*Best Practice for <std-xref> only:* When used on the <<element-std-xref,`<std-xref>`>> element, this <<attribute-type,`@type`>> attribute may take any value. However, the following values are considered to be Best Practice: adopted_from The cross-reference is to a standard from which the current standard is derived. amends The cross-reference is to the standard which the current standard amends. Thus the current document is an amendment to this referenced document. consolidates The cross-reference is to the standards which the current standard consolidates. corrects The cross-reference is to the standard which the current standard corrects. replaces The cross-reference is to the standard which the current standard replaces. revision_of The cross-reference is to the standard the current standard revises. supersedes The cross-reference is to the standard the current standard supersedes.
+
+#### Tagged Sample
+
+##### Dated and updated `<std-ref>`s
+[source,xml]
+....
+...
+<ref>
+ <std><std-ref type="undated">ISO/IEC&#x00A0;17025</std-ref>, 
+  <title>General requirements for the competence of testing 
+   and calibration laboratories</title></std>
+</ref>
+...
+<ref>
+ <std><std-ref type="dated">ISO&#x00A0;15223&#x2011;1:2012</std-ref>, 
+  <title>Medical devices&#x00A0;&#x2014; Symbols to be used 
+   with medical device labels, labelling and information 
+   to be supplied&#x00A0;&#x2014; Part&#x00A0;1: General 
+   requirements</title></std>
+</ref>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

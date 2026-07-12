@@ -1,0 +1,36 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/headers.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-headers]
+=== `@headers` Headers (NISO JATS table model)
+
+List of <<attribute-id,`@id`>>s of the table header (<<element-th,`<th>`>>) or the table data (<<element-td,`<td>`>>) cells that provide header information for this cell. (This attribute is based on and intended to be converted easily to the XHMTL `headers` attribute.)
+
+#### Usage/Remarks
+The `@headers` attribute is intended to make XHTML tables more accessible by making explicit the relationship between a table header cell and the cells(s) to which it applies. Screen readers and other Assistive Technologies use `@headers` to provide information about the table structure that would be obvious to most sighted people.
+##### Using `@headers`
+
+Table headers are not always the <<element-th,`<th>`>> (table head) elements at the top of the table; for example, the cells in the first row of the table may be “headers” that relate to the rest of the cells in the current row.
+The <<attribute-headers,`@headers`>> attribute provides information about the table structure by letting each cell name (point to the <<attribute-id,`@id`>> attributes of) the table header cells or table data cells that are acting as the cell’s header. More than one header cell can be named in a <<attribute-headers,`@headers`>> attribute, to name a span or both row and column headers.
+`@headers` contains a list of the <<element-td,`<td>`>> and <<element-th,`<th>`>> elements that provide header information for the current table cell. If any of those elements also has a `@headers` attribute, the elements to which those `@headers` attributes refer also provide header information for the current cell. In HTML5, the table cells that are referred to in a “headers” attribute are “directly targeted”, and the table cells that are referred to in the “headers” attributes of those elements are “indirectly targeted” by the current table cell.
+###### Usage cautions
+
+In both HTML 4.01 and HTML5, “headers” is defined as referring to table header elements (<<element-th,`<th>`>> elements) only. HTML5 states that “headers” should only target elements in the same table, and that a table cell should not target itself (directly or indirectly). In PDF, the “Headers” attribute should refer only to “TH” structure elements. PDF 2.0 adds additional requirements that row IDs should be listed before column IDs and that row and column IDs should be listed from most specific to most general. WCAG 2.1 Technique H43 recommends using @id and @headers attributes to associate data cells with header cells in data tables. ISO 14289-1:2014 (PDF/UA) states that tables _should_ include headers (small ‘h’) and that the headers should tagged according to the table in the PDF spec that defines the optional “Headers” attribute. The PDF/UA standard says that “Scope” shall be used when the table’s structure is not determinable from “Headers” and “IDs”, which seems to be an implicit assumption that “Headers” should be used. The Matterhorn Protocol failure condition 15-003 is for a table without “Headers” that does not have “Scope” attributes on “TH” structure elements, which implies that you need either “Headers” or “Scope” within a table.
+
+#### OPTIONAL on elements:  <<element-td,`<td>`>>, 
+                  <<element-th,`<th>`>>
+
+|===
+| Value| Meaning
+
+| One or more identifiers (IDREFS)| Contains a list of one or more `ID`s of the table header (<<element-th,`<th>`>>) or table data (<<element-td,`<td>`>>) cells that are acting as the header for the current cell.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Related Resource
+
+For additional information concerning <<attribute-headers,`@headers`>>, see Accessibility: Table Headers.
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

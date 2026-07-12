@@ -1,0 +1,72 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/sub-part.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-sub-part]
+=== `<sub-part>` Sub-Part of a Standard
+
+A numbered sub-part inside the body (<<element-body,`<body>`>>) of a standards document. Sub-parts are physically included within the standard, but a sub-part contains its own body and may contain its own metadata and back matter as well.
+
+#### Usage/Remarks
+A sub-part (<<element-sub-part,`<sub-part>`>>) is frequently presented with its own Table of Contents and pagination.
+##### Bundles and Collections
+
+A standard bundle or collection of standards (a group of standards that are to be considered/sold/packaged together) is typically produced from individual standards documents after the standards have been produced. Each standard in a bundle is considered to be an independent standards document, and none is a part or sub-part of any other.
+
+#### Attributes
+
+* <<attribute-originator,`@originator`>>
+* <<attribute-part-type,`@part-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-body,`<body>`>>
+#### Description
+
+The following, in order: Any one of: The following, in order: <<element-label,`<label>`>> <<element-label,Label of a Figure, Reference, Etc.>>, zero or one <<element-title,`<title>`>> <<element-title,Title>> <<element-std-meta,`<std-meta>`>> <<element-std-meta,NISO STS Standard Metadata>> <<element-body,`<body>`>> <<element-body,Body of the Standards Document>> <<element-back,`<back>`>> <<element-back,Back Matter>>, zero or one
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  sub-part     %sub-part-model;                             >
+....
+#### Expanded Content Model
+
+(((label?, title) | std-meta), body, back?)
+
+#### Tagged Sample
+
+##### Sub-part within the body
+[source,xml]
+....
+...
+<body>
+ ...
+ <sub-part>
+  <title>METHOD B—Mixed Acid-Oxidating Salt Test</title>
+  <body>
+   <sec sec-type="signuse" id="s00068">
+    <label>11</label>
+    <title>Significance and Use</title>
+    ...
+   </sec>
+  </body>
+ </sub-part>
+</body>
+...
+....
+
+#### Related Resources
+
+* See: Hierarchy diagram - Sub-Part of a Standard
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,34 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/glyph-ref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-glyph-ref]
+=== `<glyph-ref>` Glyph Reference For a Private Character
+
+Once a private character has been declared using a <<element-glyph-data,`<glyph-data>`>> element, the character need not be defined with the same <<element-glyph-data,`<glyph-data>`>> element every time it is used. The character can be reused by using the <<element-glyph-ref,`<glyph-ref>`>> element to point to the full <<element-glyph-data,`<glyph-data>`>> element. The pointing uses the `ID/IDREF` linking mechanism, with the <<attribute-glyph-data,`@glyph-data`>> attribute of the <<element-glyph-ref,`<glyph-ref>`>> element pointing to the <<attribute-id,`@id`>> attribute of an existing <<element-glyph-data,`<glyph-data>`>> element. Since the reference uses the `ID/IDREF`, the reference may precede or follow the element to which it is pointing.
+
+#### Attributes
+
+* <<attribute-glyph-data,`@glyph-data`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-private-char,`<private-char>`>>
+#### Description
+
+This is an EMPTY element
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  glyph-ref    EMPTY                                        >
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

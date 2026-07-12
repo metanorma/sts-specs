@@ -1,0 +1,82 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/term-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-term-type]
+=== `@term-type` Type of Term
+
+The type of term (<<element-term,`<term>`>> inside a <<element-term-display,`<term-display>`>>) in a terms and definitions section, for example, “`acronym`”.
+
+#### Usage/Remarks
+The current <<attribute-term-type,`@term-type`>> values are from the ISO TBX list of term types (https://www.iso.org/schema/isosts/v1.1/doc/tbx/index.html).
+
+#### OPTIONAL on element:  <<element-term,`<term>`>>
+
+|===
+| Value| Meaning
+
+| acronym| The term is an acronym. Typically an acronym is made up of the initial letters of
+                        the components of the full form of a term or a proper name or from syllables of the
+                        full form term. Abbreviations are pronounced syllabically, typically as a single word.
+                        For example, 
+                        “`laser`”, “`NDA`”,  
+                        “`ISO`”, 
+                        “`SDO`”, 
+                        “`UNESCO`”,
+                        “`WHO`”. This value need not be a true acronym, only an abbreviated-form of the term. (See
+                        ISO 704:2009 for more on the use of the term "acronym".)
+| abbreviation| The term is an abbreviation. Typically an abbreviation is formed by omitting letters
+                        from the full form, for example, the abbreviation “`vol`” for “`volume`”. This value need not be a true abbreviation, only an abbreviated-form of the term.
+| equation| The term is a simple mathematical or chemical expression, typically all  in one line
+                        with minimal operators.
+| formula| The term is a formula. In a formula, graphics, symbols, or the like are used to express
+                        a concept such as a mathematical or chemical formula. May be complex with multi-line
+                        operators or braces.
+| fullForm| The term is the complete presentation of a term in a word or phrase. This value is
+                        used only if there is also an abbreviated form or an acronym. If a term has no abbreviation
+                        or acronym documented in the entry, there is no need to indicate the full form.
+| symbol| The term is a symbol (the designation of a term by numerals, letters, pictograms or
+                        any combination thereof) rather than an ordinary word or phrase.
+| translation| This term is a translation, the term expressed in another  language.
+| variant| This is a variant term, an alternate form of a term, due to, differences in spelling,
+                        hyphenation, capitalization, spacing, and so forth.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Full form term
+
+[source,xml]
+....
+...
+  <term-display>
+   <term term-type="fullForm">hoogwerker</term>
+   <part-of-speech>noun</part-of-speech>
+   <related-term related-term-type="acronym">HW</related-term>
+   <def><p>hefplatform bestaande uit een werkplatform en 
+    een hydraulische hefinrichting gemonteerd op een zelfaangedreven 
+    chassis</p></def>
+   <non-normative-note>
+    <p>Zie <std><std-ref>EN 1777</std-ref></std>.</p>
+   </non-normative-note>
+  </term-display>...
+....
+#### A translation
+
+[source,xml]
+....
+...
+<term-display>
+ <term term-status="preferred">Kapselung</term>
+ <term-display-string>(en: <term xml:lang="en" 
+   term-type="translation">enclosure</term>)</term-display-string>
+ <def>
+  <p>Teil einer gasisolierten, metallgekapselten Schaltanlage, ...</p>
+ </def>
+</term-display>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

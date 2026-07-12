@@ -1,0 +1,78 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/comm-ref.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-comm-ref]
+=== `<comm-ref>` Committee Reference
+
+Identifies the Technical Committee, Subcommittee, and optionally Working Group responsible for the standard, or example, “`ISO/TC 27/SC 4`”.
+
+#### Usage/Remarks
+To allow for a hierarchy of groups, a <<element-comm-ref-group,`<comm-ref-group>`>> element has been created to hold multiple <<element-comm-ref,`<comm-ref>`>> elements or nested <<element-comm-ref-group,`<comm-ref-group>`>>s.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-comm-ref-group,`<comm-ref-group>`>>, <<element-iso-meta,`<iso-meta>`>>, <<element-nat-meta,`<nat-meta>`>>, <<element-reg-meta,`<reg-meta>`>>, <<element-std-doc-meta,`<std-doc-meta>`>>, <<element-std-meta,`<std-meta>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  comm-ref     (#PCDATA %comm-ref-elements;)*               >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### Committee with secretariat
+
+[source,xml]
+....
+...
+<nat-meta originator="NEN">
+ ...
+ <comm-ref>Normcommissie 342 092 "Niet-destructief onderzoek"</comm-ref>
+ <secretariat>NEN</secretariat>
+ <ics>25.160.40</ics>
+ <std-xref type="revises">
+  <std-ref type="dated">NEN-EN 970:1998</std-ref>
+ </std-xref>
+ <permissions>...</permissions>
+</nat-meta>
+...
+....
+#### Hierarchy of committees
+
+[source,xml]
+....
+...
+<std-meta>
+ ...
+ <comm-ref-group level="1">
+  <comm-ref>Committee on Power Boilers (BPVC I)</comm-ref>
+  <comm-ref-group level="2">
+   <comm-ref>Subgroup on Design (BPVC I)</comm-ref> 
+   <comm-ref>Subgroup Locomotive Boilers (BPVC I)</comm-ref> 
+   <comm-ref>Subgroup on Materials (BPVC I)</comm-ref>   
+  </comm-ref-group>
+ </comm-ref-group>
+ ...
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

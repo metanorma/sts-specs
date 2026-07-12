@@ -1,0 +1,103 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/abstract-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-abstract-type]
+=== `@abstract-type` Abstract Type
+
+Type or style of abstract as identified by the standards organization (for example, “`short`”, “`graphic`”, “`ASCII`”, “`section`”).
+
+#### Usage/Remarks
+The Tag Set does not prescribe values for this attribute, so any type of abstract that a standards organization records can be preserved.
+
+#### OPTIONAL on element:  <<element-abstract,`<abstract>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Brief name for the type of abstract, such as
+                        “`short`” or “`executive-summary`”.
+| Restriction| This attribute is an optional attribute; there is no default.
+|===
+
+#### Tagged Samples
+
+#### Identifying an abbreviated form of the abstract
+
+[source,xml]
+....
+...
+<abstract abstract-type="short" specific-use="simple">
+ <p>Common identity-based public-key cryptographic techniques that use pairings, 
+  including mathematical primitives for secret value (key) derivation, 
+  public-key encryption, and digital signatures, as well as cryptographic 
+  schemes based on those primitives are specified in this standard. Also, 
+  related cryptographic parameters, public keys and private keys, are 
+  specified. The purpose of this standard is to provide a reference for 
+  specifications of a variety of techniques from which applications may 
+  select.</p>
+</abstract>
+...
+....
+#### Sample of 3 abstracts for 1 document — regular one paragraph abstract, 
+                  extended abstract with several sections, and short abstract for 
+                  use on Twitter
+
+[source,xml]
+....
+...
+<std-meta>
+ <title-wrap xml:lang="en" originator="ISO">
+  <full>NISO STS (Standard Tag Suite) NISO Z39.102 201x</full>
+ </title-wrap>
+ ...
+ <abstract>
+  <p>The Standards Tag Suite (STS) provides a common XML format that developers, publishers,
+   and distributors of standards, including National Standards Bodies, Regional and
+   International Standards Bodies, and Standards Development Organizations, can use to
+   publish and exchange full-text content and metadata of standards. STS is based on
+   ANSI/NISO Z39-96 (JATS). Structures are provided to encode both the normative and
+   non-normative content of: standards, adoptions of standards, and standards-like documents
+   that are produced by standards organizations.</p>
+ </abstract>
+
+ <abstract abstract-type="extended">
+  <p>The Standards Tag Suite (STS) provides a common XML format that developers, publishers,
+   and distributors of standards, including National Standards Bodies, Regional and
+   International Standards Bodies, and Standards Development Organizations, can use to
+   publish and exchange full-text content and metadata of standards. STS is based on
+   ANSI/NISO Z39-96 (JATS). Structures are provided to encode both the normative and
+   non-normative content of: standards, adoptions of standards, and standards-like documents
+   that are produced by standards organizations.</p>
+  <sec>
+   <title>Purpose</title>
+   <p>To define a suite of XML elements and attributes that describes the full-text content
+    and metadata of standards, including co-produced standards adoptions. A common format
+    for publishing and exchanging standards content. To preserve the intellectual content of
+    standards independent of the form in which that content was originally delivered ...</p>
+  </sec>
+  <sec>
+   <title>Scope</title>
+   <p>The elements and attributes that describe both the metadata and the full content of
+    published normative standards documents ...</p>
+  </sec>
+  <sec>
+   <title>Two Tag Sets</title>
+   <p>The Interchange Tag Set provides a format in which standards organizations and
+    publishers can deliver content to a range of other standards bodies and disseminators.
+    The Extended Tag Set allows both the XHTML and CALS table models to account for legacy
+    publishing of intensive table information.</p>
+  </sec>
+ </abstract>
+
+ <abstract abstract-type="twitter">
+  <p>NISO STS (Standards Tag Suite) is a standard for tagging and interchanging standards
+   documents in XML.</p>
+ </abstract>
+ ...
+</std-meta>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

@@ -1,0 +1,29 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/rules.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-rules]
+=== `@rules` Rules (NISO JATS table model)
+
+Defines which rules to draw between the rows and columns of an XHTML 1.1 table. (This attribute is based on and intended to be converted easily to the XHMTL `rules` attribute.)
+
+#### Usage/Remarks
+If you want interior rules between your rows and columns for an XHTML table and you want this information expressed _in the XML encoding _, best practice is to set your desired rules explicitly using the <<attribute-rules,`@rules`>> attribute. The nominal default for rules is “`none`”, but the setting for <<attribute-rules,`@rules`>> can be changed by the values of other table attributes.
+If the <<attribute-rules,`@rules`>> attribute has NOT been set explicitly, the presence or absence of interior rules should be determined by other table attributes (as this is a display engine issue, your mileage may vary): If there is no <<attribute-border,`@border`>> attribute or <<attribute-border,`@border`>> has been set to zero (`border="0"`), @frame will be set to “`void`” and the <<attribute-rules,`@rules`>> default (which you can override) will be set to “`none`”. if <<attribute-border,`@border`>> has any value other than zero, the default <<attribute-frame,`@frame`>> will be set to “`border`” and the <<attribute-rules,`@rules`>> default (which you can override) will be set to “`all`”.
+The XHTML constraints on rules and frames have not changed much since HTML 4.1 in 1998, but browser and display behavior has changed over time. As of 2021, HTML5 recommendations deprecate <<attribute-rules,`@rules`>> and instead suggest using CSS attributes to create the rules and frame for tables.
+
+#### OPTIONAL on element:  <<element-table,`<table>`>>
+
+|===
+| Value| Meaning
+
+| all| Rules on all rows and columns.
+| cols| Rules between columns.
+| groups| Rules between groups.
+| none| No rules in table.
+| rows| Rules between rows.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

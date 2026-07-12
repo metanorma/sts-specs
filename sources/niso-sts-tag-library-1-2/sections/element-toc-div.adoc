@@ -1,0 +1,43 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/toc-div.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-toc-div]
+=== `<toc-div>` Table of Contents Division
+
+Division, typically for the purposes of display, in a structural Table of Contents, for example, a division holding the first Part of a 3-part standard, and the titles of all the sections within that Part.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+* <<attribute-xml-lang,`@xml:lang`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-toc,`<toc>`>>, <<element-toc-div,`<toc-div>`>>
+#### Description
+
+The following, in order: <<element-toc-title-group,`<toc-title-group>`>> <<element-toc-title-group,Table of Contents Title Group>>, zero or one <<element-p,`<p>`>> <<element-p,Paragraph>>, zero or more Optionally any one of: <<element-ext-link,`<ext-link>`>> <<element-ext-link,External Link>> <<element-nav-pointer,`<nav-pointer>`>> <<element-nav-pointer,Navigation Pointer>> <<element-nav-pointer-group,`<nav-pointer-group>`>> <<element-nav-pointer-group,Navigation Pointer Group>> One or more of any of: <<element-toc-entry,`<toc-entry>`>> <<element-toc-entry,Table of Contents Entry>> <<element-toc-div,`<toc-div>`>> <<element-toc-div,Table of Contents Division>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  toc-div      %toc-div-model;                              >
+....
+#### Expanded Content Model
+
+(toc-title-group?, (p)*, (ext-link | nav-pointer | nav-pointer-group)?, (toc-entry | toc-div)+)
+
+#### Related Resources
+
+* See: Hierarchy diagram - Table of Contents
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

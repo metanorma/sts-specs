@@ -1,0 +1,24 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/code-version.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-code-version]
+=== `@code-version` Code Version
+
+Version of this code.
+
+#### Usage/Remarks
+Note: The version of the language in which the code is written is recorded in the <<attribute-language-version,`@language-version`>> attribute.
+
+#### OPTIONAL on elements:  <<element-code,`<code>`>>, 
+                  <<element-inline-code,`<inline-code>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| Version of the program (code) that is shown inside the <<element-code,`<code>`>> element, for example, “`25.1 second patch`”.
+| Restriction| This is an optional attribute; there is no default.
+|===
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

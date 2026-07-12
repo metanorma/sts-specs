@@ -1,0 +1,86 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/institution-wrap.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-institution-wrap]
+=== `<institution-wrap>` Institution Wrapper
+
+A wrapper element to hold both the name of an institution (<<element-institution,`<institution>`>>) and any identifiers for that institution (<<element-institution-id,`<institution-id>`>>), for example, an INSI or Ringgold ID.
+
+#### Usage/Remarks
+##### Common Practice
+
+All levels of a multi-tier organization may be listed within a single <<element-institution,`<institution>`>> element and given a single institution identifier. For example, a program, a department, and a university may be part of the same <<element-institution,`<institution>`>>, inside a single `<institution-wrap>` with a single <<element-institution-id,`<institution-id>`>>. Similarly both a corporation and a division within the corporation might be inside one <<element-institution,`<institution>`>> element, inside a `<institution-wrap>` with a single institution identifier (<<element-institution-id,`<institution-id>`>>). Alternatively, a divisional distinction such as an “organization” element with a subordinate “dept” and an “office” inside a department could tagged using multiple <<element-institution,`<institution>`>> elements with the <<attribute-content-type,`@content-type`>> attribute differentiating institution, department, and office. Each of these divisions could be assigned an institutional identifier (<<element-institution-id,`<institution-id>`>>), which would require the wrapper element <<element-institution-wrap,`<institution-wrap>`>>.
+
+#### Related Elements
+
+An address (<<element-address,`<address>`>>) element contains a postal address and/or other contact information such as a company or organization name. If an address is divided into lines, the lines can be preserved using the <<element-addr-line,`<addr-line>`>> element. Typically, the <<element-addr-line,`<addr-line>`>> element holds one physical or logical line of an address, containing undifferentiated portions of an address such as organization names, street addresses, post box numbers, building numbers, mailstops, etc. They are called “lines” because addresses are frequently divided onto multiple lines, and this encoding allows that fact to be preserved. If the address is just a block of undifferentiated text, numbers, or special characters, the entire address may be placed inside a single <<element-addr-line,`<addr-line>`>> element.
+There are several ways to tag an address: As one undifferentiated run of narrative text inside the <<element-addr-line,`<addr-line>`>> element; As a series of named address elements such as <<element-country,`<country>`>>, <<element-city,`<city>`>>, <<element-fax,`<fax>`>>, <<element-institution,`<institution>`>>, <<element-institution-wrap,`<institution-wrap>`>>, <<element-phone,`<phone>`>>, <<element-postal-code,`<postal-code>`>>, <<element-state,`<state>`>>, <<element-email,`<email>`>>, etc.; As a series of address lines (<<element-addr-line,`<addr-line>`>>), which may or may not contain, mixed with the text, any of named address elements such as <<element-country,`<country>`>> just listed; As a mixture of named elements and address lines (<<element-addr-line,`<addr-line>`>>); etc. An address element (<<element-address,`<address>`>>) does not contain any text, only lower-level address elements.
+
+#### Attributes
+
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-address,`<address>`>>, <<element-addr-line,`<addr-line>`>>, <<element-aff,`<aff>`>>, <<element-collab,`<collab>`>>, <<element-conf-loc,`<conf-loc>`>>, <<element-conf-sponsor,`<conf-sponsor>`>>, <<element-copyright-holder,`<copyright-holder>`>>, <<element-element-citation,`<element-citation>`>>, <<element-funding-source,`<funding-source>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-on-behalf-of,`<on-behalf-of>`>>, <<element-publisher-loc,`<publisher-loc>`>>, <<element-publisher-name,`<publisher-name>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-org-loc,`<std-org-loc>`>>
+#### Description
+
+Any combination of: <<element-institution,`<institution>`>> <<element-institution,Institution Name>> <<element-institution-id,`<institution-id>`>> <<element-institution-id,Institution Identifier>>
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  institution-wrap  
+                        %institution-wrap-model;                     >
+....
+#### Expanded Content Model
+
+(institution | institution-id)*
+
+#### Tagged Sample
+
+##### Institutions described in funding information
+[source,xml]
+....
+...
+<funding-source><institution-wrap>
+  <institution content-type="laboratory">Massachusetts Green High Performance 
+   Computing Center</institution>
+ </institution-wrap>, operated by 
+  
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">1846</institution-id>
+  <institution-id institution-id-type="ISNI">0000 0001 2170 1429</institution-id>
+  <institution content-type="university">Boston University</institution>
+ </institution-wrap>, 
+      
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">1812</institution-id>
+  <institution content-type="university">Harvard University</institution>
+ </institution-wrap>, 
+      
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">2167</institution-id>
+  <institution content-type="university">MIT</institution>
+ </institution-wrap>, 
+      
+ <institution-wrap>
+  <institution-id institution-id-type="Ringgold">1848</institution-id>
+  <institution content-type="university">Northeastern University</institution>
+ </institution-wrap>, and the 
+      
+ <institution-wrap>      
+  <institution-id institution-id-type="Ringgold">14707</institution-id>
+  <institution content-type="university">University of Massachusetts</institution>
+ </institution-wrap></funding-source>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

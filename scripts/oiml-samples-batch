@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Batch-convert every presentation XML in mn-samples-oiml/sources/ into
+# OIML NISO STS XML under sources/oiml-samples-sts/.
+#
+# Usage:
+#   ./scripts/oiml-samples-batch [path/to/mn-samples-oiml]
+
+require "pathname"
+require "metanorma/oiml/sts"
+
+samples_root = Pathname.new(ARGV.shift || "#{ENV['HOME']}/src/mn/mn-samples-oiml")
+output_root = Pathname.new(File.expand_path("../sources/oiml-samples-sts", __dir__))
+output_root.mkpath
+
+inputs = samples_root.glob("sources/**/document.presentation.xml")
+abort "No presentation XMLs found under #{samples_root}" if inputs.empty?
+
+inputs.sort.each do |input|
+  parent = input.parent
+  grandparent = parent.parent
+  slug =
+    if grandparent.basename.to_s == "sources"
+      parent.basename.to_s
+    else
+      "#{grandparent.basename}-#{parent.basename}"
+    end
+  output = output_root.join("#{slug}.sts.xml")
+  warn "Converting #{slug}..."
+  begin
+    sts = Metanorma::Oiml::Sts.convert(input.read)
+    output.write(sts)
+    warn "  -> #{output} (#{sts.bytesize} bytes)"
+  rescue => e
+    warn "  FAILED: #{e.class}: #{e.message}"
+  end
+end
+
+warn "Done. Outputs in #{output_root}."

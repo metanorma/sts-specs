@@ -1,0 +1,72 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/attribute/std-relationship-type.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[attribute-std-relationship-type]
+=== `@std-relationship-type` Standard Relationship Type
+
+Name of the lifecycle stage or type of the designators contained in a <<element-std-id,`<std-id>`>> element or in a group of such elements within a <<element-std-id-group,`<std-id-group>`>>. There may be many such standard identifiers, differentiated by this attribute.
+
+#### Usage/Remarks
+The values for this <<attribute-std-relationship-type,`@std-relationship-type`>> attribute (and the <<attribute-std-id-type,`@std-id-type`>> attribute) answer some requirements of the Crossref Standards Working Group to support NSB adoption or co-published standards documents that are equivalent, to allow both a designation and an alternative designation when, for example, a single document is co-produced, but has a different designator for each of the co-producing bodies.
+
+#### OPTIONAL on elements:  <<element-std-id,`<std-id>`>>, 
+                  <<element-std-id-group,`<std-id-group>`>>
+
+|===
+| Value| Meaning
+
+| Text, numbers, or special characters| The lifecycle stage or type of the <<element-std-id,`<std-id>`>> elements, for example, “`std-as-published`” or “`std-family`” or the lifecycle stage or type for a group of <<element-std-id,`<std-id>`>> elements  (<<element-std-id-group,`<std-id-group>`>>).
+| Restriction| This is an optional attribute; there is no default.
+|===
+###### Suggested usage
+*Best Practice:* Although this attribute may take any text as values, the suggested values are: `std-as-published` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, are the designations given to a specific dated designation/version of a standards document when it was published. `std-alt-as-published` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, are the post-publication designations, for example, used when pointing to an amended or corrected version of the standard. `std-family` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, refer to a standard’s family or series. When used on the <<element-std-id-group,`<std-id-group>`>>, this attribute describes a series. When used on the <<element-std-id,`<std-id>`>> element, this attribute names the series of the document being described. `std-series` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, are related to the standards document’s series. `std-set` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, refer to a standard’s set. Different standards organizations may define _set_ differently. `std-supersedes` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, supersede the current standard. `adopted-from` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, were adopted from the current standard. `revision-of` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, are revisions of the current standard. `title` A standard identifier (<<element-std-id,`<std-id>`>>), or all the standard identifiers in a <<element-std-id-group,`<std-id-group>`>>, refer to a standard’s family or series title.
+
+#### Tagged Sample
+
+##### As published and as published alternative
+[source,xml]
+....
+...
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="dated">ASME A17.1-2013/CSA B44-13</std-id>
+ <std-id 
+   std-id-type="dated" 
+   std-id-link-type="doi">10.1115/ASME A17.1-2013/CSA B44-13</std-id>
+</std-id-group>
+
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="undated">ASME A17.1/CSA B44</std-id>
+ <std-id 
+   std-id-type="undated" 
+   std-id-link-type="doi">10.1115/ASME A17.1/CSA B44</std-id>
+</std-id-group>
+
+<std-id-group 
+  std-relationship-type="std-as-published">
+ <std-id 
+   std-id-type="short" 
+   std-relationship-type="std-family">A17</std-id>
+ <std-id 
+   std-id-type="short" 
+   std-id-link-type="doi">10.1115/ASME.A17</std-id>
+</std-id-group>
+
+<std-id-group 
+  originator="CSA" 
+  std-relationship-type="std-alt-as-published">
+ <std-id 
+   std-id-type="dated">CSA B44-13</std-id>
+ <std-id 
+   std-id-type="dated" 
+   std-id-link-type="doi">10.XYZ/CSA.B44-13</std-id>
+</std-id-group>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top

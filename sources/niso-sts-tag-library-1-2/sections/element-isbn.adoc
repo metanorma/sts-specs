@@ -1,0 +1,106 @@
+// Generated from sts-specs/reference-docs/NISO-STS-TL-1-2-html/element/isbn.html; do not edit by hand without
+// also updating the conversion pipeline (scripts/extract-tag-library).
+
+[element-isbn]
+=== `<isbn>` ISBN
+
+International Standard Book Number, the international code for identifying a particular product form or edition of a publication, typically a monographic publication, but standards documents are frequently assigned ISBNs.
+
+#### Usage/Remarks
+Within an ISBN, spacing, hyphens, and punctuation should be preserved.
+ISBNs can be assigned to books, reports, standards documents, conference proceedings, and dissertations. The `<isbn>` element can be used to record all such numbers inside bibliographic citations (<<element-element-citation,`<element-citation>`>> and <<element-mixed-citation,`<mixed-citation>`>>). Within a mixed-style citation, the text “ISBN:”, if present, should be kept as text within the citation but not placed inside the `<isbn>` element. Within an element-style citation, the text “ISBN:”, if present, should be removed from the citation and also not placed inside the `<isbn>` element.
+
+#### Attributes
+
+* <<attribute-content-type,`@content-type`>>
+* <<attribute-originator,`@originator`>>
+* <<attribute-publication-format,`@publication-format`>>
+* <<attribute-specific-use,`@specific-use`>>
+#### Base Attributes
+
+* <<attribute-id,`@id`>>
+* <<attribute-xml-base,`@xml:base`>>
+
+#### Models and Context
+
+#### May be contained in
+
+<<element-element-citation,`<element-citation>`>>, <<element-mixed-citation,`<mixed-citation>`>>, <<element-related-article,`<related-article>`>>, <<element-related-object,`<related-object>`>>, <<element-std-ident,`<std-ident>`>>, <<element-std-ref,`<std-ref>`>>
+#### Description
+
+Text, numbers, or special characters, zero or more
+#### Content Model
+
+[source,xml]
+....
+<!ELEMENT  isbn         (#PCDATA %isbn-elements;)*                   >
+....
+#### Expanded Content Model
+
+(#PCDATA)*
+
+#### Tagged Samples
+
+#### As part of metadata for standard
+
+[source,xml]
+....
+...
+<std-ident>
+ <originator>NISO</originator>
+ ...
+ <isbn>l-880124-14-9</isbn>
+ <year iso-8601-date="1993">1993</year>
+</std-ident>
+...
+....
+#### As part of metadata for standard
+
+[source,xml]
+....
+...
+<std-ident>
+ <originator>NISO</originator>
+ ...
+ <isbn publication-format="HTML">978-1-937522-68-1</isbn>
+ <isbn publication-format="PDF">978-1-937522-69-8</isbn>
+ <issn specific-use="National Information standards series">1041-5653</issn>
+ <year iso-8601-date="2015">2015</year>
+</std-ident>
+...
+....
+#### As part of citation
+
+[source,xml]
+....
+...
+<p>... This method for string collation was described 
+with tables in 
+ <mixed-citation publication-type="book"
+  ><source>R&egrave;gles du classement alphab&eacute;tique 
+   en langue fran&ccedil;aise et proc&eacute;dure 
+   informatis&eacute;e pour le tri</source>, 
+  <string-name><given-names>Alain</given-names> 
+   <surname>LaBont&eacute;</surname></string-name>, 
+  <collab>Minist&egrave;re des Communications du 
+   Qu&eacute;bec</collab>, <year iso-8601-date="1988-08-19"
+  >1988</year>-<month>08</month>-<day>19</day>, ISBN 
+  <isbn>2-550-19046-7</isbn></mixed-citation>. 
+A public-domain subkey reduction technique is described 
+(with several examples) in 
+ <mixed-citation publication-type="book"
+  ><source>Technique de r&eacute;duction &mdash; Tris 
+   informatiques &agrave; quatre cl&eacute;s</source>, 
+  <string-name><given-names>Alain</given-names> 
+   <surname>LaBont&eacute;</surname></string-name>, 
+  <collab>Minist&egrave;re des Communications du 
+   Qu&eacute;bec</collab>, 
+  <year iso-8601-date="1989-06">1989</year>-<month>06</month>, 
+  ISBN <isbn>2-550-19965-0</isbn></mixed-citation>. 
+See also ...</p>
+...
+....
+
+NISO STS 1.2 Tag Suite Components—Including TBX-TML
+Version of October 31, 2022
+Back to Top
