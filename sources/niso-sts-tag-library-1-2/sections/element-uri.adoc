@@ -4,7 +4,7 @@
 [element-uri]
 === `<uri>` Uniform Resource Identifier (URI)
 
-Identifies a Uniform Resource Identifier (such as a URL) that may be used as a live link, typically naming a website, such as: “`<uri>https://www.mulberrytech.com</uri>`”).
+Identifies a Uniform Resource Identifier (such as a URL) that may be used as a live link, typically naming a website, such as: “`+<uri>https://www.mulberrytech.com</uri>+`”).
 
 #### Usage/Remarks
 While the `<uri>` element has the form of a URI such as a URL, it is not automatically a link, nor even expected to be a live link. To make this element into a live link, use the XLink <<attribute-xlink-href,`@xlink:href`>> attribute.

@@ -8,104 +8,17 @@ This “Tag Library” is provided as a service to users of ANSI/NISO Z39.102-20
 The Tag Library is organized onto a number of chapters, each divided into sections (which may also be divided into further sections). Navigation around the Tag Library is through the Navigation Panel (Navbar) and through numerous direct links between related components.
 The table below outlines the structure and chapters (with their subsections) of this document:
 |===
-| Getting Started| Basic information for first time users and reference for experienced users, this chapter
-                           describes the Tag Library  document, how to navigate around the web pages of the complex
-                           document, and introductory material for the NISO STS Tag Suite. Also includes the
-                           Hierarchy Diagrams, which are useful as introductions as well as reference.
-                        
-                        
-                           
-                              
-                                 
-                                    Navigation
-                                 
-                                 
-                                    How to use get around the Tag Library pages, using the Navigation Bar (Navbar), Navbar
-                                       collapse and expand arrows, page collapse/expand diamonds, and the search facility.
-                                       (See Navigation.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Structure of Tag Library
-                                 
-                                 
-                                    Describes the sections of the Tag Library and what can be found in each and how to
-                                       use the Tag Library to get started learning the tag suite.
-                                    
-                                 
-                              
-                              
-                                 
-                                    Introduction to the NISO STS Tag Suite
-                                 
-                                 
-                                    Describes the purpose, scope, extent, and original basis for the NISO STS Tag Sets.
-                                       What were they designed to do? How are the top-level <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> elements structured? (See Introduction to NISO STS Tag Suite.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Root Elements
-                                 
-                                 
-                                    Names <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> as the top-level (document) elements of this XML schema (DTD, XSD, and RNG). (See
-                                       Root Elements.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Selecting a Model & Schema
-                                 
-                                 
-                                    Two decisions determine which of the NISO STS Tag Sets an organization chooses to
-                                       use: using the Interchange Model (using only XHTML tables) versus the Extended Model
-                                       (using both XHTML and OASIS Exchange CALS tables)  and the choice of MathML 2.0 versus
-                                       MathML 3.0.  (See Selecting a Model & Schema.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Hierarchy Diagrams
-                                 
-                                 
-                                    Tree-like graphical representations of the content of many elements. This can be a
-                                       fast, visual way to determine the structure of a standard or of any complex element
-                                       within a standard. 
-                                       (See Hierarchy Diagrams.)| Navigation| How to use get around the Tag Library pages, using the Navigation Bar (Navbar), Navbar
-                                       collapse and expand arrows, page collapse/expand diamonds, and the search facility.
-                                       (See Navigation.)| Structure of Tag Library| Describes the sections of the Tag Library and what can be found in each and how to
-                                       use the Tag Library to get started learning the tag suite.| Introduction to the NISO STS Tag Suite| Describes the purpose, scope, extent, and original basis for the NISO STS Tag Sets.
-                                       What were they designed to do? How are the top-level <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> elements structured? (See Introduction to NISO STS Tag Suite.)| Root Elements| Names <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> as the top-level (document) elements of this XML schema (DTD, XSD, and RNG). (See
-                                       Root Elements.)| Selecting a Model & Schema| Two decisions determine which of the NISO STS Tag Sets an organization chooses to
-                                       use: using the Interchange Model (using only XHTML tables) versus the Extended Model
-                                       (using both XHTML and OASIS Exchange CALS tables)  and the choice of MathML 2.0 versus
-                                       MathML 3.0.  (See Selecting a Model & Schema.)| Hierarchy Diagrams| Tree-like graphical representations of the content of many elements. This can be a
-                                       fast, visual way to determine the structure of a standard or of any complex element
-                                       within a standard. 
-                                       (See Hierarchy Diagrams.)
+| Getting Started
+a|Basic information for first time users and reference for experienced users, this chapter describes the Tag Library document, how to navigate around the web pages of the complex document, and introductory material for the NISO STS Tag Suite. Also includes the Hierarchy Diagrams, which are useful as introductions as well as reference.
 
-| Navigation| How to use get around the Tag Library pages, using the Navigation Bar (Navbar), Navbar
-                                       collapse and expand arrows, page collapse/expand diamonds, and the search facility.
-                                       (See Navigation.)
-| Structure of Tag Library| Describes the sections of the Tag Library and what can be found in each and how to
-                                       use the Tag Library to get started learning the tag suite.
-| Introduction to the NISO STS Tag Suite| Describes the purpose, scope, extent, and original basis for the NISO STS Tag Sets.
-                                       What were they designed to do? How are the top-level <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> elements structured? (See Introduction to NISO STS Tag Suite.)
-| Root Elements| Names <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> as the top-level (document) elements of this XML schema (DTD, XSD, and RNG). (See
-                                       Root Elements.)
-| Selecting a Model & Schema| Two decisions determine which of the NISO STS Tag Sets an organization chooses to
-                                       use: using the Interchange Model (using only XHTML tables) versus the Extended Model
-                                       (using both XHTML and OASIS Exchange CALS tables)  and the choice of MathML 2.0 versus
-                                       MathML 3.0.  (See Selecting a Model & Schema.)
-| Hierarchy Diagrams| Tree-like graphical representations of the content of many elements. This can be a
-                                       fast, visual way to determine the structure of a standard or of any complex element
-                                       within a standard. 
-                                       (See Hierarchy Diagrams.)
+!===
+! Navigation ! How to use get around the Tag Library pages, using the Navigation Bar (Navbar), Navbar collapse and expand arrows, page collapse/expand diamonds, and the search facility. (See Navigation.)
+! Structure of Tag Library ! Describes the sections of the Tag Library and what can be found in each and how to use the Tag Library to get started learning the tag suite.
+! Introduction to the NISO STS Tag Suite ! Describes the purpose, scope, extent, and original basis for the NISO STS Tag Sets. What were they designed to do? How are the top-level <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> elements structured? (See Introduction to NISO STS Tag Suite.)
+! Root Elements ! Names <<element-standard,`<standard>`>> and <<element-adoption,`<adoption>`>> as the top-level (document) elements of this XML schema (DTD, XSD, and RNG). (See Root Elements.)
+! Selecting a Model & Schema ! Two decisions determine which of the NISO STS Tag Sets an organization chooses to use: using the Interchange Model (using only XHTML tables) versus the Extended Model (using both XHTML and OASIS Exchange CALS tables) and the choice of MathML 2.0 versus MathML 3.0. (See Selecting a Model & Schema.)
+! Hierarchy Diagrams ! Tree-like graphical representations of the content of many elements. This can be a fast, visual way to determine the structure of a standard or of any complex element within a standard. (See Hierarchy Diagrams.)
+!===
 | Elements| Descriptions of the elements used in the NISO STS Tag Suite. The elements are listed
                            in order by tag name. (For information on how each Element page is organized, see
                            <<element-niso-sts-elem-sec-intro,Introduction to Elements>>.)
@@ -113,191 +26,34 @@ The table below outlines the structure and chapters (with their subsections) of 
                            order by the name
                            used in tagging documents and in the schemas. (For information on how each Attribute
                            page is organized, see <<attribute-niso-sts-attr-sec-intro,Introduction to Attributes>>.)
-| Finding Information in Tag Library| Contains three aids for locating a NISO STS element, attribute,  an element’s context,
-                           and related information:
-                           
-                           
-                              
-                                 *Theme Index:* A list of all the elements in NISO STS, arranged thematically, by the position or
-                                 the function of the element, such as a back matter elements, all emphasis (highlighting)
-                                 elements, and all elements dealing with notes and examples. 
-                                 (Click on “Theme Index” under “Finding Information in Tag Library” in the Navbar.)
-                                 
-                              
-                              
-                                 *Index:* Like a back-of-the-book Index: a list of NISO STS elements, attributes, and discussion
-                                 topics linked to their Tag Library locations. The Index includes  alternative words
-                                 linked to the equivalent STS term. (Non-STS term to STS term  translation: for example,
-                                 the term “author” will direct you to use  the STS element <<element-contrib,Contributor>>.) 
-                                 (Click on “Index” under “Finding Information in Tag Library” in the Navbar.)
-                                 
-                              
-                              
-                                 *Element Context Table:* 
-                                 A table of where an element may be used. Provides, for each element, all the elements
-                                 that can directly contain it. This is how to find out whether an element can be used
-                                 in a particular
-                                 context.
-                                 (Click on “Element Context Table” under “Finding Information in Tag Library” in the
-                                 Navbar.)
-                                 
-                                 Context information is also available on each Element page under the subheading “May
-                                    be contained in” (within “Models and Context”).
-| Tagging Documents| How to use this tag set: descriptions and guidance for specific tagging issues. (See
-                           Tagging Documents.)
-                        
-                        
-                           
-                              
-                                 
-                                    Common Tagging Practice
-                                 
-                                 
-                                    Essays discussing complex structures and the design choices involved in tagging, for
-                                       example, affiliations or keywords, each of which involve numerous elements and attributes.
-                                       By design, NISO STS is enabling not enforcing, which can result in multiple ways to
-                                       tag the same content. These essays are important for learning to use this Tag Set
-                                       well, and links to them are provided from elements and attributes to which they are
-                                       especially relevant. (See Common Tagging Practice.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Accessibility
-                                 
-                                 
-                                    An essay explaining the features of NISO STS that enable organizations to make their
-                                       content more accessible to the visually and motor impaired, and how specific NISO
-                                       STS elements and attributes can be used to meet Accessibility  requirements.  (See
-                                       Accessibility.)| Common Tagging Practice| Essays discussing complex structures and the design choices involved in tagging, for
-                                       example, affiliations or keywords, each of which involve numerous elements and attributes.
-                                       By design, NISO STS is enabling not enforcing, which can result in multiple ways to
-                                       tag the same content. These essays are important for learning to use this Tag Set
-                                       well, and links to them are provided from elements and attributes to which they are
-                                       especially relevant. (See Common Tagging Practice.)| Accessibility| An essay explaining the features of NISO STS that enable organizations to make their
-                                       content more accessible to the visually and motor impaired, and how specific NISO
-                                       STS elements and attributes can be used to meet Accessibility  requirements.  (See
-                                       Accessibility.)
-| Common Tagging Practice| Essays discussing complex structures and the design choices involved in tagging, for
-                                       example, affiliations or keywords, each of which involve numerous elements and attributes.
-                                       By design, NISO STS is enabling not enforcing, which can result in multiple ways to
-                                       tag the same content. These essays are important for learning to use this Tag Set
-                                       well, and links to them are provided from elements and attributes to which they are
-                                       especially relevant. (See Common Tagging Practice.)
-| Accessibility| An essay explaining the features of NISO STS that enable organizations to make their
-                                       content more accessible to the visually and motor impaired, and how specific NISO
-                                       STS elements and attributes can be used to meet Accessibility  requirements.  (See
-                                       Accessibility.)
-| Notes for Implementors| Provides material for implementors and people modifying or installing a Tag Set. (See
-                           Notes for Implementors.)
-                        
-                        
-                           
-                              
-                                 
-                                    Modular DTD Design
-                                 
-                                 
-                                    Describes how NISO STS has been built as a series of XML DTD modules to permit reuse
-                                       in different tag sets and explains the advantages to a modular approach. (See Modular DTD Design.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    NISO STS Extends ISO STS
-                                 
-                                 
-                                    Explains how NISO STS builds upon the work of ISOS STS 1.1 to better meet the needs
-                                       of a wide variety of standards organizations. (See NISO STS Extends ISO STS.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    JATS Compatibility
-                                 
-                                 
-                                    Describes the NISO STS Working Group’s work to make NISO STS a JATS-Compatible tag
-                                       suite, based on The JATS Compatibility Meta-Model. (See JATS Compatibility.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    NISO STS and Linked Data
-                                 
-                                 
-                                    Describes useful tagging constructs in NISO STS for making a NISO STS document as
-                                       RDF-friendly as is practical in an application specifically designed for full text
-                                       document production.  (See NISO STS and Linked Data.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Modifying a NISO STS Tag Set
-                                 
-                                 
-                                    Provides guidance on making new tag sets based on a NISO STS Tag Set or to modifying
-                                       the Suite Tag Sets. (See Modifying a NISO STS Tag Set.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Modules in NISO STS
-                                 
-                                 
-                                    Names and describes all of the modules of the NISO STS that exist in the base Interchange
-                                       and Extended Tag Sets in the DTD forms. (See Modules in NISO STS.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Namspacing NISO STS Elements
-                                 
-                                 
-                                    Discusses NISO STS’ lack of a namespace for its elements and attributes. For implementors
-                                       needing to assign a namespace, a URI for such a namespace is provided. (See Namspacing NISO STS Elements.)
-                                    
-                                 
-                              
-                              
-                                 
-                                    Tag Suite Naming Conventions
-                                 
-                                 
-                                    Discusses JATS naming conventions that have been extended to NISO STS, such as element
-                                       and attribute naming rules and file naming conventions.  (See Tag Suite Naming Conventions.)| Modular DTD Design| Describes how NISO STS has been built as a series of XML DTD modules to permit reuse
-                                       in different tag sets and explains the advantages to a modular approach. (See Modular DTD Design.)| NISO STS Extends ISO STS| Explains how NISO STS builds upon the work of ISOS STS 1.1 to better meet the needs
-                                       of a wide variety of standards organizations. (See NISO STS Extends ISO STS.)| JATS Compatibility| Describes the NISO STS Working Group’s work to make NISO STS a JATS-Compatible tag
-                                       suite, based on The JATS Compatibility Meta-Model. (See JATS Compatibility.)| NISO STS and Linked Data| Describes useful tagging constructs in NISO STS for making a NISO STS document as
-                                       RDF-friendly as is practical in an application specifically designed for full text
-                                       document production.  (See NISO STS and Linked Data.)| Modifying a NISO STS Tag Set| Provides guidance on making new tag sets based on a NISO STS Tag Set or to modifying
-                                       the Suite Tag Sets. (See Modifying a NISO STS Tag Set.)| Modules in NISO STS| Names and describes all of the modules of the NISO STS that exist in the base Interchange
-                                       and Extended Tag Sets in the DTD forms. (See Modules in NISO STS.)| Namspacing NISO STS Elements| Discusses NISO STS’ lack of a namespace for its elements and attributes. For implementors
-                                       needing to assign a namespace, a URI for such a namespace is provided. (See Namspacing NISO STS Elements.)| Tag Suite Naming Conventions| Discusses JATS naming conventions that have been extended to NISO STS, such as element
-                                       and attribute naming rules and file naming conventions.  (See Tag Suite Naming Conventions.)
-| Modular DTD Design| Describes how NISO STS has been built as a series of XML DTD modules to permit reuse
-                                       in different tag sets and explains the advantages to a modular approach. (See Modular DTD Design.)
-| NISO STS Extends ISO STS| Explains how NISO STS builds upon the work of ISOS STS 1.1 to better meet the needs
-                                       of a wide variety of standards organizations. (See NISO STS Extends ISO STS.)
-| JATS Compatibility| Describes the NISO STS Working Group’s work to make NISO STS a JATS-Compatible tag
-                                       suite, based on The JATS Compatibility Meta-Model. (See JATS Compatibility.)
-| NISO STS and Linked Data| Describes useful tagging constructs in NISO STS for making a NISO STS document as
-                                       RDF-friendly as is practical in an application specifically designed for full text
-                                       document production.  (See NISO STS and Linked Data.)
-| Modifying a NISO STS Tag Set| Provides guidance on making new tag sets based on a NISO STS Tag Set or to modifying
-                                       the Suite Tag Sets. (See Modifying a NISO STS Tag Set.)
-| Modules in NISO STS| Names and describes all of the modules of the NISO STS that exist in the base Interchange
-                                       and Extended Tag Sets in the DTD forms. (See Modules in NISO STS.)
-| Namspacing NISO STS Elements| Discusses NISO STS’ lack of a namespace for its elements and attributes. For implementors
-                                       needing to assign a namespace, a URI for such a namespace is provided. (See Namspacing NISO STS Elements.)
-| Tag Suite Naming Conventions| Discusses JATS naming conventions that have been extended to NISO STS, such as element
-                                       and attribute naming rules and file naming conventions.  (See Tag Suite Naming Conventions.)
+| Finding Information in Tag Library
+a|Contains three aids for locating a NISO STS element, attribute, an element’s context, and related information:
+
+!===
+! Theme Index ! A list of all the elements in NISO STS, arranged thematically, by the position or the function of the element, such as a back matter elements, all emphasis (highlighting) elements, and all elements dealing with notes and examples. (Click on “Theme Index” under “Finding Information in Tag Library” in the Navbar.)
+! Index ! Like a back-of-the-book Index: a list of NISO STS elements, attributes, and discussion topics linked to their Tag Library locations. The Index includes alternative words linked to the equivalent STS term. (Non-STS term to STS term translation: for example, the term “author” will direct you to use the STS element <<element-contrib,Contributor>>.) (Click on “Index” under “Finding Information in Tag Library” in the Navbar.)
+! Element Context Table ! A table of where an element may be used. Provides, for each element, all the elements that can directly contain it. This is how to find out whether an element can be used in a particular context. (Click on “Element Context Table” under “Finding Information in Tag Library” in the Navbar.) Context information is also available on each Element page under the subheading “May be contained in” (within “Models and Context”).
+!===
+| Tagging Documents
+a|How to use this tag set: descriptions and guidance for specific tagging issues. (See Tagging Documents.)
+
+!===
+! Common Tagging Practice ! Essays discussing complex structures and the design choices involved in tagging, for example, affiliations or keywords, each of which involve numerous elements and attributes. By design, NISO STS is enabling not enforcing, which can result in multiple ways to tag the same content. These essays are important for learning to use this Tag Set well, and links to them are provided from elements and attributes to which they are especially relevant. (See Common Tagging Practice.)
+! Accessibility ! An essay explaining the features of NISO STS that enable organizations to make their content more accessible to the visually and motor impaired, and how specific NISO STS elements and attributes can be used to meet Accessibility requirements. (See Accessibility.)
+!===
+| Notes for Implementors
+a|Provides material for implementors and people modifying or installing a Tag Set. (See Notes for Implementors.)
+
+!===
+! Modular DTD Design ! Describes how NISO STS has been built as a series of XML DTD modules to permit reuse in different tag sets and explains the advantages to a modular approach. (See Modular DTD Design.)
+! NISO STS Extends ISO STS ! Explains how NISO STS builds upon the work of ISOS STS 1.1 to better meet the needs of a wide variety of standards organizations. (See NISO STS Extends ISO STS.)
+! JATS Compatibility ! Describes the NISO STS Working Group’s work to make NISO STS a JATS-Compatible tag suite, based on The JATS Compatibility Meta-Model. (See JATS Compatibility.)
+! NISO STS and Linked Data ! Describes useful tagging constructs in NISO STS for making a NISO STS document as RDF-friendly as is practical in an application specifically designed for full text document production. (See NISO STS and Linked Data.)
+! Modifying a NISO STS Tag Set ! Provides guidance on making new tag sets based on a NISO STS Tag Set or to modifying the Suite Tag Sets. (See Modifying a NISO STS Tag Set.)
+! Modules in NISO STS ! Names and describes all of the modules of the NISO STS that exist in the base Interchange and Extended Tag Sets in the DTD forms. (See Modules in NISO STS.)
+! Namspacing NISO STS Elements ! Discusses NISO STS’ lack of a namespace for its elements and attributes. For implementors needing to assign a namespace, a URI for such a namespace is provided. (See Namspacing NISO STS Elements.)
+! Tag Suite Naming Conventions ! Discusses JATS naming conventions that have been extended to NISO STS, such as element and attribute naming rules and file naming conventions. (See Tag Suite Naming Conventions.)
+!===
 |===
 #### Each Element Page
 

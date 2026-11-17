@@ -43,6 +43,20 @@ their respective owners.
 Future documents will be added as the OCR pipeline (TODO.impl/02-ocr-run-all)
 unblocks them.
 
+== ISO/IEC guidelines validation assets
+
+Derived from `reference-docs/Guidelines for coding ed.2.1.pdf`
+(IEC/ISO Coding Guidelines, Edition 2.1):
+
+* `lib/sts_specs/iso_guidelines/rules_catalog.md` -- catalog of every
+  machine-checkable constraint in the guidelines (196 rules; ids
+  `iso-gdg-<section>-<n>`; severity `error`/`warning`).
+* `schematron/iso-sts.sch` -- ISO Schematron (`queryBinding="xslt2"`)
+  encoding the 110 `error` rules, with ids matching the catalog one-to-one.
+
+Provenance, section coverage, and acceptance checks are recorded in the
+catalog preamble and in the repository work journal (TODO.impl, gitignored).
+
 == Tooling
 
 This repository ships two Ruby libraries under `lib/sts_specs/`:
