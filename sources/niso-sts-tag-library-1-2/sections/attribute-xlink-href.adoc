@@ -16,7 +16,7 @@ Of the many linking attributes that may be used, <<attribute-xlink-href,`@xlink:
 | Value| Meaning| Behavior
 
 | Text, numbers, or special characters| A pointer (which may be a URL) to a resource.| Can be used to make this element a live link to a related site.
-| Restriction| This attribute is required; it must be provided if the element is used.
+| Restriction|2+| This attribute is required; it must be provided if the element is used.
 |===
 #### OPTIONAL on many elements; click for list and usage
 
@@ -25,7 +25,7 @@ Of the many linking attributes that may be used, <<attribute-xlink-href,`@xlink:
 | Value| Meaning| Behavior
 
 | Text, numbers, or special characters| A pointer (which may be a URL) to a resource.| Can be used to make this element a live link to a related site.
-| Restriction| This is an optional attribute; there is no default.
+| Restriction|2+| This is an optional attribute; there is no default.
 |===
 
 #### Tagged Samples
