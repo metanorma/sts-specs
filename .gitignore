@@ -25,5 +25,5 @@ sources/**/sections/*.html
 .ruby-lsp/
 coverage/
 
-# Ignore Gemfile.lock — this is a library-style repo, not an app
-Gemfile.lock
+# Gemfile.lock is committed: the CI bundler-cache job must not float
+# (suite-repo rule; this repo builds a site, it is not a published library)
