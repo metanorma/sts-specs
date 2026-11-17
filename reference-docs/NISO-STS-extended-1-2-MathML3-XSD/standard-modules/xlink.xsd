@@ -1,0 +1,56 @@
+<?xml-stylesheet href="xsd.xsl" type="text/xsl"?>
+<xsd:schema xmlns:mtl="http://www.mulberrytech.com/taglib"
+            xmlns:c="http://www.w3.org/ns/xproc-step"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.w3.org/1999/xlink"><!--* Allow references to unqualified names *-->
+   <xsd:import/>
+   <!--* Some imports may need to be added manually *-->
+   <xsd:annotation/>
+   <xsd:attribute name="actuate">
+      <xsd:simpleType>
+         <xsd:annotation>
+            <xsd:documentation/>
+         </xsd:annotation>
+         <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:enumeration value="none"/>
+            <xsd:enumeration value="onLoad"/>
+            <xsd:enumeration value="onRequest"/>
+            <xsd:enumeration value="other"/>
+         </xsd:restriction>
+      </xsd:simpleType>
+   </xsd:attribute>
+   <!--* 
+              * WARNING:  this is a duplicate declaration for this attribute, 
+              * different from other declarations for the same name.
+              * (Note:  the difference may be in the @use attribute of the original,
+              * which is suppressed here.)
+              * All declarations for this name must be merged manually.
+              *-->
+   <xsd:attribute name="href" type="xsd:string"/>
+   <xsd:attribute name="role" type="xsd:string"/>
+   <xsd:attribute name="show">
+      <xsd:simpleType>
+         <xsd:annotation>
+            <xsd:documentation/>
+         </xsd:annotation>
+         <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:enumeration value="embed"/>
+            <xsd:enumeration value="new"/>
+            <xsd:enumeration value="none"/>
+            <xsd:enumeration value="other"/>
+            <xsd:enumeration value="replace"/>
+         </xsd:restriction>
+      </xsd:simpleType>
+   </xsd:attribute>
+   <xsd:attribute name="title" type="xsd:string"/>
+   <xsd:attribute name="type">
+      <xsd:simpleType>
+         <xsd:annotation>
+            <xsd:documentation/>
+         </xsd:annotation>
+         <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:enumeration value="simple"/>
+         </xsd:restriction>
+      </xsd:simpleType>
+   </xsd:attribute>
+</xsd:schema>
