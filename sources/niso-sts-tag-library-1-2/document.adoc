@@ -8,7 +8,6 @@
 :mn-document-class: generic
 :publisher: NISO
 :toclevels-pdf: 2
-:imagesdir: images
 :local-cache-only:
 
 // One include per Tag Library page, in canonical document order.
